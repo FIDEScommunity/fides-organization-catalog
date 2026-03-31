@@ -6,9 +6,6 @@
     "sectors": [
       "digital"
     ],
-    "identifiers": {
-      "did": "did:web:sphereon.com"
-    },
     "website": "https://sphereon.com",
     "logo": "https://www.google.com/s2/favicons?domain=sphereon.com&sz=128",
     "country": "NL",

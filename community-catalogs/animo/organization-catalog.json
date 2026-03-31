@@ -6,9 +6,6 @@
     "sectors": [
       "digital"
     ],
-    "identifiers": {
-      "did": "did:web:animo.id"
-    },
     "website": "https://animo.id",
     "logo": "https://www.google.com/s2/favicons?domain=animo.id&sz=128",
     "country": "NL",
