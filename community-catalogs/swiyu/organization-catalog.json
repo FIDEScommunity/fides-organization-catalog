@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:swiyu",
+    "name": "Swiss Confederation",
+    "sectors": [
+      "public_sector"
+    ],
+    "legalName": "Swiss Government",
+    "website": "https://www.eid.admin.ch/en",
+    "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V",
+    "country": "CH"
+  }
+}

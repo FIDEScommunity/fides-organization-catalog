@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:procivis",
+    "name": "Procivis",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.procivis.ch",
+    "logo": "https://www.google.com/s2/favicons?domain=procivis.ch&sz=128",
+    "country": "CH"
+  }
+}

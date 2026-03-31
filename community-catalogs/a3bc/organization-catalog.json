@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:a3bc",
+    "name": "A3BC",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.a3bc.io/",
+    "country": "FR"
+  }
+}

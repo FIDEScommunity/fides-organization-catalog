@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:innovalor",
+    "name": "Innovalor",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://innovalor.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=innovalor.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

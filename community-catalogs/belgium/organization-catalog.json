@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:belgium",
+    "name": "Belgian Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.belgium.be",
+    "country": "BE"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hak-rein-vos-notarissen",
+    "name": "Hak & Rein Vos Notarissen",
+    "legalName": "Hak & Rein Vos Notarissen",
+    "description": "Notary practice in Lelystad: family, housing, business law, and Spanish inheritance matters.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://hakreinvos.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=hakreinvos.nl&sz=128",
+    "country": "NL"
+  }
+}

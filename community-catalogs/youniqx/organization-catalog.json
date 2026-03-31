@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:youniqx",
+    "name": "youniqx Identity AG",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.youniqx.com",
+    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/f7/85/41f78596-1cab-3d90-4fe9-98977dd360e1/AppIcon-0-1x_U007emarketing-0-6-0-85-220-0.png/400x400ia-75.webp",
+    "country": "AT"
+  }
+}

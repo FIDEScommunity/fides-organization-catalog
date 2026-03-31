@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:talao",
+    "name": "Talao",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://talao.io",
+    "logo": "https://www.google.com/s2/favicons?domain=talao.io&sz=128",
+    "country": "FR",
+    "fidesManifestoSupporter": true
+  }
+}

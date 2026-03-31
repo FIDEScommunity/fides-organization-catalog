@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:quintessence-research",
+    "name": "Quintessence Research",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://quintessenceresearch.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=quintessenceresearch.com&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

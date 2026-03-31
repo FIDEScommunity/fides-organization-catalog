@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:slovakia",
+    "name": "Slovak Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.slovensko.sk/",
+    "country": "SK"
+  }
+}

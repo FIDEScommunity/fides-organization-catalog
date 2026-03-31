@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ilabs",
+    "name": "iLabs",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.ilabs.ai/",
+    "logo": "https://www.google.com/s2/favicons?domain=ilabs.ai&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:portugal",
+    "name": "Portuguese Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://eportugal.gov.pt",
+    "country": "PT"
+  }
+}

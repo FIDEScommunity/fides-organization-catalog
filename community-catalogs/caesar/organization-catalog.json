@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:caesar",
+    "name": "Caesar Groep",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.caesar.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=caesar.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

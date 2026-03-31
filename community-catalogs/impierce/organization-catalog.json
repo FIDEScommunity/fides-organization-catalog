@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:impierce",
+    "name": "Impierce Technologies",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://impierce.com",
+    "logo": "https://www.google.com/s2/favicons?domain=impierce.com&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

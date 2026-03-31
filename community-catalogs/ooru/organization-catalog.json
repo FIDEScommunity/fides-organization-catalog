@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ooru",
+    "name": "Ooru",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://ooru.io/",
+    "country": "IN",
+    "contact": {
+      "email": "info@oouru.io"
+    }
+  }
+}

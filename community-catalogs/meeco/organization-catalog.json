@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:meeco",
+    "name": "Meeco",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.meeco.me",
+    "logo": "https://www.google.com/s2/favicons?domain=meeco.me&sz=128",
+    "country": "AU"
+  }
+}

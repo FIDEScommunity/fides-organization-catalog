@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:india",
+    "name": "India Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.digilocker.gov.in/",
+    "logo": "https://www.google.com/s2/favicons?domain=uidai.gov.in&sz=128",
+    "country": "IN"
+  }
+}

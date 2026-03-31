@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digidentity",
+    "name": "Digidentity",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.digidentity.com",
+    "logo": "https://www.google.com/s2/favicons?domain=digidentity.com&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:forkbomb",
+    "name": "Forkbomb",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://forkbomb.solutions",
+    "logo": "https://www.google.com/s2/favicons?domain=forkbomb.solutions&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

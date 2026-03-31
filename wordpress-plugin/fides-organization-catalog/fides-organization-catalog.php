@@ -1,0 +1,240 @@
+<?php
+/**
+ * Plugin Name: FIDES Organization Catalog
+ * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer.
+ * Version: 1.2.17
+ * Author: FIDES Community
+ * License: Apache-2.0
+ */
+
+if (!defined('ABSPATH')) exit;
+
+class Fides_Organization_Catalog {
+
+    private static $instance = null;
+    private $plugin_url;
+
+    public static function get_instance() {
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+
+    private function __construct() {
+        $this->plugin_url = plugin_dir_url(__FILE__);
+        add_shortcode('fides_organization_catalog', [$this, 'render_shortcode']);
+        add_action('wp_enqueue_scripts', [$this, 'register_assets']);
+        add_action('rest_api_init', [$this, 'register_rest_routes']);
+    }
+
+    /**
+     * Public REST proxy for Blue Pages validations (avoids browser CORS).
+     * GET fides-org-catalog/v1/blue-pages?did=did%3Aweb%3A...
+     */
+    public function register_rest_routes() {
+        register_rest_route('fides-org-catalog/v1', '/blue-pages', [
+            'methods'             => 'GET',
+            'callback'            => [$this, 'rest_blue_pages_validations'],
+            'permission_callback' => '__return_true',
+            'args'                => [
+                'did' => [
+                    'required'          => true,
+                    'type'              => 'string',
+                    'sanitize_callback' => 'sanitize_text_field',
+                ],
+            ],
+        ]);
+    }
+
+    /**
+     * Resolve Blue Pages API base URL (shared with fides-blue-pages when active).
+     */
+    private function get_blue_pages_api_base() {
+        $default = 'https://bluepages.fides.community/api/public/did';
+        if (class_exists('BluePages_Fides_Plugin')) {
+            $default = BluePages_Fides_Plugin::get_api_url();
+        }
+        return apply_filters('fides_org_catalog_blue_pages_api_url', $default);
+    }
+
+    /**
+     * Map raw Blue Pages / gateway errors to short, public-safe copy (no Java stack traces).
+     *
+     * @param string $message   Raw upstream message.
+     * @param int    $http_code HTTP status from upstream, or 0 if unknown.
+     */
+    private function sanitize_blue_pages_client_error_message($message, $http_code = 0) {
+        $message = is_string($message) ? trim($message) : '';
+        $lower   = strtolower($message);
+
+        if (strpos($lower, 'illegalargumentexception') !== false
+            || strpos($lower, 'java.lang.') !== false
+            || strpos($lower, 'nosuchelementexception') !== false
+            || strpos($lower, 'nullpointerexception') !== false) {
+            return 'This DID is not registered in Blue Pages yet. Verified credentials will appear after the organization completes Blue Pages registration.';
+        }
+
+        if ($http_code === 404 || (strpos($lower, 'not found') !== false && strpos($lower, 'did') !== false)) {
+            return 'This DID was not found in Blue Pages.';
+        }
+
+        if ($http_code >= 500 || strpos($lower, 'internal server error') !== false) {
+            return 'Blue Pages could not load this profile. The DID may not be registered yet.';
+        }
+
+        if ($message === '' || $message === 'Upstream error') {
+            return 'This DID is not registered in Blue Pages yet, or the profile could not be loaded.';
+        }
+
+        if (strlen($message) > 200 || strpos($message, '<') !== false || strpos($message, "\n") !== false) {
+            return 'Blue Pages could not load this profile.';
+        }
+
+        return $message;
+    }
+
+    /**
+     * @param WP_REST_Request $request
+     * @return WP_REST_Response|WP_Error
+     */
+    public function rest_blue_pages_validations($request) {
+        $did = (string) $request->get_param('did');
+        $did = trim($did);
+
+        if ($did === '' || strlen($did) > 768) {
+            return new WP_REST_Response([
+                'ok'    => false,
+                'error' => 'Invalid DID parameter.',
+            ], 400);
+        }
+
+        if (stripos($did, 'did:') !== 0) {
+            return new WP_REST_Response([
+                'ok'    => false,
+                'error' => 'Only did: identifiers are allowed.',
+            ], 400);
+        }
+
+        if (preg_match('#\s#', $did)) {
+            return new WP_REST_Response([
+                'ok'    => false,
+                'error' => 'Invalid DID format.',
+            ], 400);
+        }
+
+        $base = rtrim($this->get_blue_pages_api_base(), '/');
+        $url  = $base . '/' . rawurlencode($did) . '/validations';
+
+        $response = wp_remote_get($url, [
+            'timeout' => 20,
+            'headers' => [
+                'Accept' => 'application/json',
+            ],
+        ]);
+
+        if (is_wp_error($response)) {
+            $err = $response->get_error_message();
+            return new WP_REST_Response([
+                'ok'    => false,
+                'error' => $this->sanitize_blue_pages_client_error_message($err, 0),
+            ], 200);
+        }
+
+        $code = (int) wp_remote_retrieve_response_code($response);
+        $body = wp_remote_retrieve_body($response);
+        $json = json_decode($body, true);
+
+        if ($code >= 400) {
+            $raw = '';
+            if (is_array($json)) {
+                $raw = (string) ($json['message'] ?? $json['title'] ?? $json['error'] ?? '');
+            }
+            if ($raw === '') {
+                $raw = 'Upstream error';
+            }
+            $msg = $this->sanitize_blue_pages_client_error_message($raw, $code);
+            return new WP_REST_Response([
+                'ok'       => false,
+                'error'    => $msg,
+                'httpCode' => $code,
+            ], 200);
+        }
+
+        if (!is_array($json)) {
+            return new WP_REST_Response([
+                'ok'    => false,
+                'error' => $this->sanitize_blue_pages_client_error_message('Invalid JSON from Blue Pages API.', $code),
+            ], 200);
+        }
+
+        return new WP_REST_Response([
+            'ok'        => true,
+            'data'      => $json,
+            'fetchedAt' => gmdate('c'),
+        ], 200);
+    }
+
+    public function register_assets() {
+        wp_register_style(
+            'fides-organization-catalog',
+            $this->plugin_url . 'assets/style.css',
+            [],
+            '1.2.17'
+        );
+        wp_register_script(
+            'fides-organization-catalog',
+            $this->plugin_url . 'assets/organization-catalog.js',
+            [],
+            '1.2.17',
+            true
+        );
+    }
+
+    public function render_shortcode($atts) {
+        $atts = shortcode_atts([
+            'show_filters' => 'true',
+            'show_search'  => 'true',
+            'columns'      => '3',
+            'theme'        => 'fides',
+            'github_data_url' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json',
+            'issuer_catalog_url' => 'https://fides.community/ecosystem-explorer/issuer-catalog/',
+            'credential_catalog_url' => 'https://fides.community/community-tools/credential-catalog/',
+            'wallet_catalog_url' => 'https://fides.community/community-tools/personal-wallets/',
+            'rp_catalog_url' => 'https://fides.community/ecosystem-explorer/relying-party-catalog/',
+            /** Base URL for “Open full profile” (trailing slash optional). Empty = home_url('/community-tools/blue-pages/'). */
+            'blue_pages_profile_base_url' => '',
+        ], $atts, 'fides_organization_catalog');
+
+        wp_enqueue_style('fides-organization-catalog');
+        wp_enqueue_script('fides-organization-catalog');
+
+        $bp_profile_base = trim((string) $atts['blue_pages_profile_base_url']);
+        if ($bp_profile_base === '') {
+            $bp_profile_base = trailingslashit(home_url('/community-tools/blue-pages'));
+        } else {
+            $bp_profile_base = trailingslashit(esc_url_raw($bp_profile_base));
+        }
+
+        wp_localize_script('fides-organization-catalog', 'fidesOrganizationCatalog', [
+            'pluginUrl'            => $this->plugin_url,
+            'githubDataUrl'        => $atts['github_data_url'],
+            'issuerCatalogUrl'     => $atts['issuer_catalog_url'],
+            'credentialCatalogUrl' => $atts['credential_catalog_url'],
+            'walletCatalogUrl'     => $atts['wallet_catalog_url'],
+            'rpCatalogUrl'         => $atts['rp_catalog_url'],
+            'bluePagesRestUrl'     => rest_url('fides-org-catalog/v1/blue-pages'),
+            'bluePagesProfileBaseUrl' => $bp_profile_base,
+        ]);
+
+        return sprintf(
+            '<div id="fides-org-catalog-root" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s"><p>Loading Organization Catalog…</p></div>',
+            esc_attr($atts['show_filters']),
+            esc_attr($atts['show_search']),
+            esc_attr($atts['columns']),
+            esc_attr($atts['theme'])
+        );
+    }
+}
+
+Fides_Organization_Catalog::get_instance();

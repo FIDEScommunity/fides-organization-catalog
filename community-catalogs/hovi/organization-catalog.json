@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hovi",
+    "name": "Hovi",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.hovi.id/",
+    "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+    "country": "FI",
+    "fidesManifestoSupporter": true,
+    "contact": {
+      "email": "contact@hovi.id"
+    }
+  }
+}

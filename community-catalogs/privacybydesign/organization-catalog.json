@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:privacybydesign",
+    "name": "Privacy by Design Foundation",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://privacybydesign.foundation",
+    "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128",
+    "country": "NL"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:germany",
+    "name": "German Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.sprind.org/eudi-wallet",
+    "country": "DE"
+  }
+}

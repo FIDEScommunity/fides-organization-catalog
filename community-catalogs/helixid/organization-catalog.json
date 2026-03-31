@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:helixid",
+    "name": "Blockchain HELIX AG",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://helixid.io",
+    "country": "DE",
+    "contact": {
+      "email": "oliver@blockchain-helix.com"
+    }
+  }
+}

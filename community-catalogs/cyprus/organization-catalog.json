@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cyprus",
+    "name": "Government of Cyprus",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.cygov.gov.cy/",
+    "country": "CY"
+  }
+}

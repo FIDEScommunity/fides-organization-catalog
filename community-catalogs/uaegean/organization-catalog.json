@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:uaegean",
+    "name": "University of the Aegean",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.aegean.gr",
+    "logo": "https://www.google.com/s2/favicons?domain=aegean.gr&sz=128",
+    "country": "GR"
+  }
+}

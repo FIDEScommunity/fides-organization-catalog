@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:docklabs",
+    "name": "Dock Labs AG",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.dock.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=dock.io&sz=128",
+    "country": "CH"
+  }
+}

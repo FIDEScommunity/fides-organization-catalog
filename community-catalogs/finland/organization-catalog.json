@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:finland",
+    "name": "Finnish Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://dvv.fi/en/european-digital-identity-wallet",
+    "country": "FI"
+  }
+}

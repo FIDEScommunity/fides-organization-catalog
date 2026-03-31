@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mattr",
+    "name": "MATTR",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://mattr.global",
+    "logo": "https://www.google.com/s2/favicons?domain=mattr.global&sz=128",
+    "country": "NZ"
+  }
+}

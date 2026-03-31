@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:spherity",
+    "name": "Spherity",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.spherity.com",
+    "logo": "https://www.google.com/s2/favicons?domain=spherity.com&sz=128",
+    "country": "DE",
+    "fidesManifestoSupporter": true
+  }
+}

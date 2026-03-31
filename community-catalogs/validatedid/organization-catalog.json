@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:validatedid",
+    "name": "Validated ID",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.validatedid.com",
+    "logo": "https://www.google.com/s2/favicons?domain=validatedid.com&sz=128",
+    "country": "ES"
+  }
+}

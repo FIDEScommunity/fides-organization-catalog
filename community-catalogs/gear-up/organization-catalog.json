@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:gear-up",
+    "name": "Gear Up",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.gear-up.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=gear-up.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

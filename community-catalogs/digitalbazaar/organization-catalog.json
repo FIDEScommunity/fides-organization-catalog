@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digitalbazaar",
+    "name": "Digital Bazaar",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.digitalbazaar.com",
+    "logo": "https://www.google.com/s2/favicons?domain=digitalbazaar.com&sz=128",
+    "country": "US"
+  }
+}

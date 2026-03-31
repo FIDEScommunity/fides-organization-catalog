@@ -1,0 +1,43 @@
+{
+  "name": "fides-organization-catalog",
+  "version": "0.1.0",
+  "description": "FIDES Community Organization Catalog - Centralized overview of organizations and their ecosystem roles",
+  "main": "dist/index.js",
+  "scripts": {
+    "crawl": "tsx src/crawler/index.ts",
+    "sync-local": "bash scripts/sync-plugin-local.sh",
+    "crawl:sync": "npm run crawl && npm run sync-local",
+    "build": "tsc",
+    "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/organization-catalog.schema.json -d 'community-catalogs/**/organization-catalog.json'",
+    "seed": "tsx scripts/seed-from-catalogs.ts",
+    "check-links": "tsx scripts/check-links.ts",
+    "test": "node --import tsx --test src/crawler/matching.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FIDEScommunity/fides-organization-catalog.git"
+  },
+  "keywords": [
+    "organization",
+    "catalog",
+    "verifiable-credentials",
+    "decentralized-identity",
+    "fides"
+  ],
+  "author": "FIDES Community",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vercel/node": "^3.0.0",
+    "ajv-cli": "^5.0.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2"
+  }
+}

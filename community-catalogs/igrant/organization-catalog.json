@@ -1,0 +1,19 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:igrant",
+    "name": "iGrant.io",
+    "sectors": [
+      "digital"
+    ],
+    "identifiers": {
+      "did": "did:web:igrant.io"
+    },
+    "website": "https://igrant.io",
+    "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+    "country": "SE",
+    "contact": {
+      "email": "support@igrant.io"
+    }
+  }
+}

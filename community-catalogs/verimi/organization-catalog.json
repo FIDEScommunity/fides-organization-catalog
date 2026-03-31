@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:verimi",
+    "name": "Verimi GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://verimi.de/",
+    "country": "DE"
+  }
+}

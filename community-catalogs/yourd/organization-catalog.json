@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:yourd",
+    "name": "YourD",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://yourd.xyz",
+    "logo": "https://www.google.com/s2/favicons?domain=yourd.xyz&sz=128",
+    "country": "KR",
+    "fidesManifestoSupporter": true
+  }
+}

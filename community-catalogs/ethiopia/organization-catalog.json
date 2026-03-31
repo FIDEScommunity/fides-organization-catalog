@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ethiopia",
+    "name": "National ID Program (NIDP), Ethiopia",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://id.gov.et/",
+    "logo": "https://www.google.com/s2/favicons?domain=id.gov.et&sz=128",
+    "country": "ET"
+  }
+}

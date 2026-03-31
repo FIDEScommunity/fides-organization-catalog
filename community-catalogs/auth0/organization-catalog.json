@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:auth0",
+    "name": "Auth0 (Okta)",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://auth0.com",
+    "logo": "https://www.google.com/s2/favicons?domain=auth0.com&sz=128",
+    "country": "US"
+  }
+}

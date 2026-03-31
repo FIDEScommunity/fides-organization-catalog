@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:toppan",
+    "name": "Toppan",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.toppan.com",
+    "logo": "https://www.google.com/s2/favicons?domain=toppan.com&sz=128",
+    "country": "JP"
+  }
+}

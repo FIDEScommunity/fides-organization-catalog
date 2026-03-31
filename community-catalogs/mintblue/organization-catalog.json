@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mintblue",
+    "name": "mintBlue",
+    "description": "Convergence infrastructure for enterprises and governments: verifiable data sharing, compliance automation, and high-volume secured processing.",
+    "sectors": [
+      "digital",
+      "finance"
+    ],
+    "website": "https://mintblue.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=mintblue.com&sz=128",
+    "country": "NL"
+  }
+}

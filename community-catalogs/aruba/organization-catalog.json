@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aruba",
+    "name": "Aruba IT",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.aruba.io",
+    "logo": "https://www.aruba.io/assets/images/logo.svg",
+    "country": "IT"
+  }
+}

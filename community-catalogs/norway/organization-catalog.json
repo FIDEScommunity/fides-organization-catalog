@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:norway",
+    "name": "Norwegian Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.digdir.no/",
+    "country": "NO"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:northernblock",
+    "name": "Northern Block",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://northernblock.io",
+    "logo": "https://www.google.com/s2/favicons?domain=northernblock.io&sz=128",
+    "country": "CA"
+  }
+}

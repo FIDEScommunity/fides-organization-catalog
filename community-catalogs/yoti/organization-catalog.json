@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:yoti",
+    "name": "Yoti Ltd.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.yoti.com/",
+    "country": "GB"
+  }
+}

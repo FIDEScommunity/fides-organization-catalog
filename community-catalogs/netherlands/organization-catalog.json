@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:netherlands",
+    "name": "Dutch Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.nldigitalgovernment.nl/",
+    "country": "NL"
+  }
+}

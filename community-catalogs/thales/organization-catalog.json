@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:thales",
+    "name": "Thales",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.thalesgroup.com",
+    "logo": "https://digid-eks.dev.citizen-online.com/issuer-portal/assets/img/Thales.svg",
+    "country": "FR"
+  }
+}

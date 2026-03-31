@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:innotractor",
+    "name": "Innotractor",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://innotractor.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=innotractor.com&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:owf",
+    "name": "OpenWallet Foundation",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://openwallet.foundation/",
+    "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4",
+    "country": "US"
+  }
+}

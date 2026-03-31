@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:nijmegen",
+    "name": "City of Nijmegen",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.nijmegen.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128",
+    "country": "NL"
+  }
+}

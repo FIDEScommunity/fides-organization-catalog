@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:spruce",
+    "name": "Spruce Systems, Inc. (SpruceID)",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://spruceid.com/products/sprucekit",
+    "logo": "https://www.google.com/s2/favicons?domain=spruceid.com&sz=128",
+    "country": "US"
+  }
+}

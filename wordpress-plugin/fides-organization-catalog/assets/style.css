@@ -1,0 +1,2701 @@
+/**
+ * FIDES Organization Catalog - WordPress Plugin Styles
+ * Based on the FIDES Issuer Catalog design system.
+ */
+
+/* CSS Variables */
+#fides-org-catalog-root {
+  --fides-bg-primary: #0f172a;
+  --fides-bg-secondary: #1e293b;
+  --fides-bg-card: rgba(30, 41, 59, 0.8);
+  --fides-text-primary: #f1f5f9;
+  --fides-text-secondary: #94a3b8;
+  --fides-text-muted: #64748b;
+  --fides-border: rgba(255, 255, 255, 0.1);
+  --fides-accent: #3b82f6;
+  --fides-accent-hover: #60a5fa;
+  --fides-success: #22c55e;
+  --fides-warning: #f59e0b;
+  --fides-radius: 12px;
+  --fides-radius-lg: 16px;
+}
+
+#fides-org-catalog-root[data-theme="fides"] {
+  --fides-bg-primary: #EAEAEE;
+  --fides-bg-secondary: #ffffff;
+  --fides-bg-card: #ffffff;
+  --fides-text-primary: #000000;
+  --fides-text-secondary: #374151;
+  --fides-text-muted: #6b7280;
+  --fides-border: rgba(0, 0, 0, 0.12);
+  --fides-accent: #0A6EF3;
+  --fides-accent-hover: #0858c4;
+  --fides-success: #059669;
+  --fides-warning: #d97706;
+}
+
+#fides-org-catalog-root[data-theme="light"] {
+  --fides-bg-primary: #f8fafc;
+  --fides-bg-secondary: #ffffff;
+  --fides-bg-card: #ffffff;
+  --fides-text-primary: #1e293b;
+  --fides-text-secondary: #475569;
+  --fides-text-muted: #94a3b8;
+  --fides-border: rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+#fides-org-catalog-root {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--fides-bg-primary);
+  color: var(--fides-text-primary);
+  padding: 2rem;
+  border-radius: var(--fides-radius-lg);
+  min-height: 400px;
+  overflow-x: hidden;
+}
+
+/* Main layout */
+.fides-main-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.fides-main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Sidebar / Filters */
+.fides-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: var(--fides-radius);
+}
+
+.fides-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--fides-border);
+  background: var(--fides-bg-secondary);
+}
+
+.fides-sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--fides-text-primary);
+  font-size: 0.875rem;
+}
+
+.fides-sidebar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fides-sidebar-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--fides-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.fides-sidebar-close:hover {
+  background: var(--fides-border);
+  color: var(--fides-text-primary);
+}
+
+.fides-sidebar-content {
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.fides-quick-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--fides-border);
+}
+
+.fides-quick-filters-title {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fides-text-muted);
+}
+
+/* Filter option counts (n) next to each sidebar option — match issuer/credential catalogs */
+.fides-filter-option-count {
+  margin-left: 0.25em;
+  font-size: 0.875em;
+  color: var(--fides-accent);
+}
+
+.fides-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.375rem;
+  background: var(--fides-accent);
+  border-radius: 9999px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.fides-filter-count.hidden { visibility: hidden; }
+
+.fides-clear-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--fides-text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.fides-clear-all:hover {
+  color: var(--fides-text-primary);
+}
+
+.fides-clear-all.hidden { visibility: hidden; }
+
+.fides-filter-group {
+  min-width: 0;
+}
+
+.fides-filter-group.collapsible {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  transition: padding 0.2s ease;
+}
+
+.fides-filter-group.collapsible:last-child {
+  margin-bottom: 0;
+}
+
+.fides-filter-group.collapsible.collapsed {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fides-filter-label-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--fides-text-primary);
+  transition: color 0.2s;
+  gap: 0.375rem;
+}
+
+.fides-filter-label-toggle:hover {
+  color: var(--fides-accent);
+}
+
+.fides-filter-label-toggle .fides-filter-label {
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fides-filter-label-toggle svg {
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.fides-filter-group.collapsed .fides-filter-label-toggle svg {
+  transform: rotate(-90deg);
+}
+
+.fides-filter-active-indicator {
+  width: 0;
+  min-width: 0;
+  height: 6px;
+  background: var(--fides-accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: width 0.2s, opacity 0.2s;
+}
+
+.fides-filter-group.has-active .fides-filter-active-indicator {
+  width: 6px;
+  opacity: 1;
+}
+
+.fides-filter-group.collapsible .fides-filter-options {
+  margin-top: 0.25rem;
+  margin-left: 0;
+  padding-left: 0;
+  overflow: hidden;
+  max-height: 1000px;
+  transition: max-height 0.3s ease, margin-top 0.2s ease, opacity 0.2s ease;
+  opacity: 1;
+}
+
+.fides-filter-group.collapsed .fides-filter-options {
+  max-height: 0;
+  margin-top: 0;
+  opacity: 0;
+}
+
+.fides-filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.125rem;
+}
+
+.fides-filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  cursor: pointer;
+  padding: 0.0625rem 0;
+  margin: 0;
+  line-height: 1.3;
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  transition: color 0.15s;
+}
+
+.fides-filter-checkbox:hover {
+  color: var(--fides-text-primary);
+}
+
+.fides-filter-checkbox input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: var(--fides-accent);
+  cursor: pointer;
+}
+
+.fides-filter-checkbox input[type="checkbox"]:checked + span {
+  color: var(--fides-text-primary);
+}
+
+/* Results bar */
+.fides-results-bar {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap !important;
+  gap: 0.5rem;
+}
+
+.fides-results-bar .fides-sort-label {
+  margin-left: auto;
+}
+
+.fides-topbar-search {
+  flex: 1;
+  min-width: 160px;
+  max-width: 480px;
+  height: 2.25rem;
+}
+
+.fides-topbar-search .fides-search-input {
+  height: 2.25rem !important;
+  padding: 0 2.25rem 0 2.25rem !important;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  border-radius: 6px !important;
+  background: var(--fides-bg-card) !important;
+  box-sizing: border-box;
+  border: 1px solid var(--fides-border) !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.fides-topbar-search .fides-search-input:focus,
+.fides-topbar-search .fides-search-input:focus-visible {
+  outline: none !important;
+  border-color: var(--fides-accent) !important;
+  box-shadow: 0 0 0 3px rgba(10, 110, 243, 0.15) !important;
+}
+
+.fides-search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fides-search-icon {
+  position: absolute;
+  left: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--fides-text-muted);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fides-search-input {
+  width: 100%;
+  padding: 0.875rem 2.75rem 0.875rem 3rem !important;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: var(--fides-radius);
+  color: var(--fides-text-primary);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+  text-indent: 0;
+}
+
+.fides-search-input:focus {
+  outline: none;
+  border-color: var(--fides-accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.fides-search-input::placeholder {
+  color: var(--fides-text-muted);
+}
+
+.fides-search-clear {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: var(--fides-bg-card);
+  border: 1px solid var(--fides-border);
+  border-radius: 50%;
+  color: var(--fides-text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.fides-search-clear:hover {
+  background: var(--fides-accent);
+  border-color: var(--fides-accent);
+  color: white;
+}
+
+.fides-search-clear.hidden { display: none; }
+
+.fides-results-count {
+  color: var(--fides-text-secondary);
+  font-size: 0.875rem;
+}
+
+.fides-sort-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--fides-text-secondary);
+  height: 2.25rem;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.fides-sort-select {
+  height: 2.25rem;
+  padding: 0 1.75rem 0 0.5rem;
+  font-size: 0.875rem;
+  line-height: 2.25rem;
+  color: var(--fides-text-primary);
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.fides-mobile-filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: var(--fides-radius);
+  color: var(--fides-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+@media (min-width: 1024px) {
+  .fides-mobile-filter-toggle {
+    display: none;
+  }
+}
+
+.fides-mobile-filter-toggle:hover {
+  background: var(--fides-bg-card);
+  border-color: var(--fides-text-muted);
+}
+
+/* KPI cards */
+.fides-kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#fides-org-catalog-root .fides-kpi-row,
+#fides-org-catalog-root .fides-kpi-row * {
+  cursor: default !important;
+}
+
+.fides-kpi-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--fides-border);
+  border-radius: 10px;
+  background: var(--fides-bg-secondary);
+  color: var(--fides-text-primary);
+  text-align: left;
+  min-width: 0;
+  cursor: default;
+}
+
+#fides-org-catalog-root .fides-kpi-card:hover,
+#fides-org-catalog-root .fides-kpi-card:focus,
+#fides-org-catalog-root .fides-kpi-card:focus-visible,
+#fides-org-catalog-root .fides-kpi-card:focus-within {
+  border-color: var(--fides-border) !important;
+  transform: none !important;
+  box-shadow: none !important;
+  background: var(--fides-bg-secondary) !important;
+  color: var(--fides-text-primary) !important;
+  cursor: default !important;
+}
+
+.fides-kpi-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.fides-kpi-label {
+  font-size: 0.78rem;
+  color: var(--fides-text-secondary);
+}
+
+/* View toggle */
+.fides-view-toggle {
+  display: flex;
+  border: 1px solid var(--fides-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fides-view-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--fides-bg-secondary);
+  border: none;
+  color: var(--fides-text-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.fides-view-btn.active {
+  background: var(--fides-accent);
+  color: #fff;
+}
+
+/* List view: hide toggle below 1024px — JS effectiveView() keeps card layout */
+@media (max-width: 1023px) {
+  #fides-org-catalog-root .fides-view-toggle {
+    display: none;
+  }
+}
+
+/* ---- Organization catalog list / table view (parity with issuer & credential catalogs) ---- */
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--fides-border);
+  border-radius: var(--fides-radius);
+  overflow: hidden;
+}
+
+/*
+ * Columns: icon | organization | badges+flag (max-content — no “Country” header) | counts | updated
+ */
+#fides-org-catalog-root .fides-org-list-header,
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) max-content 52px 52px 52px minmax(0, 110px);
+  gap: 0.75rem;
+  padding: 0.625rem 1rem;
+  align-items: center;
+}
+
+#fides-org-catalog-root .fides-org-list-header {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fides-text-muted);
+  background: var(--fides-bg-secondary);
+  border-bottom: 1px solid var(--fides-border);
+}
+
+#fides-org-catalog-root .fides-org-grid:not([data-view="list"]) .fides-org-list-header {
+  display: none;
+}
+
+#fides-org-catalog-root .fides-list-col-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+}
+
+#fides-org-catalog-root .fides-list-col-right svg {
+  width: 13px;
+  height: 13px;
+}
+
+#fides-org-catalog-root .fides-org-list-header-updated {
+  padding-left: 0.75rem;
+}
+
+#fides-org-catalog-root .fides-org-list-header-status {
+  min-width: 0;
+}
+
+#fides-org-catalog-root .fides-row-list-status {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card {
+  min-height: unset;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--fides-border);
+  box-shadow: none;
+  background: var(--fides-bg-card);
+  transition: background 0.15s;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card:last-child {
+  border-bottom: none;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card:nth-child(even) {
+  background: var(--fides-bg-primary);
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card:hover {
+  box-shadow: none;
+  background: rgba(59, 130, 246, 0.04);
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card .fides-credential-header,
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card .fides-wallet-body,
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card .fides-wallet-footer {
+  display: none;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  color: var(--fides-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-name-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--fides-text-primary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-name-id {
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  color: var(--fides-text-secondary);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Must set display — issuer/credential catalog CSS hides .fides-row-environment globally */
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-environment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  min-width: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-flag {
+  font-size: 1.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+  justify-content: flex-start;
+}
+
+/* Outline badges — same language as grid card footer (.fides-org-footer-badge) */
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1.5px solid currentColor;
+  cursor: help;
+  pointer-events: auto;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon--manifesto {
+  color: var(--fides-success);
+  border-color: var(--fides-success);
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon--bp {
+  color: var(--fides-accent);
+  border-color: var(--fides-accent);
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon svg {
+  width: 10px;
+  height: 10px;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-count {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--fides-text-primary);
+}
+
+/* Must set display — other catalog CSS may hide .fides-row-updated globally */
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-updated {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.75rem;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] > .fides-empty {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border: none;
+}
+
+/* Card grid */
+.fides-org-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.fides-org-grid[data-columns="1"] { grid-template-columns: 1fr; }
+.fides-org-grid[data-columns="2"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.fides-org-grid[data-columns="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.fides-org-grid[data-columns="4"] { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Grid view only — list uses flex on .fides-org-grid[data-view="list"] */
+/* Match fides-credential-catalog: cap columns by main content width */
+@media (min-width: 1400px) {
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="3"],
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="4"] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="3"],
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="4"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1023px) {
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="3"],
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="4"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="2"],
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="3"],
+  #fides-org-catalog-root .fides-main-content .fides-org-grid[data-view="grid"][data-columns="4"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Cards */
+.fides-org-card {
+  background: var(--fides-bg-card);
+  border: 1px solid var(--fides-border);
+  border-radius: var(--fides-radius-lg);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.fides-org-card:hover .fides-view-details {
+  text-decoration: underline;
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-org-card,
+#fides-org-catalog-root[data-theme="light"] .fides-org-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Same card hover shadow as issuer catalog (fides/light) — no extra colored glow */
+#fides-org-catalog-root[data-theme="fides"] .fides-org-card:hover,
+#fides-org-catalog-root[data-theme="light"] .fides-org-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Card header — gradient background like issuer catalog; top radius matches card (parent uses overflow: hidden) */
+.fides-org-card .fides-credential-header {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--fides-border);
+  min-height: 84px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  border-radius: var(--fides-radius-lg) var(--fides-radius-lg) 0 0;
+}
+
+.fides-org-card .fides-credential-subject-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  color: var(--fides-accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.fides-org-card .fides-credential-subject-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.fides-org-card-logo-wrap {
+  position: relative;
+  flex-shrink: 0;
+  align-self: flex-start;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* Grid card footer: outline badges left, View details right */
+.fides-org-card .fides-org-card-footer-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.45rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.fides-org-card .fides-org-card-footer-start .fides-wallet-links {
+  flex: 1;
+  min-width: 0;
+}
+
+.fides-org-card-footer-badges {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.fides-org-footer-badge {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1.5px solid currentColor;
+  cursor: help;
+  pointer-events: auto;
+}
+
+.fides-org-footer-badge--manifesto {
+  color: var(--fides-success);
+  border-color: var(--fides-success);
+}
+
+.fides-org-footer-badge--bp {
+  color: var(--fides-accent);
+  border-color: var(--fides-accent);
+}
+
+.fides-org-footer-badge svg {
+  width: 10px;
+  height: 10px;
+}
+
+/* FIDES Manifesto supporter: stronger border + header tint (grid); list uses inset bar */
+#fides-org-catalog-root .fides-org-card--manifesto-supporter {
+  border-width: 2px;
+  border-color: rgba(34, 197, 94, 0.82);
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.12), 0 1px 3px rgba(34, 197, 94, 0.08);
+}
+
+#fides-org-catalog-root .fides-org-card--manifesto-supporter .fides-credential-header {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.38) 0%, rgba(59, 130, 246, 0.18) 100%);
+  border-bottom-color: rgba(34, 197, 94, 0.5);
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-org-card--manifesto-supporter,
+#fides-org-catalog-root[data-theme="light"] .fides-org-card--manifesto-supporter {
+  border-color: rgba(5, 150, 105, 0.78);
+  box-shadow: 0 0 0 1px rgba(5, 150, 105, 0.14), 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(5, 150, 105, 0.1);
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-org-card--manifesto-supporter:hover,
+#fides-org-catalog-root[data-theme="light"] .fides-org-card--manifesto-supporter:hover {
+  box-shadow: 0 0 0 1px rgba(5, 150, 105, 0.22), 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1), 0 4px 18px -4px rgba(5, 150, 105, 0.22);
+}
+
+#fides-org-catalog-root:not([data-theme="fides"]):not([data-theme="light"]) .fides-org-card--manifesto-supporter:hover {
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.22), 0 12px 28px -8px rgba(34, 197, 94, 0.18), 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-org-card--manifesto-supporter .fides-credential-header,
+#fides-org-catalog-root[data-theme="light"] .fides-org-card--manifesto-supporter .fides-credential-header {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.3) 0%, rgba(10, 110, 243, 0.16) 100%);
+  border-bottom-color: rgba(5, 150, 105, 0.45);
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card--manifesto-supporter {
+  box-shadow: inset 5px 0 0 var(--fides-success);
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card--manifesto-supporter:hover {
+  box-shadow: inset 5px 0 0 var(--fides-success);
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-org-card .fides-credential-subject-icon,
+#fides-org-catalog-root[data-theme="light"] .fides-org-card .fides-credential-subject-icon {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+.fides-org-card .fides-credential-header-text {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.fides-org-card .fides-credential-name {
+  margin: 0 0 0.2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--fides-text-primary);
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fides-org-card .fides-credential-provider {
+  margin: 0;
+  color: var(--fides-text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Card body */
+.fides-wallet-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fides-wallet-updated {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+  line-height: 1.3;
+}
+
+/* Card count block — bordered container like issuer catalog */
+.fides-card-counts {
+  display: flex;
+  gap: 0;
+  margin-top: auto;
+  border: 1px solid var(--fides-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fides-card-count-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.625rem 0.5rem 0.5rem;
+  background: var(--fides-bg-secondary);
+}
+
+.fides-card-count-item + .fides-card-count-item {
+  border-left: 1px solid var(--fides-border);
+}
+
+.fides-card-count-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--fides-text-primary);
+}
+
+.fides-card-count-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fides-text-muted);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.15;
+}
+
+/* Light theme overrides for count block */
+#fides-org-catalog-root[data-theme="fides"] .fides-card-count-item,
+#fides-org-catalog-root[data-theme="light"] .fides-card-count-item {
+  background: #f8fafc;
+}
+#fides-org-catalog-root[data-theme="fides"] .fides-card-count-item + .fides-card-count-item,
+#fides-org-catalog-root[data-theme="light"] .fides-card-count-item + .fides-card-count-item {
+  border-left-color: #e2e8f0;
+}
+#fides-org-catalog-root[data-theme="fides"] .fides-card-counts,
+#fides-org-catalog-root[data-theme="light"] .fides-card-counts {
+  border-color: #e2e8f0;
+}
+
+/* Card footer */
+.fides-wallet-footer {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--fides-border);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  margin-top: auto;
+}
+
+#fides-org-catalog-root .fides-org-grid[data-view="grid"] .fides-org-card .fides-wallet-footer {
+  border-radius: 0 0 var(--fides-radius-lg) var(--fides-radius-lg);
+}
+
+.fides-wallet-links {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  min-width: 0;
+}
+
+.fides-view-details {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--fides-accent);
+  font-weight: 500;
+}
+
+.fides-empty {
+  text-align: center;
+  color: var(--fides-text-muted);
+  padding: 3rem;
+  grid-column: 1 / -1;
+}
+
+/* Modal */
+/* Modal overlay — matches issuer catalog */
+.fides-modal-overlay {
+  --fides-bg-primary: #0f172a;
+  --fides-bg-secondary: #1e293b;
+  --fides-bg-card: rgba(30, 41, 59, 0.8);
+  --fides-text-primary: #f1f5f9;
+  --fides-text-secondary: #94a3b8;
+  --fides-text-muted: #64748b;
+  --fides-border: rgba(255, 255, 255, 0.1);
+  --fides-accent: #3b82f6;
+  --fides-accent-hover: #60a5fa;
+  --fides-radius: 12px;
+  --fides-radius-lg: 16px;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--fides-text-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fides-modal-fade-in 0.2s ease;
+}
+
+.fides-modal-overlay[data-theme="light"] {
+  --fides-bg-primary: #f8fafc;
+  --fides-bg-secondary: #ffffff;
+  --fides-bg-card: #ffffff;
+  --fides-text-primary: #1e293b;
+  --fides-text-secondary: #475569;
+  --fides-text-muted: #94a3b8;
+  --fides-border: rgba(0, 0, 0, 0.1);
+  --fides-accent: #3b82f6;
+  --fides-accent-hover: #60a5fa;
+}
+
+.fides-modal-overlay[data-theme="fides"] {
+  --fides-bg-primary: #EAEAEE;
+  --fides-bg-secondary: #ffffff;
+  --fides-bg-card: #ffffff;
+  --fides-text-primary: #000000;
+  --fides-text-secondary: #374151;
+  --fides-text-muted: #6b7280;
+  --fides-border: rgba(0, 0, 0, 0.12);
+  --fides-accent: #0A6EF3;
+  --fides-accent-hover: #0858c4;
+}
+
+.fides-modal-overlay.closing {
+  animation: fides-modal-fade-out 0.2s ease forwards;
+}
+
+@keyframes fides-modal-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fides-modal-fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Modal container */
+.fides-modal {
+  background: var(--fides-bg-secondary, #1e293b);
+  border-radius: var(--fides-radius-lg, 16px);
+  max-width: 900px;
+  width: 95%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  animation: fides-modal-slide-up 0.3s ease;
+}
+
+.fides-modal-overlay.closing .fides-modal {
+  animation: fides-modal-slide-down 0.2s ease forwards;
+}
+
+@keyframes fides-modal-slide-up {
+  from { opacity: 0; transform: translateY(20px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fides-modal-slide-down {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to { opacity: 0; transform: translateY(20px) scale(0.98); }
+}
+
+/* Modal header */
+.fides-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid var(--fides-border, rgba(255, 255, 255, 0.1));
+  flex-shrink: 0;
+}
+
+.fides-modal-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.fides-modal-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: var(--fides-bg-primary, #0f172a);
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.fides-modal-logo-placeholder {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--fides-accent, #3b82f6), #8b5cf6);
+  color: white;
+  flex-shrink: 0;
+}
+
+.fides-modal-logo-placeholder svg {
+  width: 32px;
+  height: 32px;
+}
+
+.fides-modal-title-wrap {
+  min-width: 0;
+}
+
+.fides-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  color: var(--fides-text-primary, #f1f5f9);
+  line-height: 1.2;
+}
+
+.fides-modal-provider {
+  font-size: 0.9375rem;
+  color: var(--fides-text-secondary, #94a3b8);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.fides-modal-provider svg {
+  flex-shrink: 0;
+}
+
+.fides-modal-provider span {
+  min-width: 0;
+}
+
+.fides-modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+  margin: -0.5rem -0.5rem 0 0;
+}
+
+.fides-modal-copy-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--fides-text-secondary, #94a3b8);
+  cursor: pointer;
+  padding: 0.375rem;
+  margin: 0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.fides-modal-copy-link:hover {
+  background: var(--fides-border, rgba(255, 255, 255, 0.1));
+  color: var(--fides-text-primary, #f1f5f9);
+  opacity: 1;
+}
+
+.fides-modal-copy-link.copied {
+  color: var(--fides-accent, #22c55e);
+  opacity: 1;
+}
+
+.fides-modal-copy-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.fides-modal-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--fides-text-primary, #f1f5f9);
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.fides-modal-close:hover {
+  background: var(--fides-border, rgba(255, 255, 255, 0.15));
+  color: var(--fides-text-primary, #ffffff);
+}
+
+/* Modal body */
+.fides-modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.fides-modal-intro {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.fides-modal-description {
+  margin: 0;
+  color: var(--fides-text-secondary, #94a3b8);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-modal-provider,
+.fides-modal-overlay[data-theme="light"] .fides-modal-provider,
+.fides-modal-overlay[data-theme="fides"] .fides-modal-description,
+.fides-modal-overlay[data-theme="light"] .fides-modal-description {
+  color: #374151;
+}
+
+.fides-modal-provider-did {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+  word-break: break-all;
+}
+
+/* Ecosystem model — matches issuer/credential catalog */
+.fides-modal-ecosystem-body {
+  padding: 0 !important;
+  display: block !important;
+  border-top: none !important;
+}
+
+.fides-modal-ecosystem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--fides-bg-primary);
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+  --fides-eco-slot-surface: var(--fides-bg-secondary);
+}
+
+.fides-modal-overlay[data-theme="light"] .fides-modal-ecosystem,
+.fides-modal-overlay[data-theme="fides"] .fides-modal-ecosystem {
+  --fides-eco-slot-surface: #f8fafc;
+}
+
+.fides-modal-ecosystem .fides-eco-wallet-box {
+  background: var(--fides-eco-slot-surface);
+}
+
+.fides-modal-overlay .fides-modal-ecosystem .fides-eco-wallet-box {
+  border: 1px solid var(--fides-border);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.fides-modal-overlay .fides-modal-ecosystem .fides-eco-wallet-box.fides-eco-stat-box--static {
+  border-color: var(--fides-border);
+  transition: none;
+}
+
+.fides-eco-wallet-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fides-eco-wallet-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1.25rem;
+  min-width: 200px;
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: 8px;
+  cursor: default;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+/* Clickable wallet summary — same glow treatment as credential catalog ecosystem */
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-box--link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-box--link:hover {
+  border-color: #7c3aed !important;
+  background: rgba(124, 58, 237, 0.06) !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.3) !important;
+}
+
+.fides-eco-wallet-label {
+  font-size: 0.8125rem;
+  color: var(--fides-text-secondary);
+  font-weight: 500;
+}
+
+.fides-eco-wallet-count {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--fides-text-primary);
+  line-height: 1;
+}
+
+.fides-eco-wallet-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fides-text-muted);
+  line-height: 1;
+  margin: 0.25rem 0;
+}
+
+.fides-eco-wallet-connector svg {
+  width: 18px;
+  height: 18px;
+}
+
+.fides-eco-main-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.25rem 0.75rem;
+}
+
+.fides-eco-main-row > .fides-eco-col {
+  padding: 0.25rem 0;
+  min-width: 0;
+}
+
+.fides-eco-main-row > .fides-eco-col.fides-eco-col-center {
+  padding: 0;
+}
+
+.fides-eco-col {
+  padding: 0.625rem 0.75rem;
+  min-width: 0;
+}
+
+.fides-eco-col-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.fides-eco-center-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.3rem;
+  background: var(--fides-bg-primary);
+  border: 2px solid var(--fides-accent);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.08);
+}
+
+/* Org catalog: credential summary only — same footprint as issuer/RP stat boxes */
+.fides-org-ecosystem .fides-eco-main-row {
+  align-items: stretch;
+}
+
+/* Column layout: stretch children so center card matches stat box width (avoids shrink-to-content from align-items: center). */
+.fides-org-ecosystem .fides-eco-col-center {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+}
+
+.fides-org-ecosystem .fides-eco-center-card--text-only {
+  border: 1px solid var(--fides-border);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  padding: 0.65rem 1rem 0.85rem;
+  min-height: 5.5rem;
+  width: 100%;
+  max-width: 260px;
+  min-width: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: var(--fides-eco-slot-surface, var(--fides-bg-secondary));
+  justify-content: center;
+  gap: 0.55rem;
+  outline: none;
+}
+
+.fides-org-ecosystem .fides-eco-center-card--text-only:focus,
+.fides-org-ecosystem .fides-eco-center-card--text-only:focus-visible {
+  outline: none;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+.fides-org-ecosystem .fides-eco-center-card--text-only .fides-eco-center-name {
+  font-weight: 500;
+  color: var(--fides-text-secondary);
+}
+
+.fides-org-ecosystem .fides-eco-center-card--text-only .fides-eco-center-name strong {
+  font-weight: 700;
+  color: var(--fides-text-primary);
+}
+
+.fides-eco-center-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--fides-accent, #3b82f6), #8b5cf6);
+  color: #fff;
+  flex-shrink: 0;
+  margin-bottom: 0.1rem;
+}
+
+.fides-eco-center-icon svg {
+  width: 16px;
+  height: 16px;
+  color: #fff;
+}
+
+.fides-eco-center-name {
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--fides-text-primary);
+  line-height: 1.25;
+}
+
+.fides-eco-center-authority {
+  margin: 0;
+  font-size: 0.6875rem;
+  color: var(--fides-text-muted);
+}
+
+.fides-eco-stat-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  min-width: 0;
+}
+
+.fides-eco-wallet-box.fides-eco-stat-box {
+  cursor: pointer;
+  width: 100%;
+  max-width: 260px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 5.5rem;
+  padding: 0.65rem 1rem 0.85rem;
+}
+
+.fides-eco-stat-box-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.fides-eco-stat-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  line-height: 0;
+  opacity: 0.92;
+}
+
+.fides-eco-stat-hint svg {
+  display: block;
+}
+
+.fides-eco-arrow {
+  color: var(--fides-text-muted);
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.fides-modal-ecosystem .fides-eco-wallet-box.fides-eco-stat-box--green:not(.fides-eco-stat-box--static) {
+  border-color: #16a34a;
+}
+
+.fides-modal-ecosystem .fides-eco-wallet-box.fides-eco-stat-box--blue:not(.fides-eco-stat-box--static) {
+  border-color: #93c5fd;
+}
+
+.fides-eco-stat-box--green:not(.fides-eco-stat-box--static) .fides-eco-stat-hint {
+  color: #15803d;
+}
+
+.fides-eco-stat-box--blue:not(.fides-eco-stat-box--static) .fides-eco-stat-hint {
+  color: #2563eb;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-eco-stat-box--green:not(.fides-eco-stat-box--static) .fides-eco-stat-hint,
+.fides-modal-overlay[data-theme="light"] .fides-eco-stat-box--green:not(.fides-eco-stat-box--static) .fides-eco-stat-hint {
+  color: #16a34a;
+}
+
+.fides-eco-wallet-box.fides-eco-stat-box--static {
+  cursor: default;
+  transition: none;
+}
+
+/* Colored hover only when the block is wired to scroll (has data-fides-eco-target). */
+.fides-eco-wallet-box.fides-eco-stat-box--green[data-fides-eco-target]:hover,
+.fides-eco-wallet-box.fides-eco-stat-box--green[data-fides-eco-target]:focus-visible {
+  border-color: #16a34a !important;
+  background: rgba(22, 163, 74, 0.06) !important;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.3) !important;
+}
+
+.fides-eco-wallet-box.fides-eco-stat-box--blue[data-fides-eco-target]:hover,
+.fides-eco-wallet-box.fides-eco-stat-box--blue[data-fides-eco-target]:focus-visible {
+  border-color: #2563eb !important;
+  background: rgba(37, 99, 235, 0.06) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* Issuer/RP at 0: no data-fides-eco-target — force neutral surface on hover/active (overrides theme + :hover on descendants). */
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-box.fides-eco-stat-box:not([data-fides-eco-target]) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-box.fides-eco-stat-box:not([data-fides-eco-target]):hover,
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-box.fides-eco-stat-box:not([data-fides-eco-target]):active,
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-box.fides-eco-stat-box:not([data-fides-eco-target]):focus-visible {
+  border-color: var(--fides-border) !important;
+  background: var(--fides-eco-slot-surface) !important;
+  background-color: var(--fides-eco-slot-surface) !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* Empty wallet-row placeholders only (not issuer/RP stat boxes — those lack data-fides-eco-target too). */
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-row .fides-eco-wallet-box:not([data-fides-eco-target]):hover {
+  border-color: var(--fides-border) !important;
+  background: var(--fides-eco-slot-surface) !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* Center "Credential Types" block: same neutral surface on hover as other ecosystem chips (click still scrolls via JS). */
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-center-card--text-only:hover,
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-center-card--text-only:active,
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-center-card--text-only:focus-visible {
+  border-color: var(--fides-border) !important;
+  background: var(--fides-eco-slot-surface) !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06) !important;
+}
+
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-center-card--text-only.fides-eco-center-card--link {
+  cursor: pointer;
+}
+
+.fides-modal-overlay .fides-org-ecosystem .fides-eco-center-card--text-only.fides-eco-center-card--link .fides-eco-stat-hint {
+  color: var(--fides-accent);
+}
+
+.fides-eco-stat-box--green { border-color: rgba(5, 150, 105, 0.3); }
+.fides-eco-stat-box--blue { border-color: rgba(59, 130, 246, 0.3); }
+
+/* Modal + org ecosystem — narrow viewports (aligned with credential catalog ~760px) */
+@media (max-width: 760px) {
+  .fides-modal-overlay {
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  .fides-modal-overlay .fides-modal {
+    width: 100%;
+    max-width: 100%;
+    max-height: min(95vh, 100dvh);
+    border-radius: 12px 12px 0 0;
+  }
+
+  .fides-modal-overlay .fides-modal-header {
+    padding: 1rem 1rem 0.75rem;
+  }
+
+  .fides-modal-overlay .fides-modal-body {
+    padding: 1rem;
+    min-width: 0;
+  }
+
+  .fides-modal-overlay .fides-modal-title {
+    font-size: 1.125rem;
+  }
+
+  .fides-modal-overlay .fides-modal-logo,
+  .fides-modal-overlay .fides-modal-logo-placeholder {
+    width: 52px;
+    height: 52px;
+  }
+
+  .fides-modal-overlay .fides-modal-logo-placeholder svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .fides-modal-overlay .fides-modal-ecosystem {
+    padding: 0.35rem 0.25rem;
+    min-width: 0;
+    align-items: stretch;
+  }
+
+  .fides-modal-overlay .fides-org-ecosystem .fides-eco-main-row {
+    gap: 0.35rem;
+    padding: 0.15rem 0;
+  }
+
+  .fides-modal-overlay .fides-eco-wallet-row {
+    flex-wrap: wrap;
+  }
+
+  .fides-modal-overlay .fides-eco-wallet-row .fides-eco-wallet-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fides-modal-overlay .fides-eco-wallet-box.fides-eco-stat-box {
+    max-width: none;
+    width: 100%;
+  }
+
+  .fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-box.fides-eco-stat-box {
+    min-height: var(--fides-org-eco-slot-h, 3rem);
+    box-sizing: border-box;
+  }
+
+  .fides-modal-overlay .fides-org-ecosystem .fides-eco-center-card--text-only {
+    max-width: none;
+    width: 100%;
+    min-height: var(--fides-org-eco-slot-h, 3rem);
+    margin-left: 0;
+    margin-right: 0;
+    align-self: stretch;
+    padding: 0.4rem 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .fides-modal-overlay .fides-org-ecosystem .fides-eco-wallet-row .fides-eco-wallet-box {
+    min-height: var(--fides-org-eco-slot-h, 3rem);
+    box-sizing: border-box;
+  }
+
+  .fides-modal-overlay .fides-org-ecosystem .fides-eco-main-row > .fides-eco-arrow {
+    align-self: center;
+    margin-inline: auto;
+    justify-content: center;
+    transform: rotate(90deg);
+    padding: 0.05rem 0;
+  }
+
+  .fides-modal-overlay .fides-eco-wallet-label {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .fides-modal-overlay .fides-org-ecosystem .fides-eco-center-card--text-only .fides-eco-center-name {
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+
+  .fides-modal-overlay .fides-eco-stat-box-main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Accordion */
+.fides-accordion {
+  border: 1px solid var(--fides-border);
+  border-radius: var(--fides-radius);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.fides-accordion-header-bar {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+  width: 100%;
+  background: var(--fides-bg-secondary);
+  transition: background 0.15s;
+}
+
+.fides-accordion-header-bar:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.fides-accordion-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--fides-text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.fides-accordion-header-bar .fides-accordion-header {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  justify-content: flex-start;
+  background: transparent;
+}
+
+.fides-accordion-header-bar .fides-accordion-header:hover {
+  background: transparent;
+}
+
+.fides-accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fides-accordion-count {
+  font-size: 0.75rem;
+  background: var(--fides-accent);
+  color: #fff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 99px;
+  font-weight: 600;
+}
+
+.fides-accordion-chevron-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 0.85rem;
+  color: var(--fides-text-primary);
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.fides-accordion-header-bar .fides-accordion-chevron-btn {
+  border-left: 1px solid var(--fides-border);
+}
+
+.fides-accordion-header-bar .fides-accordion-chevron-btn:hover {
+  background: transparent;
+}
+
+.fides-accordion-chevron {
+  transition: transform 0.2s;
+}
+
+.fides-accordion.is-open .fides-accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.fides-accordion-body {
+  display: none;
+  padding: 0.75rem 1rem 1rem;
+  border-top: 1px solid var(--fides-border);
+}
+
+.fides-accordion.is-open .fides-accordion-body {
+  display: block;
+}
+
+.fides-modal-section {
+  margin-bottom: 1.25rem;
+}
+
+.fides-modal-overlay .fides-modal-section > .fides-accordion-header.fides-modal-section-header {
+  padding: 0.45rem 1rem;
+  min-height: 0;
+  cursor: default !important;
+  pointer-events: none;
+  background: var(--fides-bg-secondary);
+  border-bottom: 1px solid var(--fides-border);
+}
+
+.fides-modal-section-header {
+  padding: 0.45rem 1rem;
+}
+
+.fides-modal-section .fides-accordion-body {
+  display: block;
+  padding: 0;
+  border-top: none;
+}
+
+/* KV details — same rhythm as credential catalog “Other details” (no row dividers) */
+.fides-details-kv {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.fides-kv-row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 42%) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  padding: 0.45rem 0;
+  min-width: 0;
+}
+
+.fides-kv-row:has(.fides-kv-tags) {
+  align-items: start;
+}
+
+.fides-kv-row:first-child {
+  padding-top: 0;
+}
+
+.fides-kv-row:last-child {
+  padding-bottom: 0;
+}
+
+.fides-kv-key {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--fides-text-muted);
+  white-space: normal;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.fides-kv-key::after {
+  content: ':';
+}
+
+.fides-kv-val {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: var(--fides-text-secondary);
+  word-break: break-word;
+  min-width: 0;
+}
+
+.fides-kv-val--url {
+  min-width: 0;
+}
+
+/* Links + URLs: baseline with label (avoid inline-flex lowering the line) */
+.fides-details-kv .fides-kv-val .fides-modal-link-inline {
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: baseline;
+}
+
+.fides-details-kv .fides-kv-val--url .fides-url-ellipsis {
+  display: inline;
+  white-space: normal;
+  max-width: none;
+  overflow: visible;
+  text-overflow: unset;
+  vertical-align: baseline;
+}
+
+.fides-details-kv .fides-kv-val--url .fides-url-ellipsis svg {
+  display: inline-block;
+  vertical-align: -0.15em;
+}
+
+.fides-modal-provider-did--inline {
+  display: inline-block;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  padding: 0.1rem 0.4rem;
+  margin: 0;
+  color: var(--fides-text-primary);
+  background: var(--fides-bg-secondary);
+  border: 1px solid var(--fides-border);
+  border-radius: 6px;
+  vertical-align: baseline;
+}
+
+@media (max-width: 420px) {
+  .fides-kv-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem 0;
+    align-items: start;
+  }
+
+  .fides-kv-key {
+    white-space: normal;
+  }
+}
+
+.fides-kv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.fides-tag {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--fides-accent);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  white-space: nowrap;
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-tag,
+#fides-org-catalog-root[data-theme="light"] .fides-tag {
+  background: rgba(10, 110, 243, 0.08);
+  color: #0A6EF3;
+  border: 1px solid rgba(10, 110, 243, 0.2);
+}
+
+.fides-org-cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fides-org-cert-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.5rem;
+}
+
+.fides-org-cert-notes {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* Tables (in accordion) */
+.fides-attributes-table-wrap {
+  overflow-x: auto;
+}
+
+.fides-attributes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.fides-attributes-table th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--fides-border);
+  white-space: nowrap;
+}
+
+.fides-attributes-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--fides-border);
+  color: var(--fides-text-primary);
+}
+
+.fides-modal-link-inline {
+  color: var(--fides-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.fides-modal-link-inline:hover {
+  text-decoration: underline;
+}
+
+.fides-modal-link-inline:focus-visible {
+  outline: 2px solid var(--fides-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Modal entity lists — layout + row hover (parity with credential catalog modal tables) */
+.fides-modal-overlay .fides-modal-entity-table {
+  table-layout: fixed;
+}
+
+.fides-modal-overlay .fides-modal-entity-table th,
+.fides-modal-overlay .fides-modal-entity-table td {
+  min-width: 0;
+}
+
+.fides-modal-overlay .fides-modal-entity-table th:nth-child(1),
+.fides-modal-overlay .fides-modal-entity-table td:nth-child(1) {
+  width: 52%;
+}
+
+.fides-modal-overlay .fides-modal-entity-table th:nth-child(2),
+.fides-modal-overlay .fides-modal-entity-table td:nth-child(2) {
+  width: 48%;
+}
+
+.fides-modal-overlay .fides-modal-entity-table td {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.fides-modal-overlay .fides-modal-entity-table thead tr th:only-child,
+.fides-modal-overlay .fides-modal-entity-table tbody tr td:only-child {
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .fides-modal-overlay .fides-modal-entity-table th:nth-child(1),
+  .fides-modal-overlay .fides-modal-entity-table td:nth-child(1) {
+    width: 40%;
+  }
+
+  .fides-modal-overlay .fides-modal-entity-table th:nth-child(2),
+  .fides-modal-overlay .fides-modal-entity-table td:nth-child(2) {
+    width: 60%;
+  }
+
+  .fides-modal-overlay .fides-modal-entity-table th {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+.fides-modal-overlay .fides-attributes-table-wrap {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.fides-modal-overlay .fides-attributes-table {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.fides-modal-overlay .fides-attributes-table td:nth-child(1) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.fides-modal-overlay .fides-attributes-table td .fides-modal-link-inline {
+  display: inline;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  vertical-align: baseline;
+}
+
+.fides-modal-overlay .fides-modal-entity-table tbody tr:has(a.fides-modal-link-inline) {
+  transition: background 0.12s ease;
+}
+
+.fides-modal-overlay .fides-modal-entity-table tbody tr:has(a.fides-modal-link-inline):hover td {
+  background: rgba(59, 130, 246, 0.07);
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header-bar,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header-bar {
+  background: #f8fafc;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header-bar:hover,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header-bar:hover {
+  background: rgba(59, 130, 246, 0.06);
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-header-bar .fides-accordion-chevron-btn,
+.fides-modal-overlay[data-theme="light"] .fides-accordion-header-bar .fides-accordion-chevron-btn {
+  border-left-color: #e2e8f0;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-accordion-body:not(.fides-modal-ecosystem-body),
+.fides-modal-overlay[data-theme="light"] .fides-accordion-body:not(.fides-modal-ecosystem-body) {
+  border-top-color: #e2e8f0;
+}
+
+.fides-url-ellipsis {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-modal-empty {
+  color: var(--fides-text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Toast */
+.fides-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--fides-bg-secondary, #1e293b);
+  color: var(--fides-text-primary, #f1f5f9);
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 1000000;
+  animation: fides-toast-in 0.3s ease-out;
+  pointer-events: auto;
+  border: 1px solid var(--fides-border, rgba(255, 255, 255, 0.1));
+  max-width: 90vw;
+}
+
+.fides-toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--fides-accent, #22c55e);
+  color: white;
+  flex-shrink: 0;
+}
+
+.fides-toast-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.fides-toast-message {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.fides-toast[data-theme="fides"],
+.fides-toast[data-theme="light"] {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fides-toast-in {
+  from { opacity: 0; transform: translateY(1rem) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fides-toast-out {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to { opacity: 0; transform: translateY(0.5rem) scale(0.98); }
+}
+
+@media (max-width: 768px) {
+  .fides-toast {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    max-width: none;
+  }
+}
+
+/* Search input text color for fides/light themes */
+#fides-org-catalog-root[data-theme="fides"] .fides-search-input,
+#fides-org-catalog-root[data-theme="light"] .fides-search-input {
+  color: #000000;
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-search-input::placeholder,
+#fides-org-catalog-root[data-theme="light"] .fides-search-input::placeholder {
+  color: #6b7280;
+}
+
+/* Sidebar for fides/light themes */
+#fides-org-catalog-root[data-theme="fides"] .fides-sidebar,
+#fides-org-catalog-root[data-theme="light"] .fides-sidebar {
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#fides-org-catalog-root[data-theme="fides"] .fides-sidebar-header,
+#fides-org-catalog-root[data-theme="light"] .fides-sidebar-header {
+  background: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  #fides-org-catalog-root {
+    padding: 1rem;
+  }
+
+  .fides-kpi-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fides-org-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fides-sidebar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 99998;
+    border-radius: 0;
+    flex-direction: column;
+  }
+
+  .fides-sidebar.mobile-open {
+    display: flex;
+  }
+
+  .fides-sidebar-close {
+    display: flex;
+  }
+
+  .fides-mobile-filter-toggle {
+    display: flex;
+  }
+
+  .fides-view-toggle {
+    display: none;
+  }
+
+  /* Org ecosystem stacked: equal bar height + chevrons centered (shrink-wrap row like wallet connectors) */
+  .fides-org-ecosystem {
+    --fides-org-eco-slot-h: 3rem;
+  }
+
+  .fides-org-ecosystem .fides-eco-wallet-row .fides-eco-wallet-box {
+    min-height: var(--fides-org-eco-slot-h);
+    box-sizing: border-box;
+  }
+
+  .fides-org-ecosystem .fides-eco-wallet-box.fides-eco-stat-box {
+    max-width: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.45rem;
+    min-height: var(--fides-org-eco-slot-h);
+    padding: 0.4rem 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .fides-org-ecosystem .fides-eco-center-card--text-only {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.45rem;
+    min-height: var(--fides-org-eco-slot-h);
+    padding: 0.4rem 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .fides-org-ecosystem .fides-eco-wallet-connector {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fides-org-ecosystem .fides-eco-wallet-connector svg {
+    display: block;
+    margin-inline: auto;
+  }
+
+  /* Do not stretch arrow cells: center the icon in the column (stretch + flex was still left-aligning in WebKit) */
+  .fides-org-ecosystem .fides-eco-main-row > .fides-eco-arrow {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-inline: auto;
+  }
+
+  .fides-org-ecosystem .fides-eco-main-row > .fides-eco-arrow svg {
+    display: block;
+  }
+
+  .fides-eco-main-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .fides-eco-stat-wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .fides-eco-wallet-box {
+    width: 100%;
+  }
+
+  .fides-eco-center-card {
+    max-width: 100%;
+  }
+
+  .fides-eco-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .fides-org-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fides-results-bar {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fides-modal-overlay {
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .fides-modal-overlay .fides-modal {
+    border-radius: 0;
+    max-height: 100vh;
+    max-height: 100dvh;
+  }
+}
+
+/* Blue Pages verified profile (organization modal) */
+.fides-org-bluepages__head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.fides-org-bluepages__meta {
+  margin: 0 0 1rem;
+  font-size: 0.8125rem;
+  color: var(--fides-text-muted);
+}
+
+.fides-org-bluepages-loading,
+.fides-org-bluepages-empty {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--fides-text-secondary);
+}
+
+.fides-org-bluepages-error {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  color: #b91c1c;
+}
+
+.fides-org-bluepages-retry-wrap {
+  margin: 0;
+}
+
+.fides-org-bluepages-retry {
+  font-size: 0.8125rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--fides-border);
+  background: var(--fides-bg-secondary);
+  color: var(--fides-text-primary);
+  cursor: pointer;
+}
+
+.fides-org-bluepages-credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fides-bp-credential {
+  border: 1px solid var(--fides-border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--fides-bg-secondary);
+}
+
+.fides-bp-credential__bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--fides-border);
+  background: var(--fides-bg-primary);
+}
+
+.fides-bp-credential__headtext {
+  min-width: 0;
+  flex: 1;
+}
+
+.fides-bp-credential__title {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--fides-text-primary);
+}
+
+.fides-bp-credential__issuer {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--fides-text-muted);
+}
+
+.fides-bp-credential__issuer-label {
+  font-weight: 500;
+  color: var(--fides-text-secondary);
+}
+
+.fides-bp-credential__body {
+  padding: 0.65rem 0.85rem 0.85rem;
+}
+
+.fides-org-bluepages-kv .fides-kv-row:last-child {
+  border-bottom: none;
+}
+
+.fides-bp-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.fides-bp-badge--valid {
+  background: rgba(22, 163, 74, 0.12);
+  color: #15803d;
+}
+
+.fides-bp-badge--invalid {
+  background: rgba(220, 38, 38, 0.12);
+  color: #b91c1c;
+}
+
+.fides-bp-badge--self {
+  background: rgba(100, 116, 139, 0.15);
+  color: #475569;
+}
+
+.fides-bp-badge--neutral {
+  background: rgba(100, 116, 139, 0.12);
+  color: var(--fides-text-secondary);
+}
+
+.fides-modal-overlay[data-theme="light"] .fides-bp-credential,
+.fides-modal-overlay[data-theme="fides"] .fides-bp-credential {
+  border-color: #e2e8f0;
+}
+
+.fides-modal-overlay[data-theme="light"] .fides-bp-credential__bar,
+.fides-modal-overlay[data-theme="fides"] .fides-bp-credential__bar {
+  background: #f8fafc;
+  border-bottom-color: #e2e8f0;
+}

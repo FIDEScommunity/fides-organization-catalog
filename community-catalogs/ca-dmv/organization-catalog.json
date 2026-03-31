@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ca-dmv",
+    "name": "California Department of Motor Vehicles (CA DMV)",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.dmv.ca.gov/portal/",
+    "country": "US",
+    "contact": {
+      "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
+    }
+  }
+}

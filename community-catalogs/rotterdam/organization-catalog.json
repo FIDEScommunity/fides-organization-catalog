@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:rotterdam",
+    "name": "Gemeente Rotterdam",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.rotterdam.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=rotterdam.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

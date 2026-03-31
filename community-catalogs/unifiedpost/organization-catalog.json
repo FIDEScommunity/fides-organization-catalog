@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:unifiedpost",
+    "name": "Unifiedpost",
+    "legalName": "Unifiedpost Group",
+    "description": "Digital business solutions for invoicing, payments, compliance, integrations, and document management (Netherlands operations, Lelystad).",
+    "sectors": [
+      "digital",
+      "finance",
+      "trade"
+    ],
+    "website": "https://www.unifiedpost.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=unifiedpost.nl&sz=128",
+    "country": "NL"
+  }
+}

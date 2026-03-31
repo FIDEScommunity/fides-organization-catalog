@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:buthan",
+    "name": "Bhutan Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://bhutanndi.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=bhutanndi.com&sz=128",
+    "country": "BT"
+  }
+}

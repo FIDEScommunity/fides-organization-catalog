@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:werify",
+    "name": "Werify",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://werify.eu/",
+    "logo": "https://www.google.com/s2/favicons?domain=werify.eu&sz=128",
+    "country": "EU",
+    "fidesManifestoSupporter": true
+  }
+}

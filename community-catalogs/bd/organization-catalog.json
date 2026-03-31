@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bd",
+    "name": "Belastingdienst",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.belastingdienst.nl",
+    "logo": "https://sliedrecht24.nl/wp-content/uploads/2023/10/Logo-Belastingdienst.png",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

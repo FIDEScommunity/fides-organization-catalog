@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:wwwallet",
+    "name": "wwWallet.org",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://wwwallet.org",
+    "logo": "https://avatars.githubusercontent.com/u/126908515",
+    "country": "GR"
+  }
+}

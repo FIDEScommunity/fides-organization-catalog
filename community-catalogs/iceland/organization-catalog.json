@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:iceland",
+    "name": "Icelandic Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.government.is/",
+    "country": "IS"
+  }
+}

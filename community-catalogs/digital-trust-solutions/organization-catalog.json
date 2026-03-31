@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digital-trust-solutions",
+    "name": "Digital Trust Solutions",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Digital Trust Solutions (DTS)",
+    "website": "https://www.digitaltrustsolutions.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=digitaltrustsolutions.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

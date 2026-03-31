@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:idcontrol",
+    "name": "ID Control",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://idcontrol.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=idcontrol.com&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

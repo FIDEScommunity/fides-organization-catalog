@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fuelfwd",
+    "name": "FuelFWD",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.fuelfwd.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=fuelfwd.io&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

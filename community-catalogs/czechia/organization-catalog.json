@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:czechia",
+    "name": "Czech Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.edoklady.cz/",
+    "country": "CZ"
+  }
+}

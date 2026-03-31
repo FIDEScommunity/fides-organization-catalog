@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fabaleus",
+    "name": "Fabaleus",
+    "legalName": "Fabaleus B.V.",
+    "description": "IT consultancy, computer facilities management, and management advisory (Utrecht). Listed in Dutch trade register; no public corporate website.",
+    "sectors": [
+      "digital"
+    ],
+    "identifiers": {
+      "business_registration_number": "58810315"
+    },
+    "country": "NL"
+  }
+}

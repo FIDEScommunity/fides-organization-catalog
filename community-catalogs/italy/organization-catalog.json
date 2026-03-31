@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:italy",
+    "name": "Italian Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://io.italia.it/",
+    "country": "IT"
+  }
+}

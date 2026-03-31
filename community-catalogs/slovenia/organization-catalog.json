@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:slovenia",
+    "name": "Slovenian Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.gov.si/",
+    "country": "SI"
+  }
+}

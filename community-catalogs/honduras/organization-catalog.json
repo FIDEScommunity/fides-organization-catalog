@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:honduras",
+    "name": "RNP HN (Registro Nacional de las Personas), Honduras",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.rnp.hn/",
+    "logo": "https://www.google.com/s2/favicons?domain=rnp.hn&sz=128",
+    "country": "HN"
+  }
+}

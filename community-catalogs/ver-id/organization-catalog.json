@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ver-id",
+    "name": "ver.ID",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://ver.id/",
+    "logo": "https://www.google.com/s2/favicons?domain=ver.id&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

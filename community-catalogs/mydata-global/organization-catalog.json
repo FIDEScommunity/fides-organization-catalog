@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mydata-global",
+    "name": "MyData Global",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://mydata.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=mydata.org&sz=128",
+    "country": "FI",
+    "fidesManifestoSupporter": true
+  }
+}

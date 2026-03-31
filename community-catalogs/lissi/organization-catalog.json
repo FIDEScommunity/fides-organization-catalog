@@ -1,0 +1,19 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:lissi",
+    "name": "Lissi GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "identifiers": {
+      "did": "did:web:lissi.id"
+    },
+    "website": "https://lissi.id",
+    "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+    "country": "DE",
+    "contact": {
+      "email": "info@lissi.id"
+    }
+  }
+}

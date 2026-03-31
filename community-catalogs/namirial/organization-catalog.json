@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:namirial",
+    "name": "Namirial",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.namirial.com",
+    "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
+    "country": "IT",
+    "contact": {
+      "email": "support-wallet@namirial.com",
+      "support": "https://servicedesk.namirial.com/hc/en-gb"
+    }
+  }
+}

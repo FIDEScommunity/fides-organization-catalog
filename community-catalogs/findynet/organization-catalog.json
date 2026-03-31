@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:findynet",
+    "name": "Findynet",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://findynet.fi/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128",
+    "country": "FI",
+    "fidesManifestoSupporter": true
+  }
+}

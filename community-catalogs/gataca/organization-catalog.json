@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:gataca",
+    "name": "Gataca Labs",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://gataca.io",
+    "logo": "https://www.google.com/s2/favicons?domain=gataca.io&sz=128",
+    "country": "ES",
+    "contact": {
+      "email": "samuel@gataca.io"
+    }
+  }
+}

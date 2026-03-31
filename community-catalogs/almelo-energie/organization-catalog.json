@@ -1,0 +1,19 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:almelo-energie",
+    "name": "Almelo Energie",
+    "legalName": "Energiecoöperatie Almelo Energie U.A.",
+    "description": "Non-profit local energy cooperative for Almelo: free savings advice, green local supply, and community energy projects.",
+    "sectors": [
+      "energy",
+      "digital"
+    ],
+    "identifiers": {
+      "business_registration_number": "80775853"
+    },
+    "website": "https://almelo-energie.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=almelo-energie.nl&sz=128",
+    "country": "NL"
+  }
+}

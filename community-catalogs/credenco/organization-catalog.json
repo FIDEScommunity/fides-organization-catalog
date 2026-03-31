@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:credenco",
+    "name": "Credenco",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.credenco.com",
+    "logo": "https://wallet.acc.credenco.com/logo_white_background.png",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

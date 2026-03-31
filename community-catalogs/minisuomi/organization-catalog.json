@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:minisuomi",
+    "name": "Mini-Suomi (DVV Finland)",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://wallet.minisuomi.fi",
+    "logo": "https://www.google.com/s2/favicons?domain=minisuomi.fi&sz=128",
+    "country": "FI"
+  }
+}

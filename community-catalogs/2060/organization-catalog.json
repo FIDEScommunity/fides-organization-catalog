@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:2060",
+    "name": "2060.io",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://2060.io",
+    "logo": "https://www.google.com/s2/favicons?domain=2060.io&sz=128",
+    "country": "EE"
+  }
+}

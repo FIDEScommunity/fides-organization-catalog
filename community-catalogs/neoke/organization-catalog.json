@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:neoke",
+    "name": "Neoke",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.neoke.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=neoke.com&sz=128",
+    "country": "NL"
+  }
+}

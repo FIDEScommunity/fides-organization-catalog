@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ewc",
+    "name": "EWC - European Wallet Consortium",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://dss.aegean.gr",
+    "logo": "https://avatars.githubusercontent.com/u/140810559?v=4",
+    "country": "EU"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tno",
+    "name": "TNO",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://tsg.dataspac.es/",
+    "logo": "https://www.google.com/s2/favicons?domain=tno.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

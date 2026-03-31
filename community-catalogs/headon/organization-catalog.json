@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:headon",
+    "name": "Headon",
+    "legalName": "Headon B.V.",
+    "description": "Open business innovation: scouting, partnerships, implementation orchestration, and software (including CargoLedger for supply chain).",
+    "sectors": [
+      "digital",
+      "supply_chain"
+    ],
+    "website": "https://www.headon.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=headon.nl&sz=128",
+    "country": "NL"
+  }
+}

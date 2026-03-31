@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:uncefact",
+    "name": "UN/CEFACT",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://untp.unece.org",
+    "country": "CH"
+  }
+}

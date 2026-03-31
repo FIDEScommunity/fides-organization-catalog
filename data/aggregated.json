@@ -1,0 +1,4220 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogType": "organization",
+  "lastUpdated": "2026-03-31T15:52:13.498Z",
+  "organizations": [
+    {
+      "id": "org:2060",
+      "name": "2060.io",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://2060.io",
+      "logoUri": "https://www.google.com/s2/favicons?domain=2060.io&sz=128",
+      "country": "EE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/2060/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "hologram-messaging",
+            "displayName": "Hologram Messaging"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:a3bc",
+      "name": "A3BC",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.a3bc.io/",
+      "country": "FR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/a3bc/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "trustme-wallet",
+            "displayName": "TrustMe"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:affinidi",
+      "name": "Affinidi",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.affinidi.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=affinidi.com&sz=256",
+      "country": "SG",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/affinidi/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "affinidi-portal",
+            "displayName": "Affinidi Portal"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:albania",
+      "name": "Albanian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://me.rks-gov.net",
+      "country": "AL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/albania/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "e-albania-digital-id",
+            "displayName": "e-Albania Digital ID"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:almelo-energie",
+      "name": "Almelo Energie",
+      "sectors": [
+        "energy",
+        "digital"
+      ],
+      "legalName": "Energiecoöperatie Almelo Energie U.A.",
+      "description": "Non-profit local energy cooperative for Almelo: free savings advice, green local supply, and community energy projects.",
+      "identifiers": {
+        "business_registration_number": "80775853"
+      },
+      "website": "https://almelo-energie.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=almelo-energie.nl&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/almelo-energie/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T11:31:48.036Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:animo",
+      "name": "Animo Solutions",
+      "sectors": [
+        "digital"
+      ],
+      "identifiers": {
+        "did": "did:web:animo.id"
+      },
+      "website": "https://animo.id",
+      "logoUri": "https://www.google.com/s2/favicons?domain=animo.id&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "contact": {
+        "email": "info@animo.id",
+        "support": "https://animo.id/support"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/animo/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:animo:bundesdruckerei:test",
+            "displayName": "Bundesdruckerei (Animo Playground)"
+          },
+          {
+            "id": "issuer:animo:rdw:test",
+            "displayName": "RDW (Animo Playground)"
+          },
+          {
+            "id": "issuer:animo:telorg:test",
+            "displayName": "TelOrg (Animo Playground)"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "paradym-wallet",
+            "displayName": "Paradym Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "paradym-platform",
+            "displayName": "Paradym Platform"
+          }
+        ],
+        "relyingParties": []
+      },
+      "bluePages": {
+        "did": "did:web:animo.id",
+        "profileAvailable": false,
+        "checkedAt": "2026-03-31T15:52:13.498Z"
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:apple",
+      "name": "Apple",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.apple.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=apple.com&sz=128",
+      "country": "US",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/apple/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "apple-wallet",
+            "displayName": "Apple Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:aruba",
+      "name": "Aruba IT",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.aruba.io",
+      "logoUri": "https://www.aruba.io/assets/images/logo.svg",
+      "country": "IT",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/aruba/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:aruba:wallet:test",
+            "displayName": "Aruba.IT Wallet PID Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:austria",
+      "name": "Austrian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://plus.a-sit.at/open-source.html",
+      "country": "AT",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/austria/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-austria",
+            "displayName": "National EUDI Wallet (Valera)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:auth0",
+      "name": "Auth0 (Okta)",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://auth0.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=auth0.com&sz=128",
+      "country": "US",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/auth0/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "auth0-platform",
+            "displayName": "Auth0 Platform"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:authbound",
+      "name": "Authbound",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://authbound.io",
+      "logoUri": "https://www.google.com/s2/favicons?domain=authbound.io&sz=128",
+      "country": "FI",
+      "contact": {
+        "email": "info@authbound.io",
+        "support": "https://authbound.io/contact"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/authbound/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "authbound-wallet",
+            "displayName": "Authbound Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ayanworks",
+      "name": "AyanWorks Technology Solutions Pvt. Ltd.",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://credebl.id",
+      "logoUri": "https://www.google.com/s2/favicons?domain=credebl.id&sz=128",
+      "country": "IN",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ayanworks/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "sovio-adeva-wallet",
+            "displayName": "Sovio Wallet (ADEYA Wallet)"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "credebl-organizational-wallet",
+            "displayName": "CREDEBL"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:bd",
+      "name": "Belastingdienst",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.belastingdienst.nl",
+      "logoUri": "https://sliedrecht24.nl/wp-content/uploads/2023/10/Logo-Belastingdienst.png",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/bd/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:credenco:belastingdienst:test",
+            "displayName": "Belastingdienst Sandbox Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:belgium",
+      "name": "Belgian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.belgium.be",
+      "country": "BE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/belgium/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-belgium",
+            "displayName": "National EUDI Wallet (MyGov.be)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:buthan",
+      "name": "Bhutan Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://bhutanndi.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=bhutanndi.com&sz=128",
+      "country": "BT",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/buthan/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "bhutan-ndi-mobile-wallet",
+            "displayName": "Bhutan NDI Mobile Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:helixid",
+      "name": "Blockchain HELIX AG",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://helixid.io",
+      "country": "DE",
+      "contact": {
+        "email": "oliver@blockchain-helix.com"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/helixid/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "helix-id-wallet",
+            "displayName": "helix id Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:caesar",
+      "name": "Caesar Groep",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.caesar.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=caesar.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/caesar/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ca-dmv",
+      "name": "California Department of Motor Vehicles (CA DMV)",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.dmv.ca.gov/portal/",
+      "country": "US",
+      "contact": {
+        "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ca-dmv/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "ca-dmv-mdl-login-opencred",
+            "displayName": "CA DMV Website Login (mDL / mDoc)"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:crt",
+      "name": "Centraal Register Techniek",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.centraalregistertechniek.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=centraalregistertechniek.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/crt/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:amsterdam",
+      "name": "City of Amsterdam",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://amsterdam-demo.staging.yivi.app/",
+      "logoUri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/amsterdam/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "leeftijd-aantonen",
+            "displayName": "Prove age"
+          },
+          {
+            "id": "ideeen-voor-uw-buurt",
+            "displayName": "Ideas for your neighbourhood"
+          },
+          {
+            "id": "inloggen",
+            "displayName": "Login"
+          },
+          {
+            "id": "geveltuin-aanvragen",
+            "displayName": "Apply for front garden"
+          },
+          {
+            "id": "overlast-melden",
+            "displayName": "Report nuisance"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:nijmegen",
+      "name": "City of Nijmegen",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.nijmegen.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=nijmegen.nl&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/nijmegen/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "nijmegen-mijn-nijmegen-login",
+            "displayName": "Mijn Nijmegen - Yivi Login"
+          },
+          {
+            "id": "nijmegen-iit",
+            "displayName": "Individual Income Supplement (IIT)"
+          },
+          {
+            "id": "nijmegen-vergoedingenpas",
+            "displayName": "Compensation Card"
+          },
+          {
+            "id": "nijmegen-busvoordeel",
+            "displayName": "Discounted Bus Subscription"
+          },
+          {
+            "id": "nijmegen-meedoenregeling",
+            "displayName": "Participation Scheme"
+          },
+          {
+            "id": "nijmegen-cultureel-erfgoed-pas",
+            "displayName": "Cultural Heritage Pass"
+          },
+          {
+            "id": "nijmegen-vergoedingencheck",
+            "displayName": "Compensation Eligibility Check"
+          },
+          {
+            "id": "machtigen-bewindvoerder-jansen-bewind",
+            "displayName": "Mandate – Court-Appointed Administrator"
+          },
+          {
+            "id": "machtigen-centraal-machtigingsregister",
+            "displayName": "Mandate – Voluntary Authorization "
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:credenco",
+      "name": "Credenco",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.credenco.com",
+      "logoUri": "https://wallet.acc.credenco.com/logo_white_background.png",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/credenco/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:credenco:tulip:test",
+            "displayName": "Tulip Bank Demo Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "credenco-business-wallet",
+            "displayName": "Credenco Business Wallet"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:czechia",
+      "name": "Czech Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.edoklady.cz/",
+      "country": "CZ",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/czechia/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "edoklady",
+            "displayName": "eDoklady"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:denmark",
+      "name": "Danish Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.digst.dk/",
+      "country": "DK",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/denmark/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-denmark",
+            "displayName": "National EUDI Wallet (Denmark)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:danubetech",
+      "name": "Danube Tech",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://danubetech.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=danubetech.com&sz=128",
+      "country": "AT",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/danubetech/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:datakeeper",
+      "name": "DataKeeper",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.datakeeper.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=datakeeper.nl&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/datakeeper/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "datakeeper-personal-wallet",
+            "displayName": "DataKeeper Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:png",
+      "name": "Department of Information and Communications Technology, Papua New Guinea",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.sevis.gov.pg/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=sevis.gov.pg&sz=128",
+      "country": "PG",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/png/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "seviswallet",
+            "displayName": "SevisWallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:digidentity",
+      "name": "Digidentity",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.digidentity.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=digidentity.com&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/digidentity/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "digidentity-wallet",
+            "displayName": "Digidentity Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:digitalbazaar",
+      "name": "Digital Bazaar",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.digitalbazaar.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=digitalbazaar.com&sz=128",
+      "country": "US",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/digitalbazaar/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "veres-wallet",
+            "displayName": "Veres Wallet"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:digital-trust-solutions",
+      "name": "Digital Trust Solutions",
+      "sectors": [
+        "digital"
+      ],
+      "legalName": "Digital Trust Solutions (DTS)",
+      "website": "https://www.digitaltrustsolutions.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=digitaltrustsolutions.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/digital-trust-solutions/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:docklabs",
+      "name": "Dock Labs AG",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.dock.io/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=dock.io&sz=128",
+      "country": "CH",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/docklabs/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "truvera-wallet",
+            "displayName": "Truvera Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "truvera-platform",
+            "displayName": "Truvera Platform"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:domoticube",
+      "name": "Domoticube",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://domoticube.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=domoticube.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/domoticube/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:netherlands",
+      "name": "Dutch Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.nldigitalgovernment.nl/",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/netherlands/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-netherlands",
+            "displayName": "NL Wallet (Netherlands)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:tue",
+      "name": "Eindhoven University of Technology",
+      "sectors": [
+        "digital"
+      ],
+      "legalName": "Technische Universiteit Eindhoven",
+      "website": "https://www.tue.nl/en/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=tue.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/tue/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:estonia",
+      "name": "Estonian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.ria.ee/",
+      "country": "EE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/estonia/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-estonia",
+            "displayName": "National EUDI Wallet (Estonia)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:eudiplo",
+      "name": "EUDIPLO",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128",
+      "country": "EU",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/eudiplo/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "eudiplo-vineyard-select",
+            "displayName": "Vineyard Select"
+          },
+          {
+            "id": "eudiplo-nordic-digital-bank",
+            "displayName": "Nordic Digital Bank"
+          },
+          {
+            "id": "eudiplo-techmarkt-sim-activation",
+            "displayName": "TechMarkt SIM-Activation"
+          },
+          {
+            "id": "eudiplo-berlin-history-museum",
+            "displayName": "Berlin History Museum"
+          },
+          {
+            "id": "eudiplo-swiftbox-parcel-locker",
+            "displayName": "SwiftBox Parcel Locker"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:eu",
+      "name": "European Commission - Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "legalName": "European Commission",
+      "website": "https://github.com/eu-digital-identity-wallet",
+      "logoUri": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128",
+      "country": "EU",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/eu/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:eu:digital-credentials-issuer:test",
+            "displayName": "Digital Credentials Issuer"
+          }
+        ],
+        "credentialTypes": [
+          {
+            "id": "cred:eu:diploma-vc-sd-jwt:sd-jwt-vc",
+            "displayName": "Diploma (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:ehic-sd-jwt-vc:sd-jwt-vc",
+            "displayName": "EHIC (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:hiid-sd-jwt-vc:sd-jwt-vc",
+            "displayName": "Health ID (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:iban-sd-jwt-vc:sd-jwt-vc",
+            "displayName": "IBAN (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:msisdn-sd-jwt-vc:sd-jwt-vc",
+            "displayName": "MSISDN (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:pda1-sd-jwt-vc:sd-jwt-vc",
+            "displayName": "PDA1 (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:pid-vc-sd-jwt:sd-jwt-vc",
+            "displayName": "PID (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:por-sd-jwt-vc:sd-jwt-vc",
+            "displayName": "Power Of Representation (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:tax-residency-vc-sd-jwt:sd-jwt-vc",
+            "displayName": "Tax Residency (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:tax-sd-jwt-vc:sd-jwt-vc",
+            "displayName": "Tax Number (SD-JWT VC)"
+          },
+          {
+            "id": "cred:eu:cor-mdoc:mdoc",
+            "displayName": "Certificate of Residence (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:ehic-mdoc:mdoc",
+            "displayName": "EHIC (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:employee-mdoc:mdoc",
+            "displayName": "Employee ID (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:hiid-mdoc:mdoc",
+            "displayName": "Health ID (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:iban-mdoc:mdoc",
+            "displayName": "IBAN (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:loyalty-mdoc:mdoc",
+            "displayName": "Loyalty (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:mdl-mdoc:mdoc",
+            "displayName": "mDL (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:msisdn-mdoc:mdoc",
+            "displayName": "MSISDN (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:pda1-mdoc:mdoc",
+            "displayName": "PDA1 (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:photoid-mdoc:mdoc",
+            "displayName": "Photo ID (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:pid-mdoc:mdoc",
+            "displayName": "PID (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:pid-mdoc-deferred-mdoc:mdoc",
+            "displayName": "PID (MSO Mdoc Deferred)"
+          },
+          {
+            "id": "cred:eu:por-mdoc:mdoc",
+            "displayName": "Power Of Representation (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:seafarer-mdoc:mdoc",
+            "displayName": "Seafarer (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:tax-mdoc:mdoc",
+            "displayName": "Tax Number (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:reservation-mdoc:mdoc",
+            "displayName": "Reservation"
+          },
+          {
+            "id": "cred:eu:age-verification-mdoc:mdoc",
+            "displayName": "Age Verification (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:mvrc-mdoc:mdoc",
+            "displayName": "Vehicle Registration Certificate (MSO Mdoc)"
+          },
+          {
+            "id": "cred:eu:photoid-mdoc-iso23220:mdoc",
+            "displayName": "Photo ID (MSO Mdoc)"
+          }
+        ],
+        "personalWallets": [
+          {
+            "id": "eudi-reference-personal-wallet",
+            "displayName": "EUDI Wallet Reference Implementation"
+          },
+          {
+            "id": "eudi-age-verification-wallet",
+            "displayName": "EUDI Age Verification App (Reference)"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "eudi-reference-issuer",
+            "displayName": "EUDIW Reference Issuer"
+          },
+          {
+            "id": "eudi-reference-verifier",
+            "displayName": "EUDI Reference Verifier"
+          }
+        ],
+        "relyingParties": [
+          {
+            "id": "eudi-cinema-age-verification",
+            "displayName": "Starfilm Cinema Age Verification"
+          },
+          {
+            "id": "eudi-reference-verifier",
+            "displayName": "EUDI Reference Verifier"
+          },
+          {
+            "id": "eudi-test-relying-party",
+            "displayName": "EUDI Test Relying Party"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ewc",
+      "name": "EWC - European Wallet Consortium",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://dss.aegean.gr",
+      "logoUri": "https://avatars.githubusercontent.com/u/140810559?v=4",
+      "country": "EU",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ewc/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:ewc:ewc-issuer:test",
+            "displayName": "EWC Issuer"
+          }
+        ],
+        "credentialTypes": [
+          {
+            "id": "cred:ewc:pda1-sd-jwt:sd-jwt-vc",
+            "displayName": "Portable Document A1 (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:pda2-sd-jwt:sd-jwt-vc",
+            "displayName": "Portable Document A2 (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:id-card-jwt-vc:jwt-vc",
+            "displayName": "Verifiable ID Card (JWT VC)"
+          },
+          {
+            "id": "cred:ewc:pid-sd-jwt:sd-jwt-vc",
+            "displayName": "Person Identification Data (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:epassport-sd-jwt:sd-jwt-vc",
+            "displayName": "ePassport (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:student-id-sd-jwt:sd-jwt-vc",
+            "displayName": "Student ID (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:ferry-boarding-pass-sd-jwt:sd-jwt-vc",
+            "displayName": "Ferry Boarding Pass (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:vreceipt-sd-jwt:sd-jwt-vc",
+            "displayName": "vReceipt (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:pid-eudi-sd-jwt:sd-jwt-vc",
+            "displayName": "PID EUDI (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:pid-eudi-mdoc:mso-mdoc",
+            "displayName": "PID EUDI (MSO Mdoc)"
+          },
+          {
+            "id": "cred:ewc:payment-wallet-attestation-sd-jwt:sd-jwt-vc",
+            "displayName": "Payment Wallet Attestation (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:photo-id-sd-jwt:sd-jwt-vc",
+            "displayName": "Photo ID (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:personal-contact-details-sd-jwt:sd-jwt-vc",
+            "displayName": "Personal Contact Details (SD-JWT VC)"
+          },
+          {
+            "id": "cred:ewc:loyalty-card-sd-jwt:sd-jwt-vc",
+            "displayName": "Loyalty Card (SD-JWT VC)"
+          }
+        ],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:fabaleus",
+      "name": "Fabaleus",
+      "sectors": [
+        "digital"
+      ],
+      "legalName": "Fabaleus B.V.",
+      "description": "IT consultancy, computer facilities management, and management advisory (Utrecht). Listed in Dutch trade register; no public corporate website.",
+      "identifiers": {
+        "business_registration_number": "58810315"
+      },
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/fabaleus/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T11:31:48.036Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:fides",
+      "name": "FIDES Labs",
+      "sectors": [
+        "digital"
+      ],
+      "identifiers": {
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c"
+      },
+      "website": "https://fides.community",
+      "logoUri": "https://avatars.githubusercontent.com/u/119322214?v=4",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/fides/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:fides:credential-issuer:test",
+            "displayName": "FIDES Issuer"
+          },
+          {
+            "id": "issuer:fides:mijnoverheid-issuer:test",
+            "displayName": "MijnOverheid issuer"
+          }
+        ],
+        "credentialTypes": [
+          {
+            "id": "cred:fides:lpid:sd-jwt-vc",
+            "displayName": "LPID Attestation"
+          },
+          {
+            "id": "cred:fides:bri:sd-jwt-vc",
+            "displayName": "BRI Attestation"
+          },
+          {
+            "id": "cred:fides:brp:sd-jwt-vc",
+            "displayName": "BRP Attestation"
+          },
+          {
+            "id": "cred:fides:company-roles:sd-jwt-vc",
+            "displayName": "Company Roles Attestation"
+          },
+          {
+            "id": "cred:fides:contact-details:sd-jwt-vc",
+            "displayName": "Contact Details"
+          },
+          {
+            "id": "cred:fides:einvoicing:sd-jwt-vc",
+            "displayName": "eInvoice Attestation"
+          },
+          {
+            "id": "cred:fides:green-lane:sd-jwt-vc",
+            "displayName": "Green Lane Credential"
+          },
+          {
+            "id": "cred:fides:iban:sd-jwt-vc",
+            "displayName": "IBAN Attestation"
+          },
+          {
+            "id": "cred:fides:iscc-sd:sd-jwt-vc",
+            "displayName": "ISCC Sustainability Declaration"
+          },
+          {
+            "id": "cred:fides:iscc-cert:sd-jwt-vc",
+            "displayName": "ISCC Certificate"
+          },
+          {
+            "id": "cred:fides:iscc-role:sd-jwt-vc",
+            "displayName": "CFP Role Credential"
+          },
+          {
+            "id": "cred:fides:iscc-cb:sd-jwt-vc",
+            "displayName": "ISCC Certification Body Credential"
+          },
+          {
+            "id": "cred:fides:iscc-rev-user:sd-jwt-vc",
+            "displayName": "NEa REV User Credential"
+          },
+          {
+            "id": "cred:fides:notary-incorporation:sd-jwt-vc",
+            "displayName": "Notary Incorporation Attestation"
+          },
+          {
+            "id": "cred:fides:pid:sd-jwt-vc",
+            "displayName": "PID Attestation"
+          },
+          {
+            "id": "cred:fides:vat:sd-jwt-vc",
+            "displayName": "VAT Attestation"
+          },
+          {
+            "id": "cred:fides:organization-profile:sd-jwt-vc",
+            "displayName": "Organization Profile"
+          },
+          {
+            "id": "cred:fides:criminal-record-check:sd-jwt-vc",
+            "displayName": "Criminal Record Check"
+          },
+          {
+            "id": "cred:fides:verified-employee:sd-jwt-vc",
+            "displayName": "Verified Employee"
+          },
+          {
+            "id": "cred:fides:higher-education-diploma:sd-jwt-vc",
+            "displayName": "Higher Education Diploma"
+          },
+          {
+            "id": "cred:fides:iso-certificate:sd-jwt-vc",
+            "displayName": "ISO Certificate"
+          },
+          {
+            "id": "cred:fides:upper-secondary-education:sd-jwt-vc",
+            "displayName": "Upper Secondary Education Certificate"
+          }
+        ],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "circulacity-sandbox",
+            "displayName": "CirculaCity"
+          },
+          {
+            "id": "rotterdam-sandbox",
+            "displayName": "Municipality of Rotterdam"
+          },
+          {
+            "id": "mijnoverheid-sandbox",
+            "displayName": "MijnOverheid"
+          },
+          {
+            "id": "hak-rein-vos-notarissen-sandbox",
+            "displayName": "Hak & Rein Vos Notarissen"
+          },
+          {
+            "id": "kvk-frontoffice-sandbox",
+            "displayName": "Kamer van Koophandel Frontoffice"
+          }
+        ]
+      },
+      "bluePages": {
+        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
+        "profileAvailable": true,
+        "checkedAt": "2026-03-31T15:52:13.498Z"
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:findynet",
+      "name": "Findynet",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://findynet.fi/en/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128",
+      "country": "FI",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/findynet/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:finland",
+      "name": "Finnish Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://dvv.fi/en/european-digital-identity-wallet",
+      "country": "FI",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/finland/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-finland",
+            "displayName": "National EUDI Wallet (Finland)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:forkbomb",
+      "name": "Forkbomb",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://forkbomb.solutions",
+      "logoUri": "https://www.google.com/s2/favicons?domain=forkbomb.solutions&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/forkbomb/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "didroom-wallet",
+            "displayName": "DIDroom Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "didroom",
+            "displayName": "DIDroom"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:france",
+      "name": "French Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://france-identite.gouv.fr/",
+      "country": "FR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/france/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "france-identite",
+            "displayName": "France Identité"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:fuelfwd",
+      "name": "FuelFWD",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.fuelfwd.io/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=fuelfwd.io&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/fuelfwd/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:gataca",
+      "name": "Gataca Labs",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://gataca.io",
+      "logoUri": "https://www.google.com/s2/favicons?domain=gataca.io&sz=128",
+      "country": "ES",
+      "contact": {
+        "email": "samuel@gataca.io"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/gataca/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "gataca-wallet",
+            "displayName": "Gataca Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "gataca-studio",
+            "displayName": "Gataca Studio"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:gear-up",
+      "name": "Gear Up",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.gear-up.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=gear-up.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/gear-up/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:rotterdam",
+      "name": "Gemeente Rotterdam",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.rotterdam.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=rotterdam.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/rotterdam/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:germany",
+      "name": "German Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.sprind.org/eudi-wallet",
+      "country": "DE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/germany/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-germany",
+            "displayName": "National EUDI Wallet (Germany)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:google",
+      "name": "Google",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.google.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=google.com&sz=128",
+      "country": "US",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/google/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "google-wallet",
+            "displayName": "Google Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "google-digital-credentials-demo",
+            "displayName": "DC API"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:bcgov",
+      "name": "Government of British Columbia",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www2.gov.bc.ca/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256",
+      "country": "CA",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/bcgov/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "bc-wallet",
+            "displayName": "BC Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "bc-digital-trust-showcase",
+            "displayName": "BC Wallet Showcase"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:cyprus",
+      "name": "Government of Cyprus",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.cygov.gov.cy/",
+      "country": "CY",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/cyprus/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "digital-citizen-cyprus",
+            "displayName": "Digital Citizen"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:greece",
+      "name": "Greek Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://wallet.gov.gr/",
+      "country": "GR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/greece/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "govgr-wallet",
+            "displayName": "Gov.gr Wallet"
+          },
+          {
+            "id": "national-eudi-wallet-greece",
+            "displayName": "National EUDI Wallet (Greece)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:hak-rein-vos-notarissen",
+      "name": "Hak & Rein Vos Notarissen",
+      "sectors": [
+        "digital"
+      ],
+      "legalName": "Hak & Rein Vos Notarissen",
+      "description": "Notary practice in Lelystad: family, housing, business law, and Spanish inheritance matters.",
+      "website": "https://hakreinvos.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=hakreinvos.nl&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/hak-rein-vos-notarissen/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T11:31:48.036Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:headon",
+      "name": "Headon",
+      "sectors": [
+        "supply_chain",
+        "digital"
+      ],
+      "legalName": "Headon B.V.",
+      "description": "Open business innovation: scouting, partnerships, implementation orchestration, and software (including CargoLedger for supply chain).",
+      "website": "https://www.headon.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=headon.nl&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/headon/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T11:31:48.036Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:hovi",
+      "name": "Hovi",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.hovi.id/",
+      "logoUri": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+      "country": "FI",
+      "fidesManifestoSupporter": true,
+      "contact": {
+        "email": "contact@hovi.id"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/hovi/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:hovi:eudi-playground:test",
+            "displayName": "Hovi EUDI Playground"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "hovi-wallet",
+            "displayName": "Hovi Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "hovi-business-wallet",
+            "displayName": "Hovi Business Wallet"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:hungary",
+      "name": "Hungarian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.kormany.hu/",
+      "country": "HU",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/hungary/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-hungary",
+            "displayName": "National EUDI Wallet (Hungary)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:iceland",
+      "name": "Icelandic Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.government.is/",
+      "country": "IS",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/iceland/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-iceland",
+            "displayName": "National EUDI Wallet (Iceland)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:idcontrol",
+      "name": "ID Control",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://idcontrol.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=idcontrol.com&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/idcontrol/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:identinet",
+      "name": "Identinet",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://identinet.io/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=identinet.io&sz=128",
+      "country": "EU",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/identinet/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:igrant",
+      "name": "iGrant.io",
+      "sectors": [
+        "digital"
+      ],
+      "identifiers": {
+        "did": "did:web:igrant.io"
+      },
+      "website": "https://igrant.io",
+      "logoUri": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+      "country": "SE",
+      "contact": {
+        "email": "support@igrant.io"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/igrant/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:igrant:demo:test",
+            "displayName": "iGrant.io Demo Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "igrant-data-wallet",
+            "displayName": "Data Wallet by iGrant.io"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "igrant-organization-wallet",
+            "displayName": "Organisation Wallet Suite by iGrant.io"
+          }
+        ],
+        "relyingParties": [
+          {
+            "id": "igrant-open-bank-account-demo",
+            "displayName": "Open Bank Account"
+          },
+          {
+            "id": "igrant-bank-login-demo",
+            "displayName": "Bank Account Login"
+          },
+          {
+            "id": "igrant-fast-ferries-merchant-payments",
+            "displayName": "Fast Ferries – Payments with EUDI Wallets"
+          },
+          {
+            "id": "igrant-insurance-policy-demo",
+            "displayName": "Insurance Policy"
+          },
+          {
+            "id": "igrant-dcql-credential-query-demo",
+            "displayName": "DCQL Credential Query"
+          },
+          {
+            "id": "igrant-kyc-photoid-demo",
+            "displayName": "KYC with Photo ID"
+          },
+          {
+            "id": "igrant-w3c-digital-credentials-demo",
+            "displayName": "W3C Digital Credentials API"
+          },
+          {
+            "id": "igrant-photo-id-issuance",
+            "displayName": "Photo ID"
+          },
+          {
+            "id": "igrant-issue-test-pid",
+            "displayName": "Issue Test PID"
+          },
+          {
+            "id": "igrant-issue-test-qesac",
+            "displayName": "Issue Test QESAC"
+          },
+          {
+            "id": "igrant-dcql-trusted-authority-demo",
+            "displayName": "DCQL – Trusted Authority Verification"
+          },
+          {
+            "id": "igrant-esspass-pda1",
+            "displayName": "ESSPASS – PDA1"
+          },
+          {
+            "id": "igrant-payment-authenticator",
+            "displayName": "Payment Authenticator"
+          },
+          {
+            "id": "igrant-payment-bank-led",
+            "displayName": "Payment – Bank Led"
+          }
+        ]
+      },
+      "bluePages": {
+        "did": "did:web:igrant.io",
+        "profileAvailable": false,
+        "checkedAt": "2026-03-31T15:52:13.498Z"
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ilabs",
+      "name": "iLabs",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.ilabs.ai/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=ilabs.ai&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ilabs/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:impierce",
+      "name": "Impierce Technologies",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://impierce.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=impierce.com&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/impierce/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "unime-wallet",
+            "displayName": "UniMe"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "impierce-unitrust",
+            "displayName": "UniTrust"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:india",
+      "name": "India Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.digilocker.gov.in/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=uidai.gov.in&sz=128",
+      "country": "IN",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/india/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "digilocker",
+            "displayName": "DigiLocker"
+          },
+          {
+            "id": "maadhaar",
+            "displayName": "mAadhaar"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:inetum",
+      "name": "Inetum",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.inetum.com/es/es.html",
+      "country": "ES",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/inetum/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "miio-wallet",
+            "displayName": "MIIO"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "dalion-org-wallet",
+            "displayName": "DALION"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:innotractor",
+      "name": "Innotractor",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://innotractor.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=innotractor.com&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/innotractor/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:innovalor",
+      "name": "Innovalor",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://innovalor.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=innovalor.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/innovalor/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:intercede",
+      "name": "Intercede",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.intercede.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=intercede.com&sz=128",
+      "country": "GB",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/intercede/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "intercede-myid-identity-wallet",
+            "displayName": "MyID Identity Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ireland",
+      "name": "Irish Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.gov.ie/",
+      "country": "IE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ireland/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-ireland",
+            "displayName": "National EUDI Wallet (Ireland)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:italy",
+      "name": "Italian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://io.italia.it/",
+      "country": "IT",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/italy/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "it-wallet",
+            "displayName": "IT Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ixo",
+      "name": "IXO World AG",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.ixo.world/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=ixo.world&sz=128",
+      "country": "CH",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ixo/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "ixo-portal",
+            "displayName": "IXO Portal"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:izertis",
+      "name": "Izertis S.A.",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.izertis.com/",
+      "country": "ES",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/izertis/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "identfy-personal-wallet",
+            "displayName": "Identfy"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "identfy-business-wallet",
+            "displayName": "Identfy Business Wallet"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:k4security",
+      "name": "K4-Security",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.k4-security.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
+      "country": "KR",
+      "contact": {
+        "email": "contact@k4-security.com"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/k4security/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "ksid-wallet",
+            "displayName": "KSID Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:kvk",
+      "name": "Kamer van Koophandel",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.kvk.nl",
+      "logoUri": "https://s3-eu-west-1.amazonaws.com/tpd/logos/5f1610bc0cba87000181beed/0x0.png",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/kvk/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:credenco:kvk:test",
+            "displayName": "KVK Sandbox Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:latvia",
+      "name": "Latvian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.latvija.lv/",
+      "country": "LV",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/latvia/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-latvia",
+            "displayName": "National EUDI Wallet (Latvia)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:lissi",
+      "name": "Lissi GmbH",
+      "sectors": [
+        "digital"
+      ],
+      "identifiers": {
+        "did": "did:web:lissi.id"
+      },
+      "website": "https://lissi.id",
+      "logoUri": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+      "country": "DE",
+      "contact": {
+        "email": "info@lissi.id"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/lissi/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "lissi-wallet",
+            "displayName": "Lissi ID-Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "lissi-id-wallet-connector",
+            "displayName": "Lissi ID-Wallet Connector"
+          }
+        ],
+        "relyingParties": [
+          {
+            "id": "lissi-bank-account-demo",
+            "displayName": "Bank Account Opening"
+          },
+          {
+            "id": "lissi-tax-authority-demo",
+            "displayName": "Tax ID Issuance"
+          },
+          {
+            "id": "lissi-municipality-demo",
+            "displayName": "Residence Certificate"
+          },
+          {
+            "id": "lissi-loan-qes-demo",
+            "displayName": "Loan Process (QES)"
+          }
+        ]
+      },
+      "bluePages": {
+        "did": "did:web:lissi.id",
+        "profileAvailable": false,
+        "checkedAt": "2026-03-31T15:52:13.498Z"
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:mattr",
+      "name": "MATTR",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://mattr.global",
+      "logoUri": "https://www.google.com/s2/favicons?domain=mattr.global&sz=128",
+      "country": "NZ",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/mattr/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "mattr-go-hold",
+            "displayName": "MATTR Go | Hold"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "mattr-vii",
+            "displayName": "MATTR VII"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:meeco",
+      "name": "Meeco",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.meeco.me",
+      "logoUri": "https://www.google.com/s2/favicons?domain=meeco.me&sz=128",
+      "country": "AU",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/meeco/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "meeco-personal-wallet",
+            "displayName": "Meeco Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "meeco-svx-platform",
+            "displayName": "Meeco SVX Platform"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:microsoft",
+      "name": "Microsoft",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.microsoft.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
+      "country": "US",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/microsoft/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "microsoft-authenticator",
+            "displayName": "Microsoft Authenticator"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:minisuomi",
+      "name": "Mini-Suomi (DVV Finland)",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://wallet.minisuomi.fi",
+      "logoUri": "https://www.google.com/s2/favicons?domain=minisuomi.fi&sz=128",
+      "country": "FI",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/minisuomi/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "mini-wallet-finland",
+            "displayName": "Mini-Wallet (Finland)"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:bzk",
+      "name": "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+      "sectors": [
+        "public_sector",
+        "digital"
+      ],
+      "legalName": "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+      "description": "Dutch Ministry of the Interior and Kingdom Relations: rule of law, public administration, and Kingdom relations.",
+      "website": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "logoUri": "https://www.google.com/s2/favicons?domain=rijksoverheid.nl&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/bzk/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T11:31:48.036Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:brazil",
+      "name": "Ministry of Management and Innovation in Public Services (MGI), Brazil",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.gov.br/gestao/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=gov.br&sz=128",
+      "country": "BR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/brazil/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "br-car-vc-pilot",
+            "displayName": "Cadastro Ambiental Rural (CAR) VC Pilot"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:mintblue",
+      "name": "mintBlue",
+      "sectors": [
+        "finance",
+        "digital"
+      ],
+      "description": "Convergence infrastructure for enterprises and governments: verifiable data sharing, compliance automation, and high-volume secured processing.",
+      "website": "https://mintblue.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=mintblue.com&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/mintblue/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T11:31:48.036Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:moldova",
+      "name": "Moldova e-Governance Agency",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.egov.md/en",
+      "logoUri": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/6f/66/616f66c0-047b-eb22-8bb3-0d3a82b3edb2/app_logo_ios-1x_U007emarketing-0-8-0-85-220-0.png/400x400ia-75.webp",
+      "country": "MD",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/moldova/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "moldova-ega-evo",
+            "displayName": "EVO"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:mosip",
+      "name": "MOSIP",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.mosip.io",
+      "logoUri": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128",
+      "country": "IN",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/mosip/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:mosip:insurance:test",
+            "displayName": "Inji Certify - Insurance Sandbox Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "inji-wallet",
+            "displayName": "Inji Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "inji-certifier",
+            "displayName": "Inji Certifier"
+          },
+          {
+            "id": "inji-verifier",
+            "displayName": "Inji Verifier"
+          }
+        ],
+        "relyingParties": [
+          {
+            "id": "inji-web-verifier",
+            "displayName": "Inji Web Verifier"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:mydata-global",
+      "name": "MyData Global",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://mydata.org/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=mydata.org&sz=128",
+      "country": "FI",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/mydata-global/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:namirial",
+      "name": "Namirial",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.namirial.com",
+      "logoUri": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
+      "country": "IT",
+      "contact": {
+        "email": "support-wallet@namirial.com",
+        "support": "https://servicedesk.namirial.com/hc/en-gb"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/namirial/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:namirial:wallet-studio:test",
+            "displayName": "Namirial Demo Platform"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "namirial-wallet",
+            "displayName": "Namirial Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "namirial-wallet-enterprise",
+            "displayName": "Namirial Wallet Enterprise"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ethiopia",
+      "name": "National ID Program (NIDP), Ethiopia",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://id.gov.et/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=id.gov.et&sz=128",
+      "country": "ET",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ethiopia/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "fayda-id",
+            "displayName": "Fayda ID"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:neoke",
+      "name": "Neoke",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.neoke.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=neoke.com&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/neoke/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "neoke-wallet",
+            "displayName": "Neoke"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:northernblock",
+      "name": "Northern Block",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://northernblock.io",
+      "logoUri": "https://www.google.com/s2/favicons?domain=northernblock.io&sz=128",
+      "country": "CA",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/northernblock/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "orbit-edge",
+            "displayName": "Orbit Edge"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "orbit-enterprise",
+            "displayName": "Orbit Enterprise"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:norway",
+      "name": "Norwegian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.digdir.no/",
+      "country": "NO",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/norway/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-norway",
+            "displayName": "National EUDI Wallet (Norway)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ooru",
+      "name": "Ooru",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://ooru.io/",
+      "country": "IN",
+      "contact": {
+        "email": "info@oouru.io"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ooru/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "credissuer",
+            "displayName": "CredIssuer"
+          },
+          {
+            "id": "snapkyc",
+            "displayName": "SnapKYC"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:owf",
+      "name": "OpenWallet Foundation",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://openwallet.foundation/",
+      "logoUri": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4",
+      "country": "US",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/owf/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:multipaz:mdl:test",
+            "displayName": "MultiPaz Sandbox Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "multipaz-verifier",
+            "displayName": "Multipaz Verifier"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:poland",
+      "name": "Polish Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.gov.pl/mobywatel",
+      "country": "PL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/poland/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "mobywatel",
+            "displayName": "mObywatel"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:portugal",
+      "name": "Portuguese Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://eportugal.gov.pt",
+      "country": "PT",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/portugal/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "govpt",
+            "displayName": "gov.pt (formerly id.gov.pt)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:privacybydesign",
+      "name": "Privacy by Design Foundation",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://privacybydesign.foundation",
+      "logoUri": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/privacybydesign/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "yivi",
+            "displayName": "Yivi"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:procivis",
+      "name": "Procivis",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.procivis.ch",
+      "logoUri": "https://www.google.com/s2/favicons?domain=procivis.ch&sz=128",
+      "country": "CH",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/procivis/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "procivis-one-wallet",
+            "displayName": "Procivis One Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "procivis-one",
+            "displayName": "Procivis One"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:quintessence-research",
+      "name": "Quintessence Research",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://quintessenceresearch.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=quintessenceresearch.com&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/quintessence-research/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:honduras",
+      "name": "RNP HN (Registro Nacional de las Personas), Honduras",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.rnp.hn/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=rnp.hn&sz=128",
+      "country": "HN",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/honduras/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "bien",
+            "displayName": "Bien"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:samsung",
+      "name": "Samsung",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.samsung.com/us/apps/samsung-wallet/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
+      "country": "KR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/samsung/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "samsung-wallet",
+            "displayName": "Samsung Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:scytales",
+      "name": "Scytales",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://scytales.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=scytales.com&sz=128",
+      "country": "SE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/scytales/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "scytales-id-wallet",
+            "displayName": "Scytales ID Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "scytales-eu-reference-wallet",
+            "displayName": "Scytales EU Reference Wallet"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:sicpa",
+      "name": "SICPA",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.sicpa.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=sicpa.com&sz=128",
+      "country": "CH",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/sicpa/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "sicpa-digital-trust-suite",
+            "displayName": "SICPA Digital Trust Suite"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:slovakia",
+      "name": "Slovak Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.slovensko.sk/",
+      "country": "SK",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/slovakia/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-slovakia",
+            "displayName": "National EUDI Wallet (Slovakia)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:slovenia",
+      "name": "Slovenian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.gov.si/",
+      "country": "SI",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/slovenia/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-slovenia",
+            "displayName": "National EUDI Wallet (Slovenia)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:spain",
+      "name": "Spanish Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://digital.gob.es/",
+      "country": "ES",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/spain/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "cartera-digital-beta",
+            "displayName": "Cartera Digital Beta"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:sphereon",
+      "name": "Sphereon",
+      "sectors": [
+        "digital"
+      ],
+      "identifiers": {
+        "did": "did:web:sphereon.com"
+      },
+      "website": "https://sphereon.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=sphereon.com&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "contact": {
+        "email": "info@sphereon.com"
+      },
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/sphereon/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "sphereon-wallet",
+            "displayName": "Sphereon Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "sphereon-vdx-platform",
+            "displayName": "Sphereon VDX Platform"
+          }
+        ],
+        "relyingParties": []
+      },
+      "bluePages": {
+        "did": "did:web:sphereon.com",
+        "profileAvailable": false,
+        "checkedAt": "2026-03-31T15:52:13.498Z"
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:spherity",
+      "name": "Spherity",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.spherity.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=spherity.com&sz=128",
+      "country": "DE",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/spherity/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "spherity-business-wallet",
+            "displayName": "Spherity Business Wallet"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:spruce",
+      "name": "Spruce Systems, Inc. (SpruceID)",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://spruceid.com/products/sprucekit",
+      "logoUri": "https://www.google.com/s2/favicons?domain=spruceid.com&sz=128",
+      "country": "US",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/spruce/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "sprucekit-showcase",
+            "displayName": "SpruceKit Showcase"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:stelausoftware",
+      "name": "Stelau Software",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.stelau.com",
+      "country": "FR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/stelausoftware/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": [
+          {
+            "id": "mdoc-web-verifier",
+            "displayName": "mDoc Web Verifier"
+          }
+        ]
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:sweden",
+      "name": "Swedish Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://www.digg.se/",
+      "country": "SE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/sweden/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "national-eudi-wallet-sweden",
+            "displayName": "National EUDI Wallet (Sweden)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:swiyu",
+      "name": "Swiss Confederation",
+      "sectors": [
+        "public_sector"
+      ],
+      "legalName": "Swiss Government",
+      "website": "https://www.eid.admin.ch/en",
+      "logoUri": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V",
+      "country": "CH",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/swiyu/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:swiyu:beta-id:test",
+            "displayName": "Swiss E-ID Beta Credential Service Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "swiyu-wallet",
+            "displayName": "SWIYU Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:talao",
+      "name": "Talao",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://talao.io",
+      "logoUri": "https://www.google.com/s2/favicons?domain=talao.io&sz=128",
+      "country": "FR",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/talao/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:talao:acnliwayop:test",
+            "displayName": "Talao Sandbox Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "altme-wallet",
+            "displayName": "Altme"
+          },
+          {
+            "id": "talao-wallet",
+            "displayName": "Talao Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:thales",
+      "name": "Thales",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.thalesgroup.com",
+      "logoUri": "https://digid-eks.dev.citizen-online.com/issuer-portal/assets/img/Thales.svg",
+      "country": "FR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/thales/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:thales:unfold:test",
+            "displayName": "Thales Unfold OID4VCI Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:tno",
+      "name": "TNO",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://tsg.dataspac.es/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=tno.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/tno/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "tsg-mobile-wallet",
+            "displayName": "TSG Mobile Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:toppan",
+      "name": "Toppan",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.toppan.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=toppan.com&sz=128",
+      "country": "JP",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/toppan/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [
+          {
+            "id": "issuer:toppan:goid:test",
+            "displayName": "TOPPAN Sandbox Issuer"
+          }
+        ],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "toppan-wallet",
+            "displayName": "TOPPAN Wallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ubique",
+      "name": "Ubique Innovation",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://ubique.ch",
+      "logoUri": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/2d/44/132d44a4-424b-3dfc-174e-541248ef421b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/400x400ia-75.webp",
+      "country": "CH",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ubique/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "heidi-wallet",
+            "displayName": "Heidi Wallet App"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ukraine",
+      "name": "Ukrainian Government",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://diia.gov.ua/",
+      "country": "UA",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ukraine/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "diia",
+            "displayName": "Diia (Дія)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:uncefact",
+      "name": "UN/CEFACT",
+      "sectors": [
+        "public_sector"
+      ],
+      "website": "https://untp.unece.org",
+      "country": "CH",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/uncefact/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [
+          {
+            "id": "cred:uncefact:dcc:vcdm-2-0",
+            "displayName": "Digital Conformity Credential"
+          },
+          {
+            "id": "cred:uncefact:dpp:vcdm-2-0",
+            "displayName": "Digital Product Passport"
+          },
+          {
+            "id": "cred:uncefact:dte:vcdm-2-0",
+            "displayName": "Digital Traceability Event"
+          },
+          {
+            "id": "cred:uncefact:dfr:vcdm-2-0",
+            "displayName": "Digital Facility Record"
+          },
+          {
+            "id": "cred:uncefact:dia:vcdm-2-0",
+            "displayName": "Digital Identity Anchor"
+          },
+          {
+            "id": "cred:uncefact:invoice:vcdm-2-0",
+            "displayName": "Commercial Invoice"
+          },
+          {
+            "id": "cred:uncefact:bill-of-lading:vcdm-2-0",
+            "displayName": "Bill of Lading"
+          },
+          {
+            "id": "cred:uncefact:certificate-of-origin:vcdm-2-0",
+            "displayName": "Certificate of Origin"
+          },
+          {
+            "id": "cred:uncefact:customs-declaration:vcdm-2-0",
+            "displayName": "Customs Declaration"
+          },
+          {
+            "id": "cred:uncefact:insurance-certificate:vcdm-2-0",
+            "displayName": "Insurance Certificate"
+          },
+          {
+            "id": "cred:uncefact:packing-list:vcdm-2-0",
+            "displayName": "Packing List"
+          },
+          {
+            "id": "cred:uncefact:purchase-order:vcdm-2-0",
+            "displayName": "Purchase Order"
+          },
+          {
+            "id": "cred:uncefact:warehouse-receipt:vcdm-2-0",
+            "displayName": "Warehouse Receipt"
+          }
+        ],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:unifiedpost",
+      "name": "Unifiedpost",
+      "sectors": [
+        "finance",
+        "trade",
+        "digital"
+      ],
+      "legalName": "Unifiedpost Group",
+      "description": "Digital business solutions for invoicing, payments, compliance, integrations, and document management (Netherlands operations, Lelystad).",
+      "website": "https://www.unifiedpost.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=unifiedpost.nl&sz=128",
+      "country": "NL",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/unifiedpost/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T11:31:48.036Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:uaegean",
+      "name": "University of the Aegean",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.aegean.gr",
+      "logoUri": "https://www.google.com/s2/favicons?domain=aegean.gr&sz=128",
+      "country": "GR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/uaegean/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [
+          {
+            "id": "uaegean-stack",
+            "displayName": "UAegean Stack (Cyclades Fast Ferries)"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:validatedid",
+      "name": "Validated ID",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.validatedid.com",
+      "logoUri": "https://www.google.com/s2/favicons?domain=validatedid.com&sz=128",
+      "country": "ES",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/validatedid/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "vidwallet",
+            "displayName": "VIDwallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "validatedid-platform",
+            "displayName": "ValidatedID Platform"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:ver-id",
+      "name": "ver.ID",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://ver.id/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=ver.id&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ver-id/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:53:54.773Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:verimi",
+      "name": "Verimi GmbH",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://verimi.de/",
+      "country": "DE",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/verimi/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "verimi",
+            "displayName": "Verimi"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:werify",
+      "name": "Werify",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://werify.eu/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=werify.eu&sz=128",
+      "country": "EU",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/werify/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:wwwallet",
+      "name": "wwWallet.org",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://wwwallet.org",
+      "logoUri": "https://avatars.githubusercontent.com/u/126908515",
+      "country": "GR",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/wwwallet/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "wwwallet",
+            "displayName": "wwWallet"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:xablu",
+      "name": "Xablu",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.xablu.com/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=xablu.com&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/xablu/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:yoti",
+      "name": "Yoti Ltd.",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.yoti.com/",
+      "country": "GB",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/yoti/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "yoti",
+            "displayName": "Yoti"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:youniqx",
+      "name": "youniqx Identity AG",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://www.youniqx.com",
+      "logoUri": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/f7/85/41f78596-1cab-3d90-4fe9-98977dd360e1/AppIcon-0-1x_U007emarketing-0-6-0-85-220-0.png/400x400ia-75.webp",
+      "country": "AT",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/youniqx/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "eausweise",
+            "displayName": "eAusweise (Austrian Wallet)"
+          },
+          {
+            "id": "eid-li",
+            "displayName": "eID.li (Liechtenstein Wallet)"
+          }
+        ],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    },
+    {
+      "id": "org:yourd",
+      "name": "YourD",
+      "sectors": [
+        "digital"
+      ],
+      "website": "https://yourd.xyz",
+      "logoUri": "https://www.google.com/s2/favicons?domain=yourd.xyz&sz=128",
+      "country": "KR",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/yourd/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [
+          {
+            "id": "yourd-data-wallet",
+            "displayName": "YourD Data Wallet"
+          }
+        ],
+        "businessWallets": [
+          {
+            "id": "yourd-business-wallet",
+            "displayName": "YourData Business Wallet"
+          }
+        ],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-27T15:10:30.532Z",
+      "updatedAt": "2026-03-31T15:52:13.498Z",
+      "fetchedAt": "2026-03-31T15:52:13.498Z"
+    }
+  ],
+  "stats": {
+    "totalOrganizations": 129,
+    "byCountry": {
+      "EE": 2,
+      "FR": 5,
+      "SG": 1,
+      "AL": 1,
+      "NL": 38,
+      "US": 8,
+      "IT": 3,
+      "AT": 3,
+      "FI": 6,
+      "IN": 4,
+      "BE": 1,
+      "BT": 1,
+      "DE": 5,
+      "CZ": 1,
+      "DK": 1,
+      "PG": 1,
+      "CH": 7,
+      "EU": 5,
+      "ES": 5,
+      "CA": 2,
+      "CY": 1,
+      "GR": 3,
+      "HU": 1,
+      "IS": 1,
+      "SE": 3,
+      "GB": 2,
+      "IE": 1,
+      "KR": 3,
+      "LV": 1,
+      "NZ": 1,
+      "AU": 1,
+      "BR": 1,
+      "MD": 1,
+      "ET": 1,
+      "NO": 1,
+      "PL": 1,
+      "PT": 1,
+      "HN": 1,
+      "SK": 1,
+      "SI": 1,
+      "JP": 1,
+      "UA": 1
+    },
+    "withIssuers": 17,
+    "withCredentialTypes": 4,
+    "withWallets": 88,
+    "withRelyingParties": 14,
+    "withBluePagesProfile": 1
+  }
+}

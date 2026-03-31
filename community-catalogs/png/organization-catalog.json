@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:png",
+    "name": "Department of Information and Communications Technology, Papua New Guinea",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.sevis.gov.pg/",
+    "logo": "https://www.google.com/s2/favicons?domain=sevis.gov.pg&sz=128",
+    "country": "PG"
+  }
+}

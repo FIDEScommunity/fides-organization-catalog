@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:identinet",
+    "name": "Identinet",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://identinet.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=identinet.io&sz=128",
+    "country": "EU",
+    "fidesManifestoSupporter": true
+  }
+}

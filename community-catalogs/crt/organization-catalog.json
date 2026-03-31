@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:crt",
+    "name": "Centraal Register Techniek",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.centraalregistertechniek.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=centraalregistertechniek.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

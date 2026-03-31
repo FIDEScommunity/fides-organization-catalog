@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fides.community/schemas/organization-catalog/v1",
+  "title": "FIDES Organization Catalog Schema",
+  "description": "Schema for organization catalog entries contributed by community members.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "organization"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "https://fides.community/schemas/organization-catalog/v1"
+    },
+    "organization": {
+      "$ref": "#/$defs/Organization"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "CertificationEvidence": {
+      "description": "Optional proof: public URL (page or PDF) or reference to a verifiable credential.",
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "url"],
+          "properties": {
+            "kind": { "const": "url" },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Web page, PDF, or other document location"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Optional short label for the link"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "format", "credentialUri"],
+          "properties": {
+            "kind": { "const": "verifiable_credential" },
+            "format": {
+              "type": "string",
+              "enum": ["jwt_vc", "sd_jwt_vc", "ldp_vc", "other"],
+              "description": "Credential representation"
+            },
+            "credentialUri": {
+              "type": "string",
+              "format": "uri",
+              "description": "HTTPS URL to retrieve or resolve the credential"
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Optional context (issuer, type, etc.)"
+            }
+          }
+        }
+      ]
+    },
+    "OrganizationCertification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": ["iso27001", "iso27701", "qtsp", "soc2"],
+          "description": "iso27001: ISO/IEC 27001 (ISMS). iso27701: ISO/IEC 27701 (privacy extension). qtsp: Qualified Trust Service Provider under EU eIDAS. soc2: SOC 2 attestation."
+        },
+        "evidence": {
+          "$ref": "#/$defs/CertificationEvidence"
+        }
+      }
+    },
+    "OrganizationIdentifiers": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "description": "Optional business and technical identifiers; include only keys you publish.",
+      "properties": {
+        "business_registration_number": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Trade register / company registration number (jurisdiction-specific)"
+        },
+        "vat_number": {
+          "type": "string",
+          "minLength": 1,
+          "description": "VAT / sales tax identification number"
+        },
+        "lei": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Legal Entity Identifier (ISO 17442)"
+        },
+        "eori": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Economic Operators Registration and Identification (EU customs)"
+        },
+        "euid": {
+          "type": "string",
+          "minLength": 1,
+          "description": "European Unique Identifier for a legal entity"
+        },
+        "duns": {
+          "type": "string",
+          "minLength": 1,
+          "description": "D-U-N-S number"
+        },
+        "gln": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Global Location Number (GS1)"
+        },
+        "did": {
+          "type": "string",
+          "pattern": "^did:",
+          "description": "Decentralized Identifier"
+        }
+      }
+    },
+    "OrganizationSectorCode": {
+      "type": "string",
+      "enum": [
+        "public_sector",
+        "finance",
+        "trade",
+        "supply_chain",
+        "manufacturing",
+        "energy",
+        "agriculture",
+        "food",
+        "retail",
+        "healthcare",
+        "education",
+        "construction",
+        "mobility",
+        "digital"
+      ],
+      "description": "Closed sector taxonomy; use one or more per organization."
+    },
+    "Organization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "sectors"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^org:[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Unique identifier. Format: org:<code> where code matches the community-catalogs directory name."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name of the organization"
+        },
+        "sectors": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "At least one sector from the closed list. Contributors should pick the best fit; digital identity / trust providers often also map to digital.",
+          "items": { "$ref": "#/$defs/OrganizationSectorCode" }
+        },
+        "legalName": {
+          "type": "string",
+          "description": "Official legal / registered name (e.g. trade register)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description of the organization"
+        },
+        "identifiers": {
+          "$ref": "#/$defs/OrganizationIdentifiers"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri"
+        },
+        "logo": {
+          "type": "string",
+          "format": "uri"
+        },
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$|^EU$",
+          "description": "ISO 3166-1 alpha-2 country code, or EU for pan-European"
+        },
+        "certifications": {
+          "type": "array",
+          "description": "Declared certifications from the closed list; at most one entry per code (first wins if duplicates are submitted).",
+          "items": { "$ref": "#/$defs/OrganizationCertification" }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true,
+          "description": "e.g. FIDES Supporter"
+        },
+        "fidesManifestoSupporter": {
+          "type": "boolean",
+          "description": "When true, the organization is listed under FIDES Supporters on https://fides.community/manifesto/ (logo wall). Not the same as submitting the optional ratification form."
+        },
+        "contact": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "support": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      }
+    }
+  }
+}

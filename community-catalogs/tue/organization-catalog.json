@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tue",
+    "name": "Eindhoven University of Technology",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Technische Universiteit Eindhoven",
+    "website": "https://www.tue.nl/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=tue.nl&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true
+  }
+}

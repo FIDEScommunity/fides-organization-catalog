@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:animo",
+    "name": "Animo Solutions",
+    "sectors": [
+      "digital"
+    ],
+    "identifiers": {
+      "did": "did:web:animo.id"
+    },
+    "website": "https://animo.id",
+    "logo": "https://www.google.com/s2/favicons?domain=animo.id&sz=128",
+    "country": "NL",
+    "fidesManifestoSupporter": true,
+    "contact": {
+      "email": "info@animo.id",
+      "support": "https://animo.id/support"
+    }
+  }
+}
