@@ -12,6 +12,7 @@
     "website": "https://fides.community",
     "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
     "country": "NL",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "FIDES Community is a global community where wallets, verifiable credentials and real-world use cases come together. Explore catalogs, labs and pilots."
   }
 }

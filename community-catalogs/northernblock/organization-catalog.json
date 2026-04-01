@@ -8,6 +8,7 @@
     ],
     "website": "https://northernblock.io",
     "logo": "https://www.google.com/s2/favicons?domain=northernblock.io&sz=128",
-    "country": "CA"
+    "country": "CA",
+    "description": "Canadian software company focused on digital identity wallets, verifiable credentials, and enterprise-grade issuance tooling."
   }
 }

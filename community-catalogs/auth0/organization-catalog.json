@@ -8,6 +8,7 @@
     ],
     "website": "https://auth0.com",
     "logo": "https://www.google.com/s2/favicons?domain=auth0.com&sz=128",
-    "country": "US"
+    "country": "US",
+    "description": "Secure users, AI agents, and more with Auth0, an easy-to-implement, scalable, and adaptable authentication and authorization platform."
   }
 }

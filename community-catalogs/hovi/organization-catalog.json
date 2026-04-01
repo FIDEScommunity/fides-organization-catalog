@@ -12,6 +12,7 @@
     "fidesManifestoSupporter": true,
     "contact": {
       "email": "contact@hovi.id"
-    }
+    },
+    "description": "Discover Hovi’s self-sovereign identity platform, designed to effortlessly integrate verifiable credentials for businesses of all sizes."
   }
 }

@@ -8,6 +8,7 @@
     ],
     "website": "https://privacybydesign.foundation",
     "logo": "https://www.google.com/s2/favicons?domain=yivi.app&sz=128",
-    "country": "NL"
+    "country": "NL",
+    "description": "Privacy by Design Foundation; steward of Yivi (formerly IRMA), an attribute-based privacy-preserving identity wallet and issuer ecosystem."
   }
 }

@@ -8,6 +8,7 @@
     ],
     "website": "https://www.thalesgroup.com",
     "logo": "https://digid-eks.dev.citizen-online.com/issuer-portal/assets/img/Thales.svg",
-    "country": "FR"
+    "country": "FR",
+    "description": "Multinational group delivering aerospace, transport, defence, and digital identity/security solutions including government ID programmes."
   }
 }

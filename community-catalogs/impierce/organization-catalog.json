@@ -9,6 +9,7 @@
     "website": "https://impierce.com",
     "logo": "https://www.google.com/s2/favicons?domain=impierce.com&sz=128",
     "country": "NL",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "Impierce Technologies is a provider of digital identity trust infrastructure & services, including an EUDI Wallet, Identity Agent, Business Wallet and Ecosystem Orchestration tooling."
   }
 }

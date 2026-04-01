@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer.
- * Version: 1.2.17
+ * Version: 1.2.26
  * Author: FIDES Community
  * License: Apache-2.0
  */
@@ -180,13 +180,13 @@ class Fides_Organization_Catalog {
             'fides-organization-catalog',
             $this->plugin_url . 'assets/style.css',
             [],
-            '1.2.17'
+            '1.2.26'
         );
         wp_register_script(
             'fides-organization-catalog',
             $this->plugin_url . 'assets/organization-catalog.js',
             [],
-            '1.2.17',
+            '1.2.26',
             true
         );
     }

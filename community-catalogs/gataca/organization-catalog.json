@@ -11,6 +11,7 @@
     "country": "ES",
     "contact": {
       "email": "samuel@gataca.io"
-    }
+    },
+    "description": "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI)."
   }
 }

@@ -9,6 +9,7 @@
     "website": "https://mydata.org/",
     "logo": "https://www.google.com/s2/favicons?domain=mydata.org&sz=128",
     "country": "FI",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "International nonprofit promoting human-centric personal data control, interoperability, and ethical data use across sectors."
   }
 }

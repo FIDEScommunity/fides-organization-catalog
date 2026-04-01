@@ -7,6 +7,7 @@
       "public_sector"
     ],
     "website": "https://dvv.fi/en/european-digital-identity-wallet",
-    "country": "FI"
+    "country": "FI",
+    "description": "Finnish public administration; DVV leads population and identity services and pilots the European Digital Identity Wallet in Finland."
   }
 }

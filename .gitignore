@@ -3,3 +3,9 @@ dist/
 .DS_Store
 *.log
 .cursor/
+
+# Local-only: absolute paths to this machine’s Local WP site (do not publish)
+scripts/sync-all-fides-wp-plugins-to-utrecht-demo.sh
+
+# Local plugin release zip (do not publish)
+*.zip

@@ -8,6 +8,7 @@
     ],
     "website": "https://www.samsung.com/us/apps/samsung-wallet/",
     "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
-    "country": "KR"
+    "country": "KR",
+    "description": "Samsung Pay is Wallet"
   }
 }

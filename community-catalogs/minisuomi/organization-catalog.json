@@ -8,6 +8,7 @@
     ],
     "website": "https://wallet.minisuomi.fi",
     "logo": "https://www.google.com/s2/favicons?domain=minisuomi.fi&sz=128",
-    "country": "FI"
+    "country": "FI",
+    "description": "Finnish demonstration wallet environment (“Mini-Suomi”) operated by DVV to trial digital identity and wallet scenarios."
   }
 }

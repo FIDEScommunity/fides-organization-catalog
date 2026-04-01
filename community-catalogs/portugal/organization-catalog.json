@@ -7,6 +7,7 @@
       "public_sector"
     ],
     "website": "https://eportugal.gov.pt",
-    "country": "PT"
+    "country": "PT",
+    "description": "Portuguese government e-government portal (ePortugal) aggregating digital public services for citizens and businesses."
   }
 }

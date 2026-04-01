@@ -9,6 +9,7 @@
     "website": "https://forkbomb.solutions",
     "logo": "https://www.google.com/s2/favicons?domain=forkbomb.solutions&sz=128",
     "country": "NL",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "Cryptography, decentralized identities, Digital Product Passport"
   }
 }

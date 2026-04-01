@@ -9,6 +9,7 @@
     "website": "https://ver.id/",
     "logo": "https://www.google.com/s2/favicons?domain=ver.id&sz=128",
     "country": "NL",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "Ver.iD offers a design studio to easily integrate identity wallets into your onboarding flow. Enable passport-grade login and registration, fully compatible with your IAM or CIAM. Verify customers and who they represent, seamlessly, using identity apps."
   }
 }

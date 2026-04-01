@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "crawl": "tsx src/crawler/index.ts",
+    "enrich-descriptions": "node scripts/enrich-organization-descriptions.mjs",
     "sync-local": "bash scripts/sync-plugin-local.sh",
     "crawl:sync": "npm run crawl && npm run sync-local",
     "build": "tsc",

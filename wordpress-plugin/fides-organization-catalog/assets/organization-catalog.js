@@ -21,8 +21,11 @@
     server: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>',
     share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+    /** Lucide "users" — FIDES Manifesto / community supporter badge */
+    community: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
     globe: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
+    tag: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
     viewGrid: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>',
     viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>',
   };
@@ -148,8 +151,22 @@
     bluePagesProfileBaseUrl: '',
   };
 
+  const SORT_STORAGE_KEY = 'fides-org-sort';
+  const SORT_OPTIONS = ['name', 'country', 'updatedAt'];
+  const DEFAULT_SORT = 'updatedAt';
+
+  function readStoredSort() {
+    try {
+      const v = localStorage.getItem(SORT_STORAGE_KEY);
+      if (v && SORT_OPTIONS.includes(v)) return v;
+    } catch {
+      /* ignore */
+    }
+    return DEFAULT_SORT;
+  }
+
   let organizations = [];
-  let sortBy = 'name';
+  let sortBy = readStoredSort();
   let selectedOrg = null;
   let root;
   let viewMode = localStorage.getItem('fides-org-view') || 'grid';
@@ -188,8 +205,7 @@
   }
 
   /**
-   * Card logo badge + quick filter "Verified profile".
-   * Uses crawler API check when present; otherwise falls back to DID + Blue Pages REST (legacy JSON).
+   * Whether to show the Blue Pages list badge on cards (crawler API when present; else DID + REST).
    */
   function orgShowsBluePagesListBadge(org) {
     if (!org || !orgCatalogDid(org) || !config.bluePagesRestUrl) return false;
@@ -212,7 +228,7 @@
   function renderOrgCardFooterBadges(org) {
     const parts = [];
     if (org && org.fidesManifestoSupporter === true) {
-      parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--manifesto" role="img" aria-label="FIDES Manifesto supporter" title="FIDES Manifesto supporter">${icons.check}</span>`);
+      parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--manifesto" role="img" aria-label="FIDES Supporter" title="FIDES Supporter">${icons.community}</span>`);
     }
     if (orgShowsBluePagesListBadge(org)) {
       parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--bp" role="img" aria-label="Blue Pages verified profile available" title="Blue Pages verified profile available">${icons.shield}</span>`);
@@ -225,7 +241,7 @@
   function renderOrgListBadges(org) {
     const parts = [];
     if (org.fidesManifestoSupporter === true) {
-      parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--manifesto" role="img" aria-label="FIDES Manifesto supporter" title="FIDES Manifesto supporter">${icons.check}</span>`);
+      parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--manifesto" role="img" aria-label="FIDES Supporter" title="FIDES Supporter">${icons.community}</span>`);
     }
     if (orgShowsBluePagesListBadge(org)) {
       parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--bp" role="img" aria-label="Blue Pages verified profile available" title="Blue Pages verified profile available">${icons.shield}</span>`);
@@ -238,7 +254,7 @@
     const name = escapeHtml(org.name);
     const bits = [];
     if (orgShowsBluePagesListBadge(org)) bits.push('has Blue Pages verified profile');
-    if (org && org.fidesManifestoSupporter === true) bits.push('FIDES Manifesto supporter');
+    if (org && org.fidesManifestoSupporter === true) bits.push('FIDES Supporter');
     if (bits.length === 0) return name;
     return `${name}, ${bits.join(', ')}`;
   }
@@ -285,17 +301,32 @@
     return raw.filter((s) => typeof s === 'string' && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, s));
   }
 
-  /** Modal Organization details: sector labels, A–Z by display name. */
-  function renderOrganizationSectorsRow(org) {
+  /** About accordion: description + sectors/tags taxonomy (credential-catalog modal style). */
+  function renderOrganizationModalAboutBody(org) {
+    const descRaw = org && org.description;
+    const desc = typeof descRaw === 'string' && descRaw.trim() ? descRaw.trim() : '';
     const codes = orgSectorCodes(org);
-    if (!codes.length) {
-      return `<div class="fides-kv-row"><span class="fides-kv-key">Sectors</span><span class="fides-kv-val">\u2014</span></div>`;
-    }
-    const labels = codes
+    const sectorLabels = codes
       .map((c) => SECTOR_LABELS[c] || c)
       .sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
-    const inner = labels.map((l) => `<span class="fides-tag">${escapeHtml(l)}</span>`).join('');
-    return `<div class="fides-kv-row"><span class="fides-kv-key">Sectors</span><span class="fides-kv-val fides-kv-tags">${inner}</span></div>`;
+    const sectorInner = sectorLabels.map((l) => `<span class="fides-tag">${escapeHtml(l)}</span>`).join('');
+    const rawTags = Array.isArray(org.tags) ? org.tags : [];
+    const tagStrings = rawTags.filter((t) => typeof t === 'string' && t.trim()).map((t) => t.trim());
+    const sortedTags = tagStrings.slice().sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+    const tagsInner = sortedTags.map((t) => `<span class="fides-tag">${escapeHtml(t)}</span>`).join('');
+    const descBlock = desc
+      ? `<p class="fides-modal-description fides-modal-org-overview-desc">${escapeHtml(desc)}</p>`
+      : `<p class="fides-modal-description fides-modal-org-overview-desc fides-modal-org-overview-desc--empty">\u2014</p>`;
+    return `
+      ${descBlock}
+      <div class="fides-modal-taxonomy fides-modal-taxonomy--org-overview">
+        <div class="fides-modal-taxonomy-row">
+          <span class="fides-modal-taxonomy-label">${icons.tag} Sectors</span>
+          <div class="fides-modal-taxonomy-tags">${sectorInner || '<span class="fides-modal-taxonomy-empty">\u2014</span>'}</div>
+        </div>
+        ${tagsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.tag} Tags</span><div class="fides-modal-taxonomy-tags">${tagsInner}</div></div>` : ''}
+      </div>
+    `;
   }
 
   function orgCertificationCodes(org) {
@@ -631,43 +662,22 @@
 
   function renderOrgCard(org) {
     const logo = org.logoUri;
-    const r = org.ecosystemRoles || {};
-    const issuerCount = (r.issuers || []).length;
-    const credCount = (r.credentialTypes || []).length;
-    const walletCount = (r.personalWallets || []).length + (r.businessWallets || []).length;
-    const rpCount = (r.relyingParties || []).length;
-    const activityDate = org.updatedAt || org.firstSeenAt;
-    const activityLabel = activityDate
-      ? `${org.updatedAt ? 'Updated' : 'Added'} ${formatDate(activityDate)}`
-      : '';
-
-    const countItems = [
-      { num: issuerCount, label: 'Issuers' },
-      { num: walletCount, label: 'Wallets' },
-      { num: rpCount, label: 'Relying Parties' },
-    ];
 
     const manifestoClass = org.fidesManifestoSupporter === true ? ' fides-org-card--manifesto-supporter' : '';
+    const logoMain = logo
+      ? `<img src="${escapeHtml(logo)}" alt="" width="64" height="64">`
+      : icons.building;
     return `
       <div class="fides-org-card${manifestoClass}" data-id="${escapeHtml(org.id)}" tabindex="0" role="button" aria-label="${orgCardAriaLabel(org)}">
-        <header class="fides-credential-header">
-          <div class="fides-org-card-logo-wrap">
-            <div class="fides-credential-subject-icon" aria-hidden="true">
-              ${logo
-                ? `<img src="${escapeHtml(logo)}" alt="" style="width:28px;height:28px;object-fit:contain;border-radius:4px;">`
-                : icons.building
-              }
-            </div>
-          </div>
+        <header class="fides-credential-header fides-org-card-header--text-only">
           <div class="fides-credential-header-text">
             <h3 class="fides-credential-name" title="${escapeHtml(org.name)}">${escapeHtml(org.name)}</h3>
             ${org.country ? `<p class="fides-credential-provider">${escapeHtml(countryName(org.country))}</p>` : ''}
           </div>
         </header>
         <div class="fides-wallet-body">
-          ${activityLabel ? `<p class="fides-wallet-updated">${escapeHtml(activityLabel)}</p>` : ''}
-          <div class="fides-card-counts">
-            ${countItems.map((c) => `<div class="fides-card-count-item"><span class="fides-card-count-num">${c.num}</span><span class="fides-card-count-label">${escapeHtml(c.label)}</span></div>`).join('')}
+          <div class="fides-org-card-logo-panel" aria-hidden="true">
+            <div class="fides-org-card-logo-main">${logoMain}</div>
           </div>
         </div>
         <div class="fides-wallet-footer">
@@ -696,11 +706,9 @@
       { key: 'relyingParties', items: r.relyingParties || [], icon: icons.shield, label: 'Relying Parties', catalogUrl: config.rpCatalogUrl, paramKey: 'rp' },
     ];
 
-    const pwCount = (r.personalWallets || []).length;
-    const bwCount = (r.businessWallets || []).length;
-    const issuerCount = (r.issuers || []).length;
-    const credCount = (r.credentialTypes || []).length;
-    const rpCount = (r.relyingParties || []).length;
+    const supporterHeaderBadge = org.fidesManifestoSupporter === true
+      ? `<span class="fides-modal-header-supporter-badge fides-org-footer-badge fides-org-footer-badge--manifesto" role="img" aria-label="FIDES Supporter" title="FIDES Supporter">${icons.community}</span>`
+      : '';
 
     return `
       <div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="${escapeHtml(theme)}">
@@ -712,7 +720,10 @@
                 : `<div class="fides-modal-logo-placeholder">${icons.building}</div>`
               }
               <div class="fides-modal-title-wrap">
-                <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(org.name)}</h2>
+                <div class="fides-modal-title-row">
+                  <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(org.name)}</h2>
+                  ${supporterHeaderBadge}
+                </div>
                 ${org.country ? `<p class="fides-modal-provider">${icons.globe} <span>${escapeHtml(countryName(org.country))}</span></p>` : ''}
               </div>
             </div>
@@ -723,77 +734,17 @@
           </div>
 
           <div class="fides-modal-body">
-            <!-- Intro: description only (same placement as credential catalog modal) -->
-            ${org.description ? `<div class="fides-modal-intro"><p class="fides-modal-description">${escapeHtml(org.description)}</p></div>` : ''}
-
-            <!-- Ecosystem Explorer (5 blocks) — matches issuer/credential catalog -->
-            <div class="fides-accordion fides-modal-section">
-              <div class="fides-accordion-header fides-modal-section-header">
-                <span class="fides-accordion-title">${icons.wallet} FIDES Ecosystem Model</span>
+            <div class="fides-accordion is-open" id="fides-accordion-about">
+              <div class="fides-accordion-header-bar">
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
+                  <span class="fides-accordion-title">${icons.building} About</span>
+                </button>
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="true" aria-label="Toggle About section">
+                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+                </button>
               </div>
-              <div class="fides-accordion-body fides-modal-ecosystem-body">
-                <div class="fides-modal-ecosystem fides-org-ecosystem">
-                  <!-- Personal Wallets (top) -->
-                  <div class="fides-eco-wallet-row">
-                    ${pwCount > 0
-                      ? `<div class="fides-eco-wallet-box fides-eco-wallet-box--link" data-fides-eco-target="fides-accordion-personalWallets">
-                          <span class="fides-eco-wallet-count">${pwCount}</span>
-                          <span class="fides-eco-wallet-label">${pwCount === 1 ? 'Personal Wallet' : 'Personal Wallets'}</span>
-                        </div>`
-                      : `<div class="fides-eco-wallet-box">
-                          <span class="fides-eco-wallet-count">\u2014</span>
-                          <span class="fides-eco-wallet-label">Personal Wallets</span>
-                        </div>`
-                    }
-                  </div>
-                  <div class="fides-eco-wallet-connector">${icons.chevronUp}</div>
-                  <!-- Main row: Issuers → Credential Types → Relying Parties -->
-                  <div class="fides-eco-main-row">
-                    <div class="fides-eco-col fides-eco-stat-wrap">
-                      <div class="fides-eco-wallet-box fides-eco-stat-box fides-eco-stat-box--green${issuerCount > 0 ? '' : ' fides-eco-stat-box--static'}"
-                        ${issuerCount > 0 ? 'data-fides-eco-target="fides-accordion-issuers"' : ''}>
-                        <div class="fides-eco-stat-box-main">
-                          <span class="fides-eco-wallet-count">${issuerCount}</span>
-                          <span class="fides-eco-wallet-label">${issuerCount === 1 ? 'Issuer' : 'Issuers'}</span>
-                        </div>
-                        ${issuerCount > 0 ? `<span class="fides-eco-stat-hint" aria-hidden="true">${icons.chevronDoubleDown}</span>` : ''}
-                      </div>
-                    </div>
-                    <div class="fides-eco-arrow">${icons.chevronDown}</div>
-                    <div class="fides-eco-col fides-eco-col-center">
-                      <div class="fides-eco-center-card fides-eco-center-card--text-only${credCount > 0 ? ' fides-eco-center-card--link' : ''}"
-                        ${credCount > 0 ? 'data-fides-eco-target="fides-accordion-credentialTypes"' : ''}>
-                        <p class="fides-eco-center-name"><strong>${credCount}</strong> ${credCount === 1 ? 'Credential Type' : 'Credential Types'}</p>
-                        ${credCount > 0 ? `<span class="fides-eco-stat-hint" aria-hidden="true">${icons.chevronDoubleDown}</span>` : ''}
-                      </div>
-                    </div>
-                    <div class="fides-eco-arrow fides-eco-arrow-right">${icons.chevronDown}</div>
-                    <div class="fides-eco-col fides-eco-stat-wrap fides-eco-rp-col">
-                      <div class="fides-eco-wallet-box fides-eco-stat-box fides-eco-stat-box--blue${rpCount > 0 ? '' : ' fides-eco-stat-box--static'}"
-                        ${rpCount > 0 ? 'data-fides-eco-target="fides-accordion-relyingParties"' : ''}>
-                        <div class="fides-eco-stat-box-main">
-                          <span class="fides-eco-wallet-count">${rpCount}</span>
-                          <span class="fides-eco-wallet-label">${rpCount === 1 ? 'Relying party' : 'Relying parties'}</span>
-                        </div>
-                        ${rpCount > 0 ? `<span class="fides-eco-stat-hint" aria-hidden="true">${icons.chevronDoubleDown}</span>` : ''}
-                      </div>
-                    </div>
-                  </div>
-                  <div class="fides-eco-wallet-connector">${icons.chevronDown}</div>
-                  <!-- Business Wallets (bottom) -->
-                  <div class="fides-eco-wallet-row">
-                    ${bwCount > 0
-                      ? `<div class="fides-eco-wallet-box fides-eco-wallet-box--link" data-fides-eco-target="fides-accordion-businessWallets">
-                          <span class="fides-eco-wallet-count">${bwCount}</span>
-                          <span class="fides-eco-wallet-label">${bwCount === 1 ? 'Business Wallet' : 'Business Wallets'}</span>
-                        </div>`
-                      : `<div class="fides-eco-wallet-box">
-                          <span class="fides-eco-wallet-count">\u2014</span>
-                          <span class="fides-eco-wallet-label">Business Wallets</span>
-                        </div>`
-                    }
-                  </div>
-                </div>
+              <div class="fides-accordion-body">
+                ${renderOrganizationModalAboutBody(org)}
               </div>
             </div>
 
@@ -877,55 +828,14 @@
                   ${org.legalName ? `<div class="fides-kv-row"><span class="fides-kv-key">Legal name</span><span class="fides-kv-val">${escapeHtml(org.legalName)}</span></div>` : ''}
                   ${org.website ? `<div class="fides-kv-row"><span class="fides-kv-key">Website</span><span class="fides-kv-val fides-kv-val--url"><a href="${escapeHtml(org.website)}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-url-ellipsis" onclick="event.stopPropagation();">${escapeHtml(org.website)} ${icons.externalLink}</a></span></div>` : ''}
                   ${renderOrganizationIdentifierRows(org)}
-                  ${org.country ? `<div class="fides-kv-row"><span class="fides-kv-key">Country</span><span class="fides-kv-val">${escapeHtml(countryName(org.country))}</span></div>` : ''}
-                  ${renderOrganizationSectorsRow(org)}
-                  ${org.fidesManifestoSupporter === true ? `<div class="fides-kv-row"><span class="fides-kv-key">FIDES Manifesto</span><span class="fides-kv-val"><a href="https://fides.community/manifesto/#fides-supporters" target="_blank" rel="noopener" class="fides-modal-link-inline" onclick="event.stopPropagation();">Listed on manifesto supporters ${icons.externalLink}</a></span></div>` : ''}
                   ${org.contact?.email && String(org.contact.email).trim() ? `<div class="fides-kv-row"><span class="fides-kv-key">Email</span><span class="fides-kv-val"><a href="mailto:${escapeHtml(String(org.contact.email).trim())}" class="fides-modal-link-inline">${escapeHtml(String(org.contact.email).trim())}</a></span></div>` : ''}
                   ${org.contact?.support && String(org.contact.support).trim() ? `<div class="fides-kv-row"><span class="fides-kv-key">Support</span><span class="fides-kv-val fides-kv-val--url"><a href="${escapeHtml(String(org.contact.support).trim())}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-url-ellipsis" onclick="event.stopPropagation();">${escapeHtml(String(org.contact.support).trim())} ${icons.externalLink}</a></span></div>` : ''}
-                  ${(org.tags || []).length > 0 ? `<div class="fides-kv-row"><span class="fides-kv-key">Tags</span><span class="fides-kv-val fides-kv-tags">${org.tags.map((t) => `<span class="fides-tag">${escapeHtml(t)}</span>`).join('')}</span></div>` : ''}
                   <div class="fides-kv-row"><span class="fides-kv-key">Last updated</span><span class="fides-kv-val">${escapeHtml(org.updatedAt ? formatDate(org.updatedAt) : '—')}</span></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    `;
-  }
-
-  function countFidesManifestoSupporters() {
-    return organizations.filter((o) => o.fidesManifestoSupporter === true).length;
-  }
-
-  function countVerifiedProfileOrgs() {
-    return organizations.filter((o) => orgShowsBluePagesListBadge(o)).length;
-  }
-
-  function renderQuickFilters() {
-    const supporterN = countFidesManifestoSupporters();
-    const verifiedN = countVerifiedProfileOrgs();
-    if (supporterN === 0 && verifiedN === 0) return '';
-    const supporterChecked = filters.manifestoSupporter.includes('listed');
-    const verifiedChecked = filters.verifiedProfile.includes('listed');
-    const rows = [];
-    if (supporterN > 0) {
-      rows.push(`
-        <label class="fides-filter-checkbox">
-          <input type="checkbox" data-filter-group="manifestoSupporter" value="listed" ${supporterChecked ? 'checked' : ''}>
-          <span>FIDES Supporter<span class="fides-filter-option-count">(${supporterN})</span></span>
-        </label>`);
-    }
-    if (verifiedN > 0) {
-      rows.push(`
-        <label class="fides-filter-checkbox">
-          <input type="checkbox" data-filter-group="verifiedProfile" value="listed" ${verifiedChecked ? 'checked' : ''}>
-          <span>Verified profile<span class="fides-filter-option-count">(${verifiedN})</span></span>
-        </label>`);
-    }
-    return `
-      <div class="fides-quick-filters">
-        <span class="fides-quick-filters-title">Quick filters</span>
-        ${rows.join('')}
       </div>
     `;
   }
@@ -981,7 +891,6 @@
           </div>
         </div>
         <div class="fides-sidebar-content">
-          ${renderQuickFilters()}
           <div class="fides-filter-group collapsible ${filterGroupState.role !== false ? '' : 'collapsed'} ${filters.role.length > 0 ? 'has-active' : ''}" data-filter-group="role">
             <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.role !== false}">
               <span class="fides-filter-label">Ecosystem Role</span>
@@ -1076,7 +985,6 @@
         <div class="fides-list-col-right" title="Issuers">${icons.server}</div>
         <div class="fides-list-col-right" title="Wallets">${icons.wallet}</div>
         <div class="fides-list-col-right" title="Relying parties">${icons.shield}</div>
-        <div class="fides-org-list-header-updated">Updated</div>
       </div>
     `;
   }
@@ -1090,8 +998,6 @@
     const issuerCount = (r.issuers || []).length;
     const walletCount = (r.personalWallets || []).length + (r.businessWallets || []).length;
     const rpCount = (r.relyingParties || []).length;
-    const activityDate = org.updatedAt || org.firstSeenAt;
-    const activityLabel = activityDate ? formatDate(activityDate) : '—';
     const ccRaw = (org.country || '').trim();
     const cc = ccRaw.toUpperCase();
     const countryFull = cc ? countryName(org.country) : '';
@@ -1125,7 +1031,6 @@
         <div class="fides-row-count fides-list-col-right">${issuerCount}</div>
         <div class="fides-row-count fides-list-col-right">${walletCount}</div>
         <div class="fides-row-count fides-list-col-right">${rpCount}</div>
-        <div class="fides-row-updated">${escapeHtml(activityLabel)}</div>
       </div>
     `;
   }
@@ -1238,18 +1143,6 @@
       });
     });
 
-    document.querySelectorAll('.fides-modal-overlay [data-fides-eco-target]').forEach((el) => {
-      el.addEventListener('click', (e) => {
-        if (e.target.closest('a')) return;
-        const id = el.getAttribute('data-fides-eco-target');
-        const acc = document.getElementById(id);
-        if (!acc) return;
-        acc.classList.add('is-open');
-        acc.querySelectorAll('.fides-accordion-toggle[type="button"]').forEach((b) => b.setAttribute('aria-expanded', 'true'));
-        requestAnimationFrame(() => acc.scrollIntoView({ behavior: 'smooth', block: 'start' }));
-      });
-    });
-
     document.addEventListener('keydown', function escHandler(e) {
       if (e.key === 'Escape') { closeModal(); document.removeEventListener('keydown', escHandler); }
     });
@@ -1271,7 +1164,18 @@
     if (searchClear) searchClear.addEventListener('click', () => { filters.search = ''; if (searchInput) searchInput.value = ''; searchClear.classList.add('hidden'); renderOrgGridOnly(); });
 
     const sortSelect = root.querySelector('#fides-sort-select');
-    if (sortSelect) sortSelect.addEventListener('change', (e) => { sortBy = e.target.value; render(); });
+    if (sortSelect) {
+      sortSelect.addEventListener('change', (e) => {
+        const v = e.target.value;
+        sortBy = SORT_OPTIONS.includes(v) ? v : DEFAULT_SORT;
+        try {
+          localStorage.setItem(SORT_STORAGE_KEY, sortBy);
+        } catch {
+          /* ignore */
+        }
+        render();
+      });
+    }
 
     const clearBtn = root.querySelector('#fides-clear');
     if (clearBtn) clearBtn.addEventListener('click', () => { filters = { search: '', country: [], role: [], sector: [], certification: [], manifestoSupporter: [], verifiedProfile: [], ids: [] }; render(); });

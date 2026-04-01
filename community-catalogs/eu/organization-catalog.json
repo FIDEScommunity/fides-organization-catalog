@@ -9,6 +9,7 @@
     "legalName": "European Commission",
     "website": "https://github.com/eu-digital-identity-wallet",
     "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128",
-    "country": "EU"
+    "country": "EU",
+    "description": "Official GitHub Organization of the European Digital Identity project. - European Digital Identity"
   }
 }

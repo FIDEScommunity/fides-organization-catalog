@@ -8,6 +8,7 @@
     ],
     "website": "https://credebl.id",
     "logo": "https://www.google.com/s2/favicons?domain=credebl.id&sz=128",
-    "country": "IN"
+    "country": "IN",
+    "description": "Indian software company behind Credebl, an open-source stack for verifiable credentials and decentralized identity."
   }
 }

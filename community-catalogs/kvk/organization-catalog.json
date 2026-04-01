@@ -9,6 +9,7 @@
     "website": "https://www.kvk.nl",
     "logo": "https://s3-eu-west-1.amazonaws.com/tpd/logos/5f1610bc0cba87000181beed/0x0.png",
     "country": "NL",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "KVK biedt informatie, voorlichting en ondersteuning aan ondernemers. Betrouwbaar advies en praktische tools voor het starten en runnen van je bedrijf."
   }
 }

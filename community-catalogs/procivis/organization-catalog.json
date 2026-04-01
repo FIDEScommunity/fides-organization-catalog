@@ -8,6 +8,7 @@
     ],
     "website": "https://www.procivis.ch",
     "logo": "https://www.google.com/s2/favicons?domain=procivis.ch&sz=128",
-    "country": "CH"
+    "country": "CH",
+    "description": "Procivis One is a modular, open-source technology for digital identities and credentials — compliant with eIDAS 2.0, Swiss E-ID ecosystem , and mDL standards."
   }
 }

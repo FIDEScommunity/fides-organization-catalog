@@ -8,6 +8,7 @@
     ],
     "website": "https://www.dock.io/",
     "logo": "https://www.google.com/s2/favicons?domain=dock.io&sz=128",
-    "country": "CH"
+    "country": "CH",
+    "description": "Dock Labs helps you create a unified identity experience that makes ID verification and authentication seamless across all your internal systems and external partners."
   }
 }

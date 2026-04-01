@@ -10,6 +10,7 @@
     "website": "https://www.tue.nl/en/",
     "logo": "https://www.google.com/s2/favicons?domain=tue.nl&sz=128",
     "country": "NL",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "Eindhoven University of Technology (TU/e) is a research university specializing in engineering science & technology."
   }
 }

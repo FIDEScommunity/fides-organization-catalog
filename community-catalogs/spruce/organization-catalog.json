@@ -8,6 +8,7 @@
     ],
     "website": "https://spruceid.com/products/sprucekit",
     "logo": "https://www.google.com/s2/favicons?domain=spruceid.com&sz=128",
-    "country": "US"
+    "country": "US",
+    "description": "SpruceID helps governments design and deploy trusted digital ID systems, including mobile driver’s licenses (mDLs), with privacy-by-design verification for online and in-person services."
   }
 }

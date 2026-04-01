@@ -9,6 +9,7 @@
     "website": "https://www.xablu.com/",
     "logo": "https://www.google.com/s2/favicons?domain=xablu.com&sz=128",
     "country": "NL",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "We Train and Coach Software Development teams with In-depth .NET Core .NET MAUI Blazor knowledge and IoTembedded, CICD and UXUI support."
   }
 }

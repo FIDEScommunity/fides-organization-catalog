@@ -8,6 +8,7 @@
     ],
     "website": "https://www.digitalbazaar.com",
     "logo": "https://www.google.com/s2/favicons?domain=digitalbazaar.com&sz=128",
-    "country": "US"
+    "country": "US",
+    "description": "US technology company advancing decentralized identifiers, verifiable credentials, and secure data ecosystems (including JSON-LD VC work)."
   }
 }

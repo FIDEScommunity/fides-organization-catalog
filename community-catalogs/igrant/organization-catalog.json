@@ -11,6 +11,7 @@
     "country": "SE",
     "contact": {
       "email": "support@igrant.io"
-    }
+    },
+    "description": "EUDI and European Business Wallet software provider offering ready-to-use extensions for payments, signing, and passwordless login for individuals and organisations."
   }
 }

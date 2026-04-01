@@ -8,6 +8,7 @@
     ],
     "website": "https://wwwallet.org",
     "logo": "https://avatars.githubusercontent.com/u/126908515",
-    "country": "GR"
+    "country": "GR",
+    "description": "wwWallet is a secure web wallet for storing and managing verifiable credentials."
   }
 }

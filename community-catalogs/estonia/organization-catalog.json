@@ -7,6 +7,7 @@
       "public_sector"
     ],
     "website": "https://www.ria.ee/",
-    "country": "EE"
+    "country": "EE",
+    "description": "Estonian public sector digital governance; the Information System Authority (RIA) operates national e-ID, trust services, and cyber resilience."
   }
 }

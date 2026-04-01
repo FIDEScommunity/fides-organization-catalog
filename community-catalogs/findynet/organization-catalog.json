@@ -9,6 +9,7 @@
     "website": "https://findynet.fi/en/",
     "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128",
     "country": "FI",
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "description": "Discover how Findynet is revolutionizing the way individuals and organizations manage and share information. Findynet facilitates the secure and easy exchange of digital credentials."
   }
 }

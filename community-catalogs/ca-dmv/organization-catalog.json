@@ -10,6 +10,7 @@
     "country": "US",
     "contact": {
       "support": "https://www.dmv.ca.gov/portal/contacting-dmv/"
-    }
+    },
+    "description": "California Department of Motor Vehicles (DMV) - apply for a REAL ID, register a vehicle, renew a driver's license, and more."
   }
 }
