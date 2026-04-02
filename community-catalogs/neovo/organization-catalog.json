@@ -9,6 +9,9 @@
     "website": "https://neovo.ch/",
     "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQHAun1QNaT8xA/company-logo_200_200/B4DZctJbACGwAI-/0/1748809134447/neovo_ag_logo?e=1776902400&v=beta&t=e3aSznBO61WFgC_SoFjnEh8FcZfxy6CMKKzx5Qqdkn8",
     "country": "CH",
-    "description": "Neovo is a Switzerland-based software and IT services company specializing in custom web development, web applications, and system integration. Founded in 2025, the company focuses on building sustainable, high-quality digital solutions that integrate seamlessly with existing business processes. Its expertise includes SAP Fiori/UI5, modern web technologies, and end-to-end delivery from consulting and architecture to implementation and maintenance."
+    "description": "Neovo is a Switzerland-based software and IT services company specializing in custom web development, web applications, and system integration. Founded in 2025, the company focuses on building sustainable, high-quality digital solutions that integrate seamlessly with existing business processes. Its expertise includes SAP Fiori/UI5, modern web technologies, and end-to-end delivery from consulting and architecture to implementation and maintenance. Neovo also builds identity and verification solutions including Beta-ID for age verification and digital trust in retail and online flows.",
+    "contact": {
+      "email": "info@neovo.ch"
+    }
   }
 }

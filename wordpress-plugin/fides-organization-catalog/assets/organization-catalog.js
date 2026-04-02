@@ -358,6 +358,18 @@
     return bits.join(' ').toLowerCase();
   }
 
+  /** Count of valid catalog certification entries (same rules as renderCertificationsAccordionBody). */
+  function countCatalogCertifications(org) {
+    const raw = org.certifications;
+    if (!Array.isArray(raw)) return 0;
+    let n = 0;
+    for (const c of raw) {
+      if (!c || typeof c !== 'object' || typeof c.code !== 'string') continue;
+      n += 1;
+    }
+    return n;
+  }
+
   /** Body HTML for the Certifications accordion (catalog declarations: ISO, SOC2, etc.). */
   function renderCertificationsAccordionBody(org) {
     const raw = org.certifications;
@@ -706,6 +718,9 @@
       { key: 'relyingParties', items: r.relyingParties || [], icon: icons.shield, label: 'Relying Parties', catalogUrl: config.rpCatalogUrl, paramKey: 'rp' },
     ];
 
+    const certCount = countCatalogCertifications(org);
+    const certCountBadge = certCount > 0 ? ` <span class="fides-accordion-count">${certCount}</span>` : '';
+
     const supporterHeaderBadge = org.fidesManifestoSupporter === true
       ? `<span class="fides-modal-header-supporter-badge fides-org-footer-badge fides-org-footer-badge--manifesto" role="img" aria-label="FIDES Supporter" title="FIDES Supporter">${icons.community}</span>`
       : '';
@@ -802,7 +817,7 @@
             <div class="fides-accordion" id="fides-accordion-certifications">
               <div class="fides-accordion-header-bar">
                 <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
-                  <span class="fides-accordion-title">${icons.fileCheck} Certifications</span>
+                  <span class="fides-accordion-title">${icons.fileCheck} Certifications${certCountBadge}</span>
                 </button>
                 <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle certifications">
                   <span class="fides-accordion-chevron">${icons.chevronDown}</span>
