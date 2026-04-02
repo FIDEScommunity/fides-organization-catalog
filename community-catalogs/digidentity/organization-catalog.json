@@ -16,7 +16,12 @@
         "code": "iso27001"
       },
       {
-        "code": "qtsp"
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/2.",
+          "label": "EU eIDAS Trust List – Digidentity"
+        }
       }
     ]
   }
