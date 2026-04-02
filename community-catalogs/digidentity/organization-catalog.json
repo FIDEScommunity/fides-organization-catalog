@@ -10,6 +10,14 @@
     "logo": "https://www.google.com/s2/favicons?domain=digidentity.com&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "Digidentity delivers secure digital identity, eHerkenning, SERMI, PKI solutions and more, for individuals, businesses, and governments across Europe."
+    "description": "Digidentity delivers secure digital identity, eHerkenning, SERMI, PKI solutions and more, for individuals, businesses, and governments across Europe.",
+    "certifications": [
+      {
+        "code": "iso27001"
+      },
+      {
+        "code": "qtsp"
+      }
+    ]
   }
 }
