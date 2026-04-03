@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sbb",
+    "name": "SBB",
+    "sectors": [
+      "mobility",
+      "public_sector"
+    ],
+    "website": "https://www.sbb.ch",
+    "logo": "https://www.google.com/s2/favicons?domain=sbb.ch&sz=128",
+    "country": "CH",
+    "description": "Swiss Federal Railways (SBB) is the national railway company of Switzerland, operating one of the most efficient and widely used public transport networks in the world. SBB plays a central role in mobility and digital services, offering integrated ticketing, travel information, and customer platforms. Through its digital channels and mobile apps, SBB contributes to the adoption of digital identity and verifiable data concepts, for example in ticketing, travel authorization, and seamless cross-border mobility experiences."
+  }
+}
