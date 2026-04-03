@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:unchained-commerce",
+    "name": "Unchained Commerce",
+    "sectors": [
+      "digital",
+      "trade_commerce"
+    ],
+    "website": "https://unchained.shop",
+    "logo": "https://www.google.com/s2/favicons?domain=unchained.shop&sz=128",
+    "country": "CH",
+    "description": "Unchained Commerce is a Swiss open-source e-commerce platform provider focused on data sovereignty and flexibility. Its headless, API-first architecture enables organizations to build, customize, and operate digital commerce solutions without vendor lock-in. The platform is built with modern technologies such as Node.js, GraphQL, and TypeScript, and supports a wide range of use cases including B2B, retail, and event ticketing. By emphasizing full control over data, infrastructure, and integrations, Unchained contributes to the development of open, interoperable digital commerce ecosystems."
+  }
+}
