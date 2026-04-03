@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:educa",
+    "name": "Educa",
+    "sectors": [
+      "education",
+      "public_sector",
+      "digital"
+    ],
+    "website": "https://www.educa.ch",
+    "logo": "https://www.google.com/s2/favicons?domain=educa.ch&sz=128",
+    "country": "CH",
+    "description": "Educa is the Swiss specialist agency for the digital education space, operating on behalf of the Confederation and the cantons. It supports education policy, administration, and institutions by linking technological developments to quality improvements across the education system. Educa plays a key role in shaping the Swiss digital education ecosystem, including areas such as data governance, educational technology, and digital identity (e.g. federated identity models like Edulog). By facilitating collaboration between public authorities, research, and industry, Educa contributes to a trusted and interoperable digital education landscape."
+  }
+}
