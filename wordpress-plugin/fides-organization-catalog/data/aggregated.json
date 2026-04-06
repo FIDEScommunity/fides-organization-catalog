@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastUpdated": "2026-04-06T07:19:18.889Z",
+  "lastUpdated": "2026-04-06T20:38:20.059Z",
   "organizations": [
     {
       "id": "org:2060",
@@ -29,7 +29,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:a3bc",
@@ -56,7 +56,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:affinidi",
@@ -84,7 +84,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:albania",
@@ -111,7 +111,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:almelo-energie",
@@ -139,7 +139,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:animo",
@@ -195,7 +195,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:26:17.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:apple",
@@ -223,7 +223,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T14:58:06.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:aruba",
@@ -251,7 +251,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:austria",
@@ -278,7 +278,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:auth0",
@@ -306,7 +306,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:authbound",
@@ -338,7 +338,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ayanworks",
@@ -371,7 +371,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:bd",
@@ -400,7 +400,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:49:16.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:belgium",
@@ -427,7 +427,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:buthan",
@@ -455,7 +455,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:helixid",
@@ -485,7 +485,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:caesar",
@@ -509,7 +509,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T12:58:07.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ca-dmv",
@@ -528,7 +528,12 @@
       "ecosystemRoles": {
         "issuers": [],
         "credentialTypes": [],
-        "personalWallets": [],
+        "personalWallets": [
+          {
+            "id": "ca-dmv-wallet",
+            "displayName": "CA DMV Wallet"
+          }
+        ],
         "businessWallets": [],
         "relyingParties": [
           {
@@ -539,7 +544,31 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
+    },
+    {
+      "id": "org:crt",
+      "name": "Centraal Register Techniek",
+      "sectors": [
+        "digital"
+      ],
+      "description": "Centraal Register Techniek provides a digital platform for quality registers in the technical sectors in the Netherlands, enabling the registration and verification of professional qualifications. It developed the Vakpaspoort app, which allows professionals to prove their skills and identity to clients.",
+      "website": "https://www.centraalregistertechniek.nl/",
+      "logoUri": "https://www.google.com/s2/favicons?domain=centraalregistertechniek.nl&sz=128",
+      "country": "NL",
+      "fidesManifestoSupporter": true,
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/crt/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-03-31T09:51:09.057Z",
+      "updatedAt": "2026-04-06T20:06:29.000Z",
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:amsterdam",
@@ -583,7 +612,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:nijmegen",
@@ -643,7 +672,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:03:32.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:credenco",
@@ -677,7 +706,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:42:04.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:czechia",
@@ -704,7 +733,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:denmark",
@@ -731,7 +760,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:danubetech",
@@ -755,7 +784,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T15:46:20.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:datakeeper",
@@ -783,7 +812,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:06:38.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:png",
@@ -811,7 +840,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:digidentity",
@@ -853,7 +882,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:40:43.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:digitalbazaar",
@@ -881,7 +910,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:digital-trust-solutions",
@@ -906,7 +935,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:docklabs",
@@ -939,7 +968,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:domoticube",
@@ -963,7 +992,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:netherlands",
@@ -990,7 +1019,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:educa",
@@ -1020,7 +1049,7 @@
       },
       "firstSeenAt": "2026-04-03T06:16:15.000Z",
       "updatedAt": "2026-04-03T06:16:15.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:tue",
@@ -1045,7 +1074,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:estonia",
@@ -1072,7 +1101,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:eudiplo",
@@ -1116,7 +1145,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:eu",
@@ -1293,7 +1322,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ewc",
@@ -1383,7 +1412,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:fabaleus",
@@ -1408,7 +1437,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:fides",
@@ -1567,11 +1596,11 @@
       "bluePages": {
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "profileAvailable": true,
-        "checkedAt": "2026-04-06T07:19:18.889Z"
+        "checkedAt": "2026-04-06T20:38:20.059Z"
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:14:02.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:findynet",
@@ -1595,7 +1624,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:finland",
@@ -1622,7 +1651,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:forkbomb",
@@ -1656,7 +1685,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:france",
@@ -1683,7 +1712,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:fuelfwd",
@@ -1707,7 +1736,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:gataca",
@@ -1743,7 +1772,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:gear-up",
@@ -1767,7 +1796,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:17:47.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:rotterdam",
@@ -1791,7 +1820,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:germany",
@@ -1818,7 +1847,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:google",
@@ -1851,7 +1880,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:00:04.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:bcgov",
@@ -1884,7 +1913,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:cyprus",
@@ -1911,7 +1940,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:greece",
@@ -1942,7 +1971,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:hak-rein-vos-notarissen",
@@ -1966,7 +1995,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:headon",
@@ -1991,7 +2020,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:hovi",
@@ -2033,7 +2062,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:hungary",
@@ -2060,7 +2089,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:iceland",
@@ -2087,7 +2116,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:idcontrol",
@@ -2111,7 +2140,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:identinet",
@@ -2135,7 +2164,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:igrant",
@@ -2233,7 +2262,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ilabs",
@@ -2257,7 +2286,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:impierce",
@@ -2291,7 +2320,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:india",
@@ -2323,7 +2352,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:inetum",
@@ -2355,7 +2384,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:innotractor",
@@ -2379,7 +2408,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:innovalor",
@@ -2403,7 +2432,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:19:49.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:intercede",
@@ -2431,7 +2460,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ireland",
@@ -2458,7 +2487,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:italy",
@@ -2485,7 +2514,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ixo",
@@ -2513,7 +2542,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:izertis",
@@ -2545,7 +2574,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:k4security",
@@ -2576,7 +2605,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:kvk",
@@ -2605,7 +2634,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:47:02.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:latvia",
@@ -2632,7 +2661,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:lissi",
@@ -2685,7 +2714,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:mattr",
@@ -2718,7 +2747,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:meeco",
@@ -2751,7 +2780,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:microsoft",
@@ -2779,7 +2808,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:01:19.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:minisuomi",
@@ -2807,7 +2836,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:bzk",
@@ -2832,7 +2861,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:brazil",
@@ -2860,7 +2889,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:mintblue",
@@ -2884,7 +2913,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:moldova",
@@ -2912,7 +2941,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:mosip",
@@ -2960,7 +2989,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:mydata-global",
@@ -2984,7 +3013,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:namirial",
@@ -3026,7 +3055,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ethiopia",
@@ -3054,7 +3083,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:neoke",
@@ -3082,7 +3111,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:neovo",
@@ -3113,7 +3142,7 @@
       },
       "firstSeenAt": "2026-04-02T18:06:53.000Z",
       "updatedAt": "2026-04-02T20:41:38.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:northernblock",
@@ -3146,7 +3175,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:norway",
@@ -3173,7 +3202,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ooru",
@@ -3207,7 +3236,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:owf",
@@ -3240,7 +3269,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:oumou-group",
@@ -3257,18 +3286,13 @@
       "ecosystemRoles": {
         "issuers": [],
         "credentialTypes": [],
-        "personalWallets": [
-          {
-            "id": "uwangu",
-            "displayName": "Uwangu"
-          }
-        ],
+        "personalWallets": [],
         "businessWallets": [],
         "relyingParties": []
       },
       "firstSeenAt": "2026-04-03T07:27:12.000Z",
       "updatedAt": "2026-04-03T07:27:12.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:poland",
@@ -3295,7 +3319,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:portugal",
@@ -3322,7 +3346,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:privacybydesign",
@@ -3350,7 +3374,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:procivis",
@@ -3383,7 +3407,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:quintessence-research",
@@ -3407,7 +3431,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:honduras",
@@ -3435,7 +3459,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:samsung",
@@ -3463,7 +3487,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:sbb",
@@ -3492,7 +3516,7 @@
       },
       "firstSeenAt": "2026-04-03T06:05:55.000Z",
       "updatedAt": "2026-04-03T06:05:55.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:scytales",
@@ -3525,7 +3549,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:sicpa",
@@ -3553,7 +3577,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:slovakia",
@@ -3580,7 +3604,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:slovenia",
@@ -3607,7 +3631,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:spain",
@@ -3634,7 +3658,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:sphereon",
@@ -3671,7 +3695,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:spherity",
@@ -3700,7 +3724,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:spruce",
@@ -3728,7 +3752,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:stelausoftware",
@@ -3755,7 +3779,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:sweden",
@@ -3782,7 +3806,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:swiyu",
@@ -3835,7 +3859,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:talao",
@@ -3878,7 +3902,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:thales",
@@ -3906,7 +3930,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:tno",
@@ -3935,7 +3959,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:15:35.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:toppan",
@@ -3968,7 +3992,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ubique",
@@ -3996,7 +4020,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ukraine",
@@ -4023,7 +4047,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:uncefact",
@@ -4098,7 +4122,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:unchained-commerce",
@@ -4127,7 +4151,7 @@
       },
       "firstSeenAt": "2026-04-03T06:22:51.000Z",
       "updatedAt": "2026-04-03T06:22:51.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:unifiedpost",
@@ -4153,7 +4177,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:uaegean",
@@ -4181,7 +4205,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:validatedid",
@@ -4214,7 +4238,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:ver-id",
@@ -4243,7 +4267,7 @@
       },
       "firstSeenAt": "2026-03-31T09:53:54.773Z",
       "updatedAt": "2026-04-02T13:34:42.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:verimi",
@@ -4270,7 +4294,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:werify",
@@ -4294,7 +4318,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:wwwallet",
@@ -4322,7 +4346,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:xablu",
@@ -4346,7 +4370,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:yoti",
@@ -4373,7 +4397,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:youniqx",
@@ -4405,7 +4429,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     },
     {
       "id": "org:yourd",
@@ -4439,17 +4463,17 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-06T07:19:18.889Z"
+      "fetchedAt": "2026-04-06T20:38:20.059Z"
     }
   ],
   "stats": {
-    "totalOrganizations": 133,
+    "totalOrganizations": 134,
     "byCountry": {
       "EE": 2,
       "FR": 5,
       "SG": 1,
       "AL": 1,
-      "NL": 37,
+      "NL": 38,
       "US": 8,
       "IT": 3,
       "AT": 3,
