@@ -295,10 +295,49 @@
     SECTOR_LABELS[a].localeCompare(SECTOR_LABELS[b], 'en', { sensitivity: 'base' }),
   );
 
+  const LEGACY_SECTOR_TO_CANONICAL = {
+    government: 'public_sector',
+    finance: 'finance',
+    healthcare: 'healthcare',
+    education: 'education',
+    retail: 'retail',
+    travel: 'mobility',
+    hospitality: 'retail',
+    employment: 'digital',
+    telecom: 'digital',
+    utilities: 'energy',
+    insurance: 'finance',
+    'real-estate': 'construction',
+    automotive: 'mobility',
+    entertainment: 'retail',
+    other: 'digital',
+  };
+
+  function normalizeSectorFilterCode(code) {
+    if (!code || typeof code !== 'string') return '';
+    const t = code.trim().toLowerCase();
+    if (!t) return '';
+    if (Object.prototype.hasOwnProperty.call(SECTOR_LABELS, t)) return t;
+    const mapped = LEGACY_SECTOR_TO_CANONICAL[t];
+    if (mapped && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, mapped)) return mapped;
+    return '';
+  }
+
+  /** Canonical sector codes for an org (URL filter, facets, and JSON may use mixed case or legacy labels). */
   function orgSectorCodes(org) {
     const raw = org && org.sectors;
     if (!Array.isArray(raw)) return [];
-    return raw.filter((s) => typeof s === 'string' && Object.prototype.hasOwnProperty.call(SECTOR_LABELS, s));
+    const seen = new Set();
+    const out = [];
+    raw.forEach((s) => {
+      if (typeof s !== 'string') return;
+      const c = normalizeSectorFilterCode(s);
+      if (c && !seen.has(c)) {
+        seen.add(c);
+        out.push(c);
+      }
+    });
+    return out;
   }
 
   /** About accordion: description + sectors/tags taxonomy (credential-catalog modal style). */
@@ -1193,7 +1232,13 @@
     }
 
     const clearBtn = root.querySelector('#fides-clear');
-    if (clearBtn) clearBtn.addEventListener('click', () => { filters = { search: '', country: [], role: [], sector: [], certification: [], manifestoSupporter: [], verifiedProfile: [], ids: [] }; render(); });
+    if (clearBtn) clearBtn.addEventListener('click', () => {
+      filters = { search: '', country: [], role: [], sector: [], certification: [], manifestoSupporter: [], verifiedProfile: [], ids: [] };
+      const url = new URL(window.location.href);
+      url.searchParams.delete('sector');
+      history.replaceState(null, '', url.toString());
+      render();
+    });
 
     root.querySelectorAll('[data-filter-group]').forEach((input) => {
       if (input.tagName !== 'INPUT') return;
@@ -1284,8 +1329,18 @@
         console.warn(`Failed to load from ${source.name}:`, err.message);
       }
     }
+    applySectorFromUrl();
     render();
     checkDeepLink();
+  }
+
+  /** Pre-fill sector filter from ?sector= (canonical or legacy code). */
+  function applySectorFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const code = normalizeSectorFilterCode(params.get('sector') || '');
+    if (code) {
+      filters.sector = [code];
+    }
   }
 
   function init() {
