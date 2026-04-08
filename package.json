@@ -12,6 +12,7 @@
     "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/organization-catalog.schema.json -d 'community-catalogs/**/organization-catalog.json'",
     "seed": "tsx scripts/seed-from-catalogs.ts",
     "check-links": "tsx scripts/check-links.ts",
+    "import-qtsp": "node scripts/import-qtsp-from-efda.mjs",
     "test": "node --import tsx --test src/crawler/matching.test.ts"
   },
   "repository": {

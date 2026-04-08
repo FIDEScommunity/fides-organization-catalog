@@ -323,6 +323,13 @@
     return '';
   }
 
+  /** ISO 3166-1 alpha-2 for ?country= (country explorer deep links). */
+  function normalizeCountryFilterCode(raw) {
+    if (raw == null || typeof raw !== 'string') return '';
+    const s = String(raw).trim().replace(/[^a-z]/gi, '').toUpperCase();
+    return s.length === 2 ? s : '';
+  }
+
   /** Canonical sector codes for an org (URL filter, facets, and JSON may use mixed case or legacy labels). */
   function orgSectorCodes(org) {
     const raw = org && org.sectors;
@@ -1236,6 +1243,7 @@
       filters = { search: '', country: [], role: [], sector: [], certification: [], manifestoSupporter: [], verifiedProfile: [], ids: [] };
       const url = new URL(window.location.href);
       url.searchParams.delete('sector');
+      url.searchParams.delete('country');
       history.replaceState(null, '', url.toString());
       render();
     });
@@ -1330,6 +1338,7 @@
       }
     }
     applySectorFromUrl();
+    applyCountryFromUrl();
     render();
     checkDeepLink();
   }
@@ -1340,6 +1349,15 @@
     const code = normalizeSectorFilterCode(params.get('sector') || '');
     if (code) {
       filters.sector = [code];
+    }
+  }
+
+  /** Pre-fill country filter from ?country= (ISO 3166-1 alpha-2). */
+  function applyCountryFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const cc = normalizeCountryFilterCode(params.get('country') || '');
+    if (cc) {
+      filters.country = [cc];
     }
   }
 
