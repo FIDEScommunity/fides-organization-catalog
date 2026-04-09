@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "lastUpdated": "2026-04-09T12:00:00Z",
+  "organization": {
+    "id": "org:gaia-x",
+    "name": "Gaia-X",
+    "legalName": "Gaia-X European Association for Data and Cloud AISBL",
+    "description": "Pan-European non-profit association that develops the Gaia-X technical framework and operates Gaia-X Federation Services for interoperable and trustworthy data sharing.",
+    "sectors": ["digital"],
+    "identifiers": {
+      "business_registration_number": "0762747721",
+      "vat_number": "BE 0762.747.721"
+    },
+    "website": "https://gaia-x.eu/",
+    "logo": "https://upload.wikimedia.org/wikipedia/de/thumb/6/6f/Gaia-X_logo.svg/1920px-Gaia-X_logo.svg.png",
+    "country": "BE",
+    "contact": {
+      "email": "info@gaia-x.eu"
+    }
+  }
+}
