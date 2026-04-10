@@ -81,8 +81,8 @@ The ID convention is `org:<code>` where `<code>` matches the directory name in `
 
 ## Phased development
 
-- **Phase 1**: Standalone catalog that *reads* from other catalogs. Organization data was inline in wallet/issuer/rp/credential catalogs.
-- **Phase 2** (in progress): Issuer and credential catalogs now use `orgId` pointing at this catalog; inline `organization` / `provider` blocks were removed there. Wallet and RP catalogs still carry inline provider data until migrated.
+- **Phase 1** (done): Standalone catalog that *reads* from other catalogs. Organization data used to be inline in wallet, issuer, RP, and credential catalogs.
+- **Phase 2** (done): Wallet, issuer, RP, and credential community catalogs reference this catalog via **`orgId`**; inline `organization` / `provider` blocks are no longer used there. Crawlers resolve display fields (name, logo, contact, etc.) from `data/aggregated.json` here.
 
 ## License
 

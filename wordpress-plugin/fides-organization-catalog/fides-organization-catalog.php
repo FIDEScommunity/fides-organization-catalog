@@ -2,12 +2,30 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer.
- * Version: 1.2.30
+ * Version: 1.2.32
  * Author: FIDES Community
  * License: Apache-2.0
+ * Text Domain: fides-organization-catalog
  */
 
 if (!defined('ABSPATH')) exit;
+
+/** @var string Option group for Settings → FIDES Org Catalog */
+const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
+
+/**
+ * Sanitize optional URL: empty string allowed (means “use default behavior”).
+ *
+ * @param mixed $value Raw option value.
+ * @return string
+ */
+function fides_org_catalog_sanitize_optional_url($value) {
+    $value = is_string($value) ? trim($value) : '';
+    if ($value === '') {
+        return '';
+    }
+    return esc_url_raw($value);
+}
 
 class Fides_Organization_Catalog {
 
@@ -26,6 +44,133 @@ class Fides_Organization_Catalog {
         add_shortcode('fides_organization_catalog', [$this, 'render_shortcode']);
         add_action('wp_enqueue_scripts', [$this, 'register_assets']);
         add_action('rest_api_init', [$this, 'register_rest_routes']);
+        add_action('admin_menu', [$this, 'register_admin_menu']);
+        add_action('admin_init', [$this, 'register_plugin_settings']);
+    }
+
+    public function register_admin_menu() {
+        add_options_page(
+            'FIDES Organization Catalog Settings',
+            'FIDES Org Catalog',
+            'manage_options',
+            'fides-organization-catalog',
+            [$this, 'render_settings_page']
+        );
+    }
+
+    public function register_plugin_settings() {
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_github_data_url', [
+            'type'              => 'string',
+            'default'           => 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json',
+            'sanitize_callback' => 'esc_url_raw',
+        ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_issuer_catalog_url', [
+            'type'              => 'string',
+            'default'           => 'https://fides.community/ecosystem-explorer/issuer-catalog/',
+            'sanitize_callback' => 'esc_url_raw',
+        ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_credential_catalog_url', [
+            'type'              => 'string',
+            'default'           => 'https://fides.community/ecosystem-explorer/credential-catalog/',
+            'sanitize_callback' => 'esc_url_raw',
+        ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_wallet_catalog_url', [
+            'type'              => 'string',
+            'default'           => 'https://fides.community/community-tools/personal-wallets/',
+            'sanitize_callback' => 'esc_url_raw',
+        ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_rp_catalog_url', [
+            'type'              => 'string',
+            'default'           => 'https://fides.community/ecosystem-explorer/relying-party-catalog/',
+            'sanitize_callback' => 'esc_url_raw',
+        ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_blue_pages_profile_base_url', [
+            'type'              => 'string',
+            'default'           => '',
+            'sanitize_callback' => 'fides_org_catalog_sanitize_optional_url',
+        ]);
+    }
+
+    public function render_settings_page() {
+        if (!current_user_can('manage_options')) {
+            return;
+        }
+        ?>
+        <div class="wrap">
+            <h1><?php echo esc_html__('FIDES Organization Catalog', 'fides-organization-catalog'); ?></h1>
+            <form method="post" action="options.php">
+                <?php settings_fields(FIDES_ORG_CATALOG_SETTINGS_GROUP); ?>
+                <h2 class="title"><?php echo esc_html__('Catalog URLs', 'fides-organization-catalog'); ?></h2>
+                <p class="description">
+                    <?php echo esc_html__('Defaults are used for the organization catalog shortcode. Shortcode attributes (e.g. credential_catalog_url="…") override these values on that page.', 'fides-organization-catalog'); ?>
+                </p>
+                <table class="form-table" role="presentation">
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_github_data_url"><?php echo esc_html__('Aggregated JSON URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_github_data_url" name="fides_org_catalog_github_data_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_github_data_url', 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json')); ?>">
+                            <p class="description"><?php echo esc_html__('Source URL for organization catalog data (aggregated.json).', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_issuer_catalog_url"><?php echo esc_html__('Issuer catalog page URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_issuer_catalog_url" name="fides_org_catalog_issuer_catalog_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_issuer_catalog_url', 'https://fides.community/ecosystem-explorer/issuer-catalog/')); ?>">
+                            <p class="description"><?php echo esc_html__('Page with the issuer catalog shortcode (modal deep links).', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_credential_catalog_url"><?php echo esc_html__('Credential catalog page URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_credential_catalog_url" name="fides_org_catalog_credential_catalog_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_credential_catalog_url', 'https://fides.community/ecosystem-explorer/credential-catalog/')); ?>">
+                            <p class="description"><?php echo esc_html__('Page with the credential catalog shortcode. Used for ?credential=cred:… links from the organization modal.', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_wallet_catalog_url"><?php echo esc_html__('Wallet catalog page URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_wallet_catalog_url" name="fides_org_catalog_wallet_catalog_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_wallet_catalog_url', 'https://fides.community/community-tools/personal-wallets/')); ?>">
+                            <p class="description"><?php echo esc_html__('Personal wallets catalog page (modal deep links).', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_rp_catalog_url"><?php echo esc_html__('Relying party catalog page URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_rp_catalog_url" name="fides_org_catalog_rp_catalog_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_rp_catalog_url', 'https://fides.community/ecosystem-explorer/relying-party-catalog/')); ?>">
+                            <p class="description"><?php echo esc_html__('Page with the RP catalog shortcode (modal deep links).', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_blue_pages_profile_base_url"><?php echo esc_html__('Blue Pages profile base URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_blue_pages_profile_base_url" name="fides_org_catalog_blue_pages_profile_base_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_blue_pages_profile_base_url', '')); ?>"
+                                   placeholder="<?php echo esc_attr(home_url('/community-tools/blue-pages')); ?>">
+                            <p class="description"><?php echo esc_html__('Optional. Leave empty to use this site’s /community-tools/blue-pages path. Used for “Open full profile” in the modal.', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                </table>
+                <?php submit_button(); ?>
+            </form>
+        </div>
+        <?php
     }
 
     /**
@@ -180,13 +325,13 @@ class Fides_Organization_Catalog {
             'fides-organization-catalog',
             $this->plugin_url . 'assets/style.css',
             [],
-            '1.2.30'
+            '1.2.32'
         );
         wp_register_script(
             'fides-organization-catalog',
             $this->plugin_url . 'assets/organization-catalog.js',
             [],
-            '1.2.30',
+            '1.2.32',
             true
         );
     }
@@ -197,23 +342,43 @@ class Fides_Organization_Catalog {
             'show_search'  => 'true',
             'columns'      => '3',
             'theme'        => 'fides',
-            'github_data_url' => 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json',
-            'issuer_catalog_url' => 'https://fides.community/ecosystem-explorer/issuer-catalog/',
-            'credential_catalog_url' => 'https://fides.community/community-tools/credential-catalog/',
-            'wallet_catalog_url' => 'https://fides.community/community-tools/personal-wallets/',
-            'rp_catalog_url' => 'https://fides.community/ecosystem-explorer/relying-party-catalog/',
-            /** Base URL for “Open full profile” (trailing slash optional). Empty = home_url('/community-tools/blue-pages/'). */
+            'github_data_url' => get_option(
+                'fides_org_catalog_github_data_url',
+                'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json'
+            ),
+            'issuer_catalog_url' => get_option(
+                'fides_org_catalog_issuer_catalog_url',
+                'https://fides.community/ecosystem-explorer/issuer-catalog/'
+            ),
+            'credential_catalog_url' => get_option(
+                'fides_org_catalog_credential_catalog_url',
+                'https://fides.community/ecosystem-explorer/credential-catalog/'
+            ),
+            'wallet_catalog_url' => get_option(
+                'fides_org_catalog_wallet_catalog_url',
+                'https://fides.community/community-tools/personal-wallets/'
+            ),
+            'rp_catalog_url' => get_option(
+                'fides_org_catalog_rp_catalog_url',
+                'https://fides.community/ecosystem-explorer/relying-party-catalog/'
+            ),
+            /** Base URL for “Open full profile” (trailing slash optional). Empty = settings option or home_url('/community-tools/blue-pages/'). */
             'blue_pages_profile_base_url' => '',
         ], $atts, 'fides_organization_catalog');
 
         wp_enqueue_style('fides-organization-catalog');
         wp_enqueue_script('fides-organization-catalog');
 
-        $bp_profile_base = trim((string) $atts['blue_pages_profile_base_url']);
-        if ($bp_profile_base === '') {
-            $bp_profile_base = trailingslashit(home_url('/community-tools/blue-pages'));
+        $bp_shortcode = trim((string) $atts['blue_pages_profile_base_url']);
+        if ($bp_shortcode !== '') {
+            $bp_profile_base = trailingslashit(esc_url_raw($bp_shortcode));
         } else {
-            $bp_profile_base = trailingslashit(esc_url_raw($bp_profile_base));
+            $bp_opt = trim((string) get_option('fides_org_catalog_blue_pages_profile_base_url', ''));
+            if ($bp_opt !== '') {
+                $bp_profile_base = trailingslashit(esc_url_raw($bp_opt));
+            } else {
+                $bp_profile_base = trailingslashit(home_url('/community-tools/blue-pages'));
+            }
         }
 
         wp_localize_script('fides-organization-catalog', 'fidesOrganizationCatalog', [
