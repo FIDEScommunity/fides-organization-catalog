@@ -35,6 +35,10 @@ Returns a paginated, filterable list of organizations.
 }
 ```
 
+### `GET /api/public/organization/{id}`
+
+Returns a **single** organization by catalog `id` (e.g. `org:animo`). The response body matches one element of the list `content` array. Encode reserved characters in the path (e.g. `org:animo` → `org%3Aanimo`).
+
 ### `GET /api/public/api-docs`
 
 Returns the OpenAPI 3.1 specification as JSON.

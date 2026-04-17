@@ -4,7 +4,7 @@ const spec = {
   openapi: '3.1.0',
   info: {
     title: 'FIDES Organization Catalog API',
-    version: '1.0.0',
+    version: '1.1.0',
     description: 'Public API for querying organizations in the FIDES ecosystem and their roles across wallets, issuers, credentials, and relying parties.',
   },
   servers: [{ url: '/api/public' }],
@@ -60,6 +60,45 @@ const spec = {
                     totalPages: { type: 'integer' },
                     number: { type: 'integer' },
                     size: { type: 'integer' },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    '/organization/{id}': {
+      get: {
+        summary: 'Get organization by id',
+        operationId: 'getOrganizationById',
+        parameters: [
+          {
+            name: 'id',
+            in: 'path',
+            required: true,
+            description: 'Organization catalog id (URL-encoded when needed, e.g. org%3Aanimo)',
+            schema: { type: 'string' },
+          },
+        ],
+        responses: {
+          '200': {
+            description: 'Organization',
+            content: {
+              'application/json': {
+                schema: { $ref: '#/components/schemas/Organization' },
+              },
+            },
+          },
+          '404': {
+            description: 'Not found',
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    message: { type: 'string' },
+                    timestamp: { type: 'string', format: 'date-time' },
                   },
                 },
               },
