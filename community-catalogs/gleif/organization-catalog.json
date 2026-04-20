@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:gleif",
+    "name": "Global Legal Entity Identifier Foundation",
+    "sectors": [
+      "finance"
+    ],
+    "legalName": "Global Legal Entity Identifier Foundation",
+    "description": "The Global Legal Entity Identifier Foundation (GLEIF) is a not-for-profit organization established to support the implementation and use of the Legal Entity Identifier (LEI) and to improve transparency in financial markets. GLEIF is responsible for the governance of the global LEI system and the vLEI ecosystem, including defining verifiable credential models for organizational identity and roles.",
+    "website": "https://www.gleif.org",
+    "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg",
+    "country": "CH",
+    "fidesManifestoSupporter": false,
+    "contact": {
+      "support": "https://www.gleif.org/en/contact"
+    },
+    "tags": [
+      "lei",
+      "vlei",
+      "organizational identity",
+      "verifiable credentials",
+      "financial infrastructure"
+    ]
+  }
+}
