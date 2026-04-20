@@ -409,5 +409,8 @@
   },
   "org:iata": {
     "firstSeenAt": "2026-04-20T08:42:08.000Z"
+  },
+  "org:gleif": {
+    "firstSeenAt": "2026-04-20T08:46:45.000Z"
   }
 }
