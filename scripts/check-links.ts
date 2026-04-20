@@ -76,7 +76,30 @@ async function main(): Promise<void> {
     for (const b of broken) {
       console.log(`  - ${b.org} ${b.field}: ${b.url} (${b.error || b.status})`);
     }
-    process.exit(1);
+  }
+
+  const summaryPath = process.env.GITHUB_STEP_SUMMARY;
+  if (summaryPath) {
+    const lines: string[] = [];
+    lines.push('# Link check report');
+    lines.push('');
+    lines.push(`- Links checked: **${results.length}**`);
+    lines.push(`- Broken: **${broken.length}**`);
+    lines.push('');
+    if (broken.length > 0) {
+      lines.push('## Broken links');
+      lines.push('');
+      lines.push('| Organization | Field | URL | Status |');
+      lines.push('| --- | --- | --- | --- |');
+      for (const b of broken) {
+        const status = b.error ? `error: ${b.error}` : `${b.status}`;
+        lines.push(`| ${b.org} | ${b.field} | ${b.url} | ${status} |`);
+      }
+    } else {
+      lines.push('All links OK.');
+    }
+    lines.push('');
+    await fs.appendFile(summaryPath, lines.join('\n'));
   }
 }
 
