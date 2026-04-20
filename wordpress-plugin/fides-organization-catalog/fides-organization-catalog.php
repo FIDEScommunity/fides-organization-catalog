@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: FIDES Organization Catalog
- * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer.
- * Version: 1.2.32
+ * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
+ * Version: 1.3.1
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -12,6 +12,9 @@ if (!defined('ABSPATH')) exit;
 
 /** @var string Option group for Settings → FIDES Org Catalog */
 const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
+
+require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-ssr.php';
+Fides_Organization_Catalog_SSR::bootstrap();
 
 /**
  * Sanitize optional URL: empty string allowed (means “use default behavior”).
@@ -325,13 +328,13 @@ class Fides_Organization_Catalog {
             'fides-organization-catalog',
             $this->plugin_url . 'assets/style.css',
             [],
-            '1.2.32'
+            '1.2.33'
         );
         wp_register_script(
             'fides-organization-catalog',
             $this->plugin_url . 'assets/organization-catalog.js',
             [],
-            '1.2.32',
+            '1.2.33',
             true
         );
     }
@@ -392,12 +395,26 @@ class Fides_Organization_Catalog {
             'bluePagesProfileBaseUrl' => $bp_profile_base,
         ]);
 
+        $initial_html = '';
+        if (class_exists('Fides_Organization_Catalog_SSR')) {
+            $initial_html = Fides_Organization_Catalog_SSR::build_initial_html(array(
+                'show_filters' => $atts['show_filters'],
+                'show_search'  => $atts['show_search'],
+                'columns'      => $atts['columns'],
+                'theme'        => $atts['theme'],
+            ));
+        }
+        if ($initial_html === '') {
+            $initial_html = '<p>Loading Organization Catalog…</p>';
+        }
+
         return sprintf(
-            '<div id="fides-org-catalog-root" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s"><p>Loading Organization Catalog…</p></div>',
+            '<div id="fides-org-catalog-root" data-show-filters="%s" data-show-search="%s" data-columns="%s" data-theme="%s">%s</div>',
             esc_attr($atts['show_filters']),
             esc_attr($atts['show_search']),
             esc_attr($atts['columns']),
-            esc_attr($atts['theme'])
+            esc_attr($atts['theme']),
+            $initial_html
         );
     }
 }

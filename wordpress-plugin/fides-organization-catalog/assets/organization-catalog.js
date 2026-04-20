@@ -30,6 +30,7 @@
     viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>',
   };
 
+  /** Explicit English labels where we prefer a fixed string over Intl (or legacy fallback if Intl is unavailable). */
   const COUNTRY_NAMES = {
     'AD': 'Andorra', 'AL': 'Albania', 'AT': 'Austria', 'AU': 'Australia',
     'BE': 'Belgium', 'BG': 'Bulgaria', 'BA': 'Bosnia and Herzegovina',
@@ -50,8 +51,42 @@
     'UA': 'Ukraine', 'US': 'United States', 'VA': 'Vatican City',
   };
 
+  let regionDisplayNamesEn = null;
+
+  function getRegionDisplayNamesEn() {
+    if (regionDisplayNamesEn !== null) return regionDisplayNamesEn;
+    try {
+      if (typeof Intl !== 'undefined' && Intl.DisplayNames) {
+        regionDisplayNamesEn = new Intl.DisplayNames(['en'], { type: 'region' });
+      } else {
+        regionDisplayNamesEn = false;
+      }
+    } catch (e) {
+      regionDisplayNamesEn = false;
+    }
+    return regionDisplayNamesEn;
+  }
+
+  /**
+   * ISO 3166-1 alpha-2 (or EU) → English display name.
+   * Uses Intl.DisplayNames for full coverage; COUNTRY_NAMES overrides when set.
+   */
   function countryName(code) {
-    return COUNTRY_NAMES[code] || code;
+    if (code == null) return '';
+    const raw = String(code).trim();
+    if (!raw) return '';
+    const upper = raw.toUpperCase();
+    if (COUNTRY_NAMES[upper]) return COUNTRY_NAMES[upper];
+    const dn = getRegionDisplayNamesEn();
+    if (dn) {
+      try {
+        const n = dn.of(upper);
+        if (typeof n === 'string' && n.length > 0 && n.toUpperCase() !== upper) return n;
+      } catch (e) {
+        /* ignore */
+      }
+    }
+    return upper;
   }
 
   /** Schema key order for Organization details and search (labels in English). */
