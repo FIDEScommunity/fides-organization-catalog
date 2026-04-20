@@ -1,1 +1,26 @@
- 
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:icao",
+    "name": "International Civil Aviation Organization",
+    "sectors": [
+      "mobility"
+    ],
+    "legalName": "International Civil Aviation Organization",
+    "description": "The International Civil Aviation Organization (ICAO) is a specialized agency of the United Nations that sets international standards and regulations for aviation, including the global specifications for machine-readable travel documents and digital travel credentials.",
+    "website": "https://www.icao.int",
+    "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/7f1293a6797df97bc044c82f3ba71624ae2bc0f4/community-catalogs/icao/ICAO_logo.png",
+    "country": "CA",
+    "fidesManifestoSupporter": false,
+    "contact": {
+      "support": "https://www.icao.int/Pages/contact.aspx"
+    },
+    "tags": [
+      "aviation",
+      "travel",
+      "passport",
+      "digital travel credential",
+      "identity standards"
+    ]
+  }
+} 
