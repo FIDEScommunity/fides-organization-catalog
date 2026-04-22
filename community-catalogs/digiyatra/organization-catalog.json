@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "id": "org:digiyatra",
+  "name": "DigiYatra Foundation",
+  "website": "https://digiyatra.org",
+  "logo": "https://digiyatra.org/wp-content/uploads/2022/11/DigiYatra-Logo.png",
+  "country": "IN",
+  "sectors": [
+    "Mobility"
+  ],
+  "description": "DigiYatra Foundation is an industry-led initiative in India that enables seamless, contactless air travel using digital identity and biometric verification. It allows passengers to move through airports using face-based authentication linked to their identity credentials, reducing the need for physical documents.",
+  "fidesManifestoSupporter": false,
+  "tags": [
+    "digital identity",
+    "biometrics",
+    "aviation",
+    "travel",
+    "face recognition",
+    "airport",
+    "credential ecosystem"
+  ],
+  "identifiers": [
+    {
+      "type": "organization",
+      "value": "DigiYatra Foundation"
+    }
+  ],
+  "contact": {
+    "email": "info@digiyatra.org"
+  }
+}
