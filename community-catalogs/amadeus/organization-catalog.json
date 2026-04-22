@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:amadeus",
+    "name": "Amadeus",
+    "legalName": "Amadeus IT Group, S.A.",
+    "sectors": [
+      "mobility"
+    ],
+    "website": "https://amadeus.com",
+    "logo": "https://yt3.googleusercontent.com/MFpPBeBdxXtWxKePfM3wa65KPZWgXy8c2-S0XLEbfhVkrgpNUXf4EQInpWcMBK4rqwHPuqrTEA=s160-c-k-c0x00ffffff-no-rj",
+    "country": "ES",
+    "description": "Amadeus IT Group is a global technology provider for the travel and tourism industry, offering solutions for airlines, airports, travel agencies, and hospitality. Amadeus plays a key role in enabling digital travel experiences, including booking, ticketing, and passenger processing. The company is increasingly involved in innovations around digital identity, contactless travel, and the use of verifiable credentials and digital wallets within the aviation ecosystem."
+  }
+}
