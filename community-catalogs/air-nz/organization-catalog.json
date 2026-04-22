@@ -8,7 +8,7 @@
       "mobility"
     ],
     "website": "https://www.airnewzealand.com",
-    "logo": "https://www.google.com/s2/favicons?domain=airnewzealand.com&sz=128",
+    "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/air-nz/Air-New-Zealand-Logo.jpg",
     "country": "NZ",
     "description": "Air New Zealand is the national airline of New Zealand, operating domestic and international passenger and cargo services. In digital travel scenarios, airlines like Air New Zealand act as both issuers of travel credentials such as boarding passes and booking orders, and as relying parties that verify passenger identity and travel credentials during check-in, bag drop, and boarding processes."
   }
