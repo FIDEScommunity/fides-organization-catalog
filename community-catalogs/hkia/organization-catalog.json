@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hong-kong-international-airport",
+    "name": "Hong Kong International Airport",
+    "legalName": "Airport Authority Hong Kong",
+    "sectors": [
+      "mobility"
+    ],
+    "website": "https://www.hongkongairport.com",
+    "logo": "https://www.hongkongairport.com/iwov-resources/image/common/logo.png",
+    "country": "HK",
+    "description": "Hong Kong International Airport is one of the world's leading aviation hubs, operated by Airport Authority Hong Kong. The airport facilitates passenger and cargo transport and plays a key role in digital travel innovation. In digital identity scenarios, airports can act as relying parties that verify passenger credentials such as boarding passes and digital identity documents at security checkpoints, bag drop, and boarding gates."
+  }
+}
