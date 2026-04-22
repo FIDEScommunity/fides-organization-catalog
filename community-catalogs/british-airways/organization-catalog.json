@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:british-airways",
+    "name": "British Airways",
+    "legalName": "British Airways plc",
+    "sectors": [
+      "mobility"
+    ],
+    "website": "https://www.britishairways.com",
+    "logo": "https://www.google.com/s2/favicons?domain=britishairways.com&sz=128",
+    "country": "GB",
+    "description": "British Airways is a major international airline and part of International Airlines Group (IAG). It operates passenger and cargo services worldwide. In digital travel scenarios, airlines like British Airways act as both issuers of travel credentials such as boarding passes and booking orders, and as relying parties that verify passenger identity and travel credentials during check-in, security, and boarding processes."
+  }
+}
