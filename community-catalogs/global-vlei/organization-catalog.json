@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:global-vlei",
+    "name": "Global vLEI",
+    "legalName": "Global vLEI Ltd.",
+    "sectors": [
+      "digital",
+      "finance"
+    ],
+    "website": "https://globalvlei.com/",
+    "logo": "https://globalvlei.com/wp-content/uploads/2023/05/globalvlei-logo.png",
+    "country": "GB",
+    "description": "Global vLEI Ltd. is a UK-based provider of digital identity solutions and a Qualified vLEI Issuer (QVI) accredited by GLEIF. The organization issues verifiable Legal Entity Identifier (vLEI) credentials to legal entities and their authorized representatives, enabling trusted organizational identity, role assertions, and compliance in cross-border digital ecosystems."
+  }
+}
