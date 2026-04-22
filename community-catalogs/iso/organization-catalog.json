@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:iso",
+    "name": "ISO",
+    "legalName": "International Organization for Standardization",
+    "sectors": [
+      "trade"
+    ],
+    "description": "International standards organization responsible for developing and publishing globally used standards, including those underpinning digital identity, mobile documents, and verifiable credential ecosystems.",
+    "website": "https://www.iso.org/",
+    "logo": "https://logolook.net/wp-content/uploads/2023/03/ISO-Logo-225x127.png",
+    "country": "CH",
+    "tags": [
+      "standards-body"
+    ],
+    "fidesManifestoSupporter": false
+  },
+  "lastUpdated": "2026-04-22T10:00:00Z"
+}
