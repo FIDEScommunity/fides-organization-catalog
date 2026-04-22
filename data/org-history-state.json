@@ -424,5 +424,8 @@
   },
   "org:japan-airlines": {
     "firstSeenAt": "2026-04-22T10:29:17.000Z"
+  },
+  "org:air-new-zealand": {
+    "firstSeenAt": "2026-04-22T11:00:21.000Z"
   }
 }
