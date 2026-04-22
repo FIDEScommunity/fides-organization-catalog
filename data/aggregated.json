@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastUpdated": "2026-04-22T11:13:28.651Z",
+  "lastUpdated": "2026-04-22T11:17:34.780Z",
   "organizations": [
     {
       "id": "org:2060",
@@ -29,7 +29,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:a3bc",
@@ -56,7 +56,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:affinidi",
@@ -84,7 +84,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:air-new-zealand",
@@ -108,7 +108,7 @@
       },
       "firstSeenAt": "2026-04-22T11:00:21.000Z",
       "updatedAt": "2026-04-22T11:02:02.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:albania",
@@ -135,7 +135,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:almelo-energie",
@@ -163,7 +163,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:amadeus",
@@ -187,7 +187,7 @@
       },
       "firstSeenAt": "2026-04-22T10:08:22.000Z",
       "updatedAt": "2026-04-22T10:09:19.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:animo",
@@ -243,7 +243,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:26:17.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:apple",
@@ -271,7 +271,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T14:58:06.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:aruba",
@@ -299,7 +299,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:austria",
@@ -326,7 +326,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:auth0",
@@ -354,7 +354,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:authbound",
@@ -386,7 +386,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ayanworks",
@@ -419,7 +419,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:bd",
@@ -448,7 +448,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:49:16.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:belgium",
@@ -475,7 +475,31 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
+    },
+    {
+      "id": "org:bengaluru-international-airport",
+      "name": "Bengaluru International Airport",
+      "sectors": [
+        "mobility"
+      ],
+      "legalName": "Bangalore International Airport Limited",
+      "description": "Bengaluru International Airport, operated by Bangalore International Airport Limited (BIAL), is a major aviation hub in India serving domestic and international passengers. In digital travel scenarios, airports like Bengaluru International Airport act as relying parties that verify passenger credentials such as boarding passes and digital identity documents at security checkpoints, bag drop, and boarding gates.",
+      "website": "https://www.bengaluruairport.com",
+      "logoUri": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg",
+      "country": "IN",
+      "source": "community-catalog",
+      "catalogUrl": "community-catalogs/ia-benga/organization-catalog.json",
+      "ecosystemRoles": {
+        "issuers": [],
+        "credentialTypes": [],
+        "personalWallets": [],
+        "businessWallets": [],
+        "relyingParties": []
+      },
+      "firstSeenAt": "2026-04-22T11:17:22.000Z",
+      "updatedAt": "2026-04-22T11:17:22.000Z",
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:buthan",
@@ -503,7 +527,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:helixid",
@@ -533,7 +557,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:british-airways",
@@ -557,7 +581,7 @@
       },
       "firstSeenAt": "2026-04-22T11:06:34.000Z",
       "updatedAt": "2026-04-22T11:06:34.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:caesar",
@@ -581,7 +605,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T12:58:07.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ca-dmv",
@@ -616,7 +640,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:crt",
@@ -640,7 +664,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-06T20:06:29.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:amsterdam",
@@ -684,7 +708,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:nijmegen",
@@ -744,7 +768,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:03:32.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:credenco",
@@ -778,7 +802,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:42:04.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:czechia",
@@ -805,7 +829,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:denmark",
@@ -832,7 +856,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:danubetech",
@@ -856,7 +880,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T15:46:20.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:datakeeper",
@@ -884,7 +908,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:06:38.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:png",
@@ -912,7 +936,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:digidentity",
@@ -954,7 +978,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:40:43.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:digitalbazaar",
@@ -982,7 +1006,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:digital-trust-solutions",
@@ -1007,7 +1031,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:docklabs",
@@ -1040,7 +1064,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:domoticube",
@@ -1064,7 +1088,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:netherlands",
@@ -1091,7 +1115,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:educa",
@@ -1121,7 +1145,7 @@
       },
       "firstSeenAt": "2026-04-03T06:16:15.000Z",
       "updatedAt": "2026-04-03T06:16:15.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:tue",
@@ -1146,7 +1170,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:estonia",
@@ -1173,7 +1197,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:eudiplo",
@@ -1217,7 +1241,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:eu",
@@ -1394,7 +1418,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ewc",
@@ -1484,7 +1508,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:fabaleus",
@@ -1509,7 +1533,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:fides",
@@ -1668,11 +1692,11 @@
       "bluePages": {
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "profileAvailable": true,
-        "checkedAt": "2026-04-22T11:13:28.651Z"
+        "checkedAt": "2026-04-22T11:17:34.780Z"
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:14:02.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:findynet",
@@ -1696,7 +1720,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:finland",
@@ -1723,7 +1747,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:forkbomb",
@@ -1757,7 +1781,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:france",
@@ -1784,7 +1808,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:fuelfwd",
@@ -1808,7 +1832,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:gaia-x",
@@ -1876,7 +1900,7 @@
       },
       "firstSeenAt": "2026-04-09T12:00:00Z",
       "updatedAt": "2026-04-09T12:00:00Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:gataca",
@@ -1912,7 +1936,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:gear-up",
@@ -1936,7 +1960,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:17:47.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:rotterdam",
@@ -1960,7 +1984,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:germany",
@@ -1987,7 +2011,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:gleif",
@@ -2046,7 +2070,7 @@
       },
       "firstSeenAt": "2026-04-20T08:46:45.000Z",
       "updatedAt": "2026-04-20T08:46:45.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:google",
@@ -2079,7 +2103,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:00:04.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:bcgov",
@@ -2112,7 +2136,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:cyprus",
@@ -2139,7 +2163,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:greece",
@@ -2170,7 +2194,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:hak-rein-vos-notarissen",
@@ -2194,7 +2218,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:headon",
@@ -2219,7 +2243,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:hong-kong-international-airport",
@@ -2243,7 +2267,7 @@
       },
       "firstSeenAt": "2026-04-22T11:13:15.000Z",
       "updatedAt": "2026-04-22T11:13:15.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:hovi",
@@ -2285,7 +2309,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:hungary",
@@ -2312,7 +2336,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:iceland",
@@ -2339,7 +2363,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:idcontrol",
@@ -2363,7 +2387,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:identinet",
@@ -2387,7 +2411,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:igrant",
@@ -2485,7 +2509,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ilabs",
@@ -2509,7 +2533,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:impierce",
@@ -2543,7 +2567,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:india",
@@ -2575,7 +2599,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:indigo",
@@ -2599,7 +2623,7 @@
       },
       "firstSeenAt": "2026-04-22T11:10:08.000Z",
       "updatedAt": "2026-04-22T11:10:08.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:inetum",
@@ -2631,7 +2655,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:imda",
@@ -2663,7 +2687,7 @@
       },
       "firstSeenAt": "2026-04-20T08:26:08.000Z",
       "updatedAt": "2026-04-20T08:26:08.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:innotractor",
@@ -2687,7 +2711,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:innovalor",
@@ -2711,7 +2735,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:19:49.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:intercede",
@@ -2739,7 +2763,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:iata",
@@ -2780,7 +2804,7 @@
       },
       "firstSeenAt": "2026-04-20T08:42:08.000Z",
       "updatedAt": "2026-04-20T08:42:08.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:icao",
@@ -2814,7 +2838,7 @@
       },
       "firstSeenAt": "2026-04-20T09:14:06.000Z",
       "updatedAt": "2026-04-20T09:14:06.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ireland",
@@ -2841,7 +2865,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:iso",
@@ -2885,7 +2909,7 @@
       },
       "firstSeenAt": "2026-04-22T10:00:00Z",
       "updatedAt": "2026-04-22T10:00:00Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:italy",
@@ -2912,7 +2936,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ixo",
@@ -2940,7 +2964,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:izertis",
@@ -2972,7 +2996,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:japan-airlines",
@@ -3001,7 +3025,7 @@
       },
       "firstSeenAt": "2026-04-22T10:29:17.000Z",
       "updatedAt": "2026-04-22T10:31:40.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:k4security",
@@ -3032,7 +3056,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:kvk",
@@ -3061,7 +3085,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:47:02.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:latvia",
@@ -3088,7 +3112,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:lissi",
@@ -3141,7 +3165,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:mattr",
@@ -3174,7 +3198,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:meeco",
@@ -3207,7 +3231,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:microsoft",
@@ -3235,7 +3259,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:01:19.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:minisuomi",
@@ -3263,7 +3287,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:bzk",
@@ -3288,7 +3312,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:brazil",
@@ -3316,7 +3340,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:mintblue",
@@ -3340,7 +3364,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:moldova",
@@ -3368,7 +3392,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:mosip",
@@ -3416,7 +3440,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:mydata-global",
@@ -3440,7 +3464,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:namirial",
@@ -3482,7 +3506,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ethiopia",
@@ -3510,7 +3534,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:neoke",
@@ -3538,7 +3562,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:neovo",
@@ -3569,7 +3593,7 @@
       },
       "firstSeenAt": "2026-04-02T18:06:53.000Z",
       "updatedAt": "2026-04-02T20:41:38.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:northernblock",
@@ -3602,7 +3626,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:norway",
@@ -3629,7 +3653,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ooru",
@@ -3663,7 +3687,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:owf",
@@ -3696,7 +3720,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:oumou-group",
@@ -3724,7 +3748,7 @@
       },
       "firstSeenAt": "2026-04-03T07:27:12.000Z",
       "updatedAt": "2026-04-10T12:35:16.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:poland",
@@ -3751,7 +3775,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:portugal",
@@ -3778,7 +3802,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:privacybydesign",
@@ -3806,7 +3830,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:procivis",
@@ -3839,7 +3863,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:quintessence-research",
@@ -3863,7 +3887,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:honduras",
@@ -3891,7 +3915,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:samsung",
@@ -3919,7 +3943,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:sbb",
@@ -3948,7 +3972,7 @@
       },
       "firstSeenAt": "2026-04-03T06:05:55.000Z",
       "updatedAt": "2026-04-03T06:05:55.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:scytales",
@@ -3981,7 +4005,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:sicpa",
@@ -4009,7 +4033,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:slovakia",
@@ -4036,7 +4060,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:slovenia",
@@ -4063,7 +4087,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:spain",
@@ -4090,7 +4114,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:sphereon",
@@ -4127,7 +4151,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:spherity",
@@ -4156,7 +4180,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:spruce",
@@ -4184,7 +4208,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:stelausoftware",
@@ -4211,7 +4235,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:sweden",
@@ -4238,7 +4262,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:swiyu",
@@ -4291,7 +4315,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:talao",
@@ -4334,7 +4358,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:thales",
@@ -4362,7 +4386,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:tno",
@@ -4391,7 +4415,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:15:35.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:toppan",
@@ -4424,7 +4448,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ubique",
@@ -4452,7 +4476,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ukraine",
@@ -4479,7 +4503,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:uncefact",
@@ -4554,7 +4578,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:unchained-commerce",
@@ -4583,7 +4607,7 @@
       },
       "firstSeenAt": "2026-04-03T06:22:51.000Z",
       "updatedAt": "2026-04-03T06:22:51.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:unifiedpost",
@@ -4609,7 +4633,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:uaegean",
@@ -4637,7 +4661,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:validatedid",
@@ -4670,7 +4694,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:ver-id",
@@ -4699,7 +4723,7 @@
       },
       "firstSeenAt": "2026-03-31T09:53:54.773Z",
       "updatedAt": "2026-04-02T13:34:42.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:verimi",
@@ -4726,7 +4750,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:werify",
@@ -4750,7 +4774,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:wwwallet",
@@ -4778,7 +4802,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:xablu",
@@ -4802,7 +4826,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:yoti",
@@ -4829,7 +4853,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:youniqx",
@@ -4861,7 +4885,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     },
     {
       "id": "org:yourd",
@@ -4895,11 +4919,11 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-22T11:13:28.651Z"
+      "fetchedAt": "2026-04-22T11:17:34.780Z"
     }
   ],
   "stats": {
-    "totalOrganizations": 146,
+    "totalOrganizations": 147,
     "byCountry": {
       "EE": 2,
       "FR": 5,
@@ -4912,7 +4936,7 @@
       "IT": 3,
       "AT": 3,
       "FI": 6,
-      "IN": 5,
+      "IN": 6,
       "BE": 2,
       "BT": 1,
       "DE": 5,
