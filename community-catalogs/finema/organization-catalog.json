@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:finema",
+    "name": "Finema",
+    "legalName": "Finema Co., Ltd.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://finema.co/",
+    "logo": "https://cdn.prod.website-files.com/635a4be8c66f9db81341f2e8/635abfa6d1ec697da9b3da29_Group.svg",
+    "country": "TH",
+    "description": "Finema is a Thailand-based digital identity company specializing in decentralized identity and self-sovereign identity solutions. Founded in 2017, Finema provides enterprise-grade platforms for identity verification, authentication, and verifiable credentials, supporting governments and organizations in building secure, privacy-preserving, and interoperable digital services. Its solutions include identity proofing, digital wallets, and AI-driven verification, enabling trusted digital interactions."
+  }
+}
