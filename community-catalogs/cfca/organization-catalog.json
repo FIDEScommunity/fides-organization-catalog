@@ -8,6 +8,7 @@
       "digital"
     ],
     "website": "https://www.cfca.com.cn/",
+    "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/cfca/cfca_logo.png",
     "country": "CN",
     "description": "CFCA is a China-based digital trust and certification services provider focused on electronic certificates, electronic signatures, identity authentication, and broader information security services. It was established with the support of the People's Bank of China and operates as a national-level security authentication authority. CFCA is also active in the GLEIF ecosystem as the first China-based Qualified vLEI Issuer (QVI)."
   }
