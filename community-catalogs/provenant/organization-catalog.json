@@ -1,0 +1,24 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:provenant",
+    "name": "Provenant",
+    "legalName": "Provenant Inc.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://provenant.net/",
+    "logo": "https://avatars.githubusercontent.com/u/114195532?s=200&v=4",
+    "country": "US",
+    "tags": [
+      "vlei",
+      "gleif",
+      "qvi",
+      "acdc",
+      "keri",
+      "gsma_foundry",
+      "open_verifiable_calling"
+    ],
+    "description": "Provenant is a digital trust infrastructure provider focused on verifiable communications and secure telecommunications. The company develops open, standards-based solutions that embed cryptographic proof into calls and messages, enabling organizations to prove identity, authorization, and intent in real time. Provenant is a Qualified vLEI Issuer (QVI) within the GLEIF ecosystem and plays a leading role in initiatives such as the GSMA Open Verifiable Calling project, aiming to establish global, interoperable standards for trusted digital communications."
+  }
+}
