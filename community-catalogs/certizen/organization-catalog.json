@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:certizen",
+    "name": "Certizen",
+    "legalName": "Certizen Technology Limited",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.certlei.com/index_en.html",
+    "logo": "https://www.certlei.com/images/Logo-CertLei-v02.png",
+    "country": "HK",
+    "description": "Certizen is a Hong Kong-based digital identity and trust services provider, specializing in PKI, electronic signatures, and verifiable credentials. Through its CertLei platform, Certizen acts as a Qualified vLEI Issuer (QVI) within the Global Legal Entity Identifier (GLEIF) ecosystem, issuing verifiable Legal Entity Identifier (vLEI) credentials for organizations and their representatives. Its solutions enable secure, privacy-preserving identity verification and trusted data exchange across sectors, with a strong focus on cross-border interoperability."
+  }
+}
