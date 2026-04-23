@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:surf",
+    "name": "SURF",
+    "legalName": "Coöperatie SURF U.A.",
+    "sectors": [
+      "education"
+    ],
+    "website": "https://www.surf.nl/",
+    "logo": "https://www.surf.nl/themes/surf/logo.svg",
+    "country": "NL",
+    "description": "SURF is the cooperative ICT organization of Dutch education and research institutions. Universities, universities of applied sciences, research institutes, and other educational organizations collaborate within SURF to develop and procure shared digital infrastructure, services, and innovations. SURF focuses on secure, reliable, and sovereign digital solutions, including identity and access management, networking, cloud, and data infrastructure to support education and research."
+  }
+}
