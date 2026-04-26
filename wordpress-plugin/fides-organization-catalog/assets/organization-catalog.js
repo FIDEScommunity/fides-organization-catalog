@@ -90,6 +90,34 @@
     return upper;
   }
 
+  function logoFallbackFromWebsite(website) {
+    if (typeof website !== 'string' || !website.trim()) return '';
+    try {
+      const parsed = new URL(website);
+      if (!parsed.hostname) return '';
+      return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(parsed.hostname)}&sz=128`;
+    } catch {
+      return '';
+    }
+  }
+
+  function bindLogoFallbackHandlers(scope) {
+    if (!scope || typeof scope.querySelectorAll !== 'function') return;
+    scope.querySelectorAll('img[data-fides-logo-fallback]').forEach((img) => {
+      if (img.dataset.fidesLogoBound === '1') return;
+      img.dataset.fidesLogoBound = '1';
+      img.addEventListener('error', () => {
+        const fallback = img.dataset.fidesLogoFallback || '';
+        if (fallback && img.dataset.fidesLogoTriedFallback !== '1') {
+          img.dataset.fidesLogoTriedFallback = '1';
+          img.src = fallback;
+          return;
+        }
+        img.removeAttribute('src');
+      });
+    });
+  }
+
   /** Schema key order for Organization details and search (labels in English). */
   const ORG_IDENTIFIER_FIELDS = [
     ['did', 'DID'],
@@ -768,10 +796,12 @@
 
   function renderOrgCard(org) {
     const logo = org.logoUri;
+    const logoFallback = logoFallbackFromWebsite(org.website);
+    const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
 
     const manifestoClass = org.fidesManifestoSupporter === true ? ' fides-org-card--manifesto-supporter' : '';
     const logoMain = logo
-      ? `<img src="${escapeHtml(logo)}" alt="" width="64" height="64">`
+      ? `<img src="${escapeHtml(logo)}" alt="" width="64" height="64"${logoFallbackAttr}>`
       : icons.building;
     return `
       <div class="fides-org-card${manifestoClass}" data-id="${escapeHtml(org.id)}" tabindex="0" role="button" aria-label="${orgCardAriaLabel(org)}">
@@ -801,6 +831,8 @@
     if (!selectedOrg) return '';
     const org = selectedOrg;
     const logo = org.logoUri;
+    const logoFallback = logoFallbackFromWebsite(org.website);
+    const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
     const r = org.ecosystemRoles || {};
     const theme = root?.dataset?.theme || 'fides';
 
@@ -825,7 +857,7 @@
           <div class="fides-modal-header">
             <div class="fides-modal-header-content">
               ${logo
-                ? `<img src="${escapeHtml(logo)}" alt="${escapeHtml(org.name)}" class="fides-modal-logo">`
+                ? `<img src="${escapeHtml(logo)}" alt="${escapeHtml(org.name)}" class="fides-modal-logo"${logoFallbackAttr}>`
                 : `<div class="fides-modal-logo-placeholder">${icons.building}</div>`
               }
               <div class="fides-modal-title-wrap">
@@ -1103,6 +1135,8 @@
    */
   function renderOrgRow(org) {
     const logo = org.logoUri;
+    const logoFallback = logoFallbackFromWebsite(org.website);
+    const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
     const r = org.ecosystemRoles || {};
     const issuerCount = (r.issuers || []).length;
     const walletCount = (r.personalWallets || []).length + (r.businessWallets || []).length;
@@ -1121,7 +1155,7 @@
         <div class="fides-org-card-logo-wrap fides-org-card-logo-wrap--list">
           <div class="fides-row-icon" aria-hidden="true">
             ${logo
-              ? `<img src="${escapeHtml(logo)}" alt="" style="width:22px;height:22px;object-fit:contain;border-radius:3px;">`
+              ? `<img src="${escapeHtml(logo)}" alt="" style="width:22px;height:22px;object-fit:contain;border-radius:3px;"${logoFallbackAttr}>`
               : icons.building
             }
           </div>
@@ -1232,6 +1266,7 @@
     if (closeBtn) closeBtn.addEventListener('click', closeModal);
     const overlay = document.getElementById('fides-modal-overlay');
     if (overlay) overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+    if (overlay) bindLogoFallbackHandlers(overlay);
     const copyBtn = document.getElementById('fides-modal-copy-link');
     if (copyBtn) copyBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -1262,6 +1297,7 @@
   }
 
   function bindEvents() {
+    bindLogoFallbackHandlers(root);
     const searchInput = root.querySelector('#fides-search-input');
     const searchClear = root.querySelector('#fides-search-clear');
     const handleSearch = debounce((e) => {

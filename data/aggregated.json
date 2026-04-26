@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastUpdated": "2026-04-26T05:36:08.775Z",
+  "lastUpdated": "2026-04-26T06:10:01.864Z",
   "organizations": [
     {
       "id": "org:2060",
@@ -29,7 +29,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:3g-soluciones-movilidad",
@@ -63,7 +63,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-04-25T06:26:16.443Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:a-trust",
@@ -97,7 +97,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.158Z",
       "updatedAt": "2026-04-25T06:26:12.158Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:a3bc",
@@ -125,7 +125,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:aangetekend",
@@ -159,7 +159,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-04-25T06:26:21.435Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ac-camerfirma",
@@ -193,7 +193,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.432Z",
       "updatedAt": "2026-04-25T06:26:16.432Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:acin-icloud-solutions-lda",
@@ -227,7 +227,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.598Z",
       "updatedAt": "2026-04-25T06:26:22.598Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:actalis",
@@ -261,7 +261,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.480Z",
       "updatedAt": "2026-04-25T06:26:19.480Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:adacom-advanced-internet-applications",
@@ -295,7 +295,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.784Z",
       "updatedAt": "2026-04-25T06:26:15.784Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:adobe-systems-software-ireland",
@@ -329,7 +329,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.537Z",
       "updatedAt": "2026-04-25T06:26:18.537Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:advania-island-ehf",
@@ -363,7 +363,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.856Z",
       "updatedAt": "2026-04-25T06:26:18.856Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:affinidi",
@@ -391,7 +391,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:agence-du-numerique-des-forces-de-securite-interieure",
@@ -425,7 +425,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.357Z",
       "updatedAt": "2026-04-25T06:26:17.357Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:agence-nationale-des-titres-securises",
@@ -459,7 +459,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.345Z",
       "updatedAt": "2026-04-25T06:26:17.345Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:agencia-notarial-de-certificacion-unipersonal",
@@ -470,7 +470,7 @@
       "legalName": "Agencia Notarial de Certificación S.L. Unipersonal",
       "description": "Agencia Notarial de Certificación . Unipersonal is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via ctnotariado.com.",
       "website": "https://www.ctnotariado.com",
-      "logoUri": "https://www.ctnotariado.com/portal/documents/d/guest/favicon",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.ctnotariado.com&sz=128",
       "country": "ES",
       "certifications": [
         {
@@ -493,7 +493,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.427Z",
       "updatedAt": "2026-04-25T06:26:16.427Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:air-new-zealand",
@@ -522,7 +522,7 @@
       },
       "firstSeenAt": "2026-04-22T11:00:21.000Z",
       "updatedAt": "2026-04-22T11:02:02.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:akd-d-o-o",
@@ -533,7 +533,7 @@
       "legalName": "AKD d.o.o.",
       "description": "[Sitename] Skip to content eOI menu close Homepage Electronic ID Toggle Activation of eID What do you need? PIN and PUK Types and Validity",
       "website": "http://eid.hr/en",
-      "logoUri": "https://www.akd.hr/src/img/svg/akd-header-logo.svg",
+      "logoUri": "https://www.google.com/s2/favicons?domain=eid.hr&sz=128",
       "country": "HR",
       "certifications": [
         {
@@ -556,7 +556,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.702Z",
       "updatedAt": "2026-04-25T06:26:17.702Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:albania",
@@ -584,7 +584,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:alfatrust-certification",
@@ -618,7 +618,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-04-25T06:26:22.973Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:almelo-energie",
@@ -646,7 +646,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:amadeus",
@@ -670,7 +670,7 @@
       },
       "firstSeenAt": "2026-04-22T10:08:22.000Z",
       "updatedAt": "2026-04-22T10:09:19.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:anf-autoridad-de-certificacion-asociacion-anf-ac",
@@ -704,7 +704,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-04-25T06:26:16.431Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:anf-certification-authority",
@@ -738,7 +738,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-04-25T06:26:16.446Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:animo",
@@ -794,7 +794,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:26:17.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:app-solutions",
@@ -828,7 +828,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.356Z",
       "updatedAt": "2026-04-25T06:26:17.356Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:apple",
@@ -856,7 +856,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T14:58:06.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ar24",
@@ -890,7 +890,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-04-25T06:26:17.349Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ardaco-a-s",
@@ -924,7 +924,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-04-25T06:26:24.603Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:aruba",
@@ -952,7 +952,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:aruba-posta-elettronica-certificata",
@@ -986,7 +986,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.480Z",
       "updatedAt": "2026-04-25T06:26:19.480Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:asetec-ingenieria-de-sistemas",
@@ -1020,7 +1020,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-04-25T06:26:16.443Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:asseco-data-systems",
@@ -1054,7 +1054,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-04-25T06:26:22.171Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:atos-information-technology",
@@ -1088,7 +1088,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-04-25T06:26:14.661Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:audkenni-ehf",
@@ -1122,7 +1122,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.854Z",
       "updatedAt": "2026-04-25T06:26:18.854Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:austria",
@@ -1150,7 +1150,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:autenti",
@@ -1184,7 +1184,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.172Z",
       "updatedAt": "2026-04-25T06:26:22.172Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:auth0",
@@ -1212,7 +1212,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:authbound",
@@ -1244,7 +1244,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:autoridad-de-gestion-de-la-pki-del-ministerio-de-defensa-agpmd-y-director-del-ce",
@@ -1255,7 +1255,7 @@
       "legalName": "Autoridad de Gestión de la PKI del Ministerio de Defensa (AGPMD) y Director del CESTIC. Centro de Sistemas y Tecnologías de la Información y las Comunicaciones (CESTIC)",
       "description": "ministerio defensa paz misiones ejercito",
       "website": "http://www.defensa.gob.es",
-      "logoUri": "http://www.defensa.gob.es/resources/imgs/favicon_mde.ico",
+      "logoUri": "https://www.defensa.gob.es/resources/imgs/favicon_mde.ico",
       "country": "ES",
       "certifications": [
         {
@@ -1278,7 +1278,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-04-25T06:26:16.433Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:aviva-voice-systems-and-services",
@@ -1289,7 +1289,6 @@
       "legalName": "AVIVA VOICE SYSTEMS AND SERVICES, S.L.",
       "description": "AVIVA VOICE SYSTEMS AND SERVICES is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via avivavoice.com.",
       "website": "http://www.avivavoice.com/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=avivavoice.com&sz=128",
       "country": "ES",
       "certifications": [
         {
@@ -1312,7 +1311,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-04-25T06:26:16.442Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ayanworks",
@@ -1345,7 +1344,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:azienda-regionale-per-l-innovazione-e-gli-acquisti",
@@ -1356,7 +1355,6 @@
       "legalName": "Azienda Regionale per l'Innovazione e gli Acquisti S.p.A.",
       "description": "Azienda Regionale per l'Innovazione e gli Acquisti is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ariaspa.it.",
       "website": "https://www.ariaspa.it/CA/TSPInformationURI",
-      "logoUri": "https://www.google.com/s2/favicons?domain=www.ariaspa.it&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -1379,7 +1377,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-04-25T06:26:19.490Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:backup-file",
@@ -1413,7 +1411,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-04-25T06:26:16.448Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:banca-d-italia",
@@ -1447,7 +1445,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.476Z",
       "updatedAt": "2026-04-25T06:26:19.476Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:banca-intesa",
@@ -1481,7 +1479,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-04-25T06:26:19.483Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bank-of-slovenia",
@@ -1515,7 +1513,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-04-25T06:26:23.586Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bankenes-id-tjeneste",
@@ -1549,7 +1547,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-04-25T06:26:21.772Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:be-invest-international",
@@ -1583,7 +1581,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-04-25T06:26:20.464Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bd",
@@ -1612,7 +1610,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:49:16.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:belgium",
@@ -1640,7 +1638,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:belgian-mobile-id",
@@ -1674,7 +1672,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.492Z",
       "updatedAt": "2026-04-25T06:26:12.492Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bengaluru-international-airport",
@@ -1703,7 +1701,7 @@
       },
       "firstSeenAt": "2026-04-22T11:17:22.000Z",
       "updatedAt": "2026-04-22T11:36:11.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bewor-tech",
@@ -1737,7 +1735,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-04-25T06:26:16.440Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:beyond-the-scope",
@@ -1771,7 +1769,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-04-25T06:26:16.447Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:buthan",
@@ -1799,7 +1797,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bitkasten",
@@ -1833,7 +1831,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.666Z",
       "updatedAt": "2026-04-25T06:26:14.666Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:helixid",
@@ -1864,7 +1862,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:borica",
@@ -1898,7 +1896,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.916Z",
       "updatedAt": "2026-04-25T06:26:12.916Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bpce-infogerance-et-technologies",
@@ -1932,7 +1930,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.356Z",
       "updatedAt": "2026-04-25T06:26:17.356Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:brainit-sk-s-r-o",
@@ -1966,7 +1964,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.604Z",
       "updatedAt": "2026-04-25T06:26:24.604Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:british-airways",
@@ -1995,7 +1993,7 @@
       },
       "firstSeenAt": "2026-04-22T11:06:34.000Z",
       "updatedAt": "2026-04-22T11:06:34.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:btp-onetec",
@@ -2029,7 +2027,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-04-25T06:26:16.442Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:buypass",
@@ -2063,7 +2061,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.771Z",
       "updatedAt": "2026-04-25T06:26:21.771Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:byte-computer",
@@ -2097,7 +2095,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-04-25T06:26:15.785Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:caesar",
@@ -2121,7 +2119,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T12:58:07.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ca-dmv",
@@ -2157,7 +2155,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cedacri",
@@ -2191,7 +2189,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-04-25T06:26:19.481Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cedacrinord",
@@ -2225,7 +2223,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.484Z",
       "updatedAt": "2026-04-25T06:26:19.484Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cegedim",
@@ -2259,7 +2257,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.354Z",
       "updatedAt": "2026-04-25T06:26:17.354Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ceger-centro-de-gestao-da-rede-informatica-do-governo",
@@ -2293,7 +2291,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.596Z",
       "updatedAt": "2026-04-25T06:26:22.596Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:crt",
@@ -2317,7 +2315,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-06T20:06:29.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:centrul-de-calcul",
@@ -2351,7 +2349,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-04-25T06:26:22.973Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:certeurope",
@@ -2385,7 +2383,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.345Z",
       "updatedAt": "2026-04-25T06:26:17.345Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:certicomm",
@@ -2396,7 +2394,6 @@
       "legalName": "Certicomm",
       "description": "Certicomm is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -2419,7 +2416,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-04-25T06:26:19.487Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:certigna",
@@ -2453,7 +2450,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-04-25T06:26:17.347Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:certipost",
@@ -2487,7 +2484,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.490Z",
       "updatedAt": "2026-04-25T06:26:12.490Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:certizen",
@@ -2503,12 +2500,7 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/certizen/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:certizen:vlei:production",
-            "displayName": "Certizen vLEI Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
@@ -2516,7 +2508,7 @@
       },
       "firstSeenAt": "2026-04-23T04:48:13.000Z",
       "updatedAt": "2026-04-23T04:48:13.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:certsign",
@@ -2550,7 +2542,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.972Z",
       "updatedAt": "2026-04-25T06:26:22.972Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cfca",
@@ -2566,12 +2558,7 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/cfca/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:cfca:vlei:production",
-            "displayName": "CFCA vLEI Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
@@ -2579,7 +2566,7 @@
       },
       "firstSeenAt": "2026-04-23T04:55:21.000Z",
       "updatedAt": "2026-04-23T05:07:41.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cgi-information-systems-and-management-consultants-espana",
@@ -2613,7 +2600,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-04-25T06:26:16.446Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:chambersign-france",
@@ -2647,7 +2634,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-04-25T06:26:17.346Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cibg",
@@ -2681,7 +2668,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.432Z",
       "updatedAt": "2026-04-25T06:26:21.432Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:amsterdam",
@@ -2725,7 +2712,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:nijmegen",
@@ -2785,7 +2772,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:03:32.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:clearbus",
@@ -2819,7 +2806,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-04-25T06:26:17.352Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cleverbase-id",
@@ -2853,7 +2840,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-04-25T06:26:21.435Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:colegio-oficial-de-registradores-de-la-propiedad-y-mercantiles-de-espana",
@@ -2887,7 +2874,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-04-25T06:26:16.433Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:coloriuris",
@@ -2921,7 +2908,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.436Z",
       "updatedAt": "2026-04-25T06:26:16.436Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:commfides-norge",
@@ -2955,7 +2942,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.771Z",
       "updatedAt": "2026-04-25T06:26:21.771Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:connect-solutions",
@@ -2989,7 +2976,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.492Z",
       "updatedAt": "2026-04-25T06:26:12.492Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:consejo-general-de-la-abogacia-espanola",
@@ -3023,7 +3010,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-04-25T06:26:16.431Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:consiglio-nazionale-del-notariato",
@@ -3057,7 +3044,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-04-25T06:26:19.482Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:consorci-administracio-oberta-de-catalunya-caoc",
@@ -3091,7 +3078,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-04-25T06:26:16.431Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:credenco",
@@ -3125,7 +3112,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:42:04.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cryptolog-international",
@@ -3136,7 +3123,6 @@
       "legalName": "Cryptolog International",
       "description": "Cryptolog International is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via help.universign.com.",
       "website": "https://help.universign.com",
-      "logoUri": "https://help.universign.com/hc/theming_assets/01HZKW14WGS7W3GXV5KSWPCZBS",
       "country": "FR",
       "certifications": [
         {
@@ -3159,7 +3145,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-04-25T06:26:17.346Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:customer-communications-tecknalia",
@@ -3193,7 +3179,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-04-25T06:26:16.442Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cybersecurity-competence-and-certification-centre",
@@ -3227,7 +3213,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.599Z",
       "updatedAt": "2026-04-25T06:26:24.599Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:czechia",
@@ -3255,7 +3241,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:d-trust",
@@ -3289,7 +3275,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.658Z",
       "updatedAt": "2026-04-25T06:26:14.658Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:denmark",
@@ -3317,7 +3303,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:danske-bank-nuf",
@@ -3351,7 +3337,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-04-25T06:26:21.772Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:danubetech",
@@ -3375,7 +3361,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T15:46:20.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:darva",
@@ -3409,7 +3395,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-04-25T06:26:17.349Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:datakeeper",
@@ -3437,7 +3423,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:06:38.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:datasure",
@@ -3471,7 +3457,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-04-25T06:26:17.355Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:deh-notificacion-electronica-habilitada",
@@ -3505,7 +3491,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-04-25T06:26:16.445Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:den-danske-stat",
@@ -3539,7 +3525,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.958Z",
       "updatedAt": "2026-04-25T06:26:14.958Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:png",
@@ -3567,7 +3553,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:deutsche-post",
@@ -3601,7 +3587,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-04-25T06:26:14.661Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:deutsche-telekom",
@@ -3635,7 +3621,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.659Z",
       "updatedAt": "2026-04-25T06:26:14.659Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:deutsche-telekom-security",
@@ -3669,7 +3655,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-04-25T06:26:14.662Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:deutsches-mikrofilminstitut-fur-medizinische-dokumentation-und-archivierung-rein",
@@ -3703,7 +3689,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.666Z",
       "updatedAt": "2026-04-25T06:26:14.666Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:dgn-deutsches-gesundheitsnetz-service",
@@ -3737,7 +3723,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.659Z",
       "updatedAt": "2026-04-25T06:26:14.659Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digicert-europe-belgium",
@@ -3771,7 +3757,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.491Z",
       "updatedAt": "2026-04-25T06:26:12.491Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digicert-europe-netherlands",
@@ -3805,7 +3791,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-04-25T06:26:21.435Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digidentity",
@@ -3847,7 +3833,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:40:43.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digisign",
@@ -3881,7 +3867,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.971Z",
       "updatedAt": "2026-04-25T06:26:22.971Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digital-and-population-data-services-agency",
@@ -3892,7 +3878,7 @@
       "legalName": "Digi- ja vaestotietovirasto",
       "description": "Digi- ja väestötietovirasto palvelee. Etsi dvv.fi-sivustolta tietoa ja ohjeita asiasi hoitamiseen tai ota yhteys asiakaspalveluun. Voit myös asioida palvelupaikassa.",
       "website": "https://www.dvv.fi/",
-      "logoUri": "https://dvv.fi/documents/16079645/0/DVV%20Some%20Image.png/f09fcdcb-4fce-7659-09c0-58b5869d373b?version=1.0&t=1577951664000&imagePreview=1",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.dvv.fi&sz=128",
       "country": "FI",
       "certifications": [
         {
@@ -3915,7 +3901,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.821Z",
       "updatedAt": "2026-04-25T06:26:16.821Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digitalbazaar",
@@ -3943,7 +3929,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digital-trust-solutions",
@@ -3968,7 +3954,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digitalsign-certificadora-digital",
@@ -4002,7 +3988,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.598Z",
       "updatedAt": "2026-04-25T06:26:22.598Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digitel-on-trusted-services-u",
@@ -4036,7 +4022,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-04-25T06:26:16.438Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:digiyatra",
@@ -4063,18 +4049,13 @@
       "ecosystemRoles": {
         "issuers": [],
         "credentialTypes": [],
-        "personalWallets": [
-          {
-            "id": "digiyatra",
-            "displayName": "DigiYatra"
-          }
-        ],
+        "personalWallets": [],
         "businessWallets": [],
         "relyingParties": []
       },
       "firstSeenAt": "2026-04-22T13:07:27.000Z",
       "updatedAt": "2026-04-22T13:11:44.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:dioss-smart-solutions",
@@ -4085,7 +4066,7 @@
       "legalName": "Dioss Smart Solutions",
       "description": "Discover our solutions for your company! Software integration, digital signing, identity solutions, smart cards and integration solutions - DIOSS Smart Solutions",
       "website": "https://smartsolutions.dioss.com/en/",
-      "logoUri": "http://smartsolutions.dioss.com/media/images/Dioss_Smart_Solutions_-_BlackTransparent.original.png",
+      "logoUri": "https://smartsolutions.dioss.com/media/images/Dioss_Smart_Solutions_-_BlackTransparent.original.png",
       "country": "BE",
       "certifications": [
         {
@@ -4108,7 +4089,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.494Z",
       "updatedAt": "2026-04-25T06:26:12.494Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:direccion-general-de-la-policia",
@@ -4142,7 +4123,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.426Z",
       "updatedAt": "2026-04-25T06:26:16.426Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:disig-a-s",
@@ -4176,7 +4157,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.602Z",
       "updatedAt": "2026-04-25T06:26:24.602Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:dnb-bank-asa",
@@ -4210,7 +4191,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-04-25T06:26:21.772Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:docaposte-arkhineo",
@@ -4244,7 +4225,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-04-25T06:26:17.349Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:docaposte-certinomis",
@@ -4278,7 +4259,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-04-25T06:26:17.346Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:docbyte",
@@ -4312,7 +4293,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.495Z",
       "updatedAt": "2026-04-25T06:26:12.495Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:docklabs",
@@ -4345,7 +4326,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:document-channel",
@@ -4379,7 +4360,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-04-25T06:26:17.352Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:docusign-france",
@@ -4413,7 +4394,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-04-25T06:26:17.347Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:docuten-tech",
@@ -4447,7 +4428,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-04-25T06:26:16.441Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:domoticube",
@@ -4471,7 +4452,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:netherlands",
@@ -4499,7 +4480,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:e-commerce-monitoring",
@@ -4533,7 +4514,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.162Z",
       "updatedAt": "2026-04-25T06:26:12.162Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ead-trust-european-agency-of-digital-trust",
@@ -4567,7 +4548,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-04-25T06:26:16.440Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:edatalia-data-solutions",
@@ -4601,7 +4582,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-04-25T06:26:16.447Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:edicom-capital",
@@ -4612,7 +4593,6 @@
       "legalName": "EDICOM CAPITAL, S.L.",
       "description": "EDICOM CAPITAL is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via acedicom.edicomgroup.com.",
       "website": "http://acedicom.edicomgroup.com",
-      "logoUri": "https://www.google.com/s2/favicons?domain=acedicom.edicomgroup.com&sz=128",
       "country": "ES",
       "certifications": [
         {
@@ -4635,7 +4615,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-04-25T06:26:16.433Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:edocs-bulgaria",
@@ -4646,7 +4626,6 @@
       "legalName": "ИДОКС БЪЛГАРИЯ ЕООД",
       "description": "eDocs Bulgaria is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Bulgaria. It provides digital trust services via sign.edocs.bg.",
       "website": "https://sign.edocs.bg/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=sign.edocs.bg&sz=128",
       "country": "BG",
       "certifications": [
         {
@@ -4669,7 +4648,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.918Z",
       "updatedAt": "2026-04-25T06:26:12.918Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:educa",
@@ -4699,7 +4678,7 @@
       },
       "firstSeenAt": "2026-04-03T06:16:15.000Z",
       "updatedAt": "2026-04-03T06:16:15.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:eidentity-a-s",
@@ -4733,7 +4712,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.717Z",
       "updatedAt": "2026-04-25T06:26:13.717Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:eika-gruppen",
@@ -4767,7 +4746,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-04-25T06:26:21.773Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:tue",
@@ -4792,7 +4771,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:eius-d-o-o",
@@ -4826,7 +4805,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.585Z",
       "updatedAt": "2026-04-25T06:26:23.585Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:encia-para-a-reforma-tecnologica-do-estado-i-p",
@@ -4860,7 +4839,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.599Z",
       "updatedAt": "2026-04-25T06:26:22.599Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:enigma-systemy-ochrony-informacji",
@@ -4894,7 +4873,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-04-25T06:26:22.170Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:entaksi-solutions-irish-branch",
@@ -4928,7 +4907,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.540Z",
       "updatedAt": "2026-04-25T06:26:18.540Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:entrust-eu",
@@ -4939,7 +4918,7 @@
       "legalName": "Entrust Datacard Europe S.L.U.",
       "description": "Entrust is a trusted global leader in identity, payments, and data security solutions. Learn more about our cutting-edge solutions.",
       "website": "https://www.entrust.com",
-      "logoUri": "https://www.entrust.com/sites/default/files/2024-05/og-brand-img-1200x627.jpg",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.entrust.com&sz=128",
       "country": "ES",
       "certifications": [
         {
@@ -4962,7 +4941,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-04-25T06:26:16.439Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:equisign",
@@ -4996,7 +4975,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.350Z",
       "updatedAt": "2026-04-25T06:26:17.350Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:espublico-servicios-para-la-administracion",
@@ -5007,7 +4986,7 @@
       "legalName": "ESPUBLICO SERVICIOS PARA LA ADMINISTRACIÓN S.A.",
       "description": "ESPUBLICO SERVICIOS PARA LA ADMINISTRACIÓN is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via esfirma.com.",
       "website": "http://www.esfirma.com",
-      "logoUri": "http://www.esfirma.com/img/esfirma.ico",
+      "logoUri": "https://www.esfirma.com/img/esfirma.ico",
       "country": "ES",
       "certifications": [
         {
@@ -5030,7 +5009,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-04-25T06:26:16.437Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:estonia",
@@ -5058,7 +5037,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:eudiplo",
@@ -5068,7 +5047,6 @@
       ],
       "description": "OpenWallet Foundation lab initiative building reference tooling for an EU Digital Identity Wallet oriented to diplomatic and institutional use cases.",
       "website": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=eudi-wallet.org&sz=128",
       "country": "EU",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/eudiplo/organization-catalog.json",
@@ -5102,7 +5080,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:eurocert",
@@ -5136,7 +5114,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-04-25T06:26:22.170Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:eu",
@@ -5293,7 +5271,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:evicertia-u",
@@ -5327,7 +5305,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-04-25T06:26:16.440Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:eviden-germany",
@@ -5361,7 +5339,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.663Z",
       "updatedAt": "2026-04-25T06:26:14.663Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:evrotrust-technologies",
@@ -5395,7 +5373,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.918Z",
       "updatedAt": "2026-04-25T06:26:12.918Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ewc",
@@ -5485,7 +5463,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:exceet-secure-solutions",
@@ -5519,7 +5497,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.660Z",
       "updatedAt": "2026-04-25T06:26:14.660Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:fabaleus",
@@ -5544,7 +5522,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:fabrica-nacional-de-moneda-y-timbre-real-casa-de-la-moneda-entidad-publica-empre",
@@ -5578,7 +5556,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.430Z",
       "updatedAt": "2026-04-25T06:26:16.430Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:factorynet-augusta",
@@ -5612,7 +5590,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-04-25T06:26:16.444Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:factum-identity-solutions-u",
@@ -5646,7 +5624,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-04-25T06:26:16.446Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:federal-chamber-of-notaries",
@@ -5680,7 +5658,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.657Z",
       "updatedAt": "2026-04-25T06:26:14.657Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:federal-employment-agency",
@@ -5691,7 +5669,6 @@
       "legalName": "Bundesagentur fuer Arbeit",
       "description": "Federal Employment Agency is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via pki.arbeitsagentur.de.",
       "website": "https://www.pki.arbeitsagentur.de",
-      "logoUri": "https://www.google.com/s2/favicons?domain=www.pki.arbeitsagentur.de&sz=128",
       "country": "DE",
       "certifications": [
         {
@@ -5714,7 +5691,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.655Z",
       "updatedAt": "2026-04-25T06:26:14.655Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:fides",
@@ -5873,11 +5850,11 @@
       "bluePages": {
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "profileAvailable": true,
-        "checkedAt": "2026-04-26T05:36:08.775Z"
+        "checkedAt": "2026-04-26T06:10:01.864Z"
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:14:02.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:financijska-agencija",
@@ -5888,7 +5865,6 @@
       "legalName": "Financijska agencija",
       "description": "Financijska agencija is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Croatia. It provides digital trust services via fina.hr.",
       "website": "http://www.fina.hr/Default.aspx?sec=1864",
-      "logoUri": "https://www.google.com/s2/favicons?domain=fina.hr&sz=128",
       "country": "HR",
       "certifications": [
         {
@@ -5911,7 +5887,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.702Z",
       "updatedAt": "2026-04-25T06:26:17.702Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:findynet",
@@ -5935,7 +5911,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-23T05:20:04.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:finema",
@@ -5951,12 +5927,7 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/finema/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:finema:vlei:production",
-            "displayName": "Finema vLEI Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
@@ -5964,7 +5935,7 @@
       },
       "firstSeenAt": "2026-04-23T04:50:59.000Z",
       "updatedAt": "2026-04-23T04:50:59.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:finland",
@@ -5992,7 +5963,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:firmafy-soluciones-tecnologicas",
@@ -6026,7 +5997,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-04-25T06:26:16.448Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:firmaprofesional",
@@ -6060,7 +6031,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.434Z",
       "updatedAt": "2026-04-25T06:26:16.434Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:first-certification-authority-a-s",
@@ -6071,7 +6042,7 @@
       "legalName": "První certifikační autorita, a.s.",
       "description": "Make sure you have a guide on your digital journey who knows what they're doing. We set the direction for online services that require proof or verification of identity. We can help you too.",
       "website": "http://ica.cz/English",
-      "logoUri": "http://ica.cz/sites/default/files/favicons3/apple-touch-icon.png",
+      "logoUri": "https://ica.cz/sites/default/files/favicons3/apple-touch-icon.png",
       "country": "CZ",
       "certifications": [
         {
@@ -6094,7 +6065,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.716Z",
       "updatedAt": "2026-04-25T06:26:13.716Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:qtsp-sk-6-first-certification-authority-a-s",
@@ -6105,7 +6076,7 @@
       "legalName": "First certification authority, a.s.",
       "description": "First Certification Authority is a Slovak trust service provider listed as a Qualified Trust Service Provider (QTSP) under eIDAS.",
       "website": "http://www.ica.cz/English",
-      "logoUri": "http://www.ica.cz/sites/default/files/favicons3/apple-touch-icon.png",
+      "logoUri": "https://www.ica.cz/sites/default/files/favicons3/apple-touch-icon.png",
       "country": "SK",
       "certifications": [
         {
@@ -6128,7 +6099,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-04-25T06:26:24.603Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:forkbomb",
@@ -6162,7 +6133,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:france",
@@ -6190,7 +6161,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:fuelfwd",
@@ -6214,7 +6185,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:full-certificate",
@@ -6248,7 +6219,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-04-25T06:26:16.444Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:gaia-x",
@@ -6316,7 +6287,7 @@
       },
       "firstSeenAt": "2026-04-09T12:00:00Z",
       "updatedAt": "2026-04-09T12:00:00Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:gataca",
@@ -6352,7 +6323,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:gear-up",
@@ -6376,7 +6347,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:17:47.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:rotterdam",
@@ -6400,7 +6371,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:gendarmerie-nationale",
@@ -6434,7 +6405,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.353Z",
       "updatedAt": "2026-04-25T06:26:17.353Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:germany",
@@ -6462,7 +6433,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:gleif",
@@ -6488,36 +6459,31 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/gleif/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:gleif:vlei-root:production",
-            "displayName": "GLEIF vLEI Root Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [
           {
             "id": "cred:gleif:qualified-vlei-issuer:acdc",
-            "displayName": "vLEI - Qualified vLEI Issuer (QVI)"
+            "displayName": "Qualified vLEI Issuer Credential"
           },
           {
             "id": "cred:gleif:legal-entity-vlei:acdc",
-            "displayName": "vLEI - Legal Entity"
+            "displayName": "Legal Entity vLEI Credential"
           },
           {
             "id": "cred:gleif:oor-authorization-vlei:acdc",
-            "displayName": "vLEI – OOR Issuance Authorization"
+            "displayName": "OOR Authorization vLEI Credential"
           },
           {
             "id": "cred:gleif:official-organizational-role-vlei:acdc",
-            "displayName": "vLEI - Official Organizational Role (OOR)"
+            "displayName": "Legal Entity Official Organizational Role vLEI Credential"
           },
           {
             "id": "cred:gleif:ecr-authorization-vlei:acdc",
-            "displayName": "vLEI – ECR Issuance Authorization"
+            "displayName": "ECR Authorization vLEI Credential"
           },
           {
             "id": "cred:gleif:engagement-context-role-vlei:acdc",
-            "displayName": "vLEI - Engagement Context Role (ECR)"
+            "displayName": "Legal Entity Engagement Context Role vLEI Credential"
           }
         ],
         "personalWallets": [],
@@ -6526,7 +6492,7 @@
       },
       "firstSeenAt": "2026-04-20T08:46:45.000Z",
       "updatedAt": "2026-04-20T08:46:45.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:global-vlei",
@@ -6542,12 +6508,7 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/global-vlei/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:globalvlei:vlei:production",
-            "displayName": "Global vLEI Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
@@ -6555,7 +6516,7 @@
       },
       "firstSeenAt": "2026-04-22T19:34:17.000Z",
       "updatedAt": "2026-04-23T05:48:01.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:globalsign",
@@ -6589,7 +6550,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.493Z",
       "updatedAt": "2026-04-25T06:26:12.493Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:google",
@@ -6622,7 +6583,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bcgov",
@@ -6655,7 +6616,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:cyprus",
@@ -6665,7 +6626,6 @@
       ],
       "description": "Government of Cyprus; national digital government services, online portals, and programmes for citizens and residents.",
       "website": "https://www.cygov.gov.cy/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=cygov.gov.cy&sz=128",
       "country": "CY",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/cyprus/organization-catalog.json",
@@ -6683,7 +6643,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:greece",
@@ -6715,7 +6675,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:greek-universities-network-gunet",
@@ -6726,7 +6686,7 @@
       "legalName": "Greek Universities Network (GUnet)",
       "description": "eSignatures Secure and Legal Digital Signing Made Simple Use your eSignature to sign documents like PDFs and ensure their content is secure and authentic. Learn More Products focused on your needs HARICA offers you trusted digital certificates for secure Websites, eMail protection, Code Signing, and legally binding eSignatures and eSeals. Recognized",
       "website": "http://www.harica.gr",
-      "logoUri": "http://www.harica.gr/wp-content/uploads/2025/11/harica-Logo.png",
+      "logoUri": "https://www.harica.gr/wp-content/uploads/2025/11/harica-Logo.png",
       "country": "GR",
       "certifications": [
         {
@@ -6749,7 +6709,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-04-25T06:26:15.785Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:hak-rein-vos-notarissen",
@@ -6773,7 +6733,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:halcom-d-d",
@@ -6807,7 +6767,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.584Z",
       "updatedAt": "2026-04-25T06:26:23.584Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:headon",
@@ -6832,7 +6792,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:hellenic-public-administration-certification-authority",
@@ -6866,7 +6826,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-04-25T06:26:15.785Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:hong-kong-international-airport",
@@ -6895,7 +6855,7 @@
       },
       "firstSeenAt": "2026-04-22T11:13:15.000Z",
       "updatedAt": "2026-04-22T11:13:15.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:hovi",
@@ -6937,7 +6897,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:hp-d-d",
@@ -6971,7 +6931,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.703Z",
       "updatedAt": "2026-04-25T06:26:17.703Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:hungary",
@@ -6999,7 +6959,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:i-t-telecom",
@@ -7010,7 +6970,6 @@
       "legalName": "I.T. Telecom S.p.A.",
       "description": "I.T. Telecom is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ittelecom.it.",
       "website": "http://www.ittelecom.it/default.aspx?idPage=699",
-      "logoUri": "https://www.google.com/s2/favicons?domain=ittelecom.it&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -7033,7 +6992,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-04-25T06:26:19.487Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:icbpi",
@@ -7044,7 +7003,6 @@
       "legalName": "ICBPI S.P.A.",
       "description": "ICBPI is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ca.nexi.it.",
       "website": "https://ca.nexi.it",
-      "logoUri": "https://www.google.com/s2/favicons?domain=ca.nexi.it&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -7067,7 +7025,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-04-25T06:26:19.488Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:iceland",
@@ -7077,7 +7035,7 @@
       ],
       "description": "Information from the Government Offices of Iceland. The ministers of the Icelandic Government and their ministries comprise Government Offices.",
       "website": "https://www.government.is/",
-      "logoUri": "http://www.stjornarradid.is/lisalib/getfile.aspx?itemid=74b1cebc-ed84-11e6-9417-005056bc530c",
+      "logoUri": "https://www.stjornarradid.is/lisalib/getfile.aspx?itemid=74b1cebc-ed84-11e6-9417-005056bc530c",
       "country": "IS",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/iceland/organization-catalog.json",
@@ -7095,7 +7053,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:idcontrol",
@@ -7119,7 +7077,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:identinet",
@@ -7143,7 +7101,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:identity-documents-personalisation-centre-under-the-ministry-of-the-interior",
@@ -7154,7 +7112,6 @@
       "legalName": "Asmens dokumentų išrašymo centras prie LR Vidaus reikalų ministerijos",
       "description": "Identity Documents Personalisation Centre under the Ministry of the Interior is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania, providing digital trust services via nsc.vrm.lt.",
       "website": "http://www.nsc.vrm.lt/default_en.htm",
-      "logoUri": "https://www.google.com/s2/favicons?domain=nsc.vrm.lt&sz=128",
       "country": "LT",
       "certifications": [
         {
@@ -7177,7 +7134,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-04-25T06:26:20.103Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:idnow-trust-services",
@@ -7188,7 +7145,6 @@
       "legalName": "IDnow Trust Services AB",
       "description": "IDnow Trust Services is a Swedish-qualified trust service provider listed on the EU eIDAS Trust List.",
       "website": "https://www.trust-services.io",
-      "logoUri": "https://www.google.com/s2/favicons?domain=trust-services.io&sz=128",
       "country": "SE",
       "certifications": [
         {
@@ -7211,7 +7167,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.269Z",
       "updatedAt": "2026-04-25T06:26:23.269Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:igrant",
@@ -7309,7 +7265,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ilabs",
@@ -7333,7 +7289,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:impierce",
@@ -7367,7 +7323,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:imprimerie-nationale",
@@ -7401,7 +7357,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.348Z",
       "updatedAt": "2026-04-25T06:26:17.348Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:in-groupe-denmark",
@@ -7435,7 +7391,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.959Z",
       "updatedAt": "2026-04-25T06:26:14.959Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:in-te",
@@ -7469,7 +7425,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-04-25T06:26:19.482Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:incert",
@@ -7480,7 +7436,7 @@
       "legalName": "InCert",
       "description": "InCert is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Luxembourg, providing digital trust services via incert.lu.",
       "website": "https://www.incert.lu/",
-      "logoUri": "http://static1.squarespace.com/static/63da3a9b7dd7c17d4494c476/t/686f84a69dee9c083d5cb481/1752138918681/INCERT_U_INCERT_HOR_LOGO_RGB_POS_TL_150_PPI.png?format=1500w",
+      "logoUri": "https://static1.squarespace.com/static/63da3a9b7dd7c17d4494c476/t/686f84a69dee9c083d5cb481/1752138918681/INCERT_U_INCERT_HOR_LOGO_RGB_POS_TL_150_PPI.png?format=1500w",
       "country": "LU",
       "certifications": [
         {
@@ -7503,7 +7459,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-04-25T06:26:20.464Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:india",
@@ -7513,7 +7469,7 @@
       ],
       "description": "Aimed at idea of paperless governance, DigiLocker is a key initiative of Digital India Programme, is a platform for issuance & verification of documents in a digital way",
       "website": "https://www.digilocker.gov.in/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=uidai.gov.in&sz=128",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.digilocker.gov.in&sz=128",
       "country": "IN",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/india/organization-catalog.json",
@@ -7535,7 +7491,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:indigo",
@@ -7564,7 +7520,7 @@
       },
       "firstSeenAt": "2026-04-22T11:10:08.000Z",
       "updatedAt": "2026-04-22T11:10:08.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:inetum",
@@ -7597,7 +7553,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:infocamere-s-c-p-a",
@@ -7631,7 +7587,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-04-25T06:26:19.491Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:infocamere-sc-p-a",
@@ -7642,7 +7598,6 @@
       "legalName": "InfocamereSC.p.A.",
       "description": "Infocamere SC.p.A is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -7665,7 +7620,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-04-25T06:26:19.487Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:infocert",
@@ -7699,7 +7654,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.479Z",
       "updatedAt": "2026-04-25T06:26:19.479Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:imda",
@@ -7731,7 +7686,7 @@
       },
       "firstSeenAt": "2026-04-20T08:26:08.000Z",
       "updatedAt": "2026-04-20T08:26:08.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:infonotary",
@@ -7765,7 +7720,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.917Z",
       "updatedAt": "2026-04-25T06:26:12.917Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:information-services",
@@ -7776,7 +7731,7 @@
       "legalName": "Информационно обслужване АД",
       "description": "Information Services is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Bulgaria. It provides digital trust services via stampit.org.",
       "website": "http://stampit.org/en/",
-      "logoUri": "http://stampit.org/favicon.ico",
+      "logoUri": "https://stampit.org/favicon.ico",
       "country": "BG",
       "certifications": [
         {
@@ -7799,7 +7754,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.917Z",
       "updatedAt": "2026-04-25T06:26:12.917Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:infraestructuras-y-servicios-de-telecomunicaciones-y-certificacion",
@@ -7810,7 +7765,6 @@
       "legalName": "Infraestructuras y Servicios de Telecomunicaciones y Certificación SA",
       "description": "This is meta description",
       "website": "http://www.accv.es",
-      "logoUri": "https://www.google.com/s2/favicons?domain=www.accv.es&sz=128",
       "country": "ES",
       "certifications": [
         {
@@ -7833,7 +7787,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.432Z",
       "updatedAt": "2026-04-25T06:26:16.432Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:innotractor",
@@ -7857,7 +7811,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:innovalor",
@@ -7881,7 +7835,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:19:49.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:inposte-it",
@@ -7915,7 +7869,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-04-25T06:26:19.492Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:instituto-dos-registos-e-do-notariado-i-p",
@@ -7926,7 +7880,7 @@
       "legalName": "Instituto dos Registos e do Notariado I.P.",
       "description": "Instituto dos Registos e do Notariado I.P is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Portugal, providing digital trust services via pki.cartaodecidadao.pt.",
       "website": "http://pki.cartaodecidadao.pt",
-      "logoUri": "http://pki.cartaodecidadao.pt/images/favicon.ico",
+      "logoUri": "https://pki.cartaodecidadao.pt/images/favicon.ico",
       "country": "PT",
       "certifications": [
         {
@@ -7949,7 +7903,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.597Z",
       "updatedAt": "2026-04-25T06:26:22.597Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:instituto-para-la-dinamizacion-economica-u",
@@ -7983,7 +7937,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-04-25T06:26:16.445Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:intercede",
@@ -8011,7 +7965,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:iata",
@@ -8069,7 +8023,7 @@
       },
       "firstSeenAt": "2026-04-20T08:42:08.000Z",
       "updatedAt": "2026-04-20T08:42:08.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:icao",
@@ -8103,7 +8057,7 @@
       },
       "firstSeenAt": "2026-04-20T09:14:06.000Z",
       "updatedAt": "2026-04-20T09:14:06.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:intesa-sanpaolo-bank",
@@ -8114,7 +8068,6 @@
       "legalName": "Banca Intesa Sanpaolo S.p.A.",
       "description": "Intesa Sanpaolo Bank is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ca.intesasanpaolo.com.",
       "website": "https://ca.intesasanpaolo.com/scriptIden0/identrus/portal.jsp",
-      "logoUri": "https://www.google.com/s2/favicons?domain=ca.intesasanpaolo.com&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -8137,7 +8090,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-04-25T06:26:19.483Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:intesi-group",
@@ -8171,7 +8124,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-04-25T06:26:19.490Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ireland",
@@ -8199,7 +8152,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:iso",
@@ -8247,7 +8200,7 @@
       },
       "firstSeenAt": "2026-04-22T10:00:00Z",
       "updatedAt": "2026-04-22T10:00:00Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:it-telecom",
@@ -8258,7 +8211,6 @@
       "legalName": "IT Telecom S.r.l.",
       "description": "IT Telecom is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -8281,7 +8233,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-04-25T06:26:19.482Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:italy",
@@ -8309,7 +8261,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ivnosys-soluciones-u",
@@ -8343,7 +8295,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-04-25T06:26:16.437Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ixo",
@@ -8371,7 +8323,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:izertis",
@@ -8404,7 +8356,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:japan-airlines",
@@ -8433,7 +8385,7 @@
       },
       "firstSeenAt": "2026-04-22T10:29:17.000Z",
       "updatedAt": "2026-04-22T10:31:40.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:jcc-payment-systems",
@@ -8444,7 +8396,7 @@
       "legalName": "JCC PAYMENT SYSTEMS LTD",
       "description": "You can contact us by clicking on the button below and filling out our contact form. If you want to speak to a JCC representative, please call +357 22868000. Our representatives are available 24 hours a day, 7 days a week.",
       "website": "https://www.jcc.com.cy/support/",
-      "logoUri": "https://www.jcc.com.cy/wp-content/uploads/JCCheader-Support-Overview01.jpg",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.jcc.com.cy&sz=128",
       "country": "CY",
       "certifications": [
         {
@@ -8467,7 +8419,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.125Z",
       "updatedAt": "2026-04-25T06:26:13.125Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:k4security",
@@ -8498,7 +8450,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:kvk",
@@ -8527,7 +8479,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:47:02.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:kfj-inwestycje",
@@ -8561,7 +8513,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-04-25T06:26:22.171Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:kingdom-of-belgium-federal-government",
@@ -8572,7 +8524,6 @@
       "legalName": "Kingdom of Belgium - Federal Government",
       "description": "Web site created using create-react-app",
       "website": "https://eidpki.belgium.be",
-      "logoUri": "https://eidpki.belgium.be/images/bosa.jpg",
       "country": "BE",
       "certifications": [
         {
@@ -8595,7 +8546,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.493Z",
       "updatedAt": "2026-04-25T06:26:12.493Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:komercni-banka-a-s",
@@ -8629,7 +8580,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.720Z",
       "updatedAt": "2026-04-25T06:26:13.720Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:kpn",
@@ -8663,7 +8614,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.433Z",
       "updatedAt": "2026-04-25T06:26:21.433Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:krajowa-izba-rozliczeniowa",
@@ -8674,7 +8625,7 @@
       "legalName": "Krajowa Izba Rozliczeniowa S.A.",
       "description": "Krajowa Izba Rozliczeniowa is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via elektronicznypodpis.pl.",
       "website": "http://www.elektronicznypodpis.pl/en/",
-      "logoUri": "http://www.elektronicznypodpis.pl/themes/eshop/images/favicon.ico",
+      "logoUri": "https://www.elektronicznypodpis.pl/themes/eshop/images/favicon.ico",
       "country": "PL",
       "certifications": [
         {
@@ -8697,7 +8648,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-04-25T06:26:22.170Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:latvia",
@@ -8725,7 +8676,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:latvian-state-radio-and-television-center",
@@ -8736,7 +8687,7 @@
       "legalName": "Latvijas Valsts radio un televīzijas centrs",
       "description": "Latvian State Radio and Television center is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Latvia, providing digital trust services via eparaksts.lv.",
       "website": "http://www.eparaksts.lv/en/",
-      "logoUri": "http://www.eparaksts.lv/en/favicon/apple-touch-icon.png",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.eparaksts.lv&sz=128",
       "country": "LV",
       "certifications": [
         {
@@ -8759,7 +8710,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.782Z",
       "updatedAt": "2026-04-25T06:26:20.782Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:lex-persona",
@@ -8793,7 +8744,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.353Z",
       "updatedAt": "2026-04-25T06:26:17.353Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:lissi",
@@ -8846,7 +8797,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:lleidanet-pki",
@@ -8880,7 +8831,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-04-25T06:26:16.442Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:lleidanetworks-serveis-telematics",
@@ -8914,7 +8865,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-04-25T06:26:16.438Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:logalty-prueba-por-interposicion",
@@ -8948,7 +8899,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-04-25T06:26:16.438Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:lombardia-informatica",
@@ -8959,7 +8910,6 @@
       "legalName": "Lombardia Informatica S.p.A.",
       "description": "Lombardia Informatica is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -8982,7 +8932,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-04-25T06:26:19.488Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:lombardia-integrata-servizi-infotelematici-per-il-territorio",
@@ -8993,7 +8943,6 @@
       "legalName": "Lombardia Integrata S.p.A. Servizi Infotelematici per il Territorio",
       "description": "Lombardia Integrata . Servizi Infotelematici per il Territorio is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -9016,7 +8965,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-04-25T06:26:19.481Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:luxtrust",
@@ -9050,7 +8999,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-04-25T06:26:20.464Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:magyar-telekom-public-company",
@@ -9061,7 +9010,6 @@
       "legalName": "Magyar Telekom Távközlési Nyilvánosan Működő Részvénytársaság",
       "description": "Magyar Telekom Public Company is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Hungary. It provides digital trust services via t-systems.hu.",
       "website": "http://www.t-systems.hu/nagyvallalatok/hitelesites_szolgaltatasok",
-      "logoUri": "https://www.google.com/s2/favicons?domain=t-systems.hu&sz=128",
       "country": "HU",
       "certifications": [
         {
@@ -9084,7 +9032,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.144Z",
       "updatedAt": "2026-04-25T06:26:18.144Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:mailstone-timestamp",
@@ -9095,7 +9043,7 @@
       "legalName": "MailStone TimeStamp",
       "description": "MailStone TimeStamp is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via mailstone.io.",
       "website": "https://www.mailstone.io/en",
-      "logoUri": "https://www.mailstone.io/og-image.png",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.mailstone.io&sz=128",
       "country": "FR",
       "certifications": [
         {
@@ -9118,7 +9066,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-04-25T06:26:17.355Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:mailteck",
@@ -9152,7 +9100,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-04-25T06:26:16.441Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:malta-electronic-certification-services",
@@ -9163,7 +9111,7 @@
       "legalName": "Malta Electronic Certification Services Ltd",
       "description": "Malta Electronic Certification Services is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Malta, providing digital trust services via repository.qca.gov.mt.",
       "website": "http://repository.qca.gov.mt",
-      "logoUri": "http://repository.qca.gov.mt/img/favicon.ico",
+      "logoUri": "https://www.google.com/s2/favicons?domain=repository.qca.gov.mt&sz=128",
       "country": "MT",
       "certifications": [
         {
@@ -9186,7 +9134,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.084Z",
       "updatedAt": "2026-04-25T06:26:21.084Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:mattr",
@@ -9219,7 +9167,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:medisign",
@@ -9253,7 +9201,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.660Z",
       "updatedAt": "2026-04-25T06:26:14.660Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:meeco",
@@ -9286,7 +9234,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:microsec-micro-software-engineering-and-consulting-private-company-by-shares",
@@ -9320,7 +9268,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.141Z",
       "updatedAt": "2026-04-25T06:26:18.141Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:microsoft",
@@ -9348,7 +9296,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:01:19.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:migration-department-under-the-ministry-of-the-interior-of-the-republic-of-lithu",
@@ -9359,7 +9307,6 @@
       "legalName": "Migracijos departamentas prie Lietuvos Respublikos vidaus reikalų ministerijos",
       "description": "Migration Department under the Ministry of the Interior of the Republic of Lithuania is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania, providing digital trust services via nsc.vrm.lt.",
       "website": "https://www.nsc.vrm.lt/default_en.htm",
-      "logoUri": "https://www.google.com/s2/favicons?domain=www.nsc.vrm.lt&sz=128",
       "country": "LT",
       "certifications": [
         {
@@ -9382,7 +9329,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.104Z",
       "updatedAt": "2026-04-25T06:26:20.104Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:minisuomi",
@@ -9410,7 +9357,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ministere-de-l-interieur",
@@ -9421,7 +9368,7 @@
       "legalName": "Ministère de l'Intérieur",
       "description": "Official portal of the French Ministry of the Interior for digital public services and administrative information.",
       "website": "https://www.interieur.gouv.fr/IGC/",
-      "logoUri": "http://www.interieur.gouv.fr/extension/ow_miomcti_designs/design/miomcti_public/images/default_share.jpg",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.interieur.gouv.fr&sz=128",
       "country": "FR",
       "certifications": [
         {
@@ -9444,7 +9391,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.350Z",
       "updatedAt": "2026-04-25T06:26:17.350Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ministere-de-la-justice",
@@ -9455,7 +9402,7 @@
       "legalName": "Ministère de la Justice",
       "description": "Ministère de la Justice is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via justice.gouv.fr.",
       "website": "http://www.justice.gouv.fr/multilinguisme-12198/english-12200/",
-      "logoUri": "https://www.justice.gouv.fr/sites/default/files/styles/16x9_md/public/2026-01/2025_WEB_Banni%C3%A8re_Justice.gouv_2560x200px_V6.png?h=6943c66c&itok=ByvW91z6",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.justice.gouv.fr&sz=128",
       "country": "FR",
       "certifications": [
         {
@@ -9478,7 +9425,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-04-25T06:26:17.347Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ministeres-economiques-et-financiers",
@@ -9489,7 +9436,6 @@
       "legalName": "Ministères économiques et financiers",
       "description": "Ministères économiques et financiers is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via igc1.finances.gouv.fr.",
       "website": "https://igc1.finances.gouv.fr",
-      "logoUri": "https://www.google.com/s2/favicons?domain=igc1.finances.gouv.fr&sz=128",
       "country": "FR",
       "certifications": [
         {
@@ -9512,7 +9458,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.354Z",
       "updatedAt": "2026-04-25T06:26:17.354Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:bzk",
@@ -9537,7 +9483,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ministerie-van-defensie",
@@ -9571,7 +9517,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.433Z",
       "updatedAt": "2026-04-25T06:26:21.433Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ministerie-van-infrastructuur-en-waterstaat",
@@ -9605,7 +9551,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.434Z",
       "updatedAt": "2026-04-25T06:26:21.434Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ministero-della-difesa",
@@ -9616,7 +9562,6 @@
       "legalName": "Ministero della Difesa",
       "description": "Ministero della Difesa is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via pki.difesa.it.",
       "website": "https://pki.difesa.it",
-      "logoUri": "https://www.google.com/s2/favicons?domain=pki.difesa.it&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -9639,7 +9584,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-04-25T06:26:19.481Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ministry-of-defence-slovak-republic",
@@ -9673,7 +9618,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.602Z",
       "updatedAt": "2026-04-25T06:26:24.602Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:brazil",
@@ -9701,7 +9646,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:mintblue",
@@ -9725,7 +9670,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:moldova",
@@ -9753,7 +9698,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:mosip",
@@ -9801,7 +9746,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:multicert-servicos-de-certificacao-electronica",
@@ -9835,7 +9780,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.597Z",
       "updatedAt": "2026-04-25T06:26:22.597Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:mydata-global",
@@ -9859,7 +9804,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:namirial",
@@ -9901,7 +9846,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:qtsp-ie-5-namirial",
@@ -9945,7 +9890,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.541Z",
       "updatedAt": "2026-04-25T06:26:18.541Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:qtsp-it-33-namirial",
@@ -9956,7 +9901,6 @@
       "legalName": "Namirial S.p.A./02046570426",
       "description": "Namirial is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via firmacerta.it.",
       "website": "http://www.firmacerta.it/en/TSPinformation",
-      "logoUri": "https://www.google.com/s2/favicons?domain=www.firmacerta.it&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -9989,7 +9933,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-04-25T06:26:19.487Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:national-agency-for-network-and-electronic-services",
@@ -10023,7 +9967,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-04-25T06:26:24.603Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ethiopia",
@@ -10051,7 +9995,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:national-registers-authority",
@@ -10085,7 +10029,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.718Z",
       "updatedAt": "2026-04-25T06:26:13.718Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:national-security-authority",
@@ -10119,7 +10063,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.598Z",
       "updatedAt": "2026-04-25T06:26:24.598Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:neoke",
@@ -10147,7 +10091,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:neovo",
@@ -10178,7 +10122,7 @@
       },
       "firstSeenAt": "2026-04-02T18:06:53.000Z",
       "updatedAt": "2026-04-02T20:41:38.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:netcetera-software-services",
@@ -10189,7 +10133,7 @@
       "legalName": "Netcetera Software Services GmbH",
       "description": "Unlock growth with our software solutions tailored to your business, from seamless banking & payment experiences to sustainable mobility & digital healthcare",
       "website": "https://www.netcetera.com",
-      "logoUri": "https://www.netcetera.com/dam/jcr:9484b3f6-5263-400c-9095-9057ffe40031/Masthead_Issuing%20Products_Overview.webp",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.netcetera.com&sz=128",
       "country": "DE",
       "certifications": [
         {
@@ -10212,7 +10156,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-04-25T06:26:14.661Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:netcom-group",
@@ -10246,7 +10190,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-04-25T06:26:17.355Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:netlock-informatics-and-network-privacy-services-company",
@@ -10280,7 +10224,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.144Z",
       "updatedAt": "2026-04-25T06:26:18.144Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:nisz-national-infocommunications-services-company-by-shares",
@@ -10314,7 +10258,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.145Z",
       "updatedAt": "2026-04-25T06:26:18.145Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:nitro-software-belgium",
@@ -10348,7 +10292,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.494Z",
       "updatedAt": "2026-04-25T06:26:12.494Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:nlb-d-d",
@@ -10359,7 +10303,7 @@
       "legalName": "NLB d.d.",
       "description": "NLB is a Slovenian financial institution listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List.",
       "website": "http://www.nlb.si/ac-nlb",
-      "logoUri": "http://www.nlb.si/res/img/icon/apple-touch-icon.png",
+      "logoUri": "https://www.nlb.si/res/img/icon/apple-touch-icon.png",
       "country": "SI",
       "certifications": [
         {
@@ -10382,7 +10326,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.584Z",
       "updatedAt": "2026-04-25T06:26:23.584Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:nordea-bank-abp-filial-i-norge",
@@ -10416,7 +10360,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-04-25T06:26:21.773Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:northernblock",
@@ -10426,7 +10370,6 @@
       ],
       "description": "Canadian software company focused on digital identity wallets, verifiable credentials, and enterprise-grade issuance tooling.",
       "website": "https://northernblock.io",
-      "logoUri": "https://www.google.com/s2/favicons?domain=northernblock.io&sz=128",
       "country": "CA",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/northernblock/organization-catalog.json",
@@ -10449,7 +10392,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:norway",
@@ -10477,7 +10420,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:notarchiv-company",
@@ -10511,7 +10454,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.145Z",
       "updatedAt": "2026-04-25T06:26:18.145Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:notartel",
@@ -10545,7 +10488,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-04-25T06:26:19.491Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ooru",
@@ -10580,7 +10523,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:owf",
@@ -10613,7 +10556,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:oumou-group",
@@ -10641,7 +10584,7 @@
       },
       "firstSeenAt": "2026-04-03T07:27:12.000Z",
       "updatedAt": "2026-04-10T12:35:16.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:pagopa",
@@ -10675,7 +10618,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-04-25T06:26:19.492Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:penneo",
@@ -10709,7 +10652,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.958Z",
       "updatedAt": "2026-04-25T06:26:14.958Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:poczta-polska-s-a",
@@ -10743,7 +10686,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-04-25T06:26:22.171Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:poland",
@@ -10771,7 +10714,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:polish-security-printing-works",
@@ -10782,7 +10725,7 @@
       "legalName": "Polska Wytwórnia Papierów Wartościowych S.A.",
       "description": "Polish Security Printing Works is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via sigillum.pl.",
       "website": "http://www.sigillum.pl",
-      "logoUri": "http://www.sigillum.pl/images/favicon.png",
+      "logoUri": "https://www.sigillum.pl/images/favicon.png",
       "country": "PL",
       "certifications": [
         {
@@ -10805,7 +10748,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.169Z",
       "updatedAt": "2026-04-25T06:26:22.169Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:portugal",
@@ -10833,7 +10776,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:posta-slovenije-d-o-o",
@@ -10867,7 +10810,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.585Z",
       "updatedAt": "2026-04-25T06:26:23.585Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:postalia-belgium",
@@ -10901,7 +10844,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.495Z",
       "updatedAt": "2026-04-25T06:26:12.495Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:poste-italiane",
@@ -10912,7 +10855,6 @@
       "legalName": "Poste Italiane S.p.A.",
       "description": "<div>&nbsp;&nbsp; </div><br />",
       "website": "http://postecert.poste.it/aboutpostecom.shtml",
-      "logoUri": "https://www.google.com/s2/favicons?domain=postecert.poste.it&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -10935,7 +10877,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-04-25T06:26:19.489Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:postecom",
@@ -10946,7 +10888,6 @@
       "legalName": "Postecom S.p.A.",
       "description": "Postecom is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -10969,7 +10910,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-04-25T06:26:19.483Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:postel",
@@ -11003,7 +10944,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-04-25T06:26:19.492Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:primesign",
@@ -11037,7 +10978,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.162Z",
       "updatedAt": "2026-04-25T06:26:12.162Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:privacybydesign",
@@ -11065,7 +11006,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:procivis",
@@ -11098,7 +11039,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:provenant",
@@ -11123,12 +11064,7 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/provenant/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:provenant:vlei:production",
-            "displayName": "Provenant vLEI Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
@@ -11136,7 +11072,7 @@
       },
       "firstSeenAt": "2026-04-23T05:03:19.000Z",
       "updatedAt": "2026-04-23T05:03:19.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:prvni-certifikacni-autorita-s-r-o",
@@ -11170,7 +11106,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.604Z",
       "updatedAt": "2026-04-25T06:26:24.604Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:quintessence-research",
@@ -11194,7 +11130,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:register",
@@ -11228,7 +11164,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-04-25T06:26:19.490Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:rekono-d-o-o",
@@ -11262,7 +11198,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-04-25T06:26:23.586Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:republika-slovenija",
@@ -11296,7 +11232,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.583Z",
       "updatedAt": "2026-04-25T06:26:23.583Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:honduras",
@@ -11306,7 +11242,6 @@
       ],
       "description": "National Registry of Persons (RNP Honduras); maintains civil registration and national identification for the Republic of Honduras.",
       "website": "https://www.rnp.hn/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=rnp.hn&sz=128",
       "country": "HN",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/honduras/organization-catalog.json",
@@ -11324,7 +11259,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:rubricae-business-solutions",
@@ -11358,7 +11293,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-04-25T06:26:16.447Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:samsung",
@@ -11386,7 +11321,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sanpaolo-imi",
@@ -11397,7 +11332,6 @@
       "legalName": "Sanpaolo IMI S.p.A.",
       "description": "Sanpaolo IMI is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ca.intesasanpaolo.com.",
       "website": "https://ca.intesasanpaolo.com/scriptIden0/identrus/portal.jsp",
-      "logoUri": "https://www.google.com/s2/favicons?domain=ca.intesasanpaolo.com&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -11420,7 +11354,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.484Z",
       "updatedAt": "2026-04-25T06:26:19.484Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:saritel",
@@ -11431,7 +11365,6 @@
       "legalName": "Saritel S.p.A.",
       "description": "Saritel is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -11454,7 +11387,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-04-25T06:26:19.488Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sbb",
@@ -11483,7 +11416,7 @@
       },
       "firstSeenAt": "2026-04-03T06:05:55.000Z",
       "updatedAt": "2026-04-03T06:05:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:scrive",
@@ -11517,7 +11450,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-04-25T06:26:21.774Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:scytales",
@@ -11550,7 +11483,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:seceti",
@@ -11561,7 +11494,6 @@
       "legalName": "SECETI",
       "description": "SECETI is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -11584,7 +11516,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.485Z",
       "updatedAt": "2026-04-25T06:26:19.485Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sectigo-europe",
@@ -11618,7 +11550,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-04-25T06:26:16.441Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:secumail",
@@ -11652,7 +11584,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.436Z",
       "updatedAt": "2026-04-25T06:26:21.436Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sefira",
@@ -11663,7 +11595,6 @@
       "legalName": "SEFIRA spol. s r.o.",
       "description": "SEFIRA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via sefira.cz.",
       "website": "https://www.sefira.cz/en/home/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=sefira.cz&sz=128",
       "country": "CZ",
       "certifications": [
         {
@@ -11686,7 +11617,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.719Z",
       "updatedAt": "2026-04-25T06:26:13.719Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:servicios-de-mailcertificado",
@@ -11720,7 +11651,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-04-25T06:26:16.444Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:setcce-d-o-o",
@@ -11754,7 +11685,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-04-25T06:26:23.586Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:seyfor-a-s",
@@ -11788,7 +11719,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.721Z",
       "updatedAt": "2026-04-25T06:26:13.721Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sheca",
@@ -11804,12 +11735,7 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/sheca/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:sheca:vlei:production",
-            "displayName": "SHECA vLEI Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
@@ -11817,7 +11743,7 @@
       },
       "firstSeenAt": "2026-04-22T19:26:31.000Z",
       "updatedAt": "2026-04-22T19:35:56.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sia",
@@ -11828,7 +11754,6 @@
       "legalName": "SIA S.p.A.",
       "description": "SIA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -11851,7 +11776,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.485Z",
       "updatedAt": "2026-04-25T06:26:19.485Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sicpa",
@@ -11879,7 +11804,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sign8",
@@ -11913,7 +11838,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-04-25T06:26:14.662Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:signe",
@@ -11947,7 +11872,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.435Z",
       "updatedAt": "2026-04-25T06:26:16.435Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:signicat",
@@ -11981,7 +11906,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-04-25T06:26:21.774Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:signicat-u",
@@ -12015,7 +11940,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-04-25T06:26:16.441Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:simpliworks",
@@ -12026,7 +11951,6 @@
       "legalName": "SIMPLIWORKS SRL",
       "description": "SIMPLIWORKS is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via simplifi.ro.",
       "website": "https://www.simplifi.ro",
-      "logoUri": "https://www.google.com/s2/favicons?domain=simplifi.ro&sz=128",
       "country": "RO",
       "certifications": [
         {
@@ -12049,7 +11973,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.974Z",
       "updatedAt": "2026-04-25T06:26:22.974Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sistemas-informaticos-abiertos-u",
@@ -12083,7 +12007,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.435Z",
       "updatedAt": "2026-04-25T06:26:16.435Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sk-id-solutions",
@@ -12117,7 +12041,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.349Z",
       "updatedAt": "2026-04-25T06:26:15.349Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:slovakia",
@@ -12145,7 +12069,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:slovenia",
@@ -12173,7 +12097,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:software602-a-s",
@@ -12207,7 +12131,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.718Z",
       "updatedAt": "2026-04-25T06:26:13.718Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:spain",
@@ -12235,7 +12159,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sparebank-1-utvikling-da",
@@ -12269,7 +12193,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-04-25T06:26:21.773Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:special-telecommunications-service",
@@ -12303,7 +12227,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-04-25T06:26:22.973Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sphereon",
@@ -12340,7 +12264,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:spherity",
@@ -12369,7 +12293,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:spruce",
@@ -12397,7 +12321,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ssb",
@@ -12408,7 +12332,6 @@
       "legalName": "SSB S.p.A.",
       "description": "SSB is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -12431,7 +12354,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.486Z",
       "updatedAt": "2026-04-25T06:26:19.486Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:stampee",
@@ -12465,7 +12388,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.358Z",
       "updatedAt": "2026-04-25T06:26:17.358Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:state-enterprise-centre-of-registers",
@@ -12476,7 +12399,7 @@
       "legalName": "Valstybės įmonė Registrų centras",
       "description": "State Enterprise Centre of Registers is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania. It provides digital trust services via registrucentras.lt.",
       "website": "http://www.registrucentras.lt/index_en.php",
-      "logoUri": "http://www.registrucentras.lt/favicon.ico",
+      "logoUri": "https://www.registrucentras.lt/favicon.ico",
       "country": "LT",
       "certifications": [
         {
@@ -12499,7 +12422,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.102Z",
       "updatedAt": "2026-04-25T06:26:20.102Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:state-trust-services",
@@ -12533,7 +12456,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.721Z",
       "updatedAt": "2026-04-25T06:26:13.721Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:stelausoftware",
@@ -12561,7 +12484,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:st",
@@ -12595,7 +12518,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-04-25T06:26:21.774Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:surf",
@@ -12619,7 +12542,7 @@
       },
       "firstSeenAt": "2026-04-23T05:12:08.000Z",
       "updatedAt": "2026-04-23T05:12:47.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:sweden",
@@ -12647,7 +12570,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:swiyu",
@@ -12700,7 +12623,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:swisscom-it-services-finance",
@@ -12734,7 +12657,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.163Z",
       "updatedAt": "2026-04-25T06:26:12.163Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:swisssign",
@@ -12768,7 +12691,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.163Z",
       "updatedAt": "2026-04-25T06:26:12.163Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:talao",
@@ -12811,7 +12734,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:teamsystem",
@@ -12845,7 +12768,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-04-25T06:26:19.492Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:tecalis-sotware",
@@ -12879,7 +12802,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-04-25T06:26:16.445Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:techniserv-it",
@@ -12890,7 +12813,6 @@
       "legalName": "TECHNISERV IT, spol. s r.o.",
       "description": "TECHNISERV IT is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via techniserv-it.cz.",
       "website": "https://www.techniserv-it.cz/en/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=techniserv-it.cz&sz=128",
       "country": "CZ",
       "certifications": [
         {
@@ -12913,7 +12835,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.719Z",
       "updatedAt": "2026-04-25T06:26:13.719Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:telecom-italia-trust-technologies",
@@ -12924,7 +12846,6 @@
       "legalName": "Telecom Italia Trust Technologies S.r.l.",
       "description": "Telecom Italia Trust Technologies is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via trusttechnologies.it.",
       "website": "https://www.trusttechnologies.it/chi-siamo/qcsp-english/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=trusttechnologies.it&sz=128",
       "country": "IT",
       "certifications": [
         {
@@ -12947,7 +12868,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-04-25T06:26:19.489Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:tessi-documents-services",
@@ -12981,7 +12902,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.351Z",
       "updatedAt": "2026-04-25T06:26:17.351Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:thales",
@@ -12991,7 +12912,7 @@
       ],
       "description": "Multinational group delivering aerospace, transport, defence, and digital identity/security solutions including government ID programmes.",
       "website": "https://www.thalesgroup.com",
-      "logoUri": "https://digid-eks.dev.citizen-online.com/issuer-portal/assets/img/Thales.svg",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.thalesgroup.com&sz=128",
       "country": "FR",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/thales/organization-catalog.json",
@@ -13009,7 +12930,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:the-czech-post-s-p",
@@ -13020,7 +12941,7 @@
       "legalName": "Česká pošta, s.p.",
       "description": "www.cpost.cz - web �esk� po�ty",
       "website": "http://www.postsignum.cz/index.php?lang=en",
-      "logoUri": "http://www.postsignum.cz/images/favicon.ico",
+      "logoUri": "https://www.postsignum.cz/images/favicon.ico",
       "country": "CZ",
       "certifications": [
         {
@@ -13043,7 +12964,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.717Z",
       "updatedAt": "2026-04-25T06:26:13.717Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:the-high-council-of-french-notariat",
@@ -13077,7 +12998,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.348Z",
       "updatedAt": "2026-04-25T06:26:17.348Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:tno",
@@ -13106,7 +13027,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:15:35.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:toppan",
@@ -13116,7 +13037,7 @@
       ],
       "description": "TOPPANグループは、重点的に取り組むべき成長領域「健康・ライフサイエンス」「教育・文化交流」「都市空間・モビリティ」「エネルギー・食料資源」を設定し、多様化する時代に合わせて、社会のニーズにこたえていくために社会的価値を創造していきます。",
       "website": "https://www.toppan.com",
-      "logoUri": "https://www.google.com/s2/favicons?domain=toppan.com&sz=128",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.toppan.com&sz=128",
       "country": "JP",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/toppan/organization-catalog.json",
@@ -13125,10 +13046,6 @@
           {
             "id": "issuer:toppan:goid:test",
             "displayName": "TOPPAN Sandbox Issuer"
-          },
-          {
-            "id": "issuer:toppan:vlei:production",
-            "displayName": "TOPPAN vLEI Issuer"
           }
         ],
         "credentialTypes": [],
@@ -13143,7 +13060,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:tradego",
@@ -13159,12 +13076,7 @@
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/tradego/organization-catalog.json",
       "ecosystemRoles": {
-        "issuers": [
-          {
-            "id": "issuer:tradego:vlei:production",
-            "displayName": "TradeGo vLEI Issuer"
-          }
-        ],
+        "issuers": [],
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
@@ -13172,7 +13084,7 @@
       },
       "firstSeenAt": "2026-04-22T19:32:39.000Z",
       "updatedAt": "2026-04-22T21:12:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:trans-sped",
@@ -13183,7 +13095,7 @@
       "legalName": "Trans Sped S.A.",
       "description": "Trans Sped is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via transsped.ro.",
       "website": "http://www.transsped.ro/Index_EN.aspx",
-      "logoUri": "https://www.google.com/s2/favicons?domain=transsped.ro&sz=128",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.transsped.ro&sz=128",
       "country": "RO",
       "certifications": [
         {
@@ -13206,7 +13118,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.971Z",
       "updatedAt": "2026-04-25T06:26:22.971Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:trustcloud-tech",
@@ -13240,7 +13152,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-04-25T06:26:16.446Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:trustitalia",
@@ -13251,7 +13163,6 @@
       "legalName": "Trustitalia S.p.A.",
       "description": "Trustitalia is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it.",
       "website": "http://www.agid.gov.it/qcsp-ceased",
-      "logoUri": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
       "country": "IT",
       "certifications": [
         {
@@ -13274,7 +13185,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.486Z",
       "updatedAt": "2026-04-25T06:26:19.486Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:trustpro-qtsp",
@@ -13308,7 +13219,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.539Z",
       "updatedAt": "2026-04-25T06:26:18.539Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:trustweaver",
@@ -13319,7 +13230,6 @@
       "legalName": "TrustWeaver AB",
       "description": "TrustWeaver is a Swedish provider of secure digital compliance and trust services, listed as a QTSP in the EU Trust List.",
       "website": "https://www.trustweaver.com/",
-      "logoUri": "https://www.google.com/s2/favicons?domain=trustweaver.com&sz=128",
       "country": "SE",
       "certifications": [
         {
@@ -13342,7 +13252,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.265Z",
       "updatedAt": "2026-04-25T06:26:23.265Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uab-isense-technologies",
@@ -13376,7 +13286,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.104Z",
       "updatedAt": "2026-04-25T06:26:20.104Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uab-baltstamp",
@@ -13410,7 +13320,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.102Z",
       "updatedAt": "2026-04-25T06:26:20.102Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uab-dokobit",
@@ -13421,7 +13331,7 @@
       "legalName": "UAB Dokobit",
       "description": "UAB Dokobit is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania, providing digital trust services via dokobit.com.",
       "website": "http://www.dokobit.com/lt",
-      "logoUri": "https://www.dokobit.com/assets/images/dokobit/https://www.dokobit.com/wp-content/uploads/2024/07/2x-image-23.png?v=1776845526737",
+      "logoUri": "https://www.google.com/s2/favicons?domain=www.dokobit.com&sz=128",
       "country": "LT",
       "certifications": [
         {
@@ -13444,7 +13354,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-04-25T06:26:20.103Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uab-mit-soft",
@@ -13478,7 +13388,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-04-25T06:26:20.103Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uab-nevda",
@@ -13512,7 +13422,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-04-25T06:26:20.103Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:qtsp-it-51-uanataca",
@@ -13546,7 +13456,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-04-25T06:26:19.491Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uanataca",
@@ -13580,7 +13490,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.436Z",
       "updatedAt": "2026-04-25T06:26:16.436Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ubique",
@@ -13608,7 +13518,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ukraine",
@@ -13618,7 +13528,7 @@
       ],
       "description": "Єдиний портал державних послуг Дія. Онлайн відкриття ФОП, оформлення допомоги при народженні дитини або пенсії, отримання ліцензій та дозволів.",
       "website": "https://diia.gov.ua/",
-      "logoUri": "https://diia.gov.ua/img/diia-october-prod/sites/1/img-2254.png",
+      "logoUri": "https://www.google.com/s2/favicons?domain=diia.gov.ua&sz=128",
       "country": "UA",
       "source": "community-catalog",
       "catalogUrl": "community-catalogs/ukraine/organization-catalog.json",
@@ -13636,7 +13546,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uncefact",
@@ -13712,7 +13622,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:unchained-commerce",
@@ -13741,7 +13651,7 @@
       },
       "firstSeenAt": "2026-04-03T06:22:51.000Z",
       "updatedAt": "2026-04-03T06:22:51.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:unifiedpost",
@@ -13767,7 +13677,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:uaegean",
@@ -13795,7 +13705,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:unizeto-technologies",
@@ -13829,7 +13739,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.168Z",
       "updatedAt": "2026-04-25T06:26:22.168Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:utimaco-is",
@@ -13863,7 +13773,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-04-25T06:26:14.662Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:validatedid",
@@ -13896,7 +13806,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:validated-id",
@@ -13940,7 +13850,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-04-25T06:26:16.439Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ver-id",
@@ -13969,7 +13879,7 @@
       },
       "firstSeenAt": "2026-03-31T09:53:54.773Z",
       "updatedAt": "2026-04-02T13:34:42.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:verimi",
@@ -13997,7 +13907,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:viafirma",
@@ -14031,7 +13941,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-04-25T06:26:16.439Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:vialink",
@@ -14065,7 +13975,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-04-25T06:26:17.352Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:vintegris-u",
@@ -14076,7 +13986,6 @@
       "legalName": "VINTEGRIS S.L.U.",
       "description": "Author: Vintegris SLU, Title: VinCASign",
       "website": "http://www.vincasign.net",
-      "logoUri": "http://www.vincasign.net/favicon.ico",
       "country": "ES",
       "certifications": [
         {
@@ -14099,7 +14008,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-04-25T06:26:16.437Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:werify",
@@ -14123,7 +14032,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:wise-security-global",
@@ -14157,7 +14066,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-04-25T06:26:16.443Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:worldline-france",
@@ -14191,7 +14100,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.351Z",
       "updatedAt": "2026-04-25T06:26:17.351Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:wwwallet",
@@ -14219,7 +14128,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:xablu",
@@ -14243,7 +14152,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:yoti",
@@ -14271,7 +14180,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:youniqx",
@@ -14303,7 +14212,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:yourd",
@@ -14337,7 +14246,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:yousign",
@@ -14371,7 +14280,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-04-25T06:26:17.349Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:zagrebacka-banka-dionicko-drustvo",
@@ -14382,7 +14291,7 @@
       "legalName": "Zagrebačka banka dioničko društvo",
       "description": "Zagrebačka banka dioničko društvo is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Croatia. It provides digital trust services via zaba.hr.",
       "website": "http://www.zaba.hr/cps",
-      "logoUri": "http://www.zaba.hr/home/zaba/static/img/favicon/apple-touch-icon-57x57.png",
+      "logoUri": "https://www.zaba.hr/home/zaba/static/img/favicon/apple-touch-icon-57x57.png",
       "country": "HR",
       "certifications": [
         {
@@ -14405,7 +14314,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.703Z",
       "updatedAt": "2026-04-25T06:26:17.703Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:zealid",
@@ -14439,7 +14348,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.266Z",
       "updatedAt": "2026-04-25T06:26:23.266Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:zertiban-u",
@@ -14473,7 +14382,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-04-25T06:26:16.448Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:zetes",
@@ -14507,7 +14416,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.491Z",
       "updatedAt": "2026-04-25T06:26:12.491Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:zetes-estonia-ou",
@@ -14541,7 +14450,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.349Z",
       "updatedAt": "2026-04-25T06:26:15.349Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:zipper-services",
@@ -14575,7 +14484,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.974Z",
       "updatedAt": "2026-04-25T06:26:22.974Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:ziurtapen-eta-zerbitzu-enpresa-empresa-de-certificacion-y-servicios-izenpe",
@@ -14586,7 +14495,7 @@
       "legalName": "Ziurtapen eta Zerbitzu Enpresa-Empresa de Certificación y Servicios, Izenpe, S.A.",
       "description": "Ziurtapen eta Zerbitzu Enpresa-Empresa de Certificación y Servicios, Izenpe is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via izenpe.com.",
       "website": "http://www.izenpe.com",
-      "logoUri": "http://www.izenpe.com/images/webize00-favicon.ico",
+      "logoUri": "https://www.izenpe.com/images/webize00-favicon.ico",
       "country": "ES",
       "certifications": [
         {
@@ -14609,7 +14518,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.434Z",
       "updatedAt": "2026-04-25T06:26:16.434Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     },
     {
       "id": "org:zucchetti",
@@ -14643,7 +14552,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-04-25T06:26:19.489Z",
-      "fetchedAt": "2026-04-26T05:36:08.775Z"
+      "fetchedAt": "2026-04-26T06:10:01.864Z"
     }
   ],
   "stats": {
@@ -14702,9 +14611,9 @@
       "HN": 1,
       "UA": 1
     },
-    "withIssuers": 26,
+    "withIssuers": 18,
     "withCredentialTypes": 9,
-    "withWallets": 94,
+    "withWallets": 93,
     "withRelyingParties": 26,
     "withBluePagesProfile": 1
   }
