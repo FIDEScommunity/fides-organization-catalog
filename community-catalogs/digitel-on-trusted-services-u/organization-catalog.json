@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digitel-on-trusted-services-u",
+    "name": "DIGITEL ON TRUSTED SERVICES U.",
+    "legalName": "DIGITEL ON TRUSTED SERVICES S.L.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/35",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.digitelts.es",
+    "logo": "https://digitelts.es/wp-content/uploads/2022/07/SEO-HOME.jpg",
+    "description": "Innovación, Tecnología y Cumplimiento al Servicio del Negocio. De los Servicios de Confianza a la Identidad Digital."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.438Z"
+}

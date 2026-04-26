@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:signe",
+    "name": "SIGNE",
+    "legalName": "SIGNE S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/23",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.signe.es/signe-ac",
+    "logo": "https://www.signe.es/wp-content/themes/signe2024/assets/img/apple-touch-icon.png",
+    "description": "SIGNE | DOCUMENTOS DE SEGURIDAD & SOLUCIONES TECNOLÓGICAS AVANZADAS"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.435Z"
+}

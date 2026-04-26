@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:adacom-advanced-internet-applications",
+    "name": "ADACOM ADVANCED INTERNET APPLICATIONS",
+    "legalName": "ADACOM ADVANCED INTERNET APPLICATIONS S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "EL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/EL/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.adacom.com/repository",
+    "logo": "https://www.adacom.com/assets/components/phpthumbof/cache/adacom-red.a21bd1147d3c8080f645838d33e576d2.webp",
+    "description": "ADACOM ADVANCED INTERNET APPLICATIONS is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Greece. It provides digital trust services via adacom.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:15.784Z"
+}

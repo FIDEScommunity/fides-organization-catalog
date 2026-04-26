@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:uab-isense-technologies",
+    "name": "UAB „iSense Technologies“",
+    "legalName": "UAB „iSense Technologies“",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LT/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://isense.lt/",
+    "logo": "https://isense.lt/wp-content/uploads/2024/06/si_01.jpeg",
+    "description": "UAB „iSense Technologies“ is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania, providing digital trust services via isense.lt."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.104Z"
+}

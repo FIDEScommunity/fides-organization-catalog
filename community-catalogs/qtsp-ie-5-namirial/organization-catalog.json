@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:qtsp-ie-5-namirial",
+    "name": "Namirial",
+    "legalName": "Namirial Limited",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IE/tsp/5",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.namirial.com",
+    "logo": "https://www.namirial.com/wp-content/smush-webp/cropped-favicon-namirial-360x360.png.webp",
+    "description": "Customer identification and identity verification with the suite Namirial Onboarding"
+  },
+  "lastUpdated": "2026-04-25T06:26:18.541Z"
+}

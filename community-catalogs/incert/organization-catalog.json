@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:incert",
+    "name": "InCert",
+    "legalName": "InCert",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LU",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LU/tsp/5",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.incert.lu/",
+    "logo": "http://static1.squarespace.com/static/63da3a9b7dd7c17d4494c476/t/686f84a69dee9c083d5cb481/1752138918681/INCERT_U_INCERT_HOR_LOGO_RGB_POS_TL_150_PPI.png?format=1500w",
+    "description": "InCert is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Luxembourg, providing digital trust services via incert.lu."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.464Z"
+}

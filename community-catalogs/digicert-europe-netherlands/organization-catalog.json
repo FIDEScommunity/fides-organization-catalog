@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digicert-europe-netherlands",
+    "name": "DigiCert Europe Netherlands",
+    "legalName": "DigiCert Europe Netherlands B.V.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/10",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.quovadisglobal.nl",
+    "logo": "https://www.google.com/s2/favicons?domain=www.quovadisglobal.nl&sz=128",
+    "description": "DigiCert Europe Netherlands is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via quovadisglobal.nl."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.435Z"
+}

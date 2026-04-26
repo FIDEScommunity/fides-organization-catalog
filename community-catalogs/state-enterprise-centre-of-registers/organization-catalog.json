@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:state-enterprise-centre-of-registers",
+    "name": "State Enterprise Centre of Registers",
+    "legalName": "Valstybės įmonė Registrų centras",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LT/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.registrucentras.lt/index_en.php",
+    "logo": "http://www.registrucentras.lt/favicon.ico",
+    "description": "State Enterprise Centre of Registers is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania. It provides digital trust services via registrucentras.lt."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.102Z"
+}

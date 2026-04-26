@@ -8,6 +8,7 @@
     ],
     "website": "https://plus.a-sit.at/open-source.html",
     "country": "AT",
-    "description": "Austrian e-government and digital trust ecosystem; includes A-SIT Plus open-source wallet components and national ID technology."
+    "description": "Austrian e-government and digital trust ecosystem; includes A-SIT Plus open-source wallet components and national ID technology.",
+    "logo": "https://plus.a-sit.at/assets/images/logos/social-preview.png"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:document-channel",
+    "name": "DOCUMENT CHANNEL",
+    "legalName": "DOCUMENT CHANNEL",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/25",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://monespace.evelop.fr/",
+    "logo": "https://monespace.evelop.fr/apple-icon-57x57.png",
+    "description": "DOCUMENT CHANNEL is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via monespace.evelop.fr."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.352Z"
+}

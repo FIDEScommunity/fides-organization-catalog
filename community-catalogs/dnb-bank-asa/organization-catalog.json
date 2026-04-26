@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dnb-bank-asa",
+    "name": "DNB Bank ASA",
+    "legalName": "DNB Bank ASA",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.dnb.no/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=www.dnb.no&sz=128",
+    "description": "DNB Bank ASA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via dnb.no."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.772Z"
+}

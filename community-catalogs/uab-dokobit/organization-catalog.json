@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:uab-dokobit",
+    "name": "UAB Dokobit",
+    "legalName": "UAB Dokobit",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LT/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.dokobit.com/lt",
+    "logo": "https://www.dokobit.com/assets/images/dokobit/https://www.dokobit.com/wp-content/uploads/2024/07/2x-image-23.png?v=1776845526737",
+    "description": "Kvalifikuotu elektroniniu parašu pasirašyk Europos Sąjungoje juridinę galią turinčius dokumentus. Pradėk dabar nemokamai su Smart-ID, Mobile-ID ar ATK."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.103Z"
+}

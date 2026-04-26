@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dgn-deutsches-gesundheitsnetz-service",
+    "name": "DGN Deutsches Gesundheitsnetz Service",
+    "legalName": "DGN Deutsches Gesundheitsnetz Service GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.dgn-service.de/",
+    "logo": "https://www.dgn.de/wp-content/uploads/2017/05/cropped-favicon-180x180.png",
+    "description": "Willkommen beim Deutschen Gesundheitsnetz (DGN), dem Spezialisten für sichere Vernetzung und Kommunikation im Gesundheitswesen."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.659Z"
+}

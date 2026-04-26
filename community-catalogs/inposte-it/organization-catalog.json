@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:inposte-it",
+    "name": "inPoste.it",
+    "legalName": "inPoste.it S.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/54",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.tnotice.com",
+    "logo": "https://www.tnotice.com/wp-content/uploads/2024/02/tNotice-eIDAS-qualified.jpg",
+    "description": "tNotice, il primo Servizio Elettronico di Recapito Certificato Qualificato in Italia"
+  },
+  "lastUpdated": "2026-04-25T06:26:19.492Z"
+}

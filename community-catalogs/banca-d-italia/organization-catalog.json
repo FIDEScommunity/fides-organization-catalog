@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:banca-d-italia",
+    "name": "Banca d'Italia",
+    "legalName": "Banca d'Italia",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.bancaditalia.it/footer/firmadigitale/index.html?com.dotmarketing.htmlpage.language=1",
+    "logo": "https://www.bancaditalia.it/application/themes/bdi2/img/logoGenericoSocial.png",
+    "description": "Banca d'Italia is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via bancaditalia.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.476Z"
+}

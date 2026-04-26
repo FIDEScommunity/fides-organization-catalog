@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:certeurope",
+    "name": "CertEurope",
+    "legalName": "CertEurope",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.certeurope.fr/",
+    "logo": "https://d3ex0j262zpfzg.cloudfront.net/wp-content/uploads/2023/03/Favicon_Certeurope_96x96.jpg",
+    "description": "Depuis 20 ans CertEurope - Tinexta InfoCert développe des solutions autour de l'Authentification & Signature électronique & Sécurisation."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.345Z"
+}

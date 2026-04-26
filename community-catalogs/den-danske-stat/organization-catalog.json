@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:den-danske-stat",
+    "name": "Den Danske Stat",
+    "legalName": "Den Danske Stat",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DK/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.ca1.gov.dk",
+    "logo": "https://www.ca1.gov.dk/media/ce0lveih/91ba3417-4907-4841-bee3-f80ca0c47fdf.png?height=140&upscale=false",
+    "description": "Den Danske Stat is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Denmark. It provides digital trust services via ca1.gov.dk."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.958Z"
+}

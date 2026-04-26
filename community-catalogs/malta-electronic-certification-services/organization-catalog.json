@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:malta-electronic-certification-services",
+    "name": "Malta Electronic Certification Services",
+    "legalName": "Malta Electronic Certification Services Ltd",
+    "sectors": [
+      "digital"
+    ],
+    "country": "MT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/MT/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://repository.qca.gov.mt",
+    "logo": "http://repository.qca.gov.mt/img/favicon.ico",
+    "description": "Malta Electronic Certification Services is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Malta, providing digital trust services via repository.qca.gov.mt."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.084Z"
+}

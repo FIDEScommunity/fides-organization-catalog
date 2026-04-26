@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:notarchiv-company",
+    "name": "NOTARchiv Company",
+    "legalName": "NOTARchiv Korlátolt Felelősségű Társaság",
+    "sectors": [
+      "digital"
+    ],
+    "country": "HU",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HU/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://notarchiv.hu",
+    "logo": "https://notarchiv.hu/favicon.ico",
+    "description": "NOTARchiv Kft. - archiválás szolgáltatás"
+  },
+  "lastUpdated": "2026-04-25T06:26:18.145Z"
+}

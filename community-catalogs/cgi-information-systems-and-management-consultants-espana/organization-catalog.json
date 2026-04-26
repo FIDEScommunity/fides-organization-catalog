@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cgi-information-systems-and-management-consultants-espana",
+    "name": "CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS ESPAÑA",
+    "legalName": "CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS ESPAÑA SA",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/62",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.cgi.com/spain/es",
+    "logo": "https://www.cgi.com/sites/default/files/consultant-standing-on-office-balcony.jpg",
+    "description": "Aunamos un profundo conocimiento del negocio local combinado con capacidades globales para prestar servicios y soluciones integrales."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.446Z"
+}

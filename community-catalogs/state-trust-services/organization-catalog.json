@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:state-trust-services",
+    "name": "State trust services",
+    "legalName": "Správa státních služeb vytvářejících důvěru",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CZ",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.narodni-ca.gov.cz",
+    "logo": "https://www.google.com/s2/favicons?domain=www.narodni-ca.gov.cz&sz=128",
+    "description": "State trust services is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via narodni-ca.gov.cz."
+  },
+  "lastUpdated": "2026-04-25T06:26:13.721Z"
+}

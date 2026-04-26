@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eika-gruppen",
+    "name": "Eika Gruppen",
+    "legalName": "Eika Gruppen AS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://eika.no/eika-alliansen/customersupport/",
+    "logo": "https://www.eika.no/-/media/fellesbilder/02-Bank-og-Naering/Radgiver_Kvinne_2.jpg",
+    "description": "Eika Gruppen is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via eika.no."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.773Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:docaposte-arkhineo",
+    "name": "Docaposte ARKHINEO",
+    "legalName": "Docaposte ARKHINEO",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/19",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.arkhineo.com",
+    "logo": "https://arkhineo.com/wp-content/uploads/2021/01/MyArkhineo-ordi-tablette-phone.png",
+    "description": "Electronic Archiving with probative valueYou are using document management tools and all your key company documents are digital (invoices, contracts, pay slips, accounting files, etc.). Electronic archiving is no longer an option.Read moreResourcesWe provide you with a variety of resources to have a better understanding of electronic archiving, its environment etc.Download…"
+  },
+  "lastUpdated": "2026-04-25T06:26:17.349Z"
+}

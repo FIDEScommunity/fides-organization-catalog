@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:consiglio-nazionale-del-notariato",
+    "name": "Consiglio Nazionale del Notariato",
+    "legalName": "Consiglio Nazionale del Notariato",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/10",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://ca.notariato.it/Tsp_Information.asp",
+    "logo": "https://ca.notariato.it/system/modules/it.notartel.ca.content.manage/resources/img/logo-consiglio-nazionale.png",
+    "description": "Consiglio Nazionale del Notariato is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ca.notariato.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.482Z"
+}

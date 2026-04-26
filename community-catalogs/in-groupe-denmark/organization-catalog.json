@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:in-groupe-denmark",
+    "name": "IN Groupe Denmark",
+    "legalName": "IN Groupe Denmark A/S",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DK/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.ingroupe.com/",
+    "logo": "https://ingroupe.com/app/uploads/2022/08/digital-odyssey-4-5-hrz.jpg",
+    "description": "A global identity and secure digital services leader, IN Groupe guarantees that nations, citizens, and businesses can embrace digital transformation with confidence."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.959Z"
+}

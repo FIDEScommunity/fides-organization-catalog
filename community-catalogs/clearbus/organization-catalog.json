@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:clearbus",
+    "name": "CLEARBUS",
+    "legalName": "CLEARBUS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/24",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.clearbus.fr",
+    "logo": "https://www.clearbus.fr/Content/images/site/logo-mini.png",
+    "description": "CLEARBUS is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via clearbus.fr."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.352Z"
+}

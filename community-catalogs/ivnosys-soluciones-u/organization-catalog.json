@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ivnosys-soluciones-u",
+    "name": "IVNOSYS SOLUCIONES U.",
+    "legalName": "IVNOSYS SOLUCIONES S.L.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/30",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://ivnosys.com",
+    "logo": "https://ivnosys.com/wp-content/uploads/rosco_web.jpg",
+    "description": "Ivnosys, Signaturit y Universign unen fuerzas para crear el líder europeo en servicios de identidad digital, firma electrónica y gestión de transacciones"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.437Z"
+}

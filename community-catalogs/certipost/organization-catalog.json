@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:certipost",
+    "name": "Certipost",
+    "legalName": "Certipost n.v./s.a.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.certipost.com/index.php?lang=en",
+    "logo": "https://www.certipost.org/wp-content/uploads/2015/06/certipost.jpg",
+    "description": "Certipost is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Belgium. It provides digital trust services via certipost.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.490Z"
+}

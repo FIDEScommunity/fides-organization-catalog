@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:the-czech-post-s-p",
+    "name": "The Czech Post, s.p.",
+    "legalName": "Česká pošta, s.p.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CZ",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.postsignum.cz/index.php?lang=en",
+    "logo": "http://www.postsignum.cz/images/favicon.ico",
+    "description": "www.cpost.cz - web �esk� po�ty"
+  },
+  "lastUpdated": "2026-04-25T06:26:13.717Z"
+}

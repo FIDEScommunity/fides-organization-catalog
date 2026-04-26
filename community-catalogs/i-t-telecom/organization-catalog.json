@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:i-t-telecom",
+    "name": "I.T. Telecom",
+    "legalName": "I.T. Telecom S.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/31",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.ittelecom.it/default.aspx?idPage=699",
+    "logo": "https://www.google.com/s2/favicons?domain=ittelecom.it&sz=128",
+    "description": "I.T. Telecom is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ittelecom.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.487Z"
+}

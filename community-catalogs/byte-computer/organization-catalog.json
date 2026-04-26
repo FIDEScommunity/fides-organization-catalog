@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:byte-computer",
+    "name": "BYTE Computer",
+    "legalName": "BYTE Computer S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "EL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/EL/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.byte.gr/trust/digital-signatures-en/",
+    "logo": "https://www.byte.gr/wp-content/themes/bytetheme/images/logo-text.png",
+    "description": "BYTE Computer is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Greece. It provides digital trust services via byte.gr."
+  },
+  "lastUpdated": "2026-04-25T06:26:15.785Z"
+}

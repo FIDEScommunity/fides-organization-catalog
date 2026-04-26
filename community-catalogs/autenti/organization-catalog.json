@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:autenti",
+    "name": "Autenti",
+    "legalName": "Autenti Sp. z o.o.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PL/tsp/13",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://autenti.com/en/",
+    "logo": "https://autenti.com/hubfs/autenti_logos/favicon.ico",
+    "description": "Autenti is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via autenti.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.172Z"
+}

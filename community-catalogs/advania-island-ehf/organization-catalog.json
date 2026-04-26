@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:advania-island-ehf",
+    "name": "Advania Ísland ehf.",
+    "legalName": "Advania Ísland ehf.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IS",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IS/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.advania.is/",
+    "logo": "https://www.advania.is/library?itemid=673b5a67-b8f4-43f2-b7d3-9905d6361cca",
+    "description": "Við leggjum okkur fram við að gera upplýsingatækni mannlega. Við hjálpum viðskiptavinum við að skapa virði með snjallri notkun tækninnar."
+  },
+  "lastUpdated": "2026-04-25T06:26:18.856Z"
+}

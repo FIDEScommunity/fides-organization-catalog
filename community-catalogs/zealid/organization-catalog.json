@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zealid",
+    "name": "ZealiD",
+    "legalName": "ZealiD AB",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SE/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.zealid.com/en/contact",
+    "logo": "https://www.zealid.com/hubfs/foxit%20and%20zealid%20partnership%20%281%29.jpg",
+    "description": "ZealiD is a Swedish digital identity and trust services provider listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.266Z"
+}

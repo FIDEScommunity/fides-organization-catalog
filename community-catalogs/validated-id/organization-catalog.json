@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:validated-id",
+    "name": "VALIDATED ID",
+    "legalName": "VALIDATED ID, S.L",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/37",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://validatedid.com",
+    "logo": "https://cdn.prod.website-files.com/5ec68f0bd0db4b52be8cf1d5/611cdede040214a673afec55_h_home_en.png",
+    "description": "Provide trust to your electronic signatures and digital identity. Simple and secure solutions: electronic signatures, digital identity and electronic invoices."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.439Z"
+}

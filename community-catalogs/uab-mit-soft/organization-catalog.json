@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:uab-mit-soft",
+    "name": "UAB Mit-Soft",
+    "legalName": "UAB Mit-Soft",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LT/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.mitsoft.lt/lt",
+    "logo": "https://www.mitsoft.lt/favicon.ico?v=0",
+    "description": "UAB Mit-Soft is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania. It provides digital trust services via mitsoft.lt."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.103Z"
+}

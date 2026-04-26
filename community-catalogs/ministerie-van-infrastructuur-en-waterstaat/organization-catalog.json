@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ministerie-van-infrastructuur-en-waterstaat",
+    "name": "Ministerie van Infrastructuur en Waterstaat",
+    "legalName": "Ministerie van Infrastructuur en Waterstaat",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://bct.tsp.minienw.nl/index_en.html",
+    "logo": "https://www.google.com/s2/favicons?domain=bct.tsp.minienw.nl&sz=128",
+    "description": "Ministerie van Infrastructuur en Waterstaat is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via bct.tsp.minienw.nl."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.434Z"
+}

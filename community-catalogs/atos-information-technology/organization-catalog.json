@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:atos-information-technology",
+    "name": "Atos Information Technology",
+    "legalName": "Atos Information Technology GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/24",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://pki.atos.net/trustcenter/de/pki-services/vda",
+    "logo": "https://pki.atos.net/trustcenter/de/pki-services/favicon.ico",
+    "description": "Atos Information Technology is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via pki.atos.net."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.661Z"
+}

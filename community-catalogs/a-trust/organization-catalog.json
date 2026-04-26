@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:a-trust",
+    "name": "A-Trust",
+    "legalName": "A-Trust GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "AT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/AT/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.a-trust.at/docs/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=www.a-trust.at&sz=128",
+    "description": "A-Trust is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Austria. It provides digital trust services via a-trust.at."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.158Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:setcce-d-o-o",
+    "name": "SETCCE D.O.O.",
+    "legalName": "SETCCE D.O.O.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SI",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.setcce.com/",
+    "logo": "https://www.setcce.com/storage/app/uploads/public/5ba/c65/b97/5bac65b97b9e0009744822.png",
+    "description": "SETCCE is a Slovenian digital trust services provider listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.586Z"
+}

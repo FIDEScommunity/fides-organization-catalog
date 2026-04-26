@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:rekono-d-o-o",
+    "name": "Rekono d.o.o.",
+    "legalName": "Rekono d.o.o.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SI",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.rekono.si/sl/izkaznica-podjetja/",
+    "logo": "https://www.rekono.si/wp-content/uploads/2025/01/rekono-10.jpg",
+    "description": "Rekono is a Slovenian provider of qualified digital trust services and is listed as a QTSP on the EU Trust List."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.586Z"
+}

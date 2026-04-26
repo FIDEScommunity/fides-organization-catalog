@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:darva",
+    "name": "DARVA",
+    "legalName": "DARVA",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/18",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.darva.com/",
+    "logo": "https://www.darva.com/wp-content/uploads/2025/12/v2026.jpg",
+    "description": "L'éditeur DARVA développe des plateformes de services reliant les assureurs et leurs partenaires dans les domaines de l'automobile et de l'habitation."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.349Z"
+}

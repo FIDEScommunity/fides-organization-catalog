@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:firmaprofesional",
+    "name": "Firmaprofesional,",
+    "legalName": "Firmaprofesional, S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/17",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.firmaprofesional.com",
+    "logo": "https://firmaprofesional.com/wp-content/uploads/2024/01/cropped-favicon-firma-3-rounded-1-180x180.png",
+    "description": "Firmaprofesional is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via firmaprofesional.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.434Z"
+}

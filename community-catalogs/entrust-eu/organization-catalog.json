@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:entrust-eu",
+    "name": "ENTRUST EU",
+    "legalName": "Entrust Datacard Europe S.L.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/38",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.entrust.com",
+    "logo": "https://www.entrust.com/sites/default/files/2024-05/og-brand-img-1200x627.jpg",
+    "description": "Entrust is a trusted global leader in identity, payments, and data security solutions. Learn more about our cutting-edge solutions."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.439Z"
+}

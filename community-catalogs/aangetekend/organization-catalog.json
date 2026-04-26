@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aangetekend",
+    "name": "Aangetekend",
+    "legalName": "Aangetekend B.V.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/12",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.aangetekendmailen.nl",
+    "logo": "https://www.aangetekendmailen.nl/wp-content/uploads/2024/11/Overleg-Satjeet-Daan-4.webp",
+    "description": "Aangetekend is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via aangetekendmailen.nl."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.435Z"
+}

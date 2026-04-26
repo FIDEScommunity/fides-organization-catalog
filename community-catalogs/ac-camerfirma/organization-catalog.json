@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ac-camerfirma",
+    "name": "AC Camerfirma,",
+    "legalName": "AC Camerfirma, S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/11",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.camerfirma.com",
+    "logo": "https://www.camerfirma.com/wp-content/uploads/revslider/mainsite-1/Identify_your_Customer_2-1.jpg",
+    "description": "Camerfirma es tu mejor opción, si estás buscando un socio de confianza, que ayude a tu organización a digitalizar los procesos comerciales"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.432Z"
+}

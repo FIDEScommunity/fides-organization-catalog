@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:signicat",
+    "name": "Signicat",
+    "legalName": "Signicat AS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/14",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.signicat.com/",
+    "logo": "https://signicat.imgix.net/blog/homepage-featured-signicat.png?auto=format&crop=focalpoint&domain=signicat.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=630&ixlib=php-3.3.1&q=82&usm=20&w=1200&s=8a19581e3ec3eb39eb2d37431ebe788e",
+    "description": "Signicat is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via signicat.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.774Z"
+}

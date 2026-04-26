@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:krajowa-izba-rozliczeniowa",
+    "name": "Krajowa Izba Rozliczeniowa",
+    "legalName": "Krajowa Izba Rozliczeniowa S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PL/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.elektronicznypodpis.pl/en/",
+    "logo": "http://www.elektronicznypodpis.pl/themes/eshop/images/favicon.ico",
+    "description": "Krajowa Izba Rozliczeniowa is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via elektronicznypodpis.pl."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.170Z"
+}

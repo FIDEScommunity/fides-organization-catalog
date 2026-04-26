@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ar24",
+    "name": "AR24",
+    "legalName": "AR24",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/17",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.ar24.fr",
+    "logo": "https://www.ar24.fr/wp-content/uploads/2023/06/favico.png",
+    "description": "AR24 est un service d’envoi de lettre recommandée électronique (LRE) en ligne : conforme, rapide, sécurisé et économique !"
+  },
+  "lastUpdated": "2026-04-25T06:26:17.349Z"
+}

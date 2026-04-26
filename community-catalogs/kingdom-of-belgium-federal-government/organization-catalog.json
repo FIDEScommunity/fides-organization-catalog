@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:kingdom-of-belgium-federal-government",
+    "name": "Kingdom of Belgium - Federal Government",
+    "legalName": "Kingdom of Belgium - Federal Government",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/11",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://eidpki.belgium.be",
+    "logo": "https://eidpki.belgium.be/images/bosa.jpg",
+    "description": "Web site created using create-react-app"
+  },
+  "lastUpdated": "2026-04-25T06:26:12.493Z"
+}

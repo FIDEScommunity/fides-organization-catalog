@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zagrebacka-banka-dionicko-drustvo",
+    "name": "Zagrebačka banka dioničko društvo",
+    "legalName": "Zagrebačka banka dioničko društvo",
+    "sectors": [
+      "digital"
+    ],
+    "country": "HR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HR/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.zaba.hr/cps",
+    "logo": "http://www.zaba.hr/home/zaba/static/img/favicon/apple-touch-icon-57x57.png",
+    "description": "Zagrebačka banka dioničko društvo is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Croatia. It provides digital trust services via zaba.hr."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.703Z"
+}

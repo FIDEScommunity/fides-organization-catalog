@@ -8,6 +8,7 @@
     ],
     "website": "https://www.gov.pl/mobywatel",
     "country": "PL",
-    "description": "Polish government digital services; mObywatel is the national mobile app for official documents, notifications, and e-government features."
+    "description": "Polish government digital services; mObywatel is the national mobile app for official documents, notifications, and e-government features.",
+    "logo": "https://www.gov.pl/img/fb_share_ogp.jpg"
   }
 }

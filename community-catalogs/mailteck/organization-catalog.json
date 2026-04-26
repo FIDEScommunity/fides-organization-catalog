@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mailteck",
+    "name": "MAILTECK,",
+    "legalName": "MAILTECK, S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/45",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://comunicaciones-legales.mailteck.com/",
+    "logo": "https://comunicaciones-legales.mailteck.com/favicon.png",
+    "description": "Servicios de certificación de las comunicaciones electrónicas, postales y electrónicas, así como de firma electrónica, consentimientos y publicaciones web."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.441Z"
+}

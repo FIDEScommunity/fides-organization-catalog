@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:nitro-software-belgium",
+    "name": "Nitro Software Belgium",
+    "legalName": "Nitro Software Belgium",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/13",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.connective.eu",
+    "logo": "https://www.gonitro.com/hubfs/EN%20-%20Featured%20Images%20-%20Priority%20Pages%20-%20Home%20-%201200x628.png",
+    "description": "Simplify how your business works. Streamline document workflows, boost productivity, and ensure data security with Nitro"
+  },
+  "lastUpdated": "2026-04-25T06:26:12.494Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:docusign-france",
+    "name": "Docusign France",
+    "legalName": "Docusign France",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/10",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.docusign.fr",
+    "logo": "https://images.ctfassets.net/0jnmtsdzg6p5/4GSPcvcpIZpsXsZ7F0EXTW/5f292358a716a691d7c0f88d1ce5034f/ds-iam-og-image-fr-fr.png",
+    "description": "Créez, formalisez et gérez vos accords sur une plateforme unique grâce à Docusign IAM. Signez électroniquement gratuitement."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.347Z"
+}

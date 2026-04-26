@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:edatalia-data-solutions",
+    "name": "EDATALIA DATA SOLUTIONS,",
+    "legalName": "EDATALIA DATA SOLUTIONS, S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/66",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://edatalia.com/",
+    "logo": "https://edatalia.com/wp-content/uploads/2026/04/cropped-favicon-180x180.png",
+    "description": "edatalia es líder en soluciones de firma digital para empresas y administraciones. Firma manuscrita, firma remota, certificados digitales y automatización"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.447Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:qtsp-it-33-namirial",
+    "name": "Namirial",
+    "legalName": "Namirial S.p.A./02046570426",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/33",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.firmacerta.it/en/TSPinformation",
+    "logo": "https://www.google.com/s2/favicons?domain=www.firmacerta.it&sz=128",
+    "description": "Namirial is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via firmacerta.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.487Z"
+}

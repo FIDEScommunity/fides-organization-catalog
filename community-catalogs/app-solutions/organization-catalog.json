@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:app-solutions",
+    "name": "APP SOLUTIONS",
+    "legalName": "APP SOLUTIONS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/36",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.vaultinum.com",
+    "logo": "https://vaultinum.com/wp-content/uploads/2025/06/Logo-Google.webp",
+    "description": "Vaultinum is an independent third party specialised in the protection and audit of digital assets. We provide tech and vendor due diligence, software escrow and IP protection."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.356Z"
+}

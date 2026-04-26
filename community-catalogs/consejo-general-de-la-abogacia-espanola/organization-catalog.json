@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:consejo-general-de-la-abogacia-espanola",
+    "name": "Consejo General de la Abogacía Española",
+    "legalName": "Consejo General de la Abogacía Española",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/7",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.acabogacia.org",
+    "logo": "https://www.google.com/s2/favicons?domain=www.acabogacia.org&sz=128",
+    "description": "Consejo General de la Abogacía Española is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via acabogacia.org."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.431Z"
+}

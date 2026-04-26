@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:notartel",
+    "name": "Notartel",
+    "legalName": "Notartel S.p.A",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/52",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://ca.notartel.it/",
+    "logo": "https://ca.notartel.it/wp-content/uploads/2024/10/favicon.png",
+    "description": "Notartel is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ca.notartel.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.491Z"
+}

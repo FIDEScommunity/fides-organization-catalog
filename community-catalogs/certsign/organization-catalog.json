@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:certsign",
+    "name": "CERTSIGN",
+    "legalName": "CERTSIGN S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "RO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/RO/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.certsign.ro/",
+    "logo": "https://www.certsign.ro/wp-content/uploads/2021/01/favicion_certsign.svg",
+    "description": "CERTSIGN is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via certsign.ro."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.972Z"
+}

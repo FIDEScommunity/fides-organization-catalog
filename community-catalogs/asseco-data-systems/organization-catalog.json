@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:asseco-data-systems",
+    "name": "Asseco Data Systems",
+    "legalName": "Asseco Data Systems S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PL/tsp/10",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.certum.pl",
+    "logo": "https://www.google.com/s2/favicons?domain=www.certum.pl&sz=128",
+    "description": "Asseco Data Systems is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via certum.pl."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.171Z"
+}

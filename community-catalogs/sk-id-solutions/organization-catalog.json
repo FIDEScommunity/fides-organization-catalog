@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sk-id-solutions",
+    "name": "SK ID Solutions",
+    "legalName": "SK ID Solutions AS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "EE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/EE/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.sk.ee/en",
+    "logo": "https://www.skidsolutions.eu/wp-content/uploads/2023/08/favicon-3.png",
+    "description": "At SK ID Solutions, we specialize in providing secure and efficient e-identity and digital signing solutions to help businesses streamline their operations and build trust with their customers."
+  },
+  "lastUpdated": "2026-04-25T06:26:15.349Z"
+}

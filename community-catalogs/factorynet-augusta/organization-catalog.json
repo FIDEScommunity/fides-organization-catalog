@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:factorynet-augusta",
+    "name": "FACTORYNET AUGUSTA,",
+    "legalName": "FACTORYNET AUGUSTA, S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/56",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.factorymail.es",
+    "logo": "https://factorymail.es/redes_factorymail.jpg",
+    "description": "Sistema de comunicaciones fehacientes de servicios de confianza, certificando: el env�o, la recepci�n y la lectura, as� como la integridad del contenido de la comunicaci�n."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.444Z"
+}

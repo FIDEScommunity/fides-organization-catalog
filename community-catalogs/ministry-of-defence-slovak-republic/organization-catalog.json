@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ministry-of-defence-slovak-republic",
+    "name": "Ministry of Defence Slovak Republic",
+    "legalName": "Ministerstvo obrany Slovenskej republiky",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.pki.mil.sk",
+    "logo": "https://www.google.com/s2/favicons?domain=pki.mil.sk&sz=128",
+    "description": "The Ministry of Defence of the Slovak Republic is listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+  },
+  "lastUpdated": "2026-04-25T06:26:24.602Z"
+}

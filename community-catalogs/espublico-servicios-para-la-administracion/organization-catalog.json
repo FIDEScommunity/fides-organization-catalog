@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:espublico-servicios-para-la-administracion",
+    "name": "ESPUBLICO SERVICIOS PARA LA ADMINISTRACIÓN",
+    "legalName": "ESPUBLICO SERVICIOS PARA LA ADMINISTRACIÓN S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/28",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.esfirma.com",
+    "logo": "http://www.esfirma.com/img/esfirma.ico",
+    "description": "esFirma · Autoridad de certificación"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.437Z"
+}

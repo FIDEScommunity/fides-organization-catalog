@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:netcom-group",
+    "name": "NETCOM GROUP",
+    "legalName": "NETCOM GROUP SAS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/32",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.netcom-group.fr",
+    "logo": "https://www.netcom-group.fr/netcom-hero-new.jpg",
+    "description": "Solutions télécom B2B: forfait mobile pro, fibre pro et téléphonie fixe pro. Offres pour TPE/PME, support 7j/7, déploiement rapide."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.355Z"
+}

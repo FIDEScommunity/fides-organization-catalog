@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:netcetera-software-services",
+    "name": "Netcetera Software Services",
+    "legalName": "Netcetera Software Services GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/23",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.netcetera.com",
+    "logo": "https://www.netcetera.com/dam/jcr:9484b3f6-5263-400c-9095-9057ffe40031/Masthead_Issuing%20Products_Overview.webp",
+    "description": "Unlock growth with our software solutions tailored to your business, from seamless banking & payment experiences to sustainable mobility & digital healthcare"
+  },
+  "lastUpdated": "2026-04-25T06:26:14.661Z"
+}

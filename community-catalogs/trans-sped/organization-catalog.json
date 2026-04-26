@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trans-sped",
+    "name": "Trans Sped",
+    "legalName": "Trans Sped S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "RO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/RO/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.transsped.ro/Index_EN.aspx",
+    "logo": "https://www.google.com/s2/favicons?domain=transsped.ro&sz=128",
+    "description": "Trans Sped is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via transsped.ro."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.971Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:d-trust",
+    "name": "D-Trust",
+    "legalName": "D-Trust GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.d-trust.net",
+    "logo": "https://www.d-trust.net/themes/custom/bdr_bootstrap5_dtrust/assets/img/touch-icons/dtrust/dtrust_desktopicon_120px.png",
+    "description": "D-Trust GmbH, ein Unternehmen der Bundesdruckerei-Gruppe, ist ein zertifizierter Vertrauensdiensteanbieter. Das Unternehmen bietet Produkte nach eIDAS-Standard an."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.658Z"
+}

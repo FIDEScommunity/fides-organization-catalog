@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:infocamere-sc-p-a",
+    "name": "Infocamere SC.p.A.",
+    "legalName": "InfocamereSC.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/32",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.agid.gov.it/qcsp-ceased",
+    "logo": "http://www.agid.gov.it/themes/custom/agid/icons/apple-touch-icon.png",
+    "description": "Infocamere SC.p.A is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.487Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:certigna",
+    "name": "Certigna",
+    "legalName": "Certigna",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.certigna.fr",
+    "logo": "https://www.certigna.com/wp-content/themes/limpide/assets/img/favicon/favicon-32x32.png?v=1",
+    "description": "Certigna is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via certigna.fr."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.347Z"
+}

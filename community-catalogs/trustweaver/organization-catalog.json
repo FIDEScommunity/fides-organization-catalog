@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trustweaver",
+    "name": "TrustWeaver",
+    "legalName": "TrustWeaver AB",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SE/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.trustweaver.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=trustweaver.com&sz=128",
+    "description": "TrustWeaver is a Swedish provider of secure digital compliance and trust services, listed as a QTSP in the EU Trust List."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.265Z"
+}

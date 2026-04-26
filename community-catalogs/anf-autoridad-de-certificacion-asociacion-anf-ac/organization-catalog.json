@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:anf-autoridad-de-certificacion-asociacion-anf-ac",
+    "name": "ANF AUTORIDAD DE CERTIFICACIÓN ASOCIACIÓN ANF AC",
+    "legalName": "ANF AUTORIDAD DE CERTIFICACIÓN ASOCIACIÓN ANF AC",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.anf.es",
+    "logo": "https://anf.es/wp-content/uploads/2025/09/favicon-anf.png",
+    "description": "ANF AC impulsa tu seguridad digital: certificados electrónicos, firma electrónica, Servicios Cualificados de Confianza, y soluciones tecnológicas con validez legal en toda la UE."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.431Z"
+}

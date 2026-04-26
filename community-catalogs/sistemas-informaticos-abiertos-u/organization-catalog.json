@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sistemas-informaticos-abiertos-u",
+    "name": "SISTEMAS INFORMATICOS ABIERTOS U.",
+    "legalName": "SISTEMAS INFORMATICOS ABIERTOS S.A.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/24",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://psc.sia.es",
+    "logo": "https://psc.sia.es/assets/img/favicon.ico",
+    "description": "Prestador Cualificado de Servicios de Confianza (QTSP) según eIDAS. Certificados cualificados, sello de tiempo y entrega electrónica certificada."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.435Z"
+}

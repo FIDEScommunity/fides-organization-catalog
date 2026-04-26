@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:customer-communications-tecknalia",
+    "name": "CUSTOMER COMMUNICATIONS TECKNALIA,",
+    "legalName": "CUSTOMER COMMUNICATIONS TECKNALIA, S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/46",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.customercomms.com",
+    "logo": "https://www.customercomms.com/img/customercomms.jpg",
+    "description": "Comunicaciones y transacciones multicanal con plena validez legal probatoria"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.442Z"
+}

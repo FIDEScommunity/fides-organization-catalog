@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:commfides-norge",
+    "name": "Commfides Norge",
+    "legalName": "Commfides Norge AS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.commfides.com/en/",
+    "logo": "https://www.commfides.com/wp-content/uploads/2023/05/Commfides_logo_white-_background_1200x627.png",
+    "description": "Commfides Norge is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via commfides.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.771Z"
+}

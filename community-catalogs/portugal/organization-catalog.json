@@ -8,6 +8,7 @@
     ],
     "website": "https://eportugal.gov.pt",
     "country": "PT",
-    "description": "Portuguese government e-government portal (ePortugal) aggregating digital public services for citizens and businesses."
+    "description": "Portuguese government e-government portal (ePortugal) aggregating digital public services for citizens and businesses.",
+    "logo": "https://eportugal.gov.pt/assets/images/apple-icon-180x180.png"
   }
 }

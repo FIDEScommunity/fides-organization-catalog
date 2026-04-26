@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:chambersign-france",
+    "name": "ChamberSign France",
+    "legalName": "ChamberSign France",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.chambersign.fr",
+    "logo": "https://www.google.com/s2/favicons?domain=www.chambersign.fr&sz=128",
+    "description": "ChamberSign France, autorité de certification électronique garantissant l’identité de l’entreprise, de l’entrepreneur et de ses collaborateurs."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.346Z"
+}

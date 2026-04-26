@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tecalis-sotware",
+    "name": "TECALIS SOTWARE",
+    "legalName": "TECALIS SOTWARE S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/59",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.tecalis.com/es",
+    "logo": "https://www.tecalis.com/static/7878e3164d8f1b9f3356f4b9c89d9d02/preview_home_ES_47072695b5.gif",
+    "description": "Tecalis ofrece soluciones digitales para el cierre y gestión de clientes de forma segura. Desde el proceso comercial hasta el onboarding y activación."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.445Z"
+}

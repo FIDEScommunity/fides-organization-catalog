@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:actalis",
+    "name": "Actalis",
+    "legalName": "Actalis S.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://portal.actalis.it/Info/qcsp-english",
+    "logo": "https://www.actalis.com/img/logo-1725460433.svg",
+    "description": "Actalis is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via portal.actalis.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.480Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bank-of-slovenia",
+    "name": "Bank of Slovenia",
+    "legalName": "Banka Slovenije",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SI",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/10",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.bsi.si",
+    "logo": "https://www.bsi.si/images/logo-header.svg",
+    "description": "Central bank of Slovenia, listed as a Qualified Trust Service Provider (QTSP) and active in secure digital trust services."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.586Z"
+}

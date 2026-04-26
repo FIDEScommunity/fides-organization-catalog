@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cybersecurity-competence-and-certification-centre",
+    "name": "Cybersecurity Competence and Certification Centre",
+    "legalName": "Kompetenčné a certifikačné centrum kybernetickej bezpečnosti",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://cybercompetence.sk/",
+    "logo": "https://cybercompetence.sk/wp-content/uploads/2021/01/logo.png",
+    "description": "Slovak public trust service organization listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+  },
+  "lastUpdated": "2026-04-25T06:26:24.599Z"
+}

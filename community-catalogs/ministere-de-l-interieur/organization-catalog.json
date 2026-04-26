@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ministere-de-l-interieur",
+    "name": "Ministère de l'Intérieur",
+    "legalName": "Ministère de l'Intérieur",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/20",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.interieur.gouv.fr/IGC/",
+    "logo": "http://www.interieur.gouv.fr/extension/ow_miomcti_designs/design/miomcti_public/images/default_share.jpg",
+    "description": "Le site officiel du Ministère de l"
+  },
+  "lastUpdated": "2026-04-25T06:26:17.350Z"
+}

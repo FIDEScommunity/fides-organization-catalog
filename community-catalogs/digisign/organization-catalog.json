@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digisign",
+    "name": "DigiSign",
+    "legalName": "DigiSign S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "RO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/RO/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.digisign.ro/home/?lng=2",
+    "logo": "https://www.google.com/s2/favicons?domain=digisign.ro&sz=128",
+    "description": "DigiSign is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via digisign.ro."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.971Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zetes",
+    "name": "Zetes",
+    "legalName": "Zetes S.A./N.V.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://tsp.zetes.com",
+    "logo": "https://static.tsp.zetes.com/favicon.ico",
+    "description": "Zetes SA to provide certificate services and trust services for governments, the financial sector and private organisations."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.491Z"
+}

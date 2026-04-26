@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tessi-documents-services",
+    "name": "TESSI DOCUMENTS SERVICES",
+    "legalName": "TESSI DOCUMENTS SERVICES",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/22",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.tessi.eu/en",
+    "logo": "https://www.tessi.eu/wp-content/themes/limpide/assets/img/favicon/favicon_Tessi.svg",
+    "description": "Homepage Tessi Main EN"
+  },
+  "lastUpdated": "2026-04-25T06:26:17.351Z"
+}

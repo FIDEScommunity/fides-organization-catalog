@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:entaksi-solutions-irish-branch",
+    "name": "Entaksi Solutions Irish Branch",
+    "legalName": "Entaksi Solutions SpA Irish Branch",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IE/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.entaksi.eu",
+    "logo": "https://www.entaksi.eu/wp-content/uploads/2025/10/logo_eplus_small-1.png",
+    "description": "Soluzioni digitali per PA e aziende: firma elettronica, conservazione a norma e dematerializzazione documentale con Entaksi Solution S.p.A."
+  },
+  "lastUpdated": "2026-04-25T06:26:18.540Z"
+}

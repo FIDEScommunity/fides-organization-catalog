@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eviden-germany",
+    "name": "Eviden Germany",
+    "legalName": "Eviden Germany GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/28",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://pki.eviden.com/trustcenter/de/pki-services/vda",
+    "logo": "https://pki.eviden.com/trustcenter/assets/img/logo_eviden_orange-256w.png",
+    "description": "Eviden Germany is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via pki.eviden.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.663Z"
+}

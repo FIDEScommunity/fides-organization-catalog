@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:netlock-informatics-and-network-privacy-services-company",
+    "name": "NETLOCK Informatics and Network Privacy services Company",
+    "legalName": "NETLOCK Informatikai és Hálózatbiztonsági Szolgáltató Korlátolt Felelősségű Társaság",
+    "sectors": [
+      "digital"
+    ],
+    "country": "HU",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HU/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://netlock.hu",
+    "logo": "https://netlock.hu/app/uploads/2024/12/android-chrome-512x512-1-300x300.png",
+    "description": "NETLOCK - Megoldások a digitális mindennapokhoz - Digitalizálja üzleti papírügyeit, joghitelesen! - Segítünk a digitális evolúcióban!"
+  },
+  "lastUpdated": "2026-04-25T06:26:18.144Z"
+}

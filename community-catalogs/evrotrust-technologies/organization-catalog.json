@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:evrotrust-technologies",
+    "name": "Evrotrust Technologies",
+    "legalName": "Евротръст Технолоджис АД",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BG",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BG/tsp/7",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.evrotrust.com",
+    "logo": "https://evrotrust.com/wp-content/uploads/2024/09/site-icon.jpg",
+    "description": "Empower your business with Evrotrust and our eIDAS-compliant qualified trust services. Identity verification, eSign, EU-wide coverage & more!"
+  },
+  "lastUpdated": "2026-04-25T06:26:12.918Z"
+}

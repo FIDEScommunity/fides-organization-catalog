@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:federal-chamber-of-notaries",
+    "name": "Federal Chamber of Notaries",
+    "legalName": "Bundesnotarkammer",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://zertifizierungsstelle.bnotk.de/hilfe",
+    "logo": "https://zertifizierungsstelle.bnotk.de/_assets/d3916a3a82e5514d339ea4a0ddeb1725/Img/Favicons/apple-icon-57x57.png",
+    "description": "Federal Chamber of Notaries is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via zertifizierungsstelle.bnotk.de."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.657Z"
+}

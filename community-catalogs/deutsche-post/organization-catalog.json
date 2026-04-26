@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:deutsche-post",
+    "name": "Deutsche Post",
+    "legalName": "Deutsche Post AG",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/22",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.deutschepost.de/de/p/postident/e-signing.html",
+    "logo": "https://www.deutschepost.de/.resources/dpag/webresources/assets/img/logo/og-image-backup.png",
+    "description": "Die digitale Unterschrift für Online-Verträge: mit POSTIDENT E-Signing können Ihre Kunden rechtssicher Verträge digital abschließen – anerkannt nach eIDAS."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.661Z"
+}

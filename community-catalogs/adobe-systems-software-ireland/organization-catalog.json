@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:adobe-systems-software-ireland",
+    "name": "Adobe Systems Software Ireland",
+    "legalName": "Adobe Systems Software Ireland Ltd.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IE/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.adobe.com",
+    "logo": "https://www.adobe.com/homepage/assets/product-icons/jpg/default.jpg?width=1200&format=pjpg&optimize=medium",
+    "description": "Adobe is changing the world through digital experiences. We help our customers create, deliver and optimize content and applications."
+  },
+  "lastUpdated": "2026-04-25T06:26:18.537Z"
+}

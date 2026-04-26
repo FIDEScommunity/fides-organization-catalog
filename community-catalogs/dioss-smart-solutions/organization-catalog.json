@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dioss-smart-solutions",
+    "name": "Dioss Smart Solutions",
+    "legalName": "Dioss Smart Solutions",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/14",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://smartsolutions.dioss.com/en/",
+    "logo": "http://smartsolutions.dioss.com/media/images/Dioss_Smart_Solutions_-_BlackTransparent.original.png",
+    "description": "Discover our solutions for your company! Software integration, digital signing, identity solutions, smart cards and integration solutions - DIOSS Smart Solutions"
+  },
+  "lastUpdated": "2026-04-25T06:26:12.494Z"
+}

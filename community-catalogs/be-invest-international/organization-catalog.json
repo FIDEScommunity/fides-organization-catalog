@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:be-invest-international",
+    "name": "BE INVEST International",
+    "legalName": "BE INVEST International S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LU",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LU/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.be-ys.com/en/",
+    "logo": "https://www.be-ys.com/favicon.png",
+    "description": "BE INVEST International is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Luxembourg, providing digital trust services via be-ys.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.464Z"
+}

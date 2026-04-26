@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:brainit-sk-s-r-o",
+    "name": "brainit.sk, s. r. o.",
+    "legalName": "brainit.sk, s. r. o.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://brainit.sk/en/home/",
+    "logo": "https://brainit.com/wp-content/uploads/BIT_horizontal_zlto-biele.png",
+    "description": "Slovak trust service provider listed as a Qualified Trust Service Provider (QTSP) in the EU eIDAS Trust List."
+  },
+  "lastUpdated": "2026-04-25T06:26:24.604Z"
+}

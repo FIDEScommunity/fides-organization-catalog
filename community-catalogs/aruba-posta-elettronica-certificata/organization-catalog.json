@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aruba-posta-elettronica-certificata",
+    "name": "Aruba Posta Elettronica Certificata",
+    "legalName": "Aruba Posta Elettronica Certificata S.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.pec.it/en/information.html",
+    "logo": "https://www.pec.it/images/content/lp-eng/logo.aspx",
+    "description": "Aruba Posta Elettronica Certificata is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via pec.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.480Z"
+}

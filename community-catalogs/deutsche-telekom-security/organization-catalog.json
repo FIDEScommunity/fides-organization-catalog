@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:deutsche-telekom-security",
+    "name": "Deutsche Telekom Security",
+    "legalName": "Deutsche Telekom Security GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/27",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.telesec.de/",
+    "logo": "https://www.google.com/s2/favicons?domain=www.telesec.de&sz=128",
+    "description": "Deutsche Telekom Security is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via telesec.de."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.662Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ead-trust-european-agency-of-digital-trust",
+    "name": "EAD TRUST European Agency of Digital Trust,",
+    "legalName": "EAD TRUST European Agency of Digital Trust, S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/40",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.eadtrust.eu/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=www.eadtrust.eu&sz=128",
+    "description": "Your Qualified Trust Service ProviderWe provide a benchmark legal infrastructure for your digital innovation and transformation processesWho we areWe are a Qualified Trust Service Provider regulated under Regulation (EU) No 910/2014 of the European Parliament and of the Council (eIDAS Regulation).&nbsp;We are on the official list of Trust Service Providers of the Ministry for…"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.440Z"
+}

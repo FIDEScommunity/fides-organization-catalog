@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:wise-security-global",
+    "name": "WISE SECURITY GLOBAL",
+    "legalName": "WISE SECURITY GLOBAL S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/53",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://wsg127.com",
+    "logo": "https://cdn.vargroup.com/favicon.png",
+    "description": "At Wise Security we respond to all dimensions of cybersecurity with advanced solutions and consulting services. We work within the NIST framework."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.443Z"
+}

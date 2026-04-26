@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:docbyte",
+    "name": "Docbyte",
+    "legalName": "Docbyte NV",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/16",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.docbyte.com",
+    "logo": "https://www.docbyte.com/wp-content/uploads/2024/06/w_without_bg.png",
+    "description": "Docbyte provides advanced digital archiving, ensuring essential business data stays securely stored long-term, meeting legal requirements."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.495Z"
+}

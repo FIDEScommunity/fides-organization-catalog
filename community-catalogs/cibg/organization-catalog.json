@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cibg",
+    "name": "CIBG",
+    "legalName": "CIBG",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.uziregister.nl/contact/english-version",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Centraal_Informatiepunt_Beroepen_Gezondheidszorg_%28CIBG%29_logo.png",
+    "description": "CIBG is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via uziregister.nl."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.432Z"
+}

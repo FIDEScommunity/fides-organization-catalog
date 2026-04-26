@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bpce-infogerance-et-technologies",
+    "name": "BPCE INFOGERANCE ET TECHNOLOGIES",
+    "legalName": "BPCE INFOGERANCE ET TECHNOLOGIES",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/35",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://groupebpce.com/",
+    "logo": "https://www.groupebpce.com/app/uploads/2024/04/version-mobile-home-new-site-960x580px.jpg",
+    "description": "Le Groupe BPCE, avec ses principales marques Banque Populaire, Caisse d'Epargne et Natixis, est le 2e groupe bancaire en France."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.356Z"
+}

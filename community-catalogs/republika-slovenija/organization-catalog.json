@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:republika-slovenija",
+    "name": "Republika Slovenija",
+    "legalName": "Republika Slovenija",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SI",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.si-trust.gov.si/en/",
+    "logo": "https://www.si-trust.gov.si/_resources/themes/privzeto/images/favicon/apple-touch-icon.png?m=1717171306",
+    "description": "The Government of the Republic of Slovenia is listed as a Qualified Trust Service Provider (QTSP) in the EU eIDAS Trust List."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.583Z"
+}

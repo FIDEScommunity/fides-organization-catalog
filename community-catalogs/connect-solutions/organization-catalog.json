@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:connect-solutions",
+    "name": "Connect Solutions",
+    "legalName": "Connect Solutions",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.aangetekende.email",
+    "logo": "https://www.aangetekende.email/assets/img/apple-touch-icon.png",
+    "description": "Het online platform voor een betrouwbare en beveiligde uitwisseling van elektronische correspondentie. Connect Solutions is een gekwalificeerde aanbieder van aangetekende e-mail diensten conform Verordening (EU) Nr. 910/14 betreffende elektronische identificatie en vertrouwensdiensten voor elektronische transacties in de interne markt (eIDAS Verordening)."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.492Z"
+}

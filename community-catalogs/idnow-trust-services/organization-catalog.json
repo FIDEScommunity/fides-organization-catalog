@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:idnow-trust-services",
+    "name": "IDnow Trust Services",
+    "legalName": "IDnow Trust Services AB",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SE/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.trust-services.io",
+    "logo": "https://www.google.com/s2/favicons?domain=trust-services.io&sz=128",
+    "description": "IDnow Trust Services is a Swedish-qualified trust service provider listed on the EU eIDAS Trust List."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.269Z"
+}

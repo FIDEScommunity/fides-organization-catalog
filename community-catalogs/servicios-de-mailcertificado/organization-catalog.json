@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:servicios-de-mailcertificado",
+    "name": "SERVICIOS DE MAILCERTIFICADO",
+    "legalName": "SERVICIOS DE MAILCERTIFICADO SL",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/55",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://codicert.io",
+    "logo": "https://www.codicert.io/wp-content/uploads/2022/07/dedo_codicert-1-1024x1024.jpg",
+    "description": "Un sistema rápido, sencillo, económico,con seguridad jurídica y pleno valor probatorio. Resgistro gratuito."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.444Z"
+}

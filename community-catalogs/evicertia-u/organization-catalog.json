@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:evicertia-u",
+    "name": "EVICERTIA U.",
+    "legalName": "EVICERTIA S.L.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/39",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.evicertia.com",
+    "logo": "https://about.evicertia.com/image/2024-Company-Logo-Evicertia-byNamirial.png",
+    "description": "EVICERTIA U is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via evicertia.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.440Z"
+}

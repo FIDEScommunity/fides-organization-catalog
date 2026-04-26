@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digicert-europe-belgium",
+    "name": "DigiCert Europe Belgium",
+    "legalName": "DigiCert Europe Belgium B.V.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.quovadisglobal.be/",
+    "logo": "https://www.google.com/s2/favicons?domain=www.quovadisglobal.be&sz=128",
+    "description": "DigiCert Europe Belgium is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Belgium. It provides digital trust services via quovadisglobal.be."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.491Z"
+}

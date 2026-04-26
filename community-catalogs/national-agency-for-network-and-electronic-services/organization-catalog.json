@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:national-agency-for-network-and-electronic-services",
+    "name": "National Agency for Network and Electronic Services",
+    "legalName": "Národná agentúra pre sieťové a elektronické služby",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/7",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.nases.gov.sk/en/",
+    "logo": "https://www.nases.gov.sk/files/public/images/favicon.JPG",
+    "description": "The Slovak National Agency for Network and Electronic Services is listed as a Qualified Trust Service Provider (QTSP) in the EU Trust List."
+  },
+  "lastUpdated": "2026-04-25T06:26:24.603Z"
+}

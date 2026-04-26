@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:software602-a-s",
+    "name": "Software602 a.s.",
+    "legalName": "Software602 a.s.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CZ",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.602.cz/en/",
+    "logo": "https://api-602-api.iceprod.cz/uploads/media/2a/2a/2a2a267fae2531c6-og-image-602.png",
+    "description": "Vytváříme moderní řešení elektronických podpisů, archivu a formulářů, vždy v souladu s nejpřísnějšími předpisy. Firmy a úřady díky nám nechybují, šetří čas i peníze."
+  },
+  "lastUpdated": "2026-04-25T06:26:13.718Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bankenes-id-tjeneste",
+    "name": "Bankenes ID-tjeneste",
+    "legalName": "Bankenes ID-tjeneste AS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/5",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.bankid.no/en/private/",
+    "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOgAAACUCAMAAACul5XwAAAArlBMVEU5E0z///8wAEUcADcpAEAZADX6+foAACTs6e2WjZ6upbQ1C0mBcooFACve3OAeADgTADGqprAjADuLf5MVADOTh5vx8PJeS2xJLFpIMFinoa3Iw8vDvchnVnNlXnGxrbbTz9ZRPWAzGUeCeIxQNWAMAC5TRGKfmKY9GlBAI1JvXnpaRGhKNlp6aoQtEUNbTWkAAB4AAAs5I0x/eohXUWU5KExGPVdzbH0jEDtiYW6AAEecAAAGT0lEQVR4nO2ZC3OiSBDHYRhYYAzogGgEBVcjPuK6l2w2d9//ix3z4iUag7u3VVf9q6QKeoYZ/vPo7kFNAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+IMgBeksJp3F5PIDn+EXNXNTV+QwkWxRRzleq+LHWjGZMsvy7s5549NzpdXIohr3jAjZ5Z4iWZ4rxYNMFWeDqhivmNnd3TkZvsMaXp11i+YFezYAaDIvOWgPRtdc3ARaWHpJaraLCcqq4uy51EUdZkg65uJTmC5rxjl7+wfPtu3oiDVtmEV2iefNDk89paKFfk2ohr2q2FvWhFq/U+gXm9kHmEnWm2RL2rPTvByybNexdI9eOaC1pfvnhOp6/q1fr5RMJWGnM8KqGOPaQ39QqO5+7ddtGT8ulHf5vEoooobp42bPBPumQVl7hCFs8oLVp6p+U2hVuS00cwvSRIme4V8SkVBTeGccLYUOp+NROjtiWpMZ7oJZOhpPQ41suUH+s7b9eZ6m+Zyic6F8wUy3XULHmL3A7jTmdj1a1brrCxmu13ylrrdDdu9jcTtd18VIoS/fk4hdRN7AUOOAv7k2s1lR+teC+0qjMAaFJ4iS4Tpj9a0oW+K20O8ZdwS4UygSQ45/iCAQ37tnisa2UeXgCidMx1X4cc6c0dquPLbcOOhU2Tweu6JiwGjA7pNDtdEmuCk05Jf6AV0WykbxxO+tV6zdie/Wdv0aNcPLphVeYrtWOeV9o59RzWazG7sUGtditvVE6kLxgK+CoxBwUahm5rwN9+4ZFW8kKZI+HFe38WNLKPsvoriUNmBL25QJRmFWqiqh7BFbDQ7TVArFc2a2HNnBZaFkJ7zT871KCXFjhUNZMpaq22TfXrrs1Y6HyWsiBJlEowNhzveH02t8LjQOjkdHLJL4qRKKnvn4pC8fCtVC3qp96p0LlkrRo2TK20I7dV/P+aVQ65UW/pC+JGqOhl7dHLeFxm8UY+MHl2E/VEK/zfg0vakergj1c97D4m6hMpyVIa26PQ8vei62FPppizlCB76MHWW2WkJf+OthnihHYSnU3POXryL5FaE04I32EFrGSdnPTaciITRS3aGxUCTewlPrirhNoZkhai+aQsdvfBS06t1/h1CyHCj4w2ihblfLy0qF0EzVwO9c0dbkS7DMDNGgKTSm3UKFGL9q/trSdfoJJc+VW2XnInSqwoN3OdNq5bpowePI+illz7nqJdD7TUKFH/ZqGewVoUPuD6IfnxXaOKYloWbU4+jhYmtS6K4UanOhw15CVe8PNwglmPvnWki/VWgtkdGLeIKPta4vn4dkwvDYnFHNnDFzWma2nxKqr4yPheIjL0o//22DzN1EEjBniQfqNplcXh5CaBnN1GYUCWO5dVFwo1Cbxwx7+mF4IUhEMqdHCojMoUQ8jNXt8Mo2kOElEI+QHd/oRXiZs5m13qX5a3yb0Gj7JhpA1xOGIkCIB7zNLwijNyGFehv26iQUUTKghIoE7YUpJcOVfpNQ60jxOx8hNVFtoYGJC2iRpokVkPc5piFTEnYuB+Krcr+2LVQKmO39cLh1uKe2Cict4osen4wwJK/RbULdIrBgvrttuVvaQtOgYJyn0p/0ynTRJJUk445xImSmyvPn81xXt+M0kXl8brDVKuweM6sqH8bRol3ywhUlIsa0hVpRQXn0sTc9dijZVOewqEOpmZTFdVcnM6PasUvGQZnVK6xbhPLzKBZn1VXnwbuB/dznMNqOo+1xILWO7PZ51K2NgvdTzDfNaw8MWufRK0K1UDzIE9FrQt2/ezkisskshl782avzoTITUcj+R+0ZTfyRzKOiRA0zwfLDTnH0RP/wGQ3Zp5RzoaYm0xP55cLkmjz22bZTqGVFtuc+mj1PouiQzySDrj2KHFU8rs7dGtrPRqNRsPtyTDLPy5IBru3fScptDsYbVosdcQp/WVzJ3x7IZqTMx8Kc7uVHmAOrk7J0jObsinkm6oxK8mBCzf5xBVFf0u11y+LGF3LkG4ZRuFlMp5PJtPm9E/nbyeSRfUsjrBYfPmSw+qrNhrl8d15H/LpCSzs1FD6l/9EPb92QjvNclw0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOB/w7+FUIZEl466CQAAAABJRU5ErkJggg==",
+    "description": "Bankenes ID-tjeneste is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via bankid.no."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.772Z"
+}

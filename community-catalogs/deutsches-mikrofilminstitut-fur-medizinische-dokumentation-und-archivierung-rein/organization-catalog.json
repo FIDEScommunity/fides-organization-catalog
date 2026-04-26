@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:deutsches-mikrofilminstitut-fur-medizinische-dokumentation-und-archivierung-rein",
+    "name": "Deutsches Mikrofilminstitut für medizinische Dokumentation und Archivierung Reinhold Schmelter",
+    "legalName": "Deutsches Mikrofilminstitut für medizinische Dokumentation und Archivierung Reinhold Schmelter GmbH & Co. KG",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/30",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.dmi.de",
+    "logo": "https://www.dmi.de/_Resources/Persistent/2/5/b/9/25b9fc0e5e6ce844bbee93eedd48177720154291/apple-touch-icon.png",
+    "description": "Die Mission von DMI besteht darin, Krankenhäuser bei der digitalen Transformation des deutschen Gesundheitswesens zu unterstützen."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.666Z"
+}

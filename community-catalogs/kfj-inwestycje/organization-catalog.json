@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:kfj-inwestycje",
+    "name": "KFJ Inwestycje",
+    "legalName": "KFJ Inwestycje Sp. z o.o.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PL/tsp/11",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://doreczeniaelektroniczne.pl/",
+    "logo": "https://doreczeniaelektroniczne.pl/images/home/webclip.png",
+    "description": "KFJ Inwestycje is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via doreczeniaelektroniczne.pl."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.171Z"
+}

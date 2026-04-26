@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:datasure",
+    "name": "DATASURE",
+    "legalName": "DATASURE",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/33",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.datasure.net/",
+    "logo": "https://www.datasure.net/wp-content/uploads/2025/12/cropped-D-Datasure-1-180x180.png",
+    "description": "DATASURE is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via datasure.net."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.355Z"
+}

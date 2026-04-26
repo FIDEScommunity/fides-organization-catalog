@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:magyar-telekom-public-company",
+    "name": "Magyar Telekom Public Company",
+    "legalName": "Magyar Telekom Távközlési Nyilvánosan Működő Részvénytársaság",
+    "sectors": [
+      "digital"
+    ],
+    "country": "HU",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HU/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.t-systems.hu/nagyvallalatok/hitelesites_szolgaltatasok",
+    "logo": "https://www.google.com/s2/favicons?domain=t-systems.hu&sz=128",
+    "description": "Magyar Telekom Public Company is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Hungary. It provides digital trust services via t-systems.hu."
+  },
+  "lastUpdated": "2026-04-25T06:26:18.144Z"
+}

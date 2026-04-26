@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sparebank-1-utvikling-da",
+    "name": "SpareBank 1 Utvikling DA",
+    "legalName": "SpareBank 1 Utvikling DA",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.sparebank1.no/en/smn/personal/online-banking.html",
+    "logo": "https://www.sparebank1.no/content/dam/SB1/ikoner/GUI-ikoner/logo-sparebank1smn.svg.thumb.1280.1280.jpg",
+    "description": "SpareBank 1 Utvikling DA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via sparebank1.no."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.773Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:yousign",
+    "name": "Yousign",
+    "legalName": "Yousign",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/16",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://yousign.com",
+    "logo": "https://yousign.com/og-image-facebook-en.png",
+    "description": "Yousign, soon Youtrust, is a complete digital trust platform combining eSignature, identity verification and KYC services."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.349Z"
+}

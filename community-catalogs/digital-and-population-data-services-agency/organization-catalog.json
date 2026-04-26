@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digital-and-population-data-services-agency",
+    "name": "Digital and Population Data Services Agency",
+    "legalName": "Digi- ja vaestotietovirasto",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FI",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FI/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.dvv.fi/",
+    "logo": "https://dvv.fi/documents/16079645/0/DVV%20Some%20Image.png/f09fcdcb-4fce-7659-09c0-58b5869d373b?version=1.0&t=1577951664000&imagePreview=1",
+    "description": "Digi- ja väestötietovirasto palvelee. Etsi dvv.fi-sivustolta tietoa ja ohjeita asiasi hoitamiseen tai ota yhteys asiakaspalveluun. Voit myös asioida palvelupaikassa."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.821Z"
+}

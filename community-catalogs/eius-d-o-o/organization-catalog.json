@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eius-d-o-o",
+    "name": "EIUS d.o.o.",
+    "legalName": "EIUS d.o.o.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SI",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/7",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://eius.si",
+    "logo": "https://www.eius.si/wp-content/uploads/2021/05/cropped-logo-za-header-1-180x180.png",
+    "description": "EIUS is a Slovenian provider of qualified trust services, listed on the EU eIDAS Trust List as a QTSP."
+  },
+  "lastUpdated": "2026-04-25T06:26:23.585Z"
+}

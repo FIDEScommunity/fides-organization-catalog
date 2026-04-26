@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ceger-centro-de-gestao-da-rede-informatica-do-governo",
+    "name": "CEGER - Centro de Gestão da Rede Informática do Governo",
+    "legalName": "CEGER - Centro de Gestão da Rede Informática do Governo",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PT/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.ecce.gov.pt",
+    "logo": "https://www.ecce.gov.pt/media/1257/ecce-favicon.ico",
+    "description": "CEGER - Centro de Gestão da Rede Informática do Governo is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Portugal, providing digital trust services via ecce.gov.pt."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.596Z"
+}

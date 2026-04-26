@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:agencia-notarial-de-certificacion-unipersonal",
+    "name": "Agencia Notarial de Certificación . Unipersonal",
+    "legalName": "Agencia Notarial de Certificación S.L. Unipersonal",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.ctnotariado.com",
+    "logo": "https://www.ctnotariado.com/portal/documents/d/guest/favicon",
+    "description": "Agencia Notarial de Certificación . Unipersonal is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via ctnotariado.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.427Z"
+}

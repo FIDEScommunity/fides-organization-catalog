@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:first-certification-authority-a-s",
+    "name": "First certification authority, a.s.",
+    "legalName": "První certifikační autorita, a.s.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CZ",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://ica.cz/English",
+    "logo": "http://ica.cz/sites/default/files/favicons3/apple-touch-icon.png",
+    "description": "Make sure you have a guide on your digital journey who knows what they're doing. We set the direction for online services that require proof or verification of identity. We can help you too."
+  },
+  "lastUpdated": "2026-04-25T06:26:13.716Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eurocert",
+    "name": "EuroCert",
+    "legalName": "EuroCert Sp. z o.o.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PL/tsp/9",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.eurocert.pl",
+    "logo": "https://eurocert.pl/wp-content/uploads/2021/02/favicon.jpg",
+    "description": "EuroCert is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via eurocert.pl."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.170Z"
+}

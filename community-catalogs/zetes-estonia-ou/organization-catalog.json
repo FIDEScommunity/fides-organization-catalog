@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zetes-estonia-ou",
+    "name": "Zetes Estonia OÜ",
+    "legalName": "Zetes Estonia OÜ",
+    "sectors": [
+      "digital"
+    ],
+    "country": "EE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/EE/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://repository.eidpki.ee",
+    "logo": "https://repository.eidpki.ee/static/favicon.ico",
+    "description": "Zetes SA to provide certificate services and trust services for governments, the financial sector and private organisations."
+  },
+  "lastUpdated": "2026-04-25T06:26:15.349Z"
+}

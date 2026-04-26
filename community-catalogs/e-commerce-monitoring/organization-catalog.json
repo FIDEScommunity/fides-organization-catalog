@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:e-commerce-monitoring",
+    "name": "e-commerce monitoring",
+    "legalName": "e-commerce monitoring GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "AT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/AT/tsp/5",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://globaltrust.eu/en/",
+    "logo": "https://globaltrust.eu/wp-content/uploads/2019/07/globe-300x300.png",
+    "description": "e-commerce monitoring is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Austria. It provides digital trust services via globaltrust.eu."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.162Z"
+}

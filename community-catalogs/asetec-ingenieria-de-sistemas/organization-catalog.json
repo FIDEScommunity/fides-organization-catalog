@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:asetec-ingenieria-de-sistemas",
+    "name": "ASETEC INGENIERIA DE SISTEMAS,",
+    "legalName": "ASETEC INGENIERIA DE SISTEMAS, S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/51",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.mensatek.com",
+    "logo": "https://pki.atos.net/trustcenter/assets/img/img_logo.png",
+    "description": "El mejor servicio de SMS Masivo, notificaciones fehacientes y contrataci&oacute;n online. Plataforma Marketing por SMS, Notificaciones certificadas y contrataci&oacute;n online"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.443Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:signicat-u",
+    "name": "SIGNICAT U.",
+    "legalName": "SIGNICAT S.L.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/42",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.signicat.com/about/qualified-certificates-for-electronic-signatures",
+    "logo": "https://signicat.imgix.net/logos/Signicat_Spain_logo_purple.png?auto=format&crop=focalpoint&domain=signicat.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=630&ixlib=php-3.3.1&q=82&usm=20&w=1200&s=b4f48db53652ab32f894ce24afe5e9a7",
+    "description": "Signicat Spain (formerly known as Electronic IDentification) is as a Trust Services Provider and provides the service of offering qualified certificates…"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.441Z"
+}

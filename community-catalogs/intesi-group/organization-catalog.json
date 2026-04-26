@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:intesi-group",
+    "name": "Intesi Group",
+    "legalName": "Intesi Group S.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/44",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.intesigroup.com/en/",
+    "logo": "https://www.intesigroup.com/en/wp-content/uploads/sites/3/2022/03/home_identita_digitale.png",
+    "description": "Intesi Group: Certification Authority specialized in Digital Signature, Strong Authentication, PEC, Cryptography and Consulting Services. Find out more."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.490Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:acin-icloud-solutions-lda",
+    "name": "ACIN iCloud Solutions, Lda",
+    "legalName": "ACIN iCloud Solutions, Lda",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PT/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://pki.globaltrustedsign.com/",
+    "logo": "https://pki.globaltrustedsign.com/storage/img/svg/icon_gts.svg",
+    "description": "ACIN iCloud Solutions, Lda is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Portugal, providing digital trust services via pki.globaltrustedsign.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.598Z"
+}

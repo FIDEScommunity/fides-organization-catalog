@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:infonotary",
+    "name": "InfoNotary",
+    "legalName": "Инфонотари ЕАД",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BG",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BG/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.infonotary.com/site/",
+    "logo": "https://www.google.com/s2/favicons?domain=www.infonotary.com&sz=128",
+    "description": "Please wait while we check if you are a Human"
+  },
+  "lastUpdated": "2026-04-25T06:26:12.917Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:logalty-prueba-por-interposicion",
+    "name": "Logalty Prueba por Interposición,",
+    "legalName": "LOGALTY  SERVICIOS DE TERCERO DE CONFIANZA, S.L",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/31",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.logalty.com/en/",
+    "logo": "https://www.logalty.com/wp-content/uploads/2019/05/logalty-frame-bg.jpg",
+    "description": "We are pioneers in electronic contracting, notification and identification.We anticipate technological challenges with legal robustness so that you can be the first to innovate your processes."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.438Z"
+}

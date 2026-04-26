@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sectigo-europe",
+    "name": "Sectigo (Europe)",
+    "legalName": "Sectigo (Europe) SL",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/43",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.sectigo.com",
+    "logo": "https://www.sectigo.com/uploads/images/_1200x630_crop_center-center_82_none/210427_sectigo_social-cards_A_v03b.jpg?mtime=1761310645",
+    "description": "Sectigo is a leading provider of SSL certificates & automated certificate management solutions. A Certificate Authority trusted by global brands for 20+ years."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.441Z"
+}

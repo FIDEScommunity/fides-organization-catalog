@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:direccion-general-de-la-policia",
+    "name": "Dirección General de la Policía",
+    "legalName": "Dirección General de la Policía",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.dnielectronico.es",
+    "logo": "https://www.google.com/s2/favicons?domain=www.dnielectronico.es&sz=128",
+    "description": "Dirección General de la Policía is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via dnielectronico.es."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.426Z"
+}

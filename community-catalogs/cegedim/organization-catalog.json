@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cegedim",
+    "name": "CEGEDIM",
+    "legalName": "CEGEDIM SA",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/30",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.cegedim.fr",
+    "logo": "https://www.cegedim.fr/Style%20Library/img/ico.png",
+    "description": "Cegedim est une entreprise innovante de technologies et de services spécialisée dans la gestion des flux numériques de l’écosystème santé et BtoB, ainsi que dans la conception de logiciels métier destinés aux professionnels de santé et de l’assurance."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.354Z"
+}

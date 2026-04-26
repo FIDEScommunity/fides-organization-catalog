@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:komercni-banka-a-s",
+    "name": "Komerční banka, a.s.",
+    "legalName": "Komerční banka, a.s.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CZ",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.kb.cz/pki",
+    "logo": "https://www.kb.cz/getmedia/58051ea4-e132-4b71-ae6b-6c6a958853e8/og_image.png",
+    "description": "Komerční banka, a.s is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via kb.cz."
+  },
+  "lastUpdated": "2026-04-25T06:26:13.720Z"
+}

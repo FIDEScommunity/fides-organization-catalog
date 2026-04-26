@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:primesign",
+    "name": "PrimeSign",
+    "legalName": "PrimeSign GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "AT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/AT/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://prime-sign.com/",
+    "logo": "https://primesign.cryptas.com/hubfs/Favicon_Cryptas.svg",
+    "description": "Enterprise Elektronische Signatur Software mit eIDAS-konformen Signaturen, Cloud-Signing und PDF-Signatur."
+  },
+  "lastUpdated": "2026-04-25T06:26:12.162Z"
+}

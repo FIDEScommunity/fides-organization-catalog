@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:infocert",
+    "name": "InfoCert",
+    "legalName": "Infocert S.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.firma.infocert.it/documentation",
+    "logo": "https://www.infocert.it/content/uploads/2025/04/favicon-tinexta-infocert-300x300.png",
+    "description": "Explore the comprehensive technical documentation at InfoCert. Find all the details needed to integrate and manage our trusted digital solutions."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.479Z"
+}

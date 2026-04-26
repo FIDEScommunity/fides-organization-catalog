@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:instituto-para-la-dinamizacion-economica-u",
+    "name": "INSTITUTO PARA LA DINAMIZACION ECONOMICA, U.",
+    "legalName": "INSTITUTO PARA LA DINAMIZACION ECONOMICA, S.A.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/60",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://indize.es/",
+    "logo": "https://www.google.com/s2/favicons?domain=indize.es&sz=128",
+    "description": "INSTITUTO PARA LA DINAMIZACION ECONOMICA, U is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via indize.es."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.445Z"
+}

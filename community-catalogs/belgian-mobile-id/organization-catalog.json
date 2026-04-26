@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:belgian-mobile-id",
+    "name": "Belgian Mobile ID",
+    "legalName": "Belgian Mobile ID SA/NV",
+    "sectors": [
+      "digital"
+    ],
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.itsme.be",
+    "logo": "https://www.itsme-id.com/hubfs/Itsme_logo_hexa_pos_rgb-2.png",
+    "description": "itsme® maakt online leven eenvoudig en veilig. Log in, bevestig transacties en onderteken documenten zonder wachtwoorden of kaartlezers"
+  },
+  "lastUpdated": "2026-04-25T06:26:12.492Z"
+}

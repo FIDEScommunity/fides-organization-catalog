@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:worldline-france",
+    "name": "Worldline France",
+    "legalName": "Worldline France",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/23",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.mediacert.com/en",
+    "logo": "https://www.mediacert.com/images/favicon-33x33.png",
+    "description": "Mediacert Public web site"
+  },
+  "lastUpdated": "2026-04-25T06:26:17.351Z"
+}

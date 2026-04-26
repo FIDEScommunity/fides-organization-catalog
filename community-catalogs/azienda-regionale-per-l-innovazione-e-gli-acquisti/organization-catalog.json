@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:azienda-regionale-per-l-innovazione-e-gli-acquisti",
+    "name": "Azienda Regionale per l'Innovazione e gli Acquisti",
+    "legalName": "Azienda Regionale per l'Innovazione e gli Acquisti S.p.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/48",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.ariaspa.it/CA/TSPInformationURI",
+    "logo": "https://www.google.com/s2/favicons?domain=www.ariaspa.it&sz=128",
+    "description": "Azienda Regionale per l'Innovazione e gli Acquisti is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ariaspa.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.490Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zertiban-u",
+    "name": "ZERTIBAN U.",
+    "legalName": "ZERTIBAN S.L.U.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/68",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://zertiban.com",
+    "logo": "https://zertiban.com/wp-content/uploads/2024/10/ZERTIBANTAG.jpg",
+    "description": "Zertiban es un Prestador de Servicios de Confianza con Licencia Bancaria de Banco de España"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.448Z"
+}

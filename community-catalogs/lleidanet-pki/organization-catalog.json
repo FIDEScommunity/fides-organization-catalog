@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:lleidanet-pki",
+    "name": "Lleidanet PKI",
+    "legalName": "Lleidanet PKI S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/48",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.indenova.com",
+    "logo": "https://www.indenova.com/wp-content/uploads/2020/07/icon11.png",
+    "description": "Indenova es una empresa que nació con vocación de desarrollar, innovar y generar soluciones tecnológicas en el ámbito empresarial e institucional. Está especializada en soluciones de firma electrónica, criptografía, movilidad, certificados digitales y workflows."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.442Z"
+}

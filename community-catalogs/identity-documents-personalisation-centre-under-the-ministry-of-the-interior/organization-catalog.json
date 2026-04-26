@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:identity-documents-personalisation-centre-under-the-ministry-of-the-interior",
+    "name": "Identity Documents Personalisation Centre under the Ministry of the Interior",
+    "legalName": "Asmens dokumentų išrašymo centras prie LR Vidaus reikalų ministerijos",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LT/tsp/5",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.nsc.vrm.lt/default_en.htm",
+    "logo": "https://www.google.com/s2/favicons?domain=nsc.vrm.lt&sz=128",
+    "description": "Identity Documents Personalisation Centre under the Ministry of the Interior is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania, providing digital trust services via nsc.vrm.lt."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.103Z"
+}

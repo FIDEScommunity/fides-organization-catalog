@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:latvian-state-radio-and-television-center",
+    "name": "Latvian State Radio and Television center",
+    "legalName": "Latvijas Valsts radio un televīzijas centrs",
+    "sectors": [
+      "digital"
+    ],
+    "country": "LV",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LV/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.eparaksts.lv/en/",
+    "logo": "http://www.eparaksts.lv/en/favicon/apple-touch-icon.png",
+    "description": "Latvian State Radio and Television center is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Latvia, providing digital trust services via eparaksts.lv."
+  },
+  "lastUpdated": "2026-04-25T06:26:20.782Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:telecom-italia-trust-technologies",
+    "name": "Telecom Italia Trust Technologies",
+    "legalName": "Telecom Italia Trust Technologies S.r.l.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/37",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.trusttechnologies.it/chi-siamo/qcsp-english/",
+    "logo": "https://www.google.com/s2/favicons?domain=trusttechnologies.it&sz=128",
+    "description": "Telecom Italia Trust Technologies is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via trusttechnologies.it."
+  },
+  "lastUpdated": "2026-04-25T06:26:19.489Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:agence-nationale-des-titres-securises",
+    "name": "Agence Nationale des Titres Sécurisés",
+    "legalName": "Agence Nationale des Titres Sécurisés",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://ants.gouv.fr/",
+    "logo": "https://www.google.com/s2/favicons?domain=ants.gouv.fr&sz=128",
+    "description": "Agence Nationale des Titres Sécurisés is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via ants.gouv.fr."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.345Z"
+}

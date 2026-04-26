@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ministeres-economiques-et-financiers",
+    "name": "Ministères économiques et financiers",
+    "legalName": "Ministères économiques et financiers",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/31",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://igc1.finances.gouv.fr",
+    "logo": "https://www.google.com/s2/favicons?domain=igc1.finances.gouv.fr&sz=128",
+    "description": "Ministères économiques et financiers is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via igc1.finances.gouv.fr."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.354Z"
+}

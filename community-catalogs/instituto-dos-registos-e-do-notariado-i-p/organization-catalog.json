@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:instituto-dos-registos-e-do-notariado-i-p",
+    "name": "Instituto dos Registos e do Notariado I.P.",
+    "legalName": "Instituto dos Registos e do Notariado I.P.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "PT",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PT/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://pki.cartaodecidadao.pt",
+    "logo": "http://pki.cartaodecidadao.pt/images/favicon.ico",
+    "description": "Instituto dos Registos e do Notariado I.P is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Portugal, providing digital trust services via pki.cartaodecidadao.pt."
+  },
+  "lastUpdated": "2026-04-25T06:26:22.597Z"
+}

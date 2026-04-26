@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hp-d-d",
+    "name": "HP d.d.",
+    "legalName": "HP d.d.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "HR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HR/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.eposta.hr/info",
+    "logo": "https://www.eposta.hr/favicon.ico",
+    "description": "HP d.d is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Croatia. It provides digital trust services via eposta.hr."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.703Z"
+}

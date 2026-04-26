@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:full-certificate",
+    "name": "FULL CERTIFICATE",
+    "legalName": "FULL CERTIFICATE S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/57",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.fullcertificate.com",
+    "logo": "https://www.fullcertificate.com/wp-content/uploads/2021/04/Logos-full-certificate-web-3.png",
+    "description": "Register Signed Letter with Certified Content Online Register Signed Letter with Certified Content Electronic Internet Notified Send Burofax Postal Price eMail Certificate Certified SMS Contract Contracts Online App Certified calls eVoto Remote electronic voting Vote Online Shareholders Forum Video Acta Certified Board eGovernment Certified Website Certified Fax CopyRight"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.444Z"
+}

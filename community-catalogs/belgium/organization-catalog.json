@@ -8,6 +8,7 @@
     ],
     "website": "https://www.belgium.be",
     "country": "BE",
-    "description": "Federal government of Belgium; provides national portals, e-government services, and digital identity programmes for citizens and businesses."
+    "description": "Federal government of Belgium; provides national portals, e-government services, and digital identity programmes for citizens and businesses.",
+    "logo": "https://www.belgium.be/themes/custom/belgium_theme/images/favicons/apple-touch-icon.png"
   }
 }

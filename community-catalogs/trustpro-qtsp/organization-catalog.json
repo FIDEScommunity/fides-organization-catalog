@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trustpro-qtsp",
+    "name": "TrustPro QTSP",
+    "legalName": "TrustPro QTSP Ltd",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IE/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.trustpro.eu",
+    "logo": "https://www.trustpro.eu/wp-content/uploads/2026/02/trustpro-qualified-trust-service-provider-in-eu.jpg",
+    "description": "We provide qualified eSignatures, eSeals and eTimestamps, eIDAS compliant and valid in European Union. Remote identification and activation."
+  },
+  "lastUpdated": "2026-04-25T06:26:18.539Z"
+}

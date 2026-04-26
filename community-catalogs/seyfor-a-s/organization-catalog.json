@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:seyfor-a-s",
+    "name": "Seyfor, a. s.",
+    "legalName": "Seyfor, a. s.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CZ",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/10",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.seyfor.com",
+    "logo": "https://www.seyfor.com/files/2022/01/herofin.jpg",
+    "description": "Seyfor, a. s is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via seyfor.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:13.721Z"
+}

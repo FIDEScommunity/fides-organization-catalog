@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ardaco-a-s",
+    "name": "Ardaco a.s.",
+    "legalName": "Ardaco a.s.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.ardaco.com/",
+    "logo": "https://www.ardaco.com/assets/img/favicon_ardaco_180.png",
+    "description": "Slovak provider of trust and security services, listed as a Qualified Trust Service Provider (QTSP) under the EU eIDAS framework."
+  },
+  "lastUpdated": "2026-04-25T06:26:24.603Z"
+}

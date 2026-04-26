@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:lleidanetworks-serveis-telematics",
+    "name": "LLEIDANETWORKS SERVEIS TELEMATICS,",
+    "legalName": "LLEIDANETWORKS SERVEIS TELEMATICS, S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/32",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.lleida.net/en",
+    "logo": "https://www.lleida.net/assets/media/xs/en/main.webp",
+    "description": "Lleida.net provides registered SMS and email, electronic signature, and legally valid digital notifications. Secure and verify your electronic communications with full evidential value."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.438Z"
+}

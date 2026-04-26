@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:danske-bank-nuf",
+    "name": "Danske Bank NUF",
+    "legalName": "Danske Bank A/S NUF",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/4",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://danskebank.com/",
+    "logo": "https://danskebank.com/-/media/danske-bank-images/dbcom/images/generic/danske-bank-oslo.jpg?rev=633ccfdbecbf423ca1cd855dd62c9a0f",
+    "description": "Danske Bank NUF is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via danskebank.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.772Z"
+}

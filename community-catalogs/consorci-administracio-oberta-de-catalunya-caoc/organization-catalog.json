@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:consorci-administracio-oberta-de-catalunya-caoc",
+    "name": "Consorci Administració Oberta de Catalunya - CAOC",
+    "legalName": "Consorci Administració Oberta de Catalunya - CAOC",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/5",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.aoc.cat",
+    "logo": "https://www.aoc.cat/wp-content/uploads/2026/02/cropped-favicon-180x180.png",
+    "description": "Com que sabem que es tracta d’una decisió molt important per al vostre ens, us ho volem posar fàcil."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.431Z"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ministerie-van-defensie",
+    "name": "Ministerie van Defensie",
+    "legalName": "Ministerie van Defensie",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/8",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.defensie.nl/english/",
+    "logo": "https://english.defensie.nl/openGraphImage.png?path=%2F",
+    "description": "Ministerie van Defensie is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via defensie.nl."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.433Z"
+}

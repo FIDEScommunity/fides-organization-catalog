@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:utimaco-is",
+    "name": "Utimaco IS",
+    "legalName": "Utimaco IS GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/25",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.utimaco.com/",
+    "logo": "https://utimaco.com/sites/default/files/2025-09/utimaco-logo-blue-social-sharing.png",
+    "description": "The Better Choice for Trust in the Digital Society"
+  },
+  "lastUpdated": "2026-04-25T06:26:14.662Z"
+}

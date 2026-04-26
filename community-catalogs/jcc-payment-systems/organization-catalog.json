@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:jcc-payment-systems",
+    "name": "JCC PAYMENT SYSTEMS",
+    "legalName": "JCC PAYMENT SYSTEMS LTD",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CY",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CY/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.jcc.com.cy/support/",
+    "logo": "https://www.jcc.com.cy/wp-content/uploads/JCCheader-Support-Overview01.jpg",
+    "description": "You can contact us by clicking on the button below and filling out our contact form. If you want to speak to a JCC representative, please call +357 22868000. Our representatives are available 24 hours a day, 7 days a week."
+  },
+  "lastUpdated": "2026-04-25T06:26:13.125Z"
+}

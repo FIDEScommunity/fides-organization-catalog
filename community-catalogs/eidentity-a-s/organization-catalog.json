@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eidentity-a-s",
+    "name": "eIdentity a.s.",
+    "legalName": "eIdentity a.s.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "CZ",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.eidentity.cz/",
+    "logo": "https://www.eidentity.cz/wp-content/uploads/2020/05/cropped-icon_eid-180x180.png",
+    "description": "eIdentity je kvalifikovaný poskytovatel služeb vytvářejících důvěru"
+  },
+  "lastUpdated": "2026-04-25T06:26:13.717Z"
+}

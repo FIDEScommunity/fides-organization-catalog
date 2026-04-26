@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:microsec-micro-software-engineering-and-consulting-private-company-by-shares",
+    "name": "Microsec Micro Software Engineering & Consulting Private Company by Shares",
+    "legalName": "Microsec Számítástechnikai Fejlesztő zártkörűen működő Részvénytársaság",
+    "sectors": [
+      "digital"
+    ],
+    "country": "HU",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HU/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://e-szigno.hu",
+    "logo": "https://e-szigno.hu/favicon.ico",
+    "description": "Microsec Micro Software Engineering & Consulting Private Company by Shares is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Hungary. It provides digital trust services via e-szigno.hu."
+  },
+  "lastUpdated": "2026-04-25T06:26:18.141Z"
+}

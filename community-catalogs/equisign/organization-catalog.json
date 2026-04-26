@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:equisign",
+    "name": "Equisign",
+    "legalName": "Equisign",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/21",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.letreco.fr",
+    "logo": "https://hubspot-no-cache-eu1-prod.s3.amazonaws.com/cta/default/139781071/interactive-245409295593.png",
+    "description": "Passez au recommandé électronique avec LetReco : envoyez en quelques clics, profitez du suivi instantané et d’un archivage sécurisé eIDAS."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.350Z"
+}

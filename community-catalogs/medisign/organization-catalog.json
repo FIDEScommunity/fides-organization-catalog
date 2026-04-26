@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:medisign",
+    "name": "medisign",
+    "legalName": "medisign GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/16",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.medisign.de/",
+    "logo": "https://www.medisign.de/wp-content/uploads/2020/05/medisignPic_eHBA-Signatur_FB.jpg",
+    "description": "medisign bietet elektronische Heilberufsausweise (eHBA) sowie Praxis- und Institutionsausweise (SMC-B) an - für die qualifizierte eSignatur und Anbindung von Praxen/Apotheken an die Telematikinfrastuktur."
+  },
+  "lastUpdated": "2026-04-25T06:26:14.660Z"
+}

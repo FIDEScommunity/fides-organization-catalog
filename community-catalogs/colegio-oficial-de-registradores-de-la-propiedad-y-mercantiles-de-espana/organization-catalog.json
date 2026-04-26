@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:colegio-oficial-de-registradores-de-la-propiedad-y-mercantiles-de-espana",
+    "name": "COLEGIO OFICIAL DE REGISTRADORES DE LA PROPIEDAD Y MERCANTILES DE ESPAÑA",
+    "legalName": "COLEGIO OFICIAL DE REGISTRADORES DE LA PROPIEDAD Y MERCANTILES DE ESPAÑA",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/12",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.registradores.org",
+    "logo": "https://www.registradores.org/documents/33383/147484/company_logo.png/7c4d873a-5bfe-c806-f298-ef0db0d082dd?version=1.0&t=1561471598761&imagePreview=1",
+    "description": "Página oficial de los Registradores de la Propiedad, Mercantiles y Bienes Muebles de España. Información y trámites online"
+  },
+  "lastUpdated": "2026-04-25T06:26:16.433Z"
+}

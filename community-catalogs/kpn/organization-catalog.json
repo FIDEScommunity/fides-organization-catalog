@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:kpn",
+    "name": "KPN",
+    "legalName": "KPN B.V.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NL",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/6",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://certificaat.kpn.com",
+    "logo": "https://certificaat.kpn.com/content/themes/kpn/images/favicon/apple-touch-icon-57x57.png",
+    "description": "KPN is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via certificaat.kpn.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.433Z"
+}

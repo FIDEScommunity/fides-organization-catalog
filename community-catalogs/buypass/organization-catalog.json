@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:buypass",
+    "name": "Buypass",
+    "legalName": "Buypass AS",
+    "sectors": [
+      "digital"
+    ],
+    "country": "NO",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NO/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.buypass.com/",
+    "logo": "https://www.buypass.com/_/service/no.seeds.buypass/serve-static-assets//images/apple-touch-icon.png",
+    "description": "Buypass is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via buypass.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:21.771Z"
+}

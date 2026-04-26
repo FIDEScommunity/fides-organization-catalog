@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:disig-a-s",
+    "name": "Disig, a.s.",
+    "legalName": "Disig, a.s.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/3",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.disig.eu",
+    "logo": "https://www.google.com/s2/favicons?domain=www.disig.eu&sz=128",
+    "description": "Disig is a Slovak qualified trust service provider delivering electronic signature and trust services under eIDAS."
+  },
+  "lastUpdated": "2026-04-25T06:26:24.602Z"
+}

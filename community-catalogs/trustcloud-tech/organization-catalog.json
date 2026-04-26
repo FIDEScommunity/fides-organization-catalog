@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trustcloud-tech",
+    "name": "TRUSTCLOUD TECH",
+    "legalName": "TRUSTCLOUD TECH SL",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/64",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://trustcloud.tech/es",
+    "logo": "https://www.google.com/s2/favicons?domain=trustcloud.tech&sz=128",
+    "description": "TRUSTCLOUD TECH is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via trustcloud.tech."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.446Z"
+}

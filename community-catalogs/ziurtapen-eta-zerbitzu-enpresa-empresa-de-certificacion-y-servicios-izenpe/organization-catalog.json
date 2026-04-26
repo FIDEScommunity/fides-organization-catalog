@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ziurtapen-eta-zerbitzu-enpresa-empresa-de-certificacion-y-servicios-izenpe",
+    "name": "Ziurtapen eta Zerbitzu Enpresa-Empresa de Certificación y Servicios, Izenpe,",
+    "legalName": "Ziurtapen eta Zerbitzu Enpresa-Empresa de Certificación y Servicios, Izenpe, S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "country": "ES",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/16",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://www.izenpe.com",
+    "logo": "http://www.izenpe.com/images/webize00-favicon.ico",
+    "description": "Ziurtapen eta Zerbitzu Enpresa-Empresa de Certificación y Servicios, Izenpe is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via izenpe.com."
+  },
+  "lastUpdated": "2026-04-25T06:26:16.434Z"
+}

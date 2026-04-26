@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mailstone-timestamp",
+    "name": "MailStone TimeStamp",
+    "legalName": "MailStone TimeStamp",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/34",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "https://www.mailstone.io/en",
+    "logo": "https://www.mailstone.io/og-image.png",
+    "description": "Horodatage qualifié eIDAS, blockchain, signature électronique et archivage numérique. Sécurisez vos documents avec une preuve légale européenne."
+  },
+  "lastUpdated": "2026-04-25T06:26:17.355Z"
+}

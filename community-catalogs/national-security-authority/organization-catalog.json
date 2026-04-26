@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:national-security-authority",
+    "name": "National Security Authority",
+    "legalName": "Národný bezpečnostný úrad",
+    "sectors": [
+      "digital"
+    ],
+    "country": "SK",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/1",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ],
+    "website": "http://ep.nbu.gov.sk/",
+    "logo": "https://www.google.com/s2/favicons?domain=ep.nbu.gov.sk&sz=128",
+    "description": "Slovakia's National Security Authority is listed as a Qualified Trust Service Provider (QTSP) and supports national trust services."
+  },
+  "lastUpdated": "2026-04-25T06:26:24.598Z"
+}
