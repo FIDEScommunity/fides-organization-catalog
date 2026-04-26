@@ -2480,16 +2480,45 @@
   .fides-sidebar {
     display: none;
     position: fixed;
-    inset: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    max-width: 100%;
-    z-index: 99998;
+    max-height: calc(100vh - 100px);
+    z-index: 9999999;
     border-radius: 0;
-    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .fides-sidebar.mobile-open {
     display: flex;
+    flex-direction: column;
+    animation: fides-modal-fade-in 0.2s ease;
+  }
+
+  .fides-sidebar.mobile-open .fides-sidebar-header {
+    background: var(--fides-bg-secondary);
+    border-radius: var(--fides-radius) var(--fides-radius) 0 0;
+    max-width: 320px;
+    width: 100%;
+    border: 1px solid var(--fides-border);
+    border-bottom: none;
+  }
+
+  .fides-sidebar.mobile-open .fides-sidebar-content {
+    background: var(--fides-bg-secondary);
+    border-radius: 0 0 var(--fides-radius) var(--fides-radius);
+    max-width: 320px;
+    width: 100%;
+    max-height: calc(100vh - 220px);
+    overflow-y: auto;
+    border: 1px solid var(--fides-border);
+    border-top: none;
   }
 
   .fides-sidebar-close {
