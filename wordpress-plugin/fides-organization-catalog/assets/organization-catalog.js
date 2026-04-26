@@ -95,6 +95,16 @@
     try {
       const parsed = new URL(website);
       if (!parsed.hostname) return '';
+      const host = parsed.hostname.toLowerCase();
+      // Google favicon fallback is known to return 404 for these hosts.
+      if (
+        host === 'pki.atos.net' ||
+        host === 'crl.pass-in.fr' ||
+        host === 'pass-in.fr' ||
+        host === 'ss-in.fr'
+      ) {
+        return '';
+      }
       return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(parsed.hostname)}&sz=128`;
     } catch {
       return '';
@@ -119,7 +129,11 @@
       host === 'www.bancaditalia.it' ||
       host === 'digitelts.es' ||
       host === 'www.digitelts.es' ||
-      host === 'pki.multicert.com'
+      host === 'pki.multicert.com' ||
+      host === 'pki.atos.net' ||
+      host === 'crl.pass-in.fr' ||
+      host === 'pass-in.fr' ||
+      host === 'ss-in.fr'
     );
   }
 
@@ -127,7 +141,7 @@
     const primary = typeof org?.logoUri === 'string' ? org.logoUri : '';
     const fallback = logoFallbackFromWebsite(org?.website);
     if (!primary) return '';
-    if (shouldBypassPrimaryLogo(primary) && fallback) return fallback;
+    if (shouldBypassPrimaryLogo(primary)) return fallback || '';
     return primary;
   }
 
@@ -1453,8 +1467,15 @@
     }
     applySectorFromUrl();
     applyCountryFromUrl();
-    render();
-    checkDeepLink();
+    try {
+      render();
+      checkDeepLink();
+    } catch (err) {
+      console.error('Failed to render organization catalog:', err);
+      if (root) {
+        root.innerHTML = '<p class="fides-empty">The organization catalog could not be rendered. Please refresh the page.</p>';
+      }
+    }
   }
 
   /** Pre-fill sector filter from ?sector= (canonical or legacy code). */
