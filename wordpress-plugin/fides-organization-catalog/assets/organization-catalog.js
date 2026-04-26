@@ -101,6 +101,36 @@
     }
   }
 
+  function parsedHostname(url) {
+    if (typeof url !== 'string' || !url.trim()) return '';
+    try {
+      return new URL(url).hostname.toLowerCase();
+    } catch {
+      return '';
+    }
+  }
+
+  function shouldBypassPrimaryLogo(logoUrl) {
+    const host = parsedHostname(logoUrl);
+    if (!host) return false;
+    // Hosts known to return strict CORP / protocol behavior in browsers.
+    return (
+      host === 'www.pec.it' ||
+      host === 'www.bancaditalia.it' ||
+      host === 'digitelts.es' ||
+      host === 'www.digitelts.es' ||
+      host === 'pki.multicert.com'
+    );
+  }
+
+  function resolvedLogoUrl(org) {
+    const primary = typeof org?.logoUri === 'string' ? org.logoUri : '';
+    const fallback = logoFallbackFromWebsite(org?.website);
+    if (!primary) return '';
+    if (shouldBypassPrimaryLogo(primary) && fallback) return fallback;
+    return primary;
+  }
+
   function bindLogoFallbackHandlers(scope) {
     if (!scope || typeof scope.querySelectorAll !== 'function') return;
     scope.querySelectorAll('img[data-fides-logo-fallback]').forEach((img) => {
@@ -795,7 +825,7 @@
   }
 
   function renderOrgCard(org) {
-    const logo = org.logoUri;
+    const logo = resolvedLogoUrl(org);
     const logoFallback = logoFallbackFromWebsite(org.website);
     const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
 
@@ -830,7 +860,7 @@
   function renderModal() {
     if (!selectedOrg) return '';
     const org = selectedOrg;
-    const logo = org.logoUri;
+    const logo = resolvedLogoUrl(org);
     const logoFallback = logoFallbackFromWebsite(org.website);
     const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
     const r = org.ecosystemRoles || {};
@@ -1134,7 +1164,7 @@
    * Compact list row — same .fides-org-card shell as grid cards for shared click handlers.
    */
   function renderOrgRow(org) {
-    const logo = org.logoUri;
+    const logo = resolvedLogoUrl(org);
     const logoFallback = logoFallbackFromWebsite(org.website);
     const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
     const r = org.ecosystemRoles || {};
