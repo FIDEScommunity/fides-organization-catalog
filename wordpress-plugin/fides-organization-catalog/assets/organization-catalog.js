@@ -21,6 +21,7 @@
     server: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>',
     share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+    qtsp: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="4" width="19" height="16" rx="2.5" fill="#1E3A8A"/><circle cx="12" cy="7.2" r="0.8" fill="#FACC15"/><circle cx="15.2" cy="8.2" r="0.8" fill="#FACC15"/><circle cx="16.8" cy="11" r="0.8" fill="#FACC15"/><circle cx="15.8" cy="14.2" r="0.8" fill="#FACC15"/><circle cx="13" cy="15.8" r="0.8" fill="#FACC15"/><circle cx="9.8" cy="14.8" r="0.8" fill="#FACC15"/><circle cx="8.2" cy="12" r="0.8" fill="#FACC15"/><circle cx="9.2" cy="8.8" r="0.8" fill="#FACC15"/><path d="M8.6 12.6l2.1 2.1 4.8-4.8" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     /** Lucide "users" — FIDES Manifesto / community supporter badge */
     community: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
@@ -259,6 +260,11 @@
     return true;
   }
 
+  /** Whether org has QTSP certification in the catalog payload. */
+  function orgHasQtspBadge(org) {
+    return orgCertificationCodes(org).includes('qtsp');
+  }
+
   /** Grid card: outline badges bottom-left in footer (quiet, no fill). */
   function renderOrgCardFooterBadges(org) {
     const parts = [];
@@ -267,6 +273,9 @@
     }
     if (orgShowsBluePagesListBadge(org)) {
       parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--bp" role="img" aria-label="Blue Pages verified profile available" title="Blue Pages verified profile available">${icons.shield}</span>`);
+    }
+    if (orgHasQtspBadge(org)) {
+      parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--qtsp" role="img" aria-label="EU Qualified Trust Service Provider (eIDAS)" title="EU Qualified Trust Service Provider (eIDAS)">${icons.qtsp}</span>`);
     }
     if (parts.length === 0) return '';
     return `<div class="fides-org-card-footer-badges">${parts.join('')}</div>`;
@@ -281,6 +290,9 @@
     if (orgShowsBluePagesListBadge(org)) {
       parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--bp" role="img" aria-label="Blue Pages verified profile available" title="Blue Pages verified profile available">${icons.shield}</span>`);
     }
+    if (orgHasQtspBadge(org)) {
+      parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--qtsp" role="img" aria-label="EU Qualified Trust Service Provider (eIDAS)" title="EU Qualified Trust Service Provider (eIDAS)">${icons.qtsp}</span>`);
+    }
     if (parts.length === 0) return '';
     return `<div class="fides-row-badges">${parts.join('')}</div>`;
   }
@@ -290,6 +302,7 @@
     const bits = [];
     if (orgShowsBluePagesListBadge(org)) bits.push('has Blue Pages verified profile');
     if (org && org.fidesManifestoSupporter === true) bits.push('FIDES Supporter');
+    if (orgHasQtspBadge(org)) bits.push('qualified trust service provider');
     if (bits.length === 0) return name;
     return `${name}, ${bits.join(', ')}`;
   }

@@ -750,6 +750,12 @@
   border-color: var(--fides-accent);
 }
 
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon--qtsp {
+  color: #1d4ed8;
+  border-color: #1d4ed8;
+  background: rgba(29, 78, 216, 0.08);
+}
+
 #fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon svg {
   width: 10px;
   height: 10px;
@@ -933,6 +939,12 @@
 .fides-org-footer-badge--bp {
   color: var(--fides-accent);
   border-color: var(--fides-accent);
+}
+
+.fides-org-footer-badge--qtsp {
+  color: #1d4ed8;
+  border-color: #1d4ed8;
+  background: rgba(29, 78, 216, 0.08);
 }
 
 .fides-org-footer-badge svg {
