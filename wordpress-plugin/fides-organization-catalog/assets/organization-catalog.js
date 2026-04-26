@@ -125,6 +125,9 @@
     if (!host) return false;
     // Hosts known to return strict CORP / protocol behavior in browsers.
     return (
+      host === 'eportugal.gov.pt' ||
+      host === 'globaltrust.eu' ||
+      host === 'www.globaltrust.eu' ||
       host === 'www.pec.it' ||
       host === 'www.bancaditalia.it' ||
       host === 'digitelts.es' ||
@@ -845,7 +848,7 @@
 
     const manifestoClass = org.fidesManifestoSupporter === true ? ' fides-org-card--manifesto-supporter' : '';
     const logoMain = logo
-      ? `<img src="${escapeHtml(logo)}" alt="" width="64" height="64"${logoFallbackAttr}>`
+      ? `<img src="${escapeHtml(logo)}" alt="" width="64" height="64" loading="lazy" decoding="async"${logoFallbackAttr}>`
       : icons.building;
     return `
       <div class="fides-org-card${manifestoClass}" data-id="${escapeHtml(org.id)}" tabindex="0" role="button" aria-label="${orgCardAriaLabel(org)}">
@@ -901,7 +904,7 @@
           <div class="fides-modal-header">
             <div class="fides-modal-header-content">
               ${logo
-                ? `<img src="${escapeHtml(logo)}" alt="${escapeHtml(org.name)}" class="fides-modal-logo"${logoFallbackAttr}>`
+                ? `<img src="${escapeHtml(logo)}" alt="${escapeHtml(org.name)}" class="fides-modal-logo" loading="lazy" decoding="async"${logoFallbackAttr}>`
                 : `<div class="fides-modal-logo-placeholder">${icons.building}</div>`
               }
               <div class="fides-modal-title-wrap">
@@ -1199,7 +1202,7 @@
         <div class="fides-org-card-logo-wrap fides-org-card-logo-wrap--list">
           <div class="fides-row-icon" aria-hidden="true">
             ${logo
-              ? `<img src="${escapeHtml(logo)}" alt="" style="width:22px;height:22px;object-fit:contain;border-radius:3px;"${logoFallbackAttr}>`
+              ? `<img src="${escapeHtml(logo)}" alt="" style="width:22px;height:22px;object-fit:contain;border-radius:3px;" loading="lazy" decoding="async"${logoFallbackAttr}>`
               : icons.building
             }
           </div>
@@ -1447,23 +1450,36 @@
     if (id) openModal(id);
   }
 
+  async function fetchJsonWithTimeout(url, timeoutMs) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, { signal: controller.signal });
+      if (!res.ok) return { ok: false, reason: `HTTP ${res.status}` };
+      const data = await res.json();
+      return { ok: true, data };
+    } catch (err) {
+      const timedOut = err && err.name === 'AbortError';
+      return { ok: false, reason: timedOut ? `timeout ${timeoutMs}ms` : (err.message || 'network error') };
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
   async function loadOrganizations() {
+    const SOURCE_TIMEOUT_MS = 3500;
     const remote = { url: config.githubDataUrl, name: 'GitHub' };
     const local = { url: `${config.pluginUrl}data/aggregated.json`, name: 'Local' };
     const sources = isFidesLocalDevHost() ? [local, remote] : [remote, local];
     for (const source of sources) {
       if (!source.url) continue;
-      try {
-        const res = await fetch(source.url);
-        if (res.ok) {
-          const data = await res.json();
-          organizations = data.organizations || [];
-          console.log(`Loaded ${organizations.length} organizations from ${source.name}`);
-          break;
-        }
-      } catch (err) {
-        console.warn(`Failed to load from ${source.name}:`, err.message);
+      const result = await fetchJsonWithTimeout(source.url, SOURCE_TIMEOUT_MS);
+      if (result.ok) {
+        organizations = result.data.organizations || [];
+        console.log(`Loaded ${organizations.length} organizations from ${source.name}`);
+        break;
       }
+      console.warn(`Failed to load from ${source.name}: ${result.reason}`);
     }
     applySectorFromUrl();
     applyCountryFromUrl();
