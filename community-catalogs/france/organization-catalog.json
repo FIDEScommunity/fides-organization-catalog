@@ -8,7 +8,7 @@
     ],
     "website": "https://france-identite.gouv.fr/",
     "country": "FR",
-    "description": "France Identité permet de créer son identité numérique régalienne. Cette application associe votre CNI et votre smartphone. Elle vise à prolonger les usages de la carte d’identité dans le monde numérique et en face à face",
+    "description": "France Identite is the French government digital identity initiative, linking the national ID card and smartphone for secure online and in-person use.",
     "logo": "https://france-identite.gouv.fr/assets/img/FIN-profile-picture.jpg"
   }
 }
