@@ -10,8 +10,18 @@
       "finance",
       "trade"
     ],
-    "website": "https://www.unifiedpost.nl/",
+    "website": "https://www.unifiedpost.be/",
     "logo": "https://www.google.com/s2/favicons?domain=unifiedpost.nl&sz=128",
-    "country": "NL"
+    "country": "BE",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/10",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        }
+      }
+    ]
   }
 }
