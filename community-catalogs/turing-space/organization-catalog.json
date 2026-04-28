@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:turing-space",
+    "name": "Turing Space Inc.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://turingcerts.com/",
+    "logo": "https://turingcerts.com/wp-content/uploads/2026/04/logo-new.png",
+    "country": "NL",
+    "description": "Turing Space provides enterprise trust infrastructure for issuing and verifying machine-verifiable credentials using open standards such as W3C Verifiable Credentials, DIDs, and OpenID4VC.",
+    "tags": [
+      "digital wallets",
+      "verifiable credentials",
+      "identity verification",
+      "compliance"
+    ]
+  }
+}
