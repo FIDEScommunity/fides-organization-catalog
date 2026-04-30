@@ -423,6 +423,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
   font-size: 0.875rem;
   color: var(--fides-text-secondary);
   height: 2.25rem;
@@ -431,18 +432,30 @@
   white-space: nowrap;
 }
 
+.fides-sort-text {
+  white-space: nowrap;
+}
+
 .fides-sort-select {
+  width: auto;
+  min-width: 130px;
   height: 2.25rem;
   padding: 0 1.75rem 0 0.5rem;
   font-size: 0.875rem;
   line-height: 2.25rem;
   color: var(--fides-text-primary);
-  background: var(--fides-bg-secondary);
+  background-color: var(--fides-bg-secondary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
   border: 1px solid var(--fides-border);
   border-radius: 6px;
   cursor: pointer;
   box-sizing: border-box;
   margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .fides-mobile-filter-toggle {
@@ -1407,7 +1420,7 @@
 }
 
 .fides-modal-org-overview-desc {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
 }
 
 .fides-modal-org-overview-desc--empty {
@@ -1416,7 +1429,8 @@
 
 /* Overview accordion: taxonomy rows (aligned with credential catalog modal) */
 .fides-modal-taxonomy--org-overview {
-  margin-top: 0.25rem;
+  margin-top: 0;
+  padding-top: 1rem;
 }
 
 .fides-modal-taxonomy .fides-modal-taxonomy-row {
@@ -2134,6 +2148,64 @@
 .fides-details-kv .fides-kv-val--url .fides-url-ellipsis svg {
   display: inline-block;
   vertical-align: -0.15em;
+}
+
+/* Keep organization modal details/counters stable on pages that also load other catalog styles (e.g. map). */
+.fides-modal-overlay.fides-modal-overlay--organization .fides-accordion-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.45rem;
+  height: 1.45rem;
+  font-size: 0.8125rem;
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--fides-accent);
+  padding: 0 0.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.fides-modal-overlay.fides-modal-overlay--organization .fides-details-kv {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.fides-modal-overlay.fides-modal-overlay--organization .fides-kv-row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 42%) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  padding: 0.45rem 0;
+  min-width: 0;
+}
+
+.fides-modal-overlay.fides-modal-overlay--organization .fides-kv-key {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--fides-text-muted);
+  white-space: normal;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.fides-modal-overlay.fides-modal-overlay--organization .fides-kv-val {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: var(--fides-text-secondary);
+  word-break: break-word;
+  min-width: 0;
+}
+
+.fides-modal-overlay.fides-modal-overlay--organization .fides-kv-val--url .fides-url-ellipsis {
+  display: inline;
+  white-space: normal;
+  max-width: none;
+  overflow: visible;
+  text-overflow: unset;
+  vertical-align: baseline;
 }
 
 .fides-modal-provider-did--inline {
