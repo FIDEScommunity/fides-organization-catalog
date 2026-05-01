@@ -11,6 +11,20 @@ function toNumber(val: unknown, fallback: number): number {
   return Number.isNaN(n) || n < 0 ? fallback : n;
 }
 
+function parseQueryArray(val: unknown): string[] {
+  if (val == null) return [];
+  if (Array.isArray(val)) {
+    return val
+      .flatMap((item) => String(item).split(','))
+      .map((item) => item.trim())
+      .filter((item) => item.length > 0);
+  }
+  return String(val)
+    .split(',')
+    .map((item) => item.trim())
+    .filter((item) => item.length > 0);
+}
+
 function certificationSearchHaystack(o: AggregatedOrganization): string {
   const items = o.certifications;
   if (!items?.length) return '';
@@ -50,7 +64,7 @@ export default function handler(req: VercelRequest, res: VercelResponse): void {
   const country = typeof req.query.country === 'string' ? req.query.country : undefined;
   const role = typeof req.query.role === 'string' ? req.query.role : undefined;
   const search = typeof req.query.search === 'string' ? req.query.search.toLowerCase() : undefined;
-  const certification = typeof req.query.certification === 'string' ? req.query.certification : undefined;
+  const certifications = parseQueryArray(req.query.certification);
   const sector = typeof req.query.sector === 'string' ? req.query.sector : undefined;
   const fidesManifestoSupporter =
     typeof req.query.fidesManifestoSupporter === 'string'
@@ -74,8 +88,9 @@ export default function handler(req: VercelRequest, res: VercelResponse): void {
     });
   }
 
-  if (certification) {
-    orgs = orgs.filter((o) => o.certifications?.some((c) => c.code === certification));
+  if (certifications.length > 0) {
+    const selected = new Set(certifications);
+    orgs = orgs.filter((o) => o.certifications?.some((c) => selected.has(c.code)));
   }
 
   if (sector) {

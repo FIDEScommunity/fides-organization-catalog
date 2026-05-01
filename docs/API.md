@@ -17,7 +17,7 @@ Returns a paginated, filterable list of organizations.
 | `search` | string | — | Full-text search on name, legal name, description |
 | `country` | string | — | ISO 3166-1 alpha-2 country code filter |
 | `role` | string | — | Ecosystem role filter: `issuer`, `credential`, `wallet`, `rp` |
-| `certification` | string | — | Filter by certification (e.g. `QEAA`) |
+| `certification` | string[] | — | Filter by one or more certifications (e.g. `iso27001`, `qtsp`). Repeat parameter for OR semantics |
 | `sort` | string | `name` | Sort field: `name`, `country`, `updatedAt` |
 | `direction` | string | `asc` | Sort direction: `asc`, `desc` |
 | `page` | integer | `0` | Page number (0-based) |

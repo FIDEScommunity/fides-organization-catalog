@@ -17,7 +17,15 @@ const spec = {
           { name: 'search', in: 'query', schema: { type: 'string' }, description: 'Search by name, legal name, description, identifiers, or certification fields' },
           { name: 'country', in: 'query', schema: { type: 'string' }, description: 'Filter by ISO 3166-1 alpha-2 country code' },
           { name: 'role', in: 'query', schema: { type: 'string', enum: ['issuer', 'credential', 'wallet', 'rp'] }, description: 'Filter by ecosystem role' },
-          { name: 'certification', in: 'query', schema: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2'] }, description: 'Filter by certification code' },
+          {
+            name: 'certification',
+            in: 'query',
+            schema: {
+              type: 'array',
+              items: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2'] },
+            },
+            description: 'Filter by certification code. Repeat this parameter to match any selected certification (OR semantics).',
+          },
           {
             name: 'sector',
             in: 'query',
