@@ -8,6 +8,9 @@ import path from 'path';
 
 const ROOT = path.resolve(process.cwd());
 const SOURCE_DIR = path.join(ROOT, 'community-catalogs');
+const REPORT_DIR = path.join(ROOT, 'data');
+const REPORT_JSON_PATH = path.join(REPORT_DIR, 'linkcheck-report.json');
+const REPORT_MD_PATH = path.join(REPORT_DIR, 'linkcheck-summary.md');
 
 interface LinkResult {
   org: string;
@@ -16,6 +19,13 @@ interface LinkResult {
   ok: boolean;
   status?: number;
   error?: string;
+}
+
+interface LinkcheckReport {
+  runAt: string;
+  totalUrls: number;
+  brokenCount: number;
+  broken: LinkResult[];
 }
 
 async function checkUrl(url: string): Promise<{ ok: boolean; status?: number; error?: string }> {
@@ -78,28 +88,43 @@ async function main(): Promise<void> {
     }
   }
 
+  const report: LinkcheckReport = {
+    runAt: new Date().toISOString(),
+    totalUrls: results.length,
+    brokenCount: broken.length,
+    broken,
+  };
+
+  await fs.mkdir(REPORT_DIR, { recursive: true });
+  await fs.writeFile(REPORT_JSON_PATH, JSON.stringify(report, null, 2), 'utf-8');
+  console.log(`Report written to ${REPORT_JSON_PATH}`);
+
+  const mdLines: string[] = [];
+  mdLines.push(`# Organization catalog linkcheck - ${report.runAt.slice(0, 10)}`);
+  mdLines.push('');
+  mdLines.push(`- **Total URLs checked:** ${report.totalUrls}`);
+  mdLines.push(`- **Broken:** ${report.brokenCount}`);
+  mdLines.push('');
+  if (broken.length > 0) {
+    mdLines.push('## Broken links');
+    mdLines.push('');
+    mdLines.push('| Organization | Field | URL | Status |');
+    mdLines.push('| --- | --- | --- | --- |');
+    for (const b of broken) {
+      const status = b.error ? `error: ${b.error}` : `${b.status ?? 'unknown'}`;
+      mdLines.push(`| ${b.org} | ${b.field} | ${b.url} | ${status} |`);
+    }
+  } else {
+    mdLines.push('All links OK.');
+  }
+  mdLines.push('');
+  const markdownSummary = mdLines.join('\n');
+  await fs.writeFile(REPORT_MD_PATH, markdownSummary, 'utf-8');
+  console.log(`Summary written to ${REPORT_MD_PATH}`);
+
   const summaryPath = process.env.GITHUB_STEP_SUMMARY;
   if (summaryPath) {
-    const lines: string[] = [];
-    lines.push('# Link check report');
-    lines.push('');
-    lines.push(`- Links checked: **${results.length}**`);
-    lines.push(`- Broken: **${broken.length}**`);
-    lines.push('');
-    if (broken.length > 0) {
-      lines.push('## Broken links');
-      lines.push('');
-      lines.push('| Organization | Field | URL | Status |');
-      lines.push('| --- | --- | --- | --- |');
-      for (const b of broken) {
-        const status = b.error ? `error: ${b.error}` : `${b.status}`;
-        lines.push(`| ${b.org} | ${b.field} | ${b.url} | ${status} |`);
-      }
-    } else {
-      lines.push('All links OK.');
-    }
-    lines.push('');
-    await fs.appendFile(summaryPath, lines.join('\n'));
+    await fs.appendFile(summaryPath, markdownSummary);
   }
 }
 
