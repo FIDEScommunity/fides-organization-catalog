@@ -1,0 +1,24 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "lastUpdated": "2026-05-26T00:00:00Z",
+  "organization": {
+    "id": "org:uidai",
+    "name": "Unique Identification Authority of India",
+    "legalName": "Unique Identification Authority of India",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "The Unique Identification Authority of India (UIDAI) is the public authority responsible for Aadhaar, India’s unique identity system for residents.",
+    "website": "https://uidai.gov.in/",
+    "logo": "https://commons.wikimedia.org/wiki/File:Aadhaar.svg",
+    "country": "IN",
+    "tags": [
+      "Aadhaar",
+      "Digital Public Infrastructure"
+    ],
+    "fidesManifestoSupporter": false,
+    "contact": {
+      "support": "https://uidai.gov.in/en/contact-support.html"
+    }
+  }
+}
