@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "lastUpdated": "2026-05-26T00:00:00Z",
+  "organization": {
+    "id": "org:microsave-consulting",
+    "name": "MicroSave Consulting",
+    "legalName": "MicroSave Consulting",
+    "sectors": [
+      "digital"
+    ],
+    "description": "MicroSave Consulting (MSC) is an international consulting firm focused on digital public infrastructure, inclusive finance, digital identity, and public sector digital transformation.",
+    "website": "http://www.MicroSave.net",
+    "logo": "https://www.microsave.net/wp-content/uploads/2022/06/MSC-Logo.png",
+    "country": "IN",
+    "tags": [
+      "Digital Public Infrastructure",
+      "Aadhaar",
+      "Digital Identity",
+      "Inclusive Finance"
+    ],
+    "fidesManifestoSupporter": false,
+    "contact": {
+      "support": "https://www.microsave.net/contact/"
+    }
+  }
+}
