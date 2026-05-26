@@ -1294,5 +1294,11 @@
   },
   "org:turing-space": {
     "firstSeenAt": "2026-04-28T10:05:39.000Z"
+  },
+  "org:uidai": {
+    "firstSeenAt": "2026-05-26T00:00:00Z"
+  },
+  "org:microsave-consulting": {
+    "firstSeenAt": "2026-05-26T00:00:00Z"
   }
 }
