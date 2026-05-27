@@ -10,7 +10,7 @@
     ],
     "description": "Logius is the Dutch government digital service provider responsible for national digital identity, authentication, and secure digital government infrastructure in the Netherlands, including DigiD, eHerkenning coordination, and MijnOverheid services.",
     "website": "https://www.logius.nl/",
-    "logo": "https://www.logius.nl/binaries/logius/styles/600x600/public/content-afbeeldingen/logo/logius-logo.png",
+    "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/logius/logius_logo.png",
     "country": "NL",
     "tags": [
       "Digital Identity",
