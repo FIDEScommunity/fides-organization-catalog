@@ -2397,6 +2397,27 @@
   vertical-align: baseline;
 }
 
+.fides-modal-overlay .fides-modal-entity-like-slot {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.45rem;
+  vertical-align: baseline;
+}
+
+.fides-modal-overlay .fides-modal-entity-like-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.22rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--fides-text-secondary);
+  line-height: 1;
+}
+
+.fides-modal-overlay .fides-modal-entity-like-star {
+  color: #f5c518;
+}
+
 .fides-modal-overlay .fides-modal-entity-table tbody tr:has(a.fides-modal-link-inline) {
   transition: background 0.12s ease;
 }

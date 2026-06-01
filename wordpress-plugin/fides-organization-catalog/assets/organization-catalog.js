@@ -260,7 +260,115 @@
     rpCatalogUrl: '',
     bluePagesRestUrl: '',
     bluePagesProfileBaseUrl: '',
+    ratingsApiBase: '',
   };
+
+  const RATINGS_API_BASE = (config.ratingsApiBase || '').replace(/\/$/, '');
+  const RATINGS_BATCH_LIMIT = 100;
+  const ratingSummariesByType = {
+    issuer: Object.create(null),
+    credential: Object.create(null),
+    wallet: Object.create(null),
+    rp: Object.create(null),
+  };
+
+  function buildRatingsEndpoint(path, params) {
+    if (!RATINGS_API_BASE) return '';
+    const cleanedPath = String(path || '').replace(/^\/+/, '');
+    const url = `${RATINGS_API_BASE}/${cleanedPath}`;
+    const search = new URLSearchParams();
+    Object.entries(params || {}).forEach(([k, v]) => {
+      if (v === null || v === undefined) return;
+      const value = String(v).trim();
+      if (!value) return;
+      search.set(k, value);
+    });
+    const qs = search.toString();
+    return qs ? `${url}?${qs}` : url;
+  }
+
+  function ratingMapForType(type) {
+    return ratingSummariesByType[type] || null;
+  }
+
+  function setRatingSummaryForType(type, itemId, summary) {
+    const map = ratingMapForType(type);
+    if (!map || !itemId) return;
+    const likes = Number(summary && summary.likes != null ? summary.likes : summary && summary.count != null ? summary.count : 0);
+    const myLike = Number(summary && summary.my_like != null ? summary.my_like : summary && summary.my_rating != null ? summary.my_rating : 0);
+    map[itemId] = {
+      likes: Number.isFinite(likes) ? Math.max(0, Math.round(likes)) : 0,
+      myLike: Number.isFinite(myLike) ? myLike : 0,
+    };
+  }
+
+  function likeSummaryForType(type, itemId) {
+    const map = ratingMapForType(type);
+    if (!map || !itemId || !map[itemId]) return null;
+    return map[itemId];
+  }
+
+  function renderModalEntityLikeInline(type, itemId) {
+    const summary = likeSummaryForType(type, itemId);
+    const count = summary ? Number(summary.likes || 0) : 0;
+    if (!Number.isFinite(count) || count < 1) return '';
+    return `<span class="fides-modal-entity-like-inline" aria-label="${count} likes"><span class="fides-modal-entity-like-star" aria-hidden="true">★</span>${count}</span>`;
+  }
+
+  function chunkArray(items, size) {
+    const out = [];
+    for (let i = 0; i < items.length; i += size) out.push(items.slice(i, i + size));
+    return out;
+  }
+
+  async function loadRatingSummariesForType(type, ids) {
+    if (!RATINGS_API_BASE || !type || !Array.isArray(ids) || ids.length === 0) return;
+    const uniqueIds = [...new Set(ids.map((id) => String(id || '').trim()).filter(Boolean))];
+    if (uniqueIds.length === 0) return;
+    const chunks = chunkArray(uniqueIds, RATINGS_BATCH_LIMIT);
+    await Promise.all(chunks.map(async (chunk) => {
+      const endpoint = buildRatingsEndpoint('batch', { type, ids: chunk.join(',') });
+      if (!endpoint) return;
+      try {
+        const response = await fetch(endpoint);
+        if (!response.ok) return;
+        const data = await response.json();
+        const results = data && data.results ? data.results : {};
+        Object.keys(results).forEach((itemId) => {
+          setRatingSummaryForType(type, itemId, results[itemId]);
+        });
+      } catch (_) {
+        // Keep modal usable even when ratings endpoint is unreachable.
+      }
+    }));
+  }
+
+  function applyModalEntityLikes(overlay) {
+    if (!overlay) return;
+    overlay.querySelectorAll('[data-entity-like-type][data-entity-like-id]').forEach((node) => {
+      const type = node.getAttribute('data-entity-like-type') || '';
+      const itemId = node.getAttribute('data-entity-like-id') || '';
+      node.innerHTML = renderModalEntityLikeInline(type, itemId);
+    });
+  }
+
+  async function loadAndApplyModalRoleLikes(org) {
+    if (!org || !org.ecosystemRoles || !RATINGS_API_BASE) return;
+    const r = org.ecosystemRoles || {};
+    const issuerIds = (r.issuers || []).map((x) => x && x.id).filter(Boolean);
+    const credentialIds = (r.credentialTypes || []).map((x) => x && x.id).filter(Boolean);
+    const walletIds = [...(r.personalWallets || []), ...(r.businessWallets || [])].map((x) => x && x.id).filter(Boolean);
+    const rpIds = (r.relyingParties || []).map((x) => x && x.id).filter(Boolean);
+
+    await Promise.all([
+      loadRatingSummariesForType('issuer', issuerIds),
+      loadRatingSummariesForType('credential', credentialIds),
+      loadRatingSummariesForType('wallet', walletIds),
+      loadRatingSummariesForType('rp', rpIds),
+    ]);
+
+    applyModalEntityLikes(document.getElementById('fides-modal-overlay'));
+  }
 
   const SORT_STORAGE_KEY = 'fides-org-sort';
   const SORT_OPTIONS = ['name', 'country', 'updatedAt'];
@@ -279,6 +387,7 @@
   let organizations = [];
   let sortBy = readStoredSort();
   let selectedOrg = null;
+  let forcedModalTheme = null;
   let root;
   let viewMode = localStorage.getItem('fides-org-view') || 'grid';
   const LIST_BREAKPOINT = 1024;
@@ -881,14 +990,14 @@
     const logoFallback = logoFallbackFromWebsite(org.website);
     const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
     const r = org.ecosystemRoles || {};
-    const theme = root?.dataset?.theme || 'fides';
+    const theme = forcedModalTheme || root?.dataset?.theme || 'fides';
 
     const roleSections = [
-      { key: 'issuers', items: r.issuers || [], icon: icons.server, label: 'Issuers', catalogUrl: config.issuerCatalogUrl, paramKey: 'issuer' },
-      { key: 'credentialTypes', items: r.credentialTypes || [], icon: icons.fileCheck, label: 'Credential Types', catalogUrl: config.credentialCatalogUrl, paramKey: 'credential' },
-      { key: 'personalWallets', items: r.personalWallets || [], icon: icons.wallet, label: 'Personal Wallets', catalogUrl: config.walletCatalogUrl, paramKey: 'wallet' },
-      { key: 'businessWallets', items: r.businessWallets || [], icon: icons.wallet, label: 'Business Wallets', catalogUrl: config.walletCatalogUrl, paramKey: 'wallet' },
-      { key: 'relyingParties', items: r.relyingParties || [], icon: icons.shield, label: 'Relying Parties', catalogUrl: config.rpCatalogUrl, paramKey: 'rp' },
+      { key: 'issuers', items: r.issuers || [], icon: icons.server, label: 'Issuers', catalogUrl: config.issuerCatalogUrl, paramKey: 'issuer', ratingType: 'issuer' },
+      { key: 'credentialTypes', items: r.credentialTypes || [], icon: icons.fileCheck, label: 'Credential Types', catalogUrl: config.credentialCatalogUrl, paramKey: 'credential', ratingType: 'credential' },
+      { key: 'personalWallets', items: r.personalWallets || [], icon: icons.wallet, label: 'Personal Wallets', catalogUrl: config.walletCatalogUrl, paramKey: 'wallet', ratingType: 'wallet' },
+      { key: 'businessWallets', items: r.businessWallets || [], icon: icons.wallet, label: 'Business Wallets', catalogUrl: config.walletCatalogUrl, paramKey: 'wallet', ratingType: 'wallet' },
+      { key: 'relyingParties', items: r.relyingParties || [], icon: icons.shield, label: 'Relying Parties', catalogUrl: config.rpCatalogUrl, paramKey: 'rp', ratingType: 'rp' },
     ];
 
     const certCount = countCatalogCertifications(org);
@@ -899,7 +1008,7 @@
       : '';
 
     return `
-      <div class="fides-modal-overlay" id="fides-modal-overlay" data-theme="${escapeHtml(theme)}">
+      <div class="fides-modal-overlay fides-modal-overlay--organization" id="fides-modal-overlay" data-theme="${escapeHtml(theme)}">
         <div class="fides-modal" role="dialog" aria-modal="true" aria-labelledby="fides-modal-title">
           <div class="fides-modal-header">
             <div class="fides-modal-header-content">
@@ -973,11 +1082,15 @@
                         <tbody>
                           ${sec.items.map((item) => {
                             const label = escapeHtml(item.displayName || item.id);
+                            const itemId = escapeHtml(item.id || '');
+                            const likeSlot = item.id
+                              ? `<span class="fides-modal-entity-like-slot" data-entity-like-type="${escapeHtml(sec.ratingType)}" data-entity-like-id="${itemId}">${renderModalEntityLikeInline(sec.ratingType, item.id)}</span>`
+                              : '';
                             if (base) {
                               const href = `${base}/?${sec.paramKey}=${encodeURIComponent(item.id)}`;
-                              return `<tr><td><a href="${escapeHtml(href)}" class="fides-modal-link-inline" onclick="event.stopPropagation();">${label}</a></td></tr>`;
+                              return `<tr><td><a href="${escapeHtml(href)}" class="fides-modal-link-inline" onclick="event.stopPropagation();">${label}</a>${likeSlot}</td></tr>`;
                             }
-                            return `<tr><td>${label}</td></tr>`;
+                            return `<tr><td>${label}${likeSlot}</td></tr>`;
                           }).join('')}
                         </tbody>
                       </table>
@@ -1105,15 +1218,13 @@
     `;
   }
 
-  function computeMetrics() {
-    let totalIssuers = 0;
-    let totalWallets = 0;
-    let totalRps = 0;
+  function computeMetrics(items) {
+    const list = Array.isArray(items) ? items : [];
     const issuerIds = new Set();
     const walletIds = new Set();
     const rpIds = new Set();
 
-    for (const org of organizations) {
+    for (const org of list) {
       const r = org.ecosystemRoles || {};
       (r.issuers || []).forEach((i) => issuerIds.add(i.id));
       (r.personalWallets || []).forEach((w) => walletIds.add(w.id));
@@ -1122,7 +1233,7 @@
     }
 
     return {
-      total: organizations.length,
+      total: list.length,
       issuers: issuerIds.size,
       walletProviders: walletIds.size,
       relyingParties: rpIds.size,
@@ -1227,7 +1338,7 @@
 
   function render() {
     const filtered = getFilteredOrgs();
-    const metrics = computeMetrics();
+    const metrics = computeMetrics(filtered);
 
     root.innerHTML = `
       <div class="fides-org-layout">
@@ -1299,6 +1410,7 @@
 
   function closeModal() {
     selectedOrg = null;
+    forcedModalTheme = null;
     const overlay = document.getElementById('fides-modal-overlay');
     if (overlay) { overlay.classList.add('closing'); setTimeout(() => overlay.remove(), 200); }
     document.body.style.overflow = '';
@@ -1340,6 +1452,9 @@
 
     if (selectedOrg && orgHasVerifiedProfileAccordion(selectedOrg)) {
       loadBluePagesSection(orgCatalogDid(selectedOrg));
+    }
+    if (selectedOrg) {
+      loadAndApplyModalRoleLikes(selectedOrg);
     }
   }
 
@@ -1432,6 +1547,14 @@
     const ev = effectiveView();
     grid.setAttribute('data-view', ev);
     const filtered = getFilteredOrgs();
+    const metrics = computeMetrics(filtered);
+    const kpiValues = root.querySelectorAll('.fides-kpi-card .fides-kpi-value');
+    if (kpiValues.length >= 4) {
+      kpiValues[0].textContent = String(metrics.total);
+      kpiValues[1].textContent = String(metrics.issuers);
+      kpiValues[2].textContent = String(metrics.walletProviders);
+      kpiValues[3].textContent = String(metrics.relyingParties);
+    }
     const header = ev === 'list' ? renderOrgListHeader() : '';
     const items = filtered.length > 0
       ? filtered.map(ev === 'list' ? renderOrgRow : renderOrgCard).join('')
@@ -1530,4 +1653,24 @@
   } else {
     init();
   }
+
+  function openModalFromData(org, options) {
+    if (!org || typeof org !== 'object') return false;
+    if (options && options.configOverrides && typeof options.configOverrides === 'object') {
+      Object.assign(config, options.configOverrides);
+    }
+    selectedOrg = org;
+    forcedModalTheme = (options && options.theme) ? String(options.theme) : null;
+    const existing = document.getElementById('fides-modal-overlay');
+    if (existing) existing.remove();
+    document.body.insertAdjacentHTML('beforeend', renderModal());
+    document.body.style.overflow = 'hidden';
+    bindModalEvents();
+    return true;
+  }
+
+  window.FidesOrganizationCatalogModal = {
+    openFromData: openModalFromData,
+    close: closeModal,
+  };
 })();
