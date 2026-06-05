@@ -1,0 +1,25 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:digitaliseringsstyrelsen",
+    "name": "Digitaliseringsstyrelsen",
+    "legalName": "Digitaliseringsstyrelsen",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Digitaliseringsstyrelsen is the Danish Agency for Digital Government, responsible for national digital government services and digital identity infrastructure in Denmark.",
+    "website": "https://digst.dk/",
+    "logo": "https://digst.dk/media/cdld0gfa/digst_logo_dk_aubergine_rgb_new_png.png?format=webp&quality=92",
+    "country": "DK",
+    "tags": [
+      "Digital Identity Authority",
+      "Government Agency",
+      "EUDI Wallet"
+    ],
+    "fidesManifestoSupporter": false,
+    "contact": {
+      "support": "https://digst.dk/it-loesninger/altid/"
+    }
+  },
+  "lastUpdated": "2026-06-05T00:00:00Z"
+}
