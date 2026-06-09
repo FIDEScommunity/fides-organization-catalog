@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:vaultie",
+    "name": "Vaultie",
+    "description": "Canadian digital trust company focused on identity verification, verifiable credentials, digital wallets, authenticatable documents and fraud-resistant digital signatures. Vaultie provides solutions for legal, financial, real estate and government use cases, using verifiable credentials and identity verification technologies to establish trust in digital transactions.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://vaultie.com/",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07daYa8ulOKvnxG6s_8_I_pgbQmGJLrIGeg&s",
+    "country": "CA",
+    "tags": [
+      "Verifiable Credentials",
+      "Digital Wallet",
+      "Identity Verification",
+      "Digital Signatures",
+      "Document Verification",
+      "Fraud Prevention",
+      "DIACC Member",
+      "PCTF"
+    ],
+    "contact": {
+      "support": "https://vaultie.com/contact"
+    }
+  },
+  "lastUpdated": "2026-06-09T00:00:00Z"
+}
