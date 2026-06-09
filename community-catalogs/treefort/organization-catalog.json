@@ -1,0 +1,36 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:treefort",
+    "name": "Treefort",
+    "legalName": "Treefort Technologies Incorporated",
+    "description": "Canadian identity verification technology provider focused on secure in-person and virtual client verification, fraud prevention, KYC and anti-money laundering compliance for legal, real estate, mortgage and other regulated sectors.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://treeforttech.com/",
+    "logo": "https://treeforttech.com/wp-content/uploads/2024/03/TreefortLogo-e1709864378392.png",
+    "country": "CA",
+    "certifications": [
+      {
+        "code": "soc2"
+      }
+    ],
+    "tags": [
+      "Identity Verification",
+      "Digital Identity",
+      "Fraud Prevention",
+      "KYC",
+      "AML",
+      "LegalTech",
+      "Real Estate Technology",
+      "DIACC Member",
+      "PCTF"
+    ],
+    "contact": {
+      "email": "support@treeforttech.com",
+      "support": "https://treeforttech.com/contact-us/"
+    }
+  },
+  "lastUpdated": "2026-06-09T00:00:00Z"
+}
