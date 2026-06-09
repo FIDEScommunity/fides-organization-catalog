@@ -1,0 +1,34 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:identos",
+    "name": "IDENTOS",
+    "legalName": "IDENTOS Inc.",
+    "description": "Digital identity and access management company providing secure IT solutions for healthcare and public sector organizations. IDENTOS focuses on policy-based access control, identity verification, federated identity brokering, consent management, delegation and support for verifiable credentials.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.identos.com/",
+    "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/identos/identos-logo.png",
+    "country": "CA",
+    "certifications": [
+      {
+        "code": "iso27001"
+      },
+      {
+        "code": "soc2"
+      }
+    ],
+    "tags": [
+      "digital identity",
+      "identity verification",
+      "verifiable credentials",
+      "identity and access management",
+      "federated identity",
+      "consent management",
+      "healthcare",
+      "public sector"
+    ]
+  },
+  "lastUpdated": "2026-06-09T00:00:00Z"
+}
