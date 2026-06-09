@@ -1,0 +1,29 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fraudfighter",
+    "name": "FraudFighter",
+    "legalName": "UVeritech, Inc.",
+    "description": "Identity verification and fraud prevention provider. FraudFighter offers document authentication, identity verification and fraud detection solutions that help organizations establish trust, prevent fraud and meet compliance requirements in regulated and high-trust environments.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.fraudfighter.com/",
+    "logo": "https://www.fraudfighter.com/hubfs/FF-PurpleBlack-2.png",
+    "country": "US",
+    "tags": [
+      "Identity Verification",
+      "Document Verification",
+      "Fraud Prevention",
+      "Identity Authentication",
+      "Counterfeit Detection",
+      "KYC",
+      "AML",
+      "FraudFighter ID"
+    ],
+    "contact": {
+      "support": "https://www.fraudfighter.com/contact-us"
+    }
+  },
+  "lastUpdated": "2026-06-09T00:00:00Z"
+}
