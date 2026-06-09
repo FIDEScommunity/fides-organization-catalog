@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:diacc",
+    "name": "DIACC",
+    "legalName": "Digital ID and Authentication Council of Canada",
+    "description": "Digital ID and Authentication Council of Canada (DIACC). Canadian non-profit coalition of public and private sector organizations focused on advancing digital trust, digital identity, authentication, and verification. DIACC develops and maintains the Pan-Canadian Trust Framework (PCTF) and promotes interoperable, privacy-enhancing digital trust ecosystems.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://diacc.ca/",
+    "logo": "https://diacc.ca/wp-content/uploads/2022/09/diacc-logo.png",
+    "country": "CA",
+    "tags": [
+      "Digital Trust",
+      "Digital Identity",
+      "Authentication",
+      "Verification",
+      "Pan-Canadian Trust Framework",
+      "PCTF",
+      "Trust Framework"
+    ],
+    "contact": {
+      "support": "https://diacc.ca/contact-us/"
+    }
+  },
+  "lastUpdated": "2026-06-09T00:00:00Z"
+}
