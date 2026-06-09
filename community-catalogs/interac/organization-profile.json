@@ -10,6 +10,8 @@
     ],
     "website": "https://www.interac.ca/en/",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/interac/Interac_logo.jpeg",
+    "country": "CA",
+    "tags": [
       "Digital Identity",
       "Identity Verification",
       "Authentication",
