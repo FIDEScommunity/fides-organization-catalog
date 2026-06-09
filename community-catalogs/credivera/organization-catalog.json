@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:credivera",
+    "name": "Credivera",
+    "legalName": "TerraHub Technologies Inc.",
+    "description": "Canadian digital trust and workforce identity platform provider. Credivera operates the Credivera Exchange, a verifiable credentials platform that enables organizations, issuers, employers and individuals to issue, store, share and verify digital credentials using open standards and digital wallets.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.credivera.com/",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKd-T57n1EvE5tNFUthhav9xMgu2qF5mwb-w&s",
+    "country": "CA",
+    "tags": [
+      "Verifiable Credentials",
+      "Digital Identity",
+      "Digital Wallet",
+      "Workforce Identity",
+      "Trust Infrastructure",
+      "Compliance",
+      "PCTF",
+      "DIACC Member"
+    ],
+    "fidesManifestoSupporter": false,
+    "contact": {
+      "support": "https://www.credivera.com/contact"
+    }
+  },
+  "lastUpdated": "2026-06-09T00:00:00Z"
+}
