@@ -1,0 +1,29 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fct",
+    "name": "FCT",
+    "legalName": "First Canadian Title Company Limited",
+    "description": "Canadian provider of title insurance, real estate technology, property intelligence and identity verification solutions. FCT supports legal professionals, lenders and property owners across the real estate lifecycle, including digital identity verification and fraud prevention services.",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://fct.ca/",
+    "logo": "https://mms.businesswire.com/media/20250512632503/en/2465244/4/FCT_Master_Blue_E.jpg",
+    "country": "CA",
+    "tags": [
+      "Identity Verification",
+      "Digital Identity",
+      "Fraud Prevention",
+      "Property Intelligence",
+      "Real Estate Technology",
+      "Title Insurance",
+      "Client ID Verification",
+      "DIACC Member"
+    ],
+    "contact": {
+      "support": "https://fct.ca/contact-us"
+    }
+  },
+  "lastUpdated": "2026-06-09T00:00:00Z"
+}
