@@ -1,0 +1,609 @@
+{
+  "runAt": "2026-05-19T07:17:43.347Z",
+  "totalUrls": 820,
+  "brokenCount": 86,
+  "broken": [
+    {
+      "org": "actalis",
+      "field": "website",
+      "url": "https://portal.actalis.it/Info/qcsp-english",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "org": "agence-du-numerique-des-forces-de-securite-interieure",
+      "field": "website",
+      "url": "https://www.gendarmerie.interieur.gouv.fr/",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "akd-d-o-o",
+      "field": "website",
+      "url": "http://eid.hr/en",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "aviva-voice-systems-and-services",
+      "field": "website",
+      "url": "http://www.avivavoice.com/",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "org": "ayanworks",
+      "field": "logo",
+      "url": "https://www.google.com/s2/favicons?domain=credebl.id&sz=128",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "banca-intesa",
+      "field": "website",
+      "url": "http://ca.intesasanpaolo.com/scriptIden0/identrus/portal.jsp",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "brazil",
+      "field": "website",
+      "url": "https://www.gov.br/gestao/",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "british-airways",
+      "field": "website",
+      "url": "https://www.britishairways.com",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "org": "byte-computer",
+      "field": "website",
+      "url": "https://www.byte.gr/trust/digital-signatures-en/",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "cedacri",
+      "field": "website",
+      "url": "http://www.cedacricert.it/cedacricert/en/documentazione/ManualiOperativi.html",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "cedacrinord",
+      "field": "website",
+      "url": "http://www.cedacricert.it/cedacricert/en/documentazione/ManualiOperativi.html",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "certicomm",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "certipost",
+      "field": "website",
+      "url": "http://www.certipost.com/index.php?lang=en",
+      "ok": false,
+      "status": 500
+    },
+    {
+      "org": "cibg",
+      "field": "website",
+      "url": "https://www.uziregister.nl/contact/english-version",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "consiglio-nazionale-del-notariato",
+      "field": "website",
+      "url": "http://ca.notariato.it/Tsp_Information.asp",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "cryptolog-international",
+      "field": "website",
+      "url": "https://help.universign.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "cyprus",
+      "field": "website",
+      "url": "https://www.cygov.gov.cy/",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "deutsche-telekom",
+      "field": "website",
+      "url": "http://www.telesec.de/",
+      "ok": false,
+      "status": 400
+    },
+    {
+      "org": "deutsche-telekom-security",
+      "field": "website",
+      "url": "https://www.telesec.de/",
+      "ok": false,
+      "status": 400
+    },
+    {
+      "org": "dgn-deutsches-gesundheitsnetz-service",
+      "field": "website",
+      "url": "http://www.dgn-service.de/",
+      "ok": false,
+      "status": 500
+    },
+    {
+      "org": "digisign",
+      "field": "website",
+      "url": "https://www.digisign.ro/home/?lng=2",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "digiyatra",
+      "field": "website",
+      "url": "https://www.digiyatra.org/",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "docuten-tech",
+      "field": "website",
+      "url": "https://docuten.com/en",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "edocs-bulgaria",
+      "field": "website",
+      "url": "https://sign.edocs.bg/",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "eika-gruppen",
+      "field": "website",
+      "url": "https://eika.no/eika-alliansen/customersupport/",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "entrust-eu",
+      "field": "website",
+      "url": "https://www.entrust.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "estonia",
+      "field": "website",
+      "url": "https://www.ria.ee/",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "estonia",
+      "field": "logo",
+      "url": "https://www.google.com/s2/favicons?domain=ria.ee&sz=128",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "eudiplo",
+      "field": "website",
+      "url": "https://openwallet-foundation-labs.github.io/eudiplo/latest/",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "ewc",
+      "field": "website",
+      "url": "https://dss.aegean.gr",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "financijska-agencija",
+      "field": "website",
+      "url": "http://www.fina.hr/Default.aspx?sec=1864",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "org": "gendarmerie-nationale",
+      "field": "website",
+      "url": "https://www.gendarmerie.interieur.gouv.fr/",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "hellenic-public-administration-certification-authority",
+      "field": "website",
+      "url": "https://aped.gov.gr/",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "hungary",
+      "field": "website",
+      "url": "https://www.kormany.hu/",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "i-t-telecom",
+      "field": "website",
+      "url": "http://www.ittelecom.it/default.aspx?idPage=699",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "ia-benga",
+      "field": "website",
+      "url": "https://www.bengaluruairport.com",
+      "ok": false,
+      "status": 503
+    },
+    {
+      "org": "icbpi",
+      "field": "website",
+      "url": "https://ca.nexi.it",
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "org": "identity-documents-personalisation-centre-under-the-ministry-of-the-interior",
+      "field": "website",
+      "url": "http://www.nsc.vrm.lt/default_en.htm",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "idnow-trust-services",
+      "field": "website",
+      "url": "https://www.trust-services.io",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "in-te",
+      "field": "website",
+      "url": "http://e-trustcom.intesa.it/ca_pubblica/TSPinfo.html",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "infocamere-s-c-p-a",
+      "field": "website",
+      "url": "https://www.infocamere.it/en/home",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "infocamere-sc-p-a",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "innovalor",
+      "field": "website",
+      "url": "https://innovalor.nl/",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "intesa-sanpaolo-bank",
+      "field": "website",
+      "url": "https://ca.intesasanpaolo.com/scriptIden0/identrus/portal.jsp",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "it-telecom",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "kfj-inwestycje",
+      "field": "website",
+      "url": "https://doreczeniaelektroniczne.pl/",
+      "ok": false,
+      "status": 405
+    },
+    {
+      "org": "kingdom-of-belgium-federal-government",
+      "field": "website",
+      "url": "https://eidpki.belgium.be",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "kpn",
+      "field": "website",
+      "url": "https://certificaat.kpn.com",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "kpn",
+      "field": "logo",
+      "url": "https://certificaat.kpn.com/content/themes/kpn/images/favicon/apple-touch-icon-57x57.png",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "krajowa-izba-rozliczeniowa",
+      "field": "website",
+      "url": "http://www.elektronicznypodpis.pl/en/",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "latvia",
+      "field": "website",
+      "url": "https://www.latvija.lv/",
+      "ok": false,
+      "status": 405
+    },
+    {
+      "org": "latvian-state-radio-and-television-center",
+      "field": "website",
+      "url": "http://www.eparaksts.lv/en/",
+      "ok": false,
+      "status": 405
+    },
+    {
+      "org": "lleidanet-pki",
+      "field": "website",
+      "url": "https://www.indenova.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "lombardia-informatica",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "lombardia-integrata-servizi-infotelematici-per-il-territorio",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "magyar-telekom-public-company",
+      "field": "website",
+      "url": "http://www.t-systems.hu/nagyvallalatok/hitelesites_szolgaltatasok",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "malta-electronic-certification-services",
+      "field": "website",
+      "url": "http://repository.qca.gov.mt",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "medisign",
+      "field": "website",
+      "url": "http://www.medisign.de/",
+      "ok": false,
+      "status": 500
+    },
+    {
+      "org": "ministere-de-l-interieur",
+      "field": "website",
+      "url": "https://www.interieur.gouv.fr/IGC/",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "ministere-de-la-justice",
+      "field": "website",
+      "url": "http://www.justice.gouv.fr/multilinguisme-12198/english-12200/",
+      "ok": false,
+      "status": 400
+    },
+    {
+      "org": "ministeres-economiques-et-financiers",
+      "field": "website",
+      "url": "https://igc1.finances.gouv.fr",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "ministry-of-defence-slovak-republic",
+      "field": "website",
+      "url": "http://www.pki.mil.sk",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "netcetera-software-services",
+      "field": "website",
+      "url": "https://www.netcetera.com",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "nisz-national-infocommunications-services-company-by-shares",
+      "field": "website",
+      "url": "http://hiteles.gov.hu",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "postecom",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "prvni-certifikacni-autorita-s-r-o",
+      "field": "website",
+      "url": "https://www.ica.cz/english",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "qtsp-it-51-uanataca",
+      "field": "website",
+      "url": "https://web.uanataca.com/en/services",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "sanpaolo-imi",
+      "field": "website",
+      "url": "https://ca.intesasanpaolo.com/scriptIden0/identrus/portal.jsp",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "saritel",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "sbb",
+      "field": "website",
+      "url": "https://www.sbb.ch",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "seceti",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "sefira",
+      "field": "website",
+      "url": "https://www.sefira.cz/en/home/",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "sia",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "simpliworks",
+      "field": "website",
+      "url": "https://www.simplifi.ro",
+      "ok": false,
+      "status": 401
+    },
+    {
+      "org": "special-telecommunications-service",
+      "field": "website",
+      "url": "https://www.sts.ro",
+      "ok": false,
+      "status": 503
+    },
+    {
+      "org": "ssb",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "swisscom-it-services-finance",
+      "field": "website",
+      "url": "https://www.swisscom.ch/en/business/enterprise/offer/security/identity-access-security/signing-service.html",
+      "ok": false,
+      "status": 405
+    },
+    {
+      "org": "swisssign",
+      "field": "website",
+      "url": "https://www.swisssign.com/support/kontakt.html",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "techniserv-it",
+      "field": "website",
+      "url": "https://www.techniserv-it.cz/en/",
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "org": "telecom-italia-trust-technologies",
+      "field": "website",
+      "url": "https://www.trusttechnologies.it/chi-siamo/qcsp-english/",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "trans-sped",
+      "field": "website",
+      "url": "http://www.transsped.ro/Index_EN.aspx",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "trustcloud-tech",
+      "field": "website",
+      "url": "https://trustcloud.tech/es",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "trustitalia",
+      "field": "website",
+      "url": "http://www.agid.gov.it/qcsp-ceased",
+      "ok": false,
+      "status": 403
+    },
+    {
+      "org": "trustweaver",
+      "field": "website",
+      "url": "https://www.trustweaver.com/",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "uanataca",
+      "field": "website",
+      "url": "http://www.uanataca.com",
+      "ok": false,
+      "status": 404
+    },
+    {
+      "org": "zetes-estonia-ou",
+      "field": "website",
+      "url": "https://repository.eidpki.ee",
+      "ok": false,
+      "status": 403
+    }
+  ]
+}

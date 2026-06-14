@@ -15,6 +15,26 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/19",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_PRES_ESEAL",
+              "name": "Qualified pres eseal"
+            },
+            {
+              "code": "Q_PRES_ESIG",
+              "name": "Qualified pres esig"
+            },
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +42,5 @@
     "logo": "https://arkhineo.com/wp-content/uploads/2021/01/MyArkhineo-ordi-tablette-phone.png",
     "description": "Electronic Archiving with probative valueYou are using document management tools and all your key company documents are digital (invoices, contracts, pay slips, accounting files, etc.). Electronic archiving is no longer an option.Read moreResourcesWe provide you with a variety of resources to have a better understanding of electronic archiving, its environment etc.Download…"
   },
-  "lastUpdated": "2026-04-25T06:26:17.349Z"
+  "lastUpdated": "2026-06-14T19:16:12.186Z"
 }

@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/49",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://btponetec.es/wp-content/uploads/2024/06/cropped-nuevo-Logo-cuadrado-azul-ONETec-1-180x180.png",
     "description": "BTP ONETEC is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via btponetec.es."
   },
-  "lastUpdated": "2026-04-25T06:26:16.442Z"
+  "lastUpdated": "2026-06-14T19:16:11.425Z"
 }

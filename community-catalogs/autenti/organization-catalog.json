@@ -15,6 +15,22 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/PL/tsp/13",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            },
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +38,5 @@
     "logo": "https://autenti.com/hubfs/autenti_logos/favicon.ico",
     "description": "Autenti is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via autenti.com."
   },
-  "lastUpdated": "2026-04-25T06:26:22.172Z"
+  "lastUpdated": "2026-06-14T19:16:16.346Z"
 }

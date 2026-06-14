@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SK/tsp/2",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://www.google.com/s2/favicons?domain=cybercompetence.sk&sz=128",
     "description": "Slovak public trust service organization listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
   },
-  "lastUpdated": "2026-04-25T06:26:24.599Z"
+  "lastUpdated": "2026-06-14T19:16:18.700Z"
 }

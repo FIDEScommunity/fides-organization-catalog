@@ -19,10 +19,23 @@
         "code": "qtsp",
         "evidence": {
           "kind": "url",
-          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/2.",
-          "label": "EU eIDAS Trust List – Digidentity"
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/2",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            }
+          ]
         }
       }
     ]
-  }
+  },
+  "lastUpdated": "2026-06-14T19:16:15.674Z"
 }

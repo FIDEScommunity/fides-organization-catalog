@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IE/tsp/2",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://www.adobe.com/homepage/assets/product-icons/jpg/default.jpg?width=1200&format=pjpg&optimize=medium",
     "description": "Adobe is changing the world through digital experiences. We help our customers create, deliver and optimize content and applications."
   },
-  "lastUpdated": "2026-04-25T06:26:18.537Z"
+  "lastUpdated": "2026-06-14T19:16:13.086Z"
 }

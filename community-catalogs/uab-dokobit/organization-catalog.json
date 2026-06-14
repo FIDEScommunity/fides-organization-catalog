@@ -15,6 +15,18 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LT/tsp/6",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +34,5 @@
     "logo": "https://www.google.com/s2/favicons?domain=www.dokobit.com&sz=128",
     "description": "UAB Dokobit is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania, providing digital trust services via dokobit.com."
   },
-  "lastUpdated": "2026-04-25T06:26:20.103Z"
+  "lastUpdated": "2026-06-14T19:16:14.541Z"
 }

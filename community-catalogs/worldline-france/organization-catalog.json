@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/23",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://www.mediacert.com/images/favicon-33x33.png",
     "description": "Mediacert Public web site"
   },
-  "lastUpdated": "2026-04-25T06:26:17.351Z"
+  "lastUpdated": "2026-06-14T19:16:12.193Z"
 }

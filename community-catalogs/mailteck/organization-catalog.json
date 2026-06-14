@@ -15,6 +15,22 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/45",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            },
+            {
+              "code": "Q_PRES_ESEAL",
+              "name": "Qualified pres eseal"
+            },
+            {
+              "code": "Q_PRES_ESIG",
+              "name": "Qualified pres esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +38,5 @@
     "logo": "https://comunicaciones-legales.mailteck.com/favicon.png",
     "description": "MAILTECK is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via comunicaciones-legales.mailteck.com."
   },
-  "lastUpdated": "2026-04-25T06:26:16.441Z"
+  "lastUpdated": "2026-06-14T19:16:11.424Z"
 }

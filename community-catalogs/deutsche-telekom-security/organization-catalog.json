@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/27",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_WAC",
+              "name": "Qualified website authentication certificate"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://www.google.com/s2/favicons?domain=www.telesec.de&sz=128",
     "description": "Deutsche Telekom Security is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via telesec.de."
   },
-  "lastUpdated": "2026-04-25T06:26:14.662Z"
+  "lastUpdated": "2026-06-14T19:16:10.035Z"
 }

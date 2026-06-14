@@ -15,6 +15,18 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CY/tsp/1",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +34,5 @@
     "logo": "https://www.google.com/s2/favicons?domain=www.jcc.com.cy&sz=128",
     "description": "You can contact us by clicking on the button below and filling out our contact form. If you want to speak to a JCC representative, please call +357 22868000. Our representatives are available 24 hours a day, 7 days a week."
   },
-  "lastUpdated": "2026-04-25T06:26:13.125Z"
+  "lastUpdated": "2026-06-14T19:16:08.461Z"
 }

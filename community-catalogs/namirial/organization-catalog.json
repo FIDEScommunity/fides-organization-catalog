@@ -13,6 +13,25 @@
       "email": "support-wallet@namirial.com",
       "support": "https://servicedesk.namirial.com/hc/en-gb"
     },
-    "description": "Customer identification and identity verification with the suite Namirial Onboarding"
-  }
+    "description": "Customer identification and identity verification with the suite Namirial Onboarding",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/38",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "lastUpdated": "2026-06-14T19:16:12.206Z"
 }

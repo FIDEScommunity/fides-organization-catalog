@@ -2281,6 +2281,52 @@
   opacity: 0.85;
 }
 
+.fides-org-cert-trust-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.5rem;
+  margin-top: 0.2rem;
+  width: 100%;
+}
+
+.fides-org-cert-trust-services-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.35rem;
+}
+
+.fides-org-cert-more-items[hidden] {
+  display: none !important;
+}
+
+.fides-org-cert-more-items {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.35rem;
+}
+
+.fides-org-cert-more-toggle {
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: inherit;
+  appearance: none;
+}
+
+.fides-tag--cert-muted {
+  opacity: 0.75;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-tag--qtsp-service,
+.fides-modal-overlay[data-theme="light"] .fides-tag--qtsp-service {
+  background: rgba(16, 185, 129, 0.14) !important;
+  color: #047857 !important;
+  border-color: rgba(16, 185, 129, 0.55) !important;
+}
+
 /* Tables (in accordion) */
 .fides-attributes-table-wrap {
   overflow-x: auto;

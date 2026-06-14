@@ -2,6 +2,14 @@
 
 Centralized overview of organizations in the FIDES ecosystem and their roles across wallets, issuers, credentials, and relying parties.
 
+## Changelog
+
+### 1.3.8
+
+- WordPress plugin version bump to `1.3.8`.
+- KPI cards in the catalog UI now recalculate from the currently filtered/search result set.
+- KPI values now update live during grid-only refreshes (search/filter), without introducing KPI quick-filter click behavior.
+
 ## The catalog is available as:
 
 | Channel | URL |
@@ -61,7 +69,21 @@ npm run validate    # Schema validation
 npm test            # Unit tests
 npm run crawl       # Regenerate aggregated data
 npm run check-links # Validate URLs
+npm run check:scaling # Payload growth gate check
 ```
+
+## Performance scaling gate
+
+Before large catalog imports/releases, run:
+
+```bash
+npm run check:scaling
+npm run check:scaling -- --target-count=400
+```
+
+This reports current and projected payload size (raw + gzip) and classifies status as green/orange/red with a recommended next step.
+
+For the full release protocol and migration triggers (when to move to server-side paging/filtering), see [`docs/performance-scaling-test-protocol.md`](docs/performance-scaling-test-protocol.md).
 
 ## Public API (v2)
 

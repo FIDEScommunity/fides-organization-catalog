@@ -15,6 +15,18 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HU/tsp/9",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_PRES_ESEAL",
+              "name": "Qualified pres eseal"
+            },
+            {
+              "code": "Q_PRES_ESIG",
+              "name": "Qualified pres esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +34,5 @@
     "logo": "https://notarchiv.hu/favicon.ico",
     "description": "NOTARchiv Kft. - archiválás szolgáltatás"
   },
-  "lastUpdated": "2026-04-25T06:26:18.145Z"
+  "lastUpdated": "2026-06-14T19:16:12.851Z"
 }

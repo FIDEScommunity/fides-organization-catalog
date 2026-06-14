@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/70",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://static.wixstatic.com/media/816b1e_7e0c0051d19746eb8f5133c4bc41e4a3%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/816b1e_7e0c0051d19746eb8f5133c4bc41e4a3%7Emv2.jpg",
     "description": "BACKUP FILE is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via grupobackup.com."
   },
-  "lastUpdated": "2026-04-25T06:26:16.448Z"
+  "lastUpdated": "2026-06-14T19:16:11.433Z"
 }

@@ -15,6 +15,18 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/9",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +34,5 @@
     "logo": "https://www.setcce.com/storage/app/uploads/public/5ba/c65/b97/5bac65b97b9e0009744822.png",
     "description": "SETCCE is a Slovenian digital trust services provider listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
   },
-  "lastUpdated": "2026-04-25T06:26:23.586Z"
+  "lastUpdated": "2026-06-14T19:16:17.611Z"
 }

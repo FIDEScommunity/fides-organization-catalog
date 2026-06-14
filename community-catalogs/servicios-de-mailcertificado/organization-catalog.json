@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/55",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://www.codicert.io/wp-content/uploads/2022/07/dedo_codicert-1-1024x1024.jpg",
     "description": "SERVICIOS DE MAILCERTIFICADO is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via codicert.io."
   },
-  "lastUpdated": "2026-04-25T06:26:16.444Z"
+  "lastUpdated": "2026-06-14T19:16:11.427Z"
 }

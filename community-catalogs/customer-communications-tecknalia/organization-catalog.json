@@ -15,6 +15,22 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/46",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            },
+            {
+              "code": "Q_PRES_ESEAL",
+              "name": "Qualified pres eseal"
+            },
+            {
+              "code": "Q_PRES_ESIG",
+              "name": "Qualified pres esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +38,5 @@
     "logo": "https://www.customercomms.com/img/customercomms.jpg",
     "description": "Comunicaciones y transacciones multicanal con plena validez legal probatoria"
   },
-  "lastUpdated": "2026-04-25T06:26:16.442Z"
+  "lastUpdated": "2026-06-14T19:16:11.424Z"
 }

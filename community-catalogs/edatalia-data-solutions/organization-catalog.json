@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/66",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://edatalia.com/wp-content/uploads/2026/04/cropped-favicon-180x180.png",
     "description": "EDATALIA DATA SOLUTIONS is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via edatalia.com."
   },
-  "lastUpdated": "2026-04-25T06:26:16.447Z"
+  "lastUpdated": "2026-06-14T19:16:11.432Z"
 }

@@ -1304,31 +1304,7 @@
   "org:logius": {
     "firstSeenAt": "2026-05-27T00:00:00Z"
   },
-  "org:digitaliseringsstyrelsen": {
-    "firstSeenAt": "2026-06-05T00:00:00Z"
-  },
-  "org:diacc": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
-  },
-  "org:credivera": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
-  },
-  "org:vaultie": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
-  },
-  "org:fct": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
-  },
-  "org:treefort": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
-  },
-  "org:fraudfighter": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
-  },
-  "org:interac": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
-  },
-  "org:identos": {
-    "firstSeenAt": "2026-06-09T00:00:00Z"
+  "org:viavansi-corporacion": {
+    "firstSeenAt": "2026-06-14T19:16:11.434Z"
   }
 }

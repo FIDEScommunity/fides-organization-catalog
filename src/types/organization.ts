@@ -45,9 +45,19 @@ export type CertificationEvidence =
       notes?: string;
     };
 
+export interface QtspTrustService {
+  code: string;
+  name?: string;
+}
+
+export interface QtspCertificationDetails {
+  trustServices: QtspTrustService[];
+}
+
 export interface OrganizationCertification {
   code: CertificationCode;
   evidence?: CertificationEvidence;
+  details?: QtspCertificationDetails;
 }
 
 /** Optional organization identifiers (at most one value per type). */

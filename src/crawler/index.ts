@@ -41,6 +41,22 @@ function dedupeCertifications(items: OrganizationCertification[] | undefined): O
     seen.add(item.code);
     const entry: OrganizationCertification = { code: item.code };
     if (item.evidence) entry.evidence = item.evidence;
+    if (
+      item.details &&
+      Array.isArray(item.details.trustServices) &&
+      item.details.trustServices.length > 0
+    ) {
+      entry.details = {
+        trustServices: item.details.trustServices
+          .filter((svc) => svc && typeof svc.code === 'string' && svc.code.trim())
+          .map((svc) => ({
+            code: svc.code.trim(),
+            ...(svc.name && typeof svc.name === 'string' && svc.name.trim()
+              ? { name: svc.name.trim() }
+              : {}),
+          })),
+      };
+    }
     out.push(entry);
   }
   return out.length ? out : undefined;

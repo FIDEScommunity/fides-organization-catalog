@@ -15,6 +15,18 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/LT/tsp/7",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +34,5 @@
     "logo": "https://nevda.lt/wp-content/uploads/2026/04/Titulinis-LT-1024x683.png",
     "description": "Kuriame veiklos procesų valdymo ir automatizavimo sistemas viešojo ir privataus sektoriaus organizacijoms Daugiau"
   },
-  "lastUpdated": "2026-04-25T06:26:20.103Z"
+  "lastUpdated": "2026-06-14T19:16:14.542Z"
 }

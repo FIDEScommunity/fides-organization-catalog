@@ -15,6 +15,30 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IE/tsp/4",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_PRES_ESEAL",
+              "name": "Qualified pres eseal"
+            },
+            {
+              "code": "Q_PRES_ESIG",
+              "name": "Qualified pres esig"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +46,5 @@
     "logo": "https://www.entaksi.eu/wp-content/uploads/2025/10/logo_eplus_small-1.png",
     "description": "Entaksi Solutions Irish Branch is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Ireland, providing digital trust services via entaksi.eu."
   },
-  "lastUpdated": "2026-04-25T06:26:18.540Z"
+  "lastUpdated": "2026-06-14T19:16:13.087Z"
 }

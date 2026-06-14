@@ -30,6 +30,18 @@ const EFDA_API = "https://eidas.ec.europa.eu/efda/api/v2";
 const DASHBOARD_TSP_BASE =
   "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl";
 
+/** Friendly labels for known EFDA qualified service legal type codes. */
+const QTSP_TRUST_SERVICE_LABELS = {
+  Q_ESIG: "Qualified electronic signature",
+  Q_ESEAL: "Qualified electronic seal",
+  Q_WAC: "Qualified website authentication certificate",
+  Q_ERDS: "Qualified electronic registered delivery service",
+  Q_TS: "Qualified timestamp",
+  Q_EARCH: "Qualified electronic archiving",
+  Q_VC: "Qualified validation service",
+  Q_PRES: "Qualified preservation service",
+};
+
 /** ISO 3166-1 alpha-2 -> preferred language for legal/trade name */
 const TERRITORY_LANG = {
   AT: "de",
@@ -199,6 +211,35 @@ function hasActiveQualified(sp) {
   return services.some((s) => isQualifiedService(s) && isActiveService(s));
 }
 
+function qtspTrustServiceName(code) {
+  if (QTSP_TRUST_SERVICE_LABELS[code]) return QTSP_TRUST_SERVICE_LABELS[code];
+  const cleaned = String(code || "")
+    .replace(/^Q_/, "")
+    .replace(/_/g, " ")
+    .trim();
+  if (!cleaned) return "";
+  return `Qualified ${cleaned.toLowerCase()}`;
+}
+
+function activeQualifiedTrustServices(sp) {
+  const services = Array.isArray(sp?.services) ? sp.services : [];
+  const byCode = new Map();
+  for (const svc of services) {
+    if (!isActiveService(svc) || !isQualifiedService(svc)) continue;
+    const legalTypes = Array.isArray(svc.serviceLegalTypes) ? svc.serviceLegalTypes : [];
+    for (const type of legalTypes) {
+      if (typeof type !== "string" || !type.startsWith("Q_")) continue;
+      if (!byCode.has(type)) {
+        const entry = { code: type };
+        const label = qtspTrustServiceName(type);
+        if (label) entry.name = label;
+        byCode.set(type, entry);
+      }
+    }
+  }
+  return [...byCode.values()].sort((a, b) => a.code.localeCompare(b.code));
+}
+
 function pickNameForLang(names, lang) {
   if (!names?.length) return null;
   const hit = names.find((n) => n.language === lang && n.value?.trim());
@@ -267,8 +308,8 @@ function normalizeEvidenceUrl(u) {
   return u.replace(/\.+$/, "").replace(/\/+$/, "");
 }
 
-async function loadExistingEidasEvidenceUrls() {
-  const urls = new Set();
+async function loadExistingEidasEvidenceIndex() {
+  const index = new Map();
   const dirs = await readdir(CATALOGS_DIR, { withFileTypes: true });
   for (const d of dirs) {
     if (!d.isDirectory()) continue;
@@ -279,14 +320,68 @@ async function loadExistingEidasEvidenceUrls() {
       const certs = j.organization?.certifications || [];
       for (const c of certs) {
         const u = c?.evidence?.url;
-        if (typeof u === "string" && u.includes("eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls"))
-          urls.add(normalizeEvidenceUrl(u));
+        if (typeof u === "string" && u.includes("eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls")) {
+          index.set(normalizeEvidenceUrl(u), p);
+        }
       }
     } catch {
       // missing or invalid — ignore
     }
   }
-  return urls;
+  return index;
+}
+
+function normalizeTrustServices(value) {
+  if (!Array.isArray(value)) return [];
+  const seen = new Set();
+  const out = [];
+  for (const s of value) {
+    if (!s || typeof s !== "object" || typeof s.code !== "string" || !s.code.startsWith("Q_")) continue;
+    const key = s.code.trim();
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    const item = { code: key };
+    if (typeof s.name === "string" && s.name.trim()) item.name = s.name.trim();
+    out.push(item);
+  }
+  out.sort((a, b) => a.code.localeCompare(b.code));
+  return out;
+}
+
+function applyQtspDetailsToPayload(doc, { evidenceUrl, country, website, trustServices }) {
+  const next = structuredClone(doc);
+  const org = next.organization && typeof next.organization === "object" ? next.organization : {};
+  const certs = Array.isArray(org.certifications) ? [...org.certifications] : [];
+  const evidenceNorm = normalizeEvidenceUrl(evidenceUrl);
+  const trustServicesNorm = normalizeTrustServices(trustServices);
+  if (trustServicesNorm.length === 0) return { changed: false, json: doc };
+
+  let certIdx = certs.findIndex((c) => normalizeEvidenceUrl(c?.evidence?.url) === evidenceNorm);
+  if (certIdx < 0) certIdx = certs.findIndex((c) => c?.code === "qtsp");
+
+  const qtspCert = {
+    code: "qtsp",
+    evidence: {
+      kind: "url",
+      url: evidenceUrl,
+      label: "EU eIDAS Trust List (Qualified Trust Service Provider)",
+    },
+    details: {
+      trustServices: trustServicesNorm,
+    },
+  };
+
+  if (certIdx >= 0) certs[certIdx] = qtspCert;
+  else certs.push(qtspCert);
+
+  org.certifications = certs;
+  if (!org.country && country) org.country = country;
+  if (!org.website && website) org.website = website;
+  next.organization = org;
+  next.lastUpdated = new Date().toISOString();
+
+  const changed = JSON.stringify(next) !== JSON.stringify(doc);
+  return { changed, json: next };
 }
 
 function buildOrganizationPayload({
@@ -296,6 +391,7 @@ function buildOrganizationPayload({
   website,
   country,
   evidenceUrl,
+  trustServices,
 }) {
   const org = {
     id: `org:${slug}`,
@@ -310,6 +406,9 @@ function buildOrganizationPayload({
           kind: "url",
           url: evidenceUrl,
           label: "EU eIDAS Trust List (Qualified Trust Service Provider)",
+        },
+        details: {
+          trustServices,
         },
       },
     ],
@@ -361,8 +460,8 @@ async function main() {
       : "Mode: APPLY (writing files).",
   );
 
-  const existingEvidence = await loadExistingEidasEvidenceUrls();
-  console.log(`Loaded ${existingEvidence.size} existing eIDAS TL evidence URL(s) from current catalogs.`);
+  const existingEvidenceIndex = await loadExistingEidasEvidenceIndex();
+  console.log(`Loaded ${existingEvidenceIndex.size} existing eIDAS TL evidence URL(s) from current catalogs.`);
 
   const backbone = await fetchJson(`${EFDA_API}/browse/eidas/tl/backbone`);
   let tlsList = backbone.tls || [];
@@ -379,12 +478,16 @@ async function main() {
     tlsList = tlsList.slice(0, args.limitCountries);
 
   let created = 0;
+  let updatedExisting = 0;
+  let wouldCreate = 0;
+  let wouldUpdateExisting = 0;
+  let changedCount = 0;
+  let unchangedExisting = 0;
   let skippedExistingDir = 0;
   let skippedExistingEvidence = 0;
   let skippedNoWebsite = 0;
   /** Slugs reserved by this run (created or skipped because folder already exists). */
   const reservedSlugs = new Set();
-  let tspCounter = 0;
 
   for (const tl of tlsList) {
     const cc = tl.territoryCode;
@@ -402,6 +505,8 @@ async function main() {
       const sp = providers[i];
       const tspIndex = i + 1;
       if (!hasActiveQualified(sp)) continue;
+      const trustServices = activeQualifiedTrustServices(sp);
+      if (trustServices.length === 0) continue;
 
       const names = sp.names || [];
       const legalName = legalNameFromTsp(names, cc);
@@ -411,9 +516,35 @@ async function main() {
       const evidenceUrl = `${DASHBOARD_TSP_BASE}/${cc}/tsp/${tspIndex}`;
       const evidenceNorm = normalizeEvidenceUrl(evidenceUrl);
 
-      if (existingEvidence.has(evidenceNorm)) {
-        skippedExistingEvidence++;
-        console.log(`SKIP evidence ${cc} tsp/${tspIndex} (${legalName}) — URL already in catalog`);
+      if (existingEvidenceIndex.has(evidenceNorm)) {
+        const existingPath = existingEvidenceIndex.get(evidenceNorm);
+        if (!existingPath) {
+          skippedExistingEvidence++;
+          console.log(`SKIP evidence ${cc} tsp/${tspIndex} (${legalName}) — URL already in catalog`);
+          continue;
+        }
+        const raw = await readFile(existingPath, "utf8");
+        const currentDoc = JSON.parse(raw);
+        const { changed, json } = applyQtspDetailsToPayload(currentDoc, {
+          evidenceUrl,
+          country: cc,
+          website: firstWebsiteUrl(sp.electronicAddresses),
+          trustServices,
+        });
+        if (changed) {
+          if (args.dryRun) {
+            console.log(`WOULD UPDATE ${existingPath} (${cc} tsp/${tspIndex})`);
+            wouldUpdateExisting++;
+          } else {
+            await writeFile(existingPath, `${JSON.stringify(json, null, 2)}\n`, "utf8");
+            console.log(`UPDATED ${existingPath} (${cc} tsp/${tspIndex})`);
+            updatedExisting++;
+          }
+          changedCount++;
+          if (args.limitTsps && changedCount >= args.limitTsps) break;
+        } else {
+          unchangedExisting++;
+        }
         continue;
       }
 
@@ -426,10 +557,31 @@ async function main() {
       const filePath = join(dirPath, "organization-catalog.json");
 
       try {
-        await readFile(filePath, "utf8");
-        skippedExistingDir++;
+        const raw = await readFile(filePath, "utf8");
         reservedSlugs.add(slug);
-        console.log(`SKIP dir ${slug} (${cc} tsp/${tspIndex}) — organization-catalog.json exists`);
+        const currentDoc = JSON.parse(raw);
+        const { changed, json } = applyQtspDetailsToPayload(currentDoc, {
+          evidenceUrl,
+          country: cc,
+          website: firstWebsiteUrl(sp.electronicAddresses),
+          trustServices,
+        });
+        if (changed) {
+          if (args.dryRun) {
+            console.log(`WOULD UPDATE ${filePath} (${cc} tsp/${tspIndex})`);
+            wouldUpdateExisting++;
+          } else {
+            await writeFile(filePath, `${JSON.stringify(json, null, 2)}\n`, "utf8");
+            console.log(`UPDATED ${filePath} (${cc} tsp/${tspIndex})`);
+            updatedExisting++;
+          }
+          changedCount++;
+          if (args.limitTsps && changedCount >= args.limitTsps) break;
+        } else {
+          unchangedExisting++;
+          skippedExistingDir++;
+          console.log(`SKIP dir ${slug} (${cc} tsp/${tspIndex}) — organization-catalog.json exists`);
+        }
         continue;
       } catch {
         // does not exist — proceed
@@ -448,27 +600,31 @@ async function main() {
         website,
         country: cc,
         evidenceUrl,
+        trustServices,
       });
 
       reservedSlugs.add(slug);
-      tspCounter++;
       if (args.dryRun) {
         console.log(`WOULD CREATE ${filePath}`);
         console.log(`  id=${payload.organization.id} name=${JSON.stringify(payload.organization.name)} legalName=${JSON.stringify(legalName)}`);
+        wouldCreate++;
       } else {
         await mkdir(dirPath, { recursive: true });
         await writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
         console.log(`CREATED ${filePath}`);
         created++;
       }
+      changedCount++;
 
-      if (args.limitTsps && tspCounter >= args.limitTsps) break;
+      if (args.limitTsps && changedCount >= args.limitTsps) break;
     }
-    if (args.limitTsps && tspCounter >= args.limitTsps) break;
+    if (args.limitTsps && changedCount >= args.limitTsps) break;
   }
 
   console.log("\nSummary:");
-  console.log(`  ${args.dryRun ? "Would create" : "Created"}: ${args.dryRun ? tspCounter : created}`);
+  console.log(`  ${args.dryRun ? "Would create" : "Created"}: ${args.dryRun ? wouldCreate : created}`);
+  console.log(`  ${args.dryRun ? "Would update existing" : "Updated existing"}: ${args.dryRun ? wouldUpdateExisting : updatedExisting}`);
+  console.log(`  Unchanged existing: ${unchangedExisting}`);
   console.log(`  Skipped (dir exists): ${skippedExistingDir}`);
   console.log(`  Skipped (evidence URL already in catalog): ${skippedExistingEvidence}`);
   console.log(`  Warn (no website): ${skippedNoWebsite}`);

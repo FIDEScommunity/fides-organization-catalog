@@ -15,6 +15,26 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/4",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            },
+            {
+              "code": "Q_WAC",
+              "name": "Qualified website authentication certificate"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +42,5 @@
     "logo": "https://www.cert.fnmt.es/o/fnmt-theme/images/favicon.ico",
     "description": "Fábrica Nacional de Moneda y Timbre - Real Casa de la Moneda, Entidad Pública Empresarial, Medio Propio (FNMT-RCM) is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via cert.fnmt.es."
   },
-  "lastUpdated": "2026-04-25T06:26:16.430Z"
+  "lastUpdated": "2026-06-14T19:16:11.408Z"
 }

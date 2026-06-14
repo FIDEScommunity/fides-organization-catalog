@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/39",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://cdn.prod.website-files.com/67c9bdbd776480172e1fd65a/687106185c117427dd009403_opengraphurl.svg",
     "description": "STAMPEE is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via stampee.fr."
   },
-  "lastUpdated": "2026-04-25T06:26:17.358Z"
+  "lastUpdated": "2026-06-14T19:16:12.207Z"
 }

@@ -15,6 +15,22 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IE/tsp/3",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +38,5 @@
     "logo": "https://www.trustpro.eu/wp-content/uploads/2026/02/trustpro-qualified-trust-service-provider-in-eu.jpg",
     "description": "We provide qualified eSignatures, eSeals and eTimestamps, eIDAS compliant and valid in European Union. Remote identification and activation."
   },
-  "lastUpdated": "2026-04-25T06:26:18.539Z"
+  "lastUpdated": "2026-06-14T19:16:13.087Z"
 }

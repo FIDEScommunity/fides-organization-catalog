@@ -15,6 +15,34 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/31",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            },
+            {
+              "code": "Q_PRES_ESEAL",
+              "name": "Qualified pres eseal"
+            },
+            {
+              "code": "Q_PRES_ESIG",
+              "name": "Qualified pres esig"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            },
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +50,5 @@
     "logo": "https://www.logalty.com/wp-content/uploads/2019/05/logalty-frame-bg.jpg",
     "description": "We are pioneers in electronic contracting, notification and identification.We anticipate technological challenges with legal robustness so that you can be the first to innovate your processes."
   },
-  "lastUpdated": "2026-04-25T06:26:16.438Z"
+  "lastUpdated": "2026-06-14T19:16:11.418Z"
 }

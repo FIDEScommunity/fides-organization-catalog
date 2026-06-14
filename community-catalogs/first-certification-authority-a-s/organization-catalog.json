@@ -15,6 +15,42 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/CZ/tsp/1",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SEAL_CD",
+              "name": "Qualified rem manage q seal cd"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            },
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            },
+            {
+              "code": "Q_WAC",
+              "name": "Qualified website authentication certificate"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +58,5 @@
     "logo": "https://ica.cz/sites/default/files/favicons3/apple-touch-icon.png",
     "description": "Make sure you have a guide on your digital journey who knows what they're doing. We set the direction for online services that require proof or verification of identity. We can help you too."
   },
-  "lastUpdated": "2026-04-25T06:26:13.716Z"
+  "lastUpdated": "2026-06-14T19:16:09.097Z"
 }

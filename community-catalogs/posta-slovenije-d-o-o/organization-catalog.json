@@ -15,6 +15,22 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/5",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_WAC",
+              "name": "Qualified website authentication certificate"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +38,5 @@
     "logo": "https://www.rekono.si/wp-content/uploads/2025/02/slider-rekono-id.png",
     "description": "Posta Slovenije is Slovenia's national postal operator and is listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
   },
-  "lastUpdated": "2026-04-25T06:26:23.585Z"
+  "lastUpdated": "2026-06-14T19:16:17.609Z"
 }

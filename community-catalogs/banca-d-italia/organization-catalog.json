@@ -15,6 +15,18 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/IT/tsp/1",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +34,5 @@
     "logo": "https://www.google.com/s2/favicons?domain=www.bancaditalia.it&sz=128",
     "description": "Banca d'Italia is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via bancaditalia.it."
   },
-  "lastUpdated": "2026-04-25T06:26:19.476Z"
+  "lastUpdated": "2026-06-14T19:16:13.999Z"
 }

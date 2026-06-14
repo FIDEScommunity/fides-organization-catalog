@@ -15,6 +15,26 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SI/tsp/7",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            },
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +42,5 @@
     "logo": "https://www.eius.si/wp-content/uploads/2021/05/cropped-logo-za-header-1-180x180.png",
     "description": "EIUS is a Slovenian provider of qualified trust services, listed on the EU eIDAS Trust List as a QTSP."
   },
-  "lastUpdated": "2026-04-25T06:26:23.585Z"
+  "lastUpdated": "2026-06-14T19:16:17.610Z"
 }

@@ -632,8 +632,79 @@
         if (ev.format) bits.push(ev.format);
         if (ev.notes) bits.push(ev.notes);
       }
+      const details = c.details;
+      if (details && typeof details === 'object' && Array.isArray(details.trustServices)) {
+        details.trustServices.forEach((svc) => {
+          if (!svc || typeof svc !== 'object') return;
+          if (typeof svc.code === 'string') bits.push(svc.code);
+          if (typeof svc.name === 'string') bits.push(svc.name);
+          const shortLabel = qtspTrustServiceLabel(svc);
+          const longLabel = qtspTrustServiceTitle(svc);
+          if (shortLabel) bits.push(shortLabel);
+          if (longLabel) bits.push(longLabel);
+        });
+      }
     }
     return bits.join(' ').toLowerCase();
+  }
+
+  function orgQtspTrustServices(org) {
+    const raw = Array.isArray(org?.certifications) ? org.certifications : [];
+    const qtsp = raw.find((c) => c && typeof c === 'object' && c.code === 'qtsp');
+    const details = qtsp && typeof qtsp === 'object' ? qtsp.details : null;
+    const list = details && Array.isArray(details.trustServices) ? details.trustServices : [];
+    const normalized = list
+      .filter((svc) => svc && typeof svc === 'object' && typeof svc.code === 'string' && svc.code.trim())
+      .map((svc) => ({
+        code: svc.code.trim(),
+        name: typeof svc.name === 'string' && svc.name.trim() ? svc.name.trim() : '',
+      }))
+      .sort((a, b) => a.code.localeCompare(b.code));
+    return normalized;
+  }
+
+  const QTSP_TRUST_SERVICE_ABBREVIATIONS = {
+    Q_CERT_ESIG: 'QESig',
+    Q_CERT_ESEAL: 'QESeal',
+    Q_TIMESTAMP: 'QTimestamp',
+    Q_ERDS: 'QERDS',
+    Q_WAC: 'QWAC',
+    Q_EARCH: 'QEArch',
+    Q_VC: 'QVal',
+    Q_PRES: 'QPres',
+    Q_PRES_ESEAL: 'QPresSeal',
+    Q_PRES_ESIG: 'QPresSig',
+    Q_VAL_ESEAL: 'QValSeal',
+    Q_VAL_ESIG: 'QValSig',
+    Q_REM_MANAGE_Q_SEAL_CD: 'QRemSeal',
+    Q_REM_MANAGE_Q_SIG_CD: 'QRemSig',
+  };
+
+  const QTSP_TRUST_SERVICE_FULL_LABELS = {
+    Q_CERT_ESIG: 'Qualified electronic signature certificate',
+    Q_CERT_ESEAL: 'Qualified electronic seal certificate',
+    Q_TIMESTAMP: 'Qualified timestamp',
+    Q_ERDS: 'Qualified electronic registered delivery service',
+    Q_WAC: 'Qualified website authentication certificate',
+    Q_EARCH: 'Qualified electronic archiving',
+    Q_VC: 'Qualified validation service',
+    Q_PRES: 'Qualified preservation service',
+  };
+  const QTSP_VISIBLE_TRUST_SERVICES = 4;
+
+  function qtspTrustServiceLabel(service) {
+    const code = String(service?.code || '').trim();
+    if (code && QTSP_TRUST_SERVICE_ABBREVIATIONS[code]) return QTSP_TRUST_SERVICE_ABBREVIATIONS[code];
+    if (code) return code.replace(/^Q_/, 'Q-').replace(/_/g, '-');
+    return '';
+  }
+
+  function qtspTrustServiceTitle(service) {
+    const code = String(service?.code || '').trim();
+    if (code && QTSP_TRUST_SERVICE_FULL_LABELS[code]) return QTSP_TRUST_SERVICE_FULL_LABELS[code];
+    const name = String(service?.name || '').trim();
+    if (name) return name;
+    return code;
   }
 
   /** Count of valid catalog certification entries (same rules as renderCertificationsAccordionBody). */
@@ -659,7 +730,9 @@
         let extra = '';
         const ev = c.evidence;
         if (ev && typeof ev === 'object' && ev.kind === 'url' && ev.url) {
-          const linkLabel = (ev.label && String(ev.label).trim()) || 'Documentation';
+          const linkLabel = c.code === 'qtsp'
+            ? 'EU eIDAS Trust List'
+            : ((ev.label && String(ev.label).trim()) || 'Documentation');
           extra = ` <a href="${escapeHtml(ev.url)}" class="fides-modal-link-inline" target="_blank" rel="noopener" onclick="event.stopPropagation();">${escapeHtml(linkLabel)} ${icons.externalLink}</a>`;
         } else if (ev && typeof ev === 'object' && ev.kind === 'verifiable_credential' && ev.credentialUri) {
           const fmt = ev.format ? String(ev.format) : 'Credential';
@@ -668,7 +741,44 @@
             extra += ` <span class="fides-org-cert-notes">${escapeHtml(String(ev.notes).trim())}</span>`;
           }
         }
-        lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert">${escapeHtml(title)}</span>${extra}</div>`);
+        let trustServicesHtml = '';
+        if (c.code === 'qtsp') {
+          const trustServices = orgQtspTrustServices(org);
+          if (trustServices.length > 0) {
+            const visible = trustServices.slice(0, QTSP_VISIBLE_TRUST_SERVICES);
+            const remaining = trustServices.length - visible.length;
+            const allLabels = trustServices
+              .map((svc) => qtspTrustServiceTitle(svc))
+              .filter(Boolean)
+              .join(', ');
+            const tags = visible
+              .map((svc) => {
+                const label = qtspTrustServiceLabel(svc) || svc.code;
+                const tooltip = qtspTrustServiceTitle(svc) ? ` title="${escapeHtml(qtspTrustServiceTitle(svc))}"` : '';
+                return `<span class="fides-tag fides-tag--cert fides-tag--qtsp-service"${tooltip}>${escapeHtml(label)}</span>`;
+              })
+              .join('');
+            const moreTags = remaining > 0
+              ? trustServices
+                .slice(QTSP_VISIBLE_TRUST_SERVICES)
+                .map((svc) => {
+                  const label = qtspTrustServiceLabel(svc) || svc.code;
+                  const tooltip = qtspTrustServiceTitle(svc) ? ` title="${escapeHtml(qtspTrustServiceTitle(svc))}"` : '';
+                  return `<span class="fides-tag fides-tag--cert fides-tag--qtsp-service"${tooltip}>${escapeHtml(label)}</span>`;
+                })
+                .join('')
+              : '';
+            const moreTag = remaining > 0
+              ? `<button type="button" class="fides-tag fides-tag--cert fides-tag--qtsp-service fides-tag--cert-muted fides-org-cert-more-toggle" title="${escapeHtml(allLabels)}">+${remaining}</button><span class="fides-org-cert-more-items" hidden>${moreTags}</span>`
+              : '';
+            trustServicesHtml = `<span class="fides-org-cert-trust-services-inline">${tags}${moreTag}</span>`;
+          }
+        }
+        if (c.code === 'qtsp') {
+          lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert fides-tag--qtsp-core">${escapeHtml(title)}</span>${trustServicesHtml}${extra}</div>`);
+        } else {
+          lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert">${escapeHtml(title)}</span>${extra}${trustServicesHtml}</div>`);
+        }
       }
     }
     if (lines.length === 0) {
@@ -1445,6 +1555,19 @@
         accordion.querySelectorAll('.fides-accordion-toggle[type="button"]').forEach((b) => b.setAttribute('aria-expanded', isOpen ? 'true' : 'false'));
       });
     });
+
+    if (overlay) {
+      overlay.querySelectorAll('.fides-org-cert-more-toggle').forEach((btn) => {
+        btn.addEventListener('click', (event) => {
+          event.stopPropagation();
+          const next = btn.nextElementSibling;
+          if (next && next.classList.contains('fides-org-cert-more-items')) {
+            next.removeAttribute('hidden');
+          }
+          btn.remove();
+        });
+      });
+    }
 
     document.addEventListener('keydown', function escHandler(e) {
       if (e.key === 'Escape') { closeModal(); document.removeEventListener('keydown', escHandler); }

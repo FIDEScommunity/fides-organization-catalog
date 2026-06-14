@@ -15,6 +15,26 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/43",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESEAL",
+              "name": "Qualified cert eseal"
+            },
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            },
+            {
+              "code": "Q_WAC",
+              "name": "Qualified website authentication certificate"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +42,5 @@
     "logo": "https://www.sectigo.com/uploads/images/_1200x630_crop_center-center_82_none/210427_sectigo_social-cards_A_v03b.jpg?mtime=1761310645",
     "description": "Sectigo is a leading provider of SSL certificates & automated certificate management solutions. A Certificate Authority trusted by global brands for 20+ years."
   },
-  "lastUpdated": "2026-04-25T06:26:16.441Z"
+  "lastUpdated": "2026-06-14T19:16:11.423Z"
 }

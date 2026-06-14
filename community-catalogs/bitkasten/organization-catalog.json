@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/29",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://www.bitkasten.de/wp-content/uploads/2022/08/GDPR-Complianed.png",
     "description": "bitkasten is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany, providing digital trust services via bitkasten.de."
   },
-  "lastUpdated": "2026-04-25T06:26:14.666Z"
+  "lastUpdated": "2026-06-14T19:16:10.035Z"
 }

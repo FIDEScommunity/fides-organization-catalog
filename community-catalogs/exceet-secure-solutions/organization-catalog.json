@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/19",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://utimaco.com/sites/default/files/2025-09/utimaco-logo-blue-social-sharing.png",
     "description": "The Better Choice for Trust in the Digital Society"
   },
-  "lastUpdated": "2026-04-25T06:26:14.660Z"
+  "lastUpdated": "2026-06-14T19:16:10.031Z"
 }

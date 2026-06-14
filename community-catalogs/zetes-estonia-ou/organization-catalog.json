@@ -15,6 +15,14 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/EE/tsp/3",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_CERT_ESIG",
+              "name": "Qualified cert esig"
+            }
+          ]
         }
       }
     ],
@@ -22,5 +30,5 @@
     "logo": "https://repository.eidpki.ee/static/favicon.ico",
     "description": "Zetes SA to provide certificate services and trust services for governments, the financial sector and private organisations."
   },
-  "lastUpdated": "2026-04-25T06:26:15.349Z"
+  "lastUpdated": "2026-06-14T19:16:10.502Z"
 }

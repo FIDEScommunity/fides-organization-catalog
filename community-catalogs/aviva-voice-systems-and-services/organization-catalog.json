@@ -15,11 +15,19 @@
           "kind": "url",
           "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/50",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
+            }
+          ]
         }
       }
     ],
     "website": "http://www.avivavoice.com/",
     "description": "AVIVA VOICE SYSTEMS AND SERVICES is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via avivavoice.com."
   },
-  "lastUpdated": "2026-04-25T06:26:16.442Z"
+  "lastUpdated": "2026-06-14T19:16:11.425Z"
 }
