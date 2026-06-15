@@ -678,6 +678,7 @@
     Q_VAL_ESIG: 'QValSig',
     Q_REM_MANAGE_Q_SEAL_CD: 'QRemSeal',
     Q_REM_MANAGE_Q_SIG_CD: 'QRemSig',
+    QEAA: 'QEAA',
   };
 
   const QTSP_TRUST_SERVICE_FULL_LABELS = {
@@ -689,6 +690,7 @@
     Q_EARCH: 'Qualified electronic archiving',
     Q_VC: 'Qualified validation service',
     Q_PRES: 'Qualified preservation service',
+    QEAA: 'Qualified electronic attestation of attributes',
   };
   const QTSP_VISIBLE_TRUST_SERVICES = 4;
 

@@ -7,7 +7,7 @@
  *   GET https://eidas.ec.europa.eu/efda/api/v2/browse/eidas/tl/tl/{CC}
  *
  * Includes a TSP only if it has at least one service with:
- *   - serviceLegalTypes containing a string starting with "Q_" (qualified), and
+ *   - serviceLegalTypes containing a qualified code (e.g. "Q_*" or "QEAA"), and
  *   - active === true
  *
  * By default runs in dry-run mode (no writes). Pass --apply to create files.
@@ -40,6 +40,7 @@ const QTSP_TRUST_SERVICE_LABELS = {
   Q_EARCH: "Qualified electronic archiving",
   Q_VC: "Qualified validation service",
   Q_PRES: "Qualified preservation service",
+  QEAA: "Qualified electronic attestation of attributes",
 };
 
 /** ISO 3166-1 alpha-2 -> preferred language for legal/trade name */
@@ -197,7 +198,11 @@ async function fetchJson(url) {
 
 function isQualifiedService(svc) {
   const types = svc.serviceLegalTypes || [];
-  return types.some((t) => typeof t === "string" && t.startsWith("Q_"));
+  return types.some((t) => isQualifiedServiceLegalType(t));
+}
+
+function isQualifiedServiceLegalType(value) {
+  return typeof value === "string" && /^Q(?:_|[A-Z0-9])/.test(value);
 }
 
 function isActiveService(svc) {
@@ -228,7 +233,7 @@ function activeQualifiedTrustServices(sp) {
     if (!isActiveService(svc) || !isQualifiedService(svc)) continue;
     const legalTypes = Array.isArray(svc.serviceLegalTypes) ? svc.serviceLegalTypes : [];
     for (const type of legalTypes) {
-      if (typeof type !== "string" || !type.startsWith("Q_")) continue;
+      if (!isQualifiedServiceLegalType(type)) continue;
       if (!byCode.has(type)) {
         const entry = { code: type };
         const label = qtspTrustServiceName(type);
@@ -336,7 +341,7 @@ function normalizeTrustServices(value) {
   const seen = new Set();
   const out = [];
   for (const s of value) {
-    if (!s || typeof s !== "object" || typeof s.code !== "string" || !s.code.startsWith("Q_")) continue;
+    if (!s || typeof s !== "object" || typeof s.code !== "string" || !isQualifiedServiceLegalType(s.code)) continue;
     const key = s.code.trim();
     if (!key || seen.has(key)) continue;
     seen.add(key);

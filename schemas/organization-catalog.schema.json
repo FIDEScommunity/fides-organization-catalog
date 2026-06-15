@@ -107,8 +107,8 @@
       "properties": {
         "code": {
           "type": "string",
-          "pattern": "^Q_",
-          "description": "Qualified trust service legal type code from the EU Trust List API (EFDA)."
+          "pattern": "^Q(?:_|[A-Z0-9]).*",
+          "description": "Qualified trust service legal type code from the EU Trust List API (EFDA), including variants like Q_* and QEAA."
         },
         "name": {
           "type": "string",
