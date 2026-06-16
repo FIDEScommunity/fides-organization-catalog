@@ -31,6 +31,11 @@ function certificationSearchHaystack(o: AggregatedOrganization): string {
   const parts: string[] = [];
   for (const c of items) {
     parts.push(c.code);
+    // Qualified trust services (e.g. QEAA, Q_WAC) so a search on the service
+    // code or name surfaces the QTSP that may provide it.
+    for (const ts of c.details?.trustServices ?? []) {
+      parts.push(ts.code, ts.name ?? '');
+    }
     const ev = c.evidence;
     if (!ev) continue;
     if (ev.kind === 'url') {
@@ -65,6 +70,11 @@ export default function handler(req: VercelRequest, res: VercelResponse): void {
   const role = typeof req.query.role === 'string' ? req.query.role : undefined;
   const search = typeof req.query.search === 'string' ? req.query.search.toLowerCase() : undefined;
   const certifications = parseQueryArray(req.query.certification);
+  // Trust-service codes carried by a qualified certification (e.g. QEAA, Q_WAC).
+  // Matched case-insensitively with OR semantics.
+  const trustServices = parseQueryArray(req.query.trustService).map((t) =>
+    t.toLowerCase(),
+  );
   const sector = typeof req.query.sector === 'string' ? req.query.sector : undefined;
   const fidesManifestoSupporter =
     typeof req.query.fidesManifestoSupporter === 'string'
@@ -91,6 +101,16 @@ export default function handler(req: VercelRequest, res: VercelResponse): void {
   if (certifications.length > 0) {
     const selected = new Set(certifications);
     orgs = orgs.filter((o) => o.certifications?.some((c) => selected.has(c.code)));
+  }
+
+  if (trustServices.length > 0) {
+    orgs = orgs.filter((o) =>
+      o.certifications?.some((c) =>
+        (c.details?.trustServices ?? []).some((ts) =>
+          trustServices.includes(ts.code.toLowerCase()),
+        ),
+      ),
+    );
   }
 
   if (sector) {

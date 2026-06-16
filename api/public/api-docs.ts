@@ -14,7 +14,7 @@ const spec = {
         summary: 'List organizations',
         operationId: 'listOrganizations',
         parameters: [
-          { name: 'search', in: 'query', schema: { type: 'string' }, description: 'Search by name, legal name, description, identifiers, or certification fields' },
+          { name: 'search', in: 'query', schema: { type: 'string' }, description: 'Search by name, legal name, description, identifiers, certification codes, or qualified trust-service codes/names (e.g. QEAA)' },
           { name: 'country', in: 'query', schema: { type: 'string' }, description: 'Filter by ISO 3166-1 alpha-2 country code' },
           { name: 'role', in: 'query', schema: { type: 'string', enum: ['issuer', 'credential', 'wallet', 'rp'] }, description: 'Filter by ecosystem role' },
           {
@@ -25,6 +25,15 @@ const spec = {
               items: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2'] },
             },
             description: 'Filter by certification code. Repeat this parameter to match any selected certification (OR semantics).',
+          },
+          {
+            name: 'trustService',
+            in: 'query',
+            schema: {
+              type: 'array',
+              items: { type: 'string' },
+            },
+            description: 'Filter by qualified trust-service code carried by a certification, e.g. QEAA (Qualified Electronic Attestation of Attributes) or Q_WAC. Case-insensitive; repeat to match any (OR semantics).',
           },
           {
             name: 'sector',
@@ -161,6 +170,23 @@ const spec = {
         properties: {
           code: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2'] },
           evidence: { $ref: '#/components/schemas/CertificationEvidence' },
+          details: {
+            type: 'object',
+            properties: {
+              trustServices: {
+                type: 'array',
+                items: {
+                  type: 'object',
+                  required: ['code'],
+                  properties: {
+                    code: { type: 'string', description: 'Qualified trust-service code, e.g. QEAA, Q_WAC, Q_CERT_ESIG' },
+                    name: { type: 'string' },
+                  },
+                },
+                description: 'Qualified trust services this QTSP may provide (from the EU eIDAS Trust List).',
+              },
+            },
+          },
         },
       },
       OrganizationSectorCode: {

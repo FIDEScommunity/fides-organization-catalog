@@ -30,6 +30,11 @@ type OrganizationSectorCode =
   | 'mobility'
   | 'digital';
 
+interface CertificationTrustService {
+  code: string;
+  name?: string;
+}
+
 interface OrganizationCertification {
   code: CertificationCode;
   evidence?:
@@ -40,6 +45,9 @@ interface OrganizationCertification {
         credentialUri: string;
         notes?: string;
       };
+  details?: {
+    trustServices?: CertificationTrustService[];
+  };
 }
 
 export interface AggregatedOrganization {
