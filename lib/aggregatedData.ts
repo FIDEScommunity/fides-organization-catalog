@@ -12,7 +12,7 @@ export interface OrganizationIdentifiers {
   did?: string;
 }
 
-type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2';
+type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2' | 'diacc';
 
 type OrganizationSectorCode =
   | 'public_sector'
@@ -35,18 +35,29 @@ interface CertificationTrustService {
   name?: string;
 }
 
+type CertificationEvidence =
+  | { kind: 'url'; url: string; label?: string }
+  | {
+      kind: 'verifiable_credential';
+      format: string;
+      credentialUri: string;
+      notes?: string;
+    };
+
+type DiaccComponentCode = 'digital_wallet' | 'verified_person' | 'privacy';
+
+interface DiaccCertifiedComponent {
+  component: DiaccComponentCode;
+  loa?: string;
+  evidence?: CertificationEvidence;
+}
+
 interface OrganizationCertification {
   code: CertificationCode;
-  evidence?:
-    | { kind: 'url'; url: string; label?: string }
-    | {
-        kind: 'verifiable_credential';
-        format: string;
-        credentialUri: string;
-        notes?: string;
-      };
+  evidence?: CertificationEvidence;
   details?: {
     trustServices?: CertificationTrustService[];
+    components?: DiaccCertifiedComponent[];
   };
 }
 

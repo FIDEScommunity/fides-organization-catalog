@@ -73,14 +73,14 @@
       "properties": {
         "code": {
           "type": "string",
-          "enum": ["iso27001", "iso27701", "qtsp", "soc2"],
-          "description": "iso27001: ISO/IEC 27001 (ISMS). iso27701: ISO/IEC 27701 (privacy extension). qtsp: Qualified Trust Service Provider under EU eIDAS. soc2: SOC 2 attestation."
+          "enum": ["iso27001", "iso27701", "qtsp", "soc2", "diacc"],
+          "description": "iso27001: ISO/IEC 27001 (ISMS). iso27701: ISO/IEC 27701 (privacy extension). qtsp: Qualified Trust Service Provider under EU eIDAS. soc2: SOC 2 attestation. diacc: DIACC Certified under the Pan-Canadian Trust Framework (PCTF)."
         },
         "evidence": {
           "$ref": "#/$defs/CertificationEvidence"
         },
         "details": {
-          "$ref": "#/$defs/QtspCertificationDetails"
+          "type": "object"
         }
       },
       "allOf": [
@@ -91,8 +91,35 @@
             },
             "required": ["code"]
           },
-          "then": {},
-          "else": {
+          "then": {
+            "properties": {
+              "details": { "$ref": "#/$defs/QtspCertificationDetails" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "code": { "const": "diacc" }
+            },
+            "required": ["code"]
+          },
+          "then": {
+            "properties": {
+              "details": { "$ref": "#/$defs/DiaccCertificationDetails" }
+            }
+          }
+        },
+        {
+          "if": {
+            "not": {
+              "properties": {
+                "code": { "enum": ["qtsp", "diacc"] }
+              },
+              "required": ["code"]
+            }
+          },
+          "then": {
             "not": {
               "required": ["details"]
             }
@@ -127,6 +154,39 @@
           "minItems": 1,
           "description": "Active qualified trust services declared for this QTSP entry.",
           "items": { "$ref": "#/$defs/QtspTrustService" }
+        }
+      }
+    },
+    "DiaccCertifiedComponent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component"],
+      "properties": {
+        "component": {
+          "type": "string",
+          "enum": ["digital_wallet", "verified_person", "privacy"],
+          "description": "DIACC PCTF certified component: digital_wallet (PCTF Digital Wallet Component), verified_person (PCTF Verified Person Component), privacy (PCTF Privacy Component)."
+        },
+        "loa": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Level of Assurance as published by DIACC for this component (e.g. LOA3). Omit when the certificate states no level."
+        },
+        "evidence": {
+          "$ref": "#/$defs/CertificationEvidence"
+        }
+      }
+    },
+    "DiaccCertificationDetails": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["components"],
+      "properties": {
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Certified DIACC PCTF components declared for this organization.",
+          "items": { "$ref": "#/$defs/DiaccCertifiedComponent" }
         }
       }
     },

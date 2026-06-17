@@ -11,6 +11,24 @@
     "website": "https://fct.ca/",
     "logo": "https://mms.businesswire.com/media/20250512632503/en/2465244/4/FCT_Master_Blue_E.jpg",
     "country": "CA",
+    "certifications": [
+      {
+        "code": "diacc",
+        "details": {
+          "components": [
+            {
+              "component": "verified_person",
+              "loa": "LOA",
+              "evidence": {
+                "kind": "url",
+                "url": "https://diacc.ca/wp-content/uploads/2025/10/FCT-2025.pdf",
+                "label": "DIACC PCTF certificate (PDF)"
+              }
+            }
+          ]
+        }
+      }
+    ],
     "tags": [
       "Identity Verification",
       "Digital Identity",

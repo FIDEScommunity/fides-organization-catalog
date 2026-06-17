@@ -11,6 +11,24 @@
     "website": "https://www.fraudfighter.com/",
     "logo": "https://www.fraudfighter.com/hubfs/FF-PurpleBlack-2.png",
     "country": "US",
+    "certifications": [
+      {
+        "code": "diacc",
+        "details": {
+          "components": [
+            {
+              "component": "verified_person",
+              "loa": "LOA",
+              "evidence": {
+                "kind": "url",
+                "url": "https://diacc.ca/wp-content/uploads/2026/04/Uveritech_VP_2026.pdf",
+                "label": "DIACC PCTF certificate (PDF)"
+              }
+            }
+          ]
+        }
+      }
+    ],
     "tags": [
       "Identity Verification",
       "Document Verification",

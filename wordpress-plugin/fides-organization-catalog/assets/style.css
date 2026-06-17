@@ -769,6 +769,12 @@
   background: rgba(29, 78, 216, 0.08);
 }
 
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon--diacc {
+  color: #b91c1c;
+  border-color: #b91c1c;
+  background: rgba(185, 28, 28, 0.08);
+}
+
 #fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badge-icon svg {
   width: 10px;
   height: 10px;
@@ -958,6 +964,12 @@
   color: #1d4ed8;
   border-color: #1d4ed8;
   background: rgba(29, 78, 216, 0.08);
+}
+
+.fides-org-footer-badge--diacc {
+  color: #b91c1c;
+  border-color: #b91c1c;
+  background: rgba(185, 28, 28, 0.08);
 }
 
 .fides-org-footer-badge svg {
@@ -2325,6 +2337,81 @@
   background: rgba(16, 185, 129, 0.14) !important;
   color: #047857 !important;
   border-color: rgba(16, 185, 129, 0.55) !important;
+}
+
+.fides-org-cert-diacc-components-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.35rem;
+}
+
+/* DIACC Certified core chip: no override → inherits the neutral default
+   .fides-tag look, identical to the QTSP (eIDAS) core chip. */
+
+/* Component chip doubles as the proof link: name + a clear "Proof" action
+   segment with a shield icon, signalling the certificate sits in the button. */
+.fides-tag--diacc-proof {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-right: 0.35rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.fides-tag--diacc-proof:hover,
+.fides-tag--diacc-proof:focus-visible {
+  text-decoration: none;
+}
+
+.fides-tag--diacc-proof-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 600;
+  padding-left: 0.4rem;
+  border-left: 1px solid currentColor;
+}
+
+.fides-tag--diacc-proof-icon,
+.fides-tag--diacc-proof-ext {
+  display: inline-flex;
+  align-items: center;
+}
+
+.fides-tag--diacc-proof-icon svg {
+  width: 13px;
+  height: 13px;
+  flex: 0 0 auto;
+}
+
+.fides-tag--diacc-proof-ext svg {
+  width: 11px;
+  height: 11px;
+  flex: 0 0 auto;
+  opacity: 0.8;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-tag--diacc-component,
+.fides-modal-overlay[data-theme="light"] .fides-tag--diacc-component {
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #047857 !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+}
+
+.fides-modal-overlay[data-theme="fides"] .fides-tag--diacc-proof:hover,
+.fides-modal-overlay[data-theme="light"] .fides-tag--diacc-proof:hover,
+.fides-modal-overlay[data-theme="fides"] .fides-tag--diacc-proof:focus-visible,
+.fides-modal-overlay[data-theme="light"] .fides-tag--diacc-proof:focus-visible {
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: rgba(16, 185, 129, 0.7) !important;
+}
+
+/* Keep the divider subtle (currentColor at low alpha) against the green chip. */
+.fides-tag--diacc-proof .fides-tag--diacc-proof-action {
+  border-left-color: rgba(4, 120, 87, 0.35);
 }
 
 /* Tables (in accordion) */

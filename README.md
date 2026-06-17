@@ -4,6 +4,13 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 
 ## Changelog
 
+### 1.4.0
+
+- Added a new `diacc` certification type (DIACC Certified under the Pan-Canadian Trust Framework). Modeled like QTSP: one "DIACC Certified" entry with certified PCTF components (`digital_wallet`, `verified_person`, `privacy`), each with optional Level of Assurance and its own proof link.
+- Schema, TypeScript types, and crawler aggregation updated to carry `certifications[].details.components[]`.
+- Catalog UI: DIACC badge on cards/list rows, and a certifications-accordion row where each component doubles as a proof button (shield icon + "Proof" + external-link).
+- Linked DIACC certifications to Vaultie, FCT, Treefort, FraudFighter and Credivera.
+
 ### 1.3.8
 
 - WordPress plugin version bump to `1.3.8`.

@@ -10,6 +10,33 @@
     "website": "https://vaultie.com/",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/vaultie/Vaultie_logo.jpeg",
     "country": "CA",
+    "certifications": [
+      {
+        "code": "diacc",
+        "details": {
+          "components": [
+            {
+              "component": "digital_wallet",
+              "loa": "LOA3",
+              "evidence": {
+                "kind": "url",
+                "url": "https://diacc.ca/wp-content/uploads/2026/01/Vaultie-DW.pdf",
+                "label": "DIACC PCTF certificate (PDF)"
+              }
+            },
+            {
+              "component": "verified_person",
+              "loa": "LOA",
+              "evidence": {
+                "kind": "url",
+                "url": "https://diacc.ca/wp-content/uploads/2026/01/Vaultie-VP.pdf",
+                "label": "DIACC PCTF certificate (PDF)"
+              }
+            }
+          ]
+        }
+      }
+    ],
     "tags": [
       "Verifiable Credentials",
       "Digital Wallet",

@@ -24,6 +24,8 @@
     qtsp: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="4" width="19" height="16" rx="2.5" fill="#1E3A8A"/><circle cx="12" cy="7.2" r="0.8" fill="#FACC15"/><circle cx="15.2" cy="8.2" r="0.8" fill="#FACC15"/><circle cx="16.8" cy="11" r="0.8" fill="#FACC15"/><circle cx="15.8" cy="14.2" r="0.8" fill="#FACC15"/><circle cx="13" cy="15.8" r="0.8" fill="#FACC15"/><circle cx="9.8" cy="14.8" r="0.8" fill="#FACC15"/><circle cx="8.2" cy="12" r="0.8" fill="#FACC15"/><circle cx="9.2" cy="8.8" r="0.8" fill="#FACC15"/><path d="M8.6 12.6l2.1 2.1 4.8-4.8" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     /** Lucide "users" — FIDES Manifesto / community supporter badge */
     community: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    /** Lucide "badge-check" — DIACC PCTF certified badge */
+    diacc: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>',
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
     globe: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
     tag: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
@@ -449,6 +451,11 @@
     return orgCertificationCodes(org).includes('qtsp');
   }
 
+  /** Whether org has a DIACC PCTF certification in the catalog payload. */
+  function orgHasDiaccBadge(org) {
+    return orgCertificationCodes(org).includes('diacc');
+  }
+
   /** Grid card: outline badges bottom-left in footer (quiet, no fill). */
   function renderOrgCardFooterBadges(org) {
     const parts = [];
@@ -460,6 +467,9 @@
     }
     if (orgHasQtspBadge(org)) {
       parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--qtsp" role="img" aria-label="EU Qualified Trust Service Provider (eIDAS)" title="EU Qualified Trust Service Provider (eIDAS)">${icons.qtsp}</span>`);
+    }
+    if (orgHasDiaccBadge(org)) {
+      parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--diacc" role="img" aria-label="DIACC Certified (PCTF)" title="DIACC Certified (PCTF)">${icons.diacc}</span>`);
     }
     if (parts.length === 0) return '';
     return `<div class="fides-org-card-footer-badges">${parts.join('')}</div>`;
@@ -477,6 +487,9 @@
     if (orgHasQtspBadge(org)) {
       parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--qtsp" role="img" aria-label="EU Qualified Trust Service Provider (eIDAS)" title="EU Qualified Trust Service Provider (eIDAS)">${icons.qtsp}</span>`);
     }
+    if (orgHasDiaccBadge(org)) {
+      parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--diacc" role="img" aria-label="DIACC Certified (PCTF)" title="DIACC Certified (PCTF)">${icons.diacc}</span>`);
+    }
     if (parts.length === 0) return '';
     return `<div class="fides-row-badges">${parts.join('')}</div>`;
   }
@@ -487,6 +500,7 @@
     if (orgShowsBluePagesListBadge(org)) bits.push('has Blue Pages verified profile');
     if (org && org.fidesManifestoSupporter === true) bits.push('FIDES Supporter');
     if (orgHasQtspBadge(org)) bits.push('qualified trust service provider');
+    if (orgHasDiaccBadge(org)) bits.push('DIACC certified');
     if (bits.length === 0) return name;
     return `${name}, ${bits.join(', ')}`;
   }
@@ -503,6 +517,19 @@
     iso27701: 'ISO 27701',
     qtsp: 'QTSP (eIDAS)',
     soc2: 'SOC 2',
+    diacc: 'DIACC Certified',
+  };
+
+  const DIACC_COMPONENT_LABELS = {
+    digital_wallet: 'Digital Wallet',
+    verified_person: 'Verified Person',
+    privacy: 'Privacy',
+  };
+
+  const DIACC_COMPONENT_ORDER = {
+    digital_wallet: 0,
+    verified_person: 1,
+    privacy: 2,
   };
 
   const SECTOR_LABELS = {
@@ -644,6 +671,19 @@
           if (longLabel) bits.push(longLabel);
         });
       }
+      if (details && typeof details === 'object' && Array.isArray(details.components)) {
+        details.components.forEach((comp) => {
+          if (!comp || typeof comp !== 'object') return;
+          if (typeof comp.component === 'string') bits.push(comp.component);
+          if (typeof comp.loa === 'string') bits.push(comp.loa);
+          bits.push(diaccComponentTitle(comp));
+          const cev = comp.evidence;
+          if (cev && typeof cev === 'object') {
+            if (cev.kind === 'url' && cev.url) bits.push(cev.url);
+            if (cev.kind === 'verifiable_credential' && cev.credentialUri) bits.push(cev.credentialUri);
+          }
+        });
+      }
     }
     return bits.join(' ').toLowerCase();
   }
@@ -707,6 +747,34 @@
     const name = String(service?.name || '').trim();
     if (name) return name;
     return code;
+  }
+
+  /** Normalized DIACC PCTF certified components for an org (sorted by canonical order). */
+  function orgDiaccComponents(org) {
+    const raw = Array.isArray(org?.certifications) ? org.certifications : [];
+    const diacc = raw.find((c) => c && typeof c === 'object' && c.code === 'diacc');
+    const details = diacc && typeof diacc === 'object' ? diacc.details : null;
+    const list = details && Array.isArray(details.components) ? details.components : [];
+    return list
+      .filter((comp) => comp && typeof comp === 'object' && typeof comp.component === 'string' && comp.component.trim())
+      .map((comp) => ({
+        component: comp.component.trim(),
+        loa: typeof comp.loa === 'string' && comp.loa.trim() ? comp.loa.trim() : '',
+        evidence: comp.evidence && typeof comp.evidence === 'object' ? comp.evidence : null,
+      }))
+      .sort((a, b) => (DIACC_COMPONENT_ORDER[a.component] ?? 99) - (DIACC_COMPONENT_ORDER[b.component] ?? 99));
+  }
+
+  function diaccComponentName(comp) {
+    const key = String(comp?.component || '').trim();
+    return DIACC_COMPONENT_LABELS[key] || key.replace(/_/g, ' ');
+  }
+
+  /** Full component label, e.g. "PCTF Digital Wallet Component at LOA3". */
+  function diaccComponentTitle(comp) {
+    const name = diaccComponentName(comp);
+    const loa = String(comp?.loa || '').trim();
+    return `PCTF ${name} Component${loa ? ` at ${loa}` : ''}`;
   }
 
   /** Count of valid catalog certification entries (same rules as renderCertificationsAccordionBody). */
@@ -778,6 +846,29 @@
         }
         if (c.code === 'qtsp') {
           lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert fides-tag--qtsp-core">${escapeHtml(title)}</span>${trustServicesHtml}${extra}</div>`);
+        } else if (c.code === 'diacc') {
+          const components = orgDiaccComponents(org);
+          const compHtml = components
+            .map((comp) => {
+              const label = diaccComponentTitle(comp);
+              const cev = comp.evidence;
+              let href = '';
+              let proofTitle = '';
+              if (cev && typeof cev === 'object' && cev.kind === 'url' && cev.url) {
+                href = cev.url;
+                proofTitle = (cev.label && String(cev.label).trim()) || 'View DIACC PCTF certificate (PDF)';
+              } else if (cev && typeof cev === 'object' && cev.kind === 'verifiable_credential' && cev.credentialUri) {
+                href = cev.credentialUri;
+                proofTitle = 'View DIACC PCTF credential';
+              }
+              if (href) {
+                return `<a href="${escapeHtml(href)}" class="fides-tag fides-tag--cert fides-tag--diacc-component fides-tag--diacc-proof" target="_blank" rel="noopener" title="${escapeHtml(proofTitle)}" onclick="event.stopPropagation();"><span class="fides-tag--diacc-proof-label">${escapeHtml(label)}</span><span class="fides-tag--diacc-proof-action"><span class="fides-tag--diacc-proof-icon" aria-hidden="true">${icons.shield}</span>Proof<span class="fides-tag--diacc-proof-ext" aria-hidden="true">${icons.externalLink}</span></span></a>`;
+              }
+              return `<span class="fides-tag fides-tag--cert fides-tag--diacc-component">${escapeHtml(label)}</span>`;
+            })
+            .join('');
+          const componentsHtml = compHtml ? `<span class="fides-org-cert-diacc-components-inline">${compHtml}</span>` : '';
+          lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert fides-tag--diacc-core">${escapeHtml(title)}</span>${componentsHtml}${extra}</div>`);
         } else {
           lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert">${escapeHtml(title)}</span>${extra}${trustServicesHtml}</div>`);
         }

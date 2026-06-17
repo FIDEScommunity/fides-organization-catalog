@@ -9,6 +9,8 @@ import type {
   AggregatedOrganization,
   AggregatedOrganizationCatalog,
   AggregatedStats,
+  CertificationEvidence,
+  DiaccComponentCode,
   EcosystemRef,
   OrganizationCertification,
   OrganizationHistoryState,
@@ -41,18 +43,33 @@ function dedupeCertifications(items: OrganizationCertification[] | undefined): O
     seen.add(item.code);
     const entry: OrganizationCertification = { code: item.code };
     if (item.evidence) entry.evidence = item.evidence;
-    if (
-      item.details &&
-      Array.isArray(item.details.trustServices) &&
-      item.details.trustServices.length > 0
-    ) {
+    const details = item.details as
+      | { trustServices?: unknown; components?: unknown }
+      | undefined;
+    if (details && Array.isArray(details.trustServices) && details.trustServices.length > 0) {
       entry.details = {
-        trustServices: item.details.trustServices
+        trustServices: (details.trustServices as Array<{ code?: unknown; name?: unknown }>)
           .filter((svc) => svc && typeof svc.code === 'string' && svc.code.trim())
           .map((svc) => ({
-            code: svc.code.trim(),
+            code: (svc.code as string).trim(),
             ...(svc.name && typeof svc.name === 'string' && svc.name.trim()
               ? { name: svc.name.trim() }
+              : {}),
+          })),
+      };
+    } else if (details && Array.isArray(details.components) && details.components.length > 0) {
+      entry.details = {
+        components: (
+          details.components as Array<{ component?: unknown; loa?: unknown; evidence?: unknown }>
+        )
+          .filter((comp) => comp && typeof comp.component === 'string' && comp.component.trim())
+          .map((comp) => ({
+            component: (comp.component as string).trim() as DiaccComponentCode,
+            ...(comp.loa && typeof comp.loa === 'string' && comp.loa.trim()
+              ? { loa: comp.loa.trim() }
+              : {}),
+            ...(comp.evidence && typeof comp.evidence === 'object'
+              ? { evidence: comp.evidence as CertificationEvidence }
               : {}),
           })),
       };

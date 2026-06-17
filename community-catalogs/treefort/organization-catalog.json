@@ -14,6 +14,22 @@
     "certifications": [
       {
         "code": "soc2"
+      },
+      {
+        "code": "diacc",
+        "details": {
+          "components": [
+            {
+              "component": "verified_person",
+              "loa": "LOA",
+              "evidence": {
+                "kind": "url",
+                "url": "https://diacc.ca/wp-content/uploads/2025/01/Certificate-Treefort-2025.pdf",
+                "label": "DIACC PCTF certificate (PDF)"
+              }
+            }
+          ]
+        }
       }
     ],
     "tags": [

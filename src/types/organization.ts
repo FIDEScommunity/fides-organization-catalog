@@ -34,7 +34,7 @@ export const ORGANIZATION_SECTOR_CODES: readonly OrganizationSectorCode[] = [
   'digital',
 ] as const;
 
-export type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2';
+export type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2' | 'diacc';
 
 export type CertificationEvidence =
   | { kind: 'url'; url: string; label?: string }
@@ -54,10 +54,26 @@ export interface QtspCertificationDetails {
   trustServices: QtspTrustService[];
 }
 
+/** DIACC PCTF certified component code (schema enum). */
+export type DiaccComponentCode = 'digital_wallet' | 'verified_person' | 'privacy';
+
+export interface DiaccCertifiedComponent {
+  component: DiaccComponentCode;
+  /** Level of Assurance as published by DIACC (e.g. "LOA3"). */
+  loa?: string;
+  evidence?: CertificationEvidence;
+}
+
+export interface DiaccCertificationDetails {
+  components: DiaccCertifiedComponent[];
+}
+
+export type CertificationDetails = QtspCertificationDetails | DiaccCertificationDetails;
+
 export interface OrganizationCertification {
   code: CertificationCode;
   evidence?: CertificationEvidence;
-  details?: QtspCertificationDetails;
+  details?: CertificationDetails;
 }
 
 /** Optional organization identifiers (at most one value per type). */

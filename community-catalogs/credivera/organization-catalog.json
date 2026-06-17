@@ -11,6 +11,23 @@
     "website": "https://www.credivera.com/",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/credivera/Credivera_logo.jpeg",
     "country": "CA",
+    "certifications": [
+      {
+        "code": "diacc",
+        "details": {
+          "components": [
+            {
+              "component": "privacy",
+              "evidence": {
+                "kind": "url",
+                "url": "https://diacc.ca/wp-content/uploads/2025/10/Certificate-Credivera-Oliu-2025.pdf",
+                "label": "DIACC PCTF certificate (PDF)"
+              }
+            }
+          ]
+        }
+      }
+    ],
     "tags": [
       "Verifiable Credentials",
       "Digital Identity",
