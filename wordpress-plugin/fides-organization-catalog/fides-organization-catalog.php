@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.4.0
+ * Version: 1.5.0
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -327,14 +327,14 @@ class Fides_Organization_Catalog {
         $plugin_dir = plugin_dir_path(__FILE__);
         $ui_lib_css_path = $plugin_dir . 'assets/lib/fides-catalog-ui.css';
         $ui_lib_js_path = $plugin_dir . 'assets/lib/fides-catalog-ui.js';
-        $ui_lib_css_version = file_exists($ui_lib_css_path) ? filemtime($ui_lib_css_path) : '1.4.0';
-        $ui_lib_js_version = file_exists($ui_lib_js_path) ? filemtime($ui_lib_js_path) : '1.4.0';
+        $ui_lib_css_version = file_exists($ui_lib_css_path) ? filemtime($ui_lib_css_path) : '1.5.0';
+        $ui_lib_js_version = file_exists($ui_lib_js_path) ? filemtime($ui_lib_js_path) : '1.5.0';
 
         wp_register_style(
             'fides-organization-catalog',
             $this->plugin_url . 'assets/style.css',
             [],
-            '1.4.0'
+            '1.5.0'
         );
         wp_register_style(
             'fides-organization-catalog-ui-lib',
@@ -353,7 +353,7 @@ class Fides_Organization_Catalog {
             'fides-organization-catalog',
             $this->plugin_url . 'assets/organization-catalog.js',
             array('fides-organization-catalog-ui-lib'),
-            '1.4.0',
+            '1.5.0',
             true
         );
     }

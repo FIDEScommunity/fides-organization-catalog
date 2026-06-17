@@ -408,6 +408,9 @@
 
   const filterGroupState = { country: false, role: true, sector: false, certification: false };
 
+  /** Per-parent expand state for nested certification sub-options (e.g. qtsp trust services). */
+  const certSubExpanded = {};
+
   let filters = {
     search: '',
     country: [],
@@ -730,6 +733,12 @@
     Q_EARCH: 'Qualified electronic archiving',
     Q_VC: 'Qualified validation service',
     Q_PRES: 'Qualified preservation service',
+    Q_PRES_ESEAL: 'Qualified preservation service for electronic seals',
+    Q_PRES_ESIG: 'Qualified preservation service for electronic signatures',
+    Q_VAL_ESEAL: 'Qualified validation service for electronic seals',
+    Q_VAL_ESIG: 'Qualified validation service for electronic signatures',
+    Q_REM_MANAGE_Q_SEAL_CD: 'Qualified management of remote seal creation devices',
+    Q_REM_MANAGE_Q_SIG_CD: 'Qualified management of remote signature creation devices',
     QEAA: 'Qualified electronic attestation of attributes',
   };
   const QTSP_VISIBLE_TRUST_SERVICES = 4;
@@ -775,6 +784,81 @@
     const name = diaccComponentName(comp);
     const loa = String(comp?.loa || '').trim();
     return `PCTF ${name} Component${loa ? ` at ${loa}` : ''}`;
+  }
+
+  /** Child sub-option codes for a certification family (qtsp trust services / diacc components), as a Set. */
+  function orgCertificationChildCodes(org, code) {
+    if (code === 'qtsp') return new Set(orgQtspTrustServices(org).map((s) => s.code));
+    if (code === 'diacc') return new Set(orgDiaccComponents(org).map((c) => c.component));
+    return new Set();
+  }
+
+  /** Namespaced certification sub-values for an org, e.g. 'qtsp:QEAA', 'diacc:privacy'. */
+  function orgCertificationSubValues(org) {
+    const out = [];
+    for (const svc of orgQtspTrustServices(org)) out.push(`qtsp:${svc.code}`);
+    for (const comp of orgDiaccComponents(org)) out.push(`diacc:${comp.component}`);
+    return out;
+  }
+
+  /** Display label for a certification sub-option. */
+  function certificationSubLabel(parentCode, childCode) {
+    if (parentCode === 'qtsp') {
+      if (QTSP_TRUST_SERVICE_FULL_LABELS[childCode]) return QTSP_TRUST_SERVICE_FULL_LABELS[childCode];
+      // Fallback: readable hyphenated/abbreviated form, never the raw underscored code.
+      return qtspTrustServiceLabel({ code: childCode }) || childCode;
+    }
+    if (parentCode === 'diacc') return DIACC_COMPONENT_LABELS[childCode] || String(childCode).replace(/_/g, ' ');
+    return childCode;
+  }
+
+  /** Ordered, de-duplicated child option codes for a parent across all loaded orgs. */
+  function certificationChildOptions(parentCode) {
+    const set = new Set();
+    for (const org of organizations) {
+      for (const child of orgCertificationChildCodes(org, parentCode)) set.add(child);
+    }
+    const arr = [...set];
+    if (parentCode === 'diacc') {
+      arr.sort((a, b) => (DIACC_COMPONENT_ORDER[a] ?? 99) - (DIACC_COMPONENT_ORDER[b] ?? 99));
+    } else {
+      arr.sort((a, b) => certificationSubLabel(parentCode, a).localeCompare(certificationSubLabel(parentCode, b), 'en', { sensitivity: 'base' }));
+    }
+    return arr;
+  }
+
+  /**
+   * Certification filter semantics:
+   * - OR across different families (e.g. qtsp OR diacc).
+   * - Within a family: if any sub-option is selected, the org must have that
+   *   family AND at least one of the selected sub-options. A parent-only
+   *   selection (no sub-options) matches any org that has the family.
+   */
+  function orgMatchesCertificationFilter(org) {
+    const sel = filters.certification;
+    if (!sel.length) return true;
+    const families = {};
+    for (const v of sel) {
+      const idx = v.indexOf(':');
+      if (idx === -1) {
+        families[v] = families[v] || { children: new Set() };
+      } else {
+        const code = v.slice(0, idx);
+        const child = v.slice(idx + 1);
+        (families[code] = families[code] || { children: new Set() }).children.add(child);
+      }
+    }
+    const orgCodes = orgCertificationCodes(org);
+    for (const code of Object.keys(families)) {
+      if (!orgCodes.includes(code)) continue;
+      const fam = families[code];
+      if (fam.children.size === 0) return true;
+      const orgChildren = orgCertificationChildCodes(org, code);
+      for (const child of fam.children) {
+        if (orgChildren.has(child)) return true;
+      }
+    }
+    return false;
   }
 
   /** Count of valid catalog certification entries (same rules as renderCertificationsAccordionBody). */
@@ -1115,6 +1199,9 @@
       for (const code of orgCertificationCodes(org)) {
         facets.certification[code] = (facets.certification[code] || 0) + 1;
       }
+      for (const sub of orgCertificationSubValues(org)) {
+        facets.certification[sub] = (facets.certification[sub] || 0) + 1;
+      }
       if (hasRole(org, 'issuer')) facets.role.issuer += 1;
       if (hasRole(org, 'credential')) facets.role.credential += 1;
       if (hasRole(org, 'wallet')) facets.role.wallet += 1;
@@ -1129,7 +1216,7 @@
       if (filters.country.length && !filters.country.includes(org.country)) return false;
       if (filters.role.length && !filters.role.some((role) => hasRole(org, role))) return false;
       if (filters.sector.length && !filters.sector.some((s) => orgSectorCodes(org).includes(s))) return false;
-      if (filters.certification.length && !filters.certification.some((c) => orgCertificationCodes(org).includes(c))) return false;
+      if (filters.certification.length && !orgMatchesCertificationFilter(org)) return false;
       if (filters.manifestoSupporter.includes('listed') && org.fidesManifestoSupporter !== true) return false;
       if (filters.verifiedProfile.includes('listed') && !orgShowsBluePagesListBadge(org)) return false;
       if (filters.search) {
@@ -1371,6 +1458,62 @@
     `;
   }
 
+  /** Certification filter group with nested sub-options (qtsp trust services, diacc components). */
+  function renderCertificationFilterGroup(facets) {
+    const parentCodes = uniqueValues(organizations, (o) => orgCertificationCodes(o));
+    if (!parentCodes.length) return '';
+    const order = Object.keys(CERTIFICATION_LABELS);
+    parentCodes.sort((a, b) => {
+      const ia = order.indexOf(a);
+      const ib = order.indexOf(b);
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
+    const selected = filters.certification || [];
+    const expanded = filterGroupState.certification !== false;
+    const hasActiveClass = selected.length > 0 ? 'has-active' : '';
+    const rows = parentCodes.map((code) => {
+      const label = CERTIFICATION_LABELS[code] || code;
+      const n = (facets.certification && facets.certification[code]) || 0;
+      const parentRow = `
+        <label class="fides-filter-checkbox">
+          <input type="checkbox" data-filter-group="certification" value="${escapeHtml(code)}" ${selected.includes(code) ? 'checked' : ''}>
+          <span>${escapeHtml(label)}<span class="fides-filter-option-count">(${n})</span></span>
+        </label>`;
+      const children = certificationChildOptions(code);
+      if (!children.length) return parentRow;
+      const anyChildSelected = children.some((ch) => selected.includes(`${code}:${ch}`));
+      const open = certSubExpanded[code] === true || anyChildSelected;
+      const childRows = children.map((ch) => {
+        const subVal = `${code}:${ch}`;
+        const subLabel = certificationSubLabel(code, ch);
+        const sn = (facets.certification && facets.certification[subVal]) || 0;
+        return `
+          <label class="fides-filter-checkbox fides-filter-checkbox--sub">
+            <input type="checkbox" data-filter-group="certification" value="${escapeHtml(subVal)}" ${selected.includes(subVal) ? 'checked' : ''}>
+            <span>${escapeHtml(subLabel)}<span class="fides-filter-option-count">(${sn})</span></span>
+          </label>`;
+      }).join('');
+      return `
+        ${parentRow}
+        <button type="button" class="fides-filter-subtoggle" data-cert-subtoggle="${escapeHtml(code)}" aria-expanded="${open}">
+          ${icons.chevronDown}<span>${open ? 'Hide' : 'Show'} ${children.length} options</span>
+        </button>
+        <div class="fides-filter-suboptions" ${open ? '' : 'hidden'}>${childRows}</div>`;
+    }).join('');
+    return `
+      <div class="fides-filter-group collapsible ${expanded ? '' : 'collapsed'} ${hasActiveClass}" data-filter-group="certification">
+        <button class="fides-filter-label-toggle" type="button" aria-expanded="${expanded}">
+          <span class="fides-filter-label">Certification</span>
+          <span class="fides-filter-active-indicator"></span>
+          ${icons.chevronDown}
+        </button>
+        <div class="fides-filter-options">
+          ${rows}
+        </div>
+      </div>
+    `;
+  }
+
   function renderFiltersPanel() {
     if (!settings.showFilters) return '';
     const activeFilterCount = getActiveFilterCount();
@@ -1383,8 +1526,6 @@
       { value: 'wallet', label: 'Wallet Provider' },
       { value: 'rp', label: 'Relying Party' },
     ];
-    const certOptions = uniqueValues(organizations, (o) => orgCertificationCodes(o));
-
     return `
       <aside class="fides-sidebar">
         <div class="fides-sidebar-header">
@@ -1415,7 +1556,7 @@
           </div>
           ${renderCheckboxGroup('Country', 'country', countryOptions, null, facets)}
           ${renderCheckboxGroup('Sector', 'sector', SECTOR_CODES_ALPHABETIC, SECTOR_LABELS, facets)}
-          ${renderCheckboxGroup('Certification', 'certification', certOptions, CERTIFICATION_LABELS, facets)}
+          ${renderCertificationFilterGroup(facets)}
         </div>
       </aside>
     `;
@@ -1730,6 +1871,22 @@
           render();
         }
       });
+    });
+
+    root.querySelectorAll('[data-cert-subtoggle]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const code = btn.dataset.certSubtoggle;
+        certSubExpanded[code] = !(certSubExpanded[code] === true);
+        render();
+      });
+    });
+
+    // Mark parent certification checkboxes as indeterminate when only sub-options are selected.
+    root.querySelectorAll('input[data-filter-group="certification"]').forEach((input) => {
+      const val = input.value;
+      if (val.includes(':') || input.checked) return;
+      const prefix = `${val}:`;
+      if (filters.certification.some((v) => v.startsWith(prefix))) input.indeterminate = true;
     });
 
     root.querySelectorAll('.fides-org-card').forEach((card) => {

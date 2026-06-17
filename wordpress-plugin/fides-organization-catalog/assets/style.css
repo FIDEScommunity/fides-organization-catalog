@@ -302,6 +302,72 @@
   color: var(--fides-text-primary);
 }
 
+/* Nested certification sub-options (e.g. QTSP trust services, DIACC components) */
+.fides-filter-checkbox--sub {
+  margin-left: 1.5rem;
+  font-size: 0.78125rem;
+  align-items: flex-start;
+}
+
+.fides-filter-checkbox--sub input[type="checkbox"] {
+  margin-top: 0.15rem;
+}
+
+.fides-filter-checkbox--sub span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.fides-filter-subtoggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0 0 0.15rem 1.5rem;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  color: var(--fides-text-muted);
+  transition: color 0.15s;
+}
+
+.fides-filter-subtoggle:hover {
+  color: var(--fides-text-primary);
+}
+
+.fides-filter-subtoggle svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.15s ease;
+}
+
+.fides-filter-subtoggle[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+/* Collapsed state: add breathing room between the toggle and the next option. */
+.fides-filter-subtoggle:has(+ .fides-filter-suboptions[hidden]) {
+  margin-bottom: 0.4rem;
+}
+
+.fides-filter-suboptions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
+}
+
+.fides-filter-suboptions[hidden] {
+  display: none;
+}
+
+/* Certification group can grow tall when sub-options are expanded; avoid clipping. */
+.fides-filter-group.collapsible[data-filter-group="certification"] .fides-filter-options {
+  max-height: 4000px;
+}
+
 /* Results bar */
 .fides-results-bar {
   margin-bottom: 1rem;

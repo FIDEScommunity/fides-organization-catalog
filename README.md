@@ -4,6 +4,12 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 
 ## Changelog
 
+### 1.5.0
+
+- Certification filter is now two levels deep: under a parent certification (QTSP, DIACC) you can also filter on its sub-options — QTSP qualified trust services and DIACC PCTF components — with per-option result counts.
+- Sub-options are collapsed by default behind a "Show N options" toggle and auto-expand when one is selected. Filter semantics: OR across families, and within a family the org must have the certification plus at least one selected sub-option (parent-only selects all).
+- Readable labels for all QTSP trust service codes (no more raw `Q_*` codes) and long-label wrapping in the filter sidebar.
+
 ### 1.4.0
 
 - Added a new `diacc` certification type (DIACC Certified under the Pan-Canadian Trust Framework). Modeled like QTSP: one "DIACC Certified" entry with certified PCTF components (`digital_wallet`, `verified_person`, `privacy`), each with optional Level of Assurance and its own proof link.
