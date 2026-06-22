@@ -35,6 +35,14 @@
               "name": "Qualified pres esig"
             },
             {
+              "code": "Q_REM_MANAGE_Q_SEAL_CD",
+              "name": "Qualified rem manage q seal cd"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
+            },
+            {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
             },
@@ -58,5 +66,5 @@
     "logo": "https://brainit.com/wp-content/uploads/BIT_horizontal_zlto-biele.png",
     "description": "Slovak trust service provider listed as a Qualified Trust Service Provider (QTSP) in the EU eIDAS Trust List."
   },
-  "lastUpdated": "2026-06-15T10:55:04.295Z"
+  "lastUpdated": "2026-06-22T10:37:00.263Z"
 }

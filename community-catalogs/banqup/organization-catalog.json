@@ -1,19 +1,19 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
-    "id": "org:deutsche-telekom",
-    "name": "Deutsche Telekom",
-    "legalName": "Deutsche Telekom AG",
+    "id": "org:banqup",
+    "name": "Banqup",
+    "legalName": "Banqup SA",
     "sectors": [
       "digital"
     ],
-    "country": "DE",
+    "country": "BE",
     "certifications": [
       {
         "code": "qtsp",
         "evidence": {
           "kind": "url",
-          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/DE/tsp/10",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/17",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
         },
         "details": {
@@ -25,14 +25,20 @@
             {
               "code": "Q_CERT_ESIG",
               "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SEAL_CD",
+              "name": "Qualified rem manage q seal cd"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
             }
           ]
         }
       }
     ],
-    "website": "http://www.telesec.de/",
-    "logo": "https://www.google.com/s2/favicons?domain=telesec.de&sz=128",
-    "description": "Deutsche Telekom is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via telesec.de."
+    "website": "https://www.banqup.com"
   },
-  "lastUpdated": "2026-06-22T10:36:28.113Z"
+  "lastUpdated": "2026-06-22T10:36:23.422Z"
 }
