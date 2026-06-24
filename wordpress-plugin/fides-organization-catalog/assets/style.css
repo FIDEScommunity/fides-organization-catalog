@@ -1435,6 +1435,10 @@
   opacity: 0.8;
 }
 
+a.fides-modal-copy-link {
+  text-decoration: none;
+}
+
 .fides-modal-copy-link:hover {
   background: var(--fides-border, rgba(255, 255, 255, 0.1));
   color: var(--fides-text-primary, #f1f5f9);

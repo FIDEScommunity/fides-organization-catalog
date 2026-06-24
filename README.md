@@ -85,6 +85,24 @@ npm run check-links # Validate URLs
 npm run check:scaling # Payload growth gate check
 ```
 
+### WordPress submissions (local)
+
+After an admin **publishes** a submission on utrecht-demo:
+
+```bash
+npm run wp-sync:local
+```
+
+This imports published entries from `http://utrecht-demo.local`, validates schema, rebuilds `aggregated.json`, and syncs the plugin folder to Local.
+
+Dry-run only:
+
+```bash
+FIDES_CATALOG_SECRET=$(php scripts/read-wp-catalog-secret.php) npm run import-wp-submissions
+```
+
+Production CI uses `.github/workflows/wp-submissions-sync.yml` (`WP_EXPORT_URL` + `WP_INVALIDATE_SECRET`).
+
 ## Performance scaling gate
 
 Before large catalog imports/releases, run:
@@ -118,6 +136,7 @@ The ID convention is `org:<code>` where `<code>` matches the directory name in `
 
 - **Phase 1** (done): Standalone catalog that *reads* from other catalogs. Organization data used to be inline in wallet, issuer, RP, and credential catalogs.
 - **Phase 2** (done): Wallet, issuer, RP, and credential community catalogs reference this catalog via **`orgId`**; inline `organization` / `provider` blocks are no longer used there. Crawlers resolve display fields (name, logo, contact, etc.) from `data/aggregated.json` here.
+- **Phase 3** (done): WordPress submission export → `import-wp-submissions` → community-catalogs → crawl.
 
 ## License
 

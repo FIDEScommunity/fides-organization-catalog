@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.5.0
+ * Version: 1.7.1
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -14,7 +14,11 @@ if (!defined('ABSPATH')) exit;
 const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
 
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-ssr.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-submission-adapter.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-submission-forms.php';
 Fides_Organization_Catalog_SSR::bootstrap();
+Fides_Organization_Catalog_Submission_Adapter::bootstrap();
+Fides_Organization_Catalog_Submission_Forms::bootstrap();
 
 /**
  * Sanitize optional URL: empty string allowed (means “use default behavior”).
@@ -34,6 +38,8 @@ class Fides_Organization_Catalog {
 
     private static $instance = null;
     private $plugin_url;
+
+    const DEFAULT_UPDATE_FORM_PATH = '/organizations-update/';
 
     public static function get_instance() {
         if (self::$instance === null) {
@@ -88,6 +94,11 @@ class Fides_Organization_Catalog {
             'sanitize_callback' => 'esc_url_raw',
         ]);
         register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_blue_pages_profile_base_url', [
+            'type'              => 'string',
+            'default'           => '',
+            'sanitize_callback' => 'fides_org_catalog_sanitize_optional_url',
+        ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_update_form_url', [
             'type'              => 'string',
             'default'           => '',
             'sanitize_callback' => 'fides_org_catalog_sanitize_optional_url',
@@ -167,6 +178,17 @@ class Fides_Organization_Catalog {
                                    value="<?php echo esc_attr(get_option('fides_org_catalog_blue_pages_profile_base_url', '')); ?>"
                                    placeholder="<?php echo esc_attr(home_url('/community-tools/blue-pages')); ?>">
                             <p class="description"><?php echo esc_html__('Optional. Leave empty to use this site’s /community-tools/blue-pages path. Used for “Open full profile” in the modal.', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_update_form_url"><?php echo esc_html__('Organization update form page URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_update_form_url" name="fides_org_catalog_update_form_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_update_form_url', '')); ?>"
+                                   placeholder="<?php echo esc_attr(home_url(self::DEFAULT_UPDATE_FORM_PATH)); ?>">
+                            <p class="description"><?php echo esc_html__('Page with [fides_organization_update_form]. Logged-in users see a “Suggest an update” icon in the organization modal linking here with ?org= pre-filled.', 'fides-organization-catalog'); ?></p>
                         </td>
                     </tr>
                 </table>
@@ -353,7 +375,7 @@ class Fides_Organization_Catalog {
             'fides-organization-catalog',
             $this->plugin_url . 'assets/organization-catalog.js',
             array('fides-organization-catalog-ui-lib'),
-            '1.5.0',
+            '1.5.1',
             true
         );
     }
@@ -386,6 +408,8 @@ class Fides_Organization_Catalog {
             ),
             /** Base URL for “Open full profile” (trailing slash optional). Empty = settings option or home_url('/community-tools/blue-pages/'). */
             'blue_pages_profile_base_url' => '',
+            /** Page with [fides_organization_update_form]. Empty = settings option or site default. */
+            'update_form_url' => '',
         ], $atts, 'fides_organization_catalog');
 
         wp_enqueue_style('fides-organization-catalog');
@@ -404,9 +428,25 @@ class Fides_Organization_Catalog {
             }
         }
 
+        $update_shortcode = trim((string) $atts['update_form_url']);
+        if ($update_shortcode !== '') {
+            $update_form_url = esc_url_raw($update_shortcode);
+        } else {
+            $update_opt = trim((string) get_option('fides_org_catalog_update_form_url', ''));
+            if ($update_opt !== '') {
+                $update_form_url = esc_url_raw($update_opt);
+            } else {
+                $update_form_url = home_url(self::DEFAULT_UPDATE_FORM_PATH);
+            }
+        }
+
+        $aggregated_path = plugin_dir_path(__FILE__) . 'data/aggregated.json';
+        $aggregated_version = file_exists($aggregated_path) ? (string) filemtime($aggregated_path) : '';
+
         wp_localize_script('fides-organization-catalog', 'fidesOrganizationCatalog', [
             'pluginUrl'            => $this->plugin_url,
             'githubDataUrl'        => $atts['github_data_url'],
+            'aggregatedDataVersion' => $aggregated_version,
             'issuerCatalogUrl'     => $atts['issuer_catalog_url'],
             'credentialCatalogUrl' => $atts['credential_catalog_url'],
             'walletCatalogUrl'     => $atts['wallet_catalog_url'],
@@ -414,6 +454,8 @@ class Fides_Organization_Catalog {
             'bluePagesRestUrl'     => rest_url('fides-org-catalog/v1/blue-pages'),
             'bluePagesProfileBaseUrl' => $bp_profile_base,
             'ratingsApiBase'       => rest_url('fides-catalog/v1/ratings'),
+            'updateFormUrl'        => $update_form_url,
+            'isLoggedIn'           => is_user_logged_in(),
         ]);
 
         $initial_html = '';

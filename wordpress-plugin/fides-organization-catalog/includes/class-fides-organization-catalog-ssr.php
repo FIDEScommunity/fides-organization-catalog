@@ -110,6 +110,7 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                 Fides_Catalog_Registry::register(self::TYPE, array(
                     'label'             => __('Organizations', 'fides-organization-catalog'),
                     'json_url'          => 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json',
+                    'local_json_path'   => dirname(__DIR__) . '/data/aggregated.json',
                     'collection_key'    => 'organizations',
                     'id_field'          => 'id',
                     'name_field'        => 'name',

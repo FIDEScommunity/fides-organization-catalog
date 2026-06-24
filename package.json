@@ -14,7 +14,10 @@
     "check-links": "tsx scripts/check-links.ts",
     "check:scaling": "node scripts/check-scaling-gates.mjs",
     "import-qtsp": "node scripts/import-qtsp-from-efda.mjs",
-    "test": "node --import tsx --test src/crawler/matching.test.ts"
+    "import-wp-submissions": "tsx scripts/import-wp-submissions.ts",
+    "import-wp-submissions:apply": "tsx scripts/import-wp-submissions.ts --apply",
+    "wp-sync:local": "FIDES_CATALOG_SECRET=$(php scripts/read-wp-catalog-secret.php 2>/dev/null) tsx scripts/import-wp-submissions.ts --apply --wp-url http://utrecht-demo.local/wp-json/fides-catalog/v1/export/organization && npm run validate && npm run crawl && npm run sync-local",
+    "test": "node --import tsx --test src/crawler/matching.test.ts src/import-wp-submissions.test.ts"
   },
   "repository": {
     "type": "git",

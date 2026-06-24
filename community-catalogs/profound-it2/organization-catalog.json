@@ -1,0 +1,12 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:profound-it2",
+    "name": "Profound-IT2",
+    "sectors": [
+      "public_sector"
+    ],
+    "country": "EU"
+  },
+  "lastUpdated": "2026-06-23T10:39:01+00:00"
+}

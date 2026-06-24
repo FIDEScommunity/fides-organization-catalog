@@ -22,7 +22,7 @@ const spec = {
             in: 'query',
             schema: {
               type: 'array',
-              items: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2'] },
+              items: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2', 'diacc'] },
             },
             description: 'Filter by certification code. Repeat this parameter to match any selected certification (OR semantics).',
           },
@@ -168,7 +168,7 @@ const spec = {
         type: 'object',
         required: ['code'],
         properties: {
-          code: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2'] },
+          code: { type: 'string', enum: ['iso27001', 'iso27701', 'qtsp', 'soc2', 'diacc'] },
           evidence: { $ref: '#/components/schemas/CertificationEvidence' },
           details: {
             type: 'object',

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:van-der-kooij-consulting",
+    "name": "Van der Kooij Consulting",
+    "sectors": [
+      "mobility"
+    ],
+    "description": "Tja wat doet hij eigenlijk.... dat weet niemand",
+    "country": "NL"
+  },
+  "lastUpdated": "2026-06-23T10:39:01+00:00"
+}

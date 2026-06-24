@@ -20,6 +20,7 @@
     wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>',
     server: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>',
     share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
+    pencil: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>',
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
     qtsp: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="4" width="19" height="16" rx="2.5" fill="#1E3A8A"/><circle cx="12" cy="7.2" r="0.8" fill="#FACC15"/><circle cx="15.2" cy="8.2" r="0.8" fill="#FACC15"/><circle cx="16.8" cy="11" r="0.8" fill="#FACC15"/><circle cx="15.8" cy="14.2" r="0.8" fill="#FACC15"/><circle cx="13" cy="15.8" r="0.8" fill="#FACC15"/><circle cx="9.8" cy="14.8" r="0.8" fill="#FACC15"/><circle cx="8.2" cy="12" r="0.8" fill="#FACC15"/><circle cx="9.2" cy="8.8" r="0.8" fill="#FACC15"/><path d="M8.6 12.6l2.1 2.1 4.8-4.8" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     /** Lucide "users" — FIDES Manifesto / community supporter badge */
@@ -256,6 +257,7 @@
   const config = window.fidesOrganizationCatalog || {
     pluginUrl: '',
     githubDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json',
+    aggregatedDataVersion: '',
     issuerCatalogUrl: '',
     credentialCatalogUrl: '',
     walletCatalogUrl: '',
@@ -263,6 +265,8 @@
     bluePagesRestUrl: '',
     bluePagesProfileBaseUrl: '',
     ratingsApiBase: '',
+    updateFormUrl: '',
+    isLoggedIn: false,
   };
 
   const RATINGS_API_BASE = (config.ratingsApiBase || '').replace(/\/$/, '');
@@ -273,6 +277,25 @@
     wallet: Object.create(null),
     rp: Object.create(null),
   };
+
+  function organizationUpdateFormUrl(orgId) {
+    if (!config.isLoggedIn || !config.updateFormUrl || !orgId) return '';
+    const base = String(config.updateFormUrl).trim();
+    if (!base) return '';
+    try {
+      const url = new URL(base, window.location.origin);
+      url.searchParams.set('org', orgId);
+      return url.toString();
+    } catch {
+      return '';
+    }
+  }
+
+  function renderModalEditAction(org) {
+    const href = organizationUpdateFormUrl(org?.id);
+    if (!href) return '';
+    return `<a href="${escapeHtml(href)}" class="fides-modal-copy-link fides-modal-edit-link" aria-label="Suggest an update" title="Suggest an update">${icons.pencil}</a>`;
+  }
 
   function buildRatingsEndpoint(path, params) {
     if (!RATINGS_API_BASE) return '';
@@ -1315,6 +1338,7 @@
               </div>
             </div>
             <div class="fides-modal-header-actions">
+              ${renderModalEditAction(org)}
               <button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link" title="Copy link">${icons.share}</button>
               <button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">${icons.xLarge}</button>
             </div>
@@ -1965,7 +1989,8 @@
   async function loadOrganizations() {
     const SOURCE_TIMEOUT_MS = 3500;
     const remote = { url: config.githubDataUrl, name: 'GitHub' };
-    const local = { url: `${config.pluginUrl}data/aggregated.json`, name: 'Local' };
+    const localVersion = config.aggregatedDataVersion ? `?v=${encodeURIComponent(config.aggregatedDataVersion)}` : '';
+    const local = { url: `${config.pluginUrl}data/aggregated.json${localVersion}`, name: 'Local' };
     const sources = isFidesLocalDevHost() ? [local, remote] : [remote, local];
     for (const source of sources) {
       if (!source.url) continue;
