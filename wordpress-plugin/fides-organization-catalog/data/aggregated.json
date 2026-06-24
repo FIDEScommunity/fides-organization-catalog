@@ -14913,57 +14913,6 @@
       "fetchedAt": "2026-06-24T08:53:54.974Z"
     },
     {
-      "id": "org:profound-it",
-      "name": "Profound-IT",
-      "sectors": [
-        "supply_chain",
-        "healthcare",
-        "digital"
-      ],
-      "legalName": "Profound-IT",
-      "description": "Profound combines innovative technologies and comprehensive know-how in our product range to benefit our customers all over the world.",
-      "website": "https://profound-it.nl",
-      "logoUri": "https://www.123-3d.nl/image/Creality3D_Creality_3D_Ender_3_V3_SE_3D_printer_DKI00192_m2_big.jpg",
-      "country": "NL",
-      "tags": [
-        "wallet",
-        "identity",
-        "consulting"
-      ],
-      "source": "community-catalog",
-      "catalogUrl": "community-catalogs/profound-it/organization-catalog.json",
-      "ecosystemRoles": {
-        "issuers": [],
-        "credentialTypes": [],
-        "personalWallets": [],
-        "businessWallets": [],
-        "relyingParties": []
-      },
-      "firstSeenAt": "2026-06-23T07:17:20+00:00",
-      "updatedAt": "2026-06-23T10:39:01+00:00",
-      "fetchedAt": "2026-06-24T08:53:54.974Z"
-    },
-    {
-      "id": "org:profound-it2",
-      "name": "Profound-IT2",
-      "sectors": [
-        "public_sector"
-      ],
-      "country": "EU",
-      "source": "community-catalog",
-      "catalogUrl": "community-catalogs/profound-it2/organization-catalog.json",
-      "ecosystemRoles": {
-        "issuers": [],
-        "credentialTypes": [],
-        "personalWallets": [],
-        "businessWallets": [],
-        "relyingParties": []
-      },
-      "firstSeenAt": "2026-06-23T08:27:48+00:00",
-      "updatedAt": "2026-06-23T10:39:01+00:00",
-      "fetchedAt": "2026-06-24T08:53:54.974Z"
-    },
-    {
       "id": "org:provenant",
       "name": "Provenant",
       "sectors": [
@@ -18715,27 +18664,6 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-06-22T10:36:32.523Z",
-      "fetchedAt": "2026-06-24T08:53:54.974Z"
-    },
-    {
-      "id": "org:van-der-kooij-consulting",
-      "name": "Van der Kooij Consulting",
-      "sectors": [
-        "mobility"
-      ],
-      "description": "Tja wat doet hij eigenlijk.... dat weet niemand",
-      "country": "NL",
-      "source": "community-catalog",
-      "catalogUrl": "community-catalogs/van-der-kooij-consulting/organization-catalog.json",
-      "ecosystemRoles": {
-        "issuers": [],
-        "credentialTypes": [],
-        "personalWallets": [],
-        "businessWallets": [],
-        "relyingParties": []
-      },
-      "firstSeenAt": "2026-06-23T10:36:42+00:00",
-      "updatedAt": "2026-06-23T10:39:01+00:00",
       "fetchedAt": "2026-06-24T08:53:54.974Z"
     },
     {

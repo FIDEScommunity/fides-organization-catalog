@@ -1,10 +1,6 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-06-23T10:39:01.831Z",
-  "managedSlugs": [
-    "profound-it",
-    "profound-it2",
-    "van-der-kooij-consulting"
-  ]
+  "lastImportAt": null,
+  "managedSlugs": []
 }
