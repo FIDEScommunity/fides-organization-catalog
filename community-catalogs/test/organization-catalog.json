@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:test",
+    "name": "test",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "test entry",
+    "country": "EU",
+    "fidesManifestoSupporter": false
+  },
+  "lastUpdated": "2026-06-25T09:41:11+00:00"
+}

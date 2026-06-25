@@ -1,6 +1,8 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-06-25T09:36:53.931Z",
-  "managedSlugs": []
+  "lastImportAt": "2026-06-25T09:41:22.482Z",
+  "managedSlugs": [
+    "test"
+  ]
 }
