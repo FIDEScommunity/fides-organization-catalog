@@ -103,6 +103,8 @@ FIDES_CATALOG_SECRET=$(php scripts/read-wp-catalog-secret.php) npm run import-wp
 
 Production CI uses `.github/workflows/wp-submissions-sync.yml` (`WP_EXPORT_URL` + `WP_INVALIDATE_SECRET`).
 
+**Canonical docs:** `fides-community-tools-tiles/docs/CATALOG-SUBMISSION-GOVERNANCE.md` — §14 (CI workflow + pitfalls), §15 (production deploy), §16 (new catalog checklist).
+
 ## Performance scaling gate
 
 Before large catalog imports/releases, run:
