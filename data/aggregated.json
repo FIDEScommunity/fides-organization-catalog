@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastUpdated": "2026-06-25T09:41:23.519Z",
+  "lastUpdated": "2026-06-25T09:43:35.660Z",
   "organizations": [
     {
       "id": "org:2060",
@@ -29,7 +29,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:3g-soluciones-movilidad",
@@ -71,7 +71,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-06-22T10:36:32.532Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:a-trust",
@@ -133,7 +133,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.158Z",
       "updatedAt": "2026-06-22T10:36:22.045Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:a3bc",
@@ -161,7 +161,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:aangetekend",
@@ -203,7 +203,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-06-22T10:36:49.648Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ac-camerfirma",
@@ -253,7 +253,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.432Z",
       "updatedAt": "2026-06-22T10:36:32.514Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:acin-icloud-solutions-lda",
@@ -307,7 +307,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.598Z",
       "updatedAt": "2026-06-22T10:36:53.880Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:actalis",
@@ -369,7 +369,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.480Z",
       "updatedAt": "2026-06-22T10:36:42.201Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:adacom-advanced-internet-applications",
@@ -419,7 +419,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.784Z",
       "updatedAt": "2026-06-22T10:36:31.403Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:adobe-systems-software-ireland",
@@ -461,7 +461,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.537Z",
       "updatedAt": "2026-06-22T10:36:39.168Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:advania-island-ehf",
@@ -503,7 +503,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.856Z",
       "updatedAt": "2026-06-22T10:36:40.275Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:affinidi",
@@ -531,7 +531,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:agence-du-numerique-des-forces-de-securite-interieure",
@@ -577,7 +577,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.357Z",
       "updatedAt": "2026-06-22T10:36:35.109Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:agence-nationale-des-titres-securises",
@@ -619,7 +619,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.345Z",
       "updatedAt": "2026-06-22T10:36:35.091Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:agencia-notarial-de-certificacion-unipersonal",
@@ -669,7 +669,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.427Z",
       "updatedAt": "2026-06-22T10:36:32.510Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:air-new-zealand",
@@ -698,7 +698,7 @@
       },
       "firstSeenAt": "2026-04-22T11:00:21.000Z",
       "updatedAt": "2026-04-22T11:02:02.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:akd-d-o-o",
@@ -748,7 +748,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.702Z",
       "updatedAt": "2026-06-22T10:36:36.310Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:albania",
@@ -776,7 +776,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:alfatrust-certification",
@@ -826,7 +826,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-06-22T10:36:55.438Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:almelo-energie",
@@ -854,7 +854,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:amadeus",
@@ -878,7 +878,7 @@
       },
       "firstSeenAt": "2026-04-22T10:08:22.000Z",
       "updatedAt": "2026-04-22T10:09:19.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:anf-autoridad-de-certificacion-asociacion-anf-ac",
@@ -952,7 +952,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-06-22T10:36:32.512Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:anf-certification-authority",
@@ -1026,7 +1026,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-22T10:36:32.536Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:animo",
@@ -1082,7 +1082,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:26:17.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:app-solutions",
@@ -1124,7 +1124,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.356Z",
       "updatedAt": "2026-06-22T10:36:35.108Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:apple",
@@ -1152,7 +1152,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T14:58:06.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ar24",
@@ -1194,7 +1194,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-22T10:36:35.098Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ardaco-a-s",
@@ -1264,7 +1264,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-06-22T10:37:00.263Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:aruba",
@@ -1292,7 +1292,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:aruba-posta-elettronica-certificata",
@@ -1358,7 +1358,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.480Z",
       "updatedAt": "2026-06-22T10:36:42.201Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:asetec-ingenieria-de-sistemas",
@@ -1400,7 +1400,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-06-22T10:36:32.531Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:asseco-data-systems",
@@ -1470,7 +1470,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-06-22T10:36:52.412Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:atos-information-technology",
@@ -1512,7 +1512,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-06-22T10:36:28.117Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:audkenni-ehf",
@@ -1558,7 +1558,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.854Z",
       "updatedAt": "2026-06-22T10:36:40.274Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:austria",
@@ -1586,7 +1586,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:autenti",
@@ -1636,7 +1636,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.172Z",
       "updatedAt": "2026-06-22T10:36:52.413Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:auth0",
@@ -1664,7 +1664,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:authbound",
@@ -1696,7 +1696,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:autoridad-de-gestion-de-la-pki-del-ministerio-de-defensa-agpmd-y-director-del-ce",
@@ -1746,7 +1746,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-06-22T10:36:32.515Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:aviva-voice-systems-and-services",
@@ -1787,7 +1787,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-22T10:36:32.530Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ayanworks",
@@ -1820,7 +1820,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-05-28T14:02:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:azienda-regionale-per-l-innovazione-e-gli-acquisti",
@@ -1861,7 +1861,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-06-22T10:36:42.218Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:backup-file",
@@ -1903,7 +1903,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-06-22T10:36:32.542Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:banca-d-italia",
@@ -1949,7 +1949,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.476Z",
       "updatedAt": "2026-06-22T10:36:42.196Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:banca-intesa",
@@ -1991,7 +1991,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-06-22T10:36:42.207Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bank-of-slovenia",
@@ -2033,7 +2033,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-06-22T10:36:58.042Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bankenes-id-tjeneste",
@@ -2075,7 +2075,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-06-22T10:36:50.902Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:banqup",
@@ -2127,7 +2127,7 @@
       },
       "firstSeenAt": "2026-06-22T10:36:23.422Z",
       "updatedAt": "2026-06-22T10:36:23.422Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:be-invest-international",
@@ -2177,7 +2177,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-06-22T10:36:45.875Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bd",
@@ -2206,7 +2206,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:49:16.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:belgium",
@@ -2234,7 +2234,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:belgian-mobile-id",
@@ -2280,7 +2280,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.492Z",
       "updatedAt": "2026-06-22T10:36:23.415Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bengaluru-international-airport",
@@ -2309,7 +2309,7 @@
       },
       "firstSeenAt": "2026-04-22T11:17:22.000Z",
       "updatedAt": "2026-04-22T11:36:11.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bewor-tech",
@@ -2351,7 +2351,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-06-22T10:36:32.526Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:beyond-the-scope",
@@ -2393,7 +2393,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-06-22T10:36:32.539Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:buthan",
@@ -2421,7 +2421,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bitkasten",
@@ -2463,7 +2463,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.666Z",
       "updatedAt": "2026-06-22T10:36:28.120Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:helixid",
@@ -2494,7 +2494,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:borica",
@@ -2568,7 +2568,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.916Z",
       "updatedAt": "2026-06-22T10:36:24.162Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bpce-infogerance-et-technologies",
@@ -2610,7 +2610,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.356Z",
       "updatedAt": "2026-06-22T10:36:35.107Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:brainit-sk-s-r-o",
@@ -2688,7 +2688,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.604Z",
       "updatedAt": "2026-06-22T10:37:00.263Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:british-airways",
@@ -2717,7 +2717,7 @@
       },
       "firstSeenAt": "2026-04-22T11:06:34.000Z",
       "updatedAt": "2026-04-22T11:06:34.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:btp-onetec",
@@ -2759,7 +2759,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-22T10:36:32.530Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:buypass",
@@ -2809,7 +2809,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.771Z",
       "updatedAt": "2026-06-22T10:36:50.900Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:byte-computer",
@@ -2859,7 +2859,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-06-22T10:36:31.404Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:caesar",
@@ -2883,7 +2883,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T12:58:07.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ca-dmv",
@@ -2919,7 +2919,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cedacri",
@@ -2961,7 +2961,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-06-22T10:36:42.203Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cedacrinord",
@@ -3003,7 +3003,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.484Z",
       "updatedAt": "2026-06-22T10:36:42.208Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cegedim",
@@ -3049,7 +3049,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.354Z",
       "updatedAt": "2026-06-22T10:36:35.105Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ceger-centro-de-gestao-da-rede-informatica-do-governo",
@@ -3099,7 +3099,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.596Z",
       "updatedAt": "2026-06-22T10:36:53.878Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:crt",
@@ -3123,7 +3123,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-06T20:06:29.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:centrul-de-calcul",
@@ -3181,7 +3181,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-06-22T10:36:55.439Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:certeurope",
@@ -3231,7 +3231,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.345Z",
       "updatedAt": "2026-06-22T10:36:35.092Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:certicomm",
@@ -3272,7 +3272,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-22T10:36:42.211Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:certigna",
@@ -3326,7 +3326,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-06-22T10:36:35.094Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:certipost",
@@ -3368,7 +3368,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.490Z",
       "updatedAt": "2026-06-22T10:36:23.406Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:certizen",
@@ -3397,7 +3397,7 @@
       },
       "firstSeenAt": "2026-04-23T04:48:13.000Z",
       "updatedAt": "2026-04-23T04:48:13.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:certsign",
@@ -3467,7 +3467,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.972Z",
       "updatedAt": "2026-06-22T10:36:55.437Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cfca",
@@ -3496,7 +3496,7 @@
       },
       "firstSeenAt": "2026-04-23T04:55:21.000Z",
       "updatedAt": "2026-04-23T05:07:41.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cgi-information-systems-and-management-consultants-espana",
@@ -3538,7 +3538,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-22T10:36:32.537Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:chambersign-france",
@@ -3588,7 +3588,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-06-22T10:36:35.093Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cibg",
@@ -3630,7 +3630,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.432Z",
       "updatedAt": "2026-06-22T10:36:49.637Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:amsterdam",
@@ -3674,7 +3674,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:nijmegen",
@@ -3734,7 +3734,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:03:32.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:clearbus",
@@ -3780,7 +3780,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-06-22T10:36:35.102Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cleverbase-id",
@@ -3822,7 +3822,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-06-22T10:36:49.647Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:colegio-oficial-de-registradores-de-la-propiedad-y-mercantiles-de-espana",
@@ -3872,7 +3872,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-06-22T10:36:32.514Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:coloriuris",
@@ -3914,7 +3914,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.436Z",
       "updatedAt": "2026-06-22T10:36:32.518Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:commfides-norge",
@@ -3960,7 +3960,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.771Z",
       "updatedAt": "2026-06-22T10:36:50.901Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:connect-solutions",
@@ -4002,7 +4002,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.492Z",
       "updatedAt": "2026-06-22T10:36:23.414Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:consejo-general-de-la-abogacia-espanola",
@@ -4048,7 +4048,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-06-22T10:36:32.512Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:consiglio-nazionale-del-notariato",
@@ -4098,7 +4098,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-06-22T10:36:42.204Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:consorci-administracio-oberta-de-catalunya-caoc",
@@ -4148,7 +4148,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-06-22T10:36:32.511Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:credenco",
@@ -4182,7 +4182,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:42:04.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:credivera",
@@ -4236,7 +4236,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cryptolog-international",
@@ -4301,7 +4301,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-06-22T10:36:35.094Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:customer-communications-tecknalia",
@@ -4351,7 +4351,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-22T10:36:32.529Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cybersecurity-competence-and-certification-centre",
@@ -4393,7 +4393,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.599Z",
       "updatedAt": "2026-06-22T10:37:00.260Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:czechia",
@@ -4421,7 +4421,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:d-trust",
@@ -4475,7 +4475,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.658Z",
       "updatedAt": "2026-06-22T10:36:28.111Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:danske-bank-nuf",
@@ -4517,7 +4517,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-06-22T10:36:50.901Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:danubetech",
@@ -4541,7 +4541,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T15:46:20.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:darva",
@@ -4587,7 +4587,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-22T10:36:35.098Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:datakeeper",
@@ -4615,7 +4615,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:06:38.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:datasure",
@@ -4669,7 +4669,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-06-22T10:36:35.106Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:deh-notificacion-electronica-habilitada",
@@ -4719,7 +4719,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-06-22T10:36:32.535Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:den-danske-stat",
@@ -4773,7 +4773,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.958Z",
       "updatedAt": "2026-06-22T10:36:29.351Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:png",
@@ -4801,7 +4801,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:deutsche-post",
@@ -4843,7 +4843,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-06-22T10:36:28.115Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:deutsche-telekom",
@@ -4889,7 +4889,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.659Z",
       "updatedAt": "2026-06-22T10:36:28.113Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:deutsche-telekom-security",
@@ -4931,7 +4931,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-06-22T10:36:28.118Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:deutsches-mikrofilminstitut-fur-medizinische-dokumentation-und-archivierung-rein",
@@ -4977,7 +4977,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.666Z",
       "updatedAt": "2026-06-22T10:36:28.121Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:dgn-deutsches-gesundheitsnetz-service",
@@ -5023,7 +5023,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.659Z",
       "updatedAt": "2026-06-22T10:36:28.112Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:diacc",
@@ -5059,7 +5059,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digicert-europe-belgium",
@@ -5105,7 +5105,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.491Z",
       "updatedAt": "2026-06-22T10:36:23.406Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digicert-europe-netherlands",
@@ -5159,7 +5159,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-06-22T10:36:49.647Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digidentity",
@@ -5213,7 +5213,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-06-22T10:36:49.638Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digisign",
@@ -5263,7 +5263,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.971Z",
       "updatedAt": "2026-06-22T10:36:55.431Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digital-and-population-data-services-agency",
@@ -5309,7 +5309,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.821Z",
       "updatedAt": "2026-06-22T10:36:33.274Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digitalbazaar",
@@ -5337,7 +5337,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digital-trust-solutions",
@@ -5362,7 +5362,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digitaliseringsstyrelsen",
@@ -5399,7 +5399,7 @@
       },
       "firstSeenAt": "2026-06-05T00:00:00Z",
       "updatedAt": "2026-06-05T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digitalsign-certificadora-digital",
@@ -5465,7 +5465,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.598Z",
       "updatedAt": "2026-06-22T10:36:53.880Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digitel-on-trusted-services-u",
@@ -5519,7 +5519,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-06-22T10:36:32.522Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:digiyatra",
@@ -5557,7 +5557,7 @@
       },
       "firstSeenAt": "2026-04-22T13:07:27.000Z",
       "updatedAt": "2026-04-22T13:11:44.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:dioss-smart-solutions",
@@ -5599,7 +5599,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.494Z",
       "updatedAt": "2026-06-22T10:36:23.419Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:direccion-general-de-la-policia",
@@ -5645,7 +5645,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.426Z",
       "updatedAt": "2026-06-22T10:36:32.503Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:disig-a-s",
@@ -5723,7 +5723,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.602Z",
       "updatedAt": "2026-06-22T10:37:00.260Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:dnb-bank-asa",
@@ -5765,7 +5765,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-06-22T10:36:50.902Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:docaposte-arkhineo",
@@ -5819,7 +5819,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-22T10:36:35.099Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:docaposte-certinomis",
@@ -5873,7 +5873,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-06-22T10:36:35.092Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:docbyte",
@@ -5919,7 +5919,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.495Z",
       "updatedAt": "2026-06-22T10:36:23.421Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:docklabs",
@@ -5952,7 +5952,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:document-channel",
@@ -5994,7 +5994,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-06-22T10:36:35.103Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:docusign-france",
@@ -6044,7 +6044,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-06-22T10:36:35.095Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:docuten-tech",
@@ -6094,7 +6094,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-22T10:36:32.527Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:domoticube",
@@ -6118,7 +6118,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:netherlands",
@@ -6146,7 +6146,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:e-commerce-monitoring",
@@ -6208,7 +6208,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.162Z",
       "updatedAt": "2026-06-22T10:36:22.047Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ead-trust-european-agency-of-digital-trust",
@@ -6262,7 +6262,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-06-22T10:36:32.525Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:edatalia-data-solutions",
@@ -6304,7 +6304,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-06-22T10:36:32.539Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:edicom-capital",
@@ -6369,7 +6369,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-06-22T10:36:32.515Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:edocs-bulgaria",
@@ -6426,7 +6426,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.918Z",
       "updatedAt": "2026-06-22T10:36:24.170Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:educa",
@@ -6456,7 +6456,7 @@
       },
       "firstSeenAt": "2026-04-03T06:16:15.000Z",
       "updatedAt": "2026-04-03T06:16:15.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:eidentity-a-s",
@@ -6510,7 +6510,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.717Z",
       "updatedAt": "2026-06-22T10:36:26.640Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:eika-gruppen",
@@ -6552,7 +6552,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-06-22T10:36:50.903Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:tue",
@@ -6577,7 +6577,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:eius-d-o-o",
@@ -6631,7 +6631,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.585Z",
       "updatedAt": "2026-06-22T10:36:58.040Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:encia-para-a-reforma-tecnologica-do-estado-i-p",
@@ -6681,7 +6681,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.599Z",
       "updatedAt": "2026-06-22T10:36:53.881Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:enigma-systemy-ochrony-informacji",
@@ -6751,7 +6751,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-06-22T10:36:52.411Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:entaksi-solutions-irish-branch",
@@ -6809,7 +6809,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.540Z",
       "updatedAt": "2026-06-22T10:36:39.170Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:entrust-eu",
@@ -6851,7 +6851,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-06-22T10:36:32.524Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:equisign",
@@ -6893,7 +6893,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.350Z",
       "updatedAt": "2026-06-22T10:36:35.100Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:espublico-servicios-para-la-administracion",
@@ -6943,7 +6943,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-06-22T10:36:32.520Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:estonia",
@@ -6971,7 +6971,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:eudiplo",
@@ -7014,7 +7014,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:eurocert",
@@ -7068,7 +7068,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-06-22T10:36:52.411Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:eu",
@@ -7225,7 +7225,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:evicertia-u",
@@ -7267,7 +7267,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-06-22T10:36:32.525Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:eviden-germany",
@@ -7309,7 +7309,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.663Z",
       "updatedAt": "2026-06-22T10:36:28.119Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:evrotrust-technologies",
@@ -7383,7 +7383,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.918Z",
       "updatedAt": "2026-06-22T10:36:24.170Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ewc",
@@ -7468,7 +7468,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:exceet-secure-solutions",
@@ -7510,7 +7510,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.660Z",
       "updatedAt": "2026-06-22T10:36:28.115Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:fabaleus",
@@ -7535,7 +7535,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:fabrica-nacional-de-moneda-y-timbre-real-casa-de-la-moneda-entidad-publica-empre",
@@ -7589,7 +7589,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.430Z",
       "updatedAt": "2026-06-22T10:36:32.511Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:factorynet-augusta",
@@ -7631,7 +7631,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-06-22T10:36:32.533Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:factum-identity-solutions-u",
@@ -7681,7 +7681,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-22T10:36:32.537Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:fct",
@@ -7736,7 +7736,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:federal-chamber-of-notaries",
@@ -7786,7 +7786,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.657Z",
       "updatedAt": "2026-06-22T10:36:28.111Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:federal-employment-agency",
@@ -7831,7 +7831,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.655Z",
       "updatedAt": "2026-06-22T10:36:28.110Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:fides",
@@ -8002,11 +8002,11 @@
       "bluePages": {
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "profileAvailable": true,
-        "checkedAt": "2026-06-25T09:41:23.519Z"
+        "checkedAt": "2026-06-25T09:43:35.660Z"
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-06-25T09:06:34.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:financijska-agencija",
@@ -8059,7 +8059,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.702Z",
       "updatedAt": "2026-06-22T10:36:36.309Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:findynet",
@@ -8126,7 +8126,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-23T05:20:04.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:finema",
@@ -8155,7 +8155,7 @@
       },
       "firstSeenAt": "2026-04-23T04:50:59.000Z",
       "updatedAt": "2026-04-23T04:50:59.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:finland",
@@ -8183,7 +8183,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:firmafy-soluciones-tecnologicas",
@@ -8233,7 +8233,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-06-22T10:36:32.541Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:firmaprofesional",
@@ -8287,7 +8287,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.434Z",
       "updatedAt": "2026-06-22T10:36:32.517Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:first-certification-authority-a-s",
@@ -8357,7 +8357,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.716Z",
       "updatedAt": "2026-06-22T10:36:26.639Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:qtsp-sk-6-first-certification-authority-a-s",
@@ -8407,7 +8407,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-06-22T10:37:00.262Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:forkbomb",
@@ -8441,7 +8441,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:fraudfighter",
@@ -8496,7 +8496,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:france",
@@ -8524,7 +8524,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:fuelfwd",
@@ -8548,7 +8548,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:full-certificate",
@@ -8590,7 +8590,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-06-22T10:36:32.534Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:gaia-x",
@@ -8658,7 +8658,7 @@
       },
       "firstSeenAt": "2026-04-09T12:00:00Z",
       "updatedAt": "2026-04-09T12:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:gataca",
@@ -8694,7 +8694,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:gear-up",
@@ -8718,7 +8718,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:17:47.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:rotterdam",
@@ -8742,7 +8742,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:gendarmerie-nationale",
@@ -8788,7 +8788,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.353Z",
       "updatedAt": "2026-06-22T10:36:35.104Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:germany",
@@ -8816,7 +8816,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:gleif",
@@ -8880,7 +8880,7 @@
       },
       "firstSeenAt": "2026-04-20T08:46:45.000Z",
       "updatedAt": "2026-04-20T08:46:45.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:global-vlei",
@@ -8909,7 +8909,7 @@
       },
       "firstSeenAt": "2026-04-22T19:34:17.000Z",
       "updatedAt": "2026-04-23T05:48:01.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:globalsign",
@@ -8963,7 +8963,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.493Z",
       "updatedAt": "2026-06-22T10:36:23.415Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:google",
@@ -8996,7 +8996,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bcgov",
@@ -9029,7 +9029,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:cyprus",
@@ -9056,7 +9056,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:greece",
@@ -9088,7 +9088,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:greek-universities-network-gunet",
@@ -9142,7 +9142,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-06-22T10:36:31.405Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:hak-rein-vos-notarissen",
@@ -9166,7 +9166,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:halcom-d-d",
@@ -9228,7 +9228,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.584Z",
       "updatedAt": "2026-06-22T10:36:58.038Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:headon",
@@ -9253,7 +9253,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:hellenic-public-administration-certification-authority",
@@ -9299,7 +9299,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-06-22T10:36:31.406Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:hong-kong-international-airport",
@@ -9328,7 +9328,7 @@
       },
       "firstSeenAt": "2026-04-22T11:13:15.000Z",
       "updatedAt": "2026-04-22T11:13:15.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:hovi",
@@ -9370,7 +9370,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:hp-d-d",
@@ -9412,7 +9412,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.703Z",
       "updatedAt": "2026-06-22T10:36:36.311Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:hungary",
@@ -9440,7 +9440,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:i-t-telecom",
@@ -9481,7 +9481,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-22T10:36:42.211Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:icbpi",
@@ -9522,7 +9522,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-06-22T10:36:42.214Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:iceland",
@@ -9550,7 +9550,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:idcontrol",
@@ -9574,7 +9574,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:identinet",
@@ -9598,7 +9598,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:identity-documents-personalisation-centre-under-the-ministry-of-the-interior",
@@ -9639,7 +9639,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-22T10:36:44.651Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:identos",
@@ -9681,7 +9681,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:idnow-trust-services",
@@ -9738,7 +9738,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.269Z",
       "updatedAt": "2026-06-22T10:36:56.657Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:igrant",
@@ -9844,7 +9844,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ilabs",
@@ -9868,7 +9868,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:impierce",
@@ -9902,7 +9902,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:imprimerie-nationale",
@@ -9944,7 +9944,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.348Z",
       "updatedAt": "2026-06-22T10:36:35.096Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:in-groupe-denmark",
@@ -9990,7 +9990,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.959Z",
       "updatedAt": "2026-06-22T10:36:29.353Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:in-te",
@@ -10048,7 +10048,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-06-22T10:36:42.205Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:incert",
@@ -10090,7 +10090,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-06-22T10:36:45.875Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:india",
@@ -10118,7 +10118,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:indigo",
@@ -10147,7 +10147,7 @@
       },
       "firstSeenAt": "2026-04-22T11:10:08.000Z",
       "updatedAt": "2026-04-22T11:10:08.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:inetum",
@@ -10180,7 +10180,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:infocamere-s-c-p-a",
@@ -10238,7 +10238,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-06-22T10:36:42.219Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:infocamere-sc-p-a",
@@ -10279,7 +10279,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-22T10:36:42.212Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:infocert",
@@ -10353,7 +10353,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.479Z",
       "updatedAt": "2026-06-22T10:36:42.197Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:imda",
@@ -10385,7 +10385,7 @@
       },
       "firstSeenAt": "2026-04-20T08:26:08.000Z",
       "updatedAt": "2026-04-20T08:26:08.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:infonotary",
@@ -10447,7 +10447,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.917Z",
       "updatedAt": "2026-06-22T10:36:24.163Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:information-services",
@@ -10501,7 +10501,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.917Z",
       "updatedAt": "2026-06-22T10:36:24.169Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:infraestructuras-y-servicios-de-telecomunicaciones-y-certificacion",
@@ -10554,7 +10554,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.432Z",
       "updatedAt": "2026-06-22T10:36:32.513Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:innotractor",
@@ -10578,7 +10578,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:innovalor",
@@ -10602,7 +10602,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:19:49.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:inposte-it",
@@ -10644,7 +10644,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-22T10:36:42.221Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:instituto-dos-registos-e-do-notariado-i-p",
@@ -10690,7 +10690,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.597Z",
       "updatedAt": "2026-06-22T10:36:53.879Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:instituto-para-la-dinamizacion-economica-u",
@@ -10740,7 +10740,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-06-22T10:36:32.536Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:interac",
@@ -10777,7 +10777,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:intercede",
@@ -10805,7 +10805,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:iata",
@@ -10863,7 +10863,7 @@
       },
       "firstSeenAt": "2026-04-20T08:42:08.000Z",
       "updatedAt": "2026-04-20T08:42:08.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:icao",
@@ -10897,7 +10897,7 @@
       },
       "firstSeenAt": "2026-04-20T09:14:06.000Z",
       "updatedAt": "2026-04-20T09:14:06.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:intesa-sanpaolo-bank",
@@ -10942,7 +10942,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-06-22T10:36:42.206Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:intesi-group",
@@ -11000,7 +11000,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-06-22T10:36:42.217Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ireland",
@@ -11028,7 +11028,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:iso",
@@ -11076,7 +11076,7 @@
       },
       "firstSeenAt": "2026-04-22T10:00:00Z",
       "updatedAt": "2026-04-22T10:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:it-telecom",
@@ -11117,7 +11117,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-06-22T10:36:42.205Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:italy",
@@ -11145,7 +11145,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ivnosys-soluciones-u",
@@ -11199,7 +11199,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-06-22T10:36:32.521Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ixo",
@@ -11227,7 +11227,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:izertis",
@@ -11260,7 +11260,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:japan-airlines",
@@ -11289,7 +11289,7 @@
       },
       "firstSeenAt": "2026-04-22T10:29:17.000Z",
       "updatedAt": "2026-04-22T10:31:40.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:jcc-payment-systems",
@@ -11335,7 +11335,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.125Z",
       "updatedAt": "2026-06-22T10:36:24.754Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:k4security",
@@ -11366,7 +11366,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:kvk",
@@ -11395,7 +11395,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:47:02.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:kfj-inwestycje",
@@ -11437,7 +11437,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-06-22T10:36:52.412Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:kingdom-of-belgium-federal-government",
@@ -11494,7 +11494,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.493Z",
       "updatedAt": "2026-06-22T10:36:23.417Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:komercni-banka-a-s",
@@ -11544,7 +11544,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.720Z",
       "updatedAt": "2026-06-22T10:36:26.644Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:kpn",
@@ -11590,7 +11590,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.433Z",
       "updatedAt": "2026-06-22T10:36:49.639Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:krajowa-izba-rozliczeniowa",
@@ -11644,7 +11644,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-06-22T10:36:52.410Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:latvia",
@@ -11672,7 +11672,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:latvian-state-radio-and-television-center",
@@ -11722,7 +11722,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.782Z",
       "updatedAt": "2026-06-22T10:36:47.114Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:lex-persona",
@@ -11772,7 +11772,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.353Z",
       "updatedAt": "2026-06-22T10:36:35.103Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:lissi",
@@ -11825,7 +11825,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:lleidanet-pki",
@@ -11883,7 +11883,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-22T10:36:32.529Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:lleidanetworks-serveis-telematics",
@@ -11925,7 +11925,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-06-22T10:36:32.522Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:logalty-prueba-por-interposicion",
@@ -11987,7 +11987,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-06-22T10:36:32.521Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:logius",
@@ -12021,7 +12021,7 @@
       },
       "firstSeenAt": "2026-05-27T00:00:00Z",
       "updatedAt": "2026-05-27T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:lombardia-informatica",
@@ -12062,7 +12062,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-06-22T10:36:42.213Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:lombardia-integrata-servizi-infotelematici-per-il-territorio",
@@ -12103,7 +12103,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-06-22T10:36:42.202Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:luxtrust",
@@ -12173,7 +12173,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-06-22T10:36:45.874Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:magyar-telekom-public-company",
@@ -12214,7 +12214,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.144Z",
       "updatedAt": "2026-06-22T10:36:37.998Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:mailstone-timestamp",
@@ -12256,7 +12256,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-06-22T10:36:35.107Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:mailteck",
@@ -12306,7 +12306,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-22T10:36:32.528Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:malta-electronic-certification-services",
@@ -12348,7 +12348,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.084Z",
       "updatedAt": "2026-06-22T10:36:48.214Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:mattr",
@@ -12381,7 +12381,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:medisign",
@@ -12423,7 +12423,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.660Z",
       "updatedAt": "2026-06-22T10:36:28.114Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:meeco",
@@ -12456,7 +12456,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:microsave-consulting",
@@ -12489,7 +12489,7 @@
       },
       "firstSeenAt": "2026-05-26T00:00:00Z",
       "updatedAt": "2026-05-26T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:microsec-micro-software-engineering-and-consulting-private-company-by-shares",
@@ -12555,7 +12555,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.141Z",
       "updatedAt": "2026-06-22T10:36:37.997Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:microsoft",
@@ -12583,7 +12583,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:01:19.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:migration-department-under-the-ministry-of-the-interior-of-the-republic-of-lithu",
@@ -12624,7 +12624,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.104Z",
       "updatedAt": "2026-06-22T10:36:44.654Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:minisuomi",
@@ -12652,7 +12652,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ministere-de-l-interieur",
@@ -12702,7 +12702,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.350Z",
       "updatedAt": "2026-06-22T10:36:35.100Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ministere-de-la-justice",
@@ -12744,7 +12744,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-06-22T10:36:35.095Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ministeres-economiques-et-financiers",
@@ -12785,7 +12785,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.354Z",
       "updatedAt": "2026-06-22T10:36:35.105Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:bzk",
@@ -12810,7 +12810,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ministerie-van-defensie",
@@ -12852,7 +12852,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.433Z",
       "updatedAt": "2026-06-22T10:36:49.645Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ministerie-van-infrastructuur-en-waterstaat",
@@ -12894,7 +12894,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.434Z",
       "updatedAt": "2026-06-22T10:36:49.646Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ministero-della-difesa",
@@ -12951,7 +12951,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-06-22T10:36:42.204Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ministry-of-defence-slovak-republic",
@@ -13001,7 +13001,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.602Z",
       "updatedAt": "2026-06-22T10:37:00.261Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:brazil",
@@ -13029,7 +13029,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:mintblue",
@@ -13053,7 +13053,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:moldova",
@@ -13081,7 +13081,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:mosip",
@@ -13129,7 +13129,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:multicert-servicos-de-certificacao-electronica",
@@ -13183,7 +13183,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.597Z",
       "updatedAt": "2026-06-22T10:36:53.879Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:mydata-global",
@@ -13207,7 +13207,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:namirial",
@@ -13267,7 +13267,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-06-22T10:36:35.109Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:qtsp-ie-5-namirial",
@@ -13327,7 +13327,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.541Z",
       "updatedAt": "2026-06-22T10:36:39.170Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:qtsp-it-33-namirial",
@@ -13406,7 +13406,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-22T10:36:42.212Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:national-agency-for-network-and-electronic-services",
@@ -13480,7 +13480,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-06-22T10:37:00.262Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ethiopia",
@@ -13508,7 +13508,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:national-registers-authority",
@@ -13566,7 +13566,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.718Z",
       "updatedAt": "2026-06-22T10:36:26.642Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:national-security-authority",
@@ -13620,7 +13620,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.598Z",
       "updatedAt": "2026-06-22T10:37:00.259Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:neoke",
@@ -13648,7 +13648,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:neovo",
@@ -13679,7 +13679,7 @@
       },
       "firstSeenAt": "2026-04-02T18:06:53.000Z",
       "updatedAt": "2026-04-02T20:41:38.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:netcetera-software-services",
@@ -13733,7 +13733,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-06-22T10:36:28.116Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:netcom-group",
@@ -13775,7 +13775,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-06-22T10:36:35.106Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:netlock-informatics-and-network-privacy-services-company",
@@ -13829,7 +13829,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.144Z",
       "updatedAt": "2026-06-22T10:36:37.998Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:nisz-national-infocommunications-services-company-by-shares",
@@ -13879,7 +13879,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.145Z",
       "updatedAt": "2026-06-22T10:36:37.999Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:nitro-software-belgium",
@@ -13925,7 +13925,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.494Z",
       "updatedAt": "2026-06-22T10:36:23.418Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:nlb-d-d",
@@ -13971,7 +13971,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.584Z",
       "updatedAt": "2026-06-22T10:36:58.039Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:nordea-bank-abp-filial-i-norge",
@@ -14013,7 +14013,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-06-22T10:36:50.903Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:northernblock",
@@ -14045,7 +14045,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:norway",
@@ -14073,7 +14073,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:notarchiv-company",
@@ -14119,7 +14119,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.145Z",
       "updatedAt": "2026-06-22T10:36:38.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:notartel",
@@ -14169,7 +14169,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-06-22T10:36:42.220Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:onespan",
@@ -14202,7 +14202,7 @@
       },
       "firstSeenAt": "2026-06-17T13:32:50.000Z",
       "updatedAt": "2026-06-17T13:40:22.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ooru",
@@ -14237,7 +14237,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:owf",
@@ -14270,7 +14270,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:oumou-group",
@@ -14298,7 +14298,7 @@
       },
       "firstSeenAt": "2026-04-03T07:27:12.000Z",
       "updatedAt": "2026-04-10T12:35:16.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:pagopa",
@@ -14340,7 +14340,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-22T10:36:42.222Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:penneo",
@@ -14390,7 +14390,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.958Z",
       "updatedAt": "2026-06-22T10:36:29.352Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:poczta-polska-s-a",
@@ -14432,7 +14432,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-06-22T10:36:52.413Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:poland",
@@ -14460,7 +14460,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:polish-security-printing-works",
@@ -14522,7 +14522,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.169Z",
       "updatedAt": "2026-06-22T10:36:52.409Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:portugal",
@@ -14550,7 +14550,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-28T14:56:28.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:posta-slovenije-d-o-o",
@@ -14600,7 +14600,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.585Z",
       "updatedAt": "2026-06-22T10:36:58.039Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:postalia-belgium",
@@ -14642,7 +14642,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.495Z",
       "updatedAt": "2026-06-22T10:36:23.420Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:poste-italiane",
@@ -14699,7 +14699,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-06-22T10:36:42.216Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:postecom",
@@ -14748,7 +14748,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-06-22T10:36:42.207Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:postel",
@@ -14790,7 +14790,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-22T10:36:42.222Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:primesign",
@@ -14844,7 +14844,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.162Z",
       "updatedAt": "2026-06-22T10:36:22.047Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:privacybydesign",
@@ -14872,7 +14872,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:procivis",
@@ -14905,7 +14905,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:provenant",
@@ -14943,7 +14943,7 @@
       },
       "firstSeenAt": "2026-04-23T05:03:19.000Z",
       "updatedAt": "2026-04-23T05:03:19.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:prvni-certifikacni-autorita-s-r-o",
@@ -14989,7 +14989,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:24.604Z",
       "updatedAt": "2026-06-22T10:37:00.264Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:quintessence-research",
@@ -15013,7 +15013,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:register",
@@ -15055,7 +15055,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-06-22T10:36:42.217Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:rekono-d-o-o",
@@ -15121,7 +15121,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-06-22T10:36:58.041Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:republika-slovenija",
@@ -15179,7 +15179,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.583Z",
       "updatedAt": "2026-06-22T10:36:58.038Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:honduras",
@@ -15206,7 +15206,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:rubricae-business-solutions",
@@ -15248,7 +15248,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-06-22T10:36:32.540Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:samsung",
@@ -15276,7 +15276,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sanpaolo-imi",
@@ -15317,7 +15317,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.484Z",
       "updatedAt": "2026-06-22T10:36:42.208Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:saritel",
@@ -15358,7 +15358,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-06-22T10:36:42.214Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sbb",
@@ -15387,7 +15387,7 @@
       },
       "firstSeenAt": "2026-04-03T06:05:55.000Z",
       "updatedAt": "2026-04-03T06:05:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:scrive",
@@ -15429,7 +15429,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-06-22T10:36:50.905Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:scytales",
@@ -15462,7 +15462,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:seceti",
@@ -15503,7 +15503,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.485Z",
       "updatedAt": "2026-06-22T10:36:42.209Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sectigo-europe",
@@ -15557,7 +15557,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-22T10:36:32.527Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:secumail",
@@ -15599,7 +15599,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.436Z",
       "updatedAt": "2026-06-22T10:36:49.648Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sefira",
@@ -15652,7 +15652,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.719Z",
       "updatedAt": "2026-06-22T10:36:26.642Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:servicios-de-mailcertificado",
@@ -15694,7 +15694,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-06-22T10:36:32.533Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:setcce-d-o-o",
@@ -15740,7 +15740,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-06-22T10:36:58.041Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:seyfor-a-s",
@@ -15786,7 +15786,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.721Z",
       "updatedAt": "2026-06-22T10:36:26.646Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sheca",
@@ -15815,7 +15815,7 @@
       },
       "firstSeenAt": "2026-04-22T19:26:31.000Z",
       "updatedAt": "2026-04-22T19:35:56.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sia",
@@ -15856,7 +15856,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.485Z",
       "updatedAt": "2026-06-22T10:36:42.209Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sicpa",
@@ -15884,7 +15884,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sign8",
@@ -15934,7 +15934,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-06-22T10:36:28.118Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:signe",
@@ -15984,7 +15984,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.435Z",
       "updatedAt": "2026-06-22T10:36:32.517Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:signicat",
@@ -16026,7 +16026,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-06-22T10:36:50.905Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:signicat-u",
@@ -16068,7 +16068,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-22T10:36:32.526Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:simpliworks",
@@ -16117,7 +16117,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.974Z",
       "updatedAt": "2026-06-22T10:36:55.440Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sistemas-informaticos-abiertos-u",
@@ -16171,7 +16171,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.435Z",
       "updatedAt": "2026-06-22T10:36:32.518Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sk-id-solutions",
@@ -16225,7 +16225,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.349Z",
       "updatedAt": "2026-06-22T10:36:29.966Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:slovakia",
@@ -16253,7 +16253,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:slovenia",
@@ -16281,7 +16281,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:software602-a-s",
@@ -16343,7 +16343,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.718Z",
       "updatedAt": "2026-06-22T10:36:26.641Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:spain",
@@ -16371,7 +16371,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sparebank-1-utvikling-da",
@@ -16413,7 +16413,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-06-22T10:36:50.904Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:special-telecommunications-service",
@@ -16471,7 +16471,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-06-22T10:36:55.439Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sphereon",
@@ -16508,7 +16508,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:spherity",
@@ -16537,7 +16537,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:spruce",
@@ -16565,7 +16565,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ssb",
@@ -16606,7 +16606,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.486Z",
       "updatedAt": "2026-06-22T10:36:42.210Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:stampee",
@@ -16648,7 +16648,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.358Z",
       "updatedAt": "2026-06-22T10:36:35.110Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:state-enterprise-centre-of-registers",
@@ -16698,7 +16698,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.102Z",
       "updatedAt": "2026-06-22T10:36:44.643Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:state-trust-services",
@@ -16756,7 +16756,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.721Z",
       "updatedAt": "2026-06-22T10:36:26.645Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:stelausoftware",
@@ -16784,7 +16784,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:st",
@@ -16830,7 +16830,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-06-22T10:36:50.906Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:surf",
@@ -16854,7 +16854,7 @@
       },
       "firstSeenAt": "2026-04-23T05:12:08.000Z",
       "updatedAt": "2026-04-23T05:12:47.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:sweden",
@@ -16882,7 +16882,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:swiyu",
@@ -16935,7 +16935,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:swisscom-it-services-finance",
@@ -16993,7 +16993,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.163Z",
       "updatedAt": "2026-06-22T10:36:22.048Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:swisssign",
@@ -17039,7 +17039,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.163Z",
       "updatedAt": "2026-06-22T10:36:22.049Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:talao",
@@ -17082,7 +17082,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:teamsystem",
@@ -17132,7 +17132,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-22T10:36:42.220Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:tecalis-sotware",
@@ -17174,7 +17174,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-06-22T10:36:32.535Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:techniserv-it",
@@ -17219,7 +17219,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.719Z",
       "updatedAt": "2026-06-22T10:36:26.643Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:telecom-italia-trust-technologies",
@@ -17276,7 +17276,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-06-22T10:36:42.215Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:tessi-documents-services",
@@ -17318,7 +17318,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.351Z",
       "updatedAt": "2026-06-22T10:36:35.101Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:test",
@@ -17338,8 +17338,8 @@
         "relyingParties": []
       },
       "firstSeenAt": "2026-06-25T09:34:28+00:00",
-      "updatedAt": "2026-06-25T09:41:11+00:00",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "updatedAt": "2026-06-25T09:43:34+00:00",
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:thales",
@@ -17367,7 +17367,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:the-czech-post-s-p",
@@ -17421,7 +17421,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:13.717Z",
       "updatedAt": "2026-06-22T10:36:26.640Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:the-high-council-of-french-notariat",
@@ -17467,7 +17467,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.348Z",
       "updatedAt": "2026-06-22T10:36:35.096Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:tno",
@@ -17496,7 +17496,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:15:35.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:toppan",
@@ -17533,7 +17533,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:tradego",
@@ -17562,7 +17562,7 @@
       },
       "firstSeenAt": "2026-04-22T19:32:39.000Z",
       "updatedAt": "2026-04-22T21:12:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:trans-sped",
@@ -17620,7 +17620,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.971Z",
       "updatedAt": "2026-06-22T10:36:55.430Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:treefort",
@@ -17680,7 +17680,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:trustcloud-tech",
@@ -17726,7 +17726,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-22T10:36:32.538Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:trustitalia",
@@ -17767,7 +17767,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.486Z",
       "updatedAt": "2026-06-22T10:36:42.210Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:trustpro-qtsp",
@@ -17817,7 +17817,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:18.539Z",
       "updatedAt": "2026-06-22T10:36:39.169Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:trustweaver",
@@ -17862,7 +17862,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.265Z",
       "updatedAt": "2026-06-22T10:36:56.655Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:turing-space",
@@ -17891,7 +17891,7 @@
       },
       "firstSeenAt": "2026-04-28T10:05:39.000Z",
       "updatedAt": "2026-04-28T10:05:39.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uab-isense-technologies",
@@ -17937,7 +17937,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.104Z",
       "updatedAt": "2026-06-22T10:36:44.653Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uab-baltstamp",
@@ -17979,7 +17979,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.102Z",
       "updatedAt": "2026-06-22T10:36:44.650Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uab-dokobit",
@@ -18025,7 +18025,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-22T10:36:44.652Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uab-mit-soft",
@@ -18075,7 +18075,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-22T10:36:44.653Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uab-nevda",
@@ -18121,7 +18121,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-22T10:36:44.652Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:qtsp-it-51-uanataca",
@@ -18179,7 +18179,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-06-22T10:36:42.219Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uanataca",
@@ -18229,7 +18229,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.436Z",
       "updatedAt": "2026-06-22T10:36:32.519Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ubique",
@@ -18257,7 +18257,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ukraine",
@@ -18285,7 +18285,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uncefact",
@@ -18361,7 +18361,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:unchained-commerce",
@@ -18390,7 +18390,7 @@
       },
       "firstSeenAt": "2026-04-03T06:22:51.000Z",
       "updatedAt": "2026-04-03T06:22:51.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:unifiedpost",
@@ -18434,7 +18434,7 @@
       },
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-06-22T10:36:23.416Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uidai",
@@ -18475,7 +18475,7 @@
       },
       "firstSeenAt": "2026-05-26T00:00:00Z",
       "updatedAt": "2026-05-26T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:uaegean",
@@ -18503,7 +18503,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:unizeto-technologies",
@@ -18545,7 +18545,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.168Z",
       "updatedAt": "2026-06-22T10:36:52.408Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:utimaco-is",
@@ -18587,7 +18587,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-06-22T10:36:28.117Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:validatedid",
@@ -18620,7 +18620,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:validated-id",
@@ -18680,7 +18680,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-06-22T10:36:32.523Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:vaultie",
@@ -18743,7 +18743,7 @@
       },
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ver-id",
@@ -18772,7 +18772,7 @@
       },
       "firstSeenAt": "2026-03-31T09:53:54.773Z",
       "updatedAt": "2026-04-02T13:34:42.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:verimi",
@@ -18800,7 +18800,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:viafirma",
@@ -18842,7 +18842,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-06-22T10:36:32.523Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:vialink",
@@ -18876,7 +18876,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-04-25T06:26:17.352Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:viavansi-corporacion",
@@ -18916,7 +18916,7 @@
       },
       "firstSeenAt": "2026-06-14T19:16:11.434Z",
       "updatedAt": "2026-06-22T10:36:32.542Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:vintegris-u",
@@ -18965,7 +18965,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-06-22T10:36:32.519Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:werify",
@@ -18989,7 +18989,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:wise-security-global",
@@ -19031,7 +19031,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-06-22T10:36:32.532Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:worldline-france",
@@ -19073,7 +19073,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.351Z",
       "updatedAt": "2026-06-22T10:36:35.101Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:wwwallet",
@@ -19101,7 +19101,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:xablu",
@@ -19125,7 +19125,7 @@
       },
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:yoti",
@@ -19153,7 +19153,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:youniqx",
@@ -19185,7 +19185,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:yourd",
@@ -19219,7 +19219,7 @@
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:yousign",
@@ -19269,7 +19269,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-22T10:36:35.097Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:zagrebacka-banka-dionicko-drustvo",
@@ -19315,7 +19315,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:17.703Z",
       "updatedAt": "2026-06-22T10:36:36.310Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:zealid",
@@ -19361,7 +19361,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:23.266Z",
       "updatedAt": "2026-06-22T10:36:56.656Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:zertiban-u",
@@ -19403,7 +19403,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-06-22T10:36:32.540Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:zetes",
@@ -19453,7 +19453,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:12.491Z",
       "updatedAt": "2026-06-22T10:36:23.413Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:zetes-estonia-ou",
@@ -19495,7 +19495,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:15.349Z",
       "updatedAt": "2026-06-22T10:36:29.967Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:zipper-services",
@@ -19553,7 +19553,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:22.974Z",
       "updatedAt": "2026-06-22T10:36:55.440Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:ziurtapen-eta-zerbitzu-enpresa-empresa-de-certificacion-y-servicios-izenpe",
@@ -19607,7 +19607,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:16.434Z",
       "updatedAt": "2026-06-22T10:36:32.516Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     },
     {
       "id": "org:zucchetti",
@@ -19657,7 +19657,7 @@
       },
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-06-22T10:36:42.215Z",
-      "fetchedAt": "2026-06-25T09:41:23.519Z"
+      "fetchedAt": "2026-06-25T09:43:35.660Z"
     }
   ],
   "stats": {
