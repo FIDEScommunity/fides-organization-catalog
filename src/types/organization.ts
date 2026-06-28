@@ -101,6 +101,8 @@ export interface SourceOrganization {
   country?: string;
   certifications?: OrganizationCertification[];
   tags?: string[];
+  /** Pro-only: customer-facing services; searchable in the Trust Explorer. */
+  offerings?: string[];
   /** Listed on fides.community/manifesto FIDES Supporters section */
   fidesManifestoSupporter?: boolean;
   contact?: {
@@ -139,6 +141,9 @@ export interface AggregatedOrganization {
   country?: string;
   certifications?: OrganizationCertification[];
   tags?: string[];
+  offerings?: string[];
+  /** Community (free) or Pro; Pro-only fields present only when Pro. */
+  catalogTier?: 'Community' | 'Pro' | string;
   fidesManifestoSupporter?: boolean;
   contact?: {
     email?: string;

@@ -53,6 +53,28 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             'privacy',
         );
 
+        /** Maximum number of offerings per organization. */
+        const OFFERINGS_MAX_ITEMS = 15;
+
+        /** Maximum length of a single offering label. */
+        const OFFERING_MAX_LENGTH = 80;
+
+        /** @var string[] Starter suggestions for the offerings chip autocomplete. */
+        const OFFERINGS_SEED_SUGGESTIONS = array(
+            'Consulting',
+            'Digital identity advisory',
+            'EUDI Wallet integration',
+            'Identity verification',
+            'Implementation support',
+            'OID4VCI integration',
+            'OID4VP integration',
+            'Pilot programme',
+            'QEAA consulting',
+            'Technical training',
+            'Trust framework advisory',
+            'Wallet implementation',
+        );
+
         public static function bootstrap(): void {
             add_action('init', array(__CLASS__, 'register'), 6);
             add_filter('fides_catalog_submission_public_item_url', array(__CLASS__, 'filter_public_item_url'), 10, 4);
@@ -84,6 +106,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                         'legalName'       => 'Legal name',
                         'description'     => 'Description',
                         'tags'            => 'Tags',
+                        'offerings'       => 'Services & offerings',
                         'identifiers.business_registration_number' => 'Business registration number',
                         'identifiers.vat_number'                   => 'VAT number',
                         'identifiers.lei'                          => 'LEI',
@@ -223,6 +246,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 'website'     => self::optional_url($payload, 'website'),
                 'logo'        => self::optional_url($payload, 'logo'),
                 'tags'        => self::normalize_tags($payload['tags'] ?? array()),
+                'offerings'   => self::normalize_offerings($payload['offerings'] ?? array()),
             );
 
             $contact = self::normalize_contact($payload['contact'] ?? array());
@@ -269,6 +293,14 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 $normalized['fidesManifestoSupporter'] = ! empty($payload['fidesManifestoSupporter']);
             }
 
+            if (class_exists('Fides_Catalog_Org_Tier')) {
+                $existing = null;
+                if ($action === 'update') {
+                    $existing = Fides_Catalog_Org_Tier::existing_org_catalog_item($item_id);
+                }
+                $normalized = Fides_Catalog_Org_Tier::constrain_org_submission($normalized, $action, $existing);
+            }
+
             return $normalized;
         }
 
@@ -292,7 +324,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 'sectors' => $payload['sectors'],
             );
 
-            foreach (array('legalName', 'description', 'website', 'logo', 'country', 'tags', 'contact', 'identifiers', 'certifications') as $key) {
+            foreach (array('legalName', 'description', 'website', 'logo', 'country', 'tags', 'offerings', 'contact', 'identifiers', 'certifications') as $key) {
                 if (! empty($payload[ $key ])) {
                     $organization[ $key ] = $payload[ $key ];
                 }
@@ -300,6 +332,10 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
 
             if (array_key_exists('fidesManifestoSupporter', $payload)) {
                 $organization['fidesManifestoSupporter'] = ! empty($payload['fidesManifestoSupporter']);
+            }
+
+            if (class_exists('Fides_Catalog_Org_Tier')) {
+                $organization = Fides_Catalog_Org_Tier::filter_org_export($organization, $item_id);
             }
 
             return array(
@@ -324,6 +360,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 'website'     => isset($item['website']) ? (string) $item['website'] : '',
                 'logo'        => isset($item['logoUri']) ? (string) $item['logoUri'] : (isset($item['logo']) ? (string) $item['logo'] : ''),
                 'tags'        => isset($item['tags']) && is_array($item['tags']) ? $item['tags'] : array(),
+                'offerings'   => isset($item['offerings']) && is_array($item['offerings']) ? $item['offerings'] : array(),
             );
 
             if (isset($item['contact']) && is_array($item['contact'])) {
@@ -374,6 +411,50 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
         }
 
         /**
+         * Unique offering labels for form autocomplete (seed list + published catalog).
+         *
+         * @return string[]
+         */
+        public static function offerings_suggestions_for_form(): array {
+            static $cache = null;
+            if ($cache !== null) {
+                return $cache;
+            }
+
+            $unique = array();
+            foreach (self::OFFERINGS_SEED_SUGGESTIONS as $label) {
+                $label = self::normalize_offering_label($label);
+                if ($label !== '') {
+                    $unique[ strtolower($label) ] = $label;
+                }
+            }
+
+            $path = plugin_dir_path(dirname(__FILE__)) . 'data/aggregated.json';
+            if (is_readable($path)) {
+                $json = json_decode((string) file_get_contents($path), true);
+                $orgs = (is_array($json) && isset($json['organizations']) && is_array($json['organizations']))
+                    ? $json['organizations']
+                    : array();
+                foreach ($orgs as $org) {
+                    if (! is_array($org) || empty($org['offerings']) || ! is_array($org['offerings'])) {
+                        continue;
+                    }
+                    foreach ($org['offerings'] as $offering) {
+                        $label = self::normalize_offering_label((string) $offering);
+                        if ($label !== '') {
+                            $unique[ strtolower($label) ] = $label;
+                        }
+                    }
+                }
+            }
+
+            $list = array_values($unique);
+            natcasesort($list);
+            $cache = array_values($list);
+            return $cache;
+        }
+
+        /**
          * @param mixed $raw Tags.
          * @return string[]
          */
@@ -389,6 +470,50 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 }
             }
             return $out;
+        }
+
+        /**
+         * @param mixed $raw Offerings.
+         * @return string[]
+         */
+        private static function normalize_offerings($raw) {
+            if (! is_array($raw)) {
+                $raw = explode(',', (string) $raw);
+            }
+            $out = array();
+            foreach ($raw as $offering) {
+                $label = self::normalize_offering_label((string) $offering);
+                if ($label === '') {
+                    continue;
+                }
+                if (in_array($label, $out, true)) {
+                    continue;
+                }
+                $out[] = $label;
+                if (count($out) >= self::OFFERINGS_MAX_ITEMS) {
+                    break;
+                }
+            }
+            return $out;
+        }
+
+        /**
+         * @param string $value Raw offering label.
+         * @return string
+         */
+        private static function normalize_offering_label($value) {
+            $value = sanitize_text_field(trim((string) $value));
+            if ($value === '') {
+                return '';
+            }
+            if (function_exists('mb_strlen') && function_exists('mb_substr')) {
+                if (mb_strlen($value) > self::OFFERING_MAX_LENGTH) {
+                    $value = rtrim(mb_substr($value, 0, self::OFFERING_MAX_LENGTH));
+                }
+            } elseif (strlen($value) > self::OFFERING_MAX_LENGTH) {
+                $value = rtrim(substr($value, 0, self::OFFERING_MAX_LENGTH));
+            }
+            return $value;
         }
 
         /**

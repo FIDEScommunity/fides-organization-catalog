@@ -20,6 +20,309 @@
   const sectionIntro = String(config.sectionIntro || "").trim();
   let selectedOrgId = mode === "update" ? String(config.preselectOrgId || "").trim() : "";
   let selectedOrgLabel = "";
+  let planTier =
+    config.planTier && typeof config.planTier === "object"
+      ? { ...config.planTier }
+      : { tierUiEnabled: false, tier: "Community", isPro: false, plansUrl: "/plans/", descriptionMaxLength: 200 };
+
+  function tierUiEnabled() {
+    return planTier.tierUiEnabled === true;
+  }
+
+  const ORG_PRO_FIELD_IDS = [
+    "fides-org-website",
+    "fides-org-tags",
+    "fides-org-offerings-input",
+    "fides-org-contact-public-email",
+    "fides-org-contact-support",
+  ];
+
+  const ORG_OFFERINGS_MAX = 15;
+  const ORG_OFFERING_MAX_LENGTH = 80;
+  const offeringsSuggestions = Array.isArray(config.offeringsSuggestions) ? config.offeringsSuggestions : [];
+  let offeringsValues = [];
+  let offeringsSuggestionIndex = -1;
+
+  function proBadgeHtml() {
+    const url = String(planTier.plansUrl || "/plans/");
+    return `<a href="${escapeHtml(url)}" class="fides-pro-plan-badge" target="_blank" rel="noopener">Pro plan</a>`;
+  }
+
+  function labelWithProIfNeeded(labelText, isProField) {
+    if (!tierUiEnabled() || planTier.isPro || !isProField) return labelText;
+    return `${labelText} ${proBadgeHtml()}`;
+  }
+
+  async function refreshPlanTier(orgId) {
+    const id = String(orgId || "").trim();
+    if (!id || !apiBase) {
+      planTier = {
+        tier: "Community",
+        isPro: false,
+        plansUrl: planTier.plansUrl || "/plans/",
+        descriptionMaxLength: 200,
+      };
+      applyTierFieldState();
+      return;
+    }
+    const headers = {};
+    if (restNonce) headers["X-WP-Nonce"] = restNonce;
+    try {
+      const response = await fetch(`${apiBase}/org-tier?orgId=${encodeURIComponent(id)}`, {
+        credentials: "same-origin",
+        headers,
+      });
+      const json = await response.json().catch(() => ({}));
+      if (response.ok && json && typeof json === "object") {
+        planTier = { ...planTier, ...json };
+      }
+    } catch (_err) {
+      /* keep current tier */
+    }
+    applyTierFieldState();
+  }
+
+  const ORG_DESC_MAX_COMMUNITY = 200;
+  const ORG_DESC_MAX_PRO = 2000;
+
+  function updateDescriptionLimitUi() {
+    const isPro = !!planTier.isPro;
+    const maxLen = isPro ? ORG_DESC_MAX_PRO : ORG_DESC_MAX_COMMUNITY;
+    const descEl = root.querySelector("#fides-org-description");
+    const labelEl = root.querySelector("#fides-org-description-label");
+    const noticeEl = root.querySelector("#fides-org-description-limit-notice");
+    if (descEl) descEl.maxLength = maxLen;
+    if (labelEl) {
+      labelEl.textContent = "Description *";
+    }
+    if (noticeEl) {
+      const plansUrl = escapeHtml(String(planTier.plansUrl || "/plans/"));
+      if (!tierUiEnabled() || isPro) {
+        noticeEl.textContent = `You can use up to ${ORG_DESC_MAX_PRO.toLocaleString("en-US")} characters in the published catalog description.`;
+      } else {
+        noticeEl.innerHTML = `Community plan: maximum ${ORG_DESC_MAX_COMMUNITY} characters in the catalog. <a href="${plansUrl}" target="_blank" rel="noopener">Pro plan</a> allows up to ${ORG_DESC_MAX_PRO.toLocaleString("en-US")} characters.`;
+      }
+    }
+    updateDescriptionCounter();
+  }
+
+  function updateDescriptionCounter() {
+    const descEl = root.querySelector("#fides-org-description");
+    const counterEl = root.querySelector("#fides-org-description-counter");
+    if (!descEl || !counterEl) return;
+    const maxLen = Number(descEl.maxLength) || ORG_DESC_MAX_COMMUNITY;
+    const len = String(descEl.value || "").length;
+    counterEl.textContent = `${len.toLocaleString("en-US")} / ${maxLen.toLocaleString("en-US")} characters`;
+  }
+
+  function updatePlanTierBanner() {
+    const badge = root.querySelector("#fides-org-plan-tier-badge");
+    if (!badge) return;
+    if (!tierUiEnabled() || mode !== "update" || !selectedOrgId) {
+      badge.hidden = true;
+      badge.textContent = "";
+      return;
+    }
+    const isPro = !!planTier.isPro;
+    badge.hidden = false;
+    badge.textContent = isPro ? "Pro plan" : "Community plan";
+    badge.className = `fides-update-banner-plan ${isPro ? "fides-pro-plan-badge" : "fides-free-plan-badge"}`;
+    badge.title = isPro
+      ? "This organization has a linked Pro account. Extended catalog fields are enabled."
+      : "Community plan limits apply to fields published in the catalog.";
+  }
+
+  function normalizeOfferingLabel(value) {
+    return String(value || "")
+      .trim()
+      .replace(/\s+/g, " ")
+      .slice(0, ORG_OFFERING_MAX_LENGTH);
+  }
+
+  function setOfferingsValues(values) {
+    const next = [];
+    (Array.isArray(values) ? values : []).forEach((value) => {
+      const label = normalizeOfferingLabel(value);
+      if (!label) return;
+      if (next.some((item) => item.toLowerCase() === label.toLowerCase())) return;
+      next.push(label);
+    });
+    offeringsValues = next.slice(0, ORG_OFFERINGS_MAX);
+    renderOfferingsChips();
+    updateOfferingsCounter();
+  }
+
+  function renderOfferingsChips() {
+    const listEl = root.querySelector("#fides-org-offerings-chips");
+    if (!listEl) return;
+    const locked = !planTier.isPro;
+    listEl.innerHTML = offeringsValues
+      .map(
+        (label, index) =>
+          `<span class="fides-chip" role="listitem">` +
+          `<span>${escapeHtml(label)}</span>` +
+          `<button type="button" class="fides-chip-remove" data-offering-index="${index}" aria-label="Remove ${escapeHtml(label)}"${locked ? " disabled" : ""}>&times;</button>` +
+          `</span>`
+      )
+      .join("");
+    listEl.querySelectorAll(".fides-chip-remove").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const idx = Number(btn.getAttribute("data-offering-index"));
+        if (Number.isNaN(idx)) return;
+        offeringsValues = offeringsValues.filter((_item, i) => i !== idx);
+        renderOfferingsChips();
+        updateOfferingsCounter();
+      });
+    });
+  }
+
+  function updateOfferingsCounter() {
+    const counterEl = root.querySelector("#fides-org-offerings-counter");
+    if (!counterEl) return;
+    counterEl.textContent = `${offeringsValues.length} / ${ORG_OFFERINGS_MAX} services`;
+  }
+
+  function filteredOfferingsSuggestions(query) {
+    const q = String(query || "").trim().toLowerCase();
+    return offeringsSuggestions
+      .filter((item) => {
+        const label = normalizeOfferingLabel(item);
+        if (!label) return false;
+        if (offeringsValues.some((value) => value.toLowerCase() === label.toLowerCase())) return false;
+        if (!q) return true;
+        return label.toLowerCase().includes(q);
+      })
+      .slice(0, 8);
+  }
+
+  function hideOfferingsSuggestions() {
+    const listEl = root.querySelector("#fides-org-offerings-suggestions");
+    if (!listEl) return;
+    listEl.hidden = true;
+    listEl.innerHTML = "";
+    offeringsSuggestionIndex = -1;
+  }
+
+  function renderOfferingsSuggestions(query) {
+    const listEl = root.querySelector("#fides-org-offerings-suggestions");
+    const inputEl = root.querySelector("#fides-org-offerings-input");
+    if (!listEl || !inputEl || inputEl.disabled) return;
+    const matches = filteredOfferingsSuggestions(query);
+    if (matches.length === 0) {
+      hideOfferingsSuggestions();
+      return;
+    }
+    listEl.hidden = false;
+    listEl.innerHTML = matches
+      .map(
+        (label, index) =>
+          `<li><button type="button" class="fides-chip-suggestion" data-suggestion-index="${index}" role="option">${escapeHtml(label)}</button></li>`
+      )
+      .join("");
+    listEl.querySelectorAll(".fides-chip-suggestion").forEach((btn) => {
+      btn.addEventListener("mousedown", (event) => {
+        event.preventDefault();
+      });
+      btn.addEventListener("click", () => {
+        const idx = Number(btn.getAttribute("data-suggestion-index"));
+        const picked = matches[idx];
+        if (picked) addOffering(picked);
+        inputEl.value = "";
+        hideOfferingsSuggestions();
+        inputEl.focus();
+      });
+    });
+    offeringsSuggestionIndex = -1;
+  }
+
+  function addOffering(rawValue) {
+    if (!planTier.isPro) return false;
+    const label = normalizeOfferingLabel(rawValue);
+    if (!label) return false;
+    if (offeringsValues.some((value) => value.toLowerCase() === label.toLowerCase())) return false;
+    if (offeringsValues.length >= ORG_OFFERINGS_MAX) return false;
+    offeringsValues.push(label);
+    renderOfferingsChips();
+    updateOfferingsCounter();
+    return true;
+  }
+
+  function wireOfferingsField() {
+    const inputEl = root.querySelector("#fides-org-offerings-input");
+    const fieldEl = root.querySelector(".fides-form-row--offerings");
+    if (!inputEl || !fieldEl) return;
+
+    inputEl.addEventListener("input", () => {
+      renderOfferingsSuggestions(inputEl.value);
+    });
+
+    inputEl.addEventListener("focus", () => {
+      renderOfferingsSuggestions(inputEl.value);
+    });
+
+    inputEl.addEventListener("blur", () => {
+      window.setTimeout(() => hideOfferingsSuggestions(), 120);
+    });
+
+    inputEl.addEventListener("keydown", (event) => {
+      const suggestions = filteredOfferingsSuggestions(inputEl.value);
+      const listEl = root.querySelector("#fides-org-offerings-suggestions");
+      const visible = listEl && !listEl.hidden && suggestions.length > 0;
+
+      if (event.key === "ArrowDown" && visible) {
+        event.preventDefault();
+        offeringsSuggestionIndex = Math.min(offeringsSuggestionIndex + 1, suggestions.length - 1);
+        listEl.querySelectorAll(".fides-chip-suggestion").forEach((btn, idx) => {
+          btn.classList.toggle("is-active", idx === offeringsSuggestionIndex);
+        });
+        return;
+      }
+      if (event.key === "ArrowUp" && visible) {
+        event.preventDefault();
+        offeringsSuggestionIndex = Math.max(offeringsSuggestionIndex - 1, 0);
+        listEl.querySelectorAll(".fides-chip-suggestion").forEach((btn, idx) => {
+          btn.classList.toggle("is-active", idx === offeringsSuggestionIndex);
+        });
+        return;
+      }
+      if ((event.key === "Enter" || event.key === ",") && inputEl.value.trim()) {
+        event.preventDefault();
+        if (visible && offeringsSuggestionIndex >= 0 && suggestions[offeringsSuggestionIndex]) {
+          addOffering(suggestions[offeringsSuggestionIndex]);
+        } else {
+          addOffering(inputEl.value);
+        }
+        inputEl.value = "";
+        hideOfferingsSuggestions();
+        return;
+      }
+      if (event.key === "Escape") {
+        hideOfferingsSuggestions();
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!fieldEl.contains(event.target)) hideOfferingsSuggestions();
+    });
+  }
+
+  function applyTierFieldState() {
+    const isPro = !!planTier.isPro;
+    ORG_PRO_FIELD_IDS.forEach((fieldId) => {
+      const el = root.querySelector(`#${fieldId}`);
+      if (!el) return;
+      el.disabled = !isPro;
+      el.readOnly = !isPro;
+      el.classList.toggle("fides-input-pro-locked", !isPro);
+      const row = el.closest(".fides-form-row");
+      if (row) row.classList.toggle("fides-form-row--pro-locked", !isPro);
+    });
+    const offeringsRow = root.querySelector(".fides-form-row--offerings");
+    if (offeringsRow) offeringsRow.classList.toggle("fides-form-row--pro-locked", !isPro);
+    renderOfferingsChips();
+    updateDescriptionLimitUi();
+    updatePlanTierBanner();
+  }
 
   function escapeHtml(value) {
     return String(value)
@@ -392,7 +695,7 @@
             </select>
           </div>
           <div class="fides-form-row">
-            <label for="fides-org-website">Website</label>
+            <label for="fides-org-website">${labelWithProIfNeeded("Website", true)}</label>
             ${helpHtml("website")}
             <input id="fides-org-website" name="website" type="url" placeholder="https://…" />
           </div>
@@ -409,24 +712,42 @@
             <input id="fides-org-legal-name" name="legalName" type="text" />
           </div>
         </div>
+        <div class="fides-form-field-group fides-form-field-group--compact">
         <div class="fides-form-row">
-          <label for="fides-org-description">Description *</label>
+          <label for="fides-org-description" id="fides-org-description-label">Description *</label>
           ${helpHtml("description")}
           <textarea id="fides-org-description" name="description" required maxlength="2000" placeholder="Technology company building digital identity and wallet products based on open standards."></textarea>
+          <div class="fides-field-meta">
+            <p class="fides-description-limit-notice fides-pro-field-notice" id="fides-org-description-limit-notice"></p>
+            <p class="fides-description-counter" id="fides-org-description-counter" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="fides-form-row fides-form-row--offerings">
+          <label for="fides-org-offerings-input">${labelWithProIfNeeded("Services & offerings", true)}</label>
+          <div class="fides-form-row-helpline">
+            ${helpHtml("offerings")}
+            <p class="fides-description-counter" id="fides-org-offerings-counter" aria-live="polite"></p>
+          </div>
+          <div id="fides-org-offerings-chips" class="fides-chip-list" role="list"></div>
+          <div class="fides-chip-input-wrap">
+            <input id="fides-org-offerings-input" name="offeringsInput" type="text" autocomplete="off" placeholder="Type a service and press Enter" maxlength="${ORG_OFFERING_MAX_LENGTH}" />
+            <ul id="fides-org-offerings-suggestions" class="fides-chip-suggestions" role="listbox" hidden></ul>
+          </div>
         </div>
         <div class="fides-form-row">
-          <label for="fides-org-tags">Tags</label>
+          <label for="fides-org-tags">${labelWithProIfNeeded("Tags", true)}</label>
           ${helpHtml("tags")}
           <input id="fides-org-tags" name="tags" type="text" placeholder="wallet, identity" />
         </div>
+        </div>
         <div class="fides-form-grid fides-form-grid-pair">
           <div class="fides-form-row">
-            <label for="fides-org-contact-public-email">Public contact email</label>
+            <label for="fides-org-contact-public-email">${labelWithProIfNeeded("Public contact email", true)}</label>
             ${helpHtml("contactPublicEmail")}
             <input id="fides-org-contact-public-email" name="contactPublicEmail" type="email" placeholder="contact@example.com" />
           </div>
           <div class="fides-form-row">
-            <label for="fides-org-contact-support">Public support URL</label>
+            <label for="fides-org-contact-support">${labelWithProIfNeeded("Public support URL", true)}</label>
             ${helpHtml("contactSupport")}
             <input id="fides-org-contact-support" name="contactSupport" type="url" placeholder="https://…/support" />
           </div>
@@ -488,6 +809,7 @@
                 <span class="fides-update-banner-label">Updating:</span>
                 <strong id="fides-org-update-name"></strong>
                 <code id="fides-org-update-id"></code>
+                <span id="fides-org-plan-tier-badge" class="fides-update-banner-plan" hidden></span>
               </div>
               <button type="button" class="fides-secondary-btn" id="fides-org-change">Choose different</button>
             </div>
@@ -527,6 +849,15 @@
   const updateIdEl = root.querySelector("#fides-org-update-id");
   const changeBtn = root.querySelector("#fides-org-change");
   const submitBlock = root.querySelector("#fides-org-submit-block");
+
+  applyTierFieldState();
+  wireOfferingsField();
+  setOfferingsValues([]);
+
+  const orgDescInput = root.querySelector("#fides-org-description");
+  if (orgDescInput) {
+    orgDescInput.addEventListener("input", updateDescriptionCounter);
+  }
 
   function setMessage(text, type) {
     if (!messageEl) return;
@@ -583,11 +914,15 @@
     if (root.querySelector("#fides-org-website")) root.querySelector("#fides-org-website").value = payload.website || "";
     if (root.querySelector("#fides-org-logo")) root.querySelector("#fides-org-logo").value = payload.logo || "";
     if (root.querySelector("#fides-org-legal-name")) root.querySelector("#fides-org-legal-name").value = payload.legalName || "";
-    if (root.querySelector("#fides-org-description")) root.querySelector("#fides-org-description").value = payload.description || "";
+    if (root.querySelector("#fides-org-description")) {
+      root.querySelector("#fides-org-description").value = payload.description || "";
+      updateDescriptionCounter();
+    }
     if (root.querySelector("#fides-org-tags")) {
       const tags = Array.isArray(payload.tags) ? payload.tags.join(", ") : "";
       root.querySelector("#fides-org-tags").value = tags;
     }
+    setOfferingsValues(payload.offerings || []);
     const idents = payload.identifiers && typeof payload.identifiers === "object" ? payload.identifiers : {};
     IDENTIFIER_FIELDS.forEach((field) => {
       const el = root.querySelector(`#${field.id}`);
@@ -643,6 +978,7 @@
         .split(",")
         .map((t) => t.trim())
         .filter(Boolean),
+      offerings: offeringsValues.slice(),
     };
     const identifiers = buildIdentifiersFromForm();
     if (Object.keys(identifiers).length) {
@@ -674,6 +1010,7 @@
     }
     if (updateNameEl) updateNameEl.textContent = selectedOrgLabel || selectedOrgId;
     if (updateIdEl) updateIdEl.textContent = selectedOrgId;
+    updatePlanTierBanner();
   }
 
   function revealFields(show) {
@@ -703,6 +1040,7 @@
       }
       fillForm(json.payload || {});
       revealFields(true);
+      applyTierFieldState();
       setMessage("", "");
     } catch (_err) {
       setMessage("Could not load organization details due to a network error.", "error");
@@ -715,6 +1053,7 @@
     if (lookupResults) lookupResults.innerHTML = "";
     if (lookupHint) lookupHint.hidden = true;
     showUpdateSelectionUi();
+    await refreshPlanTier(selectedOrgId);
     await loadItemPayload(selectedOrgId);
   }
 
@@ -728,6 +1067,7 @@
     showUpdateSelectionUi();
     revealFields(false);
     fillForm({});
+    setOfferingsValues([]);
     setMessage("", "");
   }
 
@@ -898,6 +1238,7 @@
         if (idPreviewEl) idPreviewEl.textContent = orgIdPreview("");
         setCheckedSectors([]);
         setCountryValue("");
+        setOfferingsValues([]);
       } else {
         selectedOrgId = "";
         selectedOrgLabel = "";

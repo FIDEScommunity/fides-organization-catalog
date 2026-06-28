@@ -47,6 +47,15 @@ function certificationSearchHaystack(o: AggregatedOrganization): string {
   return parts.join(' ').toLowerCase();
 }
 
+function offeringsSearchHaystack(o: AggregatedOrganization): string {
+  const items = o.offerings;
+  if (!items?.length) return '';
+  return items
+    .filter((item): item is string => typeof item === 'string' && item.trim().length > 0)
+    .join(' ')
+    .toLowerCase();
+}
+
 function orgSlugAndWebsiteHaystack(o: AggregatedOrganization): string {
   const slug = o.id?.replace(/^org:/i, '') ?? '';
   return `${slug} ${o.website ?? ''}`.toLowerCase();
@@ -135,6 +144,7 @@ export default function handler(req: VercelRequest, res: VercelResponse): void {
         (o.description && o.description.toLowerCase().includes(search)) ||
         idHaystack.includes(search) ||
         certificationSearchHaystack(o).includes(search) ||
+        offeringsSearchHaystack(o).includes(search) ||
         orgSlugAndWebsiteHaystack(o).includes(search)
       );
     });

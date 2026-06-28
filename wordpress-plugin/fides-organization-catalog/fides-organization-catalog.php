@@ -2,13 +2,15 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.7.1
+ * Version: 1.8.1
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
  */
 
 if (!defined('ABSPATH')) exit;
+
+define('FIDES_ORG_CATALOG_VERSION', '1.8.1');
 
 /** @var string Option group for Settings → FIDES Org Catalog */
 const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
@@ -349,14 +351,14 @@ class Fides_Organization_Catalog {
         $plugin_dir = plugin_dir_path(__FILE__);
         $ui_lib_css_path = $plugin_dir . 'assets/lib/fides-catalog-ui.css';
         $ui_lib_js_path = $plugin_dir . 'assets/lib/fides-catalog-ui.js';
-        $ui_lib_css_version = file_exists($ui_lib_css_path) ? filemtime($ui_lib_css_path) : '1.5.0';
-        $ui_lib_js_version = file_exists($ui_lib_js_path) ? filemtime($ui_lib_js_path) : '1.5.0';
+        $ui_lib_css_version = file_exists($ui_lib_css_path) ? filemtime($ui_lib_css_path) : FIDES_ORG_CATALOG_VERSION;
+        $ui_lib_js_version = file_exists($ui_lib_js_path) ? filemtime($ui_lib_js_path) : FIDES_ORG_CATALOG_VERSION;
 
         wp_register_style(
             'fides-organization-catalog',
             $this->plugin_url . 'assets/style.css',
             [],
-            '1.5.0'
+            FIDES_ORG_CATALOG_VERSION
         );
         wp_register_style(
             'fides-organization-catalog-ui-lib',
@@ -375,9 +377,80 @@ class Fides_Organization_Catalog {
             'fides-organization-catalog',
             $this->plugin_url . 'assets/organization-catalog.js',
             array('fides-organization-catalog-ui-lib'),
-            '1.5.1',
+            FIDES_ORG_CATALOG_VERSION,
             true
         );
+
+        // Base config on register (same pattern as wallet catalog) so tierUiEnabled is
+        // always present before organization-catalog.js runs, even when the script is
+        // enqueued outside the listing shortcode (e.g. catalog map modal).
+        wp_localize_script(
+            'fides-organization-catalog',
+            'fidesOrganizationCatalog',
+            $this->catalog_script_config()
+        );
+    }
+
+    /**
+     * JavaScript config for organization-catalog.js (shortcode attrs may override).
+     *
+     * @param array<string, mixed> $overrides Keys merged over defaults.
+     * @return array<string, mixed>
+     */
+    private function catalog_script_config(array $overrides = []) {
+        $update_opt = trim((string) get_option('fides_org_catalog_update_form_url', ''));
+        $update_form_url = $update_opt !== ''
+            ? esc_url_raw($update_opt)
+            : home_url(self::DEFAULT_UPDATE_FORM_PATH);
+
+        $bp_opt = trim((string) get_option('fides_org_catalog_blue_pages_profile_base_url', ''));
+        $bp_profile_base = $bp_opt !== ''
+            ? trailingslashit(esc_url_raw($bp_opt))
+            : trailingslashit(home_url('/community-tools/blue-pages'));
+
+        $aggregated_path = plugin_dir_path(__FILE__) . 'data/aggregated.json';
+        $aggregated_version = file_exists($aggregated_path) ? (string) filemtime($aggregated_path) : '';
+
+        $base = [
+            'pluginUrl'               => $this->plugin_url,
+            'githubDataUrl'           => get_option(
+                'fides_org_catalog_github_data_url',
+                'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json'
+            ),
+            'aggregatedDataVersion'     => $aggregated_version,
+            'issuerCatalogUrl'        => get_option(
+                'fides_org_catalog_issuer_catalog_url',
+                'https://fides.community/ecosystem-explorer/issuer-catalog/'
+            ),
+            'credentialCatalogUrl'      => get_option(
+                'fides_org_catalog_credential_catalog_url',
+                'https://fides.community/ecosystem-explorer/credential-catalog/'
+            ),
+            'walletCatalogUrl'          => get_option(
+                'fides_org_catalog_wallet_catalog_url',
+                'https://fides.community/community-tools/personal-wallets/'
+            ),
+            'rpCatalogUrl'              => get_option(
+                'fides_org_catalog_rp_catalog_url',
+                'https://fides.community/ecosystem-explorer/relying-party-catalog/'
+            ),
+            'bluePagesRestUrl'          => rest_url('fides-org-catalog/v1/blue-pages'),
+            'bluePagesProfileBaseUrl'   => $bp_profile_base,
+            'ratingsApiBase'            => rest_url('fides-catalog/v1/ratings'),
+            'updateFormUrl'             => $update_form_url,
+            'isLoggedIn'                => is_user_logged_in(),
+            'editAccess'                => class_exists('Fides_Catalog_Org_Tier')
+                ? Fides_Catalog_Org_Tier::edit_access_for_user(get_current_user_id())
+                : [
+                    'isLoggedIn'  => is_user_logged_in(),
+                    'isAdmin'     => current_user_can('manage_options'),
+                    'ownedOrgIds' => [],
+                    'proOrgIds'   => [],
+                ],
+            'tierUiEnabled'             => function_exists('fides_catalog_tier_ui_enabled') && fides_catalog_tier_ui_enabled(),
+        ];
+
+        return array_merge($base, $overrides);
     }
 
     public function render_shortcode($atts) {
@@ -440,23 +513,19 @@ class Fides_Organization_Catalog {
             }
         }
 
-        $aggregated_path = plugin_dir_path(__FILE__) . 'data/aggregated.json';
-        $aggregated_version = file_exists($aggregated_path) ? (string) filemtime($aggregated_path) : '';
-
-        wp_localize_script('fides-organization-catalog', 'fidesOrganizationCatalog', [
-            'pluginUrl'            => $this->plugin_url,
-            'githubDataUrl'        => $atts['github_data_url'],
-            'aggregatedDataVersion' => $aggregated_version,
-            'issuerCatalogUrl'     => $atts['issuer_catalog_url'],
-            'credentialCatalogUrl' => $atts['credential_catalog_url'],
-            'walletCatalogUrl'     => $atts['wallet_catalog_url'],
-            'rpCatalogUrl'         => $atts['rp_catalog_url'],
-            'bluePagesRestUrl'     => rest_url('fides-org-catalog/v1/blue-pages'),
-            'bluePagesProfileBaseUrl' => $bp_profile_base,
-            'ratingsApiBase'       => rest_url('fides-catalog/v1/ratings'),
-            'updateFormUrl'        => $update_form_url,
-            'isLoggedIn'           => is_user_logged_in(),
-        ]);
+        wp_localize_script(
+            'fides-organization-catalog',
+            'fidesOrganizationCatalog',
+            $this->catalog_script_config([
+                'githubDataUrl'           => $atts['github_data_url'],
+                'issuerCatalogUrl'        => $atts['issuer_catalog_url'],
+                'credentialCatalogUrl'    => $atts['credential_catalog_url'],
+                'walletCatalogUrl'        => $atts['wallet_catalog_url'],
+                'rpCatalogUrl'            => $atts['rp_catalog_url'],
+                'bluePagesProfileBaseUrl' => $bp_profile_base,
+                'updateFormUrl'           => $update_form_url,
+            ])
+        );
 
         $initial_html = '';
         if (class_exists('Fides_Organization_Catalog_SSR')) {

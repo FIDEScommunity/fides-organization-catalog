@@ -223,6 +223,12 @@ const spec = {
           country: { type: 'string' },
           certifications: { type: 'array', items: { $ref: '#/components/schemas/OrganizationCertification' } },
           tags: { type: 'array', items: { type: 'string' } },
+          offerings: { type: 'array', items: { type: 'string' }, description: 'Pro-only services searchable in the Trust Explorer.' },
+          catalogTier: {
+            type: 'string',
+            enum: ['Community', 'Pro'],
+            description: 'Community (free) or Pro plan. Pro-only fields are omitted for Community.',
+          },
           ecosystemRoles: {
             type: 'object',
             properties: {

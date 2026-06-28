@@ -169,7 +169,10 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
 
             protected function enrich_jsonld(array $jsonld, array $item): array {
                 if (! empty($item['website'])) {
-                    $jsonld['url'] = (string) $item['website'];
+                    $org_id = isset($item['id']) ? (string) $item['id'] : '';
+                    if (! class_exists('Fides_Catalog_Org_Tier') || Fides_Catalog_Org_Tier::is_pro($org_id)) {
+                        $jsonld['url'] = (string) $item['website'];
+                    }
                 }
                 if (! empty($item['logoUri'])) {
                     $jsonld['logo'] = (string) $item['logoUri'];
@@ -214,7 +217,12 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                         'html'  => esc_html($country),
                     );
                 }
-                if ($website !== '') {
+                if ($website !== ''
+                    && (
+                        ! class_exists('Fides_Catalog_Org_Tier')
+                        || ! Fides_Catalog_Org_Tier::tier_ui_enabled()
+                        || Fides_Catalog_Org_Tier::is_pro(isset($item['id']) ? (string) $item['id'] : '')
+                    )) {
                     $rows[] = array(
                         'label' => __('Website', $td),
                         'html'  => sprintf(
@@ -247,6 +255,38 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                 $td = 'fides-organization-catalog';
                 ob_start();
                 echo $this->render_chip_section($this->list_field($item, 'sectors'), __('Sectors', $td));
+                $hide_offerings = class_exists('Fides_Catalog_Org_Tier')
+                    && Fides_Catalog_Org_Tier::tier_ui_enabled()
+                    && Fides_Catalog_Org_Tier::item_is_community($item);
+                if (! $hide_offerings) {
+                    echo $this->render_offering_chip_section(
+                        $this->list_field($item, 'offerings'),
+                        __('Services', $td)
+                    );
+                }
+                return (string) ob_get_clean();
+            }
+
+            /**
+             * Chip section for services/offerings (green styling in CSS).
+             *
+             * @param string[] $items
+             */
+            private function render_offering_chip_section(array $items, string $title): string {
+                if (empty($items)) {
+                    return '';
+                }
+                ob_start();
+                ?>
+                <section class="fides-ssr-detail__section fides-ssr-detail__section--offerings">
+                    <h2 class="fides-ssr-detail__section-title"><?php echo esc_html($title); ?></h2>
+                    <ul class="fides-ssr-detail__chips">
+                        <?php foreach ($items as $chip) : ?>
+                            <li class="fides-ssr-detail__chip fides-tag fides-tag--offering"><?php echo esc_html((string) $chip); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </section>
+                <?php
                 return (string) ob_get_clean();
             }
 

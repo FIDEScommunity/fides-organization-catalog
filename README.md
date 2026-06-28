@@ -4,6 +4,19 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 
 ## Changelog
 
+### 1.8.1
+
+- Honors master switch `fides_catalog_tier_ui_enabled` (Settings → FIDES Catalog SEO, default **off**). Until enabled: no Official badges/filter, website shown when present in JSON, legacy edit access for signed-in users.
+- See `docs/catalog-tier-go-live-checklist.md` for go-live order.
+
+### 1.8.0
+
+- Mobile organization modal header: meta row (country · website) spans full width under action buttons; compact OFFICIAL badge; FIDES Supporter badge hidden on mobile.
+- Website URL shown only for Pro/Official accounts (header and Organization details accordion); fixes non-Pro listings leaking website in details.
+- Catalog tier / edit-access integration with fides-community-tools-tiles ≥ 1.7.8 (`Fides_Catalog_Org_Tier`, modal edit pencil gating).
+- Asset enqueue versions aligned with plugin header via `FIDES_ORG_CATALOG_VERSION` (was stale `1.5.x` fallbacks).
+- Deploy together with fides-community-tools-tiles ≥ 1.7.8; sync `assets/lib/fides-catalog-ui.*` from tiles when releasing.
+
 ### 1.5.0
 
 - Certification filter is now two levels deep: under a parent certification (QTSP, DIACC) you can also filter on its sub-options — QTSP qualified trust services and DIACC PCTF components — with per-option result counts.
@@ -104,6 +117,10 @@ FIDES_CATALOG_SECRET=$(php scripts/read-wp-catalog-secret.php) npm run import-wp
 Production CI uses `.github/workflows/wp-submissions-sync.yml` (`WP_EXPORT_URL` + `WP_INVALIDATE_SECRET`).
 
 **Canonical docs:** `fides-community-tools-tiles/docs/CATALOG-SUBMISSION-GOVERNANCE.md` — §14 (CI workflow + pitfalls), §15 (production deploy), §16 (new catalog checklist).
+
+## Deployment
+
+Before production go-live for **Community / Pro** tier labels (`catalogTier`), read the [catalog tier go-live checklist](docs/catalog-tier-go-live-checklist.md). Missing `catalogTier` in JSON defaults to **Pro** behaviour until orgs are re-exported from WordPress and crawled.
 
 ## Performance scaling gate
 

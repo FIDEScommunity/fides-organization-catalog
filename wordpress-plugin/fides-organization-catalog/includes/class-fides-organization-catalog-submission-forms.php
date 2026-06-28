@@ -13,7 +13,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
 
     class Fides_Organization_Catalog_Submission_Forms {
 
-        const VERSION = '1.11.1';
+        const VERSION = '1.12.0';
 
         /**
          * @return array<int, array{code: string, label: string}>
@@ -68,6 +68,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             'diaccComponents'                 => 'Select the DIACC PCTF components your organization is certified for.',
             'certificationsPreserved'         => 'QTSP (eIDAS) entries are imported from the EU Trust List and cannot be edited in this form.',
             'tags'         => 'Comma-separated labels (e.g. FIDES Supporter).',
+            'offerings'    => 'Services or solutions your organization offers to customers. Press Enter to add each item. Searchable in the Trust Explorer.',
             'contactEmail' => 'Taken from your FIDES account; used for submission review only, not published as the org contact.',
             'catalogId'    => 'Assigned on submit; matches the folder name after org:.',
             'search'       => 'Search by name or catalog id, then select the correct entry.',
@@ -171,10 +172,23 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
                 );
             }
 
+            $user = wp_get_current_user();
+            if ($mode === 'update' && ! empty($extra['preselectOrgId'])
+                && class_exists('Fides_Catalog_Org_Tier')
+                && ! Fides_Catalog_Org_Tier::user_can_edit_item(
+                    'organization',
+                    (string) $extra['preselectOrgId'],
+                    (int) $user->ID
+                )) {
+                return '<div class="fides-use-case-card"><p>' . esc_html__(
+                    'This organization is managed by a linked Pro account. Only the linked owner can suggest updates.',
+                    'fides-organization-catalog'
+                ) . '</p></div>';
+            }
+
             wp_enqueue_style('fides-organization-form');
             wp_enqueue_script('fides-organization-form');
 
-            $user = wp_get_current_user();
             $sectors = array();
             foreach (Fides_Organization_Catalog_Submission_Adapter::SECTOR_CODES as $code) {
                 $sectors[] = array(
@@ -200,7 +214,20 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
                     'sectionIntro'   => self::section_intro_for_mode($mode),
                     'selfDeclaredCertifications' => Fides_Organization_Catalog_Submission_Adapter::self_declared_certification_options(),
                     'diaccComponents'            => Fides_Organization_Catalog_Submission_Adapter::diacc_component_options(),
+                    'offeringsSuggestions'       => Fides_Organization_Catalog_Submission_Adapter::offerings_suggestions_for_form(),
                     'preselectOrgId' => '',
+                    'planTier'       => class_exists('Fides_Catalog_Org_Tier')
+                        ? Fides_Catalog_Org_Tier::form_config(
+                            $mode === 'update' && ! empty($extra['preselectOrgId'])
+                                ? (string) $extra['preselectOrgId']
+                                : ''
+                        )
+                        : array(
+                            'tier'                 => 'Community',
+                            'isPro'                => false,
+                            'plansUrl'             => home_url('/plans/'),
+                            'descriptionMaxLength' => 200,
+                        ),
                 ),
                 $extra
             );

@@ -73,6 +73,9 @@ export interface AggregatedOrganization {
   country?: string;
   certifications?: OrganizationCertification[];
   tags?: string[];
+  offerings?: string[];
+  /** Community (free) or Pro; Pro-only fields present only when Pro. */
+  catalogTier?: 'Community' | 'Pro' | string;
   fidesManifestoSupporter?: boolean;
   ecosystemRoles: {
     issuers: { id: string; displayName: string }[];

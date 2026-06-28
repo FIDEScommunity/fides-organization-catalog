@@ -315,6 +315,22 @@
           "uniqueItems": true,
           "description": "e.g. FIDES Supporter"
         },
+        "offerings": {
+          "type": "array",
+          "maxItems": 15,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "description": "Pro-only: services and solutions the organization offers to customers; searchable in the Trust Explorer."
+        },
+        "catalogTier": {
+          "type": "string",
+          "enum": ["Community", "Pro"],
+          "description": "Community (free) or Pro plan. Set on WordPress export from ownership linkage; Pro-only fields are omitted for Community."
+        },
         "fidesManifestoSupporter": {
           "type": "boolean",
           "description": "When true, the organization is listed under FIDES Supporters on https://fides.community/manifesto/ (logo wall). Not the same as submitting the optional ratification form."

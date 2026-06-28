@@ -41,6 +41,7 @@
     x: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>',
     xLarge: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>',
     share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
+    pencil: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>',
     shield: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>',
     key: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>',
     fileCheck: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>',
@@ -51,8 +52,11 @@
     download: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>',
     penLine: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>',
     play: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>',
-    laptop: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>'
+    laptop: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>',
+    official: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>'
   };
+
+  const OFFICIAL_LISTING_TITLE = 'Official listing — managed by the provider';
 
   let selectedContext = null;
 
@@ -83,11 +87,86 @@
     return null;
   }
 
-  function renderPlatformTag(wallet, platform) {
-    const link = getAppStoreLink(wallet, platform);
+  function renderPlatformTag(wallet, platform, labelsOnly) {
+    const link = labelsOnly ? null : getAppStoreLink(wallet, platform);
     const icon = platform === 'iOS' || platform === 'Android' ? icons.smartphone : icons.globe;
     if (link) return '<a href="' + escapeHtml(link) + '" target="_blank" rel="noopener" class="fides-tag platform clickable">' + icon + ' ' + escapeHtml(platform) + '</a>';
     return '<span class="fides-tag platform">' + icon + ' ' + escapeHtml(platform) + '</span>';
+  }
+
+  const CATALOG_TIER_COMMUNITY = 'Community';
+  const CATALOG_TIER_PRO = 'Pro';
+
+  /** Community vs Pro from export field; legacy gratis and missing catalogTier stay Pro. */
+  function resolveCatalogTier(item) {
+    if (!item || !item.catalogTier) return CATALOG_TIER_PRO;
+    const tier = String(item.catalogTier).toLowerCase();
+    if (tier === 'gratis' || tier === 'community') return CATALOG_TIER_COMMUNITY;
+    return CATALOG_TIER_PRO;
+  }
+
+  function itemIsCommunity(item) {
+    return resolveCatalogTier(item) === CATALOG_TIER_COMMUNITY;
+  }
+
+  /** Explicit Pro in export JSON only — missing catalogTier is not treated as official. */
+  function catalogTierIsProExplicit(item) {
+    if (!item || !item.catalogTier) return false;
+    return resolveCatalogTier(item) === CATALOG_TIER_PRO;
+  }
+
+  /** Whether Community vs Pro tier UI is active (master switch + options.tierUiEnabled). */
+  function optionsTierUiEnabled(options) {
+    return !!(options && options.tierUiEnabled);
+  }
+
+  /**
+   * Whether the signed-in user may open the update form for a catalog item.
+   * Pro orgs (ownership-linked) are owner-only; Community orgs allow any signed-in user.
+   *
+   * @param {object|null|undefined} editAccess { isLoggedIn, ownedOrgIds, proOrgIds }
+   * @param {string} orgId org:… anchor for organization or wallet provider
+   * @return {boolean}
+   */
+  function userCanEditCatalogItem(editAccess, orgId) {
+    if (!editAccess || !editAccess.isLoggedIn) return false;
+    if (editAccess.isAdmin) return true;
+    const org = String(orgId || '').trim();
+    if (!org) return true;
+    const proOrgIds = Array.isArray(editAccess.proOrgIds) ? editAccess.proOrgIds : [];
+    const ownedOrgIds = Array.isArray(editAccess.ownedOrgIds) ? editAccess.ownedOrgIds : [];
+    const isProOrg = proOrgIds.indexOf(org) >= 0;
+    if (!isProOrg) return true;
+    return ownedOrgIds.indexOf(org) >= 0;
+  }
+
+  function resolveWalletOrgId(wallet) {
+    if (!wallet || typeof wallet !== 'object') return '';
+    const top = wallet.orgId != null ? String(wallet.orgId).trim() : '';
+    if (top.indexOf('org:') === 0) return top;
+    const fromProvider = wallet.provider && wallet.provider.orgId != null
+      ? String(wallet.provider.orgId).trim()
+      : '';
+    return fromProvider.indexOf('org:') === 0 ? fromProvider : '';
+  }
+
+  function normalizeEditAccess(options) {
+    const raw = options && options.editAccess;
+    const editAccess = raw && typeof raw === 'object'
+      ? Object.assign({}, raw)
+      : { ownedOrgIds: [], proOrgIds: [] };
+    editAccess.isLoggedIn = !!(editAccess.isLoggedIn || boolFromMixed(options && options.isLoggedIn) || boolFromMixed(options && options.ratingsIsLoggedIn));
+    if (!Array.isArray(editAccess.ownedOrgIds)) editAccess.ownedOrgIds = [];
+    if (!Array.isArray(editAccess.proOrgIds)) editAccess.proOrgIds = [];
+    return editAccess;
+  }
+
+  function canEditOrganization(org, options) {
+    return userCanEditCatalogItem(normalizeEditAccess(options), org && org.id ? String(org.id).trim() : '');
+  }
+
+  function canEditWallet(wallet, options) {
+    return userCanEditCatalogItem(normalizeEditAccess(options), resolveWalletOrgId(wallet));
   }
 
   function getVideoEmbedUrl(videoUrl) {
@@ -201,6 +280,21 @@
     return url.toString();
   }
 
+  function buildLoginUrlWithReturnTo(loginUrl, returnToUrl) {
+    const base = String(loginUrl || '').trim();
+    const returnTo = String(returnToUrl || '').trim();
+    if (!base) return '';
+    if (!returnTo) return base;
+    try {
+      const u = new URL(base, window.location.origin);
+      u.searchParams.set('return_to', returnTo);
+      return u.toString();
+    } catch (e) {
+      const sep = base.indexOf('?') === -1 ? '?' : '&';
+      return base + sep + 'return_to=' + encodeURIComponent(returnTo);
+    }
+  }
+
   function copySelectedLink() {
     if (!selectedContext) return;
     const url = getDirectLink(selectedContext.type, selectedContext.item, selectedContext.options || {});
@@ -252,9 +346,269 @@
     attachModalListeners();
   }
 
+  function boolFromMixed(value) {
+    if (value === true || value === 1 || value === '1') return true;
+    if (typeof value === 'string') {
+      const v = value.trim().toLowerCase();
+      return v === 'true' || v === 'yes' || v === 'on';
+    }
+    return false;
+  }
+
+  function getRatingsClient(options) {
+    const ratings = (options && options.ratings) || {};
+    const apiBase = (ratings.apiBase || options && options.ratingsApiBase || '').trim().replace(/\/$/, '');
+    const nonce = String(ratings.nonce || options && options.ratingsNonce || '').trim();
+    const loginUrl = String(ratings.loginUrl || options && options.ratingsLoginUrl || options && options.loginUrl || '').trim();
+    return {
+      apiBase: apiBase,
+      nonce: nonce,
+      loginUrl: loginUrl,
+      isLoggedIn: boolFromMixed(ratings.isLoggedIn != null ? ratings.isLoggedIn : (options && options.ratingsIsLoggedIn))
+    };
+  }
+
+  function buildRatingsEndpoint(client, path, queryParams) {
+    const safePath = String(path || '').replace(/^\/+/, '');
+    const rawBase = String(client && client.apiBase ? client.apiBase : '').trim();
+    if (!rawBase) return '';
+    try {
+      const url = new URL(rawBase, window.location.origin);
+      if (url.origin !== window.location.origin) {
+        url.protocol = window.location.protocol;
+        url.host = window.location.host;
+      }
+      if (url.searchParams.has('rest_route')) {
+        const currentRoute = String(url.searchParams.get('rest_route') || '').replace(/\/+$/, '');
+        url.searchParams.set('rest_route', currentRoute + '/' + safePath);
+      } else {
+        const basePath = url.pathname.replace(/\/+$/, '');
+        url.pathname = basePath + '/' + safePath;
+      }
+      if (queryParams && typeof queryParams === 'object') {
+        Object.keys(queryParams).forEach(function(key) {
+          const value = queryParams[key];
+          if (value === null || value === undefined || value === '') return;
+          url.searchParams.set(key, String(value));
+        });
+      }
+      return url.toString();
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function formatLikeCount(count) {
+    const n = Number(count) || 0;
+    if (n <= 0) return 'No likes yet';
+    return n + ' like' + (n === 1 ? '' : 's');
+  }
+
+  async function fetchRatingSummary(client, contextType, itemId) {
+    const url = buildRatingsEndpoint(client, 'ratings/batch', {
+      type: String(contextType || '').trim(),
+      ids: String(itemId || '').slice(0, 512),
+      _wpnonce: client.nonce || ''
+    });
+    if (!url) throw new Error('ratings_url_invalid');
+    const res = await fetch(url, {
+      method: 'GET',
+      credentials: 'same-origin',
+      headers: {
+        'X-WP-Nonce': client.nonce || ''
+      }
+    });
+    if (!res.ok) throw new Error('ratings_batch_failed');
+    const data = await res.json();
+    const result = data && data.results && data.results[itemId] ? data.results[itemId] : { avg: 0, count: 0, likes: 0, my_rating: null, my_like: null };
+    const likeCount = Number(result.likes);
+    return {
+      avg: Number(result.avg) || 0,
+      count: isFinite(likeCount) ? likeCount : (Number(result.count) || 0),
+      myRating: Number(result.my_like) > 0 || Number(result.my_rating) > 0 ? 1 : null
+    };
+  }
+
+  async function submitRating(client, contextType, itemId) {
+    const url = buildRatingsEndpoint(client, 'ratings', {
+      _wpnonce: client.nonce || ''
+    });
+    if (!url) throw new Error('ratings_url_invalid');
+    const res = await fetch(url, {
+      method: 'POST',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-WP-Nonce': client.nonce || ''
+      },
+      body: JSON.stringify({
+        type: contextType,
+        item_id: itemId,
+        rating: 1
+      })
+    });
+    let payload = null;
+    try {
+      payload = await res.json();
+    } catch (e) {
+      payload = null;
+    }
+    if (!res.ok) {
+      const reason = payload && (payload.error || payload.code || payload.message);
+      throw new Error(reason || 'like_submit_failed');
+    }
+    return payload || {};
+  }
+
+  async function deleteRating(client, contextType, itemId) {
+    const url = buildRatingsEndpoint(client, 'ratings', {
+      _wpnonce: client.nonce || '',
+      type: contextType,
+      item_id: itemId
+    });
+    if (!url) throw new Error('ratings_url_invalid');
+    const res = await fetch(url, {
+      method: 'DELETE',
+      credentials: 'same-origin',
+      headers: {
+        'X-WP-Nonce': client.nonce || ''
+      }
+    });
+    let payload = null;
+    try {
+      payload = await res.json();
+    } catch (e) {
+      payload = null;
+    }
+    if (!res.ok) {
+      const reason = payload && (payload.error || payload.code || payload.message);
+      throw new Error(reason || 'like_delete_failed');
+    }
+    return payload || {};
+  }
+
+  function renderRatingSlot(slot, state, client) {
+    if (!slot) return;
+    const summaryLabel = formatLikeCount(state.count);
+    const isStarred = state.myRating === 1;
+    const starButton = client.isLoggedIn
+      ? '<button type="button" class="fides-rating-star fides-rating-star-single' + (isStarred ? ' is-filled' : '') + '" data-rating-toggle="1" ' + (state.saving ? 'disabled' : '') + ' aria-label="' + (isStarred ? 'Remove your like' : 'Like this item') + '">★</button>'
+      : '<button type="button" class="fides-rating-star fides-rating-star-single is-readonly' + (isStarred ? ' is-filled' : '') + '" disabled aria-hidden="true">★</button>';
+    const actionLine = client.isLoggedIn
+      ? '<span class="fides-modal-rating-note fides-modal-rating-note-inline">' + (state.saving ? 'Updating like...' : (isStarred ? 'You like this item. Click again to remove.' : 'Click the star to like this item.')) + '</span>'
+      : (client.loginUrl
+          ? '<span class="fides-modal-rating-note fides-modal-rating-note-inline"><a href="' + escapeHtml(client.loginUrl) + '" class="fides-modal-rating-login">Sign in to like</a></span>'
+          : '<span class="fides-modal-rating-note fides-modal-rating-note-inline">Sign in to like</span>');
+    slot.innerHTML =
+      '<div class="fides-modal-rating">' +
+        '<div class="fides-modal-rating-summary">' +
+          starButton +
+          '<span class="fides-modal-rating-value">' + escapeHtml(summaryLabel) + '</span>' +
+          actionLine +
+        '</div>' +
+      '</div>';
+  }
+
+  async function attachModalRating(overlay, contextType, itemId, options, item) {
+    if (!overlay) return;
+    const slot = overlay.querySelector('#fides-modal-rating-slot');
+    if (!slot) return;
+    const client = getRatingsClient(options || {});
+    const deepLinkUrl = getDirectLink(contextType, item || { id: itemId }, options || {});
+    const clientForUi = Object.assign({}, client, {
+      loginUrl: buildLoginUrlWithReturnTo(client.loginUrl, deepLinkUrl)
+    });
+    if (!client.apiBase || !contextType || !itemId) {
+      slot.innerHTML = '';
+      return;
+    }
+    let state = { avg: 0, count: 0, myRating: null, saving: false };
+    renderRatingSlot(slot, state, clientForUi);
+    try {
+      state = Object.assign(state, await fetchRatingSummary(client, contextType, itemId));
+      renderRatingSlot(slot, state, clientForUi);
+    } catch (e) {
+      state = Object.assign(state, { avg: 0, count: 0, myRating: null });
+      renderRatingSlot(slot, state, clientForUi);
+    }
+    if (!client.isLoggedIn) return;
+    slot.addEventListener('click', async function(e) {
+      const btn = e.target && e.target.closest ? e.target.closest('[data-rating-toggle]') : null;
+      if (!btn) return;
+      if (state.saving) return;
+      const previousState = {
+        avg: state.avg,
+        count: state.count,
+        myRating: state.myRating
+      };
+      const removing = state.myRating === 1;
+      state = Object.assign(state, {
+        saving: true,
+        myRating: removing ? null : 1
+      });
+      renderRatingSlot(slot, state, clientForUi);
+      try {
+        const data = removing
+          ? await deleteRating(client, contextType, itemId)
+          : await submitRating(client, contextType, itemId);
+        const summary = data && data.summary ? data.summary : {};
+        state = {
+          avg: Number(summary.avg) || 0,
+          count: Number(summary.likes) || Number(summary.count) || 0,
+          myRating: Number(data && data.my_like) > 0 || Number(data && data.my_rating) > 0 ? 1 : null,
+          saving: false
+        };
+        renderRatingSlot(slot, state, clientForUi);
+        if (options && typeof options.onRatingUpdate === 'function') {
+          options.onRatingUpdate({
+            type: contextType,
+            itemId: itemId,
+            avg: state.avg,
+            count: state.count,
+            myRating: state.myRating
+          });
+        }
+      } catch (err) {
+        state = Object.assign(state, {
+          avg: previousState.avg,
+          count: previousState.count,
+          myRating: previousState.myRating,
+          saving: false
+        });
+        renderRatingSlot(slot, state, clientForUi);
+        const reason = (err && err.message) ? String(err.message) : 'save_failed';
+        showToast('Failed to update like (' + reason + ')', 'error', (options && options.theme) || 'dark');
+      }
+    });
+  }
+
+  function buildWalletUpdateFormUrl(walletId, options) {
+    const updateFormUrl = (options && options.updateFormUrl) ? String(options.updateFormUrl).trim() : '';
+    const isLoggedIn = boolFromMixed(
+      options && (options.isLoggedIn != null ? options.isLoggedIn : options.ratingsIsLoggedIn)
+    );
+    if (!isLoggedIn || !updateFormUrl || !walletId) return '';
+    try {
+      const url = new URL(updateFormUrl, window.location.origin);
+      url.searchParams.set('wallet', String(walletId));
+      return url.toString();
+    } catch (e) {
+      return '';
+    }
+  }
+
+  function buildWalletEditActionHtml(wallet, options) {
+    if (!canEditWallet(wallet, options)) return '';
+    const href = buildWalletUpdateFormUrl(wallet && wallet.id, options);
+    if (!href) return '';
+    return '<a href="' + escapeHtml(href) + '" class="fides-modal-copy-link fides-modal-edit-link" aria-label="Suggest an update" title="Suggest an update">' + icons.pencil + '</a>';
+  }
+
   function openWalletModal(wallet, options) {
     if (!wallet) return;
     const theme = (options && options.theme) || 'dark';
+    const tierUi = optionsTierUiEnabled(options);
+    const isCommunity = tierUi && itemIsCommunity(wallet);
     selectedContext = { type: 'wallet', item: wallet, options: options || {}, theme: theme };
     if (options && typeof options.onOpen === 'function') options.onOpen(wallet);
 
@@ -271,17 +625,22 @@
       : escapeHtml(providerDisplayName);
     const bluePagesUrl = getBluePagesUrl(wallet.provider && wallet.provider.did, options);
 
+    const editActionHtml = buildWalletEditActionHtml(wallet, options);
     const shareButtonHtml = (options && options.showShare === false)
       ? ''
       : '<button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link">' + icons.share + '</button>';
+    const officialHeaderBadge = tierUi && catalogTierIsProExplicit(wallet)
+      ? '<span class="fides-modal-header-official-badge" role="status" title="' + escapeHtml(OFFICIAL_LISTING_TITLE) + '">' + icons.official + '<span class="fides-modal-header-official-label">Official</span></span>'
+      : '';
 
     const modalHtml = '<div class="fides-modal-overlay fides-modal-overlay--rp" id="fides-modal-overlay" data-theme="' + escapeHtml(theme) + '">' +
       '<div class="fides-modal" role="dialog" aria-modal="true">' +
       '<div class="fides-modal-header"><div class="fides-modal-header-content">' +
       (wallet.logo ? '<img src="' + escapeHtml(wallet.logo) + '" alt="' + escapeHtml(wallet.name) + '" class="fides-modal-logo">' : '<div class="fides-modal-logo-placeholder">' + icons.wallet + '</div>') +
-      '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(wallet.name) + '</h2><p class="fides-modal-provider">' + icons.building + ' ' + providerNameInHeader + (bluePagesUrl ? ' <a href="' + escapeHtml(bluePagesUrl) + '" target="_blank" rel="noopener" class="fides-modal-provider-link">' + icons.externalLink + ' View in Blue Pages</a>' : '') + '</p></div>' +
-      '</div><div class="fides-modal-header-actions">' + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
+      '<div class="fides-modal-title-wrap"><div class="fides-modal-title-row"><h2 class="fides-modal-title">' + escapeHtml(wallet.name) + '</h2>' + officialHeaderBadge + '</div><p class="fides-modal-provider">' + icons.building + ' ' + providerNameInHeader + (bluePagesUrl ? ' <a href="' + escapeHtml(bluePagesUrl) + '" target="_blank" rel="noopener" class="fides-modal-provider-link">' + icons.externalLink + ' View in Blue Pages</a>' : '') + '</p></div>' +
+      '</div><div class="fides-modal-header-actions">' + editActionHtml + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
       '<div class="fides-modal-body">' +
+      '<div id="fides-modal-rating-slot"></div>' +
       '<div class="fides-modal-badges">' +
       '<span class="fides-modal-badge type-' + escapeHtml(wallet.type) + '">' + escapeHtml(typeLabels[wallet.type]) + '</span>' +
       ((wallet.type === 'organizational' && wallet.capabilities) ? wallet.capabilities.map(c => '<span class="fides-modal-badge capability-' + escapeHtml(c) + '">' + escapeHtml(c.charAt(0).toUpperCase() + c.slice(1)) + '</span>').join('') : '') +
@@ -289,9 +648,9 @@
       '<span class="fides-modal-badge ' + (wallet.openSource ? 'open-source' : 'proprietary') + '">' + (wallet.openSource ? (icons.github + ' Open Source' + (wallet.license ? ' (' + escapeHtml(wallet.license) + ')' : '')) : 'Proprietary') + '</span>' +
       '</div>' +
       (wallet.description ? '<div class="fides-modal-section"><p class="fides-modal-description">' + escapeHtml(wallet.description) + '</p></div>' : '') +
-      (wallet.video ? getVideoEmbedHtml(wallet.video) : '') +
+      (!isCommunity && wallet.video ? getVideoEmbedHtml(wallet.video) : '') +
       '<div class="fides-modal-grid">' +
-      ((wallet.platforms && wallet.platforms.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.smartphone + ' Platforms ' + (wallet.type !== 'organizational' ? '<span class="fides-label-hint">(click to access)</span>' : '') + '</div><div class="fides-modal-grid-value">' + wallet.platforms.map(p => renderPlatformTag(wallet, p)).join('') + '</div></div>' : '') +
+      ((wallet.platforms && wallet.platforms.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.smartphone + ' Platforms ' + (wallet.type !== 'organizational' && !isCommunity ? '<span class="fides-label-hint">(click to access)</span>' : '') + '</div><div class="fides-modal-grid-value">' + wallet.platforms.map(p => renderPlatformTag(wallet, p, isCommunity)).join('') + '</div></div>' : '') +
       ((wallet.vcFormat && wallet.vcFormat.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' VC formats</div><div class="fides-modal-grid-value">' + sortCredentialFormats(wallet.vcFormat).map(f => '<span class="fides-tag credential-format">' + escapeHtml(credentialFormatDisplayLabel(f)) + '</span>').join('') + '</div></div>' : '') +
       (((wallet.issuanceProtocols || (wallet.protocols && wallet.protocols.issuance) || []).length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.download + ' Issuance Protocols</div><div class="fides-modal-grid-value">' + (wallet.issuanceProtocols || (wallet.protocols && wallet.protocols.issuance) || []).map(p => '<span class="fides-tag protocol-issuance">' + escapeHtml(p) + '</span>').join('') + '</div></div>' : '') +
       (((wallet.presentationProtocols || (wallet.protocols && wallet.protocols.presentation) || []).length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Presentation Protocols</div><div class="fides-modal-grid-value">' + (wallet.presentationProtocols || (wallet.protocols && wallet.protocols.presentation) || []).map(p => '<span class="fides-tag protocol-presentation">' + escapeHtml(p) + '</span>').join('') + '</div></div>' : '') +
@@ -302,15 +661,17 @@
       ((wallet.interoperabilityProfiles && wallet.interoperabilityProfiles.length) ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.shield + ' Interop Profiles</div><div class="fides-modal-grid-value">' + wallet.interoperabilityProfiles.map(p => '<span class="fides-tag interop">' + escapeHtml(p) + '</span>').join('') + '</div></div>' : '') +
       (wallet.releaseDate ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.calendar + ' Release date</div><div class="fides-modal-grid-value">' + escapeHtml(new Date(wallet.releaseDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })) + '</div></div>' : '') +
       '</div>' +
-      ((wallet.features && wallet.features.length) ? '<div class="fides-modal-features"><h4 class="fides-modal-section-title">Features</h4><ul class="fides-features-list">' + wallet.features.map(f => '<li>' + icons.check + ' ' + escapeHtml(f) + '</li>').join('') + '</ul></div>' : '') +
+      ((wallet.features && wallet.features.length && !isCommunity) ? '<div class="fides-modal-features"><h4 class="fides-modal-section-title">Features</h4><ul class="fides-features-list">' + wallet.features.map(f => '<li>' + icons.check + ' ' + escapeHtml(f) + '</li>').join('') + '</ul></div>' : '') +
       '<div class="fides-modal-links">' +
-      (wallet.website ? '<a href="' + escapeHtml(wallet.website) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Visit website">' + icons.externalLink + ' Visit Website</a>' : '') +
-      (wallet.openSource && wallet.repository ? '<a href="' + escapeHtml(wallet.repository) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Repository">' + icons.github + ' View Repository</a>' : '') +
-      (wallet.documentation ? '<a href="' + escapeHtml(wallet.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Documentation">' + icons.book + ' Documentation</a>' : '') +
+      (!isCommunity && wallet.website ? '<a href="' + escapeHtml(wallet.website) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Visit website">' + icons.externalLink + ' Visit Website</a>' : '') +
+      (!isCommunity && wallet.openSource && wallet.repository ? '<a href="' + escapeHtml(wallet.repository) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Repository">' + icons.github + ' View Repository</a>' : '') +
+      (!isCommunity && wallet.documentation ? '<a href="' + escapeHtml(wallet.documentation) + '" target="_blank" rel="noopener" class="fides-modal-link" data-matomo-name="Documentation">' + icons.book + ' Documentation</a>' : '') +
       '</div>' +
       '</div></div></div>';
 
     mountModal(modalHtml);
+    const walletOverlay = document.getElementById('fides-modal-overlay');
+    if (walletOverlay) attachModalRating(walletOverlay, 'wallet', wallet.id, options || {}, wallet);
   }
 
   function getBluePagesUrl(did, options) {
@@ -501,6 +862,7 @@
       '<div class="fides-modal-title-wrap"><h2 class="fides-modal-title">' + escapeHtml(rp.name) + '</h2><p class="fides-modal-provider">' + icons.building + ' ' + providerNameInHeader + (bluePagesUrl ? ' <a href="' + escapeHtml(bluePagesUrl) + '" target="_blank" rel="noopener" class="fides-modal-provider-link">' + icons.externalLink + ' View in Blue Pages</a>' : '') + '</p></div>' +
       '</div><div class="fides-modal-header-actions">' + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
       '<div class="fides-modal-body">' +
+      '<div id="fides-modal-rating-slot"></div>' +
       '<div class="fides-modal-badges fides-modal-badges-with-action"><div class="fides-modal-badges-left">' +
       (rp.readiness ? '<span class="fides-modal-badge readiness-' + escapeHtml(rp.readiness) + '">' + escapeHtml(readinessLabels[rp.readiness] || rp.readiness) + '</span>' : '') +
       '<span class="fides-modal-badge interaction-mode interaction-' + escapeHtml(interactionMode) + '">' + escapeHtml(interactionModeLabel) + '</span>' +
@@ -527,6 +889,8 @@
       '</div></div></div>';
 
     mountModal(modalHtml);
+    const rpOverlay = document.getElementById('fides-modal-overlay');
+    if (rpOverlay) attachModalRating(rpOverlay, 'rp', rp.id, options || {}, rp);
   }
 
   function arrayValues(input) {
@@ -591,6 +955,7 @@
   function openOrganizationModal(org, options) {
     if (!org) return;
     const theme = (options && options.theme) || 'dark';
+    const isCommunity = itemIsCommunity(org);
     selectedContext = { type: 'organization', item: org, options: options || {}, theme: theme };
     if (options && typeof options.onOpen === 'function') options.onOpen(org);
 
@@ -659,7 +1024,7 @@
       (credentialLinks ? '<div class="fides-modal-grid-item"><div class="fides-modal-grid-label">' + icons.fileCheck + ' Credentials</div><div class="fides-modal-grid-value">' + credentialLinks + '</div></div>' : '') +
       '</div>' +
       '<div class="fides-modal-links">' +
-      (org.website ? '<a href="' + escapeHtml(org.website) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Organization website">' + icons.externalLink + ' Visit Website</a>' : '') +
+      (!isCommunity && org.website ? '<a href="' + escapeHtml(org.website) + '" target="_blank" rel="noopener" class="fides-modal-link primary" data-matomo-name="Organization website">' + icons.externalLink + ' Visit Website</a>' : '') +
       '</div>' +
       '</div></div></div>';
 
@@ -673,6 +1038,10 @@
     openOrganizationModal,
     closeModal,
     trackMatomoEvent,
-    initMatomoLinkTracking
+    initMatomoLinkTracking,
+    userCanEditCatalogItem,
+    canEditOrganization,
+    canEditWallet,
+    resolveWalletOrgId
   };
 })();
