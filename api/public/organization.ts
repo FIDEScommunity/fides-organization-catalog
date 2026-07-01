@@ -25,6 +25,36 @@ function parseQueryArray(val: unknown): string[] {
     .filter((item) => item.length > 0);
 }
 
+function orgEcosystemRoleCodes(o: AggregatedOrganization): string[] {
+  if (Array.isArray(o.ecosystemRoleCodes) && o.ecosystemRoleCodes.length) {
+    return o.ecosystemRoleCodes.map(String);
+  }
+  const r = o.ecosystemRoles;
+  const derived: string[] = [];
+  if (r.personalWallets.length) derived.push('personal_wallet_provider');
+  if (r.businessWallets.length) derived.push('business_wallet_provider');
+  if (r.credentialTypes.length) derived.push('vc_type_authority');
+  if (r.issuers.length) derived.push('issuer');
+  if (r.relyingParties.length) derived.push('relying_party');
+  return derived;
+}
+
+function organizationMatchesRoleFilter(o: AggregatedOrganization, role: string): boolean {
+  const codes = orgEcosystemRoleCodes(o);
+  switch (role) {
+    case 'issuer':
+      return codes.includes('issuer');
+    case 'credential':
+      return codes.includes('vc_type_authority');
+    case 'wallet':
+      return codes.includes('personal_wallet_provider') || codes.includes('business_wallet_provider');
+    case 'rp':
+      return codes.includes('relying_party');
+    default:
+      return codes.includes(role);
+  }
+}
+
 function certificationSearchHaystack(o: AggregatedOrganization): string {
   const items = o.certifications;
   if (!items?.length) return '';
@@ -95,16 +125,7 @@ export default function handler(req: VercelRequest, res: VercelResponse): void {
   }
 
   if (role) {
-    orgs = orgs.filter((o) => {
-      const r = o.ecosystemRoles;
-      switch (role) {
-        case 'issuer': return r.issuers.length > 0;
-        case 'credential': return r.credentialTypes.length > 0;
-        case 'wallet': return r.personalWallets.length + r.businessWallets.length > 0;
-        case 'rp': return r.relyingParties.length > 0;
-        default: return true;
-      }
-    });
+    orgs = orgs.filter((o) => organizationMatchesRoleFilter(o, role));
   }
 
   if (certifications.length > 0) {

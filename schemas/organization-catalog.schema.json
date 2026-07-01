@@ -256,7 +256,73 @@
         "mobility",
         "digital"
       ],
-      "description": "Closed sector taxonomy; use one or more per organization."
+      "description": "Closed sector taxonomy; pick one sector per organization."
+    },
+    "OrganizationMedia": {
+      "type": "object",
+      "description": "Promotional media (Pro tier in public export)",
+      "additionalProperties": false,
+      "properties": {
+        "videos": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Demo or promotional video URLs"
+        },
+        "images": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Screenshot or product image URLs"
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["videos"],
+          "properties": {
+            "videos": {
+              "minItems": 1
+            }
+          }
+        },
+        {
+          "required": ["images"],
+          "properties": {
+            "images": {
+              "minItems": 1
+            }
+          }
+        }
+      ]
+    },
+    "OrganizationEcosystemRoleCode": {
+      "type": "string",
+      "enum": [
+        "personal_wallet_provider",
+        "business_wallet_provider",
+        "vc_type_authority",
+        "issuer",
+        "relying_party",
+        "idv_provider",
+        "kyb_provider",
+        "system_integrator",
+        "consultancy",
+        "software_vendor",
+        "business_registry",
+        "industry_association",
+        "standards_development_organization",
+        "conformity_scheme_owner",
+        "national_accreditation_body",
+        "certification_body",
+        "conformity_assessment_body"
+      ],
+      "description": "Ecosystem role the organization performs in the digital identity / trust landscape."
     },
     "Organization": {
       "type": "object",
@@ -353,6 +419,16 @@
               "description": "Pro-only: scheduling URL (org modal Book a Meeting button)."
             }
           }
+        },
+        "ecosystemRoleCodes": {
+          "type": "array",
+          "uniqueItems": true,
+          "description": "Optional self-declared ecosystem roles. The crawler may add issuer, VC type authority, wallet provider, or relying party roles when linked entries exist in other catalogs.",
+          "items": { "$ref": "#/$defs/OrganizationEcosystemRoleCode" }
+        },
+        "media": {
+          "$ref": "#/$defs/OrganizationMedia",
+          "description": "Promotional media (Pro tier in public export)"
         }
       }
     }

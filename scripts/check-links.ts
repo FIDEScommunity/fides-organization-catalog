@@ -65,7 +65,13 @@ async function main(): Promise<void> {
       continue;
     }
 
-    const data = JSON.parse(raw) as { organization: { website?: string; logo?: string } };
+    const data = JSON.parse(raw) as {
+      organization: {
+        website?: string;
+        logo?: string;
+        media?: { videos?: string[]; images?: string[] };
+      };
+    };
     const org = data.organization;
 
     for (const [field, url] of Object.entries({ website: org.website, logo: org.logo })) {
@@ -75,6 +81,25 @@ async function main(): Promise<void> {
       const icon = result.ok ? '\u2713' : '\u2717';
       const detail = result.error || `${result.status}`;
       console.log(`  ${icon} ${dirName} ${field}: ${detail}`);
+    }
+
+    const mediaVideos = org.media?.videos ?? [];
+    const mediaImages = org.media?.images ?? [];
+    for (const [index, url] of mediaVideos.entries()) {
+      if (!url) continue;
+      const result = await checkUrl(url);
+      results.push({ org: dirName, field: `media.videos[${index}]`, url, ...result });
+      const icon = result.ok ? '\u2713' : '\u2717';
+      const detail = result.error || `${result.status}`;
+      console.log(`  ${icon} ${dirName} media.videos[${index}]: ${detail}`);
+    }
+    for (const [index, url] of mediaImages.entries()) {
+      if (!url) continue;
+      const result = await checkUrl(url);
+      results.push({ org: dirName, field: `media.images[${index}]`, url, ...result });
+      const icon = result.ok ? '\u2713' : '\u2717';
+      const detail = result.error || `${result.status}`;
+      console.log(`  ${icon} ${dirName} media.images[${index}]: ${detail}`);
     }
   }
 

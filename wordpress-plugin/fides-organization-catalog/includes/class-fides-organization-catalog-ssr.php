@@ -236,6 +236,13 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                 foreach ($roles as $role) {
                     $rows[] = $role;
                 }
+                $role_labels = self::ecosystem_role_code_labels($item);
+                if (! empty($role_labels)) {
+                    $rows[] = array(
+                        'label' => __('Ecosystem roles', $td),
+                        'html'  => esc_html(implode(', ', $role_labels)),
+                    );
+                }
                 if ($updated_at !== '') {
                     $ts = strtotime($updated_at);
                     if ($ts) {
@@ -255,20 +262,24 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                 $td = 'fides-organization-catalog';
                 ob_start();
                 echo $this->render_chip_section($this->list_field($item, 'sectors'), __('Sectors', $td));
+                $role_labels = self::ecosystem_role_code_labels($item);
+                if (! empty($role_labels)) {
+                    echo $this->render_ecosystem_role_chip_section($role_labels, __('Ecosystem roles', $td));
+                }
                 $hide_offerings = class_exists('Fides_Catalog_Org_Tier')
                     && Fides_Catalog_Org_Tier::tier_ui_enabled()
                     && Fides_Catalog_Org_Tier::item_is_community($item);
                 if (! $hide_offerings) {
                     echo $this->render_offering_chip_section(
                         $this->list_field($item, 'offerings'),
-                        __('Services', $td)
+                        __('Offerings', $td)
                     );
                 }
                 return (string) ob_get_clean();
             }
 
             /**
-             * Chip section for services/offerings (green styling in CSS).
+             * Chip section for offerings (green styling in CSS).
              *
              * @param string[] $items
              */
@@ -290,9 +301,60 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                 return (string) ob_get_clean();
             }
 
+            /**
+             * Chip section for ecosystem roles (modal/SSR parity).
+             *
+             * @param string[] $items
+             */
+            private function render_ecosystem_role_chip_section(array $items, string $title): string {
+                if (empty($items)) {
+                    return '';
+                }
+                ob_start();
+                ?>
+                <section class="fides-ssr-detail__section fides-ssr-detail__section--ecosystem-roles">
+                    <h2 class="fides-ssr-detail__section-title"><?php echo esc_html($title); ?></h2>
+                    <ul class="fides-ssr-detail__chips">
+                        <?php foreach ($items as $chip) : ?>
+                            <li class="fides-ssr-detail__chip fides-tag fides-tag--ecosystem-role"><?php echo esc_html((string) $chip); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </section>
+                <?php
+                return (string) ob_get_clean();
+            }
+
             /* --------------------------------------------------------------
              * Helpers
              * -------------------------------------------------------------- */
+
+            /**
+             * Human-readable labels for merged ecosystemRoleCodes (SSR detail meta).
+             *
+             * @return string[]
+             */
+            private static function ecosystem_role_code_labels(array $item): array {
+                if (empty($item['ecosystemRoleCodes']) || ! is_array($item['ecosystemRoleCodes'])) {
+                    return array();
+                }
+                $labels = array();
+                if (class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
+                    foreach (Fides_Organization_Catalog_Submission_Adapter::ecosystem_role_options() as $option) {
+                        if (isset($option['code'], $option['label'])) {
+                            $labels[ (string) $option['code'] ] = (string) $option['label'];
+                        }
+                    }
+                }
+                $out = array();
+                foreach ($item['ecosystemRoleCodes'] as $code) {
+                    $code = sanitize_key(str_replace('-', '_', (string) $code));
+                    if ($code === '' || in_array($code, $out, true)) {
+                        continue;
+                    }
+                    $out[] = isset($labels[ $code ]) ? $labels[ $code ] : $code;
+                }
+                return $out;
+            }
 
             /**
              * Summarise ecosystemRoles into dl rows with counts so the SSR

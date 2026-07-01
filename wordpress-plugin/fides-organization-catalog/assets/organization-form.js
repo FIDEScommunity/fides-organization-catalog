@@ -11,6 +11,7 @@
   const restNonce = String(config.restNonce || "").trim();
   const contactEmail = String(config.contactEmail || "").trim();
   const sectors = Array.isArray(config.sectors) ? config.sectors : [];
+  const ecosystemRoles = Array.isArray(config.ecosystemRoles) ? config.ecosystemRoles : [];
   const fieldHelp = config.fieldHelp && typeof config.fieldHelp === "object" ? config.fieldHelp : {};
   const countries = Array.isArray(config.countries) ? config.countries : [];
   const selfDeclaredCertifications = Array.isArray(config.selfDeclaredCertifications)
@@ -24,6 +25,7 @@
     config.planTier && typeof config.planTier === "object"
       ? { ...config.planTier }
       : { tierUiEnabled: false, tier: "Community", isPro: false, plansUrl: "/plans/", descriptionMaxLength: 200 };
+  const v2Limits = config.v2Limits && typeof config.v2Limits === "object" ? config.v2Limits : {};
 
   function tierUiEnabled() {
     return planTier.tierUiEnabled === true;
@@ -33,8 +35,8 @@
     "fides-org-website",
     "fides-org-tags",
     "fides-org-offerings-input",
-    "fides-org-contact-public-email",
-    "fides-org-contact-support",
+    "fides-org-contact-url",
+    "fides-org-book-meeting-url",
   ];
 
   const ORG_OFFERINGS_MAX = 15;
@@ -179,7 +181,7 @@
   function updateOfferingsCounter() {
     const counterEl = root.querySelector("#fides-org-offerings-counter");
     if (!counterEl) return;
-    counterEl.textContent = `${offeringsValues.length} / ${ORG_OFFERINGS_MAX} services`;
+    counterEl.textContent = `${offeringsValues.length} / ${ORG_OFFERINGS_MAX} offerings`;
   }
 
   function filteredOfferingsSuggestions(query) {
@@ -319,6 +321,16 @@
     });
     const offeringsRow = root.querySelector(".fides-form-row--offerings");
     if (offeringsRow) offeringsRow.classList.toggle("fides-form-row--pro-locked", !isPro);
+    root.querySelectorAll(".fides-form-section--pro-tier").forEach((section) => {
+      section.classList.toggle("fides-form-section--pro-locked", !isPro);
+    });
+    const mediaSection = root.querySelector(".fides-org-media-section");
+    if (mediaSection) {
+      mediaSection.classList.toggle("fides-form-section--pro-locked", !isPro);
+      mediaSection.querySelectorAll("input, button").forEach((el) => {
+        el.disabled = !isPro;
+      });
+    }
     renderOfferingsChips();
     updateDescriptionLimitUi();
     updatePlanTierBanner();
@@ -516,9 +528,15 @@
   function formAccordionSectionsHtml() {
     return `
       ${accordionSection(
-        "Self-declared certifications",
+        "Ecosystem roles",
+        helpText("ecosystemRoleCodes") ||
+          "Optional roles your organization plays in the digital identity ecosystem.",
+        ecosystemRolesPanelHtml()
+      )}
+      ${accordionSection(
+        "Certifications",
         helpText("certificationsIntro") ||
-          "Select certifications your organization holds. These are self-declared and may be reviewed before publication.",
+          "Select certifications your organization holds. These may be reviewed before publication.",
         certificationsPanelHtml()
       )}
       ${accordionSection(
@@ -647,18 +665,63 @@
   }
 
   function sectorChoicesHtml() {
-    const singleSelect = mode === "create";
-    const inputType = singleSelect ? "radio" : "checkbox";
-    const inputName = singleSelect ? "sector" : "sectors";
     return sectors
       .map(
         (entry) => `
         <label class="fides-form-choice">
-          <input type="${inputType}" name="${inputName}" value="${escapeHtml(entry.code)}" />
+          <input type="radio" name="sector" value="${escapeHtml(entry.code)}" />
           <span>${escapeHtml(entry.label || entry.code)}</span>
         </label>`
       )
       .join("");
+  }
+
+  function ecosystemRoleChoicesHtml() {
+    return ecosystemRoles
+      .map(
+        (entry) => `
+        <label class="fides-form-choice">
+          <input type="checkbox" name="ecosystemRoleCodes" value="${escapeHtml(entry.code)}" />
+          <span>${escapeHtml(entry.label || entry.code)}</span>
+        </label>`
+      )
+      .join("");
+  }
+
+  function ecosystemRolesPanelHtml() {
+    return `
+      <div class="fides-form-row">
+        <span class="fides-form-label" id="fides-org-ecosystem-roles-label">Ecosystem roles</span>
+        ${helpHtml("ecosystemRoleCodes")}
+        <div class="fides-form-choices fides-form-choices-stack" role="group" aria-labelledby="fides-org-ecosystem-roles-label">
+          ${ecosystemRoleChoicesHtml()}
+        </div>
+      </div>`;
+  }
+
+  function formMediaSectionHtml() {
+    return `
+        <section class="fides-form-section fides-form-section--pro-tier fides-org-media-section" aria-labelledby="fides-org-media-section-title" hidden>
+          <div class="fides-form-accordion-heading">
+            <h3 id="fides-org-media-section-title" class="fides-form-section-title" data-pro-label="Media">${labelWithProIfNeeded("Media", true)}</h3>
+          </div>
+          <p class="fides-form-section-intro">Visuals shown on your public organization listing — add cover images and optional demo videos.</p>
+          <div class="fides-form-section-body fides-media-section-body">
+            <div class="fides-form-grid fides-media-grid">
+              <div class="fides-media-col">
+                <label>Cover images</label>
+                <p class="fides-help fides-media-col-help">${escapeHtml(helpText("mediaImages") || "Screenshot or product image URLs.")}</p>
+                <div id="fides-org-image-rows" class="fides-media-rows" aria-live="polite"></div>
+              </div>
+              <div class="fides-media-col">
+                <label>Demo videos</label>
+                <p class="fides-help fides-media-col-help">${escapeHtml(helpText("mediaVideos") || "YouTube or Vimeo links to demos.")}</p>
+                <div id="fides-org-video-rows" class="fides-media-rows" aria-live="polite"></div>
+              </div>
+            </div>
+            <p id="fides-org-image-upload-status" class="fides-lookup-hint" hidden></p>
+          </div>
+        </section>`;
   }
 
   function formFieldsHtml() {
@@ -679,7 +742,7 @@
             : ""
         }
         <div class="fides-form-row">
-          <span class="fides-form-label" id="fides-org-sectors-label">${mode === "create" ? "Sector *" : "Sectors *"}</span>
+          <span class="fides-form-label" id="fides-org-sectors-label">Sector *</span>
           ${helpHtml("sectors")}
           <div class="fides-form-choices" role="group" aria-labelledby="fides-org-sectors-label">
             ${sectorChoicesHtml()}
@@ -723,14 +786,14 @@
           </div>
         </div>
         <div class="fides-form-row fides-form-row--offerings">
-          <label for="fides-org-offerings-input">${labelWithProIfNeeded("Services & offerings", true)}</label>
+          <label for="fides-org-offerings-input">${labelWithProIfNeeded("Offerings", true)}</label>
           <div class="fides-form-row-helpline">
             ${helpHtml("offerings")}
             <p class="fides-description-counter" id="fides-org-offerings-counter" aria-live="polite"></p>
           </div>
           <div id="fides-org-offerings-chips" class="fides-chip-list" role="list"></div>
           <div class="fides-chip-input-wrap">
-            <input id="fides-org-offerings-input" name="offeringsInput" type="text" autocomplete="off" placeholder="Type a service and press Enter" maxlength="${ORG_OFFERING_MAX_LENGTH}" />
+            <input id="fides-org-offerings-input" name="offeringsInput" type="text" autocomplete="off" placeholder="Type an offering and press Enter" maxlength="${ORG_OFFERING_MAX_LENGTH}" />
             <ul id="fides-org-offerings-suggestions" class="fides-chip-suggestions" role="listbox" hidden></ul>
           </div>
         </div>
@@ -742,14 +805,14 @@
         </div>
         <div class="fides-form-grid fides-form-grid-pair">
           <div class="fides-form-row">
-            <label for="fides-org-contact-public-email">${labelWithProIfNeeded("Public contact email", true)}</label>
-            ${helpHtml("contactPublicEmail")}
-            <input id="fides-org-contact-public-email" name="contactPublicEmail" type="email" placeholder="contact@example.com" />
+            <label for="fides-org-contact-url">${labelWithProIfNeeded("Contact URL", true)}</label>
+            ${helpHtml("contactUrl")}
+            <input id="fides-org-contact-url" name="contactUrl" type="url" placeholder="https://…/contact" />
           </div>
           <div class="fides-form-row">
-            <label for="fides-org-contact-support">${labelWithProIfNeeded("Public support URL", true)}</label>
-            ${helpHtml("contactSupport")}
-            <input id="fides-org-contact-support" name="contactSupport" type="url" placeholder="https://…/support" />
+            <label for="fides-org-book-meeting-url">${labelWithProIfNeeded("Book a meeting URL", true)}</label>
+            ${helpHtml("bookMeetingUrl")}
+            <input id="fides-org-book-meeting-url" name="bookMeetingUrl" type="url" placeholder="https://…/book" />
           </div>
         </div>
         <div class="fides-form-row">
@@ -818,6 +881,7 @@
           }
           ${formFieldsHtml()}
         </section>
+        ${formMediaSectionHtml()}
         <div class="fides-org-optional-sections"${mode === "update" ? " hidden" : ""}>
           ${formAccordionSectionsHtml()}
         </div>
@@ -849,10 +913,231 @@
   const updateIdEl = root.querySelector("#fides-org-update-id");
   const changeBtn = root.querySelector("#fides-org-change");
   const submitBlock = root.querySelector("#fides-org-submit-block");
+  const imageRowsEl = root.querySelector("#fides-org-image-rows");
+  const videoRowsEl = root.querySelector("#fides-org-video-rows");
+  const imageUploadStatusEl = root.querySelector("#fides-org-image-upload-status");
+  const imageRowsState = [{ url: "" }];
+  const videoRowsState = [{ url: "" }];
+
+  function mediaImageMax() {
+    return Number(v2Limits.mediaImages) || 10;
+  }
+
+  function mediaVideoMax() {
+    return Number(v2Limits.mediaVideos) || 3;
+  }
+
+  function collectMediaUrls(state) {
+    return state.map((entry) => String(entry.url || "").trim()).filter(Boolean);
+  }
+
+  function setImageUploadStatus(text) {
+    if (!imageUploadStatusEl) return;
+    if (!text) {
+      imageUploadStatusEl.hidden = true;
+      imageUploadStatusEl.textContent = "";
+      return;
+    }
+    imageUploadStatusEl.hidden = false;
+    imageUploadStatusEl.textContent = text;
+  }
+
+  function renderImageRows() {
+    if (!imageRowsEl) return;
+    const max = mediaImageMax();
+    const lastIndex = imageRowsState.length - 1;
+    imageRowsEl.innerHTML = imageRowsState
+      .map((entry, index) => {
+        const isLast = index === lastIndex;
+        const canAdd = imageRowsState.length < max;
+        let rowAction = "";
+        if (isLast && canAdd) {
+          rowAction = `<button type="button" class="fides-secondary-btn fides-media-action-btn" data-add-image="1">Add</button>`;
+        } else if (!isLast || imageRowsState.length > 1) {
+          rowAction = `<button type="button" class="fides-secondary-btn fides-media-action-btn" data-remove-image="${index}" aria-label="Remove image">Remove</button>`;
+        }
+        return `
+          <div class="fides-media-row" data-image-index="${index}">
+            <div class="fides-media-inputs fides-media-inputs--image">
+              <input type="url" class="fides-media-url-input" data-image-url="${index}" value="${escapeHtml(entry.url || "")}" placeholder="https://…" inputmode="url" autocomplete="url" />
+              <label class="fides-secondary-btn fides-media-action-btn fides-upload-btn">
+                Upload
+                <input type="file" data-image-file="${index}" accept="image/jpeg,image/png,image/webp,image/gif" hidden />
+              </label>
+              ${rowAction}
+            </div>
+            ${
+              entry.url
+                ? `<div class="fides-image-preview"><img src="${escapeHtml(entry.url)}" alt="Image preview" loading="lazy" /></div>`
+                : ""
+            }
+          </div>`;
+      })
+      .join("");
+  }
+
+  function renderVideoRows() {
+    if (!videoRowsEl) return;
+    const max = mediaVideoMax();
+    const lastIndex = videoRowsState.length - 1;
+    videoRowsEl.innerHTML = videoRowsState
+      .map((entry, index) => {
+        const isLast = index === lastIndex;
+        const canAdd = videoRowsState.length < max;
+        let rowAction = "";
+        if (isLast && canAdd) {
+          rowAction = `<button type="button" class="fides-secondary-btn fides-media-action-btn" data-add-video="1">Add</button>`;
+        } else if (!isLast || videoRowsState.length > 1) {
+          rowAction = `<button type="button" class="fides-secondary-btn fides-media-action-btn" data-remove-video="${index}" aria-label="Remove video">Remove</button>`;
+        }
+        return `
+          <div class="fides-media-row" data-video-index="${index}">
+            <div class="fides-media-inputs fides-media-inputs--video">
+              <input type="url" class="fides-media-url-input" data-video-url="${index}" value="${escapeHtml(entry.url || "")}" placeholder="https://youtube.com/…" inputmode="url" autocomplete="url" />
+              ${rowAction}
+            </div>
+          </div>`;
+      })
+      .join("");
+  }
+
+  function setMediaRowsFromUrls(images, videos) {
+    imageRowsState.length = 0;
+    const imageUrls = (Array.isArray(images) ? images : []).slice(0, mediaImageMax());
+    if (imageUrls.length) {
+      imageUrls.forEach((url) => imageRowsState.push({ url: String(url) }));
+    } else {
+      imageRowsState.push({ url: "" });
+    }
+    videoRowsState.length = 0;
+    const videoUrls = (Array.isArray(videos) ? videos : []).slice(0, mediaVideoMax());
+    if (videoUrls.length) {
+      videoUrls.forEach((url) => videoRowsState.push({ url: String(url) }));
+    } else {
+      videoRowsState.push({ url: "" });
+    }
+    renderImageRows();
+    renderVideoRows();
+    setImageUploadStatus("");
+  }
+
+  async function uploadImageFile(file, rowIndex) {
+    if (!file || !apiBase) {
+      setImageUploadStatus("Missing API configuration.");
+      return;
+    }
+    setImageUploadStatus("Uploading…");
+    const formData = new FormData();
+    formData.append("file", file);
+    const headers = {};
+    if (restNonce) headers["X-WP-Nonce"] = restNonce;
+    try {
+      const response = await fetch(`${apiBase}/submissions/card-image`, {
+        method: "POST",
+        credentials: "same-origin",
+        headers,
+        body: formData,
+      });
+      const json = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        setImageUploadStatus(json.message || "Image upload failed.");
+        return;
+      }
+      const url = json.url ? String(json.url) : "";
+      if (!url) {
+        setImageUploadStatus("Upload succeeded but no URL was returned.");
+        return;
+      }
+      if (imageRowsState[rowIndex]) {
+        imageRowsState[rowIndex].url = url;
+      }
+      renderImageRows();
+      applyTierFieldState();
+      setImageUploadStatus("Image uploaded.");
+    } catch (_err) {
+      setImageUploadStatus("Image upload failed due to a network error.");
+    }
+  }
+
+  function initOrgMediaControls() {
+    renderImageRows();
+    renderVideoRows();
+
+    if (imageRowsEl) {
+      imageRowsEl.addEventListener("input", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLInputElement) || !target.hasAttribute("data-image-url")) return;
+        const index = Number(target.getAttribute("data-image-url"));
+        if (!Number.isFinite(index) || !imageRowsState[index]) return;
+        imageRowsState[index].url = target.value.trim();
+        renderImageRows();
+        applyTierFieldState();
+      });
+
+      imageRowsEl.addEventListener("change", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLInputElement) || !target.hasAttribute("data-image-file")) return;
+        const index = Number(target.getAttribute("data-image-file"));
+        const file = target.files && target.files[0];
+        target.value = "";
+        if (!Number.isFinite(index) || !file) return;
+        uploadImageFile(file, index);
+      });
+
+      imageRowsEl.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        if (target.hasAttribute("data-add-image")) {
+          if (imageRowsState.length >= mediaImageMax()) return;
+          imageRowsState.push({ url: "" });
+          renderImageRows();
+          applyTierFieldState();
+          return;
+        }
+        const indexAttr = target.getAttribute("data-remove-image");
+        if (indexAttr == null) return;
+        const index = Number(indexAttr);
+        if (!Number.isFinite(index) || imageRowsState.length <= 1) return;
+        imageRowsState.splice(index, 1);
+        renderImageRows();
+        applyTierFieldState();
+      });
+    }
+
+    if (videoRowsEl) {
+      videoRowsEl.addEventListener("input", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLInputElement) || !target.hasAttribute("data-video-url")) return;
+        const index = Number(target.getAttribute("data-video-url"));
+        if (!Number.isFinite(index) || !videoRowsState[index]) return;
+        videoRowsState[index].url = target.value.trim();
+      });
+
+      videoRowsEl.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        if (target.hasAttribute("data-add-video")) {
+          if (videoRowsState.length >= mediaVideoMax()) return;
+          videoRowsState.push({ url: "" });
+          renderVideoRows();
+          applyTierFieldState();
+          return;
+        }
+        const indexAttr = target.getAttribute("data-remove-video");
+        if (indexAttr == null) return;
+        const index = Number(indexAttr);
+        if (!Number.isFinite(index) || videoRowsState.length <= 1) return;
+        videoRowsState.splice(index, 1);
+        renderVideoRows();
+        applyTierFieldState();
+      });
+    }
+  }
 
   applyTierFieldState();
   wireOfferingsField();
   setOfferingsValues([]);
+  initOrgMediaControls();
 
   const orgDescInput = root.querySelector("#fides-org-description");
   if (orgDescInput) {
@@ -866,25 +1151,27 @@
   }
 
   function getCheckedSectors() {
-    if (mode === "create") {
-      const selected = form.querySelector('input[name="sector"]:checked');
-      return selected ? [String(selected.value)] : [];
-    }
-    return Array.from(form.querySelectorAll('input[name="sectors"]:checked')).map((el) => String(el.value));
+    const selected = form.querySelector('input[name="sector"]:checked');
+    return selected ? [String(selected.value)] : [];
   }
 
   function setCheckedSectors(values) {
-    const list = (values || []).map(String);
-    if (mode === "create") {
-      const selected = list[0] || "";
-      form.querySelectorAll('input[name="sector"]').forEach((el) => {
-        el.checked = String(el.value) === selected;
-      });
-      return;
-    }
-    const set = new Set(list);
-    form.querySelectorAll('input[name="sectors"]').forEach((el) => {
-      el.checked = set.has(String(el.value));
+    const selected = (values || []).map(String)[0] || "";
+    form.querySelectorAll('input[name="sector"]').forEach((el) => {
+      el.checked = String(el.value) === selected;
+    });
+  }
+
+  function getCheckedEcosystemRoleCodes() {
+    return Array.from(form.querySelectorAll('input[name="ecosystemRoleCodes"]:checked')).map((el) =>
+      String(el.value)
+    );
+  }
+
+  function setCheckedEcosystemRoleCodes(values) {
+    const selected = new Set((values || []).map(String));
+    form.querySelectorAll('input[name="ecosystemRoleCodes"]').forEach((el) => {
+      el.checked = selected.has(String(el.value));
     });
   }
 
@@ -929,21 +1216,23 @@
       if (!el) return;
       el.value = idents[field.key] ? String(idents[field.key]) : "";
     });
-    const supportEl = root.querySelector("#fides-org-contact-support");
-    const publicEmailEl = root.querySelector("#fides-org-contact-public-email");
-    if (publicEmailEl) {
-      publicEmailEl.value =
-        payload.contact && payload.contact.email ? String(payload.contact.email) : "";
+    const contactUrlEl = root.querySelector("#fides-org-contact-url");
+    const bookMeetingUrlEl = root.querySelector("#fides-org-book-meeting-url");
+    if (contactUrlEl) {
+      contactUrlEl.value =
+        payload.contact && payload.contact.contactUrl ? String(payload.contact.contactUrl) : "";
     }
-    if (supportEl) {
-      const support =
-        payload.contact && payload.contact.support ? String(payload.contact.support) : "";
-      supportEl.value = support;
+    if (bookMeetingUrlEl) {
+      bookMeetingUrlEl.value =
+        payload.contact && payload.contact.bookMeetingUrl ? String(payload.contact.bookMeetingUrl) : "";
     }
     const manifestoEl = root.querySelector("#fides-org-manifesto-supporter");
     if (manifestoEl) manifestoEl.checked = payload.fidesManifestoSupporter === true;
     fillCertificationsFromPayload(payload.certifications);
     setCheckedSectors(payload.sectors || []);
+    setCheckedEcosystemRoleCodes(payload.ecosystemRoleCodes || []);
+    const media = payload.media && typeof payload.media === "object" ? payload.media : {};
+    setMediaRowsFromUrls(media.images, media.videos);
     if (mode === "create" && idPreviewEl && nameInput) {
       idPreviewEl.textContent = orgIdPreview(nameInput.value);
     }
@@ -984,17 +1273,25 @@
     if (Object.keys(identifiers).length) {
       payload.identifiers = identifiers;
     }
-    const supportEl = root.querySelector("#fides-org-contact-support");
-    const publicEmailEl = root.querySelector("#fides-org-contact-public-email");
-    const support = supportEl ? String(supportEl.value || "").trim() : "";
-    const publicEmail = publicEmailEl ? String(publicEmailEl.value || "").trim() : "";
+    const contactUrlEl = root.querySelector("#fides-org-contact-url");
+    const bookMeetingUrlEl = root.querySelector("#fides-org-book-meeting-url");
+    const contactUrl = contactUrlEl ? String(contactUrlEl.value || "").trim() : "";
+    const bookMeetingUrl = bookMeetingUrlEl ? String(bookMeetingUrlEl.value || "").trim() : "";
     const contact = {};
-    if (publicEmail) contact.email = publicEmail;
-    if (support) contact.support = support;
+    if (contactUrl) contact.contactUrl = contactUrl;
+    if (bookMeetingUrl) contact.bookMeetingUrl = bookMeetingUrl;
     if (Object.keys(contact).length) payload.contact = contact;
     const manifestoEl = root.querySelector("#fides-org-manifesto-supporter");
     payload.fidesManifestoSupporter = Boolean(manifestoEl && manifestoEl.checked);
     payload.certifications = buildCertificationsFromForm();
+    payload.ecosystemRoleCodes = getCheckedEcosystemRoleCodes();
+    const videos = collectMediaUrls(videoRowsState);
+    const images = collectMediaUrls(imageRowsState);
+    if (videos.length || images.length) {
+      payload.media = {};
+      if (videos.length) payload.media.videos = videos;
+      if (images.length) payload.media.images = images;
+    }
     return payload;
   }
 
@@ -1015,6 +1312,8 @@
 
   function revealFields(show) {
     if (fieldsWrap) fieldsWrap.hidden = !show;
+    const mediaSection = root.querySelector(".fides-org-media-section");
+    if (mediaSection) mediaSection.hidden = !show;
     const optionalSections = root.querySelector(".fides-org-optional-sections");
     if (optionalSections) optionalSections.hidden = !show;
   }
@@ -1187,7 +1486,7 @@
       return;
     }
     if (!payload.sectors.length) {
-      setMessage(mode === "create" ? "Select a sector." : "Select at least one sector.", "error");
+      setMessage("Select a sector.", "error");
       return;
     }
     if (!payload.country) {

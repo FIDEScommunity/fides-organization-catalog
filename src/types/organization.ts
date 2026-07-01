@@ -1,5 +1,13 @@
 // Source types (what contributors write in community-catalogs/**/organization-catalog.json)
 
+import type { OrganizationEcosystemRoleCode } from '../lib/ecosystemRoleCodes.js';
+
+export type { OrganizationEcosystemRoleCode } from '../lib/ecosystemRoleCodes.js';
+export {
+  ORGANIZATION_ECOSYSTEM_ROLE_CODES,
+  ORGANIZATION_ECOSYSTEM_ROLE_LABELS,
+} from '../lib/ecosystemRoleCodes.js';
+
 /** Closed sector taxonomy (schema enum). */
 export type OrganizationSectorCode =
   | 'public_sector'
@@ -77,6 +85,12 @@ export interface OrganizationCertification {
 }
 
 /** Optional organization identifiers (at most one value per type). */
+/** Promotional media (Pro tier in public export). */
+export interface OrganizationMedia {
+  videos?: string[];
+  images?: string[];
+}
+
 export interface OrganizationIdentifiers {
   business_registration_number?: string;
   vat_number?: string;
@@ -109,6 +123,10 @@ export interface SourceOrganization {
     contactUrl?: string;
     bookMeetingUrl?: string;
   };
+  /** Optional self-declared ecosystem roles (multi-select in forms). */
+  ecosystemRoleCodes?: OrganizationEcosystemRoleCode[];
+  /** Pro-only: promotional videos and images for the public listing modal. */
+  media?: OrganizationMedia;
 }
 
 export interface SourceOrganizationCatalog {
@@ -149,6 +167,7 @@ export interface AggregatedOrganization {
     contactUrl?: string;
     bookMeetingUrl?: string;
   };
+  media?: OrganizationMedia;
 
   source: OrganizationSource;
   /** Community catalog JSON path relative to repo root (POSIX-style slashes). */
@@ -161,6 +180,11 @@ export interface AggregatedOrganization {
     businessWallets: EcosystemRef[];
     relyingParties: EcosystemRef[];
   };
+
+  /** Declared in community-catalog JSON (form submissions). */
+  declaredEcosystemRoleCodes?: OrganizationEcosystemRoleCode[];
+  /** Declared + cross-catalog derived roles (deduped); used for filters and display. */
+  ecosystemRoleCodes: OrganizationEcosystemRoleCode[];
 
   /** Present when org has a DID; profileAvailable set by crawler against public Blue Pages API */
   bluePages?: {

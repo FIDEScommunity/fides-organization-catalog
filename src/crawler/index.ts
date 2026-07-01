@@ -17,6 +17,11 @@ import type {
   OrganizationSectorCode,
 } from '../types/organization.js';
 import { ORGANIZATION_SECTOR_CODES } from '../types/organization.js';
+import {
+  deriveEcosystemRoleCodesFromLinks,
+  mergeEcosystemRoleCodes,
+  normalizeEcosystemRoleCodes,
+} from '../lib/ecosystemRoleCodes.js';
 
 const ROOT = path.resolve(process.cwd());
 
@@ -362,6 +367,18 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
   };
 }
 
+function normalizeOrgContact(
+  contact?: { contactUrl?: string; bookMeetingUrl?: string; email?: string; support?: string },
+): { contactUrl?: string; bookMeetingUrl?: string } | undefined {
+  if (!contact || typeof contact !== 'object') return undefined;
+  const out: { contactUrl?: string; bookMeetingUrl?: string } = {};
+  const contactUrl = String(contact.contactUrl || contact.support || '').trim();
+  const bookMeetingUrl = String(contact.bookMeetingUrl || '').trim();
+  if (contactUrl) out.contactUrl = contactUrl;
+  if (bookMeetingUrl) out.bookMeetingUrl = bookMeetingUrl;
+  return Object.keys(out).length ? out : undefined;
+}
+
 async function initValidator() {
   const schema = JSON.parse(await fs.readFile(CONFIG.schemaPath, 'utf-8'));
   const ajv = new Ajv2020({ allErrors: true });
@@ -419,18 +436,24 @@ async function crawl(): Promise<void> {
       cross,
     );
 
+    const declaredEcosystemRoleCodes = normalizeEcosystemRoleCodes(org.ecosystemRoleCodes);
+    const derivedEcosystemRoleCodes = deriveEcosystemRoleCodesFromLinks(ecosystemRoles);
+    const ecosystemRoleCodes = mergeEcosystemRoleCodes(declaredEcosystemRoleCodes, derivedEcosystemRoleCodes);
+
     const totalRoles =
+      ecosystemRoleCodes.length +
       ecosystemRoles.issuers.length +
       ecosystemRoles.credentialTypes.length +
       ecosystemRoles.personalWallets.length +
       ecosystemRoles.businessWallets.length +
       ecosystemRoles.relyingParties.length;
 
-    console.log(`  ${org.name} (${org.id}) — ${totalRoles} ecosystem role(s)`);
+    console.log(`  ${org.name} (${org.id}) — ${ecosystemRoleCodes.length} role code(s), ${totalRoles} catalog link(s)`);
 
     const didForBp = org.identifiers?.did;
     const certifications = dedupeCertifications(org.certifications);
     const sectors = normalizeSectors(org.sectors);
+    const normalizedContact = normalizeOrgContact(org.contact);
     organizations.push({
       id: org.id,
       name: org.name,
@@ -446,10 +469,17 @@ async function crawl(): Promise<void> {
       ...(Array.isArray(org.offerings) && org.offerings.length ? { offerings: org.offerings } : {}),
       ...(org.catalogTier ? { catalogTier: org.catalogTier } : {}),
       ...(org.fidesManifestoSupporter === true ? { fidesManifestoSupporter: true } : {}),
-      contact: org.contact,
+      ...(normalizedContact ? { contact: normalizedContact } : {}),
+      ...(org.media &&
+      ((Array.isArray(org.media.videos) && org.media.videos.length) ||
+        (Array.isArray(org.media.images) && org.media.images.length))
+        ? { media: org.media }
+        : {}),
       source: 'community-catalog',
       catalogUrl: repoRelativeCatalogPath(filePath),
       ecosystemRoles,
+      ecosystemRoleCodes,
+      ...(declaredEcosystemRoleCodes.length ? { declaredEcosystemRoleCodes } : {}),
       bluePages: didForBp ? { did: didForBp } : undefined,
       firstSeenAt: history[org.id].firstSeenAt,
       updatedAt,

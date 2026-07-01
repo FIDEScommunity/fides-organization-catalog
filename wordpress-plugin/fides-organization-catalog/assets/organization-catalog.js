@@ -32,6 +32,8 @@
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
     globe: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
     tag: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
+    /** Lucide "briefcase" — commercial offerings (distinct from sector/tag chips). */
+    offerings: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>',
     viewGrid: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>',
     viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>',
   };
@@ -170,7 +172,7 @@
     });
   }
 
-  /** Schema key order for Organization details and search (labels in English). */
+  /** Schema key order for Organization identifiers and search (labels in English). */
   const ORG_IDENTIFIER_FIELDS = [
     ['did', 'DID'],
     ['business_registration_number', 'Business registration number'],
@@ -524,18 +526,20 @@
 
   const OFFICIAL_ACCOUNT_TITLE = 'Official account — claimed by the organization';
 
-  /** Grid card: outline badges bottom-left in footer (quiet, no fill). */
+  /** Grid card: listing badge + outline badges bottom-left in footer (quiet, no fill). */
   function renderOrgCardFooterBadges(org) {
     const parts = [];
-    if (orgCatalogTierIsPro(org)) {
+
+    if (tierUiEnabled() && window.FidesCatalogUI && typeof window.FidesCatalogUI.buildCatalogListingHeaderBadgeHtml === 'function') {
+      const listingBadge = window.FidesCatalogUI.buildCatalogListingHeaderBadgeHtml(org, {
+        tierUiEnabled: tierUiEnabled(),
+        editAccess: config.editAccess,
+      });
+      if (listingBadge) parts.push(listingBadge);
+    } else if (orgCatalogTierIsPro(org)) {
       parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--official" role="img" aria-label="Official account" title="${OFFICIAL_ACCOUNT_TITLE}">${icons.official}</span>`);
     }
-    if (org && org.fidesManifestoSupporter === true) {
-      parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--manifesto" role="img" aria-label="FIDES Supporter" title="FIDES Supporter">${icons.community}</span>`);
-    }
-    if (orgShowsBluePagesListBadge(org)) {
-      parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--bp" role="img" aria-label="Blue Pages verified profile available" title="Blue Pages verified profile available">${icons.shield}</span>`);
-    }
+
     if (orgHasQtspBadge(org)) {
       parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--qtsp" role="img" aria-label="EU Qualified Trust Service Provider (eIDAS)" title="EU Qualified Trust Service Provider (eIDAS)">${icons.qtsp}</span>`);
     }
@@ -543,7 +547,8 @@
       parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--diacc" role="img" aria-label="DIACC Certified (PCTF)" title="DIACC Certified (PCTF)">${icons.diacc}</span>`);
     }
     if (parts.length === 0) return '';
-    return `<div class="fides-org-card-footer-badges">${parts.join('')}</div>`;
+    const listingClass = tierUiEnabled() ? ' fides-org-card-footer-listing' : '';
+    return `<div class="fides-org-card-footer-badges${listingClass}">${parts.join('')}</div>`;
   }
 
   /** List row: compact status icons next to flag (not on logo). Empty string when none — avoids extra flex gap. */
@@ -568,12 +573,12 @@
     return `<div class="fides-row-badges">${parts.join('')}</div>`;
   }
 
-  function orgCardAriaLabel(org) {
+  function orgCardAriaLabel(org, forListView) {
     const name = escapeHtml(org.name);
     const bits = [];
     if (orgCatalogTierIsPro(org)) bits.push('official account');
-    if (orgShowsBluePagesListBadge(org)) bits.push('has Blue Pages verified profile');
-    if (org && org.fidesManifestoSupporter === true) bits.push('FIDES Supporter');
+    if (forListView && orgShowsBluePagesListBadge(org)) bits.push('has Blue Pages verified profile');
+    if (forListView && org && org.fidesManifestoSupporter === true) bits.push('FIDES Supporter');
     if (orgHasQtspBadge(org)) bits.push('qualified trust service provider');
     if (orgHasDiaccBadge(org)) bits.push('DIACC certified');
     if (bits.length === 0) return name;
@@ -627,6 +632,30 @@
   /** Sector filter checkboxes: alphabetical by display label (English). */
   const SECTOR_CODES_ALPHABETIC = Object.keys(SECTOR_LABELS).sort((a, b) =>
     SECTOR_LABELS[a].localeCompare(SECTOR_LABELS[b], 'en', { sensitivity: 'base' }),
+  );
+
+  const ECOSYSTEM_ROLE_OPTIONS = [
+    { value: 'personal_wallet_provider', label: 'Personal Wallet Provider' },
+    { value: 'business_wallet_provider', label: 'Business Wallet Provider' },
+    { value: 'vc_type_authority', label: 'VC Type Authority' },
+    { value: 'issuer', label: 'Issuer' },
+    { value: 'relying_party', label: 'Relying Party' },
+    { value: 'idv_provider', label: 'IDV Provider' },
+    { value: 'kyb_provider', label: 'KYB Provider' },
+    { value: 'system_integrator', label: 'System Integrator' },
+    { value: 'consultancy', label: 'Consultancy' },
+    { value: 'software_vendor', label: 'Software Vendor' },
+    { value: 'business_registry', label: 'Business Registry' },
+    { value: 'industry_association', label: 'Industry Association' },
+    { value: 'standards_development_organization', label: 'Standards Development Organization (SDO)' },
+    { value: 'conformity_scheme_owner', label: 'Conformity Scheme Owner' },
+    { value: 'national_accreditation_body', label: 'National Accreditation Body (NAB)' },
+    { value: 'certification_body', label: 'Certification Body (CB)' },
+    { value: 'conformity_assessment_body', label: 'Conformity Assessment Body (CAB)' },
+  ];
+
+  const ECOSYSTEM_ROLE_LABELS = Object.fromEntries(
+    ECOSYSTEM_ROLE_OPTIONS.map((opt) => [opt.value, opt.label]),
   );
 
   const LEGACY_SECTOR_TO_CANONICAL = {
@@ -751,15 +780,23 @@
     return `<p class="fides-modal-provider fides-modal-provider--org">${parts.join('<span class="fides-modal-header-meta-sep" aria-hidden="true">·</span>')}</p>`;
   }
 
+  function orgEcosystemRoleLabels(org) {
+    return orgEcosystemRoleCodes(org)
+      .map((code) => ECOSYSTEM_ROLE_LABELS[code] || code)
+      .sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+  }
+
   function renderOrganizationModalAboutBody(org) {
     const isCommunity = orgCatalogTierIsCommunity(org);
-    const descRaw = org && org.description;
-    const desc = typeof descRaw === 'string' && descRaw.trim() ? descRaw.trim() : '';
     const codes = orgSectorCodes(org);
     const sectorLabels = codes
       .map((c) => SECTOR_LABELS[c] || c)
       .sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
     const sectorInner = sectorLabels.map((l) => `<span class="fides-tag">${escapeHtml(l)}</span>`).join('');
+    const ecosystemRoleLabels = orgEcosystemRoleLabels(org);
+    const ecosystemRolesInner = ecosystemRoleLabels
+      .map((l) => `<span class="fides-tag fides-tag--ecosystem-role">${escapeHtml(l)}</span>`)
+      .join('');
     const rawTags = Array.isArray(org.tags) ? org.tags : [];
     const tagStrings = rawTags.filter((t) => typeof t === 'string' && t.trim()).map((t) => t.trim());
     const sortedTags = tagStrings.slice().sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
@@ -768,18 +805,15 @@
     const offeringStrings = rawOfferings.filter((item) => typeof item === 'string' && item.trim()).map((item) => item.trim());
     const sortedOfferings = offeringStrings.slice().sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
     const offeringsInner = sortedOfferings.map((item) => `<span class="fides-tag fides-tag--offering">${escapeHtml(item)}</span>`).join('');
-    const descBlock = desc
-      ? `<p class="fides-modal-description fides-modal-org-overview-desc">${escapeHtml(desc)}</p>`
-      : `<p class="fides-modal-description fides-modal-org-overview-desc fides-modal-org-overview-desc--empty">\u2014</p>`;
     return `
-      ${descBlock}
       <div class="fides-modal-taxonomy fides-modal-taxonomy--org-overview">
         <div class="fides-modal-taxonomy-row">
           <span class="fides-modal-taxonomy-label">${icons.tag} Sectors</span>
           <div class="fides-modal-taxonomy-tags">${sectorInner || '<span class="fides-modal-taxonomy-empty">\u2014</span>'}</div>
         </div>
+        ${ecosystemRoleLabels.length ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.share} Ecosystem roles</span><div class="fides-modal-taxonomy-tags">${ecosystemRolesInner}</div></div>` : ''}
         ${!isCommunity && tagsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.tag} Tags</span><div class="fides-modal-taxonomy-tags">${tagsInner}</div></div>` : ''}
-        ${!isCommunity && offeringsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.tag} Services</span><div class="fides-modal-taxonomy-tags">${offeringsInner}</div></div>` : ''}
+        ${!isCommunity && offeringsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.offerings} Offerings</span><div class="fides-modal-taxonomy-tags">${offeringsInner}</div></div>` : ''}
       </div>
     `;
   }
@@ -1314,14 +1348,29 @@
     return [...set].sort();
   }
 
-  function hasRole(org, role) {
+  function orgEcosystemRoleCodes(org) {
+    if (Array.isArray(org.ecosystemRoleCodes) && org.ecosystemRoleCodes.length) {
+      return org.ecosystemRoleCodes.map(String);
+    }
     const r = org.ecosystemRoles || {};
+    const derived = [];
+    if ((r.personalWallets || []).length) derived.push('personal_wallet_provider');
+    if ((r.businessWallets || []).length) derived.push('business_wallet_provider');
+    if ((r.credentialTypes || []).length) derived.push('vc_type_authority');
+    if ((r.issuers || []).length) derived.push('issuer');
+    if ((r.relyingParties || []).length) derived.push('relying_party');
+    return derived;
+  }
+
+  function hasRole(org, role) {
+    const codes = orgEcosystemRoleCodes(org);
     switch (role) {
-      case 'issuer': return (r.issuers || []).length > 0;
-      case 'credential': return (r.credentialTypes || []).length > 0;
-      case 'wallet': return (r.personalWallets || []).length + (r.businessWallets || []).length > 0;
-      case 'rp': return (r.relyingParties || []).length > 0;
-      default: return true;
+      case 'issuer': return codes.includes('issuer');
+      case 'credential': return codes.includes('vc_type_authority');
+      case 'wallet':
+        return codes.includes('personal_wallet_provider') || codes.includes('business_wallet_provider');
+      case 'rp': return codes.includes('relying_party');
+      default: return codes.includes(role);
     }
   }
 
@@ -1335,7 +1384,7 @@
       country: {},
       sector: {},
       certification: {},
-      role: { issuer: 0, credential: 0, wallet: 0, rp: 0 },
+      role: Object.fromEntries(ECOSYSTEM_ROLE_OPTIONS.map((opt) => [opt.value, 0])),
       officialOnly: 0,
     };
     for (const org of organizations) {
@@ -1351,10 +1400,11 @@
       for (const sub of orgCertificationSubValues(org)) {
         facets.certification[sub] = (facets.certification[sub] || 0) + 1;
       }
-      if (hasRole(org, 'issuer')) facets.role.issuer += 1;
-      if (hasRole(org, 'credential')) facets.role.credential += 1;
-      if (hasRole(org, 'wallet')) facets.role.wallet += 1;
-      if (hasRole(org, 'rp')) facets.role.rp += 1;
+      for (const code of orgEcosystemRoleCodes(org)) {
+        if (Object.prototype.hasOwnProperty.call(facets.role, code)) {
+          facets.role[code] += 1;
+        }
+      }
     }
     return facets;
   }
@@ -1424,6 +1474,45 @@
     `;
   }
 
+  function orgHasIdentifiers(org) {
+    const idents = org && org.identifiers;
+    if (!idents || typeof idents !== 'object') return false;
+    return ORG_IDENTIFIER_FIELDS.some(([key]) => {
+      const raw = idents[key];
+      return typeof raw === 'string' && raw.trim();
+    });
+  }
+
+  function renderOrganizationListingHeaderBadge(org) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildCatalogListingHeaderBadgeHtml === 'function') {
+      return window.FidesCatalogUI.buildCatalogListingHeaderBadgeHtml(org, {
+        tierUiEnabled: tierUiEnabled(),
+        editAccess: config.editAccess,
+      });
+    }
+    return '';
+  }
+
+  function renderOrganizationModalFooter(org, isCommunity) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildOrganizationContactFooterHtml === 'function') {
+      return window.FidesCatalogUI.buildOrganizationContactFooterHtml(org.contact, {
+        tierUiEnabled: tierUiEnabled(),
+        isCommunity: isCommunity,
+      });
+    }
+    return '';
+  }
+
+  function renderOrganizationHeroSection(org) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildOrganizationHeroSectionHtml === 'function') {
+      return window.FidesCatalogUI.buildOrganizationHeroSectionHtml(org, {
+        tierUiEnabled: tierUiEnabled(),
+        editAccess: config.editAccess,
+      });
+    }
+    return '';
+  }
+
   function renderModal() {
     if (!selectedOrg) return '';
     const org = selectedOrg;
@@ -1444,10 +1533,8 @@
 
     const certCount = countCatalogCertifications(org);
     const certCountBadge = certCount > 0 ? ` <span class="fides-accordion-count">${certCount}</span>` : '';
-
-    const officialHeaderBadge = orgCatalogTierIsPro(org)
-      ? `<span class="fides-modal-header-official-badge" role="status" title="${OFFICIAL_ACCOUNT_TITLE}">${icons.official}<span class="fides-modal-header-official-label">Official</span></span>`
-      : '';
+    const identifierRowsHtml = renderOrganizationIdentifierRows(org);
+    const listingHeaderBadge = renderOrganizationListingHeaderBadge(org);
 
     return `
       <div class="fides-modal-overlay fides-modal-overlay--organization" id="fides-modal-overlay" data-theme="${escapeHtml(theme)}">
@@ -1461,7 +1548,7 @@
               <div class="fides-modal-title-wrap">
                 <div class="fides-modal-title-row">
                   <h2 class="fides-modal-title" id="fides-modal-title">${escapeHtml(org.name)}</h2>
-                  ${officialHeaderBadge}
+                  ${listingHeaderBadge}
                 </div>
                 ${renderOrganizationModalHeaderMeta(org)}
               </div>
@@ -1474,6 +1561,7 @@
           </div>
 
           <div class="fides-modal-body">
+            ${renderOrganizationHeroSection(org)}
             <div class="fides-accordion is-open" id="fides-accordion-about">
               <div class="fides-accordion-header-bar">
                 <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
@@ -1487,23 +1575,6 @@
                 ${renderOrganizationModalAboutBody(org)}
               </div>
             </div>
-
-            ${orgHasVerifiedProfileAccordion(org) ? `
-            <div class="fides-accordion" id="fides-accordion-bluepages">
-              <div class="fides-accordion-header-bar">
-                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
-                  <span class="fides-accordion-title">${icons.shield} Verified profile (Blue Pages)</span>
-                </button>
-                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle Blue Pages verified profile">
-                  <span class="fides-accordion-chevron">${icons.chevronDown}</span>
-                </button>
-              </div>
-              <div class="fides-accordion-body">
-                <div id="fides-org-bluepages-root" class="fides-org-bluepages" data-did="${escapeHtml(orgCatalogDid(org))}">
-                  <p class="fides-org-bluepages-loading">Loading verified profile…</p>
-                </div>
-              </div>
-            </div>` : ''}
 
             <!-- Role accordions -->
             ${roleSections.map((sec) => {
@@ -1557,36 +1628,42 @@
               </div>
             </div>
 
-            <!-- Other details -->
-            <div class="fides-accordion is-open" id="fides-accordion-details">
+            ${orgHasIdentifiers(org) ? `
+            <div class="fides-accordion" id="fides-accordion-identifiers">
               <div class="fides-accordion-header-bar">
-                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
-                  <span class="fides-accordion-title">${icons.building} Organization details</span>
+                <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+                  <span class="fides-accordion-title">${icons.building} Organization Identifiers</span>
                 </button>
-                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="true" aria-label="Toggle details">
+                <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle organization identifiers">
                   <span class="fides-accordion-chevron">${icons.chevronDown}</span>
                 </button>
               </div>
               <div class="fides-accordion-body">
                 <div class="fides-details-kv">
-                  ${org.legalName ? `<div class="fides-kv-row"><span class="fides-kv-key">Legal name</span><span class="fides-kv-val">${escapeHtml(org.legalName)}</span></div>` : ''}
-                  ${(tierUiEnabled() ? orgCatalogTierIsPro(org) : orgWebsiteHref(org.website)) && orgWebsiteHref(org.website) ? `<div class="fides-kv-row"><span class="fides-kv-key">Website</span><span class="fides-kv-val fides-kv-val--url"><a href="${escapeHtml(orgWebsiteHref(org.website))}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-url-ellipsis" onclick="event.stopPropagation();">${escapeHtml(orgWebsiteLabel(org.website))} ${icons.externalLink}</a></span></div>` : ''}
-                  ${renderOrganizationIdentifierRows(org)}
-                  ${!isCommunity && org.contact?.email && String(org.contact.email).trim() ? `<div class="fides-kv-row"><span class="fides-kv-key">Email</span><span class="fides-kv-val"><a href="mailto:${escapeHtml(String(org.contact.email).trim())}" class="fides-modal-link-inline">${escapeHtml(String(org.contact.email).trim())}</a></span></div>` : ''}
-                  ${!isCommunity && org.contact?.support && String(org.contact.support).trim() ? `<div class="fides-kv-row"><span class="fides-kv-key">Support</span><span class="fides-kv-val fides-kv-val--url"><a href="${escapeHtml(String(org.contact.support).trim())}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-url-ellipsis" onclick="event.stopPropagation();">${escapeHtml(String(org.contact.support).trim())} ${icons.externalLink}</a></span></div>` : ''}
-                  <div class="fides-kv-row"><span class="fides-kv-key">Last updated</span><span class="fides-kv-val">${escapeHtml(org.updatedAt ? formatDate(org.updatedAt) : '—')}</span></div>
+                  ${identifierRowsHtml}
                 </div>
               </div>
-            </div>
+            </div>` : ''}
           </div>
+          ${renderOrganizationModalFooter(org, isCommunity)}
         </div>
       </div>
     `;
   }
 
+  /** Hide filter choices with zero matches, except keep active selections visible. */
+  function filterOptionVisible(count, selectedList, value) {
+    return count > 0 || (Array.isArray(selectedList) && selectedList.includes(value));
+  }
+
   function renderCheckboxGroup(title, key, options, optionLabels, facets) {
     if (!options || options.length === 0) return '';
     const selected = filters[key] || [];
+    const visibleOptions = options.filter((opt) => {
+      const n = facets && facets[key] ? facets[key][opt] || 0 : 0;
+      return filterOptionVisible(n, selected, opt);
+    });
+    if (!visibleOptions.length) return '';
     const expanded = filterGroupState[key] !== false;
     const hasActiveClass = selected.length > 0 ? 'has-active' : '';
     return `
@@ -1597,7 +1674,7 @@
           ${icons.chevronDown}
         </button>
         <div class="fides-filter-options">
-          ${options.map((opt) => {
+          ${visibleOptions.map((opt) => {
             const label = (optionLabels && optionLabels[opt]) ? optionLabels[opt] : (key === 'country' ? countryName(opt) : opt);
             const n = facets && facets[key] ? facets[key][opt] || 0 : 0;
             return `
@@ -1624,19 +1701,26 @@
     const selected = filters.certification || [];
     const expanded = filterGroupState.certification !== false;
     const hasActiveClass = selected.length > 0 ? 'has-active' : '';
-    const rows = parentCodes.map((code) => {
+    const rows = parentCodes.flatMap((code) => {
       const label = CERTIFICATION_LABELS[code] || code;
       const n = (facets.certification && facets.certification[code]) || 0;
+      if (!filterOptionVisible(n, selected, code)) return [];
       const parentRow = `
         <label class="fides-filter-checkbox">
           <input type="checkbox" data-filter-group="certification" value="${escapeHtml(code)}" ${selected.includes(code) ? 'checked' : ''}>
           <span>${escapeHtml(label)}<span class="fides-filter-option-count">(${n})</span></span>
         </label>`;
       const children = certificationChildOptions(code);
-      if (!children.length) return parentRow;
-      const anyChildSelected = children.some((ch) => selected.includes(`${code}:${ch}`));
+      if (!children.length) return [parentRow];
+      const visibleChildren = children.filter((ch) => {
+        const subVal = `${code}:${ch}`;
+        const sn = (facets.certification && facets.certification[subVal]) || 0;
+        return filterOptionVisible(sn, selected, subVal);
+      });
+      if (!visibleChildren.length) return [parentRow];
+      const anyChildSelected = visibleChildren.some((ch) => selected.includes(`${code}:${ch}`));
       const open = certSubExpanded[code] === true || anyChildSelected;
-      const childRows = children.map((ch) => {
+      const childRows = visibleChildren.map((ch) => {
         const subVal = `${code}:${ch}`;
         const subLabel = certificationSubLabel(code, ch);
         const sn = (facets.certification && facets.certification[subVal]) || 0;
@@ -1646,13 +1730,15 @@
             <span>${escapeHtml(subLabel)}<span class="fides-filter-option-count">(${sn})</span></span>
           </label>`;
       }).join('');
-      return `
-        ${parentRow}
-        <button type="button" class="fides-filter-subtoggle" data-cert-subtoggle="${escapeHtml(code)}" aria-expanded="${open}">
-          ${icons.chevronDown}<span>${open ? 'Hide' : 'Show'} ${children.length} options</span>
+      return [
+        parentRow,
+        `<button type="button" class="fides-filter-subtoggle" data-cert-subtoggle="${escapeHtml(code)}" aria-expanded="${open}">
+          ${icons.chevronDown}<span>${open ? 'Hide' : 'Show'} ${visibleChildren.length} options</span>
         </button>
-        <div class="fides-filter-suboptions" ${open ? '' : 'hidden'}>${childRows}</div>`;
+        <div class="fides-filter-suboptions" ${open ? '' : 'hidden'}>${childRows}</div>`,
+      ];
     }).join('');
+    if (!rows) return '';
     return `
       <div class="fides-filter-group collapsible ${expanded ? '' : 'collapsed'} ${hasActiveClass}" data-filter-group="certification">
         <button class="fides-filter-label-toggle" type="button" aria-expanded="${expanded}">
@@ -1673,12 +1759,31 @@
     const facets = computeOrganizationFilterFacets();
     const countryOptions = uniqueValues(organizations, (o) => o.country)
       .sort((a, b) => countryName(a).localeCompare(countryName(b)));
-    const roleOptions = [
-      { value: 'issuer', label: 'Issuer' },
-      { value: 'credential', label: 'Credential Authority' },
-      { value: 'wallet', label: 'Wallet Provider' },
-      { value: 'rp', label: 'Relying Party' },
-    ];
+    const roleOptions = ECOSYSTEM_ROLE_OPTIONS;
+    const visibleRoleOptions = roleOptions.filter((opt) => {
+      const n = facets.role[opt.value] || 0;
+      return filterOptionVisible(n, filters.role, opt.value);
+    });
+    const roleFilterGroup = visibleRoleOptions.length ? `
+          <div class="fides-filter-group collapsible ${filterGroupState.role !== false ? '' : 'collapsed'} ${filters.role.length > 0 ? 'has-active' : ''}" data-filter-group="role">
+            <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.role !== false}">
+              <span class="fides-filter-label">Ecosystem Role</span>
+              <span class="fides-filter-active-indicator"></span>
+              ${icons.chevronDown}
+            </button>
+            <div class="fides-filter-options">
+              ${visibleRoleOptions.map((opt) => {
+                const n = facets.role[opt.value] || 0;
+                return `
+                <label class="fides-filter-checkbox">
+                  <input type="checkbox" data-filter-group="role" value="${escapeHtml(opt.value)}" ${filters.role.includes(opt.value) ? 'checked' : ''}>
+                  <span>${escapeHtml(opt.label)}<span class="fides-filter-option-count">(${n})</span></span>
+                </label>
+              `;
+              }).join('')}
+            </div>
+          </div>` : '';
+    const showOfficialOnlyFilter = filterOptionVisible(facets.officialOnly || 0, filters.officialOnly ? ['true'] : [], 'true');
     return `
       <aside class="fides-sidebar">
         <div class="fides-sidebar-header">
@@ -1689,7 +1794,7 @@
           </div>
         </div>
         <div class="fides-sidebar-content">
-          ${tierUiEnabled() ? `
+          ${tierUiEnabled() && showOfficialOnlyFilter ? `
           <div class="fides-quick-filters">
             <span class="fides-quick-filters-title">Quick filters</span>
             <label class="fides-filter-checkbox">
@@ -1698,24 +1803,7 @@
             </label>
           </div>
           ` : ''}
-          <div class="fides-filter-group collapsible ${filterGroupState.role !== false ? '' : 'collapsed'} ${filters.role.length > 0 ? 'has-active' : ''}" data-filter-group="role">
-            <button class="fides-filter-label-toggle" type="button" aria-expanded="${filterGroupState.role !== false}">
-              <span class="fides-filter-label">Ecosystem Role</span>
-              <span class="fides-filter-active-indicator"></span>
-              ${icons.chevronDown}
-            </button>
-            <div class="fides-filter-options">
-              ${roleOptions.map((opt) => {
-                const n = facets.role[opt.value] || 0;
-                return `
-                <label class="fides-filter-checkbox">
-                  <input type="checkbox" data-filter-group="role" value="${escapeHtml(opt.value)}" ${filters.role.includes(opt.value) ? 'checked' : ''}>
-                  <span>${escapeHtml(opt.label)}<span class="fides-filter-option-count">(${n})</span></span>
-                </label>
-              `;
-              }).join('')}
-            </div>
-          </div>
+          ${roleFilterGroup}
           ${renderCheckboxGroup('Country', 'country', countryOptions, null, facets)}
           ${renderCheckboxGroup('Sector', 'sector', SECTOR_CODES_ALPHABETIC, SECTOR_LABELS, facets)}
           ${renderCertificationFilterGroup(facets)}
@@ -1815,7 +1903,7 @@
 
     const officialClass = orgOfficialCardClass(org);
     return `
-      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}" tabindex="0" role="button" aria-label="${orgCardAriaLabel(org)}">
+      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}" tabindex="0" role="button" aria-label="${orgCardAriaLabel(org, true)}">
         <div class="fides-org-card-logo-wrap fides-org-card-logo-wrap--list">
           <div class="fides-row-icon" aria-hidden="true">
             ${logo
@@ -1971,12 +2059,21 @@
       if (e.key === 'Escape') { closeModal(); document.removeEventListener('keydown', escHandler); }
     });
 
-    if (selectedOrg && orgHasVerifiedProfileAccordion(selectedOrg)) {
-      loadBluePagesSection(orgCatalogDid(selectedOrg));
-    }
     if (selectedOrg) {
       loadAndApplyModalRoleLikes(selectedOrg);
     }
+
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.initModalMediaCarousels === 'function') {
+      window.FidesCatalogUI.initModalMediaCarousels();
+    }
+  }
+
+  function closeMobileFilters() {
+    if (!root) return;
+    const sidebar = root.querySelector('.fides-sidebar.mobile-open');
+    if (!sidebar) return;
+    sidebar.classList.remove('mobile-open');
+    document.body.style.overflow = '';
   }
 
   function bindEvents() {
@@ -2070,9 +2167,21 @@
 
     const mobileToggle = root.querySelector('#fides-mobile-filter-toggle');
     const sidebar = root.querySelector('.fides-sidebar');
-    if (mobileToggle && sidebar) mobileToggle.addEventListener('click', () => { sidebar.classList.add('mobile-open'); document.body.style.overflow = 'hidden'; });
+    if (mobileToggle && sidebar) {
+      mobileToggle.addEventListener('click', () => {
+        sidebar.classList.add('mobile-open');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+    if (sidebar) {
+      sidebar.addEventListener('click', (e) => {
+        if (e.target === sidebar && sidebar.classList.contains('mobile-open')) {
+          closeMobileFilters();
+        }
+      });
+    }
     const sidebarClose = root.querySelector('#fides-sidebar-close');
-    if (sidebarClose && sidebar) sidebarClose.addEventListener('click', () => { sidebar.classList.remove('mobile-open'); document.body.style.overflow = ''; });
+    if (sidebarClose) sidebarClose.addEventListener('click', closeMobileFilters);
 
     root.querySelectorAll('.fides-view-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -2194,6 +2303,10 @@
       theme: root.dataset.theme || 'fides',
     };
     root.setAttribute('data-theme', settings.theme);
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      closeMobileFilters();
+    });
     loadOrganizations();
   }
 

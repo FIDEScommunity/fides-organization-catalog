@@ -67,6 +67,14 @@
   min-width: 0;
 }
 
+.fides-results {
+  min-width: 0;
+}
+
+.fides-org-grid[data-view="grid"] .fides-org-card {
+  min-width: 0;
+}
+
 /* Sidebar / Filters */
 .fides-sidebar {
   width: 260px;
@@ -317,6 +325,12 @@
 
 .fides-filter-checkbox input[type="checkbox"]:checked + span {
   color: var(--fides-text-primary);
+}
+
+.fides-filter-checkbox span {
+  min-width: 0;
+  flex: 1;
+  overflow-wrap: anywhere;
 }
 
 /* Nested certification sub-options (e.g. QTSP trust services, DIACC components) */
@@ -1028,6 +1042,20 @@
   flex-shrink: 0;
 }
 
+.fides-org-card-footer-listing .fides-modal-header-listing-badge {
+  font-size: 0.5625rem;
+  padding: 0.15rem 0.45rem 0.15rem 0.35rem;
+}
+
+.fides-org-card-footer-listing .fides-modal-header-listing-badge--community {
+  padding-left: 0.45rem;
+}
+
+.fides-org-card-footer-listing .fides-modal-header-listing-badge svg {
+  width: 12px;
+  height: 12px;
+}
+
 .fides-org-footer-badge {
   display: inline-flex;
   width: 22px;
@@ -1436,21 +1464,29 @@
   margin-left: 0.15rem;
 }
 
-.fides-modal-header-official-badge {
+.fides-modal-header-official-badge,
+.fides-modal-header-listing-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
   flex-shrink: 0;
   padding: 0.18rem 0.55rem 0.18rem 0.4rem;
   border-radius: 999px;
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #6d28d9;
   background: #f3e8ff;
   border: 1px solid rgba(109, 40, 217, 0.35);
+}
+
+.fides-modal-header-listing-badge--community {
+  color: #475569;
+  background: #f1f5f9;
+  border-color: rgba(71, 85, 105, 0.3);
+  padding-left: 0.55rem;
 }
 
 .fides-modal-header-official-badge svg {
@@ -1526,14 +1562,16 @@
     white-space: nowrap;
   }
 
-  .fides-modal-overlay--organization .fides-modal-header-official-badge {
+  .fides-modal-overlay--organization .fides-modal-header-official-badge,
+  .fides-modal-overlay--organization .fides-modal-header-listing-badge {
     padding: 0.12rem 0.38rem 0.12rem 0.3rem;
     gap: 0.2rem;
     font-size: 0.625rem;
     letter-spacing: 0.02em;
   }
 
-  .fides-modal-overlay--organization .fides-modal-header-official-badge svg {
+  .fides-modal-overlay--organization .fides-modal-header-official-badge svg,
+  .fides-modal-overlay--organization .fides-modal-header-listing-badge svg {
     width: 11px;
     height: 11px;
   }
@@ -1706,10 +1744,10 @@ a.fides-modal-copy-link {
   opacity: 0.55;
 }
 
-/* Overview accordion: taxonomy rows (aligned with credential catalog modal) */
+/* Overview accordion: taxonomy rows — 2-column key / value grid */
 .fides-modal-taxonomy--org-overview {
   margin-top: 0;
-  padding-top: 1rem;
+  padding-top: 0;
 }
 
 .fides-modal-taxonomy .fides-modal-taxonomy-row {
@@ -1724,6 +1762,18 @@ a.fides-modal-copy-link {
   margin-top: 0;
 }
 
+.fides-modal-taxonomy--org-overview .fides-modal-taxonomy-row {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  column-gap: 1rem;
+  align-items: start;
+  margin-top: 0.75rem;
+}
+
+.fides-modal-taxonomy--org-overview .fides-modal-taxonomy-row:first-child {
+  margin-top: 0;
+}
+
 .fides-modal-taxonomy-label {
   flex: 0 0 auto;
   min-width: 7.5rem;
@@ -1733,6 +1783,21 @@ a.fides-modal-copy-link {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  line-height: 1.45;
+}
+
+.fides-modal-taxonomy--org-overview .fides-modal-taxonomy-label {
+  grid-column: 1;
+  min-width: 0;
+  flex: unset;
+  align-self: start;
+  padding-top: 0.15rem;
+}
+
+.fides-modal-taxonomy-label svg {
+  flex-shrink: 0;
+  width: 0.95em;
+  height: 0.95em;
 }
 
 .fides-modal-taxonomy-tags {
@@ -1740,6 +1805,32 @@ a.fides-modal-copy-link {
   flex-wrap: wrap;
   gap: 0.35rem;
   flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.fides-modal-taxonomy--org-overview .fides-modal-taxonomy-tags {
+  grid-column: 2;
+  flex: unset;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .fides-modal-taxonomy--org-overview .fides-modal-taxonomy-row {
+    grid-template-columns: 8.75rem minmax(0, 1fr);
+    column-gap: 0.75rem;
+  }
+
+  .fides-modal-taxonomy--org-overview .fides-modal-taxonomy-label {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 380px) {
+  .fides-modal-taxonomy--org-overview .fides-modal-taxonomy-row {
+    grid-template-columns: minmax(7.25rem, 34%) minmax(0, 1fr);
+    column-gap: 0.5rem;
+  }
 }
 
 .fides-modal-taxonomy-empty {
@@ -2504,7 +2595,7 @@ a.fides-modal-copy-link {
   border: 1px solid rgba(10, 110, 243, 0.2);
 }
 
-/* Services / offerings — light green (same family as QTSP trust-service chips). */
+/* Offerings — light green (same family as QTSP trust-service chips). */
 #fides-org-catalog-root[data-theme="fides"] .fides-tag--offering,
 #fides-org-catalog-root[data-theme="light"] .fides-tag--offering,
 .fides-modal-overlay[data-theme="fides"] .fides-modal-taxonomy-tags .fides-tag--offering,
@@ -2512,6 +2603,17 @@ a.fides-modal-copy-link {
   background: rgba(16, 185, 129, 0.14);
   color: #047857;
   border-color: rgba(16, 185, 129, 0.55);
+}
+
+/* Ecosystem roles — soft violet (distinct from sector blue and services green). */
+#fides-org-catalog-root[data-theme="fides"] .fides-tag--ecosystem-role,
+#fides-org-catalog-root[data-theme="light"] .fides-tag--ecosystem-role,
+.fides-modal-overlay[data-theme="fides"] .fides-modal-taxonomy-tags .fides-tag--ecosystem-role,
+.fides-modal-overlay[data-theme="light"] .fides-modal-taxonomy-tags .fides-tag--ecosystem-role,
+.fides-ssr-detail__chip.fides-tag--ecosystem-role {
+  background: rgba(124, 58, 237, 0.12);
+  color: #5b21b6;
+  border-color: rgba(124, 58, 237, 0.35);
 }
 
 .fides-org-cert-list {
@@ -3115,6 +3217,10 @@ a.fides-modal-copy-link {
     grid-template-columns: 1fr;
   }
 
+  #fides-org-catalog-root {
+    padding: 0.75rem;
+  }
+
   .fides-results-bar {
     gap: 0.5rem;
   }
@@ -3145,8 +3251,51 @@ a.fides-modal-copy-link {
 }
 
 @media (max-width: 480px) {
+  #fides-org-catalog-root {
+    padding: 0.625rem;
+    border-radius: var(--fides-radius);
+    min-height: 320px;
+  }
+
   .fides-org-grid {
     grid-template-columns: 1fr;
+  }
+
+  .fides-kpi-row {
+    grid-template-columns: 1fr;
+  }
+
+  .fides-kpi-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* List view — tighten columns on narrow desktop before mobile grid fallback */
+@media (min-width: 1024px) and (max-width: 1180px) {
+  #fides-org-catalog-root .fides-org-list-header,
+  #fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card {
+    grid-template-columns: 32px minmax(0, 1fr) max-content 40px 40px 40px;
+    gap: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  #fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-count {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1080px) {
+  #fides-org-catalog-root .fides-org-list-header .fides-list-col-right,
+  #fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-count {
+    display: none;
+  }
+
+  #fides-org-catalog-root .fides-org-list-header,
+  #fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-card {
+    grid-template-columns: 32px minmax(0, 1fr) minmax(0, max-content);
   }
 }
 

@@ -1,6 +1,13 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-06-25T09:45:19.813Z",
-  "managedSlugs": []
+  "lastImportAt": "2026-06-30T15:04:36.852Z",
+  "managedSlugs": [
+    "credenco",
+    "fides",
+    "igrant",
+    "profound-it",
+    "profound-it2",
+    "van-der-kooij-consulting"
+  ]
 }

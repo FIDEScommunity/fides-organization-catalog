@@ -16,7 +16,16 @@ const spec = {
         parameters: [
           { name: 'search', in: 'query', schema: { type: 'string' }, description: 'Search by name, legal name, description, identifiers, certification codes, or qualified trust-service codes/names (e.g. QEAA)' },
           { name: 'country', in: 'query', schema: { type: 'string' }, description: 'Filter by ISO 3166-1 alpha-2 country code' },
-          { name: 'role', in: 'query', schema: { type: 'string', enum: ['issuer', 'credential', 'wallet', 'rp'] }, description: 'Filter by ecosystem role' },
+          { name: 'role', in: 'query', schema: {
+            type: 'string',
+            enum: [
+              'issuer', 'credential', 'wallet', 'rp',
+              'personal_wallet_provider', 'business_wallet_provider', 'vc_type_authority', 'relying_party',
+              'idv_provider', 'kyb_provider', 'system_integrator', 'consultancy', 'software_vendor',
+              'business_registry', 'industry_association', 'standards_development_organization',
+              'conformity_scheme_owner', 'national_accreditation_body', 'certification_body', 'conformity_assessment_body',
+            ],
+          }, description: 'Filter by ecosystem role (legacy aliases issuer, credential, wallet, rp still supported)' },
           {
             name: 'certification',
             in: 'query',
@@ -208,6 +217,28 @@ const spec = {
           'digital',
         ],
       },
+      OrganizationEcosystemRoleCode: {
+        type: 'string',
+        enum: [
+          'personal_wallet_provider',
+          'business_wallet_provider',
+          'vc_type_authority',
+          'issuer',
+          'relying_party',
+          'idv_provider',
+          'kyb_provider',
+          'system_integrator',
+          'consultancy',
+          'software_vendor',
+          'business_registry',
+          'industry_association',
+          'standards_development_organization',
+          'conformity_scheme_owner',
+          'national_accreditation_body',
+          'certification_body',
+          'conformity_assessment_body',
+        ],
+      },
       Organization: {
         type: 'object',
         required: ['id', 'name', 'sectors'],
@@ -238,6 +269,16 @@ const spec = {
               businessWallets: { type: 'array', items: { $ref: '#/components/schemas/EcosystemRef' } },
               relyingParties: { type: 'array', items: { $ref: '#/components/schemas/EcosystemRef' } },
             },
+          },
+          declaredEcosystemRoleCodes: {
+            type: 'array',
+            items: { $ref: '#/components/schemas/OrganizationEcosystemRoleCode' },
+            description: 'Self-declared roles from community-catalog JSON.',
+          },
+          ecosystemRoleCodes: {
+            type: 'array',
+            items: { $ref: '#/components/schemas/OrganizationEcosystemRoleCode' },
+            description: 'Declared plus cross-catalog derived roles (deduped).',
           },
           updatedAt: { type: 'string', format: 'date-time' },
         },

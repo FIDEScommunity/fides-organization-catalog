@@ -4,6 +4,16 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 
 ## Changelog
 
+### 1.9.0
+
+- Organization modal redesign: wallet-style hero with inline description; Pro-only media block (videos + images) in hero.
+- Modal footer with Contact and Book a Meeting buttons (`contactUrl` / `bookMeetingUrl`) via shared `FidesCatalogUI`.
+- WordPress submission form: contact URL fields, Pro media section, Offerings terminology, Certifications layout tweaks.
+- Filter sidebar hides zero-count options unless currently selected.
+- Schema, crawler, and public API updated for `media`, `ecosystemRoleCodes`, and contact v2.
+- Deploy with fides-community-tools-tiles ≥ 1.8.2; sync `assets/lib/fides-catalog-ui.*` from tiles when releasing.
+- Keep `fides_catalog_tier_ui_enabled` off until tier go-live (`docs/catalog-tier-go-live-checklist.md`).
+
 ### 1.8.1
 
 - Honors master switch `fides_catalog_tier_ui_enabled` (Settings → FIDES Catalog SEO, default **off**). Until enabled: no Official badges/filter, website shown when present in JSON, legacy edit access for signed-in users.

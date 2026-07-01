@@ -13,7 +13,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
 
     class Fides_Organization_Catalog_Submission_Forms {
 
-        const VERSION = '1.12.0';
+        const VERSION = '1.13.0';
 
         /**
          * @return array<int, array{code: string, label: string}>
@@ -60,15 +60,18 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             'identifiersEuid'                 => 'European Unique Identifier for a legal entity.',
             'identifiersDuns'                 => 'Data Universal Numbering System — a global business identifier from Dun & Bradstreet.',
             'identifiersGln'                  => 'Global Location Number (GS1).',
-            'contactSupport'                  => 'Public support page URL shown in the organization profile.',
-            'contactPublicEmail'              => 'Public contact email shown in the organization profile and modal.',
-            'fidesManifestoSupporter'         => 'Organization has ratified the FIDES Manifesto.',
-            'certificationsIntro'             => 'Self-declared certifications shown in the Trust Explorer. Select only what your organization holds.',
+            'contactUrl'                      => 'Public contact page URL shown as the Contact button in catalog modals.',
+            'bookMeetingUrl'                  => 'Scheduling URL shown as the Book a Meeting button in catalog modals.',
+            'fidesManifestoSupporter'         => 'Organization endorses the FIDES Manifesto.',
+            'certificationsIntro'             => 'Certifications shown in the Trust Explorer. Select only what your organization holds.',
             'certificationEvidence'           => 'Optional public link to a certificate, attestation page, or PDF.',
             'diaccComponents'                 => 'Select the DIACC PCTF components your organization is certified for.',
             'certificationsPreserved'         => 'QTSP (eIDAS) entries are imported from the EU Trust List and cannot be edited in this form.',
             'tags'         => 'Comma-separated labels (e.g. FIDES Supporter).',
-            'offerings'    => 'Services or solutions your organization offers to customers. Press Enter to add each item. Searchable in the Trust Explorer.',
+            'offerings'    => 'Services or solutions your organization offers to customers (e.g. consulting, wallet development). Press Enter to add each item. Searchable in the Trust Explorer.',
+            'mediaVideos'  => 'Short product demos embedded on your public listing. Paste YouTube or Vimeo links — one per row (max 3).',
+            'mediaImages'  => 'Screenshots or product images visitors see on your organization page. Upload a file or paste a URL — one per row (max 10).',
+            'ecosystemRoleCodes' => 'Optional roles your organization plays in the digital identity ecosystem. Issuer, VC type authority, wallet provider, and relying party may also be inferred from linked catalog entries.',
             'contactEmail' => 'Taken from your FIDES account; used for submission review only, not published as the org contact.',
             'catalogId'    => 'Assigned on submit; matches the folder name after org:.',
             'search'       => 'Search by name or catalog id, then select the correct entry.',
@@ -94,8 +97,78 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
 
         public static function bootstrap(): void {
             add_action('wp_enqueue_scripts', array(__CLASS__, 'register_assets'));
+            add_action('rest_api_init', array(__CLASS__, 'register_rest_routes'));
             add_shortcode('fides_organization_submit_form', array(__CLASS__, 'render_submit_shortcode'));
             add_shortcode('fides_organization_update_form', array(__CLASS__, 'render_update_shortcode'));
+        }
+
+        public static function register_rest_routes(): void {
+            register_rest_route(
+                'fides-catalog/v1',
+                '/submissions/card-image',
+                array(
+                    'methods'             => 'POST',
+                    'callback'            => array(__CLASS__, 'rest_upload_card_image'),
+                    'permission_callback' => function () {
+                        return is_user_logged_in();
+                    },
+                )
+            );
+        }
+
+        /**
+         * @param WP_REST_Request $request Request.
+         * @return WP_REST_Response
+         */
+        public static function rest_upload_card_image($request) {
+            $files = $request->get_file_params();
+            if (empty($files['file']) || ! is_array($files['file'])) {
+                return new WP_REST_Response(array('message' => 'No image file uploaded.'), 400);
+            }
+
+            $file = $files['file'];
+            if (! empty($file['error'])) {
+                return new WP_REST_Response(array('message' => 'Image upload failed.'), 400);
+            }
+
+            $allowed_types = array('image/jpeg', 'image/png', 'image/webp', 'image/gif');
+            $mime          = isset($file['type']) ? (string) $file['type'] : '';
+            if (! in_array($mime, $allowed_types, true)) {
+                return new WP_REST_Response(array('message' => 'Use JPEG, PNG, WebP, or GIF.'), 400);
+            }
+
+            $max_bytes = 2 * 1024 * 1024;
+            $size      = isset($file['size']) ? (int) $file['size'] : 0;
+            if ($size <= 0 || $size > $max_bytes) {
+                return new WP_REST_Response(array('message' => 'Image must be between 1 byte and 2 MB.'), 400);
+            }
+
+            require_once ABSPATH . 'wp-admin/includes/file.php';
+            require_once ABSPATH . 'wp-admin/includes/image.php';
+
+            $upload = wp_handle_upload(
+                $file,
+                array(
+                    'test_form' => false,
+                    'mimes'     => array(
+                        'jpg|jpeg|jpe' => 'image/jpeg',
+                        'png'          => 'image/png',
+                        'webp'         => 'image/webp',
+                        'gif'          => 'image/gif',
+                    ),
+                )
+            );
+
+            if (isset($upload['error'])) {
+                return new WP_REST_Response(array('message' => (string) $upload['error']), 400);
+            }
+
+            $url = isset($upload['url']) ? esc_url_raw((string) $upload['url']) : '';
+            if ($url === '') {
+                return new WP_REST_Response(array('message' => 'Upload succeeded but no URL was returned.'), 500);
+            }
+
+            return rest_ensure_response(array('url' => $url));
         }
 
         public static function register_assets(): void {
@@ -198,9 +271,6 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             }
 
             $field_help = self::FIELD_HELP;
-            if ($mode === 'update') {
-                $field_help['sectors'] = 'Pick one or more sectors that describe this organization.';
-            }
 
             $config = array_merge(
                 array(
@@ -209,12 +279,16 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
                     'restNonce'      => wp_create_nonce('wp_rest'),
                     'contactEmail'   => sanitize_email((string) $user->user_email),
                     'sectors'        => $sectors,
+                    'ecosystemRoles' => Fides_Organization_Catalog_Submission_Adapter::ecosystem_role_options(),
                     'countries'      => self::country_options_for_form(),
                     'fieldHelp'      => $field_help,
                     'sectionIntro'   => self::section_intro_for_mode($mode),
                     'selfDeclaredCertifications' => Fides_Organization_Catalog_Submission_Adapter::self_declared_certification_options(),
                     'diaccComponents'            => Fides_Organization_Catalog_Submission_Adapter::diacc_component_options(),
                     'offeringsSuggestions'       => Fides_Organization_Catalog_Submission_Adapter::offerings_suggestions_for_form(),
+                    'v2Limits'                   => class_exists('Fides_Organization_Catalog_Media_Normalizer')
+                        ? Fides_Organization_Catalog_Media_Normalizer::limits_for_form()
+                        : array('mediaVideos' => 3, 'mediaImages' => 10),
                     'preselectOrgId' => '',
                     'planTier'       => class_exists('Fides_Catalog_Org_Tier')
                         ? Fides_Catalog_Org_Tier::form_config(

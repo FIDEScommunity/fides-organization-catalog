@@ -26,6 +26,37 @@
   --fides-section-block-gap: 32px;
 }
 
+.fides-org-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fides-section-block-gap);
+}
+
+.fides-org-form > .fides-form-section,
+.fides-org-form > .fides-org-optional-sections,
+.fides-org-form > .fides-org-submit-block,
+.fides-org-form > .fides-form-message {
+  margin: 0;
+}
+
+.fides-org-form .fides-form-section {
+  margin: 0;
+}
+
+.fides-org-optional-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fides-section-block-gap);
+}
+
+.fides-org-optional-sections > .fides-form-section.fides-form-accordion {
+  margin: 0;
+}
+
+.fides-org-optional-sections > .fides-form-section.fides-form-accordion:first-child {
+  margin-top: 0;
+}
+
 /* Equal space between every field group (previous control → next label) */
 .fides-use-case-form .fides-form-section-body,
 .fides-use-case-form .fides-media-section-body {
@@ -605,19 +636,6 @@
   display: none !important;
 }
 
-.fides-org-optional-sections {
-  display: flex;
-  flex-direction: column;
-}
-
-.fides-org-optional-sections > .fides-form-section.fides-form-accordion {
-  margin: 12px 0 0;
-}
-
-.fides-org-optional-sections > .fides-form-section.fides-form-accordion:first-child {
-  margin-top: var(--fides-section-block-gap);
-}
-
 .fides-org-form .fides-org-update-picker-body + .fides-org-fields:not([hidden]) {
   margin-top: var(--fides-field-stack-gap);
   padding-top: var(--fides-field-stack-gap);
@@ -1087,4 +1105,113 @@
   color: #94a3b8;
   text-align: right;
   white-space: nowrap;
+}
+
+.fides-media-section-body .fides-media-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 0;
+}
+
+.fides-use-case-form .fides-media-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fides-use-case-form .fides-media-row .fides-media-inputs {
+  display: grid;
+  gap: 8px;
+  align-items: center;
+}
+
+.fides-use-case-form .fides-media-row .fides-media-inputs--image {
+  grid-template-columns: minmax(0, 1fr) 5.75rem 5.75rem;
+}
+
+.fides-use-case-form .fides-media-row .fides-media-inputs--video {
+  grid-template-columns: minmax(0, 1fr) 5.75rem;
+}
+
+.fides-use-case-form .fides-media-row .fides-media-url-input {
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+  margin: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 1.4;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.fides-use-case-form .fides-media-row .fides-media-url-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.fides-use-case-form .fides-media-row .fides-media-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.75rem;
+  min-width: 5.75rem;
+  min-height: 42px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 8px;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.fides-use-case-form .fides-media-row .fides-image-preview {
+  margin-top: 0.35rem;
+}
+
+.fides-use-case-form .fides-media-row .fides-image-preview img {
+  display: block;
+  max-width: 100%;
+  max-height: 160px;
+  width: auto;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.fides-use-case-form .fides-upload-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.fides-org-submission-root .fides-use-case-form .fides-media-row .fides-media-url-input,
+.fides-org-submission-root .fides-use-case-form .fides-media-row .fides-media-action-btn {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+@media (max-width: 768px) {
+  .fides-media-section-body .fides-media-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .fides-use-case-form .fides-media-row .fides-media-inputs--image,
+  .fides-use-case-form .fides-media-row .fides-media-inputs--video {
+    grid-template-columns: 1fr;
+  }
+
+  .fides-use-case-form .fides-media-row .fides-media-action-btn {
+    width: 100%;
+    min-width: 0;
+  }
 }

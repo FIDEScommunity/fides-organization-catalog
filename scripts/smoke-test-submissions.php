@@ -279,7 +279,8 @@ smoke('Identifiers: form exposes schema identifier fields', static function (): 
     assert_true(is_string($js), 'organization-form.js unreadable');
     assert_true(strpos($js, 'fides-org-id-lei') !== false, 'LEI field missing in form JS');
     assert_true(strpos($js, 'business_registration_number') !== false, 'Business registration field missing in form JS');
-    assert_true(strpos($js, 'fides-org-contact-support') !== false, 'Support URL field missing in form JS');
+    assert_true(strpos($js, 'fides-org-contact-url') !== false, 'Contact URL field missing in form JS');
+    assert_true(strpos($js, 'fides-org-book-meeting-url') !== false, 'Book a meeting URL field missing in form JS');
     return 'UI: full identifiers block + support URL';
 });
 

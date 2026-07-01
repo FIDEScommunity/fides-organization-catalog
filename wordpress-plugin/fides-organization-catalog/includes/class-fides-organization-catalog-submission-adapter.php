@@ -53,6 +53,27 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             'privacy',
         );
 
+        /** @var string[] Closed ecosystem role taxonomy (optional multi-select in forms). */
+        const ECOSYSTEM_ROLE_CODES = array(
+            'personal_wallet_provider',
+            'business_wallet_provider',
+            'vc_type_authority',
+            'issuer',
+            'relying_party',
+            'idv_provider',
+            'kyb_provider',
+            'system_integrator',
+            'consultancy',
+            'software_vendor',
+            'business_registry',
+            'industry_association',
+            'standards_development_organization',
+            'conformity_scheme_owner',
+            'national_accreditation_body',
+            'certification_body',
+            'conformity_assessment_body',
+        );
+
         /** Maximum number of offerings per organization. */
         const OFFERINGS_MAX_ITEMS = 15;
 
@@ -106,7 +127,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                         'legalName'       => 'Legal name',
                         'description'     => 'Description',
                         'tags'            => 'Tags',
-                        'offerings'       => 'Services & offerings',
+                        'offerings'       => 'Offerings',
                         'identifiers.business_registration_number' => 'Business registration number',
                         'identifiers.vat_number'                   => 'VAT number',
                         'identifiers.lei'                          => 'LEI',
@@ -115,10 +136,13 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                         'identifiers.duns'                         => 'D-U-N-S',
                         'identifiers.gln'                          => 'GLN',
                         'identifiers.did'                          => 'DID',
-                        'contact.email'                            => 'Contact email',
-                        'contact.support'                          => 'Support URL',
+                        'contact.contactUrl'                       => 'Contact URL',
+                        'contact.bookMeetingUrl'                   => 'Book a meeting URL',
                         'fidesManifestoSupporter'                  => 'FIDES Manifesto supporter',
+                        'ecosystemRoleCodes'                       => 'Ecosystem roles',
                         'certifications'                           => 'Certifications',
+                        'media.videos'                             => 'Media videos',
+                        'media.images'                             => 'Media images',
                     ),
                 )
             );
@@ -147,6 +171,36 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
         /**
          * @return array<int, array{code: string, label: string}>
          */
+        public static function ecosystem_role_options(): array {
+            $labels = array(
+                'personal_wallet_provider'           => 'Personal Wallet Provider',
+                'business_wallet_provider'           => 'Business Wallet Provider',
+                'vc_type_authority'                  => 'VC Type Authority',
+                'issuer'                             => 'Issuer',
+                'relying_party'                      => 'Relying Party',
+                'idv_provider'                       => 'IDV Provider',
+                'kyb_provider'                       => 'KYB Provider',
+                'system_integrator'                  => 'System Integrator',
+                'consultancy'                        => 'Consultancy',
+                'software_vendor'                    => 'Software Vendor',
+                'business_registry'                  => 'Business Registry',
+                'industry_association'               => 'Industry Association',
+                'standards_development_organization' => 'Standards Development Organization (SDO)',
+                'conformity_scheme_owner'            => 'Conformity Scheme Owner',
+                'national_accreditation_body'        => 'National Accreditation Body (NAB)',
+                'certification_body'                 => 'Certification Body (CB)',
+                'conformity_assessment_body'         => 'Conformity Assessment Body (CAB)',
+            );
+            $out = array();
+            foreach (self::ECOSYSTEM_ROLE_CODES as $code) {
+                $out[] = array(
+                    'code'  => $code,
+                    'label' => isset($labels[ $code ]) ? $labels[ $code ] : $code,
+                );
+            }
+            return $out;
+        }
+
         public static function diacc_component_options(): array {
             $labels = array(
                 'digital_wallet'  => 'Digital Wallet',
@@ -214,8 +268,11 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             }
 
             $sectors = self::normalize_sectors($payload['sectors'] ?? array());
+            if (count($sectors) > 1) {
+                $sectors = array($sectors[0]);
+            }
             if (empty($sectors)) {
-                return new WP_Error('fides_org_invalid', __('Select at least one sector.', 'fides-organization-catalog'));
+                return new WP_Error('fides_org_invalid', __('Select a sector.', 'fides-organization-catalog'));
             }
 
             $country = self::normalize_country(isset($payload['country']) ? (string) $payload['country'] : '');
@@ -293,6 +350,22 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 $normalized['fidesManifestoSupporter'] = ! empty($payload['fidesManifestoSupporter']);
             }
 
+            if (array_key_exists('ecosystemRoleCodes', $payload)) {
+                $normalized['ecosystemRoleCodes'] = self::normalize_ecosystem_role_codes($payload['ecosystemRoleCodes']);
+            }
+
+            if (array_key_exists('media', $payload)) {
+                $media = Fides_Organization_Catalog_Media_Normalizer::normalize_media($payload);
+                if ($media !== array()) {
+                    $normalized['media'] = $media;
+                }
+            }
+
+            $media_check = Fides_Organization_Catalog_Media_Normalizer::validate_media_rules($normalized);
+            if (is_wp_error($media_check)) {
+                return $media_check;
+            }
+
             if (class_exists('Fides_Catalog_Org_Tier')) {
                 $existing = null;
                 if ($action === 'update') {
@@ -324,7 +397,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 'sectors' => $payload['sectors'],
             );
 
-            foreach (array('legalName', 'description', 'website', 'logo', 'country', 'tags', 'offerings', 'contact', 'identifiers', 'certifications') as $key) {
+            foreach (array('legalName', 'description', 'website', 'logo', 'country', 'tags', 'offerings', 'contact', 'identifiers', 'certifications', 'ecosystemRoleCodes', 'media') as $key) {
                 if (! empty($payload[ $key ])) {
                     $organization[ $key ] = $payload[ $key ];
                 }
@@ -375,6 +448,15 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             if (array_key_exists('fidesManifestoSupporter', $item)) {
                 $payload['fidesManifestoSupporter'] = (bool) $item['fidesManifestoSupporter'];
             }
+            if (isset($item['declaredEcosystemRoleCodes']) && is_array($item['declaredEcosystemRoleCodes'])) {
+                $payload['ecosystemRoleCodes'] = array_values($item['declaredEcosystemRoleCodes']);
+            }
+            if (isset($item['media']) && is_array($item['media'])) {
+                $media = Fides_Organization_Catalog_Media_Normalizer::normalize_media($item);
+                if ($media !== array()) {
+                    $payload['media'] = $media;
+                }
+            }
 
             return $payload;
         }
@@ -393,6 +475,28 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 }
             }
             return $out;
+        }
+
+        /**
+         * @param mixed $raw Ecosystem role codes from request.
+         * @return string[]
+         */
+        private static function normalize_ecosystem_role_codes($raw) {
+            $values = is_array($raw) ? $raw : array($raw);
+            $out    = array();
+            foreach ($values as $value) {
+                $code = sanitize_key(str_replace('-', '_', (string) $value));
+                if (in_array($code, self::ECOSYSTEM_ROLE_CODES, true) && ! in_array($code, $out, true)) {
+                    $out[] = $code;
+                }
+            }
+            $ordered = array();
+            foreach (self::ECOSYSTEM_ROLE_CODES as $code) {
+                if (in_array($code, $out, true)) {
+                    $ordered[] = $code;
+                }
+            }
+            return $ordered;
         }
 
         /**
@@ -525,16 +629,16 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 return array();
             }
             $out = array();
-            if (! empty($raw['email'])) {
-                $email = sanitize_email((string) $raw['email']);
-                if (is_email($email)) {
-                    $out['email'] = $email;
+            if (! empty($raw['contactUrl'])) {
+                $contact_url = esc_url_raw((string) $raw['contactUrl']);
+                if ($contact_url !== '') {
+                    $out['contactUrl'] = $contact_url;
                 }
             }
-            if (! empty($raw['support'])) {
-                $support = esc_url_raw((string) $raw['support']);
-                if ($support !== '') {
-                    $out['support'] = $support;
+            if (! empty($raw['bookMeetingUrl'])) {
+                $book_meeting_url = esc_url_raw((string) $raw['bookMeetingUrl']);
+                if ($book_meeting_url !== '') {
+                    $out['bookMeetingUrl'] = $book_meeting_url;
                 }
             }
             return $out;

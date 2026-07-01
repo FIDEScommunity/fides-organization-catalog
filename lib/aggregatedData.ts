@@ -84,6 +84,10 @@ export interface AggregatedOrganization {
     businessWallets: { id: string; displayName: string }[];
     relyingParties: { id: string; displayName: string }[];
   };
+  /** Self-declared in community-catalog JSON (form submissions). */
+  declaredEcosystemRoleCodes?: string[];
+  /** Declared + cross-catalog derived roles (deduped). */
+  ecosystemRoleCodes?: string[];
   updatedAt: string;
 }
 
