@@ -1,6 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
-  "lastUpdated": "2026-05-26T00:00:00Z",
+  "lastUpdated": "2026-07-01T19:27:27.126Z",
   "organization": {
     "id": "org:microsave-consulting",
     "name": "MicroSave Consulting",
@@ -20,7 +20,7 @@
     ],
     "fidesManifestoSupporter": false,
     "contact": {
-      "support": "https://www.microsave.net/contact/"
+      "contactUrl": "https://www.microsave.net/contact/"
     }
   }
 }

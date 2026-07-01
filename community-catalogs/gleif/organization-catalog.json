@@ -13,7 +13,7 @@
     "country": "CH",
     "fidesManifestoSupporter": false,
     "contact": {
-      "support": "https://www.gleif.org/en/contact"
+      "contactUrl": "https://www.gleif.org/en/contact"
     },
     "tags": [
       "lei",
@@ -22,5 +22,6 @@
       "verifiable credentials",
       "financial infrastructure"
     ]
-  }
+  },
+  "lastUpdated": "2026-07-01T19:27:27.105Z"
 }

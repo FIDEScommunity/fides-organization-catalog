@@ -339,13 +339,18 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "email": {
+            "contactUrl": {
               "type": "string",
-              "format": "email"
+              "anyOf": [
+                { "format": "uri" },
+                { "pattern": "^mailto:[^\\s@]+@[^\\s@]+\\.[^\\s@]+$" }
+              ],
+              "description": "Pro-only: public contact page URL or mailto link (org modal Contact button)."
             },
-            "support": {
+            "bookMeetingUrl": {
               "type": "string",
-              "format": "uri"
+              "format": "uri",
+              "description": "Pro-only: scheduling URL (org modal Book a Meeting button)."
             }
           }
         }

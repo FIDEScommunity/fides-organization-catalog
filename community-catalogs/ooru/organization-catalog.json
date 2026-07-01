@@ -9,9 +9,10 @@
     "website": "https://ooru.io/",
     "country": "IN",
     "contact": {
-      "email": "info@oouru.io"
+      "contactUrl": "mailto:info@oouru.io"
     },
     "description": "Trust-Built Infrastructure for a Digital Future - Enabling secure, seamless digital experiences for businesses, governments, and individuals.",
     "logo": "https://ooru.io/wp-content/uploads/2024/10/favicon.ico"
-  }
+  },
+  "lastUpdated": "2026-07-01T19:27:27.134Z"
 }

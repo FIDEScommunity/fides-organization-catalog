@@ -18,7 +18,8 @@
       "Fraud Prevention"
     ],
     "contact": {
-      "support": "https://www.onespan.com/support"
+      "contactUrl": "https://www.onespan.com/support"
     }
-  }
+  },
+  "lastUpdated": "2026-07-01T19:27:27.133Z"
 }

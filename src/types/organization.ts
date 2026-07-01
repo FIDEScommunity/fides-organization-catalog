@@ -106,8 +106,8 @@ export interface SourceOrganization {
   /** Listed on fides.community/manifesto FIDES Supporters section */
   fidesManifestoSupporter?: boolean;
   contact?: {
-    email?: string;
-    support?: string;
+    contactUrl?: string;
+    bookMeetingUrl?: string;
   };
 }
 
@@ -146,8 +146,8 @@ export interface AggregatedOrganization {
   catalogTier?: 'Community' | 'Pro' | string;
   fidesManifestoSupporter?: boolean;
   contact?: {
-    email?: string;
-    support?: string;
+    contactUrl?: string;
+    bookMeetingUrl?: string;
   };
 
   source: OrganizationSource;

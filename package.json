@@ -10,6 +10,7 @@
     "crawl:sync": "npm run crawl && npm run sync-local",
     "build": "tsc",
     "validate": "ajv validate --spec=draft2020 -c ajv-formats -s schemas/organization-catalog.schema.json -d 'community-catalogs/**/organization-catalog.json'",
+    "migrate:org-contact": "tsx scripts/migrate-org-contact-v1-to-v2.ts",
     "seed": "tsx scripts/seed-from-catalogs.ts",
     "check-links": "tsx scripts/check-links.ts",
     "check:scaling": "node scripts/check-scaling-gates.mjs",
@@ -17,7 +18,7 @@
     "import-wp-submissions": "tsx scripts/import-wp-submissions.ts",
     "import-wp-submissions:apply": "tsx scripts/import-wp-submissions.ts --apply",
     "wp-sync:local": "FIDES_CATALOG_SECRET=$(php scripts/read-wp-catalog-secret.php 2>/dev/null) tsx scripts/import-wp-submissions.ts --apply --wp-url http://utrecht-demo.local/wp-json/fides-catalog/v1/export/organization && npm run validate && npm run crawl && npm run sync-local",
-    "test": "node --import tsx --test src/crawler/matching.test.ts src/import-wp-submissions.test.ts"
+    "test": "node --import tsx --test src/crawler/matching.test.ts src/import-wp-submissions.test.ts src/lib/ecosystemRoleCodes.test.ts src/lib/migrate-org-contact-v1-to-v2.test.ts"
   },
   "repository": {
     "type": "git",

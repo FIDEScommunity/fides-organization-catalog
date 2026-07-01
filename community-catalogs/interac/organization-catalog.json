@@ -22,8 +22,8 @@
       "Interac e-Transfer"
     ],
     "contact": {
-      "support": "https://www.interac.ca/en/resources/getting-help/contact-us/"
+      "contactUrl": "https://www.interac.ca/en/resources/getting-help/contact-us/"
     }
   },
-  "lastUpdated": "2026-06-09T00:00:00Z"
+  "lastUpdated": "2026-07-01T19:27:27.117Z"
 }

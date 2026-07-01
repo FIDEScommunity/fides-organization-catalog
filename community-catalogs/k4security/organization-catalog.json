@@ -10,8 +10,9 @@
     "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
     "country": "KR",
     "contact": {
-      "email": "contact@k4-security.com"
+      "contactUrl": "mailto:contact@k4-security.com"
     },
     "description": "German cybersecurity company offering consulting, managed security, and identity-related protection for organizations."
-  }
+  },
+  "lastUpdated": "2026-07-01T19:27:27.121Z"
 }

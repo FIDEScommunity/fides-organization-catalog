@@ -19,7 +19,8 @@
     ],
     "fidesManifestoSupporter": false,
     "contact": {
-      "email": "info@digiyatra.org"
+      "contactUrl": "mailto:info@digiyatra.org"
     }
-  }
+  },
+  "lastUpdated": "2026-07-01T19:27:27.096Z"
 }

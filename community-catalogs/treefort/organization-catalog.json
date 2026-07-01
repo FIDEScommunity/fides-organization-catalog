@@ -44,9 +44,8 @@
       "PCTF"
     ],
     "contact": {
-      "email": "support@treeforttech.com",
-      "support": "https://treeforttech.com/contact-us/"
+      "contactUrl": "https://treeforttech.com/contact-us/"
     }
   },
-  "lastUpdated": "2026-06-09T00:00:00Z"
+  "lastUpdated": "2026-07-01T19:27:27.142Z"
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
-  "lastUpdated": "2026-05-27T00:00:00Z",
+  "lastUpdated": "2026-07-01T19:27:27.124Z",
   "organization": {
     "id": "org:logius",
     "name": "Logius",
@@ -21,7 +21,7 @@
     ],
     "fidesManifestoSupporter": false,
     "contact": {
-      "support": "https://www.logius.nl/contact"
+      "contactUrl": "https://www.logius.nl/contact"
     }
   }
 }

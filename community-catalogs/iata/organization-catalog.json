@@ -11,7 +11,7 @@
     "country": "CA",
     "fidesManifestoSupporter": false,
     "contact": {
-      "support": "https://www.iata.org/en/contact-support/"
+      "contactUrl": "https://www.iata.org/en/contact-support/"
     },
     "description": "The International Air Transport Association (IATA) is the global trade association for the airline industry, representing airlines worldwide and developing standards, policies, and services that support safe, efficient, and interoperable air transport.",
     "tags": [
@@ -20,5 +20,6 @@
       "industry association",
       "standards"
     ]
-  }
+  },
+  "lastUpdated": "2026-07-01T19:27:27.109Z"
 }

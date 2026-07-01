@@ -10,8 +10,7 @@
     "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
     "country": "IT",
     "contact": {
-      "email": "support-wallet@namirial.com",
-      "support": "https://servicedesk.namirial.com/hc/en-gb"
+      "contactUrl": "https://servicedesk.namirial.com/hc/en-gb"
     },
     "description": "Customer identification and identity verification with the suite Namirial Onboarding",
     "certifications": [
@@ -33,5 +32,5 @@
       }
     ]
   },
-  "lastUpdated": "2026-06-29T09:25:37.278Z"
+  "lastUpdated": "2026-07-01T19:27:27.130Z"
 }

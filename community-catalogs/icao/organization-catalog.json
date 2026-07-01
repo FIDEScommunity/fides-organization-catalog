@@ -13,7 +13,7 @@
     "country": "CA",
     "fidesManifestoSupporter": false,
     "contact": {
-      "support": "https://www.icao.int/Pages/contact.aspx"
+      "contactUrl": "https://www.icao.int/Pages/contact.aspx"
     },
     "tags": [
       "aviation",
@@ -22,5 +22,6 @@
       "digital travel credential",
       "identity standards"
     ]
-  }
-} 
+  },
+  "lastUpdated": "2026-07-01T19:27:27.110Z"
+}

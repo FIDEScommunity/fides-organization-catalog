@@ -11,8 +11,9 @@
     "country": "NL",
     "fidesManifestoSupporter": true,
     "contact": {
-      "email": "info@sphereon.com"
+      "contactUrl": "mailto:info@sphereon.com"
     },
     "description": "We empower organizations with secure identities, trusted data and documents, trust registries, and infrastructure for verifiable digital interactions."
-  }
+  },
+  "lastUpdated": "2026-07-01T19:27:27.139Z"
 }
