@@ -8,6 +8,21 @@ License URI: https://www.apache.org/licenses/LICENSE-2.0
 
 Interactive organization catalog with filters, ecosystem explorer, and SSR/SEO when fides-community-tools-tiles is active.
 
+== Description ==
+
+Displays the FIDES Organization Catalog — organizations in the global digital identity and verifiable credentials ecosystem.
+
+Organizations add and update their listing on fides.community via WordPress submission forms (recommended), or contribute JSON via GitHub Pull Requests. Published data syncs to the community catalog repository.
+
+**Submission forms (logged-in users, requires fides-community-tools-tiles):**
+
+* `[fides_organization_submit_form]` — add a new organization (moderated before publish)
+* `[fides_organization_update_form]` — suggest changes (`?org=` pre-selects from modal pencil)
+
+Configure the update form page URL under **Settings → FIDES Organization Catalog**.
+
+**Catalog shortcode:** `[fides_organization_catalog]`
+
 == Changelog ==
 
 = 1.9.0 =

@@ -56,12 +56,30 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 
 ## How it works
 
-1. **Community catalogs** — contributors add an `organization-catalog.json` per organization in `community-catalogs/<org-slug>/`
+Organizations can be added or updated in two ways — **WordPress forms** (recommended on [fides.community](https://fides.community)) or **GitHub Pull Requests**. Both produce JSON under `community-catalogs/<org-slug>/`.
+
+1. **Contributions** — submit/update forms with moderation, or direct PRs to `community-catalogs/`
 2. **Crawler** — aggregates all sources, matches organizations against the wallet, issuer, credential, and RP catalogs, and writes `data/aggregated.json`
 3. **WordPress plugin** — renders cards, filters, and a detail modal with the FIDES Ecosystem Explorer
 4. **Serverless API** — query endpoint deployed on Vercel with OpenAPI and Swagger UI
 
-## Add Your Organization
+## Add or Update Your Organization
+
+### Option A — WordPress forms (recommended)
+
+1. **Sign in** on [fides.community](https://fides.community) and open the organization **submit** or **update** form page.
+2. Complete the form and submit. A maintainer reviews under **Tools → Catalog Submissions**.
+3. After **Publish**, data syncs to this repo via GitHub Actions and the public catalog updates.
+
+Shortcodes (site operators): `[fides_organization_submit_form]`, `[fides_organization_update_form]`. Configure the update form URL under **Settings → FIDES Organization Catalog** so the modal pencil links work.
+
+**Governance:** [fides-community-tools-tiles/docs/CATALOG-SUBMISSION-GOVERNANCE.md](https://github.com/FIDEScommunity/fides-community-tools-tiles/blob/main/docs/CATALOG-SUBMISSION-GOVERNANCE.md) — §14 (CI), §15 (deploy).
+
+**Pro listings:** linked WordPress accounts export richer fields (`catalogTier: Pro`). See [docs/catalog-tier-go-live-checklist.md](docs/catalog-tier-go-live-checklist.md).
+
+Folder-level notes: [community-catalogs/README.md](community-catalogs/README.md).
+
+### Option B — GitHub Pull Request
 
 1. Fork this repository
 2. Create `community-catalogs/<your-org>/organization-catalog.json` following the [schema](schemas/organization-catalog.schema.json):
@@ -81,10 +99,13 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 3. Submit a pull request — the **validate** workflow checks your JSON against the schema
 4. After merge, the **crawl** workflow regenerates the aggregated data automatically
 
+Verified **QTSP** entries are imported from the EU Trust List (`import-qtsp`) — do not overwrite them in PRs.
+
 ### CI: validate and crawl
 
 - **Validate** — runs on push/PR when catalog or schema files change; checks JSON Schema + runs unit tests
 - **Crawl** — runs on push to `main`, daily at 06:00 UTC, and via manual dispatch; regenerates `data/aggregated.json` and commits
+- **WP Submissions Sync** — imports published WordPress submissions into `community-catalogs/`, then crawls (see `.github/workflows/wp-submissions-sync.yml`)
 - **Check links** — runs weekly (Monday 08:00 UTC); validates all website and logo URLs
 
 ## Seed from existing catalogs
@@ -108,7 +129,7 @@ npm run check-links # Validate URLs
 npm run check:scaling # Payload growth gate check
 ```
 
-### WordPress submissions (local)
+### WordPress submissions sync (maintainers / local)
 
 After an admin **publishes** a submission on utrecht-demo:
 
