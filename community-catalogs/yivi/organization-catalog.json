@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:yivi",
+    "name": "Yivi",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Yivi B.V. is a Dutch software company based in Utrecht that manages Yivi, a privacy-friendly digital identity and wallet application.",
+    "logo": "https://yivi.app/icons/yivi-logo.svg",
+    "country": "NL",
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Pro"
+  },
+  "lastUpdated": "2026-07-02T10:21:42+00:00"
+}

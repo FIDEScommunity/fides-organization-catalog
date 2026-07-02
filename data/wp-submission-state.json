@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-02T10:19:59.451Z",
+  "lastImportAt": "2026-07-02T10:22:00.861Z",
   "managedSlugs": [
     "2060",
     "a3bc",
@@ -27,6 +27,7 @@
     "talao",
     "ubique",
     "validated-id",
+    "yivi",
     "yourd"
   ]
 }
