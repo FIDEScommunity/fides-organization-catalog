@@ -6,10 +6,12 @@
     "sectors": [
       "digital"
     ],
+    "description": "MOSIP offers countries modular and open-source technology to build and own their national identity systems.",
     "website": "https://www.mosip.io",
     "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128",
     "country": "IN",
     "fidesManifestoSupporter": true,
-    "description": "MOSIP offers countries modular and open-source technology to build and own their national identity systems."
-  }
+    "catalogTier": "Pro"
+  },
+  "lastUpdated": "2026-07-02T10:14:25+00:00"
 }

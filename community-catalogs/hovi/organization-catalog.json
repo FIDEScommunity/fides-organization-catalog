@@ -6,14 +6,15 @@
     "sectors": [
       "digital"
     ],
+    "description": "Discover Hovi’s self-sovereign identity platform, designed to effortlessly integrate verifiable credentials for businesses of all sizes.",
     "website": "https://www.hovi.id/",
     "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
     "country": "FI",
-    "fidesManifestoSupporter": true,
     "contact": {
       "email": "contact@hovi.id"
     },
-    "description": "Discover Hovi’s self-sovereign identity platform, designed to effortlessly integrate verifiable credentials for businesses of all sizes."
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-02T08:46:59.695Z"
+  "lastUpdated": "2026-07-02T10:14:25+00:00"
 }
