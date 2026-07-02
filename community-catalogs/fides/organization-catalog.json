@@ -20,7 +20,8 @@
       "euid": "NLNHR.97159174",
       "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c"
     },
-    "fidesManifestoSupporter": true
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-02T09:33:42+00:00"
+  "lastUpdated": "2026-07-02T09:45:25+00:00"
 }
