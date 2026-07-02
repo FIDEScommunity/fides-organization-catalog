@@ -6,17 +6,21 @@
     "sectors": [
       "digital"
     ],
+    "description": "FIDES Labs is a neutral facilitator of international innovation and interoperability tracks related to verifiable data. It also facilitates the FIDES Community, developing the Ecosystem Explorer and Manifesto and supporting global collaboration around digital wallets, verifiable credentials, and trusted data flows.",
+    "website": "https://fides.community",
+    "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+    "country": "NL",
+    "contact": {
+      "email": "info@fides-labs.io"
+    },
     "identifiers": {
       "business_registration_number": "97159174",
       "vat_number": "NL867933604B01",
       "lei": "6367008XDOGCWL4QFR44",
-       "euid": "NLNHR.97159174",
+      "euid": "NLNHR.97159174",
       "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c"
     },
-    "website": "https://fides.community",
-    "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
-    "country": "NL",
-    "fidesManifestoSupporter": true,
-    "description": "FIDES Labs is a neutral facilitator of international innovation and interoperability tracks related to verifiable data. It also facilitates the FIDES Community, developing the Ecosystem Explorer and Manifesto and supporting global collaboration around digital wallets, verifiable credentials, and trusted data flows."
-  }
+    "fidesManifestoSupporter": true
+  },
+  "lastUpdated": "2026-07-02T09:17:26+00:00"
 }
