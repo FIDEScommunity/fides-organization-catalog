@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-02T09:51:39.104Z",
+  "lastImportAt": "2026-07-02T09:53:22.890Z",
   "managedSlugs": [
     "fides",
     "igrant",
@@ -10,7 +10,9 @@
     "namirial",
     "procivis",
     "spherity",
+    "talao",
     "ubique",
+    "validated-id",
     "yourd"
   ]
 }
