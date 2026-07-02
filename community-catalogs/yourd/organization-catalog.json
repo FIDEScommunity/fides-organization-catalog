@@ -6,10 +6,12 @@
     "sectors": [
       "digital"
     ],
+    "description": "Ignite Data Ownership",
     "website": "https://yourd.xyz",
     "logo": "https://www.google.com/s2/favicons?domain=yourd.xyz&sz=128",
     "country": "KR",
     "fidesManifestoSupporter": true,
-    "description": "Ignite Data Ownership"
-  }
+    "catalogTier": "Pro"
+  },
+  "lastUpdated": "2026-07-02T09:49:59+00:00"
 }

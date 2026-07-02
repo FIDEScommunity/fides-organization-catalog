@@ -6,10 +6,10 @@
     "sectors": [
       "digital"
     ],
+    "description": "Customer identification and identity verification with the suite Namirial Onboarding",
     "website": "https://www.namirial.com",
     "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
     "country": "IT",
-    "description": "Customer identification and identity verification with the suite Namirial Onboarding",
     "certifications": [
       {
         "code": "qtsp",
@@ -27,7 +27,9 @@
           ]
         }
       }
-    ]
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-02T08:46:59.719Z"
+  "lastUpdated": "2026-07-02T09:49:59+00:00"
 }
