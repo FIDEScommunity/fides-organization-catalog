@@ -1,13 +1,15 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-02T10:07:39.897Z",
+  "lastImportAt": "2026-07-02T10:09:01.744Z",
   "managedSlugs": [
     "2060",
+    "authbound",
     "ayanworks",
     "banqup",
     "fides",
     "igrant",
+    "inetum",
     "izertis",
     "k4security",
     "lissi",
