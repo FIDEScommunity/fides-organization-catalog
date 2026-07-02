@@ -721,12 +721,11 @@
       .toLowerCase();
   }
 
-  /** About accordion: description + sectors/tags taxonomy (credential-catalog modal style). */
+  /** Community listing when tier UI is on (inverse of orgCatalogTierIsPro, incl. proOrgIds fallback). */
   function orgCatalogTierIsCommunity(org) {
     if (!tierUiEnabled()) return false;
-    if (!org || !org.catalogTier) return false;
-    const tier = String(org.catalogTier).toLowerCase();
-    return tier === 'gratis' || tier === 'community';
+    if (!org) return false;
+    return !orgCatalogTierIsPro(org);
   }
 
   function orgIdInProOrgIds(orgId) {
@@ -1500,6 +1499,8 @@
       return window.FidesCatalogUI.buildOrganizationContactFooterHtml(org.contact, {
         tierUiEnabled: tierUiEnabled(),
         isCommunity: isCommunity,
+        item: org,
+        editAccess: config.editAccess,
       });
     }
     return '';

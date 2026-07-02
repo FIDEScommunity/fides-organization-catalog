@@ -4,6 +4,11 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 
 ## Changelog
 
+### 1.10.1
+
+- Hide Contact footer on Community org modals when tier UI is on (matches wallet modal and Community listing badge).
+- Deploy with fides-community-tools-tiles ≥ 1.8.5; sync `assets/lib/fides-catalog-ui.*` from tiles when releasing.
+
 ### 1.10.0
 
 - Contact: `contact.email` replaces `contactUrl`; modal Contact button uses `mailto:` (shared `FidesCatalogUI`).

@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.10.0
+Stable tag: 1.10.1
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,10 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.10.1 =
+* Hide Contact footer on Community org modals when tier UI is on (align with wallet modal and listing badge).
+* Requires fides-community-tools-tiles ≥ 1.8.5 (sync `assets/lib/fides-catalog-ui.*` from tiles when releasing).
 
 = 1.10.0 =
 * Contact: `contact.email` replaces `contactUrl`; modal Contact button opens mailto (shared FidesCatalogUI).
