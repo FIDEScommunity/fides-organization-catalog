@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.10.1
+Stable tag: 1.10.2
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,9 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.10.2 =
+* Fix organization catalog render crash (infinite recursion in orgCatalogTierIsPro vs orgCatalogTierIsCommunity when catalogTier is set).
 
 = 1.10.1 =
 * Hide Contact footer on Community org modals when tier UI is on (align with wallet modal and listing badge).

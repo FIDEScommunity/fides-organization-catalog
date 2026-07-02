@@ -742,7 +742,8 @@
     if (!tierUiEnabled()) return false;
     if (!org) return false;
     if (org.catalogTier) {
-      return !orgCatalogTierIsCommunity(org);
+      const tier = String(org.catalogTier).toLowerCase();
+      return tier !== 'gratis' && tier !== 'community';
     }
     return orgIdInProOrgIds(org.id);
   }
