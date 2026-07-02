@@ -1,10 +1,11 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-02T09:45:39.175Z",
+  "lastImportAt": "2026-07-02T09:47:02.553Z",
   "managedSlugs": [
     "fides",
     "igrant",
-    "izertis"
+    "izertis",
+    "procivis"
   ]
 }
