@@ -6,9 +6,12 @@
     "sectors": [
       "digital"
     ],
+    "description": "Ubique Innovation provides digital services and solutions in the trust and credentials ecosystem via ubique.ch.",
     "website": "https://ubique.ch",
     "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/2d/44/132d44a4-424b-3dfc-174e-541248ef421b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/400x400ia-75.webp",
     "country": "CH",
-    "description": "Ubique Innovation provides digital services and solutions in the trust and credentials ecosystem via ubique.ch."
-  }
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Pro"
+  },
+  "lastUpdated": "2026-07-02T09:48:28+00:00"
 }
