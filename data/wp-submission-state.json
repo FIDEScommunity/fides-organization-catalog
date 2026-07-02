@@ -1,13 +1,15 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-02T10:09:01.744Z",
+  "lastImportAt": "2026-07-02T10:10:20.042Z",
   "managedSlugs": [
     "2060",
+    "a3bc",
     "authbound",
     "ayanworks",
     "banqup",
     "fides",
+    "helixid",
     "igrant",
     "inetum",
     "izertis",

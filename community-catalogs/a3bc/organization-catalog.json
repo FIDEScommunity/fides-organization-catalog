@@ -6,9 +6,12 @@
     "sectors": [
       "digital"
     ],
-    "website": "https://www.a3bc.io/",
-    "country": "FR",
     "description": "A3BC is a unique biometric Digital Identity Service Provider (DISP) device-less, card-less and id-less patented platform.",
-    "logo": "https://www.a3bc.io/img/favicon/apple-touch-icon.png?v=3"
-  }
+    "website": "https://www.a3bc.io/",
+    "logo": "https://www.a3bc.io/img/favicon/apple-touch-icon.png?v=3",
+    "country": "FR",
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Pro"
+  },
+  "lastUpdated": "2026-07-02T10:10:07+00:00"
 }
