@@ -6,13 +6,14 @@
     "sectors": [
       "digital"
     ],
+    "description": "EUDI and European Business Wallet software provider offering ready-to-use extensions for payments, signing, and passwordless login for individuals and organisations.",
     "website": "https://igrant.io",
     "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
     "country": "SE",
     "contact": {
       "email": "support@igrant.io"
     },
-    "description": "EUDI and European Business Wallet software provider offering ready-to-use extensions for payments, signing, and passwordless login for individuals and organisations."
+    "fidesManifestoSupporter": false
   },
-  "lastUpdated": "2026-07-02T08:46:59.698Z"
+  "lastUpdated": "2026-07-02T09:33:42+00:00"
 }
