@@ -3,10 +3,12 @@
   "organization": {
     "id": "org:banqup",
     "name": "Banqup",
-    "legalName": "Banqup SA",
     "sectors": [
       "digital"
     ],
+    "legalName": "Banqup SA",
+    "description": "The all-in-one platform designed to support start-ups and large scale business globally. Manage and simplify administrative tasks like (e)-invoicing, in a secure and simple way. From administration to",
+    "website": "https://www.banqup.com",
     "country": "BE",
     "certifications": [
       {
@@ -38,7 +40,8 @@
         }
       }
     ],
-    "website": "https://www.banqup.com"
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-06-29T09:25:26.061Z"
+  "lastUpdated": "2026-07-02T10:01:42+00:00"
 }
