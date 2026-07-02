@@ -1,13 +1,15 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-02T09:50:12.148Z",
+  "lastImportAt": "2026-07-02T09:51:39.104Z",
   "managedSlugs": [
     "fides",
     "igrant",
     "izertis",
+    "lissi",
     "namirial",
     "procivis",
+    "spherity",
     "ubique",
     "yourd"
   ]
