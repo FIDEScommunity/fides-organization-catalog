@@ -320,7 +320,9 @@
         "conformity_scheme_owner",
         "national_accreditation_body",
         "certification_body",
-        "conformity_assessment_body"
+        "conformity_assessment_body",
+            "eudi_wallet_intermediary",
+            "eidas_trust_service_provider"
       ],
       "description": "Ecosystem role the organization performs in the digital identity / trust landscape."
     },
@@ -405,13 +407,10 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "contactUrl": {
+            "email": {
               "type": "string",
-              "anyOf": [
-                { "format": "uri" },
-                { "pattern": "^mailto:[^\\s@]+@[^\\s@]+\\.[^\\s@]+$" }
-              ],
-              "description": "Pro-only: public contact page URL or mailto link (org modal Contact button)."
+              "format": "email",
+              "description": "Pro-only: public contact email (org modal Contact button opens mailto:)."
             },
             "bookMeetingUrl": {
               "type": "string",

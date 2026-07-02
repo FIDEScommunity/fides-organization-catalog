@@ -367,16 +367,13 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
   };
 }
 
+import { normalizeOrgContact as normalizeOrgContactFields } from '../lib/normalize-org-contact.js';
+
 function normalizeOrgContact(
   contact?: { contactUrl?: string; bookMeetingUrl?: string; email?: string; support?: string },
-): { contactUrl?: string; bookMeetingUrl?: string } | undefined {
-  if (!contact || typeof contact !== 'object') return undefined;
-  const out: { contactUrl?: string; bookMeetingUrl?: string } = {};
-  const contactUrl = String(contact.contactUrl || contact.support || '').trim();
-  const bookMeetingUrl = String(contact.bookMeetingUrl || '').trim();
-  if (contactUrl) out.contactUrl = contactUrl;
-  if (bookMeetingUrl) out.bookMeetingUrl = bookMeetingUrl;
-  return Object.keys(out).length ? out : undefined;
+) {
+  const result = normalizeOrgContactFields(contact);
+  return result.contact;
 }
 
 async function initValidator() {

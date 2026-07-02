@@ -35,7 +35,7 @@
     "fides-org-website",
     "fides-org-tags",
     "fides-org-offerings-input",
-    "fides-org-contact-url",
+    "fides-org-public-contact-email",
     "fides-org-book-meeting-url",
   ];
 
@@ -805,9 +805,9 @@
         </div>
         <div class="fides-form-grid fides-form-grid-pair">
           <div class="fides-form-row">
-            <label for="fides-org-contact-url">${labelWithProIfNeeded("Contact URL", true)}</label>
-            ${helpHtml("contactUrl")}
-            <input id="fides-org-contact-url" name="contactUrl" type="url" placeholder="https://…/contact" />
+            <label for="fides-org-public-contact-email">${labelWithProIfNeeded("Contact email", true)}</label>
+            ${helpHtml("publicContactEmail")}
+            <input id="fides-org-public-contact-email" name="contactEmail" type="email" placeholder="contact@example.com" autocomplete="email" />
           </div>
           <div class="fides-form-row">
             <label for="fides-org-book-meeting-url">${labelWithProIfNeeded("Book a meeting URL", true)}</label>
@@ -1216,11 +1216,11 @@
       if (!el) return;
       el.value = idents[field.key] ? String(idents[field.key]) : "";
     });
-    const contactUrlEl = root.querySelector("#fides-org-contact-url");
+    const publicContactEmailEl = root.querySelector("#fides-org-public-contact-email");
     const bookMeetingUrlEl = root.querySelector("#fides-org-book-meeting-url");
-    if (contactUrlEl) {
-      contactUrlEl.value =
-        payload.contact && payload.contact.contactUrl ? String(payload.contact.contactUrl) : "";
+    if (publicContactEmailEl) {
+      publicContactEmailEl.value =
+        payload.contact && payload.contact.email ? String(payload.contact.email) : "";
     }
     if (bookMeetingUrlEl) {
       bookMeetingUrlEl.value =
@@ -1273,12 +1273,12 @@
     if (Object.keys(identifiers).length) {
       payload.identifiers = identifiers;
     }
-    const contactUrlEl = root.querySelector("#fides-org-contact-url");
+    const publicContactEmailEl = root.querySelector("#fides-org-public-contact-email");
     const bookMeetingUrlEl = root.querySelector("#fides-org-book-meeting-url");
-    const contactUrl = contactUrlEl ? String(contactUrlEl.value || "").trim() : "";
+    const publicContactEmail = publicContactEmailEl ? String(publicContactEmailEl.value || "").trim() : "";
     const bookMeetingUrl = bookMeetingUrlEl ? String(bookMeetingUrlEl.value || "").trim() : "";
     const contact = {};
-    if (contactUrl) contact.contactUrl = contactUrl;
+    if (publicContactEmail) contact.email = publicContactEmail;
     if (bookMeetingUrl) contact.bookMeetingUrl = bookMeetingUrl;
     if (Object.keys(contact).length) payload.contact = contact;
     const manifestoEl = root.querySelector("#fides-org-manifesto-supporter");

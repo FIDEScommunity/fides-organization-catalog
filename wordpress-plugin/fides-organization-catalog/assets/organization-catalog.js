@@ -652,6 +652,8 @@
     { value: 'national_accreditation_body', label: 'National Accreditation Body (NAB)' },
     { value: 'certification_body', label: 'Certification Body (CB)' },
     { value: 'conformity_assessment_body', label: 'Conformity Assessment Body (CAB)' },
+    { value: 'eudi_wallet_intermediary', label: 'EUDI Wallet Intermediary' },
+    { value: 'eidas_trust_service_provider', label: 'eIDAS Trust Service Provider' },
   ];
 
   const ECOSYSTEM_ROLE_LABELS = Object.fromEntries(

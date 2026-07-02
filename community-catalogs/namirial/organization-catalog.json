@@ -9,9 +9,6 @@
     "website": "https://www.namirial.com",
     "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
     "country": "IT",
-    "contact": {
-      "contactUrl": "https://servicedesk.namirial.com/hc/en-gb"
-    },
     "description": "Customer identification and identity verification with the suite Namirial Onboarding",
     "certifications": [
       {
@@ -32,5 +29,5 @@
       }
     ]
   },
-  "lastUpdated": "2026-07-01T19:27:27.130Z"
+  "lastUpdated": "2026-07-02T08:46:59.719Z"
 }

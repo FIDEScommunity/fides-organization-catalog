@@ -9,7 +9,7 @@
 
 import { readdir, readFile, writeFile } from 'fs/promises';
 import path from 'path';
-import { migrateOrganizationCatalogDocument } from '../src/lib/migrate-org-contact-v1-to-v2.ts';
+import { migrateOrganizationCatalogDocument } from '../src/lib/normalize-org-contact.ts';
 
 const ROOT = process.cwd();
 const COMMUNITY_DIR = path.join(ROOT, 'community-catalogs');
@@ -19,7 +19,8 @@ async function main() {
   const entries = await readdir(COMMUNITY_DIR, { withFileTypes: true });
   let migrated = 0;
   let skipped = 0;
-  const mailtoFallbacks: string[] = [];
+  const emailMigrations: string[] = [];
+  const droppedHttp: string[] = [];
 
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
@@ -35,11 +36,13 @@ async function main() {
       }
 
       migrated++;
-      const label = actions.includes('email→mailto:contactUrl') ? ' (mailto fallback)' : '';
-      console.log(`${write ? '✏️ ' : '👀'} ${entry.name}: ${actions.join(', ')}${label}`);
+      console.log(`${write ? '✏️ ' : '👀'} ${entry.name}: ${actions.join(', ')}`);
 
-      if (actions.includes('email→mailto:contactUrl')) {
-        mailtoFallbacks.push(entry.name);
+      if (actions.includes('contactUrl→email') || actions.includes('support→email')) {
+        emailMigrations.push(entry.name);
+      }
+      if (actions.includes('dropped-http-contactUrl')) {
+        droppedHttp.push(entry.name);
       }
 
       if (write) {
@@ -55,11 +58,14 @@ async function main() {
     `\n${write ? 'Migrated' : 'Would migrate'} ${migrated} catalog(s); ${skipped} unchanged.`,
   );
 
-  if (mailtoFallbacks.length > 0) {
+  if (emailMigrations.length > 0) {
+    console.log(`\nMigrated to contact.email for ${emailMigrations.length} org(s).`);
+  }
+  if (droppedHttp.length > 0) {
     console.log(
-      `\nMailto fallback used for ${mailtoFallbacks.length} org(s) (email only, no support URL):`,
+      `\nDropped http(s) contactUrl with no email for ${droppedHttp.length} org(s) — update via the org form:`,
     );
-    for (const slug of mailtoFallbacks) {
+    for (const slug of droppedHttp) {
       console.log(`  - ${slug}`);
     }
   }

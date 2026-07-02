@@ -72,6 +72,8 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             'national_accreditation_body',
             'certification_body',
             'conformity_assessment_body',
+            'eudi_wallet_intermediary',
+            'eidas_trust_service_provider',
         );
 
         /** Maximum number of offerings per organization. */
@@ -136,7 +138,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                         'identifiers.duns'                         => 'D-U-N-S',
                         'identifiers.gln'                          => 'GLN',
                         'identifiers.did'                          => 'DID',
-                        'contact.contactUrl'                       => 'Contact URL',
+                        'contact.email'                            => 'Contact email',
                         'contact.bookMeetingUrl'                   => 'Book a meeting URL',
                         'fidesManifestoSupporter'                  => 'FIDES Manifesto supporter',
                         'ecosystemRoleCodes'                       => 'Ecosystem roles',
@@ -190,6 +192,8 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 'national_accreditation_body'        => 'National Accreditation Body (NAB)',
                 'certification_body'                 => 'Certification Body (CB)',
                 'conformity_assessment_body'         => 'Conformity Assessment Body (CAB)',
+                'eudi_wallet_intermediary'           => 'EUDI Wallet Intermediary',
+                'eidas_trust_service_provider'       => 'eIDAS Trust Service Provider',
             );
             $out = array();
             foreach (self::ECOSYSTEM_ROLE_CODES as $code) {
@@ -629,10 +633,16 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 return array();
             }
             $out = array();
+            if (! empty($raw['email'])) {
+                $email = sanitize_email((string) $raw['email']);
+                if ($email !== '' && is_email($email)) {
+                    $out['email'] = $email;
+                }
+            }
             if (! empty($raw['contactUrl'])) {
-                $contact_url = esc_url_raw((string) $raw['contactUrl']);
-                if ($contact_url !== '') {
-                    $out['contactUrl'] = $contact_url;
+                $legacy = self::email_from_legacy_contact_url((string) $raw['contactUrl']);
+                if ($legacy !== '' && empty($out['email'])) {
+                    $out['email'] = $legacy;
                 }
             }
             if (! empty($raw['bookMeetingUrl'])) {
@@ -642,6 +652,19 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 }
             }
             return $out;
+        }
+
+        /**
+         * @param string $value Legacy contactUrl (mailto: only).
+         * @return string Sanitized email or empty.
+         */
+        private static function email_from_legacy_contact_url($value) {
+            $value = trim((string) $value);
+            if ($value === '' || stripos($value, 'mailto:') !== 0) {
+                return '';
+            }
+            $email = sanitize_email(rawurldecode(substr($value, 7)));
+            return ($email !== '' && is_email($email)) ? $email : '';
         }
 
         /**

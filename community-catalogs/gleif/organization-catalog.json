@@ -12,9 +12,6 @@
     "logo": "https://www.gleif.org/assets/build/img/logo/gleif-logo-new.svg",
     "country": "CH",
     "fidesManifestoSupporter": false,
-    "contact": {
-      "contactUrl": "https://www.gleif.org/en/contact"
-    },
     "tags": [
       "lei",
       "vlei",
@@ -23,5 +20,5 @@
       "financial infrastructure"
     ]
   },
-  "lastUpdated": "2026-07-01T19:27:27.105Z"
+  "lastUpdated": "2026-07-02T08:46:59.691Z"
 }

@@ -120,7 +120,7 @@ export interface SourceOrganization {
   /** Listed on fides.community/manifesto FIDES Supporters section */
   fidesManifestoSupporter?: boolean;
   contact?: {
-    contactUrl?: string;
+    email?: string;
     bookMeetingUrl?: string;
   };
   /** Optional self-declared ecosystem roles (multi-select in forms). */
@@ -164,7 +164,7 @@ export interface AggregatedOrganization {
   catalogTier?: 'Community' | 'Pro' | string;
   fidesManifestoSupporter?: boolean;
   contact?: {
-    contactUrl?: string;
+    email?: string;
     bookMeetingUrl?: string;
   };
   media?: OrganizationMedia;

@@ -60,8 +60,9 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             'identifiersEuid'                 => 'European Unique Identifier for a legal entity.',
             'identifiersDuns'                 => 'Data Universal Numbering System — a global business identifier from Dun & Bradstreet.',
             'identifiersGln'                  => 'Global Location Number (GS1).',
-            'contactUrl'                      => 'Public contact page URL shown as the Contact button in catalog modals.',
+            'publicContactEmail'              => 'Public contact email shown as the Contact button in catalog modals (mailto:).',
             'bookMeetingUrl'                  => 'Scheduling URL shown as the Book a Meeting button in catalog modals.',
+            'contactEmail'                    => 'Taken from your FIDES account; used for submission review only, not published as the org contact.',
             'fidesManifestoSupporter'         => 'Organization endorses the FIDES Manifesto.',
             'certificationsIntro'             => 'Certifications shown in the Trust Explorer. Select only what your organization holds.',
             'certificationEvidence'           => 'Optional public link to a certificate, attestation page, or PDF.',
@@ -72,7 +73,6 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             'mediaVideos'  => 'Short product demos embedded on your public listing. Paste YouTube or Vimeo links — one per row (max 3).',
             'mediaImages'  => 'Screenshots or product images visitors see on your organization page. Upload a file or paste a URL — one per row (max 10).',
             'ecosystemRoleCodes' => 'Optional roles your organization plays in the digital identity ecosystem. Issuer, VC type authority, wallet provider, and relying party may also be inferred from linked catalog entries.',
-            'contactEmail' => 'Taken from your FIDES account; used for submission review only, not published as the org contact.',
             'catalogId'    => 'Assigned on submit; matches the folder name after org:.',
             'search'       => 'Search by name or catalog id, then select the correct entry.',
         );

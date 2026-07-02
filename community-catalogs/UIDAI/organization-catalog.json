@@ -1,6 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
-  "lastUpdated": "2026-07-01T19:27:27.077Z",
+  "lastUpdated": "2026-07-02T08:46:59.643Z",
   "organization": {
     "id": "org:uidai",
     "name": "Unique Identification Authority of India",
@@ -16,9 +16,6 @@
       "Aadhaar",
       "Digital Public Infrastructure"
     ],
-    "fidesManifestoSupporter": false,
-    "contact": {
-      "contactUrl": "https://uidai.gov.in/en/contact-support.html"
-    }
+    "fidesManifestoSupporter": false
   }
 }

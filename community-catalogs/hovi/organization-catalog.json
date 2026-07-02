@@ -11,9 +11,9 @@
     "country": "FI",
     "fidesManifestoSupporter": true,
     "contact": {
-      "contactUrl": "mailto:contact@hovi.id"
+      "email": "contact@hovi.id"
     },
     "description": "Discover Hovi’s self-sovereign identity platform, designed to effortlessly integrate verifiable credentials for businesses of all sizes."
   },
-  "lastUpdated": "2026-07-01T19:27:27.108Z"
+  "lastUpdated": "2026-07-02T08:46:59.695Z"
 }

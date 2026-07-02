@@ -10,9 +10,6 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/5/5a/Infocomm_Media_Development_Authority_logo.svg",
     "country": "SG",
     "fidesManifestoSupporter": false,
-    "contact": {
-      "contactUrl": "https://www.imda.gov.sg/contact-us"
-    },
     "description": "The Infocomm Media Development Authority (IMDA) is a Singapore government agency that drives digital transformation and oversees the development of the infocomm and media sectors. IMDA is the initiator and steward of TradeTrust, a global framework for the exchange of electronic trade documents using verifiable credentials and blockchain-based verification.",
     "tags": [
       "tradetrust",
@@ -21,5 +18,5 @@
       "trust framework"
     ]
   },
-  "lastUpdated": "2026-07-01T19:27:27.113Z"
+  "lastUpdated": "2026-07-02T08:46:59.699Z"
 }

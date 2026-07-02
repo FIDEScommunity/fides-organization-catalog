@@ -1,49 +1,53 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  migrateOrgContact,
+  normalizeOrgContact,
   migrateOrganizationCatalogDocument,
-} from './migrate-org-contact-v1-to-v2.ts';
+} from './normalize-org-contact.ts';
 
-describe('migrateOrgContact', () => {
-  it('maps support URL to contactUrl', () => {
-    const result = migrateOrgContact({
-      support: 'https://www.icao.int/Pages/contact.aspx',
-    });
-    assert.equal(result.contact?.contactUrl, 'https://www.icao.int/Pages/contact.aspx');
-    assert.deepEqual(result.actions, ['support→contactUrl']);
-  });
-
-  it('prefers support over email and drops email', () => {
-    const result = migrateOrgContact({
-      email: 'support-wallet@namirial.com',
-      support: 'https://servicedesk.namirial.com/hc/en-gb',
-    });
-    assert.equal(result.contact?.contactUrl, 'https://servicedesk.namirial.com/hc/en-gb');
-    assert.ok(result.actions.includes('support→contactUrl'));
-    assert.ok(result.actions.includes('dropped-email'));
-  });
-
-  it('uses mailto when only email is present', () => {
-    const result = migrateOrgContact({ email: 'support@igrant.io' });
-    assert.equal(result.contact?.contactUrl, 'mailto:support@igrant.io');
-    assert.ok(result.actions.includes('email→mailto:contactUrl'));
-  });
-
-  it('leaves an empty contact object unchanged', () => {
-    const result = migrateOrgContact({});
-    assert.equal(result.contact, undefined);
+describe('normalizeOrgContact', () => {
+  it('keeps a valid public email', () => {
+    const result = normalizeOrgContact({ email: 'hello@example.com' });
+    assert.equal(result.contact?.email, 'hello@example.com');
     assert.equal(result.changed, false);
-    assert.deepEqual(result.actions, []);
+  });
+
+  it('extracts email from mailto contactUrl', () => {
+    const result = normalizeOrgContact({ contactUrl: 'mailto:support@igrant.io' });
+    assert.equal(result.contact?.email, 'support@igrant.io');
+    assert.ok(result.actions.includes('contactUrl→email'));
+  });
+
+  it('maps legacy support email to contact.email', () => {
+    const result = normalizeOrgContact({ support: 'support-wallet@namirial.com' });
+    assert.equal(result.contact?.email, 'support-wallet@namirial.com');
+    assert.ok(result.actions.includes('support→email'));
+  });
+
+  it('drops http contactUrl when no email is available', () => {
+    const result = normalizeOrgContact({
+      contactUrl: 'https://www.icao.int/Pages/contact.aspx',
+    });
+    assert.equal(result.contact, undefined);
+    assert.ok(result.actions.includes('dropped-http-contactUrl'));
+  });
+
+  it('prefers explicit email over http contactUrl', () => {
+    const result = normalizeOrgContact({
+      email: 'hello@example.com',
+      contactUrl: 'https://example.com/contact',
+    });
+    assert.equal(result.contact?.email, 'hello@example.com');
+    assert.ok(result.actions.includes('dropped-http-contactUrl'));
   });
 
   it('preserves bookMeetingUrl', () => {
-    const result = migrateOrgContact({
-      contactUrl: 'https://example.com/contact',
+    const result = normalizeOrgContact({
+      email: 'hello@example.com',
       bookMeetingUrl: 'https://example.com/meet',
     });
     assert.deepEqual(result.contact, {
-      contactUrl: 'https://example.com/contact',
+      email: 'hello@example.com',
       bookMeetingUrl: 'https://example.com/meet',
     });
     assert.equal(result.changed, false);
@@ -56,16 +60,14 @@ describe('migrateOrganizationCatalogDocument', () => {
       {
         $schema: 'https://fides.community/schemas/organization-catalog/v1',
         organization: {
-          id: 'org:icao',
-          contact: { support: 'https://www.icao.int/Pages/contact.aspx' },
+          id: 'org:sphereon',
+          contact: { contactUrl: 'mailto:info@sphereon.com' },
         },
       },
       '2026-06-30T12:00:00.000Z',
     );
     assert.equal(changed, true);
-    assert.deepEqual(doc.organization?.contact, {
-      contactUrl: 'https://www.icao.int/Pages/contact.aspx',
-    });
+    assert.deepEqual(doc.organization?.contact, { email: 'info@sphereon.com' });
     assert.equal(doc.lastUpdated, '2026-06-30T12:00:00.000Z');
   });
 });

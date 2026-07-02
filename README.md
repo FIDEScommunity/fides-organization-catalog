@@ -4,6 +4,13 @@ Centralized overview of organizations in the FIDES ecosystem and their roles acr
 
 ## Changelog
 
+### 1.10.0
+
+- Contact: `contact.email` replaces `contactUrl`; modal Contact button uses `mailto:` (shared `FidesCatalogUI`).
+- WordPress submission form: public Contact email field (distinct from submitter review email).
+- Ecosystem roles: EUDI Wallet Intermediary, eIDAS Trust Service Provider.
+- Deploy with fides-community-tools-tiles ≥ 1.8.4; sync `assets/lib/fides-catalog-ui.*` from tiles when releasing.
+
 ### 1.9.0
 
 - Organization modal redesign: wallet-style hero with inline description; Pro-only media block (videos + images) in hero.

@@ -12,9 +12,6 @@
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/7f1293a6797df97bc044c82f3ba71624ae2bc0f4/community-catalogs/icao/ICAO_logo.png",
     "country": "CA",
     "fidesManifestoSupporter": false,
-    "contact": {
-      "contactUrl": "https://www.icao.int/Pages/contact.aspx"
-    },
     "tags": [
       "aviation",
       "travel",
@@ -23,5 +20,5 @@
       "identity standards"
     ]
   },
-  "lastUpdated": "2026-07-01T19:27:27.110Z"
+  "lastUpdated": "2026-07-02T08:46:59.696Z"
 }

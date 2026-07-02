@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.9.0
+Stable tag: 1.10.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,12 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.10.0 =
+* Contact: `contact.email` replaces `contactUrl`; modal Contact button opens mailto (shared FidesCatalogUI).
+* Submission form: public Contact email field (separate from submitter review email).
+* Ecosystem roles: EUDI Wallet Intermediary, eIDAS Trust Service Provider.
+* Requires fides-community-tools-tiles ≥ 1.8.4 (sync `assets/lib/fides-catalog-ui.*` from tiles when releasing).
 
 = 1.9.0 =
 * Organization modal: wallet-style hero with description; Pro-only media gallery (YouTube/Vimeo + images).

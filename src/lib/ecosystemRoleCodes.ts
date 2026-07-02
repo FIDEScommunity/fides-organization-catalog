@@ -19,6 +19,8 @@ export const ORGANIZATION_ECOSYSTEM_ROLE_CODES = [
   'national_accreditation_body',
   'certification_body',
   'conformity_assessment_body',
+  'eudi_wallet_intermediary',
+  'eidas_trust_service_provider',
 ] as const;
 
 export type OrganizationEcosystemRoleCode = (typeof ORGANIZATION_ECOSYSTEM_ROLE_CODES)[number];
@@ -41,6 +43,8 @@ export const ORGANIZATION_ECOSYSTEM_ROLE_LABELS: Record<OrganizationEcosystemRol
   national_accreditation_body: 'National Accreditation Body (NAB)',
   certification_body: 'Certification Body (CB)',
   conformity_assessment_body: 'Conformity Assessment Body (CAB)',
+  eudi_wallet_intermediary: 'EUDI Wallet Intermediary',
+  eidas_trust_service_provider: 'eIDAS Trust Service Provider',
 };
 
 const CODE_SET = new Set<string>(ORGANIZATION_ECOSYSTEM_ROLE_CODES);

@@ -1,6 +1,6 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
-  "lastUpdated": "2026-07-01T19:27:27.103Z",
+  "lastUpdated": "2026-07-02T08:46:59.689Z",
   "organization": {
     "id": "org:gaia-x",
     "name": "Gaia-X AISBL",
@@ -17,7 +17,7 @@
     "logo": "https://gaia-x.eu/wp-content/uploads/2022/05/Gaia-X_Logo_svg_resized_1.svg",
     "country": "BE",
     "contact": {
-      "contactUrl": "mailto:info@gaia-x.eu"
+      "email": "info@gaia-x.eu"
     }
   }
 }
