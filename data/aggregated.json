@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastUpdated": "2026-07-02T10:39:39.397Z",
+  "lastUpdated": "2026-07-03T08:50:08.925Z",
   "organizations": [
     {
       "id": "org:2060",
@@ -33,7 +33,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:3g-soluciones-movilidad",
@@ -76,7 +76,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-06-29T09:25:35.117Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:a-trust",
@@ -139,7 +139,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.158Z",
       "updatedAt": "2026-06-29T09:25:25.068Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:a3bc",
@@ -171,7 +171,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:aangetekend",
@@ -214,7 +214,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-06-29T09:25:47.877Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ac-camerfirma",
@@ -265,7 +265,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.432Z",
       "updatedAt": "2026-06-29T09:25:35.091Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:acin-icloud-solutions-lda",
@@ -320,7 +320,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.598Z",
       "updatedAt": "2026-06-29T09:25:50.523Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:actalis",
@@ -383,7 +383,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.480Z",
       "updatedAt": "2026-06-29T09:25:42.509Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:adacom-advanced-internet-applications",
@@ -434,7 +434,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:15.784Z",
       "updatedAt": "2026-06-29T09:25:33.742Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:adobe-systems-software-ireland",
@@ -477,7 +477,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.537Z",
       "updatedAt": "2026-06-29T09:25:40.156Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:advania-island-ehf",
@@ -520,7 +520,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.856Z",
       "updatedAt": "2026-06-29T09:25:40.999Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:affinidi",
@@ -551,7 +551,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:agence-du-numerique-des-forces-de-securite-interieure",
@@ -598,7 +598,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.357Z",
       "updatedAt": "2026-06-29T09:25:37.278Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:agence-nationale-des-titres-securises",
@@ -641,7 +641,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.345Z",
       "updatedAt": "2026-06-29T09:25:37.262Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:agencia-notarial-de-certificacion-unipersonal",
@@ -692,7 +692,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.427Z",
       "updatedAt": "2026-06-29T09:25:35.088Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:air-new-zealand",
@@ -724,7 +724,7 @@
       ],
       "firstSeenAt": "2026-04-22T11:00:21.000Z",
       "updatedAt": "2026-04-22T11:02:02.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:akd-d-o-o",
@@ -775,7 +775,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.702Z",
       "updatedAt": "2026-06-29T09:25:38.153Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:albania",
@@ -806,7 +806,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:alfatrust-certification",
@@ -857,7 +857,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-06-29T09:25:51.627Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:almelo-energie",
@@ -886,7 +886,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:amadeus",
@@ -911,7 +911,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-22T10:08:22.000Z",
       "updatedAt": "2026-04-22T10:09:19.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:anf-autoridad-de-certificacion-asociacion-anf-ac",
@@ -986,7 +986,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-06-29T09:25:35.090Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:anf-certification-authority",
@@ -1061,7 +1061,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-29T09:25:35.121Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:animo",
@@ -1118,7 +1118,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T08:46:59.649Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:app-solutions",
@@ -1161,7 +1161,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.356Z",
       "updatedAt": "2026-06-29T09:25:37.277Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:apple",
@@ -1192,7 +1192,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T14:58:06.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ar24",
@@ -1235,7 +1235,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-29T09:25:37.268Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ardaco-a-s",
@@ -1306,7 +1306,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-06-29T09:25:55.244Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:aruba",
@@ -1337,7 +1337,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:aruba-posta-elettronica-certificata",
@@ -1404,7 +1404,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.480Z",
       "updatedAt": "2026-06-29T09:25:42.509Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:asetec-ingenieria-de-sistemas",
@@ -1447,7 +1447,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-06-29T09:25:35.116Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:asseco-data-systems",
@@ -1518,7 +1518,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-06-29T09:25:49.562Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:atos-information-technology",
@@ -1561,7 +1561,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-06-29T09:25:30.852Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:audkenni-ehf",
@@ -1608,7 +1608,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.854Z",
       "updatedAt": "2026-06-29T09:25:40.998Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:austria",
@@ -1639,7 +1639,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:autenti",
@@ -1690,7 +1690,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.172Z",
       "updatedAt": "2026-06-29T09:25:49.564Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:auth0",
@@ -1721,7 +1721,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:authbound",
@@ -1753,7 +1753,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:autoridad-de-gestion-de-la-pki-del-ministerio-de-defensa-agpmd-y-director-del-ce",
@@ -1804,7 +1804,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-06-29T09:25:35.093Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:aviva-voice-systems-and-services",
@@ -1846,7 +1846,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-29T09:25:35.116Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ayanworks",
@@ -1884,7 +1884,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:azienda-regionale-per-l-innovazione-e-gli-acquisti",
@@ -1926,7 +1926,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-06-29T09:25:42.524Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:backup-file",
@@ -1969,7 +1969,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-06-29T09:25:35.126Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:banca-d-italia",
@@ -2016,7 +2016,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.476Z",
       "updatedAt": "2026-06-29T09:25:42.507Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:banca-intesa",
@@ -2059,7 +2059,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-06-29T09:25:42.515Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bank-of-slovenia",
@@ -2102,7 +2102,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-06-29T09:25:53.508Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bankenes-id-tjeneste",
@@ -2145,7 +2145,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-06-29T09:25:48.824Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:banqup",
@@ -2200,7 +2200,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-22T10:36:23.422Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:be-invest-international",
@@ -2251,7 +2251,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-06-29T09:25:45.164Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bd",
@@ -2283,7 +2283,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:49:16.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:belgium",
@@ -2314,7 +2314,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:belgian-mobile-id",
@@ -2361,7 +2361,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.492Z",
       "updatedAt": "2026-06-29T09:25:26.056Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bengaluru-international-airport",
@@ -2393,7 +2393,7 @@
       ],
       "firstSeenAt": "2026-04-22T11:17:22.000Z",
       "updatedAt": "2026-04-22T11:36:11.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bewor-tech",
@@ -2436,7 +2436,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-06-29T09:25:35.112Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:beyond-the-scope",
@@ -2479,7 +2479,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-06-29T09:25:35.123Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:buthan",
@@ -2510,7 +2510,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bitkasten",
@@ -2553,7 +2553,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.666Z",
       "updatedAt": "2026-06-22T10:36:28.120Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:helixid",
@@ -2588,7 +2588,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:borica",
@@ -2663,7 +2663,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.916Z",
       "updatedAt": "2026-06-29T09:25:27.040Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bpce-infogerance-et-technologies",
@@ -2706,7 +2706,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.356Z",
       "updatedAt": "2026-06-29T09:25:37.277Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:brainit-sk-s-r-o",
@@ -2785,7 +2785,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.604Z",
       "updatedAt": "2026-06-29T09:25:55.244Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:british-airways",
@@ -2817,7 +2817,7 @@
       ],
       "firstSeenAt": "2026-04-22T11:06:34.000Z",
       "updatedAt": "2026-04-22T11:06:34.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:btp-onetec",
@@ -2860,7 +2860,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-29T09:25:35.115Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:buypass",
@@ -2911,7 +2911,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.771Z",
       "updatedAt": "2026-06-29T09:25:48.822Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:byte-computer",
@@ -2962,7 +2962,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-06-29T09:25:33.742Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:caesar",
@@ -2987,7 +2987,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T12:58:07.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ca-dmv",
@@ -3024,7 +3024,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T08:46:59.659Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cedacri",
@@ -3067,7 +3067,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-06-29T09:25:42.511Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cedacrinord",
@@ -3110,7 +3110,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.484Z",
       "updatedAt": "2026-06-29T09:25:42.516Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cegedim",
@@ -3157,7 +3157,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.354Z",
       "updatedAt": "2026-06-29T09:25:37.274Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ceger-centro-de-gestao-da-rede-informatica-do-governo",
@@ -3208,7 +3208,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.596Z",
       "updatedAt": "2026-06-29T09:25:50.520Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:crt",
@@ -3233,7 +3233,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-06T20:06:29.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:centrul-de-calcul",
@@ -3292,7 +3292,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-06-29T09:25:51.634Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:certeurope",
@@ -3343,7 +3343,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.345Z",
       "updatedAt": "2026-06-29T09:25:37.263Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:certicomm",
@@ -3385,7 +3385,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-29T09:25:42.518Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:certigna",
@@ -3440,7 +3440,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-06-29T09:25:37.265Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:certipost",
@@ -3483,7 +3483,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.490Z",
       "updatedAt": "2026-06-29T09:25:26.045Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:certizen",
@@ -3515,7 +3515,7 @@
       ],
       "firstSeenAt": "2026-04-23T04:48:13.000Z",
       "updatedAt": "2026-04-23T04:48:13.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:certsign",
@@ -3586,7 +3586,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.972Z",
       "updatedAt": "2026-06-29T09:25:51.627Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cfca",
@@ -3618,7 +3618,7 @@
       ],
       "firstSeenAt": "2026-04-23T04:55:21.000Z",
       "updatedAt": "2026-04-23T05:07:41.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cgi-information-systems-and-management-consultants-espana",
@@ -3661,7 +3661,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-29T09:25:35.122Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:chambersign-france",
@@ -3712,7 +3712,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-06-29T09:25:37.264Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cibg",
@@ -3755,7 +3755,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.432Z",
       "updatedAt": "2026-06-29T09:25:47.867Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:amsterdam",
@@ -3802,7 +3802,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:nijmegen",
@@ -3865,7 +3865,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:03:32.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:clearbus",
@@ -3912,7 +3912,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-06-29T09:25:37.272Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cleverbase-id",
@@ -3955,7 +3955,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-06-29T09:25:47.877Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:colegio-oficial-de-registradores-de-la-propiedad-y-mercantiles-de-espana",
@@ -4006,7 +4006,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-06-29T09:25:35.092Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:coloriuris",
@@ -4049,7 +4049,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.436Z",
       "updatedAt": "2026-06-29T09:25:35.105Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:commfides-norge",
@@ -4096,7 +4096,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.771Z",
       "updatedAt": "2026-06-29T09:25:48.823Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:connect-solutions",
@@ -4139,7 +4139,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.492Z",
       "updatedAt": "2026-06-29T09:25:26.047Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:consejo-general-de-la-abogacia-espanola",
@@ -4186,7 +4186,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-06-29T09:25:35.090Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:consiglio-nazionale-del-notariato",
@@ -4237,7 +4237,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-06-29T09:25:42.512Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:consorci-administracio-oberta-de-catalunya-caoc",
@@ -4288,7 +4288,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.431Z",
       "updatedAt": "2026-06-29T09:25:35.089Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:credenco",
@@ -4326,7 +4326,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:42:04.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:credivera",
@@ -4378,7 +4378,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.665Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cryptolog-international",
@@ -4444,7 +4444,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-06-29T09:25:37.265Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:customer-communications-tecknalia",
@@ -4495,7 +4495,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-29T09:25:35.114Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cybersecurity-competence-and-certification-centre",
@@ -4538,7 +4538,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.599Z",
       "updatedAt": "2026-06-29T09:25:55.241Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:czechia",
@@ -4569,7 +4569,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:d-trust",
@@ -4624,7 +4624,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.658Z",
       "updatedAt": "2026-06-29T09:25:30.848Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:danske-bank-nuf",
@@ -4667,7 +4667,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-06-29T09:25:48.824Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:danubetech",
@@ -4692,7 +4692,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T15:46:20.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:darva",
@@ -4739,7 +4739,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-29T09:25:37.269Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:datakeeper",
@@ -4770,7 +4770,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:06:38.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:datasure",
@@ -4825,7 +4825,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-06-29T09:25:37.276Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:deh-notificacion-electronica-habilitada",
@@ -4876,7 +4876,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-06-29T09:25:35.119Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:den-danske-stat",
@@ -4931,7 +4931,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.958Z",
       "updatedAt": "2026-06-29T09:25:31.721Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:png",
@@ -4962,7 +4962,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:deutsche-post",
@@ -5005,7 +5005,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-06-29T09:25:30.851Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:deutsche-telekom",
@@ -5052,7 +5052,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.659Z",
       "updatedAt": "2026-06-29T09:25:30.849Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:deutsche-telekom-security",
@@ -5095,7 +5095,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-06-29T09:25:30.854Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:deutsches-mikrofilminstitut-fur-medizinische-dokumentation-und-archivierung-rein",
@@ -5142,7 +5142,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.666Z",
       "updatedAt": "2026-06-29T09:25:30.855Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:dgn-deutsches-gesundheitsnetz-service",
@@ -5189,7 +5189,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.659Z",
       "updatedAt": "2026-06-29T09:25:30.848Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:diacc",
@@ -5223,7 +5223,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.670Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digicert-europe-belgium",
@@ -5270,7 +5270,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.491Z",
       "updatedAt": "2026-06-29T09:25:26.046Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digicert-europe-netherlands",
@@ -5325,7 +5325,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.435Z",
       "updatedAt": "2026-06-29T09:25:47.876Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digidentity",
@@ -5383,7 +5383,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digisign",
@@ -5434,7 +5434,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.971Z",
       "updatedAt": "2026-06-29T09:25:51.626Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digital-and-population-data-services-agency",
@@ -5481,7 +5481,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.821Z",
       "updatedAt": "2026-06-29T09:25:35.987Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digitalbazaar",
@@ -5512,7 +5512,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digital-trust-solutions",
@@ -5538,7 +5538,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digitaliseringsstyrelsen",
@@ -5575,7 +5575,7 @@
       ],
       "firstSeenAt": "2026-06-05T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.641Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digitalsign-certificadora-digital",
@@ -5642,7 +5642,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.598Z",
       "updatedAt": "2026-06-29T09:25:50.522Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digitel-on-trusted-services-u",
@@ -5697,7 +5697,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-06-29T09:25:35.108Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:digiyatra",
@@ -5738,7 +5738,7 @@
       ],
       "firstSeenAt": "2026-04-22T13:07:27.000Z",
       "updatedAt": "2026-07-02T08:46:59.674Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:dioss-smart-solutions",
@@ -5781,7 +5781,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.494Z",
       "updatedAt": "2026-06-29T09:25:26.059Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:direccion-general-de-la-policia",
@@ -5828,7 +5828,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.426Z",
       "updatedAt": "2026-06-29T09:25:35.087Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:disig-a-s",
@@ -5907,7 +5907,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.602Z",
       "updatedAt": "2026-06-29T09:25:55.242Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:dnb-bank-asa",
@@ -5950,7 +5950,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.772Z",
       "updatedAt": "2026-06-29T09:25:48.825Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:docaposte-arkhineo",
@@ -6005,7 +6005,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-29T09:25:37.269Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:docaposte-certinomis",
@@ -6060,7 +6060,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.346Z",
       "updatedAt": "2026-06-29T09:25:37.263Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:docbyte",
@@ -6107,7 +6107,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.495Z",
       "updatedAt": "2026-06-29T09:25:26.060Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:docklabs",
@@ -6144,7 +6144,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:document-channel",
@@ -6187,7 +6187,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-06-29T09:25:37.273Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:docusign-france",
@@ -6238,7 +6238,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-06-29T09:25:37.266Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:docuten-tech",
@@ -6289,7 +6289,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-29T09:25:35.113Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:domoticube",
@@ -6314,7 +6314,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:netherlands",
@@ -6345,7 +6345,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:e-commerce-monitoring",
@@ -6408,7 +6408,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.162Z",
       "updatedAt": "2026-06-29T09:25:25.070Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ead-trust-european-agency-of-digital-trust",
@@ -6463,7 +6463,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-06-29T09:25:35.111Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:edatalia-data-solutions",
@@ -6506,7 +6506,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-06-29T09:25:35.124Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:edicom-capital",
@@ -6572,7 +6572,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.433Z",
       "updatedAt": "2026-06-29T09:25:35.092Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:edocs-bulgaria",
@@ -6630,7 +6630,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.918Z",
       "updatedAt": "2026-06-29T09:25:27.050Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:educa",
@@ -6663,7 +6663,7 @@
       ],
       "firstSeenAt": "2026-04-03T06:16:15.000Z",
       "updatedAt": "2026-04-03T06:16:15.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:eidentity-a-s",
@@ -6718,7 +6718,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.717Z",
       "updatedAt": "2026-06-29T09:25:29.212Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:eika-gruppen",
@@ -6761,7 +6761,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-06-29T09:25:48.826Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:tue",
@@ -6787,7 +6787,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:eius-d-o-o",
@@ -6842,7 +6842,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.585Z",
       "updatedAt": "2026-06-29T09:25:53.507Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:encia-para-a-reforma-tecnologica-do-estado-i-p",
@@ -6893,7 +6893,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.599Z",
       "updatedAt": "2026-06-29T09:25:50.523Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:enigma-systemy-ochrony-informacji",
@@ -6964,7 +6964,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-06-29T09:25:49.561Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:entaksi-solutions-irish-branch",
@@ -7023,7 +7023,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.540Z",
       "updatedAt": "2026-06-29T09:25:40.158Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:entrust-eu",
@@ -7066,7 +7066,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-06-29T09:25:35.110Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:equisign",
@@ -7109,7 +7109,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.350Z",
       "updatedAt": "2026-06-29T09:25:37.271Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:espublico-servicios-para-la-administracion",
@@ -7160,7 +7160,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-06-29T09:25:35.107Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:estonia",
@@ -7191,7 +7191,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:eudiplo",
@@ -7237,7 +7237,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:eurocert",
@@ -7292,7 +7292,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-06-29T09:25:49.561Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:eu",
@@ -7456,7 +7456,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:evicertia-u",
@@ -7499,7 +7499,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.440Z",
       "updatedAt": "2026-06-29T09:25:35.111Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:eviden-germany",
@@ -7542,7 +7542,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.663Z",
       "updatedAt": "2026-06-29T09:25:30.854Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:evrotrust-technologies",
@@ -7617,7 +7617,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.918Z",
       "updatedAt": "2026-06-29T09:25:27.049Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ewc",
@@ -7706,7 +7706,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:exceet-secure-solutions",
@@ -7749,7 +7749,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.660Z",
       "updatedAt": "2026-06-29T09:25:30.850Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:fabaleus",
@@ -7775,7 +7775,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:fabrica-nacional-de-moneda-y-timbre-real-casa-de-la-moneda-entidad-publica-empre",
@@ -7830,7 +7830,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.430Z",
       "updatedAt": "2026-06-29T09:25:35.089Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:factorynet-augusta",
@@ -7873,7 +7873,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-06-29T09:25:35.118Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:factum-identity-solutions-u",
@@ -7924,7 +7924,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-29T09:25:35.122Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:fct",
@@ -7977,7 +7977,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.642Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:federal-chamber-of-notaries",
@@ -8028,7 +8028,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.657Z",
       "updatedAt": "2026-06-29T09:25:30.847Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:federal-employment-agency",
@@ -8074,7 +8074,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.655Z",
       "updatedAt": "2026-06-29T09:25:30.846Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:fides",
@@ -8254,11 +8254,11 @@
       "bluePages": {
         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c",
         "profileAvailable": true,
-        "checkedAt": "2026-07-02T10:39:39.397Z"
+        "checkedAt": "2026-07-03T08:50:08.925Z"
       },
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:financijska-agencija",
@@ -8312,7 +8312,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.702Z",
       "updatedAt": "2026-06-29T09:25:38.153Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:findynet",
@@ -8384,7 +8384,7 @@
       ],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-23T05:20:04.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:finema",
@@ -8416,7 +8416,7 @@
       ],
       "firstSeenAt": "2026-04-23T04:50:59.000Z",
       "updatedAt": "2026-04-23T04:50:59.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:finland",
@@ -8447,7 +8447,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:firmafy-soluciones-tecnologicas",
@@ -8498,7 +8498,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-06-29T09:25:35.125Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:firmaprofesional",
@@ -8553,7 +8553,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.434Z",
       "updatedAt": "2026-06-29T09:25:35.104Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:first-certification-authority-a-s",
@@ -8624,7 +8624,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.716Z",
       "updatedAt": "2026-06-29T09:25:29.211Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:qtsp-sk-6-first-certification-authority-a-s",
@@ -8675,7 +8675,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-06-29T09:25:55.243Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:forkbomb",
@@ -8713,7 +8713,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:fraudfighter",
@@ -8766,7 +8766,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.688Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:france",
@@ -8797,7 +8797,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:fuelfwd",
@@ -8822,7 +8822,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:full-certificate",
@@ -8865,7 +8865,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-06-29T09:25:35.119Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:gaia-x",
@@ -8936,7 +8936,7 @@
       ],
       "firstSeenAt": "2026-04-09T12:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.689Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:gataca",
@@ -8977,7 +8977,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:gear-up",
@@ -9002,7 +9002,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:17:47.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:rotterdam",
@@ -9027,7 +9027,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:gendarmerie-nationale",
@@ -9074,7 +9074,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.353Z",
       "updatedAt": "2026-06-29T09:25:37.274Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:germany",
@@ -9105,7 +9105,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:gleif",
@@ -9170,7 +9170,7 @@
       ],
       "firstSeenAt": "2026-04-20T08:46:45.000Z",
       "updatedAt": "2026-07-02T08:46:59.691Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:global-vlei",
@@ -9202,7 +9202,7 @@
       ],
       "firstSeenAt": "2026-04-22T19:34:17.000Z",
       "updatedAt": "2026-04-23T05:48:01.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:globalsign",
@@ -9257,7 +9257,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.493Z",
       "updatedAt": "2026-06-29T09:25:26.057Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:google",
@@ -9294,7 +9294,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bcgov",
@@ -9331,7 +9331,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:cyprus",
@@ -9361,7 +9361,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:greece",
@@ -9396,7 +9396,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:greek-universities-network-gunet",
@@ -9451,7 +9451,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-06-29T09:25:33.743Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:hak-rein-vos-notarissen",
@@ -9476,7 +9476,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:halcom-d-d",
@@ -9539,7 +9539,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.584Z",
       "updatedAt": "2026-06-29T09:25:53.505Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:headon",
@@ -9565,7 +9565,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:hellenic-public-administration-certification-authority",
@@ -9612,7 +9612,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:15.785Z",
       "updatedAt": "2026-06-29T09:25:33.743Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:hong-kong-international-airport",
@@ -9644,7 +9644,7 @@
       ],
       "firstSeenAt": "2026-04-22T11:13:15.000Z",
       "updatedAt": "2026-04-22T11:13:15.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:hovi",
@@ -9692,7 +9692,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:hp-d-d",
@@ -9735,7 +9735,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.703Z",
       "updatedAt": "2026-06-29T09:25:38.155Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:hungary",
@@ -9766,7 +9766,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:i-t-telecom",
@@ -9808,7 +9808,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-29T09:25:42.518Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:icbpi",
@@ -9850,7 +9850,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-06-29T09:25:42.521Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:iceland",
@@ -9881,7 +9881,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:idcontrol",
@@ -9906,7 +9906,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:identinet",
@@ -9931,7 +9931,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:identity-documents-personalisation-centre-under-the-ministry-of-the-interior",
@@ -9973,7 +9973,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-29T09:25:44.280Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:identos",
@@ -10016,7 +10016,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-06-09T00:00:00Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:idnow-trust-services",
@@ -10074,7 +10074,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.269Z",
       "updatedAt": "2026-06-29T09:25:52.448Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:igrant",
@@ -10187,7 +10187,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ilabs",
@@ -10213,7 +10213,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:impierce",
@@ -10252,7 +10252,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:imprimerie-nationale",
@@ -10295,7 +10295,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.348Z",
       "updatedAt": "2026-06-29T09:25:37.267Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:in-groupe-denmark",
@@ -10342,7 +10342,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.959Z",
       "updatedAt": "2026-06-29T09:25:31.722Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:in-te",
@@ -10401,7 +10401,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-06-29T09:25:42.513Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:incert",
@@ -10444,7 +10444,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-06-29T09:25:45.164Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:india",
@@ -10475,7 +10475,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:indigo",
@@ -10507,7 +10507,7 @@
       ],
       "firstSeenAt": "2026-04-22T11:10:08.000Z",
       "updatedAt": "2026-04-22T11:10:08.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:inetum",
@@ -10545,7 +10545,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:infocamere-s-c-p-a",
@@ -10604,7 +10604,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-06-29T09:25:42.524Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:infocamere-sc-p-a",
@@ -10646,7 +10646,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-29T09:25:42.519Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:infocert",
@@ -10721,7 +10721,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.479Z",
       "updatedAt": "2026-06-29T09:25:42.508Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:imda",
@@ -10751,7 +10751,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-20T08:26:08.000Z",
       "updatedAt": "2026-07-02T08:46:59.699Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:infonotary",
@@ -10814,7 +10814,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.917Z",
       "updatedAt": "2026-06-29T09:25:27.047Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:information-services",
@@ -10869,7 +10869,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.917Z",
       "updatedAt": "2026-06-29T09:25:27.048Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:infraestructuras-y-servicios-de-telecomunicaciones-y-certificacion",
@@ -10923,7 +10923,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.432Z",
       "updatedAt": "2026-06-29T09:25:35.091Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:innotractor",
@@ -10948,7 +10948,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:innovalor",
@@ -10973,7 +10973,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-02T13:19:49.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:inposte-it",
@@ -11016,7 +11016,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-29T09:25:42.526Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:instituto-dos-registos-e-do-notariado-i-p",
@@ -11063,7 +11063,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.597Z",
       "updatedAt": "2026-06-29T09:25:50.521Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:instituto-para-la-dinamizacion-economica-u",
@@ -11114,7 +11114,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-06-29T09:25:35.121Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:interac",
@@ -11149,7 +11149,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.705Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:intercede",
@@ -11180,7 +11180,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:iata",
@@ -11239,7 +11239,7 @@
       ],
       "firstSeenAt": "2026-04-20T08:42:08.000Z",
       "updatedAt": "2026-07-02T08:46:59.696Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:icao",
@@ -11271,7 +11271,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-20T09:14:06.000Z",
       "updatedAt": "2026-07-02T08:46:59.696Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:intesa-sanpaolo-bank",
@@ -11317,7 +11317,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-06-29T09:25:42.514Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:intesi-group",
@@ -11376,7 +11376,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-06-29T09:25:42.523Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ireland",
@@ -11407,7 +11407,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:iso",
@@ -11458,7 +11458,7 @@
       ],
       "firstSeenAt": "2026-04-22T10:00:00Z",
       "updatedAt": "2026-04-22T10:00:00Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:it-telecom",
@@ -11500,7 +11500,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.482Z",
       "updatedAt": "2026-06-29T09:25:42.512Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:italy",
@@ -11531,7 +11531,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ivnosys-soluciones-u",
@@ -11586,7 +11586,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-06-29T09:25:35.107Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ixo",
@@ -11617,7 +11617,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:izertis",
@@ -11655,7 +11655,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:japan-airlines",
@@ -11687,7 +11687,7 @@
       ],
       "firstSeenAt": "2026-04-22T10:29:17.000Z",
       "updatedAt": "2026-04-22T10:31:40.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:jcc-payment-systems",
@@ -11734,7 +11734,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.125Z",
       "updatedAt": "2026-06-29T09:25:27.869Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:k4security",
@@ -11769,7 +11769,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:kvk",
@@ -11801,7 +11801,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T12:47:02.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:kfj-inwestycje",
@@ -11844,7 +11844,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-06-29T09:25:49.563Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:kingdom-of-belgium-federal-government",
@@ -11902,7 +11902,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.493Z",
       "updatedAt": "2026-06-29T09:25:26.058Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:komercni-banka-a-s",
@@ -11953,7 +11953,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.720Z",
       "updatedAt": "2026-06-29T09:25:29.217Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:kpn",
@@ -12000,7 +12000,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.433Z",
       "updatedAt": "2026-06-29T09:25:47.868Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:krajowa-izba-rozliczeniowa",
@@ -12055,7 +12055,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.170Z",
       "updatedAt": "2026-06-29T09:25:49.560Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:latvia",
@@ -12086,7 +12086,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:latvian-state-radio-and-television-center",
@@ -12137,7 +12137,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.782Z",
       "updatedAt": "2026-06-29T09:25:46.075Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:lex-persona",
@@ -12188,7 +12188,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.353Z",
       "updatedAt": "2026-06-29T09:25:37.273Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:lissi",
@@ -12247,7 +12247,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:lleidanet-pki",
@@ -12306,7 +12306,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.442Z",
       "updatedAt": "2026-06-29T09:25:35.115Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:lleidanetworks-serveis-telematics",
@@ -12349,7 +12349,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-06-29T09:25:35.108Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:logalty-prueba-por-interposicion",
@@ -12412,7 +12412,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.438Z",
       "updatedAt": "2026-06-29T09:25:35.107Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:logius",
@@ -12444,7 +12444,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-05-27T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.712Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:lombardia-informatica",
@@ -12486,7 +12486,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-06-29T09:25:42.520Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:lombardia-integrata-servizi-infotelematici-per-il-territorio",
@@ -12528,7 +12528,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-06-29T09:25:42.510Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:luxtrust",
@@ -12599,7 +12599,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.464Z",
       "updatedAt": "2026-06-29T09:25:45.161Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:magyar-telekom-public-company",
@@ -12641,7 +12641,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.144Z",
       "updatedAt": "2026-06-29T09:25:39.362Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:mailstone-timestamp",
@@ -12684,7 +12684,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-06-29T09:25:37.276Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:mailteck",
@@ -12735,7 +12735,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-29T09:25:35.114Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:malta-electronic-certification-services",
@@ -12778,7 +12778,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.084Z",
       "updatedAt": "2026-06-29T09:25:46.906Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:mattr",
@@ -12815,7 +12815,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:medisign",
@@ -12858,7 +12858,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.660Z",
       "updatedAt": "2026-06-29T09:25:30.850Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:meeco",
@@ -12895,7 +12895,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:microsave-consulting",
@@ -12926,7 +12926,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-05-26T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.715Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:microsec-micro-software-engineering-and-consulting-private-company-by-shares",
@@ -12993,7 +12993,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.141Z",
       "updatedAt": "2026-06-29T09:25:39.361Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:microsoft",
@@ -13024,7 +13024,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T15:01:19.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:migration-department-under-the-ministry-of-the-interior-of-the-republic-of-lithu",
@@ -13066,7 +13066,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.104Z",
       "updatedAt": "2026-06-29T09:25:44.288Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:minisuomi",
@@ -13097,7 +13097,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ministere-de-l-interieur",
@@ -13148,7 +13148,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.350Z",
       "updatedAt": "2026-06-29T09:25:37.270Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ministere-de-la-justice",
@@ -13191,7 +13191,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.347Z",
       "updatedAt": "2026-06-29T09:25:37.266Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ministeres-economiques-et-financiers",
@@ -13233,7 +13233,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.354Z",
       "updatedAt": "2026-06-29T09:25:37.275Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:bzk",
@@ -13259,7 +13259,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ministerie-van-defensie",
@@ -13302,7 +13302,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.433Z",
       "updatedAt": "2026-06-29T09:25:47.869Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ministerie-van-infrastructuur-en-waterstaat",
@@ -13345,7 +13345,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.434Z",
       "updatedAt": "2026-06-29T09:25:47.869Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ministero-della-difesa",
@@ -13403,7 +13403,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.481Z",
       "updatedAt": "2026-06-29T09:25:42.511Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ministry-of-defence-slovak-republic",
@@ -13454,7 +13454,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.602Z",
       "updatedAt": "2026-06-29T09:25:55.242Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:brazil",
@@ -13485,7 +13485,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:mintblue",
@@ -13510,7 +13510,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-03-31T16:52:18.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:moldova",
@@ -13541,7 +13541,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:mosip",
@@ -13596,7 +13596,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:multicert-servicos-de-certificacao-electronica",
@@ -13651,7 +13651,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.597Z",
       "updatedAt": "2026-06-29T09:25:50.522Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:mydata-global",
@@ -13676,7 +13676,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:namirial",
@@ -13738,7 +13738,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:qtsp-ie-5-namirial",
@@ -13802,7 +13802,7 @@
       ],
       "firstSeenAt": "2026-04-25T06:26:18.541Z",
       "updatedAt": "2026-06-22T10:36:39.170Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:qtsp-it-33-namirial",
@@ -13885,7 +13885,7 @@
       ],
       "firstSeenAt": "2026-04-25T06:26:19.487Z",
       "updatedAt": "2026-06-29T09:25:42.519Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:national-agency-for-network-and-electronic-services",
@@ -13960,7 +13960,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.603Z",
       "updatedAt": "2026-06-29T09:25:55.243Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ethiopia",
@@ -13991,7 +13991,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:national-registers-authority",
@@ -14050,7 +14050,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.718Z",
       "updatedAt": "2026-06-29T09:25:29.214Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:national-security-authority",
@@ -14105,7 +14105,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.598Z",
       "updatedAt": "2026-06-29T09:25:55.241Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:neoke",
@@ -14136,7 +14136,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:neovo",
@@ -14170,7 +14170,7 @@
       ],
       "firstSeenAt": "2026-04-02T18:06:53.000Z",
       "updatedAt": "2026-07-02T08:46:59.720Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:netcetera-software-services",
@@ -14225,7 +14225,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.661Z",
       "updatedAt": "2026-06-29T09:25:30.851Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:netcom-group",
@@ -14268,7 +14268,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.355Z",
       "updatedAt": "2026-06-29T09:25:37.275Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:netlock-informatics-and-network-privacy-services-company",
@@ -14323,7 +14323,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.144Z",
       "updatedAt": "2026-06-29T09:25:39.362Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:nisz-national-infocommunications-services-company-by-shares",
@@ -14374,7 +14374,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.145Z",
       "updatedAt": "2026-06-29T09:25:39.363Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:nitro-software-belgium",
@@ -14421,7 +14421,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.494Z",
       "updatedAt": "2026-06-29T09:25:26.059Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:nlb-d-d",
@@ -14468,7 +14468,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.584Z",
       "updatedAt": "2026-06-29T09:25:53.506Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:nordea-bank-abp-filial-i-norge",
@@ -14511,7 +14511,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-06-29T09:25:48.825Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:northernblock",
@@ -14547,7 +14547,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:norway",
@@ -14578,7 +14578,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:notarchiv-company",
@@ -14625,7 +14625,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.145Z",
       "updatedAt": "2026-06-29T09:25:39.364Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:notartel",
@@ -14676,7 +14676,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-06-29T09:25:42.525Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:onespan",
@@ -14707,7 +14707,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-17T13:32:50.000Z",
       "updatedAt": "2026-07-02T08:46:59.725Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ooru",
@@ -14745,7 +14745,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T08:46:59.725Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:owf",
@@ -14782,7 +14782,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:oumou-group",
@@ -14813,7 +14813,7 @@
       ],
       "firstSeenAt": "2026-04-03T07:27:12.000Z",
       "updatedAt": "2026-04-10T12:35:16.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:pagopa",
@@ -14856,7 +14856,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-29T09:25:42.527Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:penneo",
@@ -14907,7 +14907,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.958Z",
       "updatedAt": "2026-06-29T09:25:31.721Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:poczta-polska-s-a",
@@ -14950,7 +14950,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.171Z",
       "updatedAt": "2026-06-29T09:25:49.563Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:poland",
@@ -14981,7 +14981,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:polish-security-printing-works",
@@ -15044,7 +15044,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.169Z",
       "updatedAt": "2026-06-29T09:25:49.560Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:portugal",
@@ -15075,7 +15075,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-28T14:56:28.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:posta-slovenije-d-o-o",
@@ -15126,7 +15126,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.585Z",
       "updatedAt": "2026-06-29T09:25:53.506Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:postalia-belgium",
@@ -15169,7 +15169,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.495Z",
       "updatedAt": "2026-06-29T09:25:26.060Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:poste-italiane",
@@ -15227,7 +15227,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-06-29T09:25:42.523Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:postecom",
@@ -15277,7 +15277,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.483Z",
       "updatedAt": "2026-06-29T09:25:42.514Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:postel",
@@ -15320,7 +15320,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-29T09:25:42.527Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:primesign",
@@ -15375,7 +15375,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.162Z",
       "updatedAt": "2026-06-29T09:25:25.070Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:privacybydesign",
@@ -15399,7 +15399,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:procivis",
@@ -15437,7 +15437,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:provenant",
@@ -15478,7 +15478,7 @@
       ],
       "firstSeenAt": "2026-04-23T05:03:19.000Z",
       "updatedAt": "2026-04-23T05:03:19.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:prvni-certifikacni-autorita-s-r-o",
@@ -15525,7 +15525,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:24.604Z",
       "updatedAt": "2026-06-29T09:25:55.245Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:quintessence-research",
@@ -15550,7 +15550,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:register",
@@ -15593,7 +15593,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.490Z",
       "updatedAt": "2026-06-29T09:25:42.523Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:rekono-d-o-o",
@@ -15660,7 +15660,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-06-29T09:25:53.507Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:republika-slovenija",
@@ -15719,7 +15719,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.583Z",
       "updatedAt": "2026-06-29T09:25:53.505Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:honduras",
@@ -15749,7 +15749,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:rubricae-business-solutions",
@@ -15792,7 +15792,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.447Z",
       "updatedAt": "2026-06-29T09:25:35.124Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:samsung",
@@ -15823,7 +15823,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sanpaolo-imi",
@@ -15865,7 +15865,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.484Z",
       "updatedAt": "2026-06-29T09:25:42.515Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:saritel",
@@ -15907,7 +15907,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.488Z",
       "updatedAt": "2026-06-29T09:25:42.520Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sbb",
@@ -15939,7 +15939,7 @@
       ],
       "firstSeenAt": "2026-04-03T06:05:55.000Z",
       "updatedAt": "2026-04-03T06:05:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:scrive",
@@ -15982,7 +15982,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-06-29T09:25:48.828Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:scytales",
@@ -16019,7 +16019,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:seceti",
@@ -16061,7 +16061,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.485Z",
       "updatedAt": "2026-06-29T09:25:42.516Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sectigo-europe",
@@ -16116,7 +16116,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-29T09:25:35.113Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:secumail",
@@ -16159,7 +16159,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.436Z",
       "updatedAt": "2026-06-29T09:25:47.878Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sefira",
@@ -16213,7 +16213,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.719Z",
       "updatedAt": "2026-06-29T09:25:29.215Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:servicios-de-mailcertificado",
@@ -16256,7 +16256,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.444Z",
       "updatedAt": "2026-06-29T09:25:35.118Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:setcce-d-o-o",
@@ -16303,7 +16303,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.586Z",
       "updatedAt": "2026-06-29T09:25:53.508Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:seyfor-a-s",
@@ -16350,7 +16350,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.721Z",
       "updatedAt": "2026-06-29T09:25:29.218Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sheca",
@@ -16382,7 +16382,7 @@
       ],
       "firstSeenAt": "2026-04-22T19:26:31.000Z",
       "updatedAt": "2026-04-22T19:35:56.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sia",
@@ -16424,7 +16424,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.485Z",
       "updatedAt": "2026-06-29T09:25:42.516Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sicpa",
@@ -16455,7 +16455,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sign8",
@@ -16506,7 +16506,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-06-29T09:25:30.853Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:signe",
@@ -16557,7 +16557,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.435Z",
       "updatedAt": "2026-06-29T09:25:35.104Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:signicat",
@@ -16600,7 +16600,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-06-29T09:25:48.827Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:signicat-u",
@@ -16643,7 +16643,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.441Z",
       "updatedAt": "2026-06-29T09:25:35.112Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:simpliworks",
@@ -16693,7 +16693,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.974Z",
       "updatedAt": "2026-06-29T09:25:51.636Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sistemas-informaticos-abiertos-u",
@@ -16748,7 +16748,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.435Z",
       "updatedAt": "2026-06-29T09:25:35.105Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sk-id-solutions",
@@ -16803,7 +16803,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:15.349Z",
       "updatedAt": "2026-06-29T09:25:32.628Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:slovakia",
@@ -16834,7 +16834,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:slovenia",
@@ -16865,7 +16865,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:software602-a-s",
@@ -16928,7 +16928,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.718Z",
       "updatedAt": "2026-06-29T09:25:29.213Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:spain",
@@ -16959,7 +16959,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sparebank-1-utvikling-da",
@@ -17002,7 +17002,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.773Z",
       "updatedAt": "2026-06-29T09:25:48.827Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:special-telecommunications-service",
@@ -17061,7 +17061,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.973Z",
       "updatedAt": "2026-06-29T09:25:51.635Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sphereon",
@@ -17103,7 +17103,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:spherity",
@@ -17136,7 +17136,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:spruce",
@@ -17167,7 +17167,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ssb",
@@ -17209,7 +17209,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.486Z",
       "updatedAt": "2026-06-29T09:25:42.517Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:stampee",
@@ -17252,7 +17252,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.358Z",
       "updatedAt": "2026-06-29T09:25:37.279Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:state-enterprise-centre-of-registers",
@@ -17303,7 +17303,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.102Z",
       "updatedAt": "2026-06-29T09:25:44.278Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:state-trust-services",
@@ -17362,7 +17362,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.721Z",
       "updatedAt": "2026-06-29T09:25:29.218Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:stelausoftware",
@@ -17393,7 +17393,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:st",
@@ -17440,7 +17440,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:21.774Z",
       "updatedAt": "2026-06-29T09:25:48.828Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:surf",
@@ -17465,7 +17465,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-23T05:12:08.000Z",
       "updatedAt": "2026-04-23T05:12:47.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:sweden",
@@ -17496,7 +17496,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:swiyu",
@@ -17556,7 +17556,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:swisscom-it-services-finance",
@@ -17615,7 +17615,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.163Z",
       "updatedAt": "2026-06-29T09:25:25.071Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:swisssign",
@@ -17662,7 +17662,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.163Z",
       "updatedAt": "2026-06-29T09:25:25.072Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:talao",
@@ -17711,7 +17711,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:teamsystem",
@@ -17762,7 +17762,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.492Z",
       "updatedAt": "2026-06-29T09:25:42.526Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:tecalis-sotware",
@@ -17805,7 +17805,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.445Z",
       "updatedAt": "2026-06-29T09:25:35.120Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:techniserv-it",
@@ -17851,7 +17851,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.719Z",
       "updatedAt": "2026-06-29T09:25:29.216Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:telecom-italia-trust-technologies",
@@ -17909,7 +17909,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-06-29T09:25:42.521Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:tessi-documents-services",
@@ -17952,7 +17952,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.351Z",
       "updatedAt": "2026-06-29T09:25:37.271Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:thales",
@@ -17983,7 +17983,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:the-czech-post-s-p",
@@ -18038,7 +18038,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:13.717Z",
       "updatedAt": "2026-06-29T09:25:29.212Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:the-high-council-of-french-notariat",
@@ -18085,7 +18085,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.348Z",
       "updatedAt": "2026-06-29T09:25:37.267Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:tno",
@@ -18117,7 +18117,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-02T13:15:35.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:toppan",
@@ -18158,7 +18158,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:tradego",
@@ -18190,7 +18190,7 @@
       ],
       "firstSeenAt": "2026-04-22T19:32:39.000Z",
       "updatedAt": "2026-04-22T21:12:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:trans-sped",
@@ -18249,7 +18249,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.971Z",
       "updatedAt": "2026-06-29T09:25:51.626Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:treefort",
@@ -18306,7 +18306,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.751Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:trustcloud-tech",
@@ -18353,7 +18353,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.446Z",
       "updatedAt": "2026-06-29T09:25:35.123Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:trustitalia",
@@ -18395,7 +18395,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.486Z",
       "updatedAt": "2026-06-29T09:25:42.517Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:trustpro-qtsp",
@@ -18446,7 +18446,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:18.539Z",
       "updatedAt": "2026-06-29T09:25:40.157Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:trustweaver",
@@ -18492,7 +18492,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.265Z",
       "updatedAt": "2026-06-29T09:25:52.446Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:turing-space",
@@ -18522,7 +18522,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-28T10:05:39.000Z",
       "updatedAt": "2026-04-28T10:05:39.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uab-isense-technologies",
@@ -18569,7 +18569,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.104Z",
       "updatedAt": "2026-06-29T09:25:44.286Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uab-baltstamp",
@@ -18612,7 +18612,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.102Z",
       "updatedAt": "2026-06-29T09:25:44.279Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uab-dokobit",
@@ -18659,7 +18659,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-29T09:25:44.280Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uab-mit-soft",
@@ -18710,7 +18710,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-29T09:25:44.284Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uab-nevda",
@@ -18757,7 +18757,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:20.103Z",
       "updatedAt": "2026-06-29T09:25:44.281Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:qtsp-it-51-uanataca",
@@ -18816,7 +18816,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.491Z",
       "updatedAt": "2026-06-29T09:25:42.525Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uanataca",
@@ -18867,7 +18867,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.436Z",
       "updatedAt": "2026-06-29T09:25:35.106Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ubique",
@@ -18899,7 +18899,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ukraine",
@@ -18930,7 +18930,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T06:19:50.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uncefact",
@@ -19009,7 +19009,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:unchained-commerce",
@@ -19041,7 +19041,7 @@
       ],
       "firstSeenAt": "2026-04-03T06:22:51.000Z",
       "updatedAt": "2026-04-03T06:22:51.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:unifiedpost",
@@ -19086,7 +19086,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T11:31:48.036Z",
       "updatedAt": "2026-06-29T09:25:26.058Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uidai",
@@ -19128,7 +19128,7 @@
       ],
       "firstSeenAt": "2026-05-26T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.643Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:uaegean",
@@ -19159,7 +19159,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:unizeto-technologies",
@@ -19202,7 +19202,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.168Z",
       "updatedAt": "2026-06-29T09:25:49.559Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:utimaco-is",
@@ -19245,7 +19245,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:14.662Z",
       "updatedAt": "2026-06-29T09:25:30.852Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:validatedid",
@@ -19282,7 +19282,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:validated-id",
@@ -19347,7 +19347,7 @@
       ],
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:vaultie",
@@ -19408,7 +19408,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-09T00:00:00Z",
       "updatedAt": "2026-07-02T08:46:59.760Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ver-id",
@@ -19438,7 +19438,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:53:54.773Z",
       "updatedAt": "2026-04-02T13:34:42.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:verimi",
@@ -19469,7 +19469,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:viafirma",
@@ -19512,7 +19512,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.439Z",
       "updatedAt": "2026-06-29T09:25:35.109Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:vialink",
@@ -19547,7 +19547,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.352Z",
       "updatedAt": "2026-04-25T06:26:17.352Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:viavansi-corporacion",
@@ -19588,7 +19588,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-06-14T19:16:11.434Z",
       "updatedAt": "2026-06-29T09:25:35.126Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:vintegris-u",
@@ -19638,7 +19638,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.437Z",
       "updatedAt": "2026-06-29T09:25:35.106Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:werify",
@@ -19663,7 +19663,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-26T05:14:31.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:wise-security-global",
@@ -19706,7 +19706,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.443Z",
       "updatedAt": "2026-06-29T09:25:35.117Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:worldline-france",
@@ -19749,7 +19749,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.351Z",
       "updatedAt": "2026-06-29T09:25:37.272Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:wwwallet",
@@ -19780,7 +19780,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:xablu",
@@ -19805,7 +19805,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-03-31T09:51:09.057Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:yivi",
@@ -19836,7 +19836,7 @@
       ],
       "firstSeenAt": "2026-07-02T10:21:42+00:00",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:yoti",
@@ -19867,7 +19867,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-26T04:53:55.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:youniqx",
@@ -19902,7 +19902,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-04-01T20:56:26.000Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:yourd",
@@ -19941,7 +19941,7 @@
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
       "updatedAt": "2026-07-02T10:39:20+00:00",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:yousign",
@@ -19992,7 +19992,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.349Z",
       "updatedAt": "2026-06-29T09:25:37.268Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:zagrebacka-banka-dionicko-drustvo",
@@ -20039,7 +20039,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:17.703Z",
       "updatedAt": "2026-06-29T09:25:38.154Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:zealid",
@@ -20086,7 +20086,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:23.266Z",
       "updatedAt": "2026-06-29T09:25:52.447Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:zertiban-u",
@@ -20129,7 +20129,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.448Z",
       "updatedAt": "2026-06-29T09:25:35.125Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:zetes",
@@ -20180,7 +20180,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:12.491Z",
       "updatedAt": "2026-06-29T09:25:26.046Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:zetes-estonia-ou",
@@ -20223,7 +20223,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:15.349Z",
       "updatedAt": "2026-06-29T09:25:32.628Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:zipper-services",
@@ -20282,7 +20282,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:22.974Z",
       "updatedAt": "2026-06-29T09:25:51.635Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:ziurtapen-eta-zerbitzu-enpresa-empresa-de-certificacion-y-servicios-izenpe",
@@ -20337,7 +20337,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:16.434Z",
       "updatedAt": "2026-06-29T09:25:35.093Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     },
     {
       "id": "org:zucchetti",
@@ -20388,7 +20388,7 @@
       "ecosystemRoleCodes": [],
       "firstSeenAt": "2026-04-25T06:26:19.489Z",
       "updatedAt": "2026-06-29T09:25:42.522Z",
-      "fetchedAt": "2026-07-02T10:39:39.397Z"
+      "fetchedAt": "2026-07-03T08:50:08.925Z"
     }
   ],
   "stats": {
