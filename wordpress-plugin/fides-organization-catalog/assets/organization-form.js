@@ -46,13 +46,23 @@
   let offeringsSuggestionIndex = -1;
 
   function proBadgeHtml() {
+    if (planTier.isPro) {
+      return '<span class="fides-pro-plan-badge fides-pro-plan-badge--label">Pro plan</span>';
+    }
     const url = String(planTier.plansUrl || "/plans/");
     return `<a href="${escapeHtml(url)}" class="fides-pro-plan-badge" target="_blank" rel="noopener">Pro plan</a>`;
   }
 
   function labelWithProIfNeeded(labelText, isProField) {
-    if (!tierUiEnabled() || planTier.isPro || !isProField) return labelText;
+    if (!tierUiEnabled() || !isProField) return labelText;
     return `${labelText} ${proBadgeHtml()}`;
+  }
+
+  function updateProFieldLabels() {
+    root.querySelectorAll("[data-pro-label]").forEach((el) => {
+      const text = el.getAttribute("data-pro-label");
+      if (text) el.innerHTML = labelWithProIfNeeded(text, true);
+    });
   }
 
   async function refreshPlanTier(orgId) {
@@ -334,6 +344,7 @@
     renderOfferingsChips();
     updateDescriptionLimitUi();
     updatePlanTierBanner();
+    updateProFieldLabels();
   }
 
   function escapeHtml(value) {
@@ -758,7 +769,7 @@
             </select>
           </div>
           <div class="fides-form-row">
-            <label for="fides-org-website">${labelWithProIfNeeded("Website", true)}</label>
+            <label for="fides-org-website" data-pro-label="Website">${labelWithProIfNeeded("Website", true)}</label>
             ${helpHtml("website")}
             <input id="fides-org-website" name="website" type="url" placeholder="https://…" />
           </div>
@@ -786,7 +797,7 @@
           </div>
         </div>
         <div class="fides-form-row fides-form-row--offerings">
-          <label for="fides-org-offerings-input">${labelWithProIfNeeded("Offerings", true)}</label>
+          <label for="fides-org-offerings-input" data-pro-label="Offerings">${labelWithProIfNeeded("Offerings", true)}</label>
           <div class="fides-form-row-helpline">
             ${helpHtml("offerings")}
             <p class="fides-description-counter" id="fides-org-offerings-counter" aria-live="polite"></p>
@@ -798,19 +809,19 @@
           </div>
         </div>
         <div class="fides-form-row">
-          <label for="fides-org-tags">${labelWithProIfNeeded("Tags", true)}</label>
+          <label for="fides-org-tags" data-pro-label="Tags">${labelWithProIfNeeded("Tags", true)}</label>
           ${helpHtml("tags")}
           <input id="fides-org-tags" name="tags" type="text" placeholder="wallet, identity" />
         </div>
         </div>
         <div class="fides-form-grid fides-form-grid-pair">
           <div class="fides-form-row">
-            <label for="fides-org-public-contact-email">${labelWithProIfNeeded("Contact email", true)}</label>
+            <label for="fides-org-public-contact-email" data-pro-label="Contact email">${labelWithProIfNeeded("Contact email", true)}</label>
             ${helpHtml("publicContactEmail")}
             <input id="fides-org-public-contact-email" name="contactEmail" type="email" placeholder="contact@example.com" autocomplete="email" />
           </div>
           <div class="fides-form-row">
-            <label for="fides-org-book-meeting-url">${labelWithProIfNeeded("Book a meeting URL", true)}</label>
+            <label for="fides-org-book-meeting-url" data-pro-label="Book a meeting URL">${labelWithProIfNeeded("Book a meeting URL", true)}</label>
             ${helpHtml("bookMeetingUrl")}
             <input id="fides-org-book-meeting-url" name="bookMeetingUrl" type="url" placeholder="https://…/book" />
           </div>
