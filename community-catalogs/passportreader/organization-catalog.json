@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:passportreader",
+    "name": "PassportReader",
+    "sectors": [
+      "digital"
+    ],
+    "description": "PassportReader builds infrastructure for high-assurance identity verification using government-signed data from passports, ID cards, and digital wallets.",
+    "logo": "https://passportreader.app/asset/apple-touch-icon.png",
+    "country": "SE",
+    "certifications": [
+      {
+        "code": "iso27001"
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "kyb_provider",
+      "software_vendor",
+      "eudi_wallet_intermediary"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-06T07:11:03+00:00"
+}
