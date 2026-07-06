@@ -383,10 +383,18 @@ function applyQtspDetailsToPayload(doc, { evidenceUrl, country, website, trustSe
   if (!org.country && country) org.country = country;
   if (!org.website && website) org.website = website;
   next.organization = org;
-  next.lastUpdated = new Date().toISOString();
+  const comparableCurrent = structuredClone(doc);
+  const comparableNext = structuredClone(next);
+  delete comparableCurrent.lastUpdated;
+  delete comparableNext.lastUpdated;
 
-  const changed = JSON.stringify(next) !== JSON.stringify(doc);
-  return { changed, json: next };
+  const payloadChanged = JSON.stringify(comparableNext) !== JSON.stringify(comparableCurrent);
+  if (!payloadChanged) {
+    return { changed: false, json: doc };
+  }
+
+  next.lastUpdated = new Date().toISOString();
+  return { changed: true, json: next };
 }
 
 function buildOrganizationPayload({
