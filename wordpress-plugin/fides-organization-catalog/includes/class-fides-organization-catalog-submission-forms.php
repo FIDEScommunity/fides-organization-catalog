@@ -254,7 +254,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
                     (int) $user->ID
                 )) {
                 return '<div class="fides-use-case-card"><p>' . esc_html__(
-                    'This organization is managed by a linked Pro account. Only the linked owner can suggest updates.',
+                    'This organization is managed by a linked Pro account. Only the linked owner or a site administrator can suggest updates.',
                     'fides-organization-catalog'
                 ) . '</p></div>';
             }

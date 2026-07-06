@@ -45,8 +45,12 @@
   let offeringsValues = [];
   let offeringsSuggestionIndex = -1;
 
+  function proPlanBadgeIsStatic() {
+    return !!planTier.isPro || planTier.tier === "Pro";
+  }
+
   function proBadgeHtml() {
-    if (planTier.isPro) {
+    if (proPlanBadgeIsStatic()) {
       return '<span class="fides-pro-plan-badge fides-pro-plan-badge--label">Pro plan</span>';
     }
     const url = String(planTier.plansUrl || "/plans/");
@@ -69,6 +73,7 @@
     const id = String(orgId || "").trim();
     if (!id || !apiBase) {
       planTier = {
+        tierUiEnabled: planTier.tierUiEnabled,
         tier: "Community",
         isPro: false,
         plansUrl: planTier.plansUrl || "/plans/",
@@ -1379,6 +1384,7 @@
     fillForm({});
     setOfferingsValues([]);
     setMessage("", "");
+    refreshPlanTier("");
   }
 
   wireCertificationControls();

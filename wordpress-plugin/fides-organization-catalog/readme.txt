@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.10.9
+Stable tag: 1.10.10
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,10 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.10.10 =
+* Organization form: keep Pro plan badge static when tier is Pro; refresh plan tier on form reset.
+* Pro organization updates: allow linked owner or site administrator to suggest updates (copy + form behaviour).
 
 = 1.10.9 =
 * Organization detail modal: restore subtle Last updated footer above the contact footer; dates use the browser locale (bundled fides-catalog-ui from tiles ≥ 1.8.20).
