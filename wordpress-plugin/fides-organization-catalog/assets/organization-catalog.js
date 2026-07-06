@@ -1550,6 +1550,13 @@
     return '';
   }
 
+  function renderModalLastUpdatedHtml(item) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildModalLastUpdatedHtml === 'function') {
+      return window.FidesCatalogUI.buildModalLastUpdatedHtml(item, ['updatedAt', 'updated', 'fetchedAt']);
+    }
+    return '';
+  }
+
   function renderOrganizationHeroSection(org) {
     if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildOrganizationHeroSectionHtml === 'function') {
       return window.FidesCatalogUI.buildOrganizationHeroSectionHtml(org, {
@@ -1691,6 +1698,7 @@
                 </div>
               </div>
             </div>` : ''}
+            ${renderModalLastUpdatedHtml(org)}
           </div>
           ${renderOrganizationModalFooter(org, isCommunity)}
         </div>
