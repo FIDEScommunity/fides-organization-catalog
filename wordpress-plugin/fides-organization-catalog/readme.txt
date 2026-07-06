@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.10.10
+Stable tag: 1.10.11
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,9 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.10.11 =
+* Mobile KPI cards: keep 2×2 grid with inline value + label (aligned with wallet catalog); remove narrow-screen single-column override.
 
 = 1.10.10 =
 * Organization form: keep Pro plan badge static when tier is Pro; refresh plan tier on form reset.

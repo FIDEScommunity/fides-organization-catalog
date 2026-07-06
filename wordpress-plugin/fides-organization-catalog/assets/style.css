@@ -3281,6 +3281,33 @@ a.fides-modal-copy-link {
   }
 }
 
+/* Mobile KPI layout — match wallet catalog (2×2 grid, value + label inline). */
+@media (max-width: 600px) {
+  #fides-org-catalog-root .fides-kpi-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  #fides-org-catalog-root .fides-kpi-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 0.65rem;
+  }
+
+  #fides-org-catalog-root .fides-kpi-value {
+    flex-shrink: 0;
+    font-size: 1.05rem;
+  }
+
+  #fides-org-catalog-root .fides-kpi-label {
+    font-size: 0.72rem;
+    line-height: 1.2;
+    min-width: 0;
+  }
+}
+
 @media (max-width: 640px) {
   .fides-org-grid {
     grid-template-columns: 1fr;
@@ -3293,30 +3320,6 @@ a.fides-modal-copy-link {
   .fides-results-bar {
     gap: 0.5rem;
   }
-
-  .fides-kpi-row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .fides-kpi-card {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.5rem 0.65rem;
-  }
-
-  .fides-kpi-value {
-    flex-shrink: 0;
-    font-size: 1.05rem;
-  }
-
-  .fides-kpi-label {
-    font-size: 0.72rem;
-    line-height: 1.2;
-    min-width: 0;
-  }
 }
 
 @media (max-width: 480px) {
@@ -3328,16 +3331,6 @@ a.fides-modal-copy-link {
 
   .fides-org-grid {
     grid-template-columns: 1fr;
-  }
-
-  .fides-kpi-row {
-    grid-template-columns: 1fr;
-  }
-
-  .fides-kpi-card {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
