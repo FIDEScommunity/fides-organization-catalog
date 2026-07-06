@@ -1172,6 +1172,9 @@
 }
 
 .fides-org-card .fides-credential-provider {
+  display: flex;
+  align-items: center;
+  min-width: 0;
   margin: 0;
   color: var(--fides-text-secondary);
   font-size: 0.875rem;
@@ -1179,6 +1182,66 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.fides-org-card .fides-catalog-country-meta {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-org-card .fides-org-provider-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-country-flag {
+  width: 16px;
+  height: 12px;
+  object-fit: cover;
+  border-radius: 1px;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+  flex-shrink: 0;
+}
+
+.fides-wallet-country {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 0.35rem;
+}
+
+.fides-catalog-country-meta--icon-only {
+  gap: 0;
+}
+
+.fides-wallet-country-flag {
+  display: block;
+  width: 16px;
+  height: 12px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.12);
+}
+
+.fides-modal-provider-country {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 0.35rem;
+}
+
+.fides-modal-country-flag {
+  width: 18px;
+  height: 13px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.12);
+  flex-shrink: 0;
 }
 
 /* Grid card body: large centered logo, footer stays at bottom */
@@ -1524,6 +1587,12 @@
 .fides-modal-provider--org {
   flex-wrap: wrap;
   row-gap: 0.25rem;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.fides-modal-provider--org .fides-catalog-country-meta {
+  margin-right: 0;
 }
 
 @media (max-width: 760px) {

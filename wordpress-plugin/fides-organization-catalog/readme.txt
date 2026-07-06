@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.10.3
+Stable tag: 1.10.8
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,21 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.10.8 =
+* Card and modal country row: globe icon size and spacing match use-case catalog (15px, 0.375rem gap).
+
+= 1.10.7 =
+* Grid card header: globe icon + country name instead of flag (use-case catalog style). Synced fides-catalog-ui from tiles ≥ 1.8.18.
+
+= 1.10.6 =
+* Pro listing edit: pencil/update form only for linked owner or WP admin (catalogTier Pro). Synced modal library edit-access checks.
+
+= 1.10.5 =
+* Fix Pro plan field badges on Community listings (linked badge again). Requires tiles ≥ 1.8.7 for form tier from published catalogTier.
+
+= 1.10.4 =
+* Submission form: static Pro plan field badges for linked Pro accounts on submit/update forms (requires tiles ≥ 1.8.6 for `userOwnsProOrg`).
 
 = 1.10.3 =
 * Submission form: show Pro plan badge on Pro-only field labels for Pro accounts too (static badge, no plans link).

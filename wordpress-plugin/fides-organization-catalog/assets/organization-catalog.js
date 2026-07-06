@@ -97,6 +97,51 @@
     return upper;
   }
 
+  function normalizeOrgCountryCode(code) {
+    if (code == null) return '';
+    const upper = String(code).trim().toUpperCase();
+    if (upper.length !== 2 || !/^[A-Z]{2}$/.test(upper)) return '';
+    return upper;
+  }
+
+  function renderOrgCountryGlobeIcon(org) {
+    const code = normalizeOrgCountryCode(org && org.country);
+    if (!code) return '';
+    const label = countryName(code);
+    return `<span class="fides-catalog-country-meta fides-catalog-country-meta--icon-only" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">${icons.globe}</span>`;
+  }
+
+  function renderOrgCountryMeta(org) {
+    const code = normalizeOrgCountryCode(org && org.country);
+    if (!code) return '';
+    const label = countryName(code);
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildCatalogCountryGlobeMetaHtml === 'function') {
+      return window.FidesCatalogUI.buildCatalogCountryGlobeMetaHtml(label);
+    }
+    return `<span class="fides-catalog-country-meta" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">${icons.globe}<span class="fides-org-provider-text">${escapeHtml(label)}</span></span>`;
+  }
+
+  /** @deprecated Use renderOrgCountryGlobeIcon (list) or renderOrgCountryMeta (card/modal). */
+  function renderOrgCountryFlag(org) {
+    return renderOrgCountryGlobeIcon(org);
+  }
+
+  function renderOrgCountryModalFlag(org) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildOrganizationCountryModalFlagHtml === 'function') {
+      return window.FidesCatalogUI.buildOrganizationCountryModalFlagHtml(org, { countryNames: COUNTRY_NAMES });
+    }
+    const code = normalizeOrgCountryCode(org && org.country);
+    if (!code) return '';
+    const label = countryName(code);
+    return ` <span class="fides-modal-provider-country" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}"><img src="https://flagcdn.com/w40/${encodeURIComponent(code.toLowerCase())}.png" alt="" class="fides-modal-country-flag" width="18" height="13" loading="lazy" decoding="async" /></span>`;
+  }
+
+  function renderOrgCountryFilterFlag(code) {
+    const normalized = normalizeOrgCountryCode(code);
+    if (!normalized) return '';
+    return `<img src="https://flagcdn.com/w20/${encodeURIComponent(normalized.toLowerCase())}.png" alt="" class="fides-country-flag" width="16" height="12" loading="lazy" decoding="async" />`;
+  }
+
   function logoFallbackFromWebsite(website) {
     if (typeof website !== 'string' || !website.trim()) return '';
     try {
@@ -312,14 +357,14 @@
     const orgId = org && org.id ? String(org.id).trim() : "";
     if (access && access.isAdmin) return true;
     if (!config.isLoggedIn || !orgId) return false;
-    const proOrgIds = Array.isArray(access && access.proOrgIds) ? access.proOrgIds : [];
     const ownedOrgIds = Array.isArray(access && access.ownedOrgIds) ? access.ownedOrgIds : [];
-    if (proOrgIds.indexOf(orgId) < 0) return true;
+    if (!orgCatalogTierIsPro(org)) return true;
     return ownedOrgIds.indexOf(orgId) >= 0;
   }
 
   function organizationUpdateFormUrl(orgId) {
-    if (!userCanEditOrganization({ id: orgId })) return "";
+    const org = organizations.find((o) => o.id === orgId) || { id: orgId };
+    if (!userCanEditOrganization(org)) return "";
     if (!config.updateFormUrl || !orgId) return "";
     const base = String(config.updateFormUrl).trim();
     if (!base) return "";
@@ -765,9 +810,7 @@
 
   /** Country + website link under the modal title (website for Official accounts only). */
   function renderOrganizationModalHeaderMeta(org) {
-    const countryPart = org.country
-      ? `${icons.globe} <span>${escapeHtml(countryName(org.country))}</span>`
-      : '';
+    const countryPart = org.country ? renderOrgCountryMeta(org) : '';
     const websiteHref = tierUiEnabled()
       ? (orgCatalogTierIsPro(org) ? orgWebsiteHref(org.website) : '')
       : orgWebsiteHref(org.website);
@@ -1457,7 +1500,7 @@
         <header class="fides-credential-header fides-org-card-header--text-only">
           <div class="fides-credential-header-text">
             <h3 class="fides-credential-name" title="${escapeHtml(org.name)}">${escapeHtml(org.name)}</h3>
-            ${org.country ? `<p class="fides-credential-provider">${escapeHtml(countryName(org.country))}</p>` : ''}
+            ${org.country ? `<p class="fides-credential-provider">${renderOrgCountryMeta(org)}</p>` : ''}
           </div>
         </header>
         <div class="fides-wallet-body">
@@ -1681,10 +1724,11 @@
           ${visibleOptions.map((opt) => {
             const label = (optionLabels && optionLabels[opt]) ? optionLabels[opt] : (key === 'country' ? countryName(opt) : opt);
             const n = facets && facets[key] ? facets[key][opt] || 0 : 0;
+            const flagPrefix = key === 'country' ? renderOrgCountryFilterFlag(opt) : '';
             return `
             <label class="fides-filter-checkbox">
               <input type="checkbox" data-filter-group="${escapeHtml(key)}" value="${escapeHtml(opt)}" ${selected.includes(opt) ? 'checked' : ''}>
-              <span>${escapeHtml(label)}<span class="fides-filter-option-count">(${n})</span></span>
+              <span>${flagPrefix}${escapeHtml(label)}<span class="fides-filter-option-count">(${n})</span></span>
             </label>
           `; }).join('')}
         </div>
@@ -1898,11 +1942,9 @@
     const walletCount = (r.personalWallets || []).length + (r.businessWallets || []).length;
     const rpCount = (r.relyingParties || []).length;
     const ccRaw = (org.country || '').trim();
-    const cc = ccRaw.toUpperCase();
-    const countryFull = cc ? countryName(org.country) : '';
-    const flag = flagEmojiFromAlpha2(cc);
+    const cc = normalizeOrgCountryCode(ccRaw);
     const countryCell = cc
-      ? `<span class="fides-row-flag" title="${escapeHtml(countryFull)}" role="img" aria-label="${escapeHtml(countryFull)}">${flag}</span>`
+      ? renderOrgCountryFlag(org)
       : '\u2014';
 
     const officialClass = orgOfficialCardClass(org);
