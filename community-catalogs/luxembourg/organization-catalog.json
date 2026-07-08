@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:luxembourg",
+    "name": "Luxembourg Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://guichet.public.lu/",
+    "country": "LU",
+    "description": "Luxembourg Ministry for Digitalisation; upgrades GouvID for EUDI Wallet compliance with INCERT, HOPAE, and LuxTrust as ecosystem partners. Participates in DC4EU, EWC, and POTENTIAL pilots.",
+    "logo": "https://flagcdn.com/w80/lu.png"
+  }
+}

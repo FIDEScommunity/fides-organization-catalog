@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bosnia-herzegovina",
+    "name": "Government of Bosnia and Herzegovina",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://idd.gov.ba/",
+    "country": "BA",
+    "description": "Agency for Identification Documents, Registers and Data Exchange (IDDEEA); leads Bosnia and Herzegovina's national digital identity wallet programme and WE BUILD large-scale pilot participation.",
+    "logo": "https://flagcdn.com/w80/ba.png"
+  }
+}

@@ -1357,5 +1357,32 @@
   },
   "org:passportreader": {
     "firstSeenAt": "2026-07-06T07:11:03+00:00"
+  },
+  "org:bosnia-herzegovina": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:bulgaria": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:croatia": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:georgia": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:liechtenstein": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:lithuania": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:luxembourg": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:malta": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
+  },
+  "org:romania": {
+    "firstSeenAt": "2026-07-08T19:54:11.499Z"
   }
 }
