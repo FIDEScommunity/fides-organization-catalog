@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:lithuania",
+    "name": "Lithuanian Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.vrm.lt/",
+    "country": "LT",
+    "description": "Ministry of the Interior of Lithuania and Informatics and Communications Department; leads the national European Digital Identity Wallet programme and APTITUDE, DC4EU, and POTENTIAL pilot participation.",
+    "logo": "https://flagcdn.com/w80/lt.png"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:georgia",
+    "name": "Government of Georgia",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.gov.ge/",
+    "country": "GE",
+    "description": "Government of Georgia digital identity programmes; pursuing EU-aligned national digital ID wallet capabilities for citizens.",
+    "logo": "https://flagcdn.com/w80/ge.png"
+  }
+}

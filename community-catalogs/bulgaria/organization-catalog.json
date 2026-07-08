@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bulgaria",
+    "name": "Bulgarian Government",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.e-gov.bg/",
+    "country": "BG",
+    "description": "Ministry of e-Government of Bulgaria; coordinates the national European Digital Identity Wallet programme and participation in EWC and WE BUILD large-scale pilots.",
+    "logo": "https://flagcdn.com/w80/bg.png"
+  }
+}

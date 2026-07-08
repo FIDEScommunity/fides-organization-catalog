@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:malta",
+    "name": "Malta Digital Innovation Authority",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://mdia.gov.mt/",
+    "country": "MT",
+    "description": "Malta Digital Innovation Authority (MDIA); leads Malta's National Digital Wallet programme ahead of the eIDAS 2.0 EUDI Wallet deadline and participates in DC4EU and WE BUILD pilots.",
+    "logo": "https://flagcdn.com/w80/mt.png"
+  }
+}

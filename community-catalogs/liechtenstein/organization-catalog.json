@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:liechtenstein",
+    "name": "Government of Liechtenstein",
+    "sectors": [
+      "public_sector"
+    ],
+    "website": "https://www.llv.li",
+    "country": "LI",
+    "description": "Liechtenstein government digital identity services; operates the official eID.li wallet for citizens to store and present digital identity documents and verifiable credentials.",
+    "logo": "https://www.google.com/s2/favicons?domain=llv.li&sz=128"
+  }
+}
