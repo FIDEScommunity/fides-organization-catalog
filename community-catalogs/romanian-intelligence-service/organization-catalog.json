@@ -1,19 +1,19 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
-    "id": "org:yousign",
-    "name": "Yousign",
-    "legalName": "Yousign",
+    "id": "org:romanian-intelligence-service",
+    "name": "Romanian Intelligence Service",
+    "legalName": "Serviciul Român de Informații",
     "sectors": [
       "digital"
     ],
-    "country": "FR",
+    "country": "RO",
     "certifications": [
       {
         "code": "qtsp",
         "evidence": {
           "kind": "url",
-          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/16",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/RO/tsp/9",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
         },
         "details": {
@@ -27,10 +27,6 @@
               "name": "Qualified cert esig"
             },
             {
-              "code": "Q_REM_MANAGE_Q_SIG_CD",
-              "name": "Qualified rem manage q sig cd"
-            },
-            {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
             }
@@ -38,9 +34,7 @@
         }
       }
     ],
-    "website": "https://yousign.com",
-    "logo": "https://yousign.com/og-image-facebook-en.png",
-    "description": "Yousign, soon Youtrust, is a complete digital trust platform combining eSignature, identity verification and KYC services."
+    "website": "https://www.sri.ro/en"
   },
-  "lastUpdated": "2026-07-13T08:15:46.246Z"
+  "lastUpdated": "2026-07-13T08:16:01.877Z"
 }

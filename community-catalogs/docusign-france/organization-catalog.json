@@ -27,6 +27,10 @@
               "name": "Qualified cert esig"
             },
             {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
+            },
+            {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
             }
@@ -38,5 +42,5 @@
     "logo": "https://images.ctfassets.net/0jnmtsdzg6p5/4GSPcvcpIZpsXsZ7F0EXTW/5f292358a716a691d7c0f88d1ce5034f/ds-iam-og-image-fr-fr.png",
     "description": "Docusign France is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via docusign.fr."
   },
-  "lastUpdated": "2026-07-06T08:59:18.166Z"
+  "lastUpdated": "2026-07-13T08:15:46.245Z"
 }

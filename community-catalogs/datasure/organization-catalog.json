@@ -31,6 +31,14 @@
               "name": "Qualified electronic registered delivery service"
             },
             {
+              "code": "Q_REM_MANAGE_Q_SEAL_CD",
+              "name": "Qualified rem manage q seal cd"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
+            },
+            {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
             }
@@ -42,5 +50,5 @@
     "logo": "https://www.datasure.net/wp-content/uploads/2025/12/cropped-D-Datasure-1-180x180.png",
     "description": "DATASURE is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via datasure.net."
   },
-  "lastUpdated": "2026-07-06T08:59:18.178Z"
+  "lastUpdated": "2026-07-13T08:15:46.251Z"
 }
