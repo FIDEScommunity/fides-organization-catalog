@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-12T10:13:32.352Z",
+  "lastImportAt": "2026-07-15T13:46:43.566Z",
   "managedSlugs": [
     "2060",
     "a3bc",
@@ -23,6 +23,7 @@
     "lissi",
     "mosip",
     "namirial",
+    "pass2rent-by-odifis",
     "passportreader",
     "procivis",
     "sphereon",

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:pass2rent-by-odifis",
+    "name": "PASS2RENT By Odifis",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Odifis, UAB",
+    "description": "PASS2RENT by Odifis — a Lithuanian EUDI Wallet relying party (OpenID4VP verifier) for contactless car rental: privacy-preserving age verification and driver identification with PID and mDL.",
+    "logo": "https://pass2rent.com/logo_pass2rent_web.svg",
+    "country": "LT",
+    "identifiers": {
+      "business_registration_number": "302518756",
+      "vat_number": "LT100005451818",
+      "euid": "LTJAR.302518756",
+      "duns": "365831094"
+    },
+    "ecosystemRoleCodes": [
+      "relying_party",
+      "software_vendor",
+      "eudi_wallet_intermediary"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-15T13:46:27+00:00"
+}
