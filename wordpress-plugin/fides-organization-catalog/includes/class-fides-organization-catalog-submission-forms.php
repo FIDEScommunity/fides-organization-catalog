@@ -97,78 +97,8 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
 
         public static function bootstrap(): void {
             add_action('wp_enqueue_scripts', array(__CLASS__, 'register_assets'));
-            add_action('rest_api_init', array(__CLASS__, 'register_rest_routes'));
             add_shortcode('fides_organization_submit_form', array(__CLASS__, 'render_submit_shortcode'));
             add_shortcode('fides_organization_update_form', array(__CLASS__, 'render_update_shortcode'));
-        }
-
-        public static function register_rest_routes(): void {
-            register_rest_route(
-                'fides-catalog/v1',
-                '/submissions/card-image',
-                array(
-                    'methods'             => 'POST',
-                    'callback'            => array(__CLASS__, 'rest_upload_card_image'),
-                    'permission_callback' => function () {
-                        return is_user_logged_in();
-                    },
-                )
-            );
-        }
-
-        /**
-         * @param WP_REST_Request $request Request.
-         * @return WP_REST_Response
-         */
-        public static function rest_upload_card_image($request) {
-            $files = $request->get_file_params();
-            if (empty($files['file']) || ! is_array($files['file'])) {
-                return new WP_REST_Response(array('message' => 'No image file uploaded.'), 400);
-            }
-
-            $file = $files['file'];
-            if (! empty($file['error'])) {
-                return new WP_REST_Response(array('message' => 'Image upload failed.'), 400);
-            }
-
-            $allowed_types = array('image/jpeg', 'image/png', 'image/webp', 'image/gif');
-            $mime          = isset($file['type']) ? (string) $file['type'] : '';
-            if (! in_array($mime, $allowed_types, true)) {
-                return new WP_REST_Response(array('message' => 'Use JPEG, PNG, WebP, or GIF.'), 400);
-            }
-
-            $max_bytes = 2 * 1024 * 1024;
-            $size      = isset($file['size']) ? (int) $file['size'] : 0;
-            if ($size <= 0 || $size > $max_bytes) {
-                return new WP_REST_Response(array('message' => 'Image must be between 1 byte and 2 MB.'), 400);
-            }
-
-            require_once ABSPATH . 'wp-admin/includes/file.php';
-            require_once ABSPATH . 'wp-admin/includes/image.php';
-
-            $upload = wp_handle_upload(
-                $file,
-                array(
-                    'test_form' => false,
-                    'mimes'     => array(
-                        'jpg|jpeg|jpe' => 'image/jpeg',
-                        'png'          => 'image/png',
-                        'webp'         => 'image/webp',
-                        'gif'          => 'image/gif',
-                    ),
-                )
-            );
-
-            if (isset($upload['error'])) {
-                return new WP_REST_Response(array('message' => (string) $upload['error']), 400);
-            }
-
-            $url = isset($upload['url']) ? esc_url_raw((string) $upload['url']) : '';
-            if ($url === '') {
-                return new WP_REST_Response(array('message' => 'Upload succeeded but no URL was returned.'), 500);
-            }
-
-            return rest_ensure_response(array('url' => $url));
         }
 
         public static function register_assets(): void {
