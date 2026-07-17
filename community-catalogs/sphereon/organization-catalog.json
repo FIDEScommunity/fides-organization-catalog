@@ -6,6 +6,7 @@
     "sectors": [
       "digital"
     ],
+    "legalName": "Sphereon International B.V.",
     "description": "We empower organizations with secure identities, trusted data and documents, trust registries, and infrastructure for verifiable digital interactions.",
     "website": "https://sphereon.com",
     "logo": "https://www.google.com/s2/favicons?domain=sphereon.com&sz=128",
@@ -13,8 +14,14 @@
     "contact": {
       "email": "info@sphereon.com"
     },
+    "ecosystemRoleCodes": [
+      "business_wallet_provider",
+      "kyb_provider",
+      "software_vendor",
+      "eudi_wallet_intermediary"
+    ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-17T09:17:23+00:00"
+  "lastUpdated": "2026-07-17T11:14:19+00:00"
 }
