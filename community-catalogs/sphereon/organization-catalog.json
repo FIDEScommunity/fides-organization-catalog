@@ -13,15 +13,8 @@
     "contact": {
       "email": "info@sphereon.com"
     },
-    "ecosystemRoleCodes": [
-      "personal_wallet_provider",
-      "business_wallet_provider",
-      "consultancy",
-      "software_vendor",
-      "eudi_wallet_intermediary"
-    ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-16T12:22:08+00:00"
+  "lastUpdated": "2026-07-17T09:17:23+00:00"
 }
