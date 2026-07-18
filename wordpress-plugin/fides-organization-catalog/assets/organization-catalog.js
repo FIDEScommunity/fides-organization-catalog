@@ -699,6 +699,7 @@
     { value: 'conformity_assessment_body', label: 'Conformity Assessment Body (CAB)' },
     { value: 'eudi_wallet_intermediary', label: 'EUDI Wallet Intermediary' },
     { value: 'eidas_trust_service_provider', label: 'eIDAS Trust Service Provider' },
+    { value: 'trust_infrastructure_provider', label: 'Trust Infrastructure Provider' },
   ];
 
   const ECOSYSTEM_ROLE_LABELS = Object.fromEntries(

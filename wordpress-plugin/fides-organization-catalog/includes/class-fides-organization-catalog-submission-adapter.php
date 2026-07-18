@@ -74,6 +74,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             'conformity_assessment_body',
             'eudi_wallet_intermediary',
             'eidas_trust_service_provider',
+            'trust_infrastructure_provider',
         );
 
         /** Maximum number of offerings per organization. */
@@ -194,6 +195,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 'conformity_assessment_body'         => 'Conformity Assessment Body (CAB)',
                 'eudi_wallet_intermediary'           => 'EUDI Wallet Intermediary',
                 'eidas_trust_service_provider'       => 'eIDAS Trust Service Provider',
+                'trust_infrastructure_provider'      => 'Trust Infrastructure Provider',
             );
             $out = array();
             foreach (self::ECOSYSTEM_ROLE_CODES as $code) {
