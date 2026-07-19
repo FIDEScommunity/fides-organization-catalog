@@ -6,12 +6,20 @@
     "sectors": [
       "digital"
     ],
-    "description": "Technology company building decentralized identity, secure messaging, and interoperable wallet products based on open standards.",
+    "description": "An independent research and engineering company inventing, specifying, and shipping the infrastructure that lets humans, services, and AI agents prove who they are, and act under verifiable authority.",
     "website": "https://2060.io",
     "logo": "https://www.google.com/s2/favicons?domain=2060.io&sz=128",
     "country": "EE",
-    "fidesManifestoSupporter": false,
+    "contact": {
+      "email": "f@2060.io"
+    },
+    "identifiers": {
+      "business_registration_number": "16853041",
+      "vat_number": "EE102810457",
+      "duns": "565817658"
+    },
+    "fidesManifestoSupporter": true,
     "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-08T13:50:10+00:00"
+  "lastUpdated": "2026-07-17T11:14:19+00:00"
 }

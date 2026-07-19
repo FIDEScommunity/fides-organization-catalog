@@ -27,6 +27,14 @@
               "name": "Qualified cert esig"
             },
             {
+              "code": "Q_REM_MANAGE_Q_SEAL_CD",
+              "name": "Qualified rem manage q seal cd"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
+            },
+            {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
             }
@@ -38,5 +46,5 @@
     "logo": "https://goodflag.com/hubfs/Images/Site%20web/solution-de-signature-electronique-securisee.webp",
     "description": "Lex Persona is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via lex-persona.com."
   },
-  "lastUpdated": "2026-07-06T08:59:18.174Z"
+  "lastUpdated": "2026-07-13T08:15:46.249Z"
 }

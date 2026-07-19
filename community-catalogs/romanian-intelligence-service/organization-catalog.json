@@ -1,24 +1,19 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
-    "id": "org:digidentity",
-    "name": "Digidentity",
+    "id": "org:romanian-intelligence-service",
+    "name": "Romanian Intelligence Service",
+    "legalName": "Serviciul Român de Informații",
     "sectors": [
       "digital"
     ],
-    "description": "Digidentity delivers secure digital identity, eHerkenning, SERMI, PKI solutions and more, for individuals, businesses, and governments across Europe.",
-    "website": "https://www.digidentity.com",
-    "logo": "https://www.google.com/s2/favicons?domain=digidentity.com&sz=128",
-    "country": "NL",
+    "country": "RO",
     "certifications": [
-      {
-        "code": "iso27001"
-      },
       {
         "code": "qtsp",
         "evidence": {
           "kind": "url",
-          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/2",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/RO/tsp/9",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
         },
         "details": {
@@ -30,13 +25,16 @@
             {
               "code": "Q_CERT_ESIG",
               "name": "Qualified cert esig"
+            },
+            {
+              "code": "Q_TIMESTAMP",
+              "name": "Qualified timestamp"
             }
           ]
         }
       }
     ],
-    "fidesManifestoSupporter": true,
-    "catalogTier": "Pro"
+    "website": "https://www.sri.ro/en"
   },
-  "lastUpdated": "2026-07-17T11:14:19+00:00"
+  "lastUpdated": "2026-07-13T08:16:01.877Z"
 }
