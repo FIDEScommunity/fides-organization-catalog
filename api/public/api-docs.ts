@@ -237,6 +237,9 @@ const spec = {
           'national_accreditation_body',
           'certification_body',
           'conformity_assessment_body',
+          'eudi_wallet_intermediary',
+          'eidas_trust_service_provider',
+          'trust_infrastructure_provider',
         ],
       },
       Organization: {
