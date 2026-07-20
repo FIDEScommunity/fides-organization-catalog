@@ -11,6 +11,18 @@
     "website": "https://sphereon.com",
     "logo": "https://www.google.com/s2/favicons?domain=sphereon.com&sz=128",
     "country": "NL",
+    "offerings": [
+      "Trust infrastructure provider",
+      "Business wallets",
+      "OpenID4VC integration",
+      "ISO 18013-5/7 integration",
+      "Verifier apps",
+      "Headless wallets",
+      "Digital signing",
+      "Skills-based solutions",
+      "Workforce solutions",
+      "GRC solutions"
+    ],
     "contact": {
       "email": "info@sphereon.com"
     },
@@ -18,10 +30,16 @@
       "business_wallet_provider",
       "kyb_provider",
       "software_vendor",
-      "eudi_wallet_intermediary"
+      "eudi_wallet_intermediary",
+      "trust_infrastructure_provider"
     ],
+    "media": {
+      "images": [
+        "https://sphereon.com/content/uploads/2026/03/the-infrastructure-of-verifiable-trust.jpeg"
+      ]
+    },
     "fidesManifestoSupporter": true,
     "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-17T11:14:19+00:00"
+  "lastUpdated": "2026-07-20T16:26:15+00:00"
 }
