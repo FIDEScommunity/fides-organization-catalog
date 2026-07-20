@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sda-dms-zartkoruen-mukodo-reszvenytarsasag",
+    "name": "SDA DMS Zártkörűen Működő Részvénytársaság",
+    "legalName": "SDA DMS Zártkörűen Működő Részvénytársaság",
+    "sectors": [
+      "digital"
+    ],
+    "country": "HU",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/HU/tsp/12",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "lastUpdated": "2026-07-20T07:57:41.093Z"
+}
