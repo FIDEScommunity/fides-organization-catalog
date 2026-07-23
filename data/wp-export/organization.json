@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-07-23T07:12:38+00:00",
+    "generatedAt": "2026-07-23T13:40:10+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -190,6 +190,39 @@
             },
             "publishedAt": "2026-07-12 10:13:13",
             "updatedAt": "2026-07-12 10:13:13"
+        },
+        {
+            "itemId": "org:davinci-conclusion",
+            "slug": "davinci-conclusion",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:davinci-conclusion",
+                    "name": "Davinci Conclusion",
+                    "sectors": [
+                        "finance"
+                    ],
+                    "legalName": "Davinci Consulting B.V.",
+                    "description": "Davinci Conclusion helpt organisaties en sectoren om eIDAS, wallets en digitale vertrouwensdiensten te vertalen naar werkende ketensamenwerkingen, sectorinitiatieven en datadeeloplossingen.",
+                    "logo": "https://davinci-conclusion.nl/app/uploads/sites/2/2024/06/davinci-logo-2023-rgb.png",
+                    "country": "NL",
+                    "certifications": [
+                        {
+                            "code": "iso27001"
+                        }
+                    ],
+                    "ecosystemRoleCodes": [
+                        "system_integrator"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-07-23T13:40:09+00:00"
+            },
+            "publishedAt": "2026-07-23 13:40:09",
+            "updatedAt": "2026-07-23 13:40:09"
         },
         {
             "itemId": "org:digidentity",
