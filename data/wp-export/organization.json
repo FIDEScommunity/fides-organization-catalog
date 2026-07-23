@@ -1,0 +1,941 @@
+{
+    "schemaVersion": "1.0.0",
+    "catalogType": "organization",
+    "generatedAt": "2026-07-23T06:24:51+00:00",
+    "entries": [
+        {
+            "itemId": "org:2060",
+            "slug": "2060",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:2060",
+                    "name": "2060.io",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "An independent research and engineering company inventing, specifying, and shipping the infrastructure that lets humans, services, and AI agents prove who they are, and act under verifiable authority.",
+                    "website": "https://2060.io",
+                    "logo": "https://www.google.com/s2/favicons?domain=2060.io&sz=128",
+                    "country": "EE",
+                    "contact": {
+                        "email": "f@2060.io"
+                    },
+                    "identifiers": {
+                        "business_registration_number": "16853041",
+                        "vat_number": "EE102810457",
+                        "duns": "565817658"
+                    },
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-10 05:41:16",
+            "updatedAt": "2026-07-10 05:41:16"
+        },
+        {
+            "itemId": "org:a3bc",
+            "slug": "a3bc",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:a3bc",
+                    "name": "A3BC",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "A3BC is a unique biometric Digital Identity Service Provider (DISP) device-less, card-less and id-less patented platform.",
+                    "website": "https://www.a3bc.io/",
+                    "logo": "https://www.a3bc.io/img/favicon/apple-touch-icon.png?v=3",
+                    "country": "FR",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:09:23",
+            "updatedAt": "2026-07-02 10:09:23"
+        },
+        {
+            "itemId": "org:authbound",
+            "slug": "authbound",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:authbound",
+                    "name": "Authbound",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Authbound provides seamless EU Digital Identity Wallet integration. Secure your services with compliant, user-friendly identity verification. Ready for 2026.",
+                    "website": "https://authbound.io",
+                    "logo": "https://www.google.com/s2/favicons?domain=authbound.io&sz=128",
+                    "country": "FI",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-11 07:34:04",
+            "updatedAt": "2026-07-11 07:34:04"
+        },
+        {
+            "itemId": "org:ayanworks",
+            "slug": "ayanworks",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:ayanworks",
+                    "name": "AyanWorks Technology Solutions Pvt. Ltd.",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Indian software company behind Credebl, an open-source stack for verifiable credentials and decentralized identity.",
+                    "website": "https://credebl.id",
+                    "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ayanworks/ayanworks_logo.png",
+                    "country": "IN",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:53:51",
+            "updatedAt": "2026-07-02 09:53:51"
+        },
+        {
+            "itemId": "org:banqup",
+            "slug": "banqup",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:banqup",
+                    "name": "Banqup",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "Banqup SA",
+                    "description": "The all-in-one platform designed to support start-ups and large scale business globally. Manage and simplify administrative tasks like (e)-invoicing, in a secure and simple way. From administration to",
+                    "website": "https://www.banqup.com",
+                    "country": "BE",
+                    "certifications": [
+                        {
+                            "code": "qtsp",
+                            "evidence": {
+                                "kind": "url",
+                                "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/BE/tsp/17",
+                                "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+                            },
+                            "details": {
+                                "trustServices": [
+                                    {
+                                        "code": "Q_CERT_ESEAL",
+                                        "name": "Qualified cert eseal"
+                                    },
+                                    {
+                                        "code": "Q_CERT_ESIG",
+                                        "name": "Qualified cert esig"
+                                    },
+                                    {
+                                        "code": "Q_REM_MANAGE_Q_SEAL_CD",
+                                        "name": "Qualified rem manage q seal cd"
+                                    },
+                                    {
+                                        "code": "Q_REM_MANAGE_Q_SIG_CD",
+                                        "name": "Qualified rem manage q sig cd"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-16 12:22:08",
+            "updatedAt": "2026-07-16 12:22:08"
+        },
+        {
+            "itemId": "org:credenco",
+            "slug": "credenco",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:credenco",
+                    "name": "Credenco",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "At Credenco, we’re building a future where organizations can instantly trust and verify each other through secure, verifiable digital credentials. As specialists in Business Wallet technology, we help",
+                    "website": "https://www.credenco.com",
+                    "logo": "https://wallet.acc.credenco.com/logo_white_background.png",
+                    "country": "NL",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-12 10:13:13",
+            "updatedAt": "2026-07-12 10:13:13"
+        },
+        {
+            "itemId": "org:digidentity",
+            "slug": "digidentity",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:digidentity",
+                    "name": "Digidentity",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Digidentity delivers secure digital identity, eHerkenning, SERMI, PKI solutions and more, for individuals, businesses, and governments across Europe.",
+                    "website": "https://www.digidentity.com",
+                    "logo": "https://www.google.com/s2/favicons?domain=digidentity.com&sz=128",
+                    "country": "NL",
+                    "certifications": [
+                        {
+                            "code": "qtsp",
+                            "evidence": {
+                                "kind": "url",
+                                "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/NL/tsp/2",
+                                "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+                            },
+                            "details": {
+                                "trustServices": [
+                                    {
+                                        "code": "Q_CERT_ESEAL",
+                                        "name": "Qualified cert eseal"
+                                    },
+                                    {
+                                        "code": "Q_CERT_ESIG",
+                                        "name": "Qualified cert esig"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "code": "iso27001"
+                        }
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:12:35",
+            "updatedAt": "2026-07-02 10:12:35"
+        },
+        {
+            "itemId": "org:fides",
+            "slug": "fides",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:fides",
+                    "name": "FIDES Labs",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "FIDES Labs is a neutral facilitator of international innovation and interoperability tracks related to verifiable data. It also facilitates the FIDES Community, developing the Ecosystem Explorer and Manifesto and supporting global collaboration around digital wallets, verifiable credentials, and trusted data flows.",
+                    "website": "https://fides.community",
+                    "logo": "https://avatars.githubusercontent.com/u/119322214?v=4",
+                    "country": "NL",
+                    "contact": {
+                        "email": "info@fides-labs.io"
+                    },
+                    "identifiers": {
+                        "business_registration_number": "97159174",
+                        "vat_number": "NL867933604B01",
+                        "lei": "6367008XDOGCWL4QFR44",
+                        "euid": "NLNHR.97159174",
+                        "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c"
+                    },
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:17:26",
+            "updatedAt": "2026-07-02 09:17:26"
+        },
+        {
+            "itemId": "org:gataca",
+            "slug": "gataca",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:gataca",
+                    "name": "Gataca Labs",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI).",
+                    "website": "https://gataca.io",
+                    "logo": "https://www.google.com/s2/favicons?domain=gataca.io&sz=128",
+                    "country": "ES",
+                    "contact": {
+                        "email": "samuel@gataca.io"
+                    },
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:13:13",
+            "updatedAt": "2026-07-02 10:13:13"
+        },
+        {
+            "itemId": "org:helixid",
+            "slug": "helixid",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:helixid",
+                    "name": "Blockchain HELIX AG",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "German company (Blockchain HELIX AG) providing decentralized identity and verifiable credential solutions for regulated industries.",
+                    "website": "https://helixid.io",
+                    "logo": "https://helixid.io/wp-content/uploads/2019/06/cropped-id-180x180.png",
+                    "country": "DE",
+                    "contact": {
+                        "email": "oliver@blockchain-helix.com"
+                    },
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:10:06",
+            "updatedAt": "2026-07-02 10:10:06"
+        },
+        {
+            "itemId": "org:hovi",
+            "slug": "hovi",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:hovi",
+                    "name": "Hovi",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Discover Hovi’s self-sovereign identity platform, designed to effortlessly integrate verifiable credentials for businesses of all sizes.",
+                    "website": "https://www.hovi.id/",
+                    "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
+                    "country": "FI",
+                    "contact": {
+                        "email": "contact@hovi.id"
+                    },
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:12:52",
+            "updatedAt": "2026-07-02 10:12:52"
+        },
+        {
+            "itemId": "org:igrant",
+            "slug": "igrant",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:igrant",
+                    "name": "iGrant.io",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "EUDI and European Business Wallet software provider offering ready-to-use extensions for payments, signing, and passwordless login for individuals and organisations.",
+                    "website": "https://igrant.io",
+                    "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
+                    "country": "SE",
+                    "contact": {
+                        "email": "support@igrant.io"
+                    },
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-06 07:09:11",
+            "updatedAt": "2026-07-06 07:09:11"
+        },
+        {
+            "itemId": "org:ilabs",
+            "slug": "ilabs",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:ilabs",
+                    "name": "iLabs",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "iLabs Technologies is a mission-focused company offering a wide range of research and development through disruptive innovation, standardization and assurance to build a Trustworthy Internet of Everyt",
+                    "website": "https://www.ilabs.ai/",
+                    "logo": "https://www.google.com/s2/favicons?domain=ilabs.ai&sz=128",
+                    "country": "NL",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:39:19",
+            "updatedAt": "2026-07-02 10:39:19"
+        },
+        {
+            "itemId": "org:impierce",
+            "slug": "impierce",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:impierce",
+                    "name": "Impierce Technologies",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Impierce Technologies is a provider of digital identity trust infrastructure &amp; services, including an EUDI Wallet, Identity Agent, Business Wallet and Ecosystem Orchestration tooling.",
+                    "website": "https://impierce.com",
+                    "logo": "https://www.google.com/s2/favicons?domain=impierce.com&sz=128",
+                    "country": "NL",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:11:12",
+            "updatedAt": "2026-07-02 10:11:12"
+        },
+        {
+            "itemId": "org:inetum",
+            "slug": "inetum",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:inetum",
+                    "name": "Inetum",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "European IT services and digital solutions group supporting public sector and enterprise transformation across multiple countries.",
+                    "website": "https://www.inetum.com/es/es.html",
+                    "logo": "https://static-p165453-e1803721.adobeaemcloud.com/489b2b9c0d2194574538d78ff4171adc6159a8742a0bddcf233b039a09bb815e/resources/images/favicon.ico",
+                    "country": "ES",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:08:47",
+            "updatedAt": "2026-07-02 10:08:47"
+        },
+        {
+            "itemId": "org:izertis",
+            "slug": "izertis",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:izertis",
+                    "name": "Izertis S.A.",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Izertis S.A provides digital services and solutions in the trust and credentials ecosystem via izertis.com.",
+                    "website": "https://www.izertis.com/",
+                    "logo": "https://www.izertis.com/documents/35913/207169/IMAGEN_OG.webp/6a09f6d5-9741-d367-41e1-fbd048febb54?version=1.0&t=1760599004227&imagePreview=1",
+                    "country": "ES",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:45:25",
+            "updatedAt": "2026-07-02 09:45:25"
+        },
+        {
+            "itemId": "org:k4security",
+            "slug": "k4security",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:k4security",
+                    "name": "K4-Security",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "German cybersecurity company offering consulting, managed security, and identity-related protection for organizations.",
+                    "website": "https://www.k4-security.com/",
+                    "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
+                    "country": "KR",
+                    "contact": {
+                        "email": "contact@k4-security.com"
+                    },
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:07:25",
+            "updatedAt": "2026-07-02 10:07:25"
+        },
+        {
+            "itemId": "org:lissi",
+            "slug": "lissi",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:lissi",
+                    "name": "Lissi GmbH",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Compliant, scalable EUDI Wallet integration for eIDAS 2. Get started today with Lissi's trusted and proven API Software.",
+                    "website": "https://lissi.id",
+                    "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
+                    "country": "DE",
+                    "contact": {
+                        "email": "info@lissi.id"
+                    },
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:50:42",
+            "updatedAt": "2026-07-02 09:50:42"
+        },
+        {
+            "itemId": "org:mosip",
+            "slug": "mosip",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:mosip",
+                    "name": "MOSIP",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "MOSIP offers countries modular and open-source technology to build and own their national identity systems.",
+                    "website": "https://www.mosip.io",
+                    "logo": "https://www.google.com/s2/favicons?domain=mosip.io&sz=128",
+                    "country": "IN",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-20 16:27:13",
+            "updatedAt": "2026-07-20 16:27:13"
+        },
+        {
+            "itemId": "org:namirial",
+            "slug": "namirial",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:namirial",
+                    "name": "Namirial",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Customer identification and identity verification with the suite Namirial Onboarding",
+                    "website": "https://www.namirial.com",
+                    "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
+                    "country": "IT",
+                    "certifications": [
+                        {
+                            "code": "qtsp",
+                            "evidence": {
+                                "kind": "url",
+                                "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/38",
+                                "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+                            },
+                            "details": {
+                                "trustServices": [
+                                    {
+                                        "code": "Q_CERT_ESEAL",
+                                        "name": "Qualified cert eseal"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:49:59",
+            "updatedAt": "2026-07-02 09:49:59"
+        },
+        {
+            "itemId": "org:pass2rent-by-odifis",
+            "slug": "pass2rent-by-odifis",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:pass2rent-by-odifis",
+                    "name": "PASS2RENT By Odifis",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "Odifis, UAB",
+                    "description": "PASS2RENT by Odifis — a Lithuanian EUDI Wallet relying party (OpenID4VP verifier) for contactless car rental: privacy-preserving age verification and driver identification with PID and mDL.",
+                    "logo": "https://pass2rent.com/logo_pass2rent_web.svg",
+                    "country": "LT",
+                    "identifiers": {
+                        "business_registration_number": "302518756",
+                        "vat_number": "LT100005451818",
+                        "euid": "LTJAR.302518756",
+                        "duns": "365831094"
+                    },
+                    "ecosystemRoleCodes": [
+                        "relying_party",
+                        "software_vendor",
+                        "eudi_wallet_intermediary"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-15 13:46:26",
+            "updatedAt": "2026-07-15 13:46:26"
+        },
+        {
+            "itemId": "org:passportreader",
+            "slug": "passportreader",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:passportreader",
+                    "name": "PassportReader",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "PassportReader builds infrastructure for high-assurance identity verification using government-signed data from passports, ID cards, and digital wallets.",
+                    "logo": "https://passportreader.app/asset/apple-touch-icon.png",
+                    "country": "SE",
+                    "certifications": [
+                        {
+                            "code": "iso27001"
+                        }
+                    ],
+                    "ecosystemRoleCodes": [
+                        "idv_provider",
+                        "kyb_provider",
+                        "software_vendor",
+                        "eudi_wallet_intermediary"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-06 07:11:02",
+            "updatedAt": "2026-07-06 07:11:02"
+        },
+        {
+            "itemId": "org:procivis",
+            "slug": "procivis",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:procivis",
+                    "name": "Procivis",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Procivis One is a modular, open-source technology for digital identities and credentials — compliant with eIDAS 2.0, Swiss E-ID ecosystem , and mDL standards.",
+                    "website": "https://www.procivis.ch",
+                    "logo": "https://www.google.com/s2/favicons?domain=procivis.ch&sz=128",
+                    "country": "CH",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:46:48",
+            "updatedAt": "2026-07-02 09:46:48"
+        },
+        {
+            "itemId": "org:sphereon",
+            "slug": "sphereon",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:sphereon",
+                    "name": "Sphereon",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "Sphereon International B.V.",
+                    "description": "We empower organizations with secure identities, trusted data and documents, trust registries, and infrastructure for verifiable digital interactions.",
+                    "website": "https://sphereon.com",
+                    "logo": "https://www.google.com/s2/favicons?domain=sphereon.com&sz=128",
+                    "country": "NL",
+                    "offerings": [
+                        "Trust infrastructure provider",
+                        "Business wallets",
+                        "OpenID4VC integration",
+                        "ISO 18013-5/7 integration",
+                        "Verifier apps",
+                        "Headless wallets",
+                        "Digital signing",
+                        "Skills-based solutions",
+                        "Workforce solutions",
+                        "GRC solutions"
+                    ],
+                    "contact": {
+                        "email": "info@sphereon.com"
+                    },
+                    "ecosystemRoleCodes": [
+                        "business_wallet_provider",
+                        "kyb_provider",
+                        "software_vendor",
+                        "eudi_wallet_intermediary",
+                        "trust_infrastructure_provider"
+                    ],
+                    "media": {
+                        "images": [
+                            "https://sphereon.com/content/uploads/2026/03/the-infrastructure-of-verifiable-trust.jpeg"
+                        ]
+                    },
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-20 16:26:14",
+            "updatedAt": "2026-07-20 16:26:14"
+        },
+        {
+            "itemId": "org:spherity",
+            "slug": "spherity",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:spherity",
+                    "name": "Spherity",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "German company providing decentralized identity and digital twin credentials for automotive, industry, and regulated supply chains.",
+                    "website": "https://www.spherity.com",
+                    "logo": "https://www.google.com/s2/favicons?domain=spherity.com&sz=128",
+                    "country": "DE",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-10 14:06:55",
+            "updatedAt": "2026-07-10 14:06:55"
+        },
+        {
+            "itemId": "org:talao",
+            "slug": "talao",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:talao",
+                    "name": "Talao",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Deploy SSI and EUDI compliant wallets with Talao’s Wallet as a Service. Simplify identity and data management using Verifiable Credentials.",
+                    "website": "https://talao.io",
+                    "logo": "https://www.google.com/s2/favicons?domain=talao.io&sz=128",
+                    "country": "FR",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:53:06",
+            "updatedAt": "2026-07-02 09:53:06"
+        },
+        {
+            "itemId": "org:ubique",
+            "slug": "ubique",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:ubique",
+                    "name": "Ubique Innovation",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Ubique Innovation provides digital services and solutions in the trust and credentials ecosystem via ubique.ch.",
+                    "website": "https://ubique.ch",
+                    "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/2d/44/132d44a4-424b-3dfc-174e-541248ef421b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/400x400ia-75.webp",
+                    "country": "CH",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:48:28",
+            "updatedAt": "2026-07-02 09:48:28"
+        },
+        {
+            "itemId": "org:validated-id",
+            "slug": "validated-id",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:validated-id",
+                    "name": "VALIDATED ID",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "VALIDATED ID, S.L",
+                    "description": "Provide trust to your electronic signatures and digital identity. Simple and secure solutions: electronic signatures, digital identity and electronic invoices.",
+                    "website": "https://validatedid.com",
+                    "logo": "https://cdn.prod.website-files.com/5ec68f0bd0db4b52be8cf1d5/611cdede040214a673afec55_h_home_en.png",
+                    "country": "ES",
+                    "certifications": [
+                        {
+                            "code": "qtsp",
+                            "evidence": {
+                                "kind": "url",
+                                "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/37",
+                                "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+                            },
+                            "details": {
+                                "trustServices": [
+                                    {
+                                        "code": "Q_CERT_ESEAL",
+                                        "name": "Qualified cert eseal"
+                                    },
+                                    {
+                                        "code": "Q_CERT_ESIG",
+                                        "name": "Qualified cert esig"
+                                    },
+                                    {
+                                        "code": "Q_TIMESTAMP",
+                                        "name": "Qualified timestamp"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:52:08",
+            "updatedAt": "2026-07-02 09:52:08"
+        },
+        {
+            "itemId": "org:yivi",
+            "slug": "yivi",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:yivi",
+                    "name": "Yivi",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Yivi B.V. is a Dutch software company based in Utrecht that manages Yivi, a privacy-friendly digital identity and wallet application.",
+                    "logo": "https://yivi.app/icons/yivi-logo.svg",
+                    "country": "NL",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 10:19:49",
+            "updatedAt": "2026-07-02 10:19:49"
+        },
+        {
+            "itemId": "org:yourd",
+            "slug": "yourd",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:yourd",
+                    "name": "YourD",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Ignite Data Ownership",
+                    "website": "https://yourd.xyz",
+                    "logo": "https://www.google.com/s2/favicons?domain=yourd.xyz&sz=128",
+                    "country": "KR",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-07-23T06:24:51+00:00"
+            },
+            "publishedAt": "2026-07-02 09:49:16",
+            "updatedAt": "2026-07-02 09:49:16"
+        }
+    ]
+}
