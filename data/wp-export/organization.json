@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-07-23T06:24:51+00:00",
+    "generatedAt": "2026-07-23T07:12:38+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -31,7 +31,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-10T05:41:16+00:00"
             },
             "publishedAt": "2026-07-10 05:41:16",
             "updatedAt": "2026-07-10 05:41:16"
@@ -56,7 +56,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:09:23+00:00"
             },
             "publishedAt": "2026-07-02 10:09:23",
             "updatedAt": "2026-07-02 10:09:23"
@@ -81,7 +81,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-11T07:34:04+00:00"
             },
             "publishedAt": "2026-07-11 07:34:04",
             "updatedAt": "2026-07-11 07:34:04"
@@ -106,7 +106,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:53:51+00:00"
             },
             "publishedAt": "2026-07-02 09:53:51",
             "updatedAt": "2026-07-02 09:53:51"
@@ -161,7 +161,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-16T12:22:08+00:00"
             },
             "publishedAt": "2026-07-16 12:22:08",
             "updatedAt": "2026-07-16 12:22:08"
@@ -186,7 +186,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-12T10:13:13+00:00"
             },
             "publishedAt": "2026-07-12 10:13:13",
             "updatedAt": "2026-07-12 10:13:13"
@@ -236,7 +236,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:12:35+00:00"
             },
             "publishedAt": "2026-07-02 10:12:35",
             "updatedAt": "2026-07-02 10:12:35"
@@ -271,7 +271,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:17:26+00:00"
             },
             "publishedAt": "2026-07-02 09:17:26",
             "updatedAt": "2026-07-02 09:17:26"
@@ -299,7 +299,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:13:13+00:00"
             },
             "publishedAt": "2026-07-02 10:13:13",
             "updatedAt": "2026-07-02 10:13:13"
@@ -327,7 +327,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:10:06+00:00"
             },
             "publishedAt": "2026-07-02 10:10:06",
             "updatedAt": "2026-07-02 10:10:06"
@@ -355,7 +355,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:12:52+00:00"
             },
             "publishedAt": "2026-07-02 10:12:52",
             "updatedAt": "2026-07-02 10:12:52"
@@ -383,7 +383,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-06T07:09:11+00:00"
             },
             "publishedAt": "2026-07-06 07:09:11",
             "updatedAt": "2026-07-06 07:09:11"
@@ -408,7 +408,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:39:19+00:00"
             },
             "publishedAt": "2026-07-02 10:39:19",
             "updatedAt": "2026-07-02 10:39:19"
@@ -433,7 +433,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:11:12+00:00"
             },
             "publishedAt": "2026-07-02 10:11:12",
             "updatedAt": "2026-07-02 10:11:12"
@@ -458,7 +458,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:08:47+00:00"
             },
             "publishedAt": "2026-07-02 10:08:47",
             "updatedAt": "2026-07-02 10:08:47"
@@ -483,7 +483,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:45:25+00:00"
             },
             "publishedAt": "2026-07-02 09:45:25",
             "updatedAt": "2026-07-02 09:45:25"
@@ -511,7 +511,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:07:25+00:00"
             },
             "publishedAt": "2026-07-02 10:07:25",
             "updatedAt": "2026-07-02 10:07:25"
@@ -539,7 +539,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:50:42+00:00"
             },
             "publishedAt": "2026-07-02 09:50:42",
             "updatedAt": "2026-07-02 09:50:42"
@@ -564,7 +564,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-20T16:27:13+00:00"
             },
             "publishedAt": "2026-07-20 16:27:13",
             "updatedAt": "2026-07-20 16:27:13"
@@ -607,7 +607,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:49:59+00:00"
             },
             "publishedAt": "2026-07-02 09:49:59",
             "updatedAt": "2026-07-02 09:49:59"
@@ -643,7 +643,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-15T13:46:26+00:00"
             },
             "publishedAt": "2026-07-15 13:46:26",
             "updatedAt": "2026-07-15 13:46:26"
@@ -678,7 +678,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-06T07:11:02+00:00"
             },
             "publishedAt": "2026-07-06 07:11:02",
             "updatedAt": "2026-07-06 07:11:02"
@@ -703,7 +703,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:46:48+00:00"
             },
             "publishedAt": "2026-07-02 09:46:48",
             "updatedAt": "2026-07-02 09:46:48"
@@ -756,7 +756,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-20T16:26:14+00:00"
             },
             "publishedAt": "2026-07-20 16:26:14",
             "updatedAt": "2026-07-20 16:26:14"
@@ -781,7 +781,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-10T14:06:55+00:00"
             },
             "publishedAt": "2026-07-10 14:06:55",
             "updatedAt": "2026-07-10 14:06:55"
@@ -806,7 +806,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:53:06+00:00"
             },
             "publishedAt": "2026-07-02 09:53:06",
             "updatedAt": "2026-07-02 09:53:06"
@@ -831,7 +831,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:48:28+00:00"
             },
             "publishedAt": "2026-07-02 09:48:28",
             "updatedAt": "2026-07-02 09:48:28"
@@ -883,7 +883,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:52:08+00:00"
             },
             "publishedAt": "2026-07-02 09:52:08",
             "updatedAt": "2026-07-02 09:52:08"
@@ -907,7 +907,7 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T10:19:49+00:00"
             },
             "publishedAt": "2026-07-02 10:19:49",
             "updatedAt": "2026-07-02 10:19:49"
@@ -932,7 +932,7 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-23T06:24:51+00:00"
+                "lastUpdated": "2026-07-02T09:49:16+00:00"
             },
             "publishedAt": "2026-07-02 09:49:16",
             "updatedAt": "2026-07-02 09:49:16"
