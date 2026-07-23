@@ -1,13 +1,54 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
 import {
   buildImportPlan,
   emptyState,
   hasQtspCertification,
+  loadCommittedExportPayload,
   mergeQtspCertifications,
   normalizeDocument,
   type WpExportEntry,
 } from '../scripts/import-wp-submissions.ts';
+
+test('loadCommittedExportPayload returns null when the file is absent', async () => {
+  const missing = path.join(os.tmpdir(), `fides-missing-${Date.now()}.json`);
+  assert.equal(await loadCommittedExportPayload(missing), null);
+});
+
+test('loadCommittedExportPayload parses a committed export file', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'fides-export-'));
+  const file = path.join(dir, 'organization.json');
+  const payload = {
+    schemaVersion: '1.0.0',
+    catalogType: 'organization',
+    generatedAt: new Date().toISOString(),
+    entries: [
+      {
+        itemId: 'org:acme',
+        slug: 'acme',
+        filename: 'organization-catalog.json',
+        source: 'wordpress',
+        document: { organization: { id: 'org:acme', name: 'Acme' } },
+      },
+    ],
+  };
+  await fs.writeFile(file, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+  const loaded = await loadCommittedExportPayload(file);
+  assert.equal(loaded?.entries.length, 1);
+  assert.equal(loaded?.entries[0].slug, 'acme');
+  await fs.rm(dir, { recursive: true, force: true });
+});
+
+test('loadCommittedExportPayload throws a clear error on malformed JSON', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'fides-export-bad-'));
+  const file = path.join(dir, 'organization.json');
+  await fs.writeFile(file, '{ not json', 'utf8');
+  await assert.rejects(loadCommittedExportPayload(file), /Invalid committed export/);
+  await fs.rm(dir, { recursive: true, force: true });
+});
 
 test('normalizeDocument sets organization.id from itemId', () => {
   const entry: WpExportEntry = {
