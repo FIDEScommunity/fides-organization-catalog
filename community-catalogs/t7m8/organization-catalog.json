@@ -1,0 +1,19 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:t7m8",
+    "name": "t7m8",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Personal studio of Tomislav Markovski: independent research in digital identity and applied cryptography. Home of VeryGoodWallet, a passkey-native wallet, and credkit, a BBS/ZKP toolkit.",
+    "logo": "https://t7m8.com/favicon.svg",
+    "country": "US",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-24T20:07:38+00:00"
+}
