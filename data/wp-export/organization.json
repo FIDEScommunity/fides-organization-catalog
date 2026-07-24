@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-07-23T13:40:10+00:00",
+    "generatedAt": "2026-07-24T20:07:39+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -818,6 +818,33 @@
             },
             "publishedAt": "2026-07-10 14:06:55",
             "updatedAt": "2026-07-10 14:06:55"
+        },
+        {
+            "itemId": "org:t7m8",
+            "slug": "t7m8",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:t7m8",
+                    "name": "t7m8",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Personal studio of Tomislav Markovski: independent research in digital identity and applied cryptography. Home of VeryGoodWallet, a passkey-native wallet, and credkit, a BBS/ZKP toolkit.",
+                    "logo": "https://t7m8.com/favicon.svg",
+                    "country": "US",
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-07-24T20:07:38+00:00"
+            },
+            "publishedAt": "2026-07-24 20:07:38",
+            "updatedAt": "2026-07-24 20:07:38"
         },
         {
             "itemId": "org:talao",
