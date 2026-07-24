@@ -34,6 +34,8 @@
     tag: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
     /** Lucide "briefcase" — commercial offerings (distinct from sector/tag chips). */
     offerings: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>',
+    /** Lucide "layers" — use cases the organization is involved in. */
+    useCases: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg>',
     viewGrid: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>',
     viewList: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/></svg>',
   };
@@ -311,6 +313,8 @@
     credentialCatalogUrl: '',
     walletCatalogUrl: '',
     rpCatalogUrl: '',
+    useCaseCatalogUrl: 'https://fides.community/use-cases/',
+    useCaseAggregatedDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-use-case-catalog/main/data/aggregated.json',
     bluePagesRestUrl: '',
     bluePagesProfileBaseUrl: '',
     ratingsApiBase: '',
@@ -343,6 +347,7 @@
     credential: Object.create(null),
     wallet: Object.create(null),
     rp: Object.create(null),
+    usecase: Object.create(null),
   };
 
   function userCanEditOrganization(org) {
@@ -464,18 +469,20 @@
   }
 
   async function loadAndApplyModalRoleLikes(org) {
-    if (!org || !org.ecosystemRoles || !RATINGS_API_BASE) return;
+    if (!org || !RATINGS_API_BASE) return;
     const r = org.ecosystemRoles || {};
     const issuerIds = (r.issuers || []).map((x) => x && x.id).filter(Boolean);
     const credentialIds = (r.credentialTypes || []).map((x) => x && x.id).filter(Boolean);
     const walletIds = [...(r.personalWallets || []), ...(r.businessWallets || [])].map((x) => x && x.id).filter(Boolean);
     const rpIds = (r.relyingParties || []).map((x) => x && x.id).filter(Boolean);
+    const useCaseIds = getDerivedUseCasesForOrg(org).map((x) => x && x.id).filter(Boolean);
 
     await Promise.all([
       loadRatingSummariesForType('issuer', issuerIds),
       loadRatingSummariesForType('credential', credentialIds),
       loadRatingSummariesForType('wallet', walletIds),
       loadRatingSummariesForType('rp', rpIds),
+      loadRatingSummariesForType('usecase', useCaseIds),
     ]);
 
     applyModalEntityLikes(document.getElementById('fides-modal-overlay'));
@@ -496,6 +503,7 @@
   }
 
   let organizations = [];
+  let useCasesByOrgId = Object.create(null);
   let sortBy = readStoredSort();
   let selectedOrg = null;
   let forcedModalTheme = null;
@@ -1568,6 +1576,48 @@
     return '';
   }
 
+  /**
+   * Accordion listing the use cases this organization is involved in.
+   * Returns '' when there are none, so the accordion is simply omitted.
+   */
+  function renderUseCasesAccordion(useCases) {
+    if (!Array.isArray(useCases) || useCases.length === 0) return '';
+    const base = (config.useCaseCatalogUrl || '').replace(/\/$/, '');
+    const rowsHtml = useCases.map((uc) => {
+      const label = escapeHtml(uc.title || uc.id);
+      const itemId = escapeHtml(uc.id || '');
+      const likeSlot = uc.id
+        ? `<span class="fides-modal-entity-like-slot" data-entity-like-type="usecase" data-entity-like-id="${itemId}">${renderModalEntityLikeInline('usecase', uc.id)}</span>`
+        : '';
+      if (base && uc.id) {
+        const href = `${base}/?usecase=${encodeURIComponent(uc.id)}`;
+        return `<tr><td><a href="${escapeHtml(href)}" class="fides-modal-link-inline" onclick="event.stopPropagation();">${label}</a>${likeSlot}</td></tr>`;
+      }
+      return `<tr><td>${label}${likeSlot}</td></tr>`;
+    }).join('');
+    return `
+      <div class="fides-accordion" id="fides-accordion-use-cases">
+        <div class="fides-accordion-header-bar">
+          <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+            <span class="fides-accordion-title">${icons.useCases} Use cases <span class="fides-accordion-count">${useCases.length}</span></span>
+          </button>
+          <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle use cases">
+            <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+          </button>
+        </div>
+        <div class="fides-accordion-body">
+          <div class="fides-attributes-table-wrap">
+            <table class="fides-attributes-table fides-modal-entity-table" aria-label="Use cases">
+              <tbody>
+                ${rowsHtml}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   function renderModal() {
     if (!selectedOrg) return '';
     const org = selectedOrg;
@@ -1586,6 +1636,8 @@
       { key: 'relyingParties', items: r.relyingParties || [], icon: icons.shield, label: 'Relying Parties', catalogUrl: config.rpCatalogUrl, paramKey: 'rp', ratingType: 'rp' },
     ];
 
+    const derivedUseCases = getDerivedUseCasesForOrg(org);
+    const useCasesAccordionHtml = renderUseCasesAccordion(derivedUseCases);
     const certCount = countCatalogCertifications(org);
     const certCountBadge = certCount > 0 ? ` <span class="fides-accordion-count">${certCount}</span>` : '';
     const identifierRowsHtml = renderOrganizationIdentifierRows(org);
@@ -1630,6 +1682,8 @@
                 ${renderOrganizationModalAboutBody(org)}
               </div>
             </div>
+
+            ${useCasesAccordionHtml}
 
             <!-- Role accordions -->
             ${roleSections.map((sec) => {
@@ -2300,6 +2354,53 @@
     }
   }
 
+  /**
+   * Build org id → use cases[] from the use case catalog aggregated.json
+   * (reverse join via links.organizations[].refId). Runtime join, mirroring
+   * the RP catalog — organization aggregated.json carries no use-case field.
+   */
+  async function loadUseCaseIndex() {
+    useCasesByOrgId = Object.create(null);
+    const url = (config.useCaseAggregatedDataUrl || '').trim();
+    if (!url) return;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return;
+      const data = await response.json();
+      const useCases = Array.isArray(data.useCases) ? data.useCases : [];
+      useCases.forEach(function (uc) {
+        if (!uc || typeof uc.id !== 'string') return;
+        const links = uc.links && typeof uc.links === 'object' ? uc.links : {};
+        const orgs = Array.isArray(links.organizations) ? links.organizations : [];
+        const entry = {
+          id: uc.id,
+          title: (uc.title || '').trim() || uc.id,
+        };
+        orgs.forEach(function (link) {
+          if (!link || typeof link !== 'object') return;
+          const orgId = link.refId ? String(link.refId).trim() : '';
+          if (!orgId) return;
+          if (!useCasesByOrgId[orgId]) useCasesByOrgId[orgId] = [];
+          if (!useCasesByOrgId[orgId].some(function (e) { return e.id === entry.id; })) {
+            useCasesByOrgId[orgId].push(entry);
+          }
+        });
+      });
+      Object.keys(useCasesByOrgId).forEach(function (orgId) {
+        useCasesByOrgId[orgId].sort(function (a, b) {
+          return String(a.title || a.id).localeCompare(String(b.title || b.id), undefined, { sensitivity: 'base' });
+        });
+      });
+    } catch (e) {
+      console.warn('Use case catalog index load failed:', e.message);
+    }
+  }
+
+  function getDerivedUseCasesForOrg(org) {
+    if (!org || !org.id) return [];
+    return useCasesByOrgId[org.id] || [];
+  }
+
   async function loadOrganizations() {
     const SOURCE_TIMEOUT_MS = 3500;
     const remote = { url: config.githubDataUrl, name: 'GitHub' };
@@ -2316,6 +2417,7 @@
       }
       console.warn(`Failed to load from ${source.name}: ${result.reason}`);
     }
+    await loadUseCaseIndex();
     applySectorFromUrl();
     applyCountryFromUrl();
     try {

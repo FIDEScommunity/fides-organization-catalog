@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.10.12
+ * Version: 1.11.0
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.10.12');
+define('FIDES_ORG_CATALOG_VERSION', '1.11.0');
 
 /** @var string Option group for Settings → FIDES Org Catalog */
 const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
@@ -96,6 +96,11 @@ class Fides_Organization_Catalog {
             'default'           => 'https://fides.community/ecosystem-explorer/relying-party-catalog/',
             'sanitize_callback' => 'esc_url_raw',
         ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_use_case_catalog_url', [
+            'type'              => 'string',
+            'default'           => 'https://fides.community/use-cases/',
+            'sanitize_callback' => 'esc_url_raw',
+        ]);
         register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_blue_pages_profile_base_url', [
             'type'              => 'string',
             'default'           => '',
@@ -170,6 +175,16 @@ class Fides_Organization_Catalog {
                             <input type="url" class="large-text code" id="fides_org_catalog_rp_catalog_url" name="fides_org_catalog_rp_catalog_url"
                                    value="<?php echo esc_attr(get_option('fides_org_catalog_rp_catalog_url', 'https://fides.community/ecosystem-explorer/relying-party-catalog/')); ?>">
                             <p class="description"><?php echo esc_html__('Page with the RP catalog shortcode (modal deep links).', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="fides_org_catalog_use_case_catalog_url"><?php echo esc_html__('Use case catalog page URL', 'fides-organization-catalog'); ?></label>
+                        </th>
+                        <td>
+                            <input type="url" class="large-text code" id="fides_org_catalog_use_case_catalog_url" name="fides_org_catalog_use_case_catalog_url"
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_use_case_catalog_url', 'https://fides.community/use-cases/')); ?>">
+                            <p class="description"><?php echo esc_html__('Page with the use case catalog shortcode. Used for ?usecase=… links in the Use cases accordion of the organization modal.', 'fides-organization-catalog'); ?></p>
                         </td>
                     </tr>
                     <tr>
@@ -435,6 +450,14 @@ class Fides_Organization_Catalog {
                 'fides_org_catalog_rp_catalog_url',
                 'https://fides.community/ecosystem-explorer/relying-party-catalog/'
             ),
+            'useCaseCatalogUrl'         => get_option(
+                'fides_org_catalog_use_case_catalog_url',
+                'https://fides.community/use-cases/'
+            ),
+            'useCaseAggregatedDataUrl'  => get_option(
+                'fides_org_catalog_use_case_aggregated_url',
+                'https://raw.githubusercontent.com/FIDEScommunity/fides-use-case-catalog/main/data/aggregated.json'
+            ),
             'bluePagesRestUrl'          => rest_url('fides-org-catalog/v1/blue-pages'),
             'bluePagesProfileBaseUrl'   => $bp_profile_base,
             'ratingsApiBase'            => rest_url('fides-catalog/v1/ratings'),
@@ -480,6 +503,10 @@ class Fides_Organization_Catalog {
                 'fides_org_catalog_rp_catalog_url',
                 'https://fides.community/ecosystem-explorer/relying-party-catalog/'
             ),
+            'use_case_catalog_url' => get_option(
+                'fides_org_catalog_use_case_catalog_url',
+                'https://fides.community/use-cases/'
+            ),
             /** Base URL for “Open full profile” (trailing slash optional). Empty = settings option or home_url('/community-tools/blue-pages/'). */
             'blue_pages_profile_base_url' => '',
             /** Page with [fides_organization_update_form]. Empty = settings option or site default. */
@@ -523,6 +550,7 @@ class Fides_Organization_Catalog {
                 'credentialCatalogUrl'    => $atts['credential_catalog_url'],
                 'walletCatalogUrl'        => $atts['wallet_catalog_url'],
                 'rpCatalogUrl'            => $atts['rp_catalog_url'],
+                'useCaseCatalogUrl'       => $atts['use_case_catalog_url'],
                 'bluePagesProfileBaseUrl' => $bp_profile_base,
                 'updateFormUrl'           => $update_form_url,
             ])

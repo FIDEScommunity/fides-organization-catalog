@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.10.12
+Stable tag: 1.11.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,11 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.11.0 =
+* Organization detail modal: add a Use cases accordion (directly below About) listing the use cases the organization is involved in, derived at runtime from the use case catalog via `links.organizations[].refId`.
+* Use case rows show inline like (★) counts using the shared ratings API, matching the ecosystem role accordions (requires the `usecase` rateable type from fides-use-case-catalog).
+* Settings: add "Use case catalog page URL" (option `fides_org_catalog_use_case_catalog_url`, shortcode attribute `use_case_catalog_url`) used for the ?usecase=… links in the Use cases accordion.
 
 = 1.10.12 =
 * Ecosystem roles: add Trust Infrastructure Provider (`trust_infrastructure_provider`).
