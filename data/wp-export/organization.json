@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-07-24T20:07:39+00:00",
+    "generatedAt": "2026-07-27T14:38:43+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -273,6 +273,33 @@
             },
             "publishedAt": "2026-07-02 10:12:35",
             "updatedAt": "2026-07-02 10:12:35"
+        },
+        {
+            "itemId": "org:espuni",
+            "slug": "espuni",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:espuni",
+                    "name": "espuni",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Age Verification-as-a-Service following the EU Age Verification Profile (ISO18013-7/OID4VP, mso_mdoc, doctype eu.europa.ec.av.1). Built on EUDIPLO (OWF). Verified end-to-end against AltID test env(DN)",
+                    "country": "ES",
+                    "ecosystemRoleCodes": [
+                        "relying_party",
+                        "eudi_wallet_intermediary"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-07-27T14:38:42+00:00"
+            },
+            "publishedAt": "2026-07-27 14:38:42",
+            "updatedAt": "2026-07-27 14:38:42"
         },
         {
             "itemId": "org:fides",
