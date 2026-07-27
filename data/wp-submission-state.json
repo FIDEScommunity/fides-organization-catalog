@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-07-24T20:07:57.195Z",
+  "lastImportAt": "2026-07-27T14:39:01.947Z",
   "managedSlugs": [
     "2060",
     "a3bc",
@@ -11,6 +11,7 @@
     "credenco",
     "davinci-conclusion",
     "digidentity",
+    "espuni",
     "fides",
     "gataca",
     "helixid",
