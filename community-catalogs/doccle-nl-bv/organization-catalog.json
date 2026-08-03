@@ -1,0 +1,40 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:doccle-nl-bv",
+    "name": "Doccle NL BV",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Doccle NL B.V.",
+    "description": "Met Doccle verstuur je digitale post en deel je veilig je data — volledig gesynchroniseerd met je Mijn-omgeving, andere kanalen en o.a. de BE berichtenbox. Minder risico op datalekken en phishing.",
+    "logo": "https://brand.doccle.be/logo",
+    "country": "NL",
+    "certifications": [
+      {
+        "code": "iso27001",
+        "evidence": {
+          "kind": "url",
+          "url": "https://trustcenter.doccle.nl/nl"
+        }
+      },
+      {
+        "code": "soc2",
+        "evidence": {
+          "kind": "url",
+          "url": "https://trustcenter.doccle.nl/nl"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "relying_party",
+      "kyb_provider",
+      "software_vendor",
+      "eidas_trust_service_provider",
+      "trust_infrastructure_provider"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T14:19:32+00:00"
+}
