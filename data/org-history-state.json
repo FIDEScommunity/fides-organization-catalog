@@ -1402,5 +1402,59 @@
   },
   "org:espuni": {
     "firstSeenAt": "2026-07-27T14:38:42+00:00"
+  },
+  "org:arattai": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:banca-transilvania": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:bvg": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:catena-x": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:ethiopia-fda": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:fast-ferries": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:hala-mobility": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:justis": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:knb": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:kw1c": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:nvb": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:simac-access-solutions": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:swiggy": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:tamil-nadu-medical-council": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:transpareo": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:urban-company": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:visa": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
+  },
+  "org:visma-yuki": {
+    "firstSeenAt": "2026-08-03T13:32:03.447Z"
   }
 }

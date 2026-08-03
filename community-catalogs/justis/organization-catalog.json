@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:justis",
+    "name": "Justis",
+    "sectors": [
+      "public_sector"
+    ],
+    "legalName": "Justis (Ministry of Justice and Security)",
+    "description": "Dutch screening authority that assesses the reliability of persons and organisations to promote a safe and just society.",
+    "website": "https://www.justis.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=justis.nl&sz=128",
+    "country": "NL"
+  }
+}

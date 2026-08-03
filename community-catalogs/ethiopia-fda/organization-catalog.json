@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ethiopia-fda",
+    "name": "Ethiopia Food and Drug Authority",
+    "sectors": [
+      "healthcare"
+    ],
+    "legalName": "Ethiopian Food and Drug Authority (EFDA)",
+    "description": "Ethiopia’s federal authority regulating the safety, quality and efficacy of food, medicines, medical devices and related health products.",
+    "website": "https://www.efda.gov.et/",
+    "logo": "https://www.google.com/s2/favicons?domain=efda.gov.et&sz=128",
+    "country": "ET"
+  }
+}

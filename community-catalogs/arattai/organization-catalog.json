@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:arattai",
+    "name": "Arattai",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Simple and secure Indian-made messaging and calling app.",
+    "website": "https://arattai.in",
+    "logo": "https://www.google.com/s2/favicons?domain=arattai.in&sz=128",
+    "country": "IN"
+  }
+}

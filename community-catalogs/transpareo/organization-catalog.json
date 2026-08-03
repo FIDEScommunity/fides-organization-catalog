@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:transpareo",
+    "name": "Transpareo AG",
+    "sectors": [
+      "supply_chain"
+    ],
+    "description": "EU-compliant Digital Product Passports that put brand and product data at the centre for customers and supply chains.",
+    "website": "https://transpareo.com",
+    "logo": "https://www.google.com/s2/favicons?domain=transpareo.com&sz=128",
+    "country": "CH"
+  }
+}

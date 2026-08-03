@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:nvb",
+    "name": "Nederlandse Vereniging van Banken",
+    "sectors": [
+      "finance"
+    ],
+    "legalName": "Nederlandse Vereniging van Banken",
+    "description": "Association of Dutch and foreign banks active in the Netherlands, working toward a prosperous, sustainable and inclusive society with strong European and global connections.",
+    "website": "https://www.nvb.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=nvb.nl&sz=128",
+    "country": "NL"
+  }
+}
