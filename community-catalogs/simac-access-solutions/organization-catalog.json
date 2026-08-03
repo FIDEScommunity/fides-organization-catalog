@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:simac-access-solutions",
+    "name": "Simac Access Solutions",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Provider of smart access-control solutions for secure, efficient access to buildings and spaces, tailored to organisational processes.",
+    "website": "https://www.simac.com/nl/access-solutions/oplossingen",
+    "logo": "https://www.google.com/s2/favicons?domain=simac.com&sz=128",
+    "country": "NL"
+  }
+}
