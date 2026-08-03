@@ -1390,5 +1390,59 @@
   },
   "org:pass2rent-by-odifis": {
     "firstSeenAt": "2026-07-15T13:46:27+00:00"
+  },
+  "org:arattai": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:banca-transilvania": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:bvg": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:catena-x": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:ethiopia-fda": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:fast-ferries": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:hala-mobility": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:justis": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:knb": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:kw1c": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:nvb": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:simac-access-solutions": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:swiggy": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:tamil-nadu-medical-council": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:transpareo": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:urban-company": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:visa": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
+  },
+  "org:visma-yuki": {
+    "firstSeenAt": "2026-08-03T13:09:08.766Z"
   }
 }

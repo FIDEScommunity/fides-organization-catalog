@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:banca-transilvania",
+    "name": "Banca Transilvania",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Romanian bank offering loans, cards, accounts, savings, investments and insurance for individuals and businesses.",
+    "website": "https://www.bancatransilvania.ro/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=bancatransilvania.ro&sz=128",
+    "country": "RO"
+  }
+}

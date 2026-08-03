@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fast-ferries",
+    "name": "Fast Ferries",
+    "sectors": [
+      "mobility"
+    ],
+    "description": "Greek ferry operator offering passenger and vehicle services with online ticket booking for Aegean routes.",
+    "website": "https://fastferries.com.gr/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=fastferries.com.gr&sz=128",
+    "country": "GR"
+  }
+}
