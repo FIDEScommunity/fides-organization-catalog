@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sproof",
+    "name": "sproof",
+    "sectors": [
+      "digital"
+    ],
+    "description": "sproof digitizes your signature processes including electronic identification. 100% customized for companies - according to the latest standards for security and compliance.",
+    "logo": "https://www.sproof.com/wp-content/uploads/2026/01/Navigation-Links.svg",
+    "country": "DE",
+    "certifications": [
+      {
+        "code": "iso27001",
+        "evidence": {
+          "kind": "url",
+          "url": "https://www.sproof.com/wp-content/uploads/2025/09/Zertifikat_27001_sproof_e-3.pdf"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "trust_infrastructure_provider"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-04T05:26:32+00:00"
+}
