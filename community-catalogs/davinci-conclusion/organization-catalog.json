@@ -16,10 +16,11 @@
       }
     ],
     "ecosystemRoleCodes": [
-      "system_integrator"
+      "system_integrator",
+      "standards_development_organization"
     ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-07-23T13:40:09+00:00"
+  "lastUpdated": "2026-08-05T07:21:05+00:00"
 }
