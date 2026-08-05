@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-05T04:01:35+00:00",
+    "generatedAt": "2026-08-05T07:21:06+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -214,15 +214,16 @@
                         }
                     ],
                     "ecosystemRoleCodes": [
-                        "system_integrator"
+                        "system_integrator",
+                        "standards_development_organization"
                     ],
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-07-23T13:40:09+00:00"
+                "lastUpdated": "2026-08-05T07:21:05+00:00"
             },
-            "publishedAt": "2026-07-23 13:40:09",
-            "updatedAt": "2026-07-23 13:40:09"
+            "publishedAt": "2026-08-05 07:21:05",
+            "updatedAt": "2026-08-05 07:21:05"
         },
         {
             "itemId": "org:digidentity",
