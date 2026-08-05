@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-05T16:02:25+00:00",
+    "generatedAt": "2026-08-05T16:35:26+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1100,8 +1100,18 @@
                     ],
                     "legalName": "Verana Foundation (in formation)",
                     "description": "Non-profit rebuilding digital trust in the AI era: Verana stewards open standards and decentralized infrastructure for verifiable, privacy-respecting exchange between people, services and AI agents.",
+                    "website": "https://verana.io",
                     "logo": "https://verana.io/logo.svg",
                     "country": "EE",
+                    "tags": [
+                        "FIDES Supporter",
+                        "Trust Networks",
+                        "Ecosystem Governance",
+                        "Verifiable Trust"
+                    ],
+                    "contact": {
+                        "email": "fabrice@verana.io"
+                    },
                     "ecosystemRoleCodes": [
                         "business_wallet_provider",
                         "software_vendor",
@@ -1113,10 +1123,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-08-05T04:01:34+00:00"
+                "lastUpdated": "2026-08-05T16:35:25+00:00"
             },
-            "publishedAt": "2026-08-05 04:01:34",
-            "updatedAt": "2026-08-05 04:01:34"
+            "publishedAt": "2026-08-05 16:35:25",
+            "updatedAt": "2026-08-05 16:35:25"
         },
         {
             "itemId": "org:yivi",
