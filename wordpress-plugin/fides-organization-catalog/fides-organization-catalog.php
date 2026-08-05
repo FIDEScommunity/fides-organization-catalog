@@ -98,7 +98,7 @@ class Fides_Organization_Catalog {
         ]);
         register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_use_case_catalog_url', [
             'type'              => 'string',
-            'default'           => 'https://fides.community/use-cases/',
+            'default'           => 'https://fides.community/ecosystem-explorer/use-cases/',
             'sanitize_callback' => 'esc_url_raw',
         ]);
         register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_blue_pages_profile_base_url', [
@@ -183,7 +183,7 @@ class Fides_Organization_Catalog {
                         </th>
                         <td>
                             <input type="url" class="large-text code" id="fides_org_catalog_use_case_catalog_url" name="fides_org_catalog_use_case_catalog_url"
-                                   value="<?php echo esc_attr(get_option('fides_org_catalog_use_case_catalog_url', 'https://fides.community/use-cases/')); ?>">
+                                   value="<?php echo esc_attr(get_option('fides_org_catalog_use_case_catalog_url', 'https://fides.community/ecosystem-explorer/use-cases/')); ?>">
                             <p class="description"><?php echo esc_html__('Page with the use case catalog shortcode. Used for ?usecase=… links in the Use cases accordion of the organization modal.', 'fides-organization-catalog'); ?></p>
                         </td>
                     </tr>
@@ -452,7 +452,7 @@ class Fides_Organization_Catalog {
             ),
             'useCaseCatalogUrl'         => get_option(
                 'fides_org_catalog_use_case_catalog_url',
-                'https://fides.community/use-cases/'
+                'https://fides.community/ecosystem-explorer/use-cases/'
             ),
             'useCaseAggregatedDataUrl'  => get_option(
                 'fides_org_catalog_use_case_aggregated_url',
@@ -505,7 +505,7 @@ class Fides_Organization_Catalog {
             ),
             'use_case_catalog_url' => get_option(
                 'fides_org_catalog_use_case_catalog_url',
-                'https://fides.community/use-cases/'
+                'https://fides.community/ecosystem-explorer/use-cases/'
             ),
             /** Base URL for “Open full profile” (trailing slash optional). Empty = settings option or home_url('/community-tools/blue-pages/'). */
             'blue_pages_profile_base_url' => '',

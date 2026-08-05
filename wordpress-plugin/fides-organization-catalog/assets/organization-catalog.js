@@ -313,7 +313,7 @@
     credentialCatalogUrl: '',
     walletCatalogUrl: '',
     rpCatalogUrl: '',
-    useCaseCatalogUrl: 'https://fides.community/use-cases/',
+    useCaseCatalogUrl: 'https://fides.community/ecosystem-explorer/use-cases/',
     useCaseAggregatedDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-use-case-catalog/main/data/aggregated.json',
     bluePagesRestUrl: '',
     bluePagesProfileBaseUrl: '',
