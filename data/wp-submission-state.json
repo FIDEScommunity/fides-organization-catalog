@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-08-04T05:26:51.244Z",
+  "lastImportAt": "2026-08-05T04:01:51.794Z",
   "managedSlugs": [
     "2060",
     "a3bc",
@@ -24,6 +24,7 @@
     "izertis",
     "k4security",
     "lissi",
+    "mintblue",
     "mosip",
     "namirial",
     "pass2rent-by-odifis",
@@ -36,6 +37,7 @@
     "talao",
     "ubique",
     "validated-id",
+    "verana",
     "yivi",
     "yourd"
   ]

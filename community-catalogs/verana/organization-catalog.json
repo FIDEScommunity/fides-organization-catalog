@@ -1,0 +1,25 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:verana",
+    "name": "Verana",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Verana Foundation (in formation)",
+    "description": "Non-profit rebuilding digital trust in the AI era: Verana stewards open standards and decentralized infrastructure for verifiable, privacy-respecting exchange between people, services and AI agents.",
+    "logo": "https://verana.io/logo.svg",
+    "country": "EE",
+    "ecosystemRoleCodes": [
+      "business_wallet_provider",
+      "software_vendor",
+      "business_registry",
+      "industry_association",
+      "standards_development_organization",
+      "trust_infrastructure_provider"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-05T04:01:34+00:00"
+}
