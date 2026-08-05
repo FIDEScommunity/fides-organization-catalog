@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-04T05:26:32+00:00",
+    "generatedAt": "2026-08-05T04:01:35+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -653,6 +653,31 @@
             "updatedAt": "2026-07-02 09:50:42"
         },
         {
+            "itemId": "org:mintblue",
+            "slug": "mintblue",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:mintblue",
+                    "name": "mintBlue",
+                    "sectors": [
+                        "finance"
+                    ],
+                    "description": "Convergence infrastructure for enterprises and governments: verifiable data sharing, compliance automation, and high-volume secured processing.",
+                    "website": "https://mintblue.com/",
+                    "logo": "https://www.google.com/s2/favicons?domain=mintblue.com&sz=128",
+                    "country": "NL",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-08-04T05:26:45+00:00"
+            },
+            "publishedAt": "2026-08-04 05:26:45",
+            "updatedAt": "2026-08-04 05:26:45"
+        },
+        {
             "itemId": "org:mosip",
             "slug": "mosip",
             "filename": "organization-catalog.json",
@@ -1058,6 +1083,39 @@
             },
             "publishedAt": "2026-07-02 09:52:08",
             "updatedAt": "2026-07-02 09:52:08"
+        },
+        {
+            "itemId": "org:verana",
+            "slug": "verana",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:verana",
+                    "name": "Verana",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "Verana Foundation (in formation)",
+                    "description": "Non-profit rebuilding digital trust in the AI era: Verana stewards open standards and decentralized infrastructure for verifiable, privacy-respecting exchange between people, services and AI agents.",
+                    "logo": "https://verana.io/logo.svg",
+                    "country": "EE",
+                    "ecosystemRoleCodes": [
+                        "business_wallet_provider",
+                        "software_vendor",
+                        "business_registry",
+                        "industry_association",
+                        "standards_development_organization",
+                        "trust_infrastructure_provider"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-05T04:01:34+00:00"
+            },
+            "publishedAt": "2026-08-05 04:01:34",
+            "updatedAt": "2026-08-05 04:01:34"
         },
         {
             "itemId": "org:yivi",
