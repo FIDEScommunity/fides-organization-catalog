@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-06T06:41:55+00:00",
+    "generatedAt": "2026-08-06T10:02:40+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -350,6 +350,35 @@
             },
             "publishedAt": "2026-08-03 14:19:32",
             "updatedAt": "2026-08-03 14:19:32"
+        },
+        {
+            "itemId": "org:dppskop-digital-product-passport",
+            "slug": "dppskop-digital-product-passport",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:dppskop-digital-product-passport",
+                    "name": "DPPskop Digital Product Passport",
+                    "sectors": [
+                        "manufacturing"
+                    ],
+                    "legalName": "DPPskop Digital Product Passport",
+                    "description": "Digital Product Passport platform helping manufacturers comply with EU ESPR by creating, managing and publishing product passports with supply chain and sustainability information.",
+                    "logo": "https://dppskop.com/images/logo.svg",
+                    "country": "TR",
+                    "ecosystemRoleCodes": [
+                        "system_integrator",
+                        "conformity_scheme_owner"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-06T10:02:39+00:00"
+            },
+            "publishedAt": "2026-08-06 10:02:39",
+            "updatedAt": "2026-08-06 10:02:39"
         },
         {
             "itemId": "org:espuni",
