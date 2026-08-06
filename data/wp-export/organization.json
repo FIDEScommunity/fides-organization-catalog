@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-06T10:02:40+00:00",
+    "generatedAt": "2026-08-06T17:27:49+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -898,6 +898,37 @@
             },
             "publishedAt": "2026-07-02 09:46:48",
             "updatedAt": "2026-07-02 09:46:48"
+        },
+        {
+            "itemId": "org:reeco",
+            "slug": "reeco",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:reeco",
+                    "name": "Reeco",
+                    "sectors": [
+                        "supply_chain"
+                    ],
+                    "legalName": "Stefano Cipriani Studio ditta individuale",
+                    "description": "Italian issuer of textile Digital Product Passports as verifiable credentials, with claims verified against live certification databases.",
+                    "logo": "https://reeco.eco/assets/img/Icon_color.png",
+                    "country": "IT",
+                    "identifiers": {
+                        "business_registration_number": "PO-530926",
+                        "vat_number": "IT02391280977",
+                        "lei": "8156007B2A5194A30603",
+                        "did": "did:web:ia.reeco.eco"
+                    },
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-06T17:27:48+00:00"
+            },
+            "publishedAt": "2026-08-06 17:27:48",
+            "updatedAt": "2026-08-06 17:27:48"
         },
         {
             "itemId": "org:sphereon",
