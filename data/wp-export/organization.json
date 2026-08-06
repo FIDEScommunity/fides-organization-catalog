@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-05T16:35:26+00:00",
+    "generatedAt": "2026-08-06T06:41:55+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -165,6 +165,34 @@
             },
             "publishedAt": "2026-07-16 12:22:08",
             "updatedAt": "2026-07-16 12:22:08"
+        },
+        {
+            "itemId": "org:bundesanzeiger-verlag",
+            "slug": "bundesanzeiger-verlag",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:bundesanzeiger-verlag",
+                    "name": "Bundesanzeiger Verlag",
+                    "sectors": [
+                        "public_sector"
+                    ],
+                    "legalName": "Bundesanzeiger Verlag GmbH",
+                    "description": "Bundesanzeiger Verlag GmbH operates Germany’s official company register portal (Unternehmensregister), Federal Gazette, Transparency Register and LEIReg, providing statutory corporate and legal disc",
+                    "logo": "https://www.bundesanzeiger-verlag.de/_assets/61f58f9706b026d4837fb0793fcce0e6/img/logo/logo_bundesanzeiger_verlag.svg",
+                    "country": "DE",
+                    "ecosystemRoleCodes": [
+                        "business_registry"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-06T06:41:55+00:00"
+            },
+            "publishedAt": "2026-08-06 06:41:55",
+            "updatedAt": "2026-08-06 06:41:55"
         },
         {
             "itemId": "org:credenco",
