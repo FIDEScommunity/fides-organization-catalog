@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bundesanzeiger-verlag",
+    "name": "Bundesanzeiger Verlag",
+    "sectors": [
+      "public_sector"
+    ],
+    "legalName": "Bundesanzeiger Verlag GmbH",
+    "description": "Bundesanzeiger Verlag GmbH operates Germany’s official company register portal (Unternehmensregister), Federal Gazette, Transparency Register and LEIReg, providing statutory corporate and legal disc",
+    "logo": "https://www.bundesanzeiger-verlag.de/_assets/61f58f9706b026d4837fb0793fcce0e6/img/logo/logo_bundesanzeiger_verlag.svg",
+    "country": "DE",
+    "ecosystemRoleCodes": [
+      "business_registry"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-06T06:41:55+00:00"
+}
