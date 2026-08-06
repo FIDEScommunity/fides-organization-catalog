@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dppskop-digital-product-passport",
+    "name": "DPPskop Digital Product Passport",
+    "sectors": [
+      "manufacturing"
+    ],
+    "legalName": "DPPskop Digital Product Passport",
+    "description": "Digital Product Passport platform helping manufacturers comply with EU ESPR by creating, managing and publishing product passports with supply chain and sustainability information.",
+    "logo": "https://dppskop.com/images/logo.svg",
+    "country": "TR",
+    "ecosystemRoleCodes": [
+      "system_integrator",
+      "conformity_scheme_owner"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-06T10:02:39+00:00"
+}
