@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-07T06:36:40+00:00",
+    "generatedAt": "2026-08-07T07:54:34+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -929,6 +929,39 @@
             },
             "publishedAt": "2026-08-07 06:36:40",
             "updatedAt": "2026-08-07 06:36:40"
+        },
+        {
+            "itemId": "org:sapio-gmbh",
+            "slug": "sapio-gmbh",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:sapio-gmbh",
+                    "name": "SAPIO GMBH",
+                    "sectors": [
+                        "education"
+                    ],
+                    "legalName": "SAPIO GMBH",
+                    "description": "Digital trust infrastructure for skills and certificates. We help institutions issue credentials people can own, carry and prove anywhere, without being locked into one platform.",
+                    "logo": "https://cdn.prod.website-files.com/6798deb8594af5810b2388ba/696de8473c602e44b1bc9d02_2-p-500.png",
+                    "country": "CH",
+                    "identifiers": {
+                        "vat_number": "CHE-177.739.827"
+                    },
+                    "ecosystemRoleCodes": [
+                        "system_integrator",
+                        "consultancy",
+                        "software_vendor"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-07T07:54:33+00:00"
+            },
+            "publishedAt": "2026-08-07 07:54:33",
+            "updatedAt": "2026-08-07 07:54:33"
         },
         {
             "itemId": "org:sphereon",
