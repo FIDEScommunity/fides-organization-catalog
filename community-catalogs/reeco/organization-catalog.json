@@ -8,7 +8,7 @@
     ],
     "legalName": "Stefano Cipriani Studio ditta individuale",
     "description": "Italian issuer of textile Digital Product Passports as verifiable credentials, with claims verified against live certification databases.",
-    "logo": "https://reeco.eco/assets/img/Icon_color.png",
+    "logo": "https://fides.community/app/uploads/2026/08/reeco_Icon_color.png",
     "country": "IT",
     "identifiers": {
       "business_registration_number": "PO-530926",
@@ -19,5 +19,5 @@
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-08-06T17:27:48+00:00"
+  "lastUpdated": "2026-08-07T06:36:40+00:00"
 }
