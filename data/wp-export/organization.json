@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-07T13:13:28+00:00",
+    "generatedAt": "2026-08-07T15:00:32+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1129,6 +1129,30 @@
             },
             "publishedAt": "2026-07-02 09:53:06",
             "updatedAt": "2026-07-02 09:53:06"
+        },
+        {
+            "itemId": "org:trusttech",
+            "slug": "trusttech",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:trusttech",
+                    "name": "TrustTech",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "eIDAS 2.0 trust infrastructure for identity verification, verifiable credentials and qualified electronic signatures. In production in finance, government, healthcare and pharma.",
+                    "logo": "https://trusttech.nl/wp-content/uploads/2026/07/trusttech-avatar-300x300.png",
+                    "country": "NL",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-07T15:00:32+00:00"
+            },
+            "publishedAt": "2026-08-07 15:00:32",
+            "updatedAt": "2026-08-07 15:00:32"
         },
         {
             "itemId": "org:ubique",
