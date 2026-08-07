@@ -17,10 +17,11 @@
     ],
     "ecosystemRoleCodes": [
       "system_integrator",
+      "consultancy",
       "standards_development_organization"
     ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-08-05T07:21:05+00:00"
+  "lastUpdated": "2026-08-07T13:13:27+00:00"
 }
