@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-08-06T10:03:01.119Z",
+  "lastImportAt": "2026-08-07T06:01:07.895Z",
   "managedSlugs": [
     "2060",
     "a3bc",
@@ -32,6 +32,7 @@
     "pass2rent-by-odifis",
     "passportreader",
     "procivis",
+    "reeco",
     "sphereon",
     "spherity",
     "sproof",
