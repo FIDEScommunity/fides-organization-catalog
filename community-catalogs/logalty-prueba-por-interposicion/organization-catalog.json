@@ -31,10 +31,6 @@
               "name": "Qualified pres esig"
             },
             {
-              "code": "Q_TIMESTAMP",
-              "name": "Qualified timestamp"
-            },
-            {
               "code": "Q_VAL_ESEAL",
               "name": "Qualified val eseal"
             },
@@ -50,5 +46,5 @@
     "logo": "https://www.logalty.com/wp-content/uploads/2019/05/logalty-frame-bg.jpg",
     "description": "We are pioneers in electronic contracting, notification and identification.We anticipate technological challenges with legal robustness so that you can be the first to innovate your processes."
   },
-  "lastUpdated": "2026-07-06T08:59:15.050Z"
+  "lastUpdated": "2026-08-10T06:09:41.022Z"
 }

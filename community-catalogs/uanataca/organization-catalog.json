@@ -27,6 +27,10 @@
               "name": "Qualified cert esig"
             },
             {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            },
+            {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
             }
@@ -38,5 +42,5 @@
     "logo": "https://web.uanataca.com/common/project/images/share.jpg",
     "description": "We design solutions that facilitate the digital transformation with maximum legal guarantees."
   },
-  "lastUpdated": "2026-07-06T08:59:15.048Z"
+  "lastUpdated": "2026-08-10T06:09:41.020Z"
 }
