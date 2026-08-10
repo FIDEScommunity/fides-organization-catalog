@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aqta",
+    "name": "Aqta",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Aqta Technologies Limited",
+    "description": "Building signed, offline-verifiable evidence for AI decisions: open ATTESTATION-v1 spec, two open-source verifiers and a transparency log. Adjacent to wallets and VCs; not a VC issuer",
+    "logo": "https://aqta.ai/aqta-mark.png",
+    "country": "IE",
+    "ecosystemRoleCodes": [
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-10T19:28:55+00:00"
+}
