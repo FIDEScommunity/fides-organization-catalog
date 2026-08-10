@@ -4,13 +4,28 @@
     "id": "org:trusttech",
     "name": "TrustTech",
     "sectors": [
-      "digital"
+      "finance"
     ],
     "description": "eIDAS 2.0 trust infrastructure for identity verification, verifiable credentials and qualified electronic signatures. In production in finance, government, healthcare and pharma.",
     "logo": "https://trusttech.nl/wp-content/uploads/2026/07/trusttech-avatar-300x300.png",
     "country": "NL",
+    "certifications": [
+      {
+        "code": "iso27001"
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "business_wallet_provider",
+      "issuer",
+      "relying_party",
+      "idv_provider",
+      "consultancy",
+      "software_vendor",
+      "eudi_wallet_intermediary",
+      "trust_infrastructure_provider"
+    ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-08-07T15:00:32+00:00"
+  "lastUpdated": "2026-08-10T14:45:07+00:00"
 }
