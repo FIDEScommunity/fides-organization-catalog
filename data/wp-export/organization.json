@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-10T14:45:08+00:00",
+    "generatedAt": "2026-08-10T19:28:55+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -60,6 +60,35 @@
             },
             "publishedAt": "2026-07-02 10:09:23",
             "updatedAt": "2026-07-02 10:09:23"
+        },
+        {
+            "itemId": "org:aqta",
+            "slug": "aqta",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:aqta",
+                    "name": "Aqta",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "Aqta Technologies Limited",
+                    "description": "Building signed, offline-verifiable evidence for AI decisions: open ATTESTATION-v1 spec, two open-source verifiers and a transparency log. Adjacent to wallets and VCs; not a VC issuer",
+                    "logo": "https://aqta.ai/aqta-mark.png",
+                    "country": "IE",
+                    "ecosystemRoleCodes": [
+                        "software_vendor",
+                        "trust_infrastructure_provider"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-10T19:28:55+00:00"
+            },
+            "publishedAt": "2026-08-10 19:28:55",
+            "updatedAt": "2026-08-10 19:28:55"
         },
         {
             "itemId": "org:authbound",
