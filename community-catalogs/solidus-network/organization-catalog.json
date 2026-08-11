@@ -1,0 +1,29 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:solidus-network",
+    "name": "Solidus Network",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Solidus Network",
+    "description": "Reusable KYC on open standards: verify once, present a credential anywhere, disclose only what is needed. W3C VC 2.0, SD-JWT VC, OpenID4VCI/VP, BBS+, did:solidus. Open source, running on testnet.",
+    "logo": "https://solidus.network/logos/solidus_dark.png",
+    "country": "TR",
+    "identifiers": {
+      "vat_number": "5730195611"
+    },
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "business_wallet_provider",
+      "vc_type_authority",
+      "issuer",
+      "idv_provider",
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-11T20:20:33+00:00"
+}
