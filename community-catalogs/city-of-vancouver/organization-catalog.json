@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:city-of-vancouver",
+    "name": "City of Vancouver",
+    "sectors": [
+      "public_sector"
+    ],
+    "legalName": "City of Vancouver",
+    "description": "Municipal government adopting Verifiable Credentials and BC Government stewarded Wallet to transform Digital Delivery of Permitting and Licencing Services.",
+    "logo": "https://vancouver.ca/images/cov/feature/cov-emblem-feature.jpg",
+    "country": "CA",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-11T21:03:17+00:00"
+}
