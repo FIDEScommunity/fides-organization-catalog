@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:telefonica-tech",
+    "name": "Telefonica Tech",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Telefónica Tech",
+    "description": "Telefónica’s digital business unit delivering cybersecurity, cloud, IoT, big data and related technology services for enterprise and public-sector customers.",
+    "website": "https://telefonicatech.com",
+    "logo": "https://www.google.com/s2/favicons?domain=telefonicatech.com&sz=128",
+    "country": "ES"
+  }
+}

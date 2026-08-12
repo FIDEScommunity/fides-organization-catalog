@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hslu",
+    "name": "Lucerne University of Applied Sciences and Arts (HSLU)",
+    "sectors": [
+      "education"
+    ],
+    "legalName": "Hochschule Luzern",
+    "description": "Swiss university of applied sciences and arts based in Lucerne, offering education and research across design, engineering, business, music and social work.",
+    "website": "https://www.hslu.ch/",
+    "logo": "https://www.google.com/s2/favicons?domain=hslu.ch&sz=128",
+    "country": "CH"
+  }
+}

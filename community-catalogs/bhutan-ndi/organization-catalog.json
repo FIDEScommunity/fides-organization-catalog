@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bhutan-ndi",
+    "name": "Bhutan NDI",
+    "sectors": [
+      "public_sector"
+    ],
+    "legalName": "Bhutan National Digital Identity",
+    "description": "Bhutan’s National Digital Identity programme enabling citizens to receive, store and share digital credentials as part of the country’s trusted digital ecosystem.",
+    "website": "https://bhutanndi.com",
+    "logo": "https://www.google.com/s2/favicons?domain=bhutanndi.com&sz=128",
+    "country": "BT"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tmt-id",
+    "name": "TMT ID",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Provider of mobile identity and number-verification services that help organisations confirm phone-number ownership and reduce fraud in digital onboarding and authentication.",
+    "website": "https://tmtid.com",
+    "logo": "https://www.google.com/s2/favicons?domain=tmtid.com&sz=128",
+    "country": "GB"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:rvo",
+    "name": "Rijksdienst voor Ondernemend Nederland (RVO)",
+    "sectors": [
+      "public_sector"
+    ],
+    "legalName": "Rijksdienst voor Ondernemend Nederland",
+    "description": "Netherlands Enterprise Agency supporting entrepreneurs, researchers and organisations with funding, networking and regulatory information on behalf of the Dutch government.",
+    "website": "https://www.rvo.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=rvo.nl&sz=128",
+    "country": "NL"
+  }
+}

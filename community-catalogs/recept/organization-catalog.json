@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:recept",
+    "name": "Recept",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Japanese company specialising in DID/VC technology and the proovy digital credential platform for education, civic and organisational use cases.",
+    "website": "https://recept.earth",
+    "logo": "https://www.google.com/s2/favicons?domain=recept.earth&sz=128",
+    "country": "JP"
+  }
+}

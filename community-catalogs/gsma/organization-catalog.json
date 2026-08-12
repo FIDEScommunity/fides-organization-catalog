@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:gsma",
+    "name": "GSMA",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "GSM Association",
+    "description": "Global mobile industry association representing mobile network operators and related companies, driving standards and programmes across connectivity and digital services.",
+    "website": "https://www.gsma.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=gsma.com&sz=128",
+    "country": "GB"
+  }
+}

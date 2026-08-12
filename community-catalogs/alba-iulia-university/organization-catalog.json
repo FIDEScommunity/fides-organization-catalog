@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:alba-iulia-university",
+    "name": "Universitatea „1 Decembrie 1918” din Alba Iulia",
+    "sectors": [
+      "education"
+    ],
+    "legalName": "Universitatea „1 Decembrie 1918” din Alba Iulia",
+    "description": "Public university in Alba Iulia, Romania, offering education and research across a broad range of academic disciplines.",
+    "website": "https://uab.ro",
+    "logo": "https://www.google.com/s2/favicons?domain=uab.ro&sz=128",
+    "country": "RO"
+  }
+}

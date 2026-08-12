@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:university-krems",
+    "name": "University for Continuing Education Krems",
+    "sectors": [
+      "education"
+    ],
+    "legalName": "Universität für Weiterbildung Krems",
+    "description": "Austrian public university specialised in academic continuing education and lifelong learning.",
+    "website": "https://www.donau-uni.ac.at/",
+    "logo": "https://www.google.com/s2/favicons?domain=donau-uni.ac.at&sz=128",
+    "country": "AT"
+  }
+}

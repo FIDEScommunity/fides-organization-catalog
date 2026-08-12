@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:javo",
+    "name": "NPO JAPAN Volunteer Association (JAVO)",
+    "sectors": [
+      "public_sector"
+    ],
+    "legalName": "NPO法人JAPANボランティア協会",
+    "description": "Japanese nonprofit promoting volunteering nationwide and acting as a third-party issuer for volunteer activity credentials.",
+    "website": "https://javo.or.jp/",
+    "logo": "https://www.google.com/s2/favicons?domain=javo.or.jp&sz=128",
+    "country": "JP"
+  }
+}

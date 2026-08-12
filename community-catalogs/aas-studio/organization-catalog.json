@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aas-studio",
+    "name": "AAS-Studio",
+    "sectors": [
+      "manufacturing"
+    ],
+    "description": "Platform for turning product datasheets into Asset Administration Shell (AAS) structures to support Digital Product Passport and EU Battery Regulation compliance.",
+    "website": "https://aas-studio.eu",
+    "logo": "https://www.google.com/s2/favicons?domain=aas-studio.eu&sz=128",
+    "country": "EU"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zorginstituut-nederland",
+    "name": "Zorginstituut Nederland",
+    "sectors": [
+      "healthcare"
+    ],
+    "description": "Dutch National Health Care Institute advising on the basic health insurance package and supporting quality, accessibility and affordability of care in the Netherlands.",
+    "website": "https://www.zorginstituutnederland.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=zorginstituutnederland.nl&sz=128",
+    "country": "NL"
+  }
+}
