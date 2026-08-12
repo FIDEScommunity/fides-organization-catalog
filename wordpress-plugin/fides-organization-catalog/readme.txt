@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.11.0
+Stable tag: 1.11.2
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -24,6 +24,12 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 **Catalog shortcode:** `[fides_organization_catalog]`
 
 == Changelog ==
+
+= 1.11.2 =
+* Ecosystem roles: add Interop Testbed Operator (`interop_testbed_operator`).
+
+= 1.11.1 =
+* List view: show country flag instead of globe icon (tooltip still shows country name).
 
 = 1.11.0 =
 * Organization detail modal: add a Use cases accordion (directly below About) listing the use cases the organization is involved in, derived at runtime from the use case catalog via `links.organizations[].refId`.

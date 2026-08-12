@@ -106,11 +106,17 @@
     return upper;
   }
 
-  function renderOrgCountryGlobeIcon(org) {
+  /** Compact country flag for list rows (tooltip = country name). */
+  function renderOrgCountryListFlag(org) {
     const code = normalizeOrgCountryCode(org && org.country);
     if (!code) return '';
     const label = countryName(code);
-    return `<span class="fides-catalog-country-meta fides-catalog-country-meta--icon-only" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">${icons.globe}</span>`;
+    return `<span class="fides-catalog-country-meta fides-catalog-country-meta--icon-only" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}"><img src="https://flagcdn.com/w40/${encodeURIComponent(code.toLowerCase())}.png" alt="" class="fides-org-list-country-flag" width="18" height="13" loading="lazy" decoding="async" /></span>`;
+  }
+
+  /** @deprecated Use renderOrgCountryListFlag. */
+  function renderOrgCountryGlobeIcon(org) {
+    return renderOrgCountryListFlag(org);
   }
 
   function renderOrgCountryMeta(org) {
@@ -123,9 +129,9 @@
     return `<span class="fides-catalog-country-meta" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">${icons.globe}<span class="fides-org-provider-text">${escapeHtml(label)}</span></span>`;
   }
 
-  /** @deprecated Use renderOrgCountryGlobeIcon (list) or renderOrgCountryMeta (card/modal). */
+  /** @deprecated Use renderOrgCountryListFlag (list) or renderOrgCountryMeta (card/modal). */
   function renderOrgCountryFlag(org) {
-    return renderOrgCountryGlobeIcon(org);
+    return renderOrgCountryListFlag(org);
   }
 
   function renderOrgCountryModalFlag(org) {
@@ -708,6 +714,7 @@
     { value: 'eudi_wallet_intermediary', label: 'EUDI Wallet Intermediary' },
     { value: 'eidas_trust_service_provider', label: 'eIDAS Trust Service Provider' },
     { value: 'trust_infrastructure_provider', label: 'Trust Infrastructure Provider' },
+    { value: 'interop_testbed_operator', label: 'Interop Testbed Operator' },
   ];
 
   const ECOSYSTEM_ROLE_LABELS = Object.fromEntries(
@@ -2007,7 +2014,7 @@
     const ccRaw = (org.country || '').trim();
     const cc = normalizeOrgCountryCode(ccRaw);
     const countryCell = cc
-      ? renderOrgCountryFlag(org)
+      ? renderOrgCountryListFlag(org)
       : '\u2014';
 
     const officialClass = orgOfficialCardClass(org);

@@ -323,7 +323,8 @@
         "conformity_assessment_body",
         "eudi_wallet_intermediary",
         "eidas_trust_service_provider",
-        "trust_infrastructure_provider"
+        "trust_infrastructure_provider",
+        "interop_testbed_operator"
       ],
       "description": "Ecosystem role the organization performs in the digital identity / trust landscape."
     },

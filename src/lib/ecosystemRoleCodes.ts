@@ -22,6 +22,7 @@ export const ORGANIZATION_ECOSYSTEM_ROLE_CODES = [
   'eudi_wallet_intermediary',
   'eidas_trust_service_provider',
   'trust_infrastructure_provider',
+  'interop_testbed_operator',
 ] as const;
 
 export type OrganizationEcosystemRoleCode = (typeof ORGANIZATION_ECOSYSTEM_ROLE_CODES)[number];
@@ -47,6 +48,7 @@ export const ORGANIZATION_ECOSYSTEM_ROLE_LABELS: Record<OrganizationEcosystemRol
   eudi_wallet_intermediary: 'EUDI Wallet Intermediary',
   eidas_trust_service_provider: 'eIDAS Trust Service Provider',
   trust_infrastructure_provider: 'Trust Infrastructure Provider',
+  interop_testbed_operator: 'Interop Testbed Operator',
 };
 
 const CODE_SET = new Set<string>(ORGANIZATION_ECOSYSTEM_ROLE_CODES);

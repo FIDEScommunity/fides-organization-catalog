@@ -829,6 +829,16 @@
   flex-shrink: 0;
 }
 
+#fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-org-list-country-flag {
+  display: block;
+  width: 18px;
+  height: 13px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.12);
+  flex-shrink: 0;
+}
+
 #fides-org-catalog-root .fides-org-grid[data-view="list"] .fides-row-badges {
   display: flex;
   flex-wrap: wrap;

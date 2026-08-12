@@ -240,6 +240,7 @@ const spec = {
           'eudi_wallet_intermediary',
           'eidas_trust_service_provider',
           'trust_infrastructure_provider',
+          'interop_testbed_operator',
         ],
       },
       Organization: {
