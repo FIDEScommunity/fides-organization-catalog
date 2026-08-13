@@ -14,16 +14,11 @@
       "vat_number": "5730195611"
     },
     "ecosystemRoleCodes": [
-      "personal_wallet_provider",
-      "business_wallet_provider",
-      "vc_type_authority",
-      "issuer",
       "idv_provider",
-      "software_vendor",
-      "trust_infrastructure_provider"
+      "software_vendor"
     ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-08-11T20:20:33+00:00"
+  "lastUpdated": "2026-08-13T19:33:24+00:00"
 }

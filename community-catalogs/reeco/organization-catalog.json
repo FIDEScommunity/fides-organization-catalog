@@ -16,8 +16,11 @@
       "lei": "8156007B2A5194A30603",
       "did": "did:web:ia.reeco.eco"
     },
+    "ecosystemRoleCodes": [
+      "issuer"
+    ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-08-07T06:36:40+00:00"
+  "lastUpdated": "2026-08-13T19:33:31+00:00"
 }
