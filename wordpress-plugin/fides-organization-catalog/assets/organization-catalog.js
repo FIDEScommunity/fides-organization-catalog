@@ -519,9 +519,24 @@
   function effectiveView() {
     return window.innerWidth < LIST_BREAKPOINT ? 'grid' : viewMode;
   }
+
+  let mobileFiltersController = null;
+  function getMobileFilters() {
+    if (mobileFiltersController) return mobileFiltersController;
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.createMobileFiltersController !== 'function') {
+      return null;
+    }
+    mobileFiltersController = window.FidesCatalogUI.createMobileFiltersController({
+      root: () => root,
+      breakpoint: LIST_BREAKPOINT,
+    });
+    return mobileFiltersController;
+  }
+
   let _lastOrgEffectiveView = effectiveView();
   window.addEventListener('resize', () => {
     if (!root) return;
+    getMobileFilters()?.onLeavingMobileViewport();
     const cur = effectiveView();
     if (cur !== _lastOrgEffectiveView) {
       _lastOrgEffectiveView = cur;
@@ -2049,6 +2064,7 @@
   function render() {
     const filtered = getFilteredOrgs();
     const metrics = computeMetrics(filtered);
+    const mobileFiltersOpen = getMobileFilters()?.captureOpenState() || false;
 
     root.innerHTML = `
       <div class="fides-org-layout">
@@ -2094,6 +2110,7 @@
     `;
     _lastOrgEffectiveView = effectiveView();
     bindEvents();
+    getMobileFilters()?.applyAfterRender(mobileFiltersOpen);
   }
 
   function showToast(message, type = 'success') {
@@ -2124,8 +2141,21 @@
     selectedOrg = null;
     forcedModalTheme = null;
     const overlay = document.getElementById('fides-modal-overlay');
-    if (overlay) { overlay.classList.add('closing'); setTimeout(() => overlay.remove(), 200); }
-    document.body.style.overflow = '';
+    if (overlay) {
+      overlay.classList.add('closing');
+      setTimeout(() => {
+        overlay.remove();
+        if (window.FidesCatalogUI && typeof window.FidesCatalogUI.syncCatalogBodyScrollLock === 'function') {
+          window.FidesCatalogUI.syncCatalogBodyScrollLock({ root: root });
+        } else if (!(root && root.querySelector('.fides-sidebar.mobile-open'))) {
+          document.body.style.overflow = '';
+        }
+      }, 200);
+    } else if (window.FidesCatalogUI && typeof window.FidesCatalogUI.syncCatalogBodyScrollLock === 'function') {
+      window.FidesCatalogUI.syncCatalogBodyScrollLock({ root: root });
+    } else if (!(root && root.querySelector('.fides-sidebar.mobile-open'))) {
+      document.body.style.overflow = '';
+    }
     const params = new URLSearchParams(window.location.search);
     params.delete('org');
     const qs = params.toString();
@@ -2182,14 +2212,6 @@
     if (window.FidesCatalogUI && typeof window.FidesCatalogUI.initModalMediaCarousels === 'function') {
       window.FidesCatalogUI.initModalMediaCarousels();
     }
-  }
-
-  function closeMobileFilters() {
-    if (!root) return;
-    const sidebar = root.querySelector('.fides-sidebar.mobile-open');
-    if (!sidebar) return;
-    sidebar.classList.remove('mobile-open');
-    document.body.style.overflow = '';
   }
 
   function bindEvents() {
@@ -2250,15 +2272,7 @@
       });
     });
 
-    root.querySelectorAll('.fides-filter-label-toggle').forEach((toggle) => {
-      toggle.addEventListener('click', () => {
-        const group = toggle.closest('.fides-filter-group')?.dataset.filterGroup;
-        if (group && Object.prototype.hasOwnProperty.call(filterGroupState, group)) {
-          filterGroupState[group] = !filterGroupState[group];
-          render();
-        }
-      });
-    });
+    getMobileFilters()?.bindCollapsibleToggles(filterGroupState);
 
     root.querySelectorAll('[data-cert-subtoggle]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -2281,23 +2295,7 @@
       card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(card.dataset.id); } });
     });
 
-    const mobileToggle = root.querySelector('#fides-mobile-filter-toggle');
-    const sidebar = root.querySelector('.fides-sidebar');
-    if (mobileToggle && sidebar) {
-      mobileToggle.addEventListener('click', () => {
-        sidebar.classList.add('mobile-open');
-        document.body.style.overflow = 'hidden';
-      });
-    }
-    if (sidebar) {
-      sidebar.addEventListener('click', (e) => {
-        if (e.target === sidebar && sidebar.classList.contains('mobile-open')) {
-          closeMobileFilters();
-        }
-      });
-    }
-    const sidebarClose = root.querySelector('#fides-sidebar-close');
-    if (sidebarClose) sidebarClose.addEventListener('click', closeMobileFilters);
+    getMobileFilters()?.bindShell();
 
     root.querySelectorAll('.fides-view-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -2469,7 +2467,7 @@
     root.setAttribute('data-theme', settings.theme);
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
-      closeMobileFilters();
+      getMobileFilters()?.setOpen(false);
     });
     loadOrganizations();
   }
