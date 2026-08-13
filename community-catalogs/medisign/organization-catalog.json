@@ -28,7 +28,8 @@
     ],
     "website": "http://www.medisign.de/",
     "logo": "https://www.medisign.de/wp-content/uploads/2020/05/medisignPic_eHBA-Signatur_FB.jpg",
-    "description": "medisign is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany, providing digital trust services via medisign.de."
+    "description": "medisign is a Qualified Trust Service Provider on the EU eIDAS Trust List for Germany.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:09.066Z"
 }

@@ -36,7 +36,8 @@
     ],
     "website": "https://www.chambersign.fr",
     "logo": "https://www.google.com/s2/favicons?domain=www.chambersign.fr&sz=128",
-    "description": "ChamberSign France is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via chambersign.fr."
+    "description": "ChamberSign France is a Qualified Trust Service Provider on the EU eIDAS Trust List for France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.164Z"
 }

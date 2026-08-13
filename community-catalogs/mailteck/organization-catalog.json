@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:mailteck",
-    "name": "MAILTECK,",
+    "name": "MAILTECK",
     "legalName": "MAILTECK, S.A.",
     "sectors": [
       "digital"
@@ -36,7 +36,8 @@
     ],
     "website": "https://comunicaciones-legales.mailteck.com/",
     "logo": "https://comunicaciones-legales.mailteck.com/favicon.png",
-    "description": "MAILTECK is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via comunicaciones-legales.mailteck.com."
+    "description": "MAILTECK is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.066Z"
 }

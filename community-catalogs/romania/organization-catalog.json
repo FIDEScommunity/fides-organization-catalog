@@ -9,6 +9,8 @@
     "website": "https://www.adr.gov.ro/",
     "country": "RO",
     "description": "Authority for the Digitalization of Romania (ADR); leads RoEUDIW with MEDAT, MAI, and STS, adopting Germany's open-source EUDI Wallet solution. QTSP partners include certSIGN and Trans Sped.",
-    "logo": "https://flagcdn.com/w80/ro.png"
-  }
+    "logo": "https://flagcdn.com/w80/ro.png",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-08T19:54:46.000Z"
 }

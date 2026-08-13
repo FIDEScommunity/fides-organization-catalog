@@ -42,8 +42,9 @@
         }
       }
     ],
-    "website": "http://postecert.poste.it/aboutpostecom.shtml",
-    "description": "<div>&nbsp;&nbsp; </div><br />"
+    "website": "https://www.poste.it/",
+    "description": "Poste Italiane is Italy’s postal operator and a Qualified Trust Service Provider for signatures, seals and timestamps.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.765Z"
 }

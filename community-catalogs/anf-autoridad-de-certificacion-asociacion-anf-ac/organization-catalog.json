@@ -60,7 +60,8 @@
     ],
     "website": "http://www.anf.es",
     "logo": "https://anf.es/wp-content/uploads/2025/09/favicon-anf.png",
-    "description": "ANF AUTORIDAD DE CERTIFICACIÓN ASOCIACIÓN ANF AC is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via anf.es."
+    "description": "ANF AUTORIDAD DE CERTIFICACIÓN ASOCIACIÓN ANF AC is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.041Z"
 }

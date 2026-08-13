@@ -10,6 +10,8 @@
     "description": "Berlin’s public transport operator, providing timetable information, tickets, subscriptions, apps and traveller information.",
     "website": "https://www.bvg.de",
     "logo": "https://www.google.com/s2/favicons?domain=bvg.de&sz=128",
-    "country": "DE"
-  }
+    "country": "DE",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

@@ -32,7 +32,8 @@
     ],
     "website": "http://www.zaba.hr/cps",
     "logo": "https://www.zaba.hr/home/zaba/static/img/favicon/apple-touch-icon-57x57.png",
-    "description": "Zagrebačka banka dioničko društvo is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Croatia. It provides digital trust services via zaba.hr."
+    "description": "Zagrebačka banka dioničko društvo is a Qualified Trust Service Provider on the EU eIDAS Trust List for Croatia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:19.551Z"
 }

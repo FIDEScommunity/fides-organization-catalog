@@ -27,7 +27,8 @@
       }
     ],
     "website": "http://www.t-systems.hu/nagyvallalatok/hitelesites_szolgaltatasok",
-    "description": "Magyar Telekom Public Company is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Hungary. It provides digital trust services via t-systems.hu."
+    "description": "Magyar Telekom Public Company is a Qualified Trust Service Provider on the EU eIDAS Trust List for Hungary.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:21.375Z"
 }

@@ -28,7 +28,8 @@
     ],
     "website": "https://www.poczta-polska.pl/",
     "logo": "https://www.poczta-polska.pl/wp-content/uploads/2022/11/cropped-cropped-favicon-180x180.png",
-    "description": "Poczta Polska S. A is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via poczta-polska.pl."
+    "description": "Poczta Polska S. A is a Qualified Trust Service Provider on the EU eIDAS Trust List for Poland.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:36.826Z"
 }

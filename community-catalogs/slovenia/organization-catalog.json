@@ -9,6 +9,8 @@
     "website": "https://www.gov.si/",
     "country": "SI",
     "description": "Government of Slovenia; national portals and digital programmes for public administration, identity, and e-services.",
-    "logo": "https://www.gov.si/assets/sistem/gov.si.share.and.social.media.jpg"
-  }
+    "logo": "https://www.gov.si/assets/sistem/gov.si.share.and.social.media.jpg",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

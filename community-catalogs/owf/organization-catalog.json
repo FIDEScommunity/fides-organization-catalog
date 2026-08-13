@@ -9,6 +9,12 @@
     "website": "https://openwallet.foundation/",
     "logo": "https://avatars.githubusercontent.com/u/131064301?s=280&v=4",
     "country": "US",
-    "description": "OpenWallet Foundation; open-governance community developing specifications and reference implementations for interoperable digital wallets."
-  }
+    "description": "OpenWallet Foundation; open-governance community developing specifications and reference implementations for interoperable digital wallets.",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

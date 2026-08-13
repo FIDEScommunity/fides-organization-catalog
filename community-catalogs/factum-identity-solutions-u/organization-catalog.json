@@ -36,7 +36,8 @@
     ],
     "website": "https://www.factumidentity.com/",
     "logo": "https://www.factumidentity.com/assets/img/rss.png",
-    "description": "FACTUM IDENTITY SOLUTIONS, U is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via factumidentity.com."
+    "description": "FACTUM IDENTITY SOLUTIONS, U is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.075Z"
 }

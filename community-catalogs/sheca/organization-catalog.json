@@ -7,9 +7,14 @@
     "sectors": [
       "digital"
     ],
-    "website": "https://static.sheca.com/vlei-web/",
+    "website": "https://www.sheca.com/",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/sheca/SHECA.png",
     "country": "CN",
-    "description": "SHECA (Shanghai Electronic Certification Authority) is a China-based trust service provider and Qualified vLEI Issuer (QVI) accredited by GLEIF. It issues verifiable Legal Entity Identifier (vLEI) credentials to organizations and their authorized representatives, enabling trusted digital identity and role assertions in global digital trade, compliance, and organizational identity use cases."
-  }
+    "description": "SHECA (Shanghai Electronic Certification Authority) is a China-based trust service provider and Qualified vLEI Issuer (QVI) accredited by GLEIF. It issues verifiable Legal Entity Identifier (vLEI) credentials to organizations and their authorized representatives, enabling trusted digital identity and role assertions in global digital trade, compliance, and organizational identity use cases.",
+    "ecosystemRoleCodes": [
+      "issuer"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-22T19:35:56.000Z"
 }

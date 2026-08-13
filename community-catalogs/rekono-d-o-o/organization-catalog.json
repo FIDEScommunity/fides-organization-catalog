@@ -52,7 +52,8 @@
     ],
     "website": "https://www.rekono.si/sl/izkaznica-podjetja/",
     "logo": "https://www.rekono.si/wp-content/uploads/2025/01/rekono-10.jpg",
-    "description": "Rekono is a Slovenian provider of qualified digital trust services and is listed as a QTSP on the EU Trust List."
+    "description": "Rekono is a Slovenian provider of qualified digital trust services and is listed as a QTSP on the EU Trust List.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:42.587Z"
 }

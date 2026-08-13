@@ -28,7 +28,8 @@
     ],
     "website": "https://www.eposta.hr/info",
     "logo": "https://www.eposta.hr/favicon.ico",
-    "description": "HP d.d is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Croatia. It provides digital trust services via eposta.hr."
+    "description": "HP d.d is a Qualified Trust Service Provider on the EU eIDAS Trust List for Croatia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:19.552Z"
 }

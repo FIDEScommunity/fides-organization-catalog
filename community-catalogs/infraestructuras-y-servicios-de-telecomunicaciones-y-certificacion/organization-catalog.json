@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:infraestructuras-y-servicios-de-telecomunicaciones-y-certificacion",
-    "name": "Infraestructuras y Servicios de Telecomunicaciones y Certificación",
+    "name": "ACCV (Infraestructuras y Servicios de Telecomunicaciones y Certificación)",
     "legalName": "Infraestructuras y Servicios de Telecomunicaciones y Certificación SA",
     "sectors": [
       "digital"
@@ -38,8 +38,9 @@
         }
       }
     ],
-    "website": "http://www.accv.es",
-    "description": "This is meta description"
+    "website": "https://www.accv.es/",
+    "description": "ACCV is the certification authority of the Generalitat Valenciana and a Qualified Trust Service Provider in Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.042Z"
 }

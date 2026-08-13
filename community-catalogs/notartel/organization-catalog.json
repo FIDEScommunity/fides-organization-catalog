@@ -36,7 +36,8 @@
     ],
     "website": "https://ca.notartel.it/",
     "logo": "https://ca.notartel.it/wp-content/uploads/2024/10/favicon.png",
-    "description": "Notartel is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ca.notartel.it."
+    "description": "Notartel is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.768Z"
 }

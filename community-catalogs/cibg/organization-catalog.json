@@ -28,7 +28,8 @@
     ],
     "website": "https://www.uziregister.nl/contact/english-version",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Centraal_Informatiepunt_Beroepen_Gezondheidszorg_%28CIBG%29_logo.png",
-    "description": "CIBG is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via uziregister.nl."
+    "description": "CIBG is a Qualified Trust Service Provider on the EU eIDAS Trust List for the Netherlands.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:33.798Z"
 }

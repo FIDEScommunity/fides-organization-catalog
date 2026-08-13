@@ -32,7 +32,8 @@
     ],
     "website": "https://www.bancaditalia.it/footer/firmadigitale/index.html?com.dotmarketing.htmlpage.language=1",
     "logo": "https://www.google.com/s2/favicons?domain=www.bancaditalia.it&sz=128",
-    "description": "Banca d'Italia is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via bancaditalia.it."
+    "description": "Banca d'Italia is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.748Z"
 }

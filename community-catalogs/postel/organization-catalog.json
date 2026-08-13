@@ -28,7 +28,8 @@
     ],
     "website": "https://www.postel.it/",
     "logo": "https://www.postel.it/Style%20Library/Postel/favicon.ico",
-    "description": "Postel is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy, providing digital trust services via postel.it."
+    "description": "Postel is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.770Z"
 }

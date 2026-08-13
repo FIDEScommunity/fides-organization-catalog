@@ -32,7 +32,8 @@
     ],
     "website": "https://www.zealid.com/en/contact",
     "logo": "https://www.zealid.com/hubfs/foxit%20and%20zealid%20partnership%20%281%29.jpg",
-    "description": "ZealiD is a Swedish digital identity and trust services provider listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+    "description": "ZealiD is a Qualified Trust Service Provider on the EU eIDAS Trust List for Sweden.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:41.092Z"
 }

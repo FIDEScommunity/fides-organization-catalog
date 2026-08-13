@@ -9,6 +9,8 @@
     "website": "https://www.certilia.com/",
     "country": "HR",
     "description": "Croatian public-sector digital identity ecosystem; Ministry of Finance and Financial Agency (FINA) provide Certilia Wallet, with AKD as a complementary identity provider. Participates in the EWC large-scale pilot.",
-    "logo": "https://www.google.com/s2/favicons?domain=certilia.com&sz=128"
-  }
+    "logo": "https://www.google.com/s2/favicons?domain=certilia.com&sz=128",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-08T19:54:46.000Z"
 }

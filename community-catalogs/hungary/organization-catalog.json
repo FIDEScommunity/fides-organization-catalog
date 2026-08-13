@@ -8,7 +8,9 @@
     ],
     "website": "https://www.kormany.hu/",
     "country": "HU",
-    "description": "Magyarország Kormánya - főoldal",
-    "logo": "https://www.google.com/s2/favicons?domain=kormany.hu&sz=128"
-  }
+    "description": "Government of Hungary; central portal for ministries and public administration.",
+    "logo": "https://www.google.com/s2/favicons?domain=kormany.hu&sz=128",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

@@ -9,6 +9,8 @@
     "website": "https://mdia.gov.mt/",
     "country": "MT",
     "description": "Malta Digital Innovation Authority (MDIA); leads Malta's National Digital Wallet programme ahead of the eIDAS 2.0 EUDI Wallet deadline and participates in DC4EU and WE BUILD pilots.",
-    "logo": "https://flagcdn.com/w80/mt.png"
-  }
+    "logo": "https://flagcdn.com/w80/mt.png",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-08T19:54:46.000Z"
 }

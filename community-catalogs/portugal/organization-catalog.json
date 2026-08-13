@@ -9,6 +9,12 @@
     "website": "https://eportugal.gov.pt",
     "country": "PT",
     "description": "Portuguese government e-government portal (ePortugal) aggregating digital public services for citizens and businesses.",
-    "logo": "https://www.google.com/s2/favicons?domain=eportugal.gov.pt&sz=128"
-  }
+    "logo": "https://www.google.com/s2/favicons?domain=eportugal.gov.pt&sz=128",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "business_wallet_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-28T14:56:28.000Z"
 }

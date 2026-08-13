@@ -9,6 +9,8 @@
     "website": "https://www.neoke.com/",
     "logo": "https://www.google.com/s2/favicons?domain=neoke.com&sz=128",
     "country": "NL",
-    "description": "Company building identity orchestration and wallet connectivity products for enterprises and regulated ecosystems."
-  }
+    "description": "Company building identity orchestration and wallet connectivity products for enterprises and regulated ecosystems.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

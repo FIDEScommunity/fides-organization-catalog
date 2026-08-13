@@ -16,7 +16,8 @@
       "Government Agency",
       "EUDI Wallet"
     ],
-    "fidesManifestoSupporter": false
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T08:46:59.641Z"
 }

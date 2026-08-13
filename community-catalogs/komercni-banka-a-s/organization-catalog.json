@@ -36,7 +36,8 @@
     ],
     "website": "https://www.kb.cz/pki",
     "logo": "https://www.kb.cz/getmedia/58051ea4-e132-4b71-ae6b-6c6a958853e8/og_image.png",
-    "description": "Komerční banka, a.s is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via kb.cz."
+    "description": "Komerční banka, a.s is a Qualified Trust Service Provider on the EU eIDAS Trust List for Czechia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:06.780Z"
 }

@@ -52,7 +52,8 @@
     ],
     "website": "https://www.pec.it/en/information.html",
     "logo": "https://www.google.com/s2/favicons?domain=www.pec.it&sz=128",
-    "description": "Aruba Posta Elettronica Certificata is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via pec.it."
+    "description": "Aruba Posta Elettronica Certificata is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.750Z"
 }

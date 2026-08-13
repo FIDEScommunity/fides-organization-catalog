@@ -36,7 +36,8 @@
     ],
     "website": "https://www.teamsystem.com/trust-services/documentazione/",
     "logo": "https://www.teamsystem.com/client/dist/assets/img/favicon/apple-touch-icon.png",
-    "description": "Consulta&#32;e&#32;scarica&#32;i&#32;documenti&#32;ufficiali&#32;SPID&#32;e&#32;QTSP&#32;di&#32;TeamSystem:&#32;manuali&#32;operativi,&#32;moduli&#32;di&#32;richiesta&#32;e&#32;revoca,&#32;informative&#32;privacy&#32;e&#32;dichiarazioni&#32;tecniche."
+    "description": "Consulta&#32;e&#32;scarica&#32;i&#32;documenti&#32;ufficiali&#32;SPID&#32;e&#32;QTSP&#32;di&#32;TeamSystem:&#32;manuali&#32;operativi,&#32;moduli&#32;di&#32;richiesta&#32;e&#32;revoca,&#32;informative&#32;privacy&#32;e&#32;dichiarazioni&#32;tecniche.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.769Z"
 }

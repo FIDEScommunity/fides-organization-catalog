@@ -14,7 +14,12 @@
     "tags": [
       "standards-body"
     ],
-    "fidesManifestoSupporter": false
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "vc_type_authority",
+      "standards_development_organization"
+    ],
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-04-22T10:00:00Z"
 }

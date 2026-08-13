@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:logalty-prueba-por-interposicion",
-    "name": "Logalty Prueba por Interposición,",
+    "name": "Logalty",
     "legalName": "LOGALTY  SERVICIOS DE TERCERO DE CONFIANZA, S.L",
     "sectors": [
       "digital"
@@ -44,7 +44,8 @@
     ],
     "website": "https://www.logalty.com/en/",
     "logo": "https://www.logalty.com/wp-content/uploads/2019/05/logalty-frame-bg.jpg",
-    "description": "We are pioneers in electronic contracting, notification and identification.We anticipate technological challenges with legal robustness so that you can be the first to innovate your processes."
+    "description": "We are pioneers in electronic contracting, notification and identification.We anticipate technological challenges with legal robustness so that you can be the first to innovate your processes.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-08-10T06:09:41.022Z"
 }

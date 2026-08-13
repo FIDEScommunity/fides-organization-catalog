@@ -28,7 +28,8 @@
     ],
     "website": "https://www.aangetekende.email",
     "logo": "https://www.aangetekende.email/assets/img/apple-touch-icon.png",
-    "description": "Het online platform voor een betrouwbare en beveiligde uitwisseling van elektronische correspondentie. Connect Solutions is een gekwalificeerde aanbieder van aangetekende e-mail diensten conform Verordening (EU) Nr. 910/14 betreffende elektronische identificatie en vertrouwensdiensten voor elektronische transacties in de interne markt (eIDAS Verordening)."
+    "description": "Het online platform voor een betrouwbare en beveiligde uitwisseling van elektronische correspondentie. Connect Solutions is een gekwalificeerde aanbieder van aangetekende e-mail diensten conform Verordening (EU) Nr. 910/14 betreffende elektronische identificatie en vertrouwensdiensten voor elektronische transacties in de interne markt (eIDAS Verordening).",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:01.908Z"
 }

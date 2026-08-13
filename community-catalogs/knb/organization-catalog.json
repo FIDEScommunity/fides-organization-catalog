@@ -10,6 +10,8 @@
     "description": "Professional body that safeguards and promotes the quality of the Dutch notarial profession, supporting legal certainty for consumers and businesses.",
     "website": "https://www.knb.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=knb.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

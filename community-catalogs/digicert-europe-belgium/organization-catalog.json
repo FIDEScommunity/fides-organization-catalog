@@ -32,7 +32,8 @@
     ],
     "website": "https://www.quovadisglobal.be/",
     "logo": "https://www.google.com/s2/favicons?domain=www.quovadisglobal.be&sz=128",
-    "description": "DigiCert Europe Belgium is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Belgium. It provides digital trust services via quovadisglobal.be."
+    "description": "DigiCert Europe Belgium is a Qualified Trust Service Provider on the EU eIDAS Trust List for Belgium.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:01.906Z"
 }

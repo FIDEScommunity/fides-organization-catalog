@@ -10,6 +10,11 @@
     "logo": "https://s3-eu-west-1.amazonaws.com/tpd/logos/5f1610bc0cba87000181beed/0x0.png",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "Kamer van Koophandel (KVK) is the Dutch Chamber of Commerce, responsible for maintaining the business register and providing information, guidance, and advice to entrepreneurs on a wide range of business topics."
-  }
+    "description": "Kamer van Koophandel (KVK) is the Dutch Chamber of Commerce, responsible for maintaining the business register and providing information, guidance, and advice to entrepreneurs on a wide range of business topics.",
+    "ecosystemRoleCodes": [
+      "issuer"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-02T12:47:02.000Z"
 }

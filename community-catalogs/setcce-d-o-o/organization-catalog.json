@@ -32,7 +32,8 @@
     ],
     "website": "https://www.setcce.com/",
     "logo": "https://www.setcce.com/storage/app/uploads/public/5ba/c65/b97/5bac65b97b9e0009744822.png",
-    "description": "SETCCE is a Slovenian digital trust services provider listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+    "description": "SETCCE D.O.O is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovenia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:42.587Z"
 }

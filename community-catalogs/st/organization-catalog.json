@@ -32,7 +32,8 @@
     ],
     "website": "https://bankid.no/en/company/contact-us-company",
     "logo": "https://bankid.no/apple-icon.png?apple-icon.09oguh9ob~cr1.png",
-    "description": "Stø is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via bankid.no."
+    "description": "Stø is a Qualified Trust Service Provider on the EU eIDAS Trust List for Norway.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:35.228Z"
 }

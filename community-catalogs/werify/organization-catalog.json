@@ -10,6 +10,8 @@
     "logo": "https://www.google.com/s2/favicons?domain=werify.eu&sz=128",
     "country": "EU",
     "fidesManifestoSupporter": true,
-    "description": "Werify provides digital services and solutions in the trust and credentials ecosystem via werify.eu."
-  }
+    "description": "Werify provides digital services and solutions in the trust and credentials ecosystem via werify.eu.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T05:14:31.000Z"
 }

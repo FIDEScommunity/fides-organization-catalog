@@ -60,7 +60,8 @@
     ],
     "website": "http://www.evrotrust.com",
     "logo": "https://evrotrust.com/wp-content/uploads/2024/09/site-icon.jpg",
-    "description": "Empower your business with Evrotrust and our eIDAS-compliant qualified trust services. Identity verification, eSign, EU-wide coverage & more!"
+    "description": "Empower your business with Evrotrust and our eIDAS-compliant qualified trust services. Identity verification, eSign, EU-wide coverage & more!",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:03.541Z"
 }

@@ -48,7 +48,8 @@
     ],
     "website": "https://portal.actalis.it/Info/qcsp-english",
     "logo": "https://www.actalis.com/img/logo-1725460433.svg",
-    "description": "Actalis is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via portal.actalis.it."
+    "description": "Actalis is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.749Z"
 }

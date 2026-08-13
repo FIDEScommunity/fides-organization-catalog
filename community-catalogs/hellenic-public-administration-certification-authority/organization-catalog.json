@@ -32,7 +32,8 @@
     ],
     "website": "https://aped.gov.gr/",
     "logo": "https://www.google.com/s2/favicons?domain=aped.gov.gr&sz=128",
-    "description": "HELLENIC PUBLIC ADMINISTRATION CERTIFICATION AUTHORITY is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Greece. It provides digital trust services via aped.gov.gr."
+    "description": "HELLENIC PUBLIC ADMINISTRATION CERTIFICATION AUTHORITY is a Qualified Trust Service Provider on the EU eIDAS Trust List for Greece.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:13.154Z"
 }

@@ -32,7 +32,8 @@
     ],
     "website": "http://www.acabogacia.org",
     "logo": "https://www.google.com/s2/favicons?domain=www.acabogacia.org&sz=128",
-    "description": "Consejo General de la Abogacía Española is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via acabogacia.org."
+    "description": "Consejo General de la Abogacía Española is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.041Z"
 }

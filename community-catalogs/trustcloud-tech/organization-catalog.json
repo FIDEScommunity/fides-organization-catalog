@@ -32,7 +32,8 @@
     ],
     "website": "https://trustcloud.tech/es",
     "logo": "https://www.google.com/s2/favicons?domain=trustcloud.tech&sz=128",
-    "description": "TRUSTCLOUD TECH is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via trustcloud.tech."
+    "description": "TRUSTCLOUD TECH is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.076Z"
 }

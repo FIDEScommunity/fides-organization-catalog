@@ -36,7 +36,8 @@
     ],
     "website": "https://www.be-ys.com/en/",
     "logo": "https://www.be-ys.com/favicon.png",
-    "description": "BE INVEST International is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Luxembourg, providing digital trust services via be-ys.com."
+    "description": "BE INVEST International is a Qualified Trust Service Provider on the EU eIDAS Trust List for Luxembourg.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:29.656Z"
 }

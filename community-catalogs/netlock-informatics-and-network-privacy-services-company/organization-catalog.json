@@ -40,7 +40,8 @@
     ],
     "website": "https://netlock.hu",
     "logo": "https://netlock.hu/app/uploads/2024/12/android-chrome-512x512-1-300x300.png",
-    "description": "NETLOCK - Megoldások a digitális mindennapokhoz - Digitalizálja üzleti papírügyeit, joghitelesen! - Segítünk a digitális evolúcióban!"
+    "description": "NETLOCK - Megoldások a digitális mindennapokhoz - Digitalizálja üzleti papírügyeit, joghitelesen! - Segítünk a digitális evolúcióban!",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:21.375Z"
 }

@@ -19,7 +19,8 @@
       "software_vendor"
     ],
     "fidesManifestoSupporter": true,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "website": "https://sapio.id/"
   },
   "lastUpdated": "2026-08-07T07:54:33+00:00"
 }

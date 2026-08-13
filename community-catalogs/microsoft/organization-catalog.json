@@ -9,6 +9,12 @@
     "website": "https://www.microsoft.com",
     "logo": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
     "country": "US",
-    "description": "Microsoft is a global technology company shaping digital identity through its enterprise and cloud ecosystem. With solutions such as Microsoft Entra Verified ID and Microsoft Authenticator, Microsoft supports the issuance, holding, and verification of digital credentials, alongside secure authentication. Its strong focus on interoperability, standards, and enterprise adoption contributes to the development of global digital identity and verifiable data ecosystems."
-  }
+    "description": "Microsoft is a global technology company shaping digital identity through its enterprise and cloud ecosystem. With solutions such as Microsoft Entra Verified ID and Microsoft Authenticator, Microsoft supports the issuance, holding, and verification of digital credentials, alongside secure authentication. Its strong focus on interoperability, standards, and enterprise adoption contributes to the development of global digital identity and verifiable data ecosystems.",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-02T15:01:19.000Z"
 }

@@ -10,6 +10,8 @@
     "description": "Shared ICT service organisation of the Dutch central government, delivering digital systems and services for ministries and executive agencies.",
     "website": "https://www.dictu.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=dictu.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-12T20:55:53.000Z"
 }

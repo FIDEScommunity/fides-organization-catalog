@@ -36,7 +36,8 @@
     ],
     "website": "http://www.esfirma.com",
     "logo": "https://www.esfirma.com/img/esfirma.ico",
-    "description": "ESPUBLICO SERVICIOS PARA LA ADMINISTRACIÓN is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via esfirma.com."
+    "description": "ESPUBLICO SERVICIOS PARA LA ADMINISTRACIÓN is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.049Z"
 }

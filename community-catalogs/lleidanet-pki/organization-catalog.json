@@ -44,7 +44,8 @@
     ],
     "website": "https://www.indenova.com",
     "logo": "https://www.indenova.com/wp-content/uploads/2020/07/icon11.png",
-    "description": "Lleidanet PKI is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via indenova.com."
+    "description": "Lleidanet PKI is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.067Z"
 }

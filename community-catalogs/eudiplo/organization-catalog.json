@@ -6,8 +6,13 @@
     "sectors": [
       "digital"
     ],
-    "website": "https://openwallet-foundation.github.io/eudiplo/",
+    "website": "https://eudiplo.dev/",
     "country": "EU",
-    "description": "OpenWallet Foundation lab initiative building reference tooling for an EU Digital Identity Wallet oriented to diplomatic and institutional use cases."
-  }
+    "description": "Open-source EUDI Wallet issuer and verifier middleware under the OpenWallet Foundation.",
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-19T07:04:01.000Z"
 }

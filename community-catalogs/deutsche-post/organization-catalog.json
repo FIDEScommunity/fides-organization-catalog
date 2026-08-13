@@ -28,7 +28,8 @@
     ],
     "website": "https://www.deutschepost.de/de/p/postident/e-signing.html",
     "logo": "https://www.deutschepost.de/.resources/dpag/webresources/assets/img/logo/og-image-backup.png",
-    "description": "Deutsche Post is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany, providing digital trust services via deutschepost.de."
+    "description": "Deutsche Post is a Qualified Trust Service Provider on the EU eIDAS Trust List for Germany.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:09.068Z"
 }

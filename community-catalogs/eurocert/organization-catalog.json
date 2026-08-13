@@ -40,7 +40,8 @@
     ],
     "website": "http://www.eurocert.pl",
     "logo": "https://eurocert.pl/wp-content/uploads/2021/02/favicon.jpg",
-    "description": "EuroCert is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via eurocert.pl."
+    "description": "EuroCert is a Qualified Trust Service Provider on the EU eIDAS Trust List for Poland.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:36.824Z"
 }

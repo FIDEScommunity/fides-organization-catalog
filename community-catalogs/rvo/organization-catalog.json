@@ -10,6 +10,8 @@
     "description": "Netherlands Enterprise Agency supporting entrepreneurs, researchers and organisations with funding, networking and regulatory information on behalf of the Dutch government.",
     "website": "https://www.rvo.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=rvo.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-12T20:55:53.000Z"
 }

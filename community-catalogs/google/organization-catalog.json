@@ -9,6 +9,13 @@
     "website": "https://www.google.com",
     "logo": "https://www.google.com/s2/favicons?domain=google.com&sz=128",
     "country": "US",
-    "description": "Global technology company offering cloud, Android, and developer platforms; participates in industry and standards work on identity and credentials."
-  }
+    "description": "Global technology company offering cloud, Android, and developer platforms; participates in industry and standards work on identity and credentials.",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "relying_party",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

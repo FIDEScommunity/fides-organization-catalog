@@ -32,7 +32,8 @@
     ],
     "website": "https://www.gendarmerie.interieur.gouv.fr/",
     "logo": "https://www.gendarmerie.interieur.gouv.fr/assets/favicon/android-chrome-512x512.png",
-    "description": "Official portal of the French National Gendarmerie, providing institutional information, guidance, news, and recruitment updates."
+    "description": "Official portal of the French National Gendarmerie, providing institutional information, guidance, news, and recruitment updates.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.175Z"
 }

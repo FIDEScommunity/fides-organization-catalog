@@ -36,7 +36,8 @@
     ],
     "website": "https://indize.es/",
     "logo": "https://www.google.com/s2/favicons?domain=indize.es&sz=128",
-    "description": "INSTITUTO PARA LA DINAMIZACION ECONOMICA, U is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via indize.es."
+    "description": "INSTITUTO PARA LA DINAMIZACION ECONOMICA, U is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.074Z"
 }

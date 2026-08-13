@@ -9,6 +9,8 @@
     "website": "https://io.italia.it/",
     "country": "IT",
     "description": "The Italian Government's IO platform enables citizens to receive official notifications, manage public documents, access benefits, and complete digital payments and signatures.",
-    "logo": "https://www.google.com/s2/favicons?domain=io.italia.it&sz=128"
-  }
+    "logo": "https://www.google.com/s2/favicons?domain=io.italia.it&sz=128",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T05:14:31.000Z"
 }

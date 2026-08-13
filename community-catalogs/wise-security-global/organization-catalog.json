@@ -28,7 +28,8 @@
     ],
     "website": "http://wsg127.com",
     "logo": "https://cdn.vargroup.com/favicon.png",
-    "description": "At Wise Security we respond to all dimensions of cybersecurity with advanced solutions and consulting services. We work within the NIST framework."
+    "description": "At Wise Security we respond to all dimensions of cybersecurity with advanced solutions and consulting services. We work within the NIST framework.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.070Z"
 }

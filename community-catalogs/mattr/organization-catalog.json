@@ -9,6 +9,12 @@
     "website": "https://mattr.global",
     "logo": "https://www.google.com/s2/favicons?domain=mattr.global&sz=128",
     "country": "NZ",
-    "description": "Discover MATTR's solutions for decentralised identity & verifiable data designed to scale with your business. Enhance privacy & security with confidence."
-  }
+    "description": "Discover MATTR's solutions for decentralised identity & verifiable data designed to scale with your business. Enhance privacy & security with confidence.",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "business_wallet_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

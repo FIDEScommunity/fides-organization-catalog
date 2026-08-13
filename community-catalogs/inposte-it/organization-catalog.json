@@ -28,7 +28,8 @@
     ],
     "website": "https://www.tnotice.com",
     "logo": "https://www.tnotice.com/wp-content/uploads/2024/02/tNotice-eIDAS-qualified.jpg",
-    "description": "inPoste.it is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy, providing digital trust services via tnotice.com."
+    "description": "inPoste.it is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.769Z"
 }

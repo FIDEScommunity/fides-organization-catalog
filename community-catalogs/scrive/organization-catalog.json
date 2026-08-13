@@ -28,7 +28,8 @@
     ],
     "website": "https://www.scrive.com",
     "logo": "https://wwwscrive.cdn.triggerfish.cloud/uploads/2023/12/19090036/Feat-Image-Generic.png",
-    "description": "SCRIVE is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Norway, providing digital trust services via scrive.com."
+    "description": "SCRIVE is a Qualified Trust Service Provider on the EU eIDAS Trust List for Norway.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:35.227Z"
 }

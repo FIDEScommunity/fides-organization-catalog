@@ -40,7 +40,8 @@
     ],
     "website": "https://prime-sign.com/",
     "logo": "https://primesign.cryptas.com/hubfs/Favicon_Cryptas.svg",
-    "description": "Enterprise Elektronische Signatur Software mit eIDAS-konformen Signaturen, Cloud-Signing und PDF-Signatur."
+    "description": "Enterprise Elektronische Signatur Software mit eIDAS-konformen Signaturen, Cloud-Signing und PDF-Signatur.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:00.423Z"
 }

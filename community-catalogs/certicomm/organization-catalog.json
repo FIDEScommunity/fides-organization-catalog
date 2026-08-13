@@ -26,8 +26,8 @@
         }
       }
     ],
-    "website": "http://www.agid.gov.it/qcsp-ceased",
-    "description": "Certicomm is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via agid.gov.it."
+    "description": "Certicomm previously provided qualified trust services in Italy. The entry remains on the EU eIDAS Trust List as withdrawn/ceased; see the linked Trust List page for status.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.759Z"
 }

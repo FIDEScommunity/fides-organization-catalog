@@ -40,7 +40,8 @@
     ],
     "website": "https://www.d-trust.net",
     "logo": "https://www.d-trust.net/themes/custom/bdr_bootstrap5_dtrust/assets/img/touch-icons/dtrust/dtrust_desktopicon_120px.png",
-    "description": "D-Trust is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany, providing digital trust services via d-trust.net."
+    "description": "D-Trust is a Qualified Trust Service Provider on the EU eIDAS Trust List for Germany.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:09.064Z"
 }

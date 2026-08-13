@@ -60,7 +60,8 @@
     ],
     "website": "https://www.firma.infocert.it/documentation",
     "logo": "https://www.infocert.it/content/uploads/2025/04/favicon-tinexta-infocert-300x300.png",
-    "description": "Explore the comprehensive technical documentation at InfoCert. Find all the details needed to integrate and manage our trusted digital solutions."
+    "description": "Explore the comprehensive technical documentation at InfoCert. Find all the details needed to integrate and manage our trusted digital solutions.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.749Z"
 }

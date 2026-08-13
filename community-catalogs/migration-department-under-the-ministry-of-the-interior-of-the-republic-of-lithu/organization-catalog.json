@@ -27,7 +27,8 @@
       }
     ],
     "website": "https://www.nsc.vrm.lt/default_en.htm",
-    "description": "Migration Department under the Ministry of the Interior of the Republic of Lithuania is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania, providing digital trust services via nsc.vrm.lt."
+    "description": "Migration Department under the Ministry of the Interior of the Republic of Lithuania is a Qualified Trust Service Provider on the EU eIDAS Trust List for Lithuania.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:28.386Z"
 }

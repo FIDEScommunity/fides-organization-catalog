@@ -9,6 +9,8 @@
     "description": "Global digital payments network connecting consumers, businesses, financial institutions and governments.",
     "website": "https://www.visa.com/",
     "logo": "https://www.google.com/s2/favicons?domain=visa.com&sz=128",
-    "country": "US"
-  }
+    "country": "US",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

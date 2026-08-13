@@ -11,6 +11,8 @@
     ],
     "website": "https://www.headon.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=headon.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-03-31T16:52:18.000Z"
 }

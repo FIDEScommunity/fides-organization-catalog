@@ -40,7 +40,8 @@
     ],
     "website": "https://yousign.com",
     "logo": "https://yousign.com/og-image-facebook-en.png",
-    "description": "Yousign, soon Youtrust, is a complete digital trust platform combining eSignature, identity verification and KYC services."
+    "description": "Yousign, soon Youtrust, is a complete digital trust platform combining eSignature, identity verification and KYC services.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-13T08:15:46.246Z"
 }

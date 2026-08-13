@@ -10,6 +10,8 @@
     "website": "https://www.goindigo.in",
     "logo": "https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png",
     "country": "IN",
-    "description": "IndiGo is the largest airline in India, operating domestic and international passenger services across Asia and beyond. In digital travel scenarios, airlines like IndiGo act as both issuers of travel credentials such as boarding passes and booking orders, and as relying parties that verify passenger identity and travel credentials during check-in, security, and boarding processes."
-  }
+    "description": "IndiGo is the largest airline in India, operating domestic and international passenger services across Asia and beyond. In digital travel scenarios, airlines like IndiGo act as both issuers of travel credentials such as boarding passes and booking orders, and as relying parties that verify passenger identity and travel credentials during check-in, security, and boarding processes.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-22T11:10:08.000Z"
 }

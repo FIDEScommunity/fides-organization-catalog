@@ -9,6 +9,8 @@
     "website": "https://www.datakeeper.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=datakeeper.nl&sz=128",
     "country": "NL",
-    "description": "Datakeeper is a digital wallet that enables users to securely share verified data with organizations. It allows for secure login, data exchange, transaction approval, and document signing in a fast and user-controlled way."
-  }
+    "description": "Datakeeper is a digital wallet that enables users to securely share verified data with organizations. It allows for secure login, data exchange, transaction approval, and document signing in a fast and user-controlled way.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-02T13:06:38.000Z"
 }

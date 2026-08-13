@@ -11,6 +11,8 @@
     "logo": "https://www.google.com/s2/favicons?domain=digitaltrustsolutions.nl&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "Dutch consultancy helping organizations design and implement digital trust, identity, and wallet solutions."
-  }
+    "description": "Dutch consultancy helping organizations design and implement digital trust, identity, and wallet solutions.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

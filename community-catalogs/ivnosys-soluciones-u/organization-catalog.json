@@ -40,7 +40,8 @@
     ],
     "website": "https://ivnosys.com",
     "logo": "https://ivnosys.com/wp-content/uploads/rosco_web.jpg",
-    "description": "IVNOSYS SOLUCIONES U is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via ivnosys.com."
+    "description": "IVNOSYS SOLUCIONES U is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.049Z"
 }

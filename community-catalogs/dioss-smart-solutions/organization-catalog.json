@@ -28,7 +28,8 @@
     ],
     "website": "https://smartsolutions.dioss.com/en/",
     "logo": "https://smartsolutions.dioss.com/media/images/Dioss_Smart_Solutions_-_BlackTransparent.original.png",
-    "description": "Discover our solutions for your company! Software integration, digital signing, identity solutions, smart cards and integration solutions - DIOSS Smart Solutions"
+    "description": "Discover our solutions for your company! Software integration, digital signing, identity solutions, smart cards and integration solutions - DIOSS Smart Solutions",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:01.912Z"
 }

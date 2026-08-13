@@ -36,7 +36,8 @@
     ],
     "website": "http://postarca.posta.si/postarca-general-information/",
     "logo": "https://www.rekono.si/wp-content/uploads/2025/02/slider-rekono-id.png",
-    "description": "Posta Slovenije is Slovenia's national postal operator and is listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+    "description": "POŠTA SLOVENIJE d.o.o is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovenia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:42.585Z"
 }

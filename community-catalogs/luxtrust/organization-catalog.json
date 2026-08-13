@@ -56,7 +56,8 @@
     ],
     "website": "https://www.luxtrust.lu/en",
     "logo": "https://www.luxtrust.com/themes/custom/luxtrust/logo.svg",
-    "description": "LuxTrust is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Luxembourg, providing digital trust services via luxtrust.lu."
+    "description": "LuxTrust is a Qualified Trust Service Provider on the EU eIDAS Trust List for Luxembourg.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:29.655Z"
 }

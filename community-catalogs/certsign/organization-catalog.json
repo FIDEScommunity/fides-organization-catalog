@@ -56,7 +56,8 @@
     ],
     "website": "http://www.certsign.ro/",
     "logo": "https://www.certsign.ro/wp-content/uploads/2021/01/favicion_certsign.svg",
-    "description": "CERTSIGN is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via certsign.ro."
+    "description": "CERTSIGN is a Qualified Trust Service Provider on the EU eIDAS Trust List for Romania.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:39.876Z"
 }

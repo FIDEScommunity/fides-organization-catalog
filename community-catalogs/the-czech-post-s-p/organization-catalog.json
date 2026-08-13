@@ -38,9 +38,10 @@
         }
       }
     ],
-    "website": "http://www.postsignum.cz/index.php?lang=en",
+    "website": "https://www.postsignum.cz/",
     "logo": "https://www.postsignum.cz/images/favicon.ico",
-    "description": "www.cpost.cz - web �esk� po�ty"
+    "description": "Česká pošta (Czech Post) provides postal services and PostSignum qualified trust services.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:06.773Z"
 }

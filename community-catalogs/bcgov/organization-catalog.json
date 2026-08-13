@@ -9,6 +9,12 @@
     "website": "https://www2.gov.bc.ca/",
     "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256",
     "country": "CA",
-    "description": "The official website of the Government of British Columbia."
-  }
+    "description": "Government of British Columbia; public services and digital credentials, including the BC Wallet.",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

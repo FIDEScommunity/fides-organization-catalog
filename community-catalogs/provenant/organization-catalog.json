@@ -19,6 +19,8 @@
       "gsma_foundry",
       "open_verifiable_calling"
     ],
-    "description": "Provenant is a digital trust infrastructure provider focused on verifiable communications and secure telecommunications. The company develops open, standards-based solutions that embed cryptographic proof into calls and messages, enabling organizations to prove identity, authorization, and intent in real time. Provenant is a Qualified vLEI Issuer (QVI) within the GLEIF ecosystem and plays a leading role in initiatives such as the GSMA Open Verifiable Calling project, aiming to establish global, interoperable standards for trusted digital communications."
-  }
+    "description": "Provenant is a digital trust infrastructure provider focused on verifiable communications and secure telecommunications. The company develops open, standards-based solutions that embed cryptographic proof into calls and messages, enabling organizations to prove identity, authorization, and intent in real time. Provenant is a Qualified vLEI Issuer (QVI) within the GLEIF ecosystem and plays a leading role in initiatives such as the GSMA Open Verifiable Calling project, aiming to establish global, interoperable standards for trusted digital communications.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-23T05:03:19.000Z"
 }

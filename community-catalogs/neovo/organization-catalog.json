@@ -12,7 +12,8 @@
     "description": "Neovo is a Switzerland-based software and IT services company specializing in custom web development, web applications, and system integration. Founded in 2025, the company focuses on building sustainable, high-quality digital solutions that integrate seamlessly with existing business processes. Its expertise includes SAP Fiori/UI5, modern web technologies, and end-to-end delivery from consulting and architecture to implementation and maintenance.",
     "contact": {
       "email": "info@neovo.ch"
-    }
+    },
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T08:46:59.720Z"
 }

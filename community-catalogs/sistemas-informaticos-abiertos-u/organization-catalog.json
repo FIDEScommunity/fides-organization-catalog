@@ -40,7 +40,8 @@
     ],
     "website": "https://psc.sia.es",
     "logo": "https://psc.sia.es/assets/img/favicon.ico",
-    "description": "SISTEMAS INFORMATICOS ABIERTOS U is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via psc.sia.es."
+    "description": "SISTEMAS INFORMATICOS ABIERTOS U is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.047Z"
 }

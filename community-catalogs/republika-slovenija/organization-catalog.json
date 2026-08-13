@@ -44,7 +44,8 @@
     ],
     "website": "https://www.si-trust.gov.si/en/",
     "logo": "https://www.si-trust.gov.si/_resources/themes/privzeto/images/favicon/apple-touch-icon.png?m=1717171306",
-    "description": "The Government of the Republic of Slovenia is listed as a Qualified Trust Service Provider (QTSP) in the EU eIDAS Trust List."
+    "description": "Republika Slovenija is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovenia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:42.583Z"
 }

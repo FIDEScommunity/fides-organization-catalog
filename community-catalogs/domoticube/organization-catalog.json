@@ -10,6 +10,8 @@
     "logo": "https://www.google.com/s2/favicons?domain=domoticube.nl&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "Domoticube biedt slimme prefab woningen met lage Total Cost of Ownership. Duurzaam, energiezuinig en klaar voor de toekomst!"
-  }
+    "description": "Domoticube biedt slimme prefab woningen met lage Total Cost of Ownership. Duurzaam, energiezuinig en klaar voor de toekomst!",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

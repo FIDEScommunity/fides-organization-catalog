@@ -28,7 +28,8 @@
     ],
     "website": "http://www.baltstamp.lt",
     "logo": "https://baltstamp.lt/wp-content/uploads/favicon.png",
-    "description": "UAB BalTstamp is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Lithuania. It provides digital trust services via baltstamp.lt."
+    "description": "UAB BalTstamp is a Qualified Trust Service Provider on the EU eIDAS Trust List for Lithuania.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:28.376Z"
 }

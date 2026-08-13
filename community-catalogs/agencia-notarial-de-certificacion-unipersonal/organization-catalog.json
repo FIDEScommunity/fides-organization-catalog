@@ -36,7 +36,8 @@
     ],
     "website": "https://www.ctnotariado.com",
     "logo": "https://www.google.com/s2/favicons?domain=www.ctnotariado.com&sz=128",
-    "description": "Agencia Notarial de Certificación . Unipersonal is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via ctnotariado.com."
+    "description": "Agencia Notarial de Certificación . Unipersonal is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.039Z"
 }

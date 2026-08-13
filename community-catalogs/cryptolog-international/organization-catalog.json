@@ -51,7 +51,8 @@
       }
     ],
     "website": "https://help.universign.com",
-    "description": "Cryptolog International is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via help.universign.com."
+    "description": "Cryptolog International is a Qualified Trust Service Provider on the EU eIDAS Trust List for France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.165Z"
 }

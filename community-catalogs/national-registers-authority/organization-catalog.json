@@ -44,7 +44,8 @@
     ],
     "website": "https://www.narodni-ca.cz/",
     "logo": "https://www.narodni-ca.cz/favicon.ico",
-    "description": "National Registers Authority is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via narodni-ca.cz."
+    "description": "National Registers Authority is a Qualified Trust Service Provider on the EU eIDAS Trust List for Czechia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:06.776Z"
 }

@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:customer-communications-tecknalia",
-    "name": "CUSTOMER COMMUNICATIONS TECKNALIA,",
+    "name": "CUSTOMER COMMUNICATIONS TECKNALIA",
     "legalName": "CUSTOMER COMMUNICATIONS TECKNALIA, S.L.",
     "sectors": [
       "digital"
@@ -36,7 +36,8 @@
     ],
     "website": "https://www.customercomms.com",
     "logo": "https://www.customercomms.com/img/customercomms.jpg",
-    "description": "Comunicaciones y transacciones multicanal con plena validez legal probatoria"
+    "description": "Comunicaciones y transacciones multicanal con plena validez legal probatoria",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.067Z"
 }

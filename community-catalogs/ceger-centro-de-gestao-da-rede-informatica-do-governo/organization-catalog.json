@@ -36,7 +36,8 @@
     ],
     "website": "https://www.ecce.gov.pt",
     "logo": "https://www.ecce.gov.pt/media/1257/ecce-favicon.ico",
-    "description": "CEGER - Centro de Gestão da Rede Informática do Governo is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Portugal, providing digital trust services via ecce.gov.pt."
+    "description": "CEGER - Centro de Gestão da Rede Informática do Governo is a Qualified Trust Service Provider on the EU eIDAS Trust List for Portugal.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:38.339Z"
 }

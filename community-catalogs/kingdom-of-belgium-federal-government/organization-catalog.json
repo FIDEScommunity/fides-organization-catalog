@@ -42,8 +42,9 @@
         }
       }
     ],
-    "website": "https://eidpki.belgium.be",
-    "description": "Web site created using create-react-app"
+    "website": "https://eid.belgium.be/",
+    "description": "Belgian federal government, including the national eID scheme and related public-key infrastructure.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:01.911Z"
 }

@@ -10,6 +10,8 @@
     "logo": "https://www.google.com/s2/favicons?domain=xablu.com&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "We Train and Coach Software Development teams with In-depth .NET Core .NET MAUI Blazor knowledge and IoTembedded, CICD and UXUI support."
-  }
+    "description": "We Train and Coach Software Development teams with In-depth .NET Core .NET MAUI Blazor knowledge and IoTembedded, CICD and UXUI support.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

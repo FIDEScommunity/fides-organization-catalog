@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:viafirma",
-    "name": "VIAFIRMA,",
+    "name": "VIAFIRMA",
     "legalName": "VIAFIRMA, S.L.",
     "sectors": [
       "digital"
@@ -28,7 +28,8 @@
     ],
     "website": "https://qtsp.viafirma.com",
     "logo": "https://www.viafirma.com/wp-content/uploads/2023/07/favicon-1.png",
-    "description": "VIAFIRMA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via qtsp.viafirma.com."
+    "description": "VIAFIRMA is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.061Z"
 }

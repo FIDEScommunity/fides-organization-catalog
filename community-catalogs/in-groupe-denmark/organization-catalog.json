@@ -32,7 +32,8 @@
     ],
     "website": "https://www.ingroupe.com/",
     "logo": "https://ingroupe.com/app/uploads/2022/08/digital-odyssey-4-5-hrz.jpg",
-    "description": "A global identity and secure digital services leader, IN Groupe guarantees that nations, citizens, and businesses can embrace digital transformation with confidence."
+    "description": "A global identity and secure digital services leader, IN Groupe guarantees that nations, citizens, and businesses can embrace digital transformation with confidence.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:10.235Z"
 }

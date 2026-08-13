@@ -9,6 +9,8 @@
     "description": "Association delivering shared standards and an actively governed ecosystem to create business value across the automotive supply chain.",
     "website": "https://catena-x.net/",
     "logo": "https://www.google.com/s2/favicons?domain=catena-x.net&sz=128",
-    "country": "DE"
-  }
+    "country": "DE",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

@@ -44,7 +44,8 @@
     ],
     "website": "https://www.sts.ro",
     "logo": "https://www.google.com/s2/favicons?domain=sts.ro&sz=128",
-    "description": "Special Telecommunications Service is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via sts.ro."
+    "description": "Special Telecommunications Service is a Qualified Trust Service Provider on the EU eIDAS Trust List for Romania.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:39.879Z"
 }

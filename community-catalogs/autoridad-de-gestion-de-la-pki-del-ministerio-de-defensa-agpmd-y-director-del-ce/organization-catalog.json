@@ -36,7 +36,8 @@
     ],
     "website": "http://www.defensa.gob.es",
     "logo": "https://www.defensa.gob.es/resources/imgs/favicon_mde.ico",
-    "description": "ministerio defensa paz misiones ejercito"
+    "description": "ministerio defensa paz misiones ejercito",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.044Z"
 }

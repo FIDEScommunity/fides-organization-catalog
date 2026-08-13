@@ -9,6 +9,8 @@
     "website": "https://france-identite.gouv.fr/",
     "country": "FR",
     "description": "France Identite is the French government digital identity initiative, linking the national ID card and smartphone for secure online and in-person use.",
-    "logo": "https://france-identite.gouv.fr/assets/img/FIN-profile-picture.jpg"
-  }
+    "logo": "https://france-identite.gouv.fr/assets/img/FIN-profile-picture.jpg",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T05:14:31.000Z"
 }

@@ -16,7 +16,12 @@
       "air transport",
       "industry association",
       "standards"
-    ]
+    ],
+    "ecosystemRoleCodes": [
+      "issuer",
+      "vc_type_authority"
+    ],
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T08:46:59.696Z"
 }

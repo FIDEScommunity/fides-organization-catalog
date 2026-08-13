@@ -9,6 +9,8 @@
     "website": "https://www.edoklady.cz/",
     "country": "CZ",
     "description": "Představujeme eDoklady - Občanka a jednoduché ověření totožnosti v mobilní aplikaci. Začínáme 20. ledna 2024.",
-    "logo": "https://edoklady.gov.cz/images/og_image.webp"
-  }
+    "logo": "https://edoklady.gov.cz/images/og_image.webp",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

@@ -32,7 +32,8 @@
     ],
     "website": "http://pki.cartaodecidadao.pt",
     "logo": "https://pki.cartaodecidadao.pt/images/favicon.ico",
-    "description": "Instituto dos Registos e do Notariado I.P is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Portugal, providing digital trust services via pki.cartaodecidadao.pt."
+    "description": "Instituto dos Registos e do Notariado I.P is a Qualified Trust Service Provider on the EU eIDAS Trust List for Portugal.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:38.340Z"
 }

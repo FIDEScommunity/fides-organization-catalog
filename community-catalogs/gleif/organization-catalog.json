@@ -18,7 +18,12 @@
       "organizational identity",
       "verifiable credentials",
       "financial infrastructure"
-    ]
+    ],
+    "ecosystemRoleCodes": [
+      "issuer",
+      "vc_type_authority"
+    ],
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T08:46:59.691Z"
 }

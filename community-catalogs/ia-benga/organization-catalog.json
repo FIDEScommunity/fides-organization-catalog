@@ -10,6 +10,8 @@
     "website": "https://www.bengaluruairport.com",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ia-benga/bengalore_airport.jpeg",
     "country": "IN",
-    "description": "Bengaluru International Airport, operated by Bangalore International Airport Limited (BIAL), is a major aviation hub in India serving domestic and international passengers. In digital travel scenarios, airports like Bengaluru International Airport act as relying parties that verify passenger credentials such as boarding passes and digital identity documents at security checkpoints, bag drop, and boarding gates."
-  }
+    "description": "Bengaluru International Airport, operated by Bangalore International Airport Limited (BIAL), is a major aviation hub in India serving domestic and international passengers. In digital travel scenarios, airports like Bengaluru International Airport act as relying parties that verify passenger credentials such as boarding passes and digital identity documents at security checkpoints, bag drop, and boarding gates.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-22T11:36:11.000Z"
 }

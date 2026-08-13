@@ -9,6 +9,8 @@
     "description": "EU-compliant Digital Product Passports that put brand and product data at the centre for customers and supply chains.",
     "website": "https://transpareo.com",
     "logo": "https://www.google.com/s2/favicons?domain=transpareo.com&sz=128",
-    "country": "CH"
-  }
+    "country": "CH",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

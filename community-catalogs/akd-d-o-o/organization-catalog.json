@@ -34,9 +34,10 @@
         }
       }
     ],
-    "website": "http://eid.hr/en",
+    "website": "https://eid.hr/en",
     "logo": "https://www.google.com/s2/favicons?domain=eid.hr&sz=128",
-    "description": "[Sitename] Skip to content eOI menu close Homepage Electronic ID Toggle Activation of eID What do you need? PIN and PUK Types and Validity"
+    "description": "AKD is Croatia’s state-owned secure-document and digital-identity provider, including eID and qualified trust services.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:19.550Z"
 }

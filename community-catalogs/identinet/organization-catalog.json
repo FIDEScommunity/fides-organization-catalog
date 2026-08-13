@@ -10,6 +10,8 @@
     "logo": "https://www.google.com/s2/favicons?domain=identinet.io&sz=128",
     "country": "EU",
     "fidesManifestoSupporter": true,
-    "description": "🚀 secure data sharing for your enterprise."
-  }
+    "description": "Identinet provides secure data-sharing infrastructure for enterprises.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

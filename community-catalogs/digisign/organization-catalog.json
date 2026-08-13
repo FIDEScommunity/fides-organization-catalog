@@ -36,7 +36,8 @@
     ],
     "website": "https://www.digisign.ro/home/?lng=2",
     "logo": "https://www.google.com/s2/favicons?domain=digisign.ro&sz=128",
-    "description": "DigiSign is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via digisign.ro."
+    "description": "DigiSign is a Qualified Trust Service Provider on the EU eIDAS Trust List for Romania.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:39.875Z"
 }

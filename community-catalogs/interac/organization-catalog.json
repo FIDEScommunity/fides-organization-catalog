@@ -20,7 +20,8 @@
       "Payments",
       "Interac Verified",
       "Interac e-Transfer"
-    ]
+    ],
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T08:46:59.705Z"
 }

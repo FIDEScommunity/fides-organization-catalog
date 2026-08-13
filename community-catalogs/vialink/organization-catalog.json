@@ -20,7 +20,8 @@
     ],
     "website": "https://www.vialink.fr",
     "logo": "https://www.signaturit.com/wp-content/uploads/2023/12/favicon-signaturit-group.svg",
-    "description": "Signaturit Group, a Namirial Company, solutions de confiance numérique, signature électronique et identité digitale conformes eIDAS (Ivnosys, Vialink, Universign, Validated ID) pour sécuriser vos transactions."
+    "description": "Signaturit Group, a Namirial Company, solutions de confiance numérique, signature électronique et identité digitale conformes eIDAS (Ivnosys, Vialink, Universign, Validated ID) pour sécuriser vos transactions.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-04-25T06:26:17.352Z"
 }

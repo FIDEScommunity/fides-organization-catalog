@@ -10,6 +10,8 @@
     "website": "https://globalvlei.com/",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/global-vlei/global_vlei.png",
     "country": "SE",
-    "description": "Global vLEI is a Sweden-based provider of digital organizational identity services and a Qualified vLEI Issuer (QVI) within the GLEIF ecosystem. The company, part of the same corporate group as NordLEI, issues verifiable Legal Entity Identifier (vLEI) credentials in ACDC format, enabling trusted organizational identity and role-based assertions for digital interactions across finance, trade, and compliance use cases."
-  }
+    "description": "Global vLEI is a Sweden-based provider of digital organizational identity services and a Qualified vLEI Issuer (QVI) within the GLEIF ecosystem. The company, part of the same corporate group as NordLEI, issues verifiable Legal Entity Identifier (vLEI) credentials in ACDC format, enabling trusted organizational identity and role-based assertions for digital interactions across finance, trade, and compliance use cases.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-23T05:48:01.000Z"
 }

@@ -44,7 +44,8 @@
     ],
     "website": "https://www.lex-persona.com",
     "logo": "https://goodflag.com/hubfs/Images/Site%20web/solution-de-signature-electronique-securisee.webp",
-    "description": "Lex Persona is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via lex-persona.com."
+    "description": "Lex Persona is a Qualified Trust Service Provider on the EU eIDAS Trust List for France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-13T08:15:46.249Z"
 }

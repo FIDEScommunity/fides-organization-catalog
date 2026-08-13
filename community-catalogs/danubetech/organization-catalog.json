@@ -10,6 +10,8 @@
     "logo": "https://danubetech.com/assets/Danube-Tech-Logo-DEwIzHq6.png",
     "country": "AT",
     "fidesManifestoSupporter": true,
-    "description": "Austrian company delivering standards-based decentralized identity, wallets, and interoperability software for enterprises and governments."
-  }
+    "description": "Austrian company delivering standards-based decentralized identity, wallets, and interoperability software for enterprises and governments.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-02T15:46:20.000Z"
 }

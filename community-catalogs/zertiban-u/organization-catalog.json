@@ -28,7 +28,8 @@
     ],
     "website": "https://zertiban.com",
     "logo": "https://zertiban.com/wp-content/uploads/2024/10/ZERTIBANTAG.jpg",
-    "description": "ZERTIBAN U is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via zertiban.com."
+    "description": "ZERTIBAN U is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.078Z"
 }

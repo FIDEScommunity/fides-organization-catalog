@@ -48,7 +48,8 @@
     ],
     "website": "https://www.halcom.com/sl_en/",
     "logo": "https://www.halcom.com/app/uploads/2018/03/cropped-favicon.png",
-    "description": "Halcom is a Slovenian digital trust provider listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+    "description": "HALCOM D.D is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovenia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:42.584Z"
 }

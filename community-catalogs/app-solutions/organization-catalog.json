@@ -28,7 +28,8 @@
     ],
     "website": "https://www.vaultinum.com",
     "logo": "https://vaultinum.com/wp-content/uploads/2025/06/Logo-Google.webp",
-    "description": "Vaultinum is an independent third party specialised in the protection and audit of digital assets. We provide tech and vendor due diligence, software escrow and IP protection."
+    "description": "Vaultinum is an independent third party specialised in the protection and audit of digital assets. We provide tech and vendor due diligence, software escrow and IP protection.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.180Z"
 }

@@ -40,7 +40,8 @@
     ],
     "website": "https://www.sectigo.com",
     "logo": "https://www.sectigo.com/uploads/images/_1200x630_crop_center-center_82_none/210427_sectigo_social-cards_A_v03b.jpg?mtime=1761310645",
-    "description": "Sectigo is a leading provider of SSL certificates & automated certificate management solutions. A Certificate Authority trusted by global brands for 20+ years."
+    "description": "Sectigo is a leading provider of SSL certificates & automated certificate management solutions. A Certificate Authority trusted by global brands for 20+ years.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.065Z"
 }

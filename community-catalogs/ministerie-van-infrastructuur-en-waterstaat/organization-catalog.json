@@ -28,7 +28,8 @@
     ],
     "website": "https://bct.tsp.minienw.nl/index_en.html",
     "logo": "https://www.google.com/s2/favicons?domain=bct.tsp.minienw.nl&sz=128",
-    "description": "Ministerie van Infrastructuur en Waterstaat is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via bct.tsp.minienw.nl."
+    "description": "Ministerie van Infrastructuur en Waterstaat is a Qualified Trust Service Provider on the EU eIDAS Trust List for the Netherlands.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:33.801Z"
 }

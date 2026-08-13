@@ -11,6 +11,8 @@
     "identifiers": {
       "business_registration_number": "58810315"
     },
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-03-31T16:52:18.000Z"
 }

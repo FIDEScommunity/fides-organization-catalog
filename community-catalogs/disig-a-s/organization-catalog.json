@@ -64,7 +64,8 @@
     ],
     "website": "http://www.disig.eu",
     "logo": "https://www.google.com/s2/favicons?domain=www.disig.eu&sz=128",
-    "description": "Disig is a Slovak qualified trust service provider delivering electronic signature and trust services under eIDAS."
+    "description": "Disig is a Slovak qualified trust service provider delivering electronic signature and trust services under eIDAS.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:44.979Z"
 }

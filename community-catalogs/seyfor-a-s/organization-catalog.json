@@ -32,7 +32,8 @@
     ],
     "website": "https://www.seyfor.com",
     "logo": "https://www.seyfor.com/files/2022/01/herofin.jpg",
-    "description": "Seyfor, a. s is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via seyfor.com."
+    "description": "Seyfor, a. s is a Qualified Trust Service Provider on the EU eIDAS Trust List for Czechia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:06.781Z"
 }

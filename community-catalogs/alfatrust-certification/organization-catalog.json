@@ -36,7 +36,8 @@
     ],
     "website": "http://www.alfasign.ro/",
     "logo": "https://alfasign.ro/wp-content/uploads/2024/10/alfasing_grafica_hero.avif",
-    "description": "AlfaTrust Certification is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via alfasign.ro."
+    "description": "AlfaTrust Certification is a Qualified Trust Service Provider on the EU eIDAS Trust List for Romania.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:39.877Z"
 }

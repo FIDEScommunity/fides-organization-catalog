@@ -48,7 +48,8 @@
     ],
     "website": "https://globaltrust.eu/en/",
     "logo": "https://globaltrust.eu/wp-content/uploads/2019/07/globe-300x300.png",
-    "description": "e-commerce monitoring is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Austria. It provides digital trust services via globaltrust.eu."
+    "description": "e-commerce monitoring is a Qualified Trust Service Provider on the EU eIDAS Trust List for Austria.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:00.423Z"
 }

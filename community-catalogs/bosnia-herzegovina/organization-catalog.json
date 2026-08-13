@@ -9,6 +9,8 @@
     "website": "https://idd.gov.ba/",
     "country": "BA",
     "description": "Agency for Identification Documents, Registers and Data Exchange (IDDEEA); leads Bosnia and Herzegovina's national digital identity wallet programme and WE BUILD large-scale pilot participation.",
-    "logo": "https://flagcdn.com/w80/ba.png"
-  }
+    "logo": "https://flagcdn.com/w80/ba.png",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-08T19:54:46.000Z"
 }

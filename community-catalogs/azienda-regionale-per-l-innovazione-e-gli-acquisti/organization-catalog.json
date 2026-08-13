@@ -27,7 +27,8 @@
       }
     ],
     "website": "https://www.ariaspa.it/CA/TSPInformationURI",
-    "description": "Azienda Regionale per l'Innovazione e gli Acquisti is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via ariaspa.it."
+    "description": "Azienda Regionale per l'Innovazione e gli Acquisti is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.766Z"
 }

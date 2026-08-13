@@ -17,7 +17,10 @@
       "did": "did:web:ia.reeco.eco"
     },
     "fidesManifestoSupporter": true,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "ecosystemRoleCodes": [
+      "issuer"
+    ]
   },
   "lastUpdated": "2026-08-07T06:36:40+00:00"
 }

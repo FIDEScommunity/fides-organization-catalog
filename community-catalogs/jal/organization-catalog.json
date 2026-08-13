@@ -10,6 +10,8 @@
     "website": "https://www.jal.com",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/0444e1cffeddb08b7dad23d658a84778f66939b9/community-catalogs/jal/jal_logo.png",
     "country": "JP",
-    "description": "Japan Airlines is a major international airline operating passenger and cargo services worldwide. In digital travel scenarios, airlines like Japan Airlines act as relying parties that verify credentials such as boarding passes, booking orders, and passenger identity documents during check-in, security, and boarding processes."
-  }
+    "description": "Japan Airlines is a major international airline operating passenger and cargo services worldwide. In digital travel scenarios, airlines like Japan Airlines act as relying parties that verify credentials such as boarding passes, booking orders, and passenger identity documents during check-in, security, and boarding processes.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-22T10:31:40.000Z"
 }

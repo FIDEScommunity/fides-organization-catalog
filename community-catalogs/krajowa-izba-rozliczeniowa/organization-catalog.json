@@ -40,7 +40,8 @@
     ],
     "website": "http://www.elektronicznypodpis.pl/en/",
     "logo": "https://www.elektronicznypodpis.pl/themes/eshop/images/favicon.ico",
-    "description": "Krajowa Izba Rozliczeniowa is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Poland, providing digital trust services via elektronicznypodpis.pl."
+    "description": "Krajowa Izba Rozliczeniowa is a Qualified Trust Service Provider on the EU eIDAS Trust List for Poland.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:36.823Z"
 }

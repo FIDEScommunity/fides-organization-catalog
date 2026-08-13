@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:tessi-documents-services",
-    "name": "TESSI DOCUMENTS SERVICES",
+    "name": "Tessi Documents Services",
     "legalName": "TESSI DOCUMENTS SERVICES",
     "sectors": [
       "digital"
@@ -28,7 +28,8 @@
     ],
     "website": "https://www.tessi.eu/en",
     "logo": "https://www.tessi.eu/wp-content/themes/limpide/assets/img/favicon/favicon_Tessi.svg",
-    "description": "Homepage Tessi Main EN"
+    "description": "Tessi provides business-process and document services, including qualified trust services in France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.172Z"
 }

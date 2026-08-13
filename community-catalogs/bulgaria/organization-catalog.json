@@ -9,6 +9,8 @@
     "website": "https://www.e-gov.bg/",
     "country": "BG",
     "description": "Ministry of e-Government of Bulgaria; coordinates the national European Digital Identity Wallet programme and participation in EWC and WE BUILD large-scale pilots.",
-    "logo": "https://flagcdn.com/w80/bg.png"
-  }
+    "logo": "https://flagcdn.com/w80/bg.png",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-07-08T19:54:46.000Z"
 }

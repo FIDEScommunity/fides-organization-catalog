@@ -64,7 +64,8 @@
     ],
     "website": "https://brainit.sk/en/home/",
     "logo": "https://brainit.com/wp-content/uploads/BIT_horizontal_zlto-biele.png",
-    "description": "Slovak trust service provider listed as a Qualified Trust Service Provider (QTSP) in the EU eIDAS Trust List."
+    "description": "brainit.sk, s. r. o is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovakia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:44.982Z"
 }

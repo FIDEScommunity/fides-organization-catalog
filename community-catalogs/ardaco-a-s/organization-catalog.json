@@ -56,7 +56,8 @@
     ],
     "website": "https://www.ardaco.com/",
     "logo": "https://www.ardaco.com/assets/img/favicon_ardaco_180.png",
-    "description": "Slovak provider of trust and security services, listed as a Qualified Trust Service Provider (QTSP) under the EU eIDAS framework."
+    "description": "Ardaco a.s is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovakia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:44.982Z"
 }

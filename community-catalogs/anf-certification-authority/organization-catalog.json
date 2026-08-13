@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:anf-certification-authority",
-    "name": "ANF Certification Authority,",
+    "name": "ANF Certification Authority",
     "legalName": "ANF Certification Authority, S.L.",
     "sectors": [
       "digital"
@@ -60,7 +60,8 @@
     ],
     "website": "http://www.anf.ac",
     "logo": "https://www.anf.ac/wp-content/uploads/2022/01/Logo-ANF-azul.png",
-    "description": "ANF Certificacion Authority SL"
+    "description": "ANF Certificacion Authority SL",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.074Z"
 }

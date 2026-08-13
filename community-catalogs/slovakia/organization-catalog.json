@@ -8,7 +8,9 @@
     ],
     "website": "https://www.slovensko.sk/",
     "country": "SK",
-    "description": "Ústredný portál verejnej správy",
-    "logo": "https://www.google.com/s2/favicons?domain=www.slovensko.sk&sz=128"
-  }
+    "description": "Slovak government central portal for public administration and digital public services.",
+    "logo": "https://www.google.com/s2/favicons?domain=www.slovensko.sk&sz=128",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

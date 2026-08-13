@@ -393,7 +393,7 @@ function applyQtspDetailsToPayload(doc, { evidenceUrl, country, website, trustSe
     return { changed: false, json: doc };
   }
 
-  next.lastUpdated = new Date().toISOString();
+  // Keep existing lastUpdated so weekly cert sync does not bump "Last updated" in the catalog.
   return { changed: true, json: next };
 }
 

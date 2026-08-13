@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:ac-camerfirma",
-    "name": "AC Camerfirma,",
+    "name": "AC Camerfirma",
     "legalName": "AC Camerfirma, S.A.",
     "sectors": [
       "digital"
@@ -36,7 +36,8 @@
     ],
     "website": "http://www.camerfirma.com",
     "logo": "https://www.camerfirma.com/wp-content/uploads/revslider/mainsite-1/Identify_your_Customer_2-1.jpg",
-    "description": "AC Camerfirma is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via camerfirma.com."
+    "description": "AC Camerfirma is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.043Z"
 }

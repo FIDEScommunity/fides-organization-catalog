@@ -9,6 +9,8 @@
     "website": "https://www.latvija.lv/",
     "country": "LV",
     "description": "Republic of Latvia government services; national digital portals and programmes for identity, e-services, and public administration.",
-    "logo": "https://www.google.com/s2/favicons?domain=www.latvija.lv&sz=128"
-  }
+    "logo": "https://www.google.com/s2/favicons?domain=www.latvija.lv&sz=128",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

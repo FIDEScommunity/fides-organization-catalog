@@ -26,9 +26,10 @@
         }
       }
     ],
-    "website": "https://www.mediacert.com/en",
+    "website": "https://www.worldline.com/",
     "logo": "https://www.mediacert.com/images/favicon-33x33.png",
-    "description": "Mediacert Public web site"
+    "description": "Worldline France provides payment and digital-trust services, including the MediCert qualified trust platform.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.172Z"
 }

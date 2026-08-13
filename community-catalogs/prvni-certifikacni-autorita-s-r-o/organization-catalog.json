@@ -32,7 +32,8 @@
     ],
     "website": "https://www.ica.cz/english",
     "logo": "https://www.google.com/s2/favicons?domain=ica.cz&sz=128",
-    "description": "Prvni certifikacni autorita is a Czech qualified trust service provider listed on the EU eIDAS Trust List."
+    "description": "Prvni certifikacni autorita is a Czech qualified trust service provider listed on the EU eIDAS Trust List.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:44.983Z"
 }

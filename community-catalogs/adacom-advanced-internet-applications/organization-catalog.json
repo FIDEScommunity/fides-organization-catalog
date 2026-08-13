@@ -36,7 +36,8 @@
     ],
     "website": "http://www.adacom.com/repository",
     "logo": "https://www.adacom.com/assets/components/phpthumbof/cache/adacom-red.a21bd1147d3c8080f645838d33e576d2.webp",
-    "description": "ADACOM ADVANCED INTERNET APPLICATIONS is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Greece. It provides digital trust services via adacom.com."
+    "description": "ADACOM ADVANCED INTERNET APPLICATIONS is a Qualified Trust Service Provider on the EU eIDAS Trust List for Greece.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:13.152Z"
 }

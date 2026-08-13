@@ -40,7 +40,8 @@
     ],
     "website": "http://www.uanataca.com",
     "logo": "https://web.uanataca.com/common/project/images/share.jpg",
-    "description": "We design solutions that facilitate the digital transformation with maximum legal guarantees."
+    "description": "We design solutions that facilitate the digital transformation with maximum legal guarantees.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-08-10T06:09:41.020Z"
 }

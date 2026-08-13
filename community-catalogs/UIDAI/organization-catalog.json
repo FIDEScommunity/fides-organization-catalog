@@ -16,6 +16,13 @@
       "Aadhaar",
       "Digital Public Infrastructure"
     ],
-    "fidesManifestoSupporter": false
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "vc_type_authority",
+      "personal_wallet_provider",
+      "conformity_scheme_owner",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community"
   }
 }

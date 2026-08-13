@@ -32,7 +32,8 @@
     ],
     "website": "http://www.nlb.si/ac-nlb",
     "logo": "https://www.nlb.si/res/img/icon/apple-touch-icon.png",
-    "description": "NLB is a Slovenian financial institution listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List."
+    "description": "NLB d.d is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovenia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:42.585Z"
 }

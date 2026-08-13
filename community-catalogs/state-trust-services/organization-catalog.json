@@ -44,7 +44,8 @@
     ],
     "website": "https://www.narodni-ca.gov.cz",
     "logo": "https://www.google.com/s2/favicons?domain=www.narodni-ca.gov.cz&sz=128",
-    "description": "State trust services is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Czech Republic. It provides digital trust services via narodni-ca.gov.cz."
+    "description": "State trust services is a Qualified Trust Service Provider on the EU eIDAS Trust List for Czechia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:06.781Z"
 }

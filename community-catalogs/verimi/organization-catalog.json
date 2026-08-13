@@ -9,6 +9,8 @@
     "website": "https://verimi.de/",
     "country": "DE",
     "description": "Verimi GmbH provides digital services and solutions in the trust and credentials ecosystem via verimi.de.",
-    "logo": "https://verimi.de/wp-content/uploads/2021/11/cropped-favicon-180x180.png"
-  }
+    "logo": "https://verimi.de/wp-content/uploads/2021/11/cropped-favicon-180x180.png",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T05:14:31.000Z"
 }

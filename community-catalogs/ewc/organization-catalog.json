@@ -6,9 +6,14 @@
     "sectors": [
       "digital"
     ],
-    "website": "https://dss.aegean.gr",
     "logo": "https://avatars.githubusercontent.com/u/140810559?v=4",
     "country": "EU",
-    "description": "European Wallet Consortium (EWC); research network on interoperable digital wallets, coordinated from the University of the Aegean."
-  }
+    "description": "Large-scale EUDI Wallet pilot consortium (now completed), coordinated with the University of the Aegean.",
+    "ecosystemRoleCodes": [
+      "vc_type_authority",
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

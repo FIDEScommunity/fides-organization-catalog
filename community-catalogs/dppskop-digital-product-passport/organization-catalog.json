@@ -12,7 +12,7 @@
     "country": "TR",
     "ecosystemRoleCodes": [
       "system_integrator",
-      "conformity_scheme_owner"
+      "software_vendor"
     ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"

@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:viavansi-corporacion",
-    "name": "VIAVANSI CORPORACIÓN,",
+    "name": "VIAVANSI CORPORACIÓN",
     "legalName": "VIAVANSI CORPORACIÓN, S.L.",
     "sectors": [
       "digital"
@@ -26,7 +26,8 @@
         }
       }
     ],
-    "website": "https://www.viavansi.com"
+    "website": "https://www.viavansi.com",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.080Z"
 }

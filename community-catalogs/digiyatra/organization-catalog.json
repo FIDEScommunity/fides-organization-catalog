@@ -20,7 +20,8 @@
     "fidesManifestoSupporter": false,
     "contact": {
       "email": "info@digiyatra.org"
-    }
+    },
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T08:46:59.674Z"
 }

@@ -28,7 +28,8 @@
     ],
     "website": "https://cybercompetence.sk/",
     "logo": "https://www.google.com/s2/favicons?domain=cybercompetence.sk&sz=128",
-    "description": "Slovak public trust service organization listed as a Qualified Trust Service Provider (QTSP) under eIDAS."
+    "description": "Cybersecurity Competence and Certification Centre is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovakia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:44.979Z"
 }

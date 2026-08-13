@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:btp-onetec",
-    "name": "BTP ONETEC,",
+    "name": "BTP ONETEC",
     "legalName": "BTP ONETEC, S.L.",
     "sectors": [
       "digital"
@@ -28,7 +28,8 @@
     ],
     "website": "https://www.btponetec.es",
     "logo": "https://btponetec.es/wp-content/uploads/2024/06/cropped-nuevo-Logo-cuadrado-azul-ONETec-1-180x180.png",
-    "description": "BTP ONETEC is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via btponetec.es."
+    "description": "BTP ONETEC is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.068Z"
 }

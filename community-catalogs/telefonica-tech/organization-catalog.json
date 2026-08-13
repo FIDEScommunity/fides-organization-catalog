@@ -10,6 +10,8 @@
     "description": "Telefónica’s digital business unit delivering cybersecurity, cloud, IoT, big data and related technology services for enterprise and public-sector customers.",
     "website": "https://telefonicatech.com",
     "logo": "https://www.google.com/s2/favicons?domain=telefonicatech.com&sz=128",
-    "country": "ES"
-  }
+    "country": "ES",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-12T20:55:53.000Z"
 }

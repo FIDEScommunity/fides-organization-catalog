@@ -32,7 +32,8 @@
     ],
     "website": "https://www.preuve-electronique.org/contacts.html",
     "logo": "https://www.preuve-electronique.org/content/img/favicon/apple-icon-57x57.png",
-    "description": "The High Council of French Notariat is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via preuve-electronique.org."
+    "description": "The High Council of French Notariat is a Qualified Trust Service Provider on the EU eIDAS Trust List for France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.168Z"
 }

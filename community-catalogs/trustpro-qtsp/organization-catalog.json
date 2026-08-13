@@ -36,7 +36,8 @@
     ],
     "website": "https://www.trustpro.eu",
     "logo": "https://www.trustpro.eu/wp-content/uploads/2026/02/trustpro-qualified-trust-service-provider-in-eu.jpg",
-    "description": "We provide qualified eSignatures, eSeals and eTimestamps, eIDAS compliant and valid in European Union. Remote identification and activation."
+    "description": "We provide qualified eSignatures, eSeals and eTimestamps, eIDAS compliant and valid in European Union. Remote identification and activation.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:22.508Z"
 }

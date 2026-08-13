@@ -40,7 +40,8 @@
     ],
     "website": "https://eius.si",
     "logo": "https://www.eius.si/wp-content/uploads/2021/05/cropped-logo-za-header-1-180x180.png",
-    "description": "EIUS is a Slovenian provider of qualified trust services, listed on the EU eIDAS Trust List as a QTSP."
+    "description": "EIUS is a Slovenian provider of qualified trust services, listed on the EU eIDAS Trust List as a QTSP.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:42.586Z"
 }

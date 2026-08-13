@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:aviva-voice-systems-and-services",
-    "name": "AVIVA VOICE SYSTEMS AND SERVICES,",
+    "name": "AVIVA VOICE SYSTEMS AND SERVICES",
     "legalName": "AVIVA VOICE SYSTEMS AND SERVICES, S.L.",
     "sectors": [
       "digital"
@@ -27,7 +27,8 @@
       }
     ],
     "website": "http://www.avivavoice.com/",
-    "description": "AVIVA VOICE SYSTEMS AND SERVICES is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via avivavoice.com."
+    "description": "AVIVA VOICE SYSTEMS AND SERVICES is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.069Z"
 }

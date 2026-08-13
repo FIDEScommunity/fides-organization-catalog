@@ -32,7 +32,8 @@
     ],
     "website": "https://www.darva.com/",
     "logo": "https://www.darva.com/wp-content/uploads/2025/12/v2026.jpg",
-    "description": "DARVA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France, providing digital trust services via darva.com."
+    "description": "DARVA is a Qualified Trust Service Provider on the EU eIDAS Trust List for France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.169Z"
 }

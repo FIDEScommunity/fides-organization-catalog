@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:bewor-tech",
-    "name": "Bewor tech,",
+    "name": "Bewor Tech",
     "legalName": "Bewor tech, S.L.",
     "sectors": [
       "digital"
@@ -28,7 +28,8 @@
     ],
     "website": "http://bewor.com",
     "logo": "https://bewor.com/wp-content/uploads/2026/02/Thumbnail-bewor.webp",
-    "description": "Bewor tech is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via bewor.com."
+    "description": "Bewor Tech is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.064Z"
 }

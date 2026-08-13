@@ -10,6 +10,8 @@
     "description": "Public university in Alba Iulia, Romania, offering education and research across a broad range of academic disciplines.",
     "website": "https://uab.ro",
     "logo": "https://www.google.com/s2/favicons?domain=uab.ro&sz=128",
-    "country": "RO"
-  }
+    "country": "RO",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-12T20:55:53.000Z"
 }

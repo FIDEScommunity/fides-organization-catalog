@@ -10,6 +10,12 @@
     "logo": "https://www.google.com/s2/favicons?domain=forkbomb.solutions&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "Cryptography, decentralized identities, Digital Product Passport"
-  }
+    "description": "Forkbomb builds cryptography and decentralised-identity tooling, including Digital Product Passport components.",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "business_wallet_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

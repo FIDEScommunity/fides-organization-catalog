@@ -9,6 +9,8 @@
     "website": "https://www.ixo.world/",
     "logo": "https://www.google.com/s2/favicons?domain=ixo.world&sz=128",
     "country": "CH",
-    "description": "The World's Leading Spatial Web Platform for Intelligent Social, Environmental, Economic, and Climate Impacts."
-  }
+    "description": "The World's Leading Spatial Web Platform for Intelligent Social, Environmental, Economic, and Climate Impacts.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

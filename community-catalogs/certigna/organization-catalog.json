@@ -40,7 +40,8 @@
     ],
     "website": "https://www.certigna.fr",
     "logo": "https://www.certigna.com/wp-content/themes/limpide/assets/img/favicon/favicon-32x32.png?v=1",
-    "description": "Certigna is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via certigna.fr."
+    "description": "Certigna is a Qualified Trust Service Provider on the EU eIDAS Trust List for France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.165Z"
 }

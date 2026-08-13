@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:vintegris-u",
-    "name": "VINTEGRIS U.",
+    "name": "Vintegris",
     "legalName": "VINTEGRIS S.L.U.",
     "sectors": [
       "digital"
@@ -34,8 +34,9 @@
         }
       }
     ],
-    "website": "http://www.vincasign.net",
-    "description": "Author: Vintegris SLU, Title: VinCASign"
+    "website": "https://www.vintegris.com/",
+    "description": "Vintegris provides digital-signature and certificate solutions, including the VinCAsign platform.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.048Z"
 }

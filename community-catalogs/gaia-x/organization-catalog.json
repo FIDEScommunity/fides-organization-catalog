@@ -18,6 +18,10 @@
     "country": "BE",
     "contact": {
       "email": "info@gaia-x.eu"
-    }
+    },
+    "ecosystemRoleCodes": [
+      "vc_type_authority"
+    ],
+    "catalogTier": "Community"
   }
 }

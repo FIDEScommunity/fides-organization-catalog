@@ -32,7 +32,8 @@
     ],
     "website": "https://www.jcc.com.cy/support/",
     "logo": "https://www.google.com/s2/favicons?domain=www.jcc.com.cy&sz=128",
-    "description": "You can contact us by clicking on the button below and filling out our contact form. If you want to speak to a JCC representative, please call +357 22868000. Our representatives are available 24 hours a day, 7 days a week."
+    "description": "You can contact us by clicking on the button below and filling out our contact form. If you want to speak to a JCC representative, please call +357 22868000. Our representatives are available 24 hours a day, 7 days a week.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:04.709Z"
 }

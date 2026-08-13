@@ -32,7 +32,8 @@
     ],
     "website": "https://notarchiv.hu",
     "logo": "https://notarchiv.hu/favicon.ico",
-    "description": "NOTARchiv Kft. - archiválás szolgáltatás"
+    "description": "NOTARchiv Kft. - archiválás szolgáltatás",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:21.377Z"
 }

@@ -28,7 +28,8 @@
     ],
     "website": "https://www.adobe.com",
     "logo": "https://www.adobe.com/homepage/assets/product-icons/jpg/default.jpg?width=1200&format=pjpg&optimize=medium",
-    "description": "Adobe is changing the world through digital experiences. We help our customers create, deliver and optimize content and applications."
+    "description": "Adobe is changing the world through digital experiences. We help our customers create, deliver and optimize content and applications.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:22.507Z"
 }

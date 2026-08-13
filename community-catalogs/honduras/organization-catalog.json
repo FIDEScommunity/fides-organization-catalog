@@ -8,6 +8,8 @@
     ],
     "website": "https://www.rnp.hn/",
     "country": "HN",
-    "description": "National Registry of Persons (RNP Honduras); maintains civil registration and national identification for the Republic of Honduras."
-  }
+    "description": "National Registry of Persons (RNP Honduras); maintains civil registration and national identification for the Republic of Honduras.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T06:19:50.000Z"
 }

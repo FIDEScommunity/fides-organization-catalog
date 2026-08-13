@@ -28,7 +28,8 @@
     ],
     "website": "https://www.pagopa.it",
     "logo": "https://www.google.com/s2/favicons?domain=www.pagopa.it&sz=128",
-    "description": "PagoPA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via pagopa.it."
+    "description": "PagoPA is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.770Z"
 }

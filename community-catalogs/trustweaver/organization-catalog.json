@@ -31,7 +31,8 @@
       }
     ],
     "website": "https://www.trustweaver.com/",
-    "description": "TrustWeaver is a Swedish provider of secure digital compliance and trust services, listed as a QTSP in the EU Trust List."
+    "description": "TrustWeaver is a Swedish provider of secure digital compliance and trust services, listed as a QTSP in the EU Trust List.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:41.091Z"
 }

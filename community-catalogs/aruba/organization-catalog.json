@@ -9,6 +9,11 @@
     "website": "https://www.aruba.io",
     "logo": "https://www.aruba.io/assets/images/logo.svg",
     "country": "IT",
-    "description": "Italian cloud, certified email (PEC), and digital trust provider (Aruba Group) serving businesses and the public sector across Europe."
-  }
+    "description": "Italian cloud, certified email (PEC), and digital trust provider (Aruba Group) serving businesses and the public sector across Europe.",
+    "ecosystemRoleCodes": [
+      "issuer"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

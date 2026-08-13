@@ -9,6 +9,8 @@
     "description": "Dutch Payments Association representing banks and payment institutions active in the Netherlands, focused on a secure, efficient and innovative payments ecosystem.",
     "website": "https://www.betaalvereniging.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=betaalvereniging.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-12T20:55:53.000Z"
 }

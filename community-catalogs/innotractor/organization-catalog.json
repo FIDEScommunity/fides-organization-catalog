@@ -10,6 +10,8 @@
     "logo": "https://www.google.com/s2/favicons?domain=innotractor.com&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "Technology firm delivering software and integration services for secure digital identity, authentication, and data exchange."
-  }
+    "description": "Technology firm delivering software and integration services for secure digital identity, authentication, and data exchange.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

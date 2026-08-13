@@ -10,6 +10,15 @@
     "logo": "https://www.google.com/s2/favicons?domain=findynet.fi&sz=128",
     "country": "FI",
     "fidesManifestoSupporter": true,
-    "description": "Findynet is a Finnish cooperative that brings together public and private sector organizations to develop and maintain a shared trust network for verifiable data. The Findynet Trust Network enables individuals and organizations to securely issue, share, and verify information using digital wallets and verifiable credentials. The initiative focuses on interoperability, open standards, and self-sovereign identity, supporting trusted digital interactions across sectors and enabling cross-border compatibility with European digital identity initiatives."
-  }
+    "description": "Findynet is a Finnish cooperative that brings together public and private sector organizations to develop and maintain a shared trust network for verifiable data. The Findynet Trust Network enables individuals and organizations to securely issue, share, and verify information using digital wallets and verifiable credentials. The initiative focuses on interoperability, open standards, and self-sovereign identity, supporting trusted digital interactions across sectors and enabling cross-border compatibility with European digital identity initiatives.",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "vc_type_authority",
+      "relying_party",
+      "conformity_scheme_owner",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-23T05:20:04.000Z"
 }

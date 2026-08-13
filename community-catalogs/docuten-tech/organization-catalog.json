@@ -36,7 +36,8 @@
     ],
     "website": "https://docuten.com/en",
     "logo": "https://www.google.com/s2/favicons?domain=docuten.com&sz=128",
-    "description": "Docuten Tech is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via docuten.com."
+    "description": "Docuten Tech is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.066Z"
 }

@@ -28,7 +28,8 @@
     ],
     "website": "https://www.advania.is/",
     "logo": "https://www.advania.is/library?itemid=673b5a67-b8f4-43f2-b7d3-9905d6361cca",
-    "description": "Advania Ísland ehf is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Iceland, providing digital trust services via advania.is."
+    "description": "Advania Ísland ehf is a Qualified Trust Service Provider on the EU eIDAS Trust List for Iceland.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:23.696Z"
 }

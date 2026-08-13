@@ -9,6 +9,12 @@
     "website": "https://scytales.com",
     "logo": "https://www.google.com/s2/favicons?domain=scytales.com&sz=128",
     "country": "SE",
-    "description": "Discover cutting-edge high-security mobile identity solutions designed to protect your digital identity. Scytáles offers a range of advanced products, including digital identification wallets, mobile driving licenses, derived mobile identification, and mobile validators. Trust our service manager and credential service provider solutions to safeguard your sensitive…"
-  }
+    "description": "Discover cutting-edge high-security mobile identity solutions designed to protect your digital identity. Scytáles offers a range of advanced products, including digital identification wallets, mobile driving licenses, derived mobile identification, and mobile validators. Trust our service manager and credential service provider solutions to safeguard your sensitive…",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "business_wallet_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

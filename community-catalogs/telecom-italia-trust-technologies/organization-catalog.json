@@ -43,7 +43,8 @@
       }
     ],
     "website": "https://www.trusttechnologies.it/chi-siamo/qcsp-english/",
-    "description": "Telecom Italia Trust Technologies is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Italy. It provides digital trust services via trusttechnologies.it."
+    "description": "Telecom Italia Trust Technologies is a Qualified Trust Service Provider on the EU eIDAS Trust List for Italy.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:25.764Z"
 }

@@ -10,6 +10,8 @@
     "description": "Dutch screening authority that assesses the reliability of persons and organisations to promote a safe and just society.",
     "website": "https://www.justis.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=justis.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

@@ -36,7 +36,8 @@
     ],
     "website": "http://www.signe.es/signe-ac",
     "logo": "https://www.signe.es/wp-content/themes/signe2024/assets/img/apple-touch-icon.png",
-    "description": "SIGNE is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via signe.es."
+    "description": "SIGNE is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.046Z"
 }

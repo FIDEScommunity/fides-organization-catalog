@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:rubricae-business-solutions",
-    "name": "RUBRICAE BUSINESS SOLUTIONS,",
+    "name": "RUBRICAE BUSINESS SOLUTIONS",
     "legalName": "RUBRICAE BUSINESS SOLUTIONS, S.L.",
     "sectors": [
       "digital"
@@ -28,7 +28,8 @@
     ],
     "website": "https://rubricae.com/",
     "logo": "https://rubricae.com/wp-content/uploads/2023/05/logo-rubricae-e1683753210853.png",
-    "description": "RUBRICAE BUSINESS SOLUTIONS is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via rubricae.com."
+    "description": "RUBRICAE BUSINESS SOLUTIONS is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.078Z"
 }

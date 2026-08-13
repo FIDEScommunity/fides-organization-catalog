@@ -9,6 +9,11 @@
     "website": "https://www.affinidi.com",
     "logo": "https://www.google.com/s2/favicons?domain=affinidi.com&sz=256",
     "country": "SG",
-    "description": "Transform digital trust with open standards—enabling secure data exchange, privacy compliance, and interoperable ecosystems for all."
-  }
+    "description": "Transform digital trust with open standards—enabling secure data exchange, privacy compliance, and interoperable ecosystems for all.",
+    "ecosystemRoleCodes": [
+      "business_wallet_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

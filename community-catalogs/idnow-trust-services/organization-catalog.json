@@ -43,7 +43,8 @@
       }
     ],
     "website": "https://www.trust-services.io",
-    "description": "IDnow Trust Services is a Swedish-qualified trust service provider listed on the EU eIDAS Trust List."
+    "description": "IDnow Trust Services is a Swedish-qualified trust service provider listed on the EU eIDAS Trust List.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:41.092Z"
 }

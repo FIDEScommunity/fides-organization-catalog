@@ -36,7 +36,8 @@
     ],
     "website": "https://tsp.zetes.com",
     "logo": "https://static.tsp.zetes.com/favicon.ico",
-    "description": "Zetes SA to provide certificate services and trust services for governments, the financial sector and private organisations."
+    "description": "Zetes SA to provide certificate services and trust services for governments, the financial sector and private organisations.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:01.907Z"
 }

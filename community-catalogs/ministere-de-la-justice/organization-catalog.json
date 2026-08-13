@@ -28,7 +28,8 @@
     ],
     "website": "http://www.justice.gouv.fr/multilinguisme-12198/english-12200/",
     "logo": "https://www.google.com/s2/favicons?domain=www.justice.gouv.fr&sz=128",
-    "description": "Ministère de la Justice is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for France. It provides digital trust services via justice.gouv.fr."
+    "description": "Ministère de la Justice is a Qualified Trust Service Provider on the EU eIDAS Trust List for France.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:18.166Z"
 }

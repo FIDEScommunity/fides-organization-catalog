@@ -9,6 +9,8 @@
     "description": "Cloud bookkeeping platform for accountants, freelancers and SMEs, with automated accounting and real-time financial insight.",
     "website": "https://www.yuki.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=yuki.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

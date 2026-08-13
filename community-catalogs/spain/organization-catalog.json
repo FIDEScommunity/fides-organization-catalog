@@ -9,6 +9,8 @@
     "website": "https://digital.gob.es/",
     "country": "ES",
     "description": "The Spanish Ministry for Digital Transformation and Public Function drives digitalization, technological innovation, and modernization of public services.",
-    "logo": "https://digital.gob.es/content/dam/portal-mtdfp/home/favicon-mtdfp_redimension16x16.png"
-  }
+    "logo": "https://digital.gob.es/content/dam/portal-mtdfp/home/favicon-mtdfp_redimension16x16.png",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-26T05:14:31.000Z"
 }

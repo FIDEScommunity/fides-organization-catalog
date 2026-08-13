@@ -28,7 +28,8 @@
     ],
     "website": "https://www.cgi.com/spain/es",
     "logo": "https://www.cgi.com/sites/default/files/consultant-standing-on-office-balcony.jpg",
-    "description": "CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS ESPAÑA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain, providing digital trust services via cgi.com."
+    "description": "CGI INFORMATION SYSTEMS AND MANAGEMENT CONSULTANTS ESPAÑA is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.075Z"
 }

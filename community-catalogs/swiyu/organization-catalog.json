@@ -10,6 +10,15 @@
     "website": "https://www.eid.admin.ch/en",
     "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V",
     "country": "CH",
-    "description": "e-ID Switzerland: The state issued digital identity, secure, privacy-compliant, free of charge – for everyday use, public authorities, and businesses."
-  }
+    "description": "e-ID Switzerland: The state issued digital identity, secure, privacy-compliant, free of charge – for everyday use, public authorities, and businesses.",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "vc_type_authority",
+      "personal_wallet_provider",
+      "business_wallet_provider",
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

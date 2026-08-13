@@ -10,6 +10,8 @@
     "description": "Dutch vocational college (mbo) offering programmes in ’s-Hertogenbosch, Land van Cuijk, Meierijstad and Oss.",
     "website": "https://www.kw1c.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=kw1c.nl&sz=128",
-    "country": "NL"
-  }
+    "country": "NL",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

@@ -9,6 +9,8 @@
     "description": "Indian electric mobility service covering bikes, charging, battery swapping and service centres.",
     "website": "https://halamobility.in/",
     "logo": "https://www.google.com/s2/favicons?domain=halamobility.in&sz=128",
-    "country": "IN"
-  }
+    "country": "IN",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

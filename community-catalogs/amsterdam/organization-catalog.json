@@ -6,9 +6,14 @@
     "sectors": [
       "public_sector"
     ],
-    "website": "https://amsterdam-demo.staging.yivi.app/",
+    "website": "https://www.amsterdam.nl/",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3C-OchQQRTMYDi8nstGQDE_pgkRhSwRwDg&s",
     "country": "NL",
-    "description": "Municipality of Amsterdam; runs digital identity and wallet pilots with residents and businesses, including Yivi-based demos."
-  }
+    "description": "Municipality of Amsterdam; runs digital identity and wallet pilots with residents and businesses.",
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

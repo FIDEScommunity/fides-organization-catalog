@@ -28,7 +28,8 @@
     ],
     "website": "http://www.certipost.com/index.php?lang=en",
     "logo": "https://www.certipost.org/wp-content/uploads/2015/06/certipost.jpg",
-    "description": "Certipost is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Belgium. It provides digital trust services via certipost.com."
+    "description": "Certipost is a Qualified Trust Service Provider on the EU eIDAS Trust List for Belgium.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:01.905Z"
 }

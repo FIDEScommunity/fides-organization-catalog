@@ -2,7 +2,7 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:3g-soluciones-movilidad",
-    "name": "3G SOLUCIONES MOVILIDAD,",
+    "name": "3G SOLUCIONES MOVILIDAD",
     "legalName": "3G SOLUCIONES MOVILIDAD, S.L.",
     "sectors": [
       "digital"
@@ -28,7 +28,8 @@
     ],
     "website": "https://www.3gmg.com",
     "logo": "https://www.google.com/s2/favicons?domain=www.3gmg.com&sz=128",
-    "description": "3G SOLUCIONES MOVILIDAD is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via 3gmg.com."
+    "description": "3G SOLUCIONES MOVILIDAD is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.070Z"
 }

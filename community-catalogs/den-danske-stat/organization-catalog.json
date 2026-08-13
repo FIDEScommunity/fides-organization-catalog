@@ -40,7 +40,8 @@
     ],
     "website": "https://www.ca1.gov.dk",
     "logo": "https://www.ca1.gov.dk/media/ce0lveih/91ba3417-4907-4841-bee3-f80ca0c47fdf.png?height=140&upscale=false",
-    "description": "Den Danske Stat is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Denmark. It provides digital trust services via ca1.gov.dk."
+    "description": "Den Danske Stat is a Qualified Trust Service Provider on the EU eIDAS Trust List for Denmark.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:10.233Z"
 }

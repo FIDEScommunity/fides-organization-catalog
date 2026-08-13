@@ -32,7 +32,8 @@
     ],
     "website": "https://nevda.lt/",
     "logo": "https://nevda.lt/wp-content/uploads/2026/04/Titulinis-LT-1024x683.png",
-    "description": "Kuriame veiklos procesų valdymo ir automatizavimo sistemas viešojo ir privataus sektoriaus organizacijoms Daugiau"
+    "description": "Kuriame veiklos procesų valdymo ir automatizavimo sistemas viešojo ir privataus sektoriaus organizacijoms Daugiau",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:28.379Z"
 }

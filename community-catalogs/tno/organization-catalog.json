@@ -6,10 +6,15 @@
     "sectors": [
       "digital"
     ],
-    "website": "https://tsg.dataspac.es/",
+    "website": "https://www.tno.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=tno.nl&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "TNO is an independent organisation for applied research. We connect people and knowledge to create innovations that boost the competitive strength of industry and the well-being of society in a sustainable way. Our goal is to connect, change and accelerate: Innovation for life."
-  }
+    "description": "TNO is an independent organisation for applied research. We connect people and knowledge to create innovations that boost the competitive strength of industry and the well-being of society in a sustainable way. Our goal is to connect, change and accelerate: Innovation for life.",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-02T13:15:35.000Z"
 }

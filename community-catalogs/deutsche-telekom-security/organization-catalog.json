@@ -28,7 +28,8 @@
     ],
     "website": "https://www.telesec.de/",
     "logo": "https://www.google.com/s2/favicons?domain=www.telesec.de&sz=128",
-    "description": "Deutsche Telekom Security is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Germany. It provides digital trust services via telesec.de."
+    "description": "Deutsche Telekom Security is a Qualified Trust Service Provider on the EU eIDAS Trust List for Germany.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:09.071Z"
 }

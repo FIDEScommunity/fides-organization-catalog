@@ -32,7 +32,8 @@
     ],
     "website": "https://www.swisssign.com/support/kontakt.html",
     "logo": "https://www.swisssign.com/.resources/swisssign-frontend/webresources/aurelia/assets/images/logo.svg",
-    "description": "Certificate Authority & Trust Service Provider: SSL/TLS-Zertifikate, S/MIME E-Mail-Verschlüsselung, digitale Unterschriften, Time Stamping und Managed PKI (MPKI). Vertrauen Sie auf 100 % swiss made Sicherheit und Effizienz"
+    "description": "Certificate Authority & Trust Service Provider: SSL/TLS-Zertifikate, S/MIME E-Mail-Verschlüsselung, digitale Unterschriften, Time Stamping und Managed PKI (MPKI). Vertrauen Sie auf 100 % swiss made Sicherheit und Effizienz",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:00.425Z"
 }

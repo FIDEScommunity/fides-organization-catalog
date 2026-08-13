@@ -60,7 +60,8 @@
     ],
     "website": "https://www.nases.gov.sk/en/",
     "logo": "https://www.nases.gov.sk/files/public/images/favicon.JPG",
-    "description": "The Slovak National Agency for Network and Electronic Services is listed as a Qualified Trust Service Provider (QTSP) in the EU Trust List."
+    "description": "National Agency for Network and Electronic Services is a Qualified Trust Service Provider on the EU eIDAS Trust List for Slovakia.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:44.981Z"
 }

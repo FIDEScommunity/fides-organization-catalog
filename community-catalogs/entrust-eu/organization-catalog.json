@@ -28,7 +28,8 @@
     ],
     "website": "https://www.entrust.com",
     "logo": "https://www.google.com/s2/favicons?domain=www.entrust.com&sz=128",
-    "description": "Entrust is a trusted global leader in identity, payments, and data security solutions. Learn more about our cutting-edge solutions."
+    "description": "Entrust is a trusted global leader in identity, payments, and data security solutions. Learn more about our cutting-edge solutions.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.062Z"
 }

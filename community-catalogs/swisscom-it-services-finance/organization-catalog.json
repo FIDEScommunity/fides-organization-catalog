@@ -44,7 +44,8 @@
     ],
     "website": "https://www.swisscom.ch/en/business/enterprise/offer/security/identity-access-security/signing-service.html",
     "logo": "https://www.google.com/s2/favicons?domain=swisscom.ch&sz=128",
-    "description": "Swisscom IT Services Finance is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Austria. It provides digital trust services via swisscom.ch."
+    "description": "Swisscom IT Services Finance is a Qualified Trust Service Provider on the EU eIDAS Trust List for Austria.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:00.424Z"
 }

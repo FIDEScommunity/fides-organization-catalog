@@ -40,7 +40,8 @@
     ],
     "website": "https://www.globalsign.com",
     "logo": "https://www.globalsign.com/application/files/5116/2141/7240/GlobalSign_-_Social_Media_Sharing.jpg",
-    "description": "We're experts in automated, Scalable, Integrated Digital Certificates Solutions, SSLs/TLSs, managed PKI, IoT, authentication & email security. Learn more about our identity management services."
+    "description": "We're experts in automated, Scalable, Integrated Digital Certificates Solutions, SSLs/TLSs, managed PKI, IoT, authentication & email security. Learn more about our identity management services.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:01.909Z"
 }

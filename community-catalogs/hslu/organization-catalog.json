@@ -10,6 +10,8 @@
     "description": "Swiss university of applied sciences and arts based in Lucerne, offering education and research across design, engineering, business, music and social work.",
     "website": "https://www.hslu.ch/",
     "logo": "https://www.google.com/s2/favicons?domain=hslu.ch&sz=128",
-    "country": "CH"
-  }
+    "country": "CH",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-12T20:55:53.000Z"
 }

@@ -36,7 +36,8 @@
     ],
     "website": "http://hiteles.gov.hu",
     "logo": "https://www.google.com/s2/favicons?domain=hiteles.gov.hu&sz=128",
-    "description": "NISZ National Infocommunications Services Company by Shares is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Hungary. It provides digital trust services via hiteles.gov.hu."
+    "description": "NISZ National Infocommunications Services Company by Shares is a Qualified Trust Service Provider on the EU eIDAS Trust List for Hungary.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:21.376Z"
 }

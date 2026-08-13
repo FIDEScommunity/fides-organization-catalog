@@ -32,7 +32,8 @@
     ],
     "website": "https://certificaat.kpn.com",
     "logo": "https://certificaat.kpn.com/content/themes/kpn/images/favicon/apple-touch-icon-57x57.png",
-    "description": "KPN is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via certificaat.kpn.com."
+    "description": "KPN is a Qualified Trust Service Provider on the EU eIDAS Trust List for the Netherlands.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:33.800Z"
 }

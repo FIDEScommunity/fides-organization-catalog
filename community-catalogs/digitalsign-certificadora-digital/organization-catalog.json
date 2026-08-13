@@ -52,7 +52,8 @@
     ],
     "website": "http://www.digitalsign.pt/ECDIGITALSIGN/cps/",
     "logo": "https://www.google.com/s2/favicons?domain=www.digitalsign.pt&sz=128",
-    "description": "DigitalSign - Certificadora Digital is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Portugal, providing digital trust services via digitalsign.pt."
+    "description": "DigitalSign - Certificadora Digital is a Qualified Trust Service Provider on the EU eIDAS Trust List for Portugal.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:38.341Z"
 }

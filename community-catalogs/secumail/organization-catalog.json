@@ -28,7 +28,8 @@
     ],
     "website": "https://secumailer.nl/",
     "logo": "https://secumailer.nl/wp-content/uploads/2025/07/cropped-favicon-4.png",
-    "description": "Secumail is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Netherlands, providing digital trust services via secumailer.nl."
+    "description": "Secumail is a Qualified Trust Service Provider on the EU eIDAS Trust List for the Netherlands.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:33.803Z"
 }

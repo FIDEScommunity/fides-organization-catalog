@@ -28,7 +28,8 @@
     ],
     "website": "https://cipsc.coloriuris.net/",
     "logo": "https://cipsc.coloriuris.net/estilos/img/favicon.svg",
-    "description": "COLORIURIS is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Spain. It provides digital trust services via cipsc.coloriuris.net."
+    "description": "COLORIURIS is a Qualified Trust Service Provider on the EU eIDAS Trust List for Spain.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:15.047Z"
 }

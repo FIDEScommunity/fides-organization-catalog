@@ -44,7 +44,8 @@
     ],
     "website": "http://www.certdigital.ro/",
     "logo": "https://www.certdigital.ro/wp-content/uploads/2024/04/certdigital-semnatura-electronica-1-optimized.jpg",
-    "description": "CENTRUL DE CALCUL is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Romania, providing digital trust services via certdigital.ro."
+    "description": "CENTRUL DE CALCUL is a Qualified Trust Service Provider on the EU eIDAS Trust List for Romania.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:39.878Z"
 }

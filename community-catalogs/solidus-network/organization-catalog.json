@@ -14,13 +14,8 @@
       "vat_number": "5730195611"
     },
     "ecosystemRoleCodes": [
-      "personal_wallet_provider",
-      "business_wallet_provider",
-      "vc_type_authority",
-      "issuer",
-      "idv_provider",
       "software_vendor",
-      "trust_infrastructure_provider"
+      "idv_provider"
     ],
     "fidesManifestoSupporter": true,
     "catalogTier": "Community"

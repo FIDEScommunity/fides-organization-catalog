@@ -28,7 +28,8 @@
     ],
     "website": "http://repository.qca.gov.mt",
     "logo": "https://www.google.com/s2/favicons?domain=repository.qca.gov.mt&sz=128",
-    "description": "Malta Electronic Certification Services is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Malta, providing digital trust services via repository.qca.gov.mt."
+    "description": "Malta Electronic Certification Services is a Qualified Trust Service Provider on the EU eIDAS Trust List for Malta.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:32.222Z"
 }

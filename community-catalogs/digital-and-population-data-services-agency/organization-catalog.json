@@ -32,7 +32,8 @@
     ],
     "website": "https://www.dvv.fi/",
     "logo": "https://www.google.com/s2/favicons?domain=www.dvv.fi&sz=128",
-    "description": "Digi- ja väestötietovirasto palvelee. Etsi dvv.fi-sivustolta tietoa ja ohjeita asiasi hoitamiseen tai ota yhteys asiakaspalveluun. Voit myös asioida palvelupaikassa."
+    "description": "Digi- ja väestötietovirasto palvelee. Etsi dvv.fi-sivustolta tietoa ja ohjeita asiasi hoitamiseen tai ota yhteys asiakaspalveluun. Voit myös asioida palvelupaikassa.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:16.360Z"
 }

@@ -48,7 +48,8 @@
     ],
     "website": "http://www.infonotary.com/site/",
     "logo": "https://www.google.com/s2/favicons?domain=www.infonotary.com&sz=128",
-    "description": "Please wait while we check if you are a Human"
+    "description": "Please wait while we check if you are a Human",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:03.539Z"
 }

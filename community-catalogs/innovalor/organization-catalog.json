@@ -10,6 +10,8 @@
     "logo": "https://www.google.com/s2/favicons?domain=innovalor.nl&sz=128",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "InnoValor Advies is an independent consultancy that helps organizations realize value from digital innovation through research-based advisory. It works across domains such as data-driven innovation, digital identity, wallets, standards, and public sector transformation."
-  }
+    "description": "InnoValor Advies is an independent consultancy that helps organizations realize value from digital innovation through research-based advisory. It works across domains such as data-driven innovation, digital identity, wallets, standards, and public sector transformation.",
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-04-02T13:19:49.000Z"
 }

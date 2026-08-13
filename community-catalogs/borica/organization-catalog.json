@@ -60,7 +60,8 @@
     ],
     "website": "http://www.b-trust.org/en/",
     "logo": "https://www.b-trust.bg/btrust_webroot/OG_image_btrust.jpg",
-    "description": "BORICA is listed as a Qualified Trust Service Provider (QTSP) on the EU eIDAS Trust List for Bulgaria. It provides digital trust services via b-trust.org."
+    "description": "BORICA is a Qualified Trust Service Provider on the EU eIDAS Trust List for Bulgaria.",
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-06T08:59:03.538Z"
 }
