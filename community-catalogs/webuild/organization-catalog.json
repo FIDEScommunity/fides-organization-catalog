@@ -1,0 +1,23 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:webuild",
+    "name": "WE BUILD Consortium",
+    "legalName": "WE BUILD Consortium",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://www.webuildconsortium.eu/",
+    "logo": "https://github.com/webuild-consortium.png",
+    "country": "EU",
+    "description": "EU-funded Large Scale Pilot for the European Digital Identity Wallet and European Business Wallet. More than 200 organisations across 28 countries piloting business, supply-chain and payments use cases.",
+    "tags": [
+      "webuild",
+      "eudi",
+      "european-business-wallet",
+      "large-scale-pilot"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T16:00:00Z"
+}
