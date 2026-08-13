@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-13T19:33:12+00:00",
+    "generatedAt": "2026-08-13T19:49:57+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -247,10 +247,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-11T21:03:17+00:00"
+                "lastUpdated": "2026-08-13T19:33:20+00:00"
             },
-            "publishedAt": "2026-08-11 21:03:17",
-            "updatedAt": "2026-08-11 21:03:17"
+            "publishedAt": "2026-08-13 19:33:20",
+            "updatedAt": "2026-08-13 19:33:20"
         },
         {
             "itemId": "org:credenco",
@@ -291,7 +291,7 @@
                         "finance"
                     ],
                     "legalName": "Davinci Consulting B.V.",
-                    "description": "Davinci Conclusion helpt organisaties en sectoren om eIDAS, wallets en digitale vertrouwensdiensten te vertalen naar werkende ketensamenwerkingen, sectorinitiatieven en datadeeloplossingen.",
+                    "description": "Davinci Conclusion helps organisations turn eIDAS, wallets and digital trust services into working collaborations, sector initiatives and data-sharing solutions.",
                     "logo": "https://davinci-conclusion.nl/app/uploads/sites/2/2024/06/davinci-logo-2023-rgb.png",
                     "country": "NL",
                     "certifications": [
@@ -307,10 +307,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-07T13:13:27+00:00"
+                "lastUpdated": "2026-08-13T19:33:40+00:00"
             },
-            "publishedAt": "2026-08-07 13:13:27",
-            "updatedAt": "2026-08-07 13:13:27"
+            "publishedAt": "2026-08-13 19:33:40",
+            "updatedAt": "2026-08-13 19:33:40"
         },
         {
             "itemId": "org:digidentity",
@@ -376,8 +376,8 @@
                         "digital"
                     ],
                     "legalName": "Doccle NL B.V.",
-                    "description": "Met Doccle verstuur je digitale post en deel je veilig je data — volledig gesynchroniseerd met je Mijn-omgeving, andere kanalen en o.a. de BE berichtenbox. Minder risico op datalekken en phishing.",
-                    "logo": "https://brand.doccle.be/logo",
+                    "description": "Doccle sends digital post and shares data securely, synced with your portal, other channels and the Belgian government mailbox.",
+                    "logo": "https://brand.doccle.be/logos/doccle-logo-pill.png",
                     "country": "NL",
                     "certifications": [
                         {
@@ -405,10 +405,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-03T14:19:32+00:00"
+                "lastUpdated": "2026-08-13T19:33:34+00:00"
             },
-            "publishedAt": "2026-08-03 14:19:32",
-            "updatedAt": "2026-08-03 14:19:32"
+            "publishedAt": "2026-08-13 19:33:34",
+            "updatedAt": "2026-08-13 19:33:34"
         },
         {
             "itemId": "org:dppskop-digital-product-passport",
@@ -429,15 +429,15 @@
                     "country": "TR",
                     "ecosystemRoleCodes": [
                         "system_integrator",
-                        "conformity_scheme_owner"
+                        "software_vendor"
                     ],
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-06T10:02:39+00:00"
+                "lastUpdated": "2026-08-13T19:33:28+00:00"
             },
-            "publishedAt": "2026-08-06 10:02:39",
-            "updatedAt": "2026-08-06 10:02:39"
+            "publishedAt": "2026-08-13 19:33:28",
+            "updatedAt": "2026-08-13 19:33:28"
         },
         {
             "itemId": "org:espuni",
@@ -985,13 +985,16 @@
                         "lei": "8156007B2A5194A30603",
                         "did": "did:web:ia.reeco.eco"
                     },
+                    "ecosystemRoleCodes": [
+                        "issuer"
+                    ],
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-07T06:36:40+00:00"
+                "lastUpdated": "2026-08-13T19:33:31+00:00"
             },
-            "publishedAt": "2026-08-07 06:36:40",
-            "updatedAt": "2026-08-07 06:36:40"
+            "publishedAt": "2026-08-13 19:33:31",
+            "updatedAt": "2026-08-13 19:33:31"
         },
         {
             "itemId": "org:sapio-gmbh",
@@ -1047,21 +1050,16 @@
                         "vat_number": "5730195611"
                     },
                     "ecosystemRoleCodes": [
-                        "personal_wallet_provider",
-                        "business_wallet_provider",
-                        "vc_type_authority",
-                        "issuer",
                         "idv_provider",
-                        "software_vendor",
-                        "trust_infrastructure_provider"
+                        "software_vendor"
                     ],
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-11T20:20:33+00:00"
+                "lastUpdated": "2026-08-13T19:33:24+00:00"
             },
-            "publishedAt": "2026-08-11 20:20:33",
-            "updatedAt": "2026-08-11 20:20:33"
+            "publishedAt": "2026-08-13 19:33:24",
+            "updatedAt": "2026-08-13 19:33:24"
         },
         {
             "itemId": "org:sphereon",
