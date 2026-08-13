@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-12T21:02:17+00:00",
+    "generatedAt": "2026-08-13T19:23:41+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -209,7 +209,7 @@
                         "public_sector"
                     ],
                     "legalName": "Bundesanzeiger Verlag GmbH",
-                    "description": "Bundesanzeiger Verlag GmbH operates Germany’s official company register portal (Unternehmensregister), Federal Gazette, Transparency Register and LEIReg, providing statutory corporate and legal disc",
+                    "description": "Bundesanzeiger Verlag operates Germany’s official company register (Unternehmensregister), Federal Gazette, Transparency Register and LEIReg.",
                     "logo": "https://www.bundesanzeiger-verlag.de/_assets/61f58f9706b026d4837fb0793fcce0e6/img/logo/logo_bundesanzeiger_verlag.svg",
                     "country": "DE",
                     "ecosystemRoleCodes": [
@@ -218,10 +218,10 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-06T06:41:55+00:00"
+                "lastUpdated": "2026-08-13T19:23:41+00:00"
             },
-            "publishedAt": "2026-08-06 06:41:55",
-            "updatedAt": "2026-08-06 06:41:55"
+            "publishedAt": "2026-08-13 19:23:41",
+            "updatedAt": "2026-08-13 19:23:41"
         },
         {
             "itemId": "org:city-of-vancouver",
