@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-11T21:03:18+00:00",
+    "generatedAt": "2026-08-12T21:02:17+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -626,17 +626,21 @@
                     "sectors": [
                         "digital"
                     ],
+                    "legalName": "iLabs Technologies b.v.",
                     "description": "iLabs Technologies is a mission-focused company offering a wide range of research and development through disruptive innovation, standardization and assurance to build a Trustworthy Internet of Everyt",
                     "website": "https://www.ilabs.ai/",
                     "logo": "https://www.google.com/s2/favicons?domain=ilabs.ai&sz=128",
                     "country": "NL",
+                    "ecosystemRoleCodes": [
+                        "interop_testbed_operator"
+                    ],
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-02T10:39:19+00:00"
+                "lastUpdated": "2026-08-12T21:02:17+00:00"
             },
-            "publishedAt": "2026-07-02 10:39:19",
-            "updatedAt": "2026-07-02 10:39:19"
+            "publishedAt": "2026-08-12 21:02:17",
+            "updatedAt": "2026-08-12 21:02:17"
         },
         {
             "itemId": "org:impierce",
