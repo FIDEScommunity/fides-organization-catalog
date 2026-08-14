@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-14T12:48:24+00:00",
+    "generatedAt": "2026-08-14T20:52:33+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -194,6 +194,37 @@
             },
             "publishedAt": "2026-07-16 12:22:08",
             "updatedAt": "2026-07-16 12:22:08"
+        },
+        {
+            "itemId": "org:bcgov",
+            "slug": "bcgov",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:bcgov",
+                    "name": "Government of British Columbia",
+                    "sectors": [
+                        "public_sector"
+                    ],
+                    "description": "Government of British Columbia; public services and digital credentials, including the BC Wallet.",
+                    "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256",
+                    "country": "CA",
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider",
+                        "vc_type_authority",
+                        "issuer",
+                        "relying_party",
+                        "business_registry"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-14T20:52:33+00:00"
+            },
+            "publishedAt": "2026-08-14 20:52:33",
+            "updatedAt": "2026-08-14 20:52:33"
         },
         {
             "itemId": "org:bundesanzeiger-verlag",
