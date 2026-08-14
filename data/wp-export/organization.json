@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-13T19:49:57+00:00",
+    "generatedAt": "2026-08-14T12:48:24+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1226,6 +1226,31 @@
             },
             "publishedAt": "2026-07-02 09:53:06",
             "updatedAt": "2026-07-02 09:53:06"
+        },
+        {
+            "itemId": "org:tech5",
+            "slug": "tech5",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:tech5",
+                    "name": "TECH5",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "TECH5 SA",
+                    "description": "TECH5 gives governments the rails for decentralized Digital Public Infrastructure-DPI: biometric digital ID, wallets and trust frameworks that work offline — already national-scale in three countries.",
+                    "logo": "https://www.biometricsinstitute.org/wp-content/uploads/TECH5-NEW-WEB-120123.png",
+                    "country": "CH",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-14T12:48:24+00:00"
+            },
+            "publishedAt": "2026-08-14 12:48:24",
+            "updatedAt": "2026-08-14 12:48:24"
         },
         {
             "itemId": "org:trusttech",
