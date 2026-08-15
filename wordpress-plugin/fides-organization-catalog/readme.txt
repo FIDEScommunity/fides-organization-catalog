@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.11.3
+Stable tag: 1.13.2
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -23,7 +23,43 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 
 **Catalog shortcode:** `[fides_organization_catalog]`
 
+**Homepage showcase shortcode:** `[fides_organization_showcase]`
+
+Renders a server-side carousel of organizations connected to documented use
+cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
+
 == Changelog ==
+
+= 1.13.2 =
+* Clarify the homepage showcase CTA copy, say “mapped in the FIDES Explorer”,
+  and keep mobile KPIs on one compact line.
+
+= 1.13.1 =
+* Exclude FIDES Labs from the rotating homepage organization showcase while
+  retaining it in the full catalog and catalog statistics.
+
+= 1.13.0 =
+* Add a WordPress setting to show or hide the “Is this your organisation?”
+  action at the bottom of Community organization modals.
+* Take ownership of `[fides_organization_showcase]`, including its server-side
+  data loading, daily rotation, responsive styling and carousel behavior.
+
+= 1.12.3 =
+* Present the Pro Plan action as a quiet text link instead of a prominent
+  full-width modal button.
+
+= 1.12.2 =
+* Refer to the paid offering as a “Pro Plan” in the Community modal action.
+
+= 1.12.1 =
+* Rename the Community modal action to “Manage your profile with FIDES Pro” so
+  it describes the service without implying FIDES endorsement or verification.
+* Keep the internal Plans journey in the current browser window.
+
+= 1.12.0 =
+* Add a contextual “Get an official profile” action to Community organization
+  modals. The action passes organization context to the FIDES Plans page
+  without presenting the existing update form as a claim workflow.
 
 = 1.11.3 =
 * Mobile filters: keep the drawer open when expanding groups or selecting options; keep body scroll lock in sync (shared FidesCatalogUI.createMobileFiltersController from tiles ≥ 1.8.28).

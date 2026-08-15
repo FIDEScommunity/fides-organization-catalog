@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.11.3
+ * Version: 1.13.2
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,9 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.11.3');
+define('FIDES_ORG_CATALOG_VERSION', '1.13.2');
+define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
+define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
 
 /** @var string Option group for Settings → FIDES Org Catalog */
 const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
@@ -19,9 +21,11 @@ require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-cata
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-media-normalizer.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-submission-adapter.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-submission-forms.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-showcase.php';
 Fides_Organization_Catalog_SSR::bootstrap();
 Fides_Organization_Catalog_Submission_Adapter::bootstrap();
 Fides_Organization_Catalog_Submission_Forms::bootstrap();
+Fides_Organization_Showcase::bootstrap();
 
 /**
  * Sanitize optional URL: empty string allowed (means “use default behavior”).
@@ -111,6 +115,18 @@ class Fides_Organization_Catalog {
             'default'           => '',
             'sanitize_callback' => 'fides_org_catalog_sanitize_optional_url',
         ]);
+        register_setting(FIDES_ORG_CATALOG_SETTINGS_GROUP, 'fides_org_catalog_show_official_profile_cta', [
+            'type'              => 'boolean',
+            'default'           => true,
+            'sanitize_callback' => 'rest_sanitize_boolean',
+        ]);
+    }
+
+    private function official_profile_cta_enabled() {
+        $enabled = rest_sanitize_boolean(
+            get_option('fides_org_catalog_show_official_profile_cta', true)
+        );
+        return (bool) apply_filters('fides_org_catalog_show_official_profile_cta', $enabled);
     }
 
     public function render_settings_page() {
@@ -207,6 +223,21 @@ class Fides_Organization_Catalog {
                                    value="<?php echo esc_attr(get_option('fides_org_catalog_update_form_url', '')); ?>"
                                    placeholder="<?php echo esc_attr(home_url(self::DEFAULT_UPDATE_FORM_PATH)); ?>">
                             <p class="description"><?php echo esc_html__('Page with [fides_organization_update_form]. Logged-in users see a “Suggest an update” icon in the organization modal linking here with ?org= pre-filled.', 'fides-organization-catalog'); ?></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><?php echo esc_html__('Community profile action', 'fides-organization-catalog'); ?></th>
+                        <td>
+                            <input type="hidden" name="fides_org_catalog_show_official_profile_cta" value="0">
+                            <label for="fides_org_catalog_show_official_profile_cta">
+                                <input type="checkbox" id="fides_org_catalog_show_official_profile_cta"
+                                       name="fides_org_catalog_show_official_profile_cta" value="1"
+                                       <?php checked($this->official_profile_cta_enabled()); ?>>
+                                <?php echo esc_html__('Show “Is this your organisation?” at the bottom of Community organization modals', 'fides-organization-catalog'); ?>
+                            </label>
+                            <p class="description">
+                                <?php echo esc_html__('Links visitors to the Pro Plan page where they can manage their organization profile.', 'fides-organization-catalog'); ?>
+                            </p>
                         </td>
                     </tr>
                 </table>
@@ -462,6 +493,10 @@ class Fides_Organization_Catalog {
             'bluePagesProfileBaseUrl'   => $bp_profile_base,
             'ratingsApiBase'            => rest_url('fides-catalog/v1/ratings'),
             'updateFormUrl'             => $update_form_url,
+            'plansUrl'                  => class_exists('Fides_Catalog_Org_Tier')
+                ? Fides_Catalog_Org_Tier::plans_url()
+                : home_url('/plans/'),
+            'showOfficialProfileCta'    => $this->official_profile_cta_enabled(),
             'isLoggedIn'                => is_user_logged_in(),
             'editAccess'                => class_exists('Fides_Catalog_Org_Tier')
                 ? Fides_Catalog_Org_Tier::edit_access_for_user(get_current_user_id())

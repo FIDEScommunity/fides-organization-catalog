@@ -325,6 +325,8 @@
     bluePagesProfileBaseUrl: '',
     ratingsApiBase: '',
     updateFormUrl: '',
+    plansUrl: 'https://fides.community/plans/',
+    showOfficialProfileCta: true,
     isLoggedIn: false,
     editAccess: { isLoggedIn: false, isAdmin: false, ownedOrgIds: [], proOrgIds: [] },
     tierUiEnabled: false,
@@ -392,6 +394,40 @@
     const href = organizationUpdateFormUrl(org?.id);
     if (!href) return '';
     return `<a href="${escapeHtml(href)}" class="fides-modal-copy-link fides-modal-edit-link" aria-label="Suggest an update" title="Suggest an update">${icons.pencil}</a>`;
+  }
+
+  function officialProfileUrl(orgId) {
+    syncCatalogConfig();
+    const base = String(config.plansUrl || '').trim();
+    if (!base || !orgId) return '';
+    try {
+      const url = new URL(base, window.location.origin);
+      url.searchParams.set('org', orgId);
+      url.searchParams.set('intent', 'official-profile');
+      return url.toString();
+    } catch {
+      return '';
+    }
+  }
+
+  function renderOrganizationOfficialProfileCta(org) {
+    syncCatalogConfig();
+    if (!config.showOfficialProfileCta) return '';
+    if (!tierUiEnabled() || !orgCatalogTierIsCommunity(org)) return '';
+    const href = officialProfileUrl(org?.id);
+    if (!href) return '';
+    return `
+      <div class="fides-modal-footer fides-org-official-profile-cta">
+        <div class="fides-org-official-profile-cta__copy">
+          <strong>Is this your organisation?</strong>
+          <span>Manage your catalog presence and show where your organisation is active.</span>
+        </div>
+        <a href="${escapeHtml(href)}" class="fides-org-official-profile-cta__link"
+           data-matomo-name="Manage organization profile with a Pro Plan">
+          Manage your profile with a Pro Plan <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    `;
   }
 
   function buildRatingsEndpoint(path, params) {
@@ -1777,6 +1813,7 @@
             </div>` : ''}
             ${renderModalLastUpdatedHtml(org)}
           </div>
+          ${renderOrganizationOfficialProfileCta(org)}
           ${renderOrganizationModalFooter(org, isCommunity)}
         </div>
       </div>

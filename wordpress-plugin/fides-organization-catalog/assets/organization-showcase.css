@@ -1,0 +1,485 @@
+.fides-org-showcase {
+  --fides-org-showcase-accent: #0a6ef3;
+  --fides-org-showcase-text: #0f1f3d;
+  --fides-org-showcase-muted: #475569;
+  --fides-org-showcase-border: rgba(15, 31, 61, 0.14);
+  --fides-org-showcase-surface: #fff;
+  --fides-org-showcase-surface-soft: #f7faff;
+  --fides-org-showcase-surface-hover: #f2f7ff;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  color: var(--fides-org-showcase-text);
+  font-family: inherit;
+}
+
+.fides-org-showcase *,
+.fides-org-showcase *::before,
+.fides-org-showcase *::after {
+  box-sizing: border-box;
+}
+
+.fides-org-showcase__toolbar {
+  display: grid;
+  min-height: 44px;
+  margin-bottom: 0.75rem;
+  padding: 0.55rem 0.75rem;
+  grid-template-columns: max-content max-content minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.9rem;
+  border: 1px solid rgba(10, 110, 243, 0.2);
+  border-radius: 10px;
+  background: var(--fides-org-showcase-surface);
+}
+
+.fides-org-showcase__metric {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.fides-org-showcase__metric strong {
+  display: inline-block;
+  width: var(--fides-count-width, auto);
+  color: #0858c4;
+  font-size: 1.35rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  line-height: 1;
+  text-align: right;
+}
+
+.fides-org-showcase__metric-label {
+  color: var(--fides-org-showcase-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.fides-org-showcase__metric-label--short {
+  display: none;
+}
+
+.fides-org-showcase__metric--official {
+  position: relative;
+  padding-left: 2.4rem;
+  border-left: 1px solid var(--fides-org-showcase-border);
+  color: #6d28d9;
+}
+
+.fides-org-showcase__metric--official svg {
+  position: absolute;
+  top: 50%;
+  left: 0.9rem;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+}
+
+.fides-org-showcase__metric--official strong,
+.fides-org-showcase__metric--official .fides-org-showcase__metric-label {
+  color: #6d28d9;
+}
+
+.fides-org-showcase__toolbar-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: baseline;
+  justify-self: end;
+  gap: 0.35rem;
+  color: var(--fides-org-showcase-accent) !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.fides-org-showcase__toolbar-link:hover,
+.fides-org-showcase__toolbar-link:focus-visible {
+  text-decoration: underline !important;
+  text-underline-offset: 0.2em;
+}
+
+.fides-org-showcase__carousel {
+  position: relative;
+  padding: 0 1.8rem 1.55rem;
+}
+
+.fides-org-showcase__viewport {
+  width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.fides-org-showcase__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.fides-org-showcase__viewport:focus-visible {
+  border-radius: 12px;
+  outline: 3px solid rgba(10, 110, 243, 0.22);
+  outline-offset: 3px;
+}
+
+.fides-org-showcase__track {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.fides-org-showcase__card {
+  display: flex;
+  min-width: calc((100% - 3rem) / 4);
+  min-height: 200px;
+  padding: 0.75rem;
+  flex: 0 0 calc((100% - 3rem) / 4);
+  flex-direction: column;
+  border: 1px solid rgba(10, 110, 243, 0.38);
+  border-radius: 12px;
+  background: var(--fides-org-showcase-surface);
+  box-shadow: 0 1px 3px rgba(15, 31, 61, 0.08);
+  color: var(--fides-org-showcase-text) !important;
+  scroll-snap-align: start;
+  text-decoration: none !important;
+  transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.fides-org-showcase__card:hover {
+  border-color: var(--fides-org-showcase-accent);
+  background: var(--fides-org-showcase-surface-hover);
+  box-shadow: inset 0 0 0 1px rgba(10, 110, 243, 0.42), 0 6px 16px rgba(15, 31, 61, 0.1);
+}
+
+.fides-org-showcase__card:focus-visible {
+  border-color: var(--fides-org-showcase-accent);
+  background: var(--fides-org-showcase-surface-hover);
+  box-shadow: inset 0 0 0 2px var(--fides-org-showcase-accent), 0 6px 16px rgba(15, 31, 61, 0.1);
+  outline: none;
+}
+
+.fides-org-showcase__header {
+  display: block;
+  min-width: 0;
+}
+
+.fides-org-showcase__identity {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  flex: 1 1 auto;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.fides-org-showcase__logo {
+  display: flex;
+  width: 100%;
+  height: 58px;
+  margin: 0.35rem 0 0.45rem;
+  flex: 0 0 58px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fides-org-showcase__logo img {
+  width: auto;
+  max-width: 120px;
+  height: auto;
+  max-height: 58px;
+  object-fit: contain;
+}
+
+.fides-org-showcase__title-row {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.25em;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.fides-org-showcase__name {
+  display: -webkit-box;
+  min-width: 0;
+  overflow: hidden;
+  flex: 1 1 auto;
+  color: var(--fides-org-showcase-text);
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.25;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+}
+
+.fides-org-showcase__official-icon {
+  display: inline-flex;
+  width: 17px;
+  height: 17px;
+  margin-top: 0.05rem;
+  flex: 0 0 17px;
+  align-items: center;
+  justify-content: center;
+  color: #6d28d9;
+  cursor: help;
+  order: 1;
+}
+
+.fides-org-showcase__official-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.fides-org-showcase__country {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+}
+
+.fides-org-showcase__country img {
+  width: 18px;
+  height: 13px;
+  flex: 0 0 18px;
+  border: 1px solid rgba(15, 31, 61, 0.14);
+  border-radius: 2px;
+  background: #fff;
+  object-fit: cover;
+}
+
+.fides-org-showcase__use-cases {
+  display: flex;
+  min-height: 2.7em;
+  margin-top: auto;
+  padding-top: 0.65rem;
+  align-items: center;
+  border-top: 1px solid rgba(15, 31, 61, 0.09);
+  color: var(--fides-org-showcase-muted);
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+
+.fides-org-showcase__roles {
+  display: flex;
+  min-width: 0;
+  min-height: 20px;
+  margin-top: 0.4rem;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+}
+
+.fides-org-showcase__roles > span {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0.2rem 0.35rem;
+  flex: 0 1 auto;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 0.58rem;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fides-org-showcase__roles > .fides-org-showcase__role-more {
+  flex: 0 0 auto;
+  border: 1px solid rgba(10, 110, 243, 0.22);
+  background: rgba(10, 110, 243, 0.06);
+  color: #0858c4;
+  font-weight: 700;
+}
+
+.fides-org-showcase__control {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 1.5rem);
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(10, 110, 243, 0.18);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(15, 31, 61, 0.08);
+  color: var(--fides-org-showcase-accent);
+  cursor: pointer;
+}
+
+.fides-org-showcase__control.is-previous {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.fides-org-showcase__control.is-next {
+  right: 0;
+  transform: translateX(50%);
+}
+
+.fides-org-showcase__control:hover,
+.fides-org-showcase__control:focus-visible {
+  border-color: var(--fides-org-showcase-accent);
+  background: rgba(10, 110, 243, 0.06);
+  outline: none;
+}
+
+.fides-org-showcase__control:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.fides-org-showcase__position {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: var(--fides-org-showcase-muted);
+  font-size: 0.68rem;
+  line-height: 1;
+  transform: translateX(-50%);
+}
+
+.fides-org-showcase__profile-cta {
+  display: grid;
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  border: 1px solid rgba(10, 110, 243, 0.18);
+  border-radius: 12px;
+  background: var(--fides-org-showcase-surface-soft);
+}
+
+.fides-org-showcase__profile-cta > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.fides-org-showcase__profile-cta strong {
+  color: var(--fides-org-showcase-text);
+  font-size: 0.94rem;
+  line-height: 1.3;
+}
+
+.fides-org-showcase__profile-cta > div span {
+  color: var(--fides-org-showcase-muted);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.fides-org-showcase__profile-cta > a {
+  display: inline-flex;
+  min-width: 210px;
+  padding: 0.65rem 0.9rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid var(--fides-org-showcase-accent);
+  border-radius: 8px;
+  color: var(--fides-org-showcase-accent) !important;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.fides-org-showcase__profile-cta > a:hover,
+.fides-org-showcase__profile-cta > a:focus-visible {
+  background: var(--fides-org-showcase-accent);
+  color: #fff !important;
+  outline: none;
+}
+
+@media (max-width: 1100px) {
+  .fides-org-showcase__card {
+    min-width: calc((100% - 2rem) / 3);
+    flex-basis: calc((100% - 2rem) / 3);
+  }
+}
+
+@media (max-width: 900px) {
+  .fides-org-showcase__toolbar {
+    min-height: 0;
+    align-content: center;
+    row-gap: 0.45rem;
+  }
+
+  .fides-org-showcase__toolbar-link {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .fides-org-showcase__carousel {
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+  }
+
+  .fides-org-showcase__card {
+    min-width: calc((100% - 1rem) / 2);
+    flex-basis: calc((100% - 1rem) / 2);
+  }
+
+  .fides-org-showcase__profile-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .fides-org-showcase__profile-cta > a {
+    width: 100%;
+    min-width: 0;
+    margin-top: 0.45rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .fides-org-showcase__toolbar {
+    grid-template-columns: max-content max-content;
+    gap: 0.45rem 0.75rem;
+  }
+
+  .fides-org-showcase__metric-label--full {
+    display: none;
+  }
+
+  .fides-org-showcase__metric-label--short {
+    display: inline;
+  }
+
+  .fides-org-showcase__metric--official {
+    padding-left: 1.9rem;
+  }
+
+  .fides-org-showcase__metric--official svg {
+    left: 0.55rem;
+  }
+
+  .fides-org-showcase__toolbar-link {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .fides-org-showcase__card {
+    min-width: 82%;
+    flex-basis: 82%;
+  }
+
+  .fides-org-showcase__control {
+    top: calc(50% - 1.35rem);
+    width: 30px;
+    height: 30px;
+  }
+}
