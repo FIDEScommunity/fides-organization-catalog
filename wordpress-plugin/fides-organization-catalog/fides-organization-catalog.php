@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.13.2
+ * Version: 1.14.0
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.13.2');
+define('FIDES_ORG_CATALOG_VERSION', '1.14.0');
 define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
 define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
 
@@ -507,6 +507,8 @@ class Fides_Organization_Catalog {
                     'proOrgIds'   => [],
                 ],
             'tierUiEnabled'             => function_exists('fides_catalog_tier_ui_enabled') && fides_catalog_tier_ui_enabled(),
+            'askFidesAvailable'         => has_action('fides_assistant_enqueue_headless') !== false,
+            'askFidesPlaceholder'       => __('Ask anything about organizations…', 'fides-organization-catalog'),
         ];
 
         return array_merge($base, $overrides);
@@ -550,6 +552,9 @@ class Fides_Organization_Catalog {
 
         wp_enqueue_style('fides-organization-catalog');
         wp_enqueue_style('fides-organization-catalog-ui-lib');
+        if (has_action('fides_assistant_enqueue_headless') !== false) {
+            do_action('fides_assistant_enqueue_headless');
+        }
         wp_enqueue_script('fides-organization-catalog');
 
         $bp_shortcode = trim((string) $atts['blue_pages_profile_base_url']);

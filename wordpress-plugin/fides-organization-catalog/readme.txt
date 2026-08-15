@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.13.2
+Stable tag: 1.14.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,12 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.0 =
+* Add an “or Ask FIDES” button beside organization search when FIDES Assistant
+  0.6.1 or newer is active.
+* Reuse the headless assistant modal, prefill the current search without
+  submitting it, and show an organization-specific chat placeholder.
 
 = 1.13.2 =
 * Clarify the homepage showcase CTA copy, say “mapped in the FIDES Explorer”,

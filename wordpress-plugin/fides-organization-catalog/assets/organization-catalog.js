@@ -330,6 +330,8 @@
     isLoggedIn: false,
     editAccess: { isLoggedIn: false, isAdmin: false, ownedOrgIds: [], proOrgIds: [] },
     tierUiEnabled: false,
+    askFidesAvailable: false,
+    askFidesPlaceholder: 'Ask anything about organizations…',
   };
   const config = Object.assign({}, configDefaults, window.fidesOrganizationCatalog || {});
 
@@ -2110,12 +2112,17 @@
           <section class="fides-main-content">
             <div class="fides-results-bar">
               ${settings.showSearch ? `
-                <div class="fides-topbar-search">
-                  <div class="fides-search-wrapper">
-                    <span class="fides-search-icon">${icons.search}</span>
-                    <input id="fides-search-input" class="fides-search-input" type="text" placeholder="Search organizations..." value="${escapeHtml(filters.search)}" autocomplete="off">
-                    <button class="fides-search-clear ${filters.search ? '' : 'hidden'}" id="fides-search-clear" type="button" aria-label="Clear search">${icons.xSmall}</button>
+                <div class="fides-search-actions">
+                  <div class="fides-topbar-search">
+                    <div class="fides-search-wrapper">
+                      <span class="fides-search-icon">${icons.search}</span>
+                      <input id="fides-search-input" class="fides-search-input" type="text" placeholder="Search organizations..." value="${escapeHtml(filters.search)}" autocomplete="off">
+                      <button class="fides-search-clear ${filters.search ? '' : 'hidden'}" id="fides-search-clear" type="button" aria-label="Clear search">${icons.xSmall}</button>
+                    </div>
                   </div>
+                  ${config.askFidesAvailable
+                    ? '<div class="fides-ask-fides-option"><span class="fides-ask-fides-separator">or</span><button class="fides-ask-fides-trigger" id="fides-ask-fides-trigger" type="button">Ask <strong>FIDES</strong></button></div>'
+                    : ''}
                 </div>
               ` : ''}
               <div class="fides-results-bar-actions">
@@ -2255,6 +2262,7 @@
     bindLogoFallbackHandlers(root);
     const searchInput = root.querySelector('#fides-search-input');
     const searchClear = root.querySelector('#fides-search-clear');
+    const askFidesTrigger = root.querySelector('#fides-ask-fides-trigger');
     const handleSearch = debounce((e) => {
       filters.search = e.target.value || '';
       if (searchClear) searchClear.classList.toggle('hidden', !filters.search);
@@ -2262,6 +2270,15 @@
     }, 300);
     if (searchInput) searchInput.addEventListener('input', handleSearch);
     if (searchClear) searchClear.addEventListener('click', () => { filters.search = ''; if (searchInput) searchInput.value = ''; searchClear.classList.add('hidden'); renderOrgGridOnly(); });
+    if (askFidesTrigger) {
+      askFidesTrigger.addEventListener('click', () => {
+        if (!window.FidesAssistant || typeof window.FidesAssistant.open !== 'function') return;
+        window.FidesAssistant.open({
+          prefill: searchInput ? String(searchInput.value || '').trim() : filters.search,
+          placeholder: String(config.askFidesPlaceholder || 'Ask anything about organizations…'),
+        });
+      });
+    }
 
     const sortSelect = root.querySelector('#fides-sort-select');
     if (sortSelect) {
