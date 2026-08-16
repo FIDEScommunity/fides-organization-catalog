@@ -434,14 +434,44 @@
     flex-basis: calc((100% - 1rem) / 2);
   }
 
+  .fides-org-showcase__name {
+    font-size: 1rem;
+  }
+
+  .fides-org-showcase__use-cases {
+    font-size: 0.875rem;
+  }
+
+  .fides-org-showcase__roles > span {
+    font-size: 0.75rem;
+  }
+
+  .fides-org-showcase__control {
+    width: 44px;
+    height: 44px;
+  }
+
+  .fides-org-showcase__position {
+    font-size: 0.8125rem;
+  }
+
   .fides-org-showcase__profile-cta {
     grid-template-columns: 1fr;
+  }
+
+  .fides-org-showcase__profile-cta strong {
+    font-size: 1rem;
+  }
+
+  .fides-org-showcase__profile-cta > div span {
+    font-size: 0.875rem;
   }
 
   .fides-org-showcase__profile-cta > a {
     width: 100%;
     min-width: 0;
     margin-top: 0.45rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -459,6 +489,10 @@
     display: inline;
   }
 
+  .fides-org-showcase__metric-label {
+    font-size: 0.8125rem;
+  }
+
   .fides-org-showcase__metric--official {
     padding-left: 1.9rem;
   }
@@ -469,17 +503,17 @@
 
   .fides-org-showcase__toolbar-link {
     grid-column: 1 / -1;
+    font-size: 0.875rem;
     justify-self: start;
   }
 
   .fides-org-showcase__card {
     min-width: 82%;
+    min-height: 230px;
     flex-basis: 82%;
   }
 
   .fides-org-showcase__control {
-    top: calc(50% - 1.35rem);
-    width: 30px;
-    height: 30px;
+    top: calc(50% - 1.8rem);
   }
 }
