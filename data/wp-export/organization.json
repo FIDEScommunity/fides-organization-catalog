@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-14T20:52:33+00:00",
+    "generatedAt": "2026-08-16T05:25:57+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -75,7 +75,7 @@
                         "digital"
                     ],
                     "legalName": "Aqta Technologies Limited",
-                    "description": "Building signed, offline-verifiable evidence for AI decisions: open ATTESTATION-v1 spec, two open-source verifiers and a transparency log. Adjacent to wallets and VCs; not a VC issuer",
+                    "description": "Building Seal: signed, offline-verifiable evidence for AI decisions. Open ATTESTATION-v1 spec, open-source verifiers, transparency log. Complementary to verifiable credentials and digital wallets",
                     "logo": "https://aqta.ai/aqta-mark.png",
                     "country": "IE",
                     "ecosystemRoleCodes": [
@@ -85,10 +85,10 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-10T19:28:55+00:00"
+                "lastUpdated": "2026-08-16T05:25:57+00:00"
             },
-            "publishedAt": "2026-08-10 19:28:55",
-            "updatedAt": "2026-08-10 19:28:55"
+            "publishedAt": "2026-08-16 05:25:57",
+            "updatedAt": "2026-08-16 05:25:57"
         },
         {
             "itemId": "org:authbound",
