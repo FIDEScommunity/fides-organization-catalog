@@ -552,6 +552,16 @@
   let selectedOrg = null;
   let forcedModalTheme = null;
   let root;
+  let catalogLoadMeta = { showStaleNotice: false, remoteFailed: false, snapshotDate: '' };
+
+  function applyStaleCatalogNotice() {
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.mountStaleCatalogNotice !== 'function') return;
+    window.FidesCatalogUI.mountStaleCatalogNotice(root, {
+      showStaleNotice: catalogLoadMeta.showStaleNotice,
+      catalogType: 'organization',
+      snapshotDate: catalogLoadMeta.snapshotDate
+    });
+  }
   let viewMode = localStorage.getItem('fides-org-view') || 'grid';
   const LIST_BREAKPOINT = 1024;
   function effectiveView() {
@@ -2155,6 +2165,7 @@
     _lastOrgEffectiveView = effectiveView();
     bindEvents();
     getMobileFilters()?.applyAfterRender(mobileFiltersOpen);
+    applyStaleCatalogNotice();
   }
 
   function showToast(message, type = 'success') {
@@ -2461,21 +2472,40 @@
   }
 
   async function loadOrganizations() {
-    const SOURCE_TIMEOUT_MS = 3500;
-    const remote = { url: config.githubDataUrl, name: 'GitHub' };
     const localVersion = config.aggregatedDataVersion ? `?v=${encodeURIComponent(config.aggregatedDataVersion)}` : '';
-    const local = { url: `${config.pluginUrl}data/aggregated.json${localVersion}`, name: 'Local' };
-    const sources = isFidesLocalDevHost() ? [local, remote] : [remote, local];
-    for (const source of sources) {
-      if (!source.url) continue;
-      const result = await fetchJsonWithTimeout(source.url, SOURCE_TIMEOUT_MS);
-      if (result.ok) {
-        organizations = result.data.organizations || [];
-        console.log(`Loaded ${organizations.length} organizations from ${source.name}`);
-        break;
+    const localUrl = `${config.pluginUrl}data/aggregated.json${localVersion}`;
+    const ui = window.FidesCatalogUI;
+    let sourceName = '';
+
+    if (ui && typeof ui.loadCatalogAggregatedJson === 'function') {
+      const loaded = await ui.loadCatalogAggregatedJson({
+        remoteUrl: config.githubDataUrl,
+        cacheUrl: config.cacheDataUrl,
+        localUrl: localUrl
+      });
+      catalogLoadMeta.showStaleNotice = !!loaded.showStaleNotice;
+      catalogLoadMeta.remoteFailed = !!loaded.remoteFailed;
+      catalogLoadMeta.snapshotDate = loaded.snapshotDate || '';
+      if (loaded.ok && loaded.data) {
+        organizations = loaded.data.organizations || [];
+        sourceName = loaded.source === 'github' ? 'GitHub' : (loaded.source === 'cache' ? 'Cache' : 'Local');
       }
-      console.warn(`Failed to load from ${source.name}: ${result.reason}`);
+    } else {
+      const remote = { url: config.githubDataUrl, name: 'GitHub' };
+      const local = { url: localUrl, name: 'Local' };
+      const sources = isFidesLocalDevHost() ? [local, remote] : [remote, local];
+      for (const source of sources) {
+        if (!source.url) continue;
+        const result = await fetchJsonWithTimeout(source.url, 4000);
+        if (result.ok) {
+          organizations = result.data.organizations || [];
+          sourceName = source.name;
+          break;
+        }
+        console.warn(`Failed to load from ${source.name}: ${result.reason}`);
+      }
     }
+    if (sourceName) console.log(`Loaded ${organizations.length} organizations from ${sourceName}`);
     await loadUseCaseIndex();
     applySectorFromUrl();
     applyCountryFromUrl();
