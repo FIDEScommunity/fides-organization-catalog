@@ -987,12 +987,28 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
         }
 
         /**
+         * Plain-text field for catalog UI (escapeHtml on render).
+         * Decodes stored HTML entities so "&amp;" is not double-escaped in modals.
+         *
          * @param array<string, mixed> $payload Payload.
          * @param string               $key     Field key.
          * @return string
          */
         private static function optional_text(array $payload, $key) {
-            return isset($payload[ $key ]) ? trim(wp_kses_post((string) $payload[ $key ])) : '';
+            if (! isset($payload[ $key ])) {
+                return '';
+            }
+            return self::normalize_plain_textarea((string) $payload[ $key ]);
+        }
+
+        /**
+         * @param string $text Raw textarea value.
+         * @return string
+         */
+        private static function normalize_plain_textarea($text) {
+            $text = str_replace(array("\r\n", "\r"), "\n", (string) $text);
+            $text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            return trim(sanitize_textarea_field($text));
         }
 
         /**

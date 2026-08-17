@@ -192,6 +192,25 @@ final class Fides_Organization_Showcase {
     }
 
     /**
+     * Count registered WordPress accounts on this site (FIDES Explorer users).
+     */
+    private static function active_user_count(): int {
+        $cached = get_transient('fides_org_showcase_active_users');
+        if (is_numeric($cached)) {
+            return max(0, (int) $cached);
+        }
+
+        $count = 0;
+        if (function_exists('count_users')) {
+            $stats = count_users();
+            $count = isset($stats['total_users']) ? max(0, (int) $stats['total_users']) : 0;
+        }
+        $count = (int) apply_filters('fides_org_showcase_active_user_count', $count);
+        set_transient('fides_org_showcase_active_users', $count, HOUR_IN_SECONDS);
+        return max(0, $count);
+    }
+
+    /**
      * @param array<string, mixed> $atts
      */
     public static function render(array $atts = array()): string {
@@ -241,6 +260,7 @@ final class Fides_Organization_Showcase {
         $official_count = count(array_filter($organizations, static function (array $organization): bool {
             return strtolower(trim((string) ($organization['catalogTier'] ?? ''))) === 'pro';
         }));
+        $active_user_count = self::active_user_count();
         $catalog_url = trim((string) $atts['catalog_url']);
         $catalog_url = $catalog_url !== '' ? $catalog_url : self::catalog_url();
         $show_profile_cta = ! in_array(
@@ -260,8 +280,8 @@ final class Fides_Organization_Showcase {
                     <strong class="fides-org-showcase__count" data-count="<?php echo esc_attr((string) count($organizations)); ?>"
                             style="--fides-count-width:<?php echo esc_attr((string) max(1, strlen(number_format_i18n(count($organizations))))) . 'ch'; ?>"><?php echo esc_html(number_format_i18n(count($organizations))); ?></strong>
                     <span class="fides-org-showcase__metric-label">
-                        <span class="fides-org-showcase__metric-label--full"><?php esc_html_e('mapped in the FIDES Explorer', 'fides-organization-catalog'); ?></span>
-                        <span class="fides-org-showcase__metric-label--short" aria-hidden="true"><?php esc_html_e('listed', 'fides-organization-catalog'); ?></span>
+                        <span class="fides-org-showcase__metric-label--full"><?php esc_html_e('Organisations', 'fides-organization-catalog'); ?></span>
+                        <span class="fides-org-showcase__metric-label--short" aria-hidden="true"><?php esc_html_e('Orgs', 'fides-organization-catalog'); ?></span>
                     </span>
                 </div>
                 <div class="fides-org-showcase__metric fides-org-showcase__metric--official">
@@ -272,7 +292,15 @@ final class Fides_Organization_Showcase {
                             style="--fides-count-width:<?php echo esc_attr((string) max(1, strlen(number_format_i18n($official_count)))) . 'ch'; ?>"><?php echo esc_html(number_format_i18n($official_count)); ?></strong>
                     <span class="fides-org-showcase__metric-label">
                         <span class="fides-org-showcase__metric-label--full"><?php esc_html_e('Official Listings', 'fides-organization-catalog'); ?></span>
-                        <span class="fides-org-showcase__metric-label--short" aria-hidden="true"><?php esc_html_e('official', 'fides-organization-catalog'); ?></span>
+                        <span class="fides-org-showcase__metric-label--short" aria-hidden="true"><?php esc_html_e('Official', 'fides-organization-catalog'); ?></span>
+                    </span>
+                </div>
+                <div class="fides-org-showcase__metric fides-org-showcase__metric--users">
+                    <strong class="fides-org-showcase__count" data-count="<?php echo esc_attr((string) $active_user_count); ?>"
+                            style="--fides-count-width:<?php echo esc_attr((string) max(1, strlen(number_format_i18n($active_user_count)))) . 'ch'; ?>"><?php echo esc_html(number_format_i18n($active_user_count)); ?></strong>
+                    <span class="fides-org-showcase__metric-label">
+                        <span class="fides-org-showcase__metric-label--full"><?php esc_html_e('Active users in the FIDES Explorer', 'fides-organization-catalog'); ?></span>
+                        <span class="fides-org-showcase__metric-label--short" aria-hidden="true"><?php esc_html_e('Users', 'fides-organization-catalog'); ?></span>
                     </span>
                 </div>
                 <a class="fides-org-showcase__toolbar-link" href="<?php echo esc_url($catalog_url); ?>"

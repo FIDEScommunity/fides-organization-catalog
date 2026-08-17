@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.3
+Stable tag: 1.14.13
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,45 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.13 =
+* Switch only the Active users KPI to its compact label before the full text
+  starts wrapping, while retaining the longer organization and official labels.
+
+= 1.14.12 =
+* Use consistent sentence-case capitalization for compact showcase KPI labels.
+
+= 1.14.11 =
+* Always spell out Organisations in the showcase KPI bar and stack KPI labels
+  below their counts on very narrow phones.
+
+= 1.14.10 =
+* Balance the compact mobile KPI row and present the organization link as a
+  tighter, visually separated footer.
+
+= 1.14.9 =
+* Hide the full Active users label reliably on phones and prevent the compact
+  KPI row from overflowing narrow mobile viewports.
+
+= 1.14.8 =
+* Give Active users room to wrap in the showcase toolbar and keep the Explore
+  link from crowding the KPI row on mid-width layouts.
+
+= 1.14.7 =
+* Keep full KPI labels (Organisations, Official Listings, Active users…) until
+  phone widths; only use short labels below 560px.
+
+= 1.14.6 =
+* Store organization submission descriptions as plain text so ampersands are
+  not double-escaped as &amp; in the catalog modal.
+
+= 1.14.5 =
+* Capitalize Organisations, keep “in the FIDES Explorer” only on Active users,
+  and switch to compact KPI labels earlier for responsive layouts.
+
+= 1.14.4 =
+* Show “organisations in the FIDES Explorer”, add an active-users counter from
+  WordPress accounts, and keep the three KPIs compact on mobile.
 
 = 1.14.3 =
 * After GitHub fails, use a 12-hour browser cache and the WP last-known-good aggregated feed before the bundled plugin snapshot.
