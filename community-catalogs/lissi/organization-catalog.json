@@ -7,14 +7,10 @@
       "digital"
     ],
     "description": "Compliant, scalable EUDI Wallet integration for eIDAS 2. Get started today with Lissi's trusted and proven API Software.",
-    "website": "https://lissi.id",
     "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
     "country": "DE",
-    "contact": {
-      "email": "info@lissi.id"
-    },
     "fidesManifestoSupporter": false,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T09:50:42+00:00"
 }
