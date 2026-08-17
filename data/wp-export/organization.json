@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-16T05:25:57+00:00",
+    "generatedAt": "2026-08-17T12:11:57+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1159,11 +1159,10 @@
                         "digital"
                     ],
                     "description": "German company providing decentralized identity and digital twin credentials for automotive, industry, and regulated supply chains.",
-                    "website": "https://www.spherity.com",
                     "logo": "https://www.google.com/s2/favicons?domain=spherity.com&sz=128",
                     "country": "DE",
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-10T14:06:55+00:00"
             },
