@@ -27,7 +27,8 @@
       }
     ],
     "description": "Infocamere previously provided qualified trust services in Italy. The entry remains on the EU eIDAS Trust List as withdrawn/ceased; see the linked Trust List page for status.",
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "website": "http://www.agid.gov.it/qcsp-ceased"
   },
   "lastUpdated": "2026-07-06T08:59:25.761Z"
 }
