@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-17T19:10:27+00:00",
+    "generatedAt": "2026-08-18T04:56:42+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -824,6 +824,31 @@
             },
             "publishedAt": "2026-08-04 05:26:45",
             "updatedAt": "2026-08-04 05:26:45"
+        },
+        {
+            "itemId": "org:mobiera",
+            "slug": "mobiera",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:mobiera",
+                    "name": "Mobiera",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "Mobiera SAS",
+                    "description": "Develop purpose-driven digital experiences that empower our clients to stand out in an ever-expanding and dynamic digital environment.",
+                    "logo": "https://www.mobiera.com/images/logo_mobiera.svg",
+                    "country": "CO",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-18T04:56:42+00:00"
+            },
+            "publishedAt": "2026-08-18 04:56:42",
+            "updatedAt": "2026-08-18 04:56:42"
         },
         {
             "itemId": "org:mosip",
