@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.15
+Stable tag: 1.14.16
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,10 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.16 =
+* After sign-in, Back from the logged-in page reloads a stale guest catalog
+  snapshot so the like star sees the session (needs tiles ≥ 1.9.23).
 
 = 1.14.15 =
 * Sync shared catalog UI: after magic-link sign-in, Back reloads a cached
