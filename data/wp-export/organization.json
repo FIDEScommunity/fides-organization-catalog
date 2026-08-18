@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-18T04:56:42+00:00",
+    "generatedAt": "2026-08-18T14:14:54+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -615,6 +615,41 @@
             },
             "publishedAt": "2026-07-02 10:12:52",
             "updatedAt": "2026-07-02 10:12:52"
+        },
+        {
+            "itemId": "org:hypermine",
+            "slug": "hypermine",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:hypermine",
+                    "name": "Hypermine",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "Hypermine Labs UG",
+                    "description": "Hypermine’s open-source Digital Trust infrastructure secures sensitive data with privacy-first Verifiable Credentials, giving users control while ensuring data integrity for business & government",
+                    "country": "EU",
+                    "identifiers": {
+                        "business_registration_number": "HRB-311-630",
+                        "vat_number": "DE-463-758-217",
+                        "did": "did:hid:33959494"
+                    },
+                    "ecosystemRoleCodes": [
+                        "issuer",
+                        "kyb_provider",
+                        "eudi_wallet_intermediary",
+                        "trust_infrastructure_provider"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-18T14:14:54+00:00"
+            },
+            "publishedAt": "2026-08-18 14:14:54",
+            "updatedAt": "2026-08-18 14:14:54"
         },
         {
             "itemId": "org:igrant",
