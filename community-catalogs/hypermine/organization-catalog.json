@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hypermine",
+    "name": "Hypermine",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Hypermine Labs UG",
+    "description": "Hypermine’s open-source Digital Trust infrastructure secures sensitive data with privacy-first Verifiable Credentials, giving users control while ensuring data integrity for business & government",
+    "country": "EU",
+    "identifiers": {
+      "business_registration_number": "HRB-311-630",
+      "vat_number": "DE-463-758-217",
+      "did": "did:hid:33959494"
+    },
+    "ecosystemRoleCodes": [
+      "issuer",
+      "kyb_provider",
+      "eudi_wallet_intermediary",
+      "trust_infrastructure_provider"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-18T14:14:54+00:00"
+}
