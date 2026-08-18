@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.13
+Stable tag: 1.14.14
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,10 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.14 =
+* Organization modal website and contact links send provider slugs in Matomo
+  Event Name (`credenco|website|www.credenco.com`).
 
 = 1.14.13 =
 * Switch only the Active users KPI to its compact label before the full text

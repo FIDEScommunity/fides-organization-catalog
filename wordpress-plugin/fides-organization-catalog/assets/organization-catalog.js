@@ -887,6 +887,13 @@
     return href.replace(/^https?:\/\//i, '').replace(/\/$/, '');
   }
 
+  function orgSalesTrackAttrs(org, linkType) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.organizationSalesTrackAttrString === 'function') {
+      return window.FidesCatalogUI.organizationSalesTrackAttrString(org, linkType);
+    }
+    return '';
+  }
+
   /** Country + website link under the modal title (website for Official accounts only). */
   function renderOrganizationModalHeaderMeta(org) {
     const countryPart = org.country ? renderOrgCountryMeta(org) : '';
@@ -894,7 +901,7 @@
       ? (orgCatalogTierIsPro(org) ? orgWebsiteHref(org.website) : '')
       : orgWebsiteHref(org.website);
     const websitePart = websiteHref
-      ? `<a href="${escapeHtml(websiteHref)}" target="_blank" rel="noopener" class="fides-modal-provider-link fides-modal-header-website" onclick="event.stopPropagation();">${icons.externalLink} <span class="fides-url-ellipsis">${escapeHtml(orgWebsiteLabel(org.website))}</span></a>`
+      ? `<a href="${escapeHtml(websiteHref)}" target="_blank" rel="noopener" class="fides-modal-provider-link fides-modal-header-website" data-matomo-name="Organization website"${orgSalesTrackAttrs(org, 'website')} onclick="event.stopPropagation();">${icons.externalLink} <span class="fides-url-ellipsis">${escapeHtml(orgWebsiteLabel(org.website))}</span></a>`
       : '';
     const supporterPart = org.fidesManifestoSupporter === true
       ? `<span class="fides-org-footer-badge fides-org-footer-badge--manifesto fides-modal-header-meta-badge" role="img" aria-label="FIDES Supporter" title="FIDES Supporter">${icons.community}</span>`
@@ -1624,6 +1631,7 @@
         isCommunity: isCommunity,
         item: org,
         editAccess: config.editAccess,
+        salesOrg: org,
       });
     }
     return '';
@@ -2179,6 +2187,12 @@
     setTimeout(() => { toast.style.animation = 'fides-toast-out 0.3s ease forwards'; setTimeout(() => toast.remove(), 300); }, 3000);
   }
 
+  function trackOrganizationModalOpen(org) {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.trackOrganizationDetailOpen === 'function') {
+      window.FidesCatalogUI.trackOrganizationDetailOpen(org);
+    }
+  }
+
   function openModal(id) {
     selectedOrg = organizations.find((o) => o.id === id) || null;
     if (!selectedOrg) return;
@@ -2187,6 +2201,7 @@
     document.body.insertAdjacentHTML('beforeend', renderModal());
     document.body.style.overflow = 'hidden';
     bindModalEvents();
+    trackOrganizationModalOpen(selectedOrg);
     const params = new URLSearchParams(window.location.search);
     params.set('org', id);
     history.replaceState(null, '', '?' + params.toString());
@@ -2549,6 +2564,13 @@
       theme: root.dataset.theme || 'fides',
     };
     root.setAttribute('data-theme', settings.theme);
+    if (window.FidesCatalogUI && window.FidesCatalogUI.initMatomoLinkTracking) {
+      window.FidesCatalogUI.initMatomoLinkTracking({
+        category: 'Organization Catalog',
+        containerSelector: '#fides-org-catalog-root',
+        modalOverlayId: 'fides-modal-overlay'
+      });
+    }
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
       getMobileFilters()?.setOpen(false);
@@ -2574,6 +2596,7 @@
     document.body.insertAdjacentHTML('beforeend', renderModal());
     document.body.style.overflow = 'hidden';
     bindModalEvents();
+    trackOrganizationModalOpen(selectedOrg);
     return true;
   }
 
