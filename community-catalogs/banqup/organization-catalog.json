@@ -7,9 +7,29 @@
       "digital"
     ],
     "legalName": "Banqup SA",
-    "description": "The all-in-one platform designed to support start-ups and large scale business globally. Manage and simplify administrative tasks like (e)-invoicing, in a secure and simple way. From administration to",
+    "description": "Banqup is a European Qualified Trust Service Provider (QTSP) positioned to support the European Union Digital Identity / Business Wallet (EUDIW / EUBW) ecosystem, leveraging its active status on the Belgian Trusted List\n\nOur EUBW-ready offerings include:\n- QES for Remote Sealing/Signing: Fully compliant Qualified Electronic Signatures (QES) \n- QCert for QSeal: Qualified Certificates for Electronic Seals, enabling automated, cloud-based bulk sealing to legally secure outbound data, invoices, and attestations\n- QeRDS: Qualified Electronic Registered Delivery Service to traceably and securely exchange credentials\n\nPlanned & Organizational Wallet Services:\nOrganizational Wallet Provider: Acting as a business wallet provider to enable legal entities to hold, manage, and present verified corporate credentials\n\nQualified Electronic Attestation of Attributes Provider (QEAAP) (Planned): Deploying QEAAP capabilities to issue legally recognized Qualified Electronic Attestations of Attributes (QEAA):\n- IBAN Credentials: Support for the issuance of verified IBAN credentials \n- Verifier Attestations (Economic Operator): Enabling economic operators to hold and present identity data \n\nBanqup is an Active participant of the WeBuild Large Scale Pilot, driving the implementation standards for the European Business Wallet",
     "website": "https://www.banqup.com",
+    "logo": "https://integr-assets.btx.eu.banqup.com/1.0.2632/img/banqup-logo-triangle.png",
     "country": "BE",
+    "tags": [
+      "wallet",
+      "qtsp",
+      "identity"
+    ],
+    "offerings": [
+      "Business wallets",
+      "Digital signing",
+      "EUDI Wallet integration",
+      "Identity verification"
+    ],
+    "contact": {
+      "email": "hans.boone@banqup.com"
+    },
+    "identifiers": {
+      "business_registration_number": "BE 0649.860.804",
+      "vat_number": "BE 0649.860.804",
+      "lei": "5493000RZ2KSLKCYNN98"
+    },
     "certifications": [
       {
         "code": "qtsp",
@@ -40,8 +60,14 @@
         }
       }
     ],
-    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "business_wallet_provider",
+      "issuer",
+      "relying_party",
+      "eidas_trust_service_provider"
+    ],
+    "fidesManifestoSupporter": true,
     "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-07-16T12:22:08+00:00"
+  "lastUpdated": "2026-08-18T16:14:57+00:00"
 }
