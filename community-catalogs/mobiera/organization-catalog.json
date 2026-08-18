@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mobiera",
+    "name": "Mobiera",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Mobiera SAS",
+    "description": "Develop purpose-driven digital experiences that empower our clients to stand out in an ever-expanding and dynamic digital environment.",
+    "logo": "https://www.mobiera.com/images/logo_mobiera.svg",
+    "country": "CO",
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-18T04:56:42+00:00"
+}
