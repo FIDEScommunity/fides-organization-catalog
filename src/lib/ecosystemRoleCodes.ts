@@ -70,6 +70,16 @@ export function normalizeEcosystemRoleCodes(raw: unknown): OrganizationEcosystem
   return ORGANIZATION_ECOSYSTEM_ROLE_CODES.filter((code) => seen.has(code));
 }
 
+/** Trust scheme governance role → organization role code (same taxonomy, no new codes). */
+const TRUST_SCHEME_ROLE_TO_CODE: Record<string, OrganizationEcosystemRoleCode> = {
+  scheme_owner: 'conformity_scheme_owner',
+  standards_body: 'standards_development_organization',
+  accreditation_body: 'national_accreditation_body',
+  certification_body: 'certification_body',
+  registry_operator: 'trust_infrastructure_provider',
+  // supervisory_body has no counterpart in the closed organization taxonomy.
+};
+
 export function deriveEcosystemRoleCodesFromLinks(
   links: AggregatedOrganization['ecosystemRoles'] | undefined,
 ): OrganizationEcosystemRoleCode[] {
@@ -80,6 +90,13 @@ export function deriveEcosystemRoleCodesFromLinks(
   if (links.credentialTypes?.length) out.push('vc_type_authority');
   if (links.issuers?.length) out.push('issuer');
   if (links.relyingParties?.length) out.push('relying_party');
+  for (const scheme of links.trustSchemes || []) {
+    const code = TRUST_SCHEME_ROLE_TO_CODE[scheme.role];
+    if (code && !out.includes(code)) out.push(code);
+  }
+  if (links.trustRegistries?.length && !out.includes('trust_infrastructure_provider')) {
+    out.push('trust_infrastructure_provider');
+  }
   return out;
 }
 

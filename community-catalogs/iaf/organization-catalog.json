@@ -1,0 +1,29 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:iaf",
+    "name": "IAF",
+    "legalName": "International Accreditation Forum, Inc.",
+    "sectors": [
+      "trade"
+    ],
+    "description": "World association of accreditation bodies and other bodies interested in conformity assessment. The IAF Multilateral Recognition Arrangement (MLA) makes accredited certificates, such as ISO/IEC 27001 certifications, recognised across borders, and the IAF operates IAF CertSearch as the global database of accredited certificates.",
+    "website": "https://iaf.nu/",
+    "logo": "https://www.google.com/s2/favicons?domain=iaf.nu&sz=128",
+    "country": "US",
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "conformity_scheme_owner",
+      "industry_association",
+      "trust_infrastructure_provider"
+    ],
+    "tags": [
+      "accreditation",
+      "iaf mla",
+      "conformity assessment",
+      "trust scheme"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T17:54:58.924Z"
+}

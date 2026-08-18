@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fairtrade-international",
+    "name": "Fairtrade International",
+    "legalName": "Fairtrade Labelling Organizations International e.V.",
+    "sectors": [
+      "agriculture",
+      "food",
+      "trade"
+    ],
+    "description": "Association that owns and develops the Fairtrade Standards and the Fairtrade certification mark for producers and traders. Fairtrade International sets the scheme rules; third-party certification against those standards is carried out by the independent certification body FLOCERT.",
+    "website": "https://www.fairtrade.net/",
+    "logo": "https://www.google.com/s2/favicons?domain=fairtrade.net&sz=128",
+    "country": "DE",
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "conformity_scheme_owner",
+      "standards_development_organization",
+      "trust_infrastructure_provider"
+    ],
+    "tags": [
+      "certification scheme",
+      "sustainability",
+      "trust scheme"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T17:54:58.924Z"
+}

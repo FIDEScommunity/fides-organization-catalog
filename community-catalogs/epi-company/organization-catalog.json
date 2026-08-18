@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:epi-company",
+    "name": "EPI Company",
+    "legalName": "European Payments Initiative Company SE",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Company owned by a group of European banks and payment service providers that governs and operates Wero, a European instant account-to-account payment scheme. Participation in Wero is governed by the scheme rulebook; membership information is not published as a public register.",
+    "website": "https://epicompany.eu/",
+    "logo": "https://www.google.com/s2/favicons?domain=wero-wallet.eu&sz=128",
+    "country": "BE",
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "trust_infrastructure_provider",
+      "conformity_scheme_owner"
+    ],
+    "tags": [
+      "payments",
+      "wero",
+      "payment scheme"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T17:54:58.924Z"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aamva",
+    "name": "AAMVA",
+    "legalName": "American Association of Motor Vehicle Administrators",
+    "sectors": [
+      "mobility",
+      "public_sector"
+    ],
+    "description": "Non-profit association of motor vehicle and law enforcement agencies in the United States and Canada. AAMVA governs the mobile driver's licence (mDL) implementation guidelines built on ISO/IEC 18013-5 and operates the Digital Trust Service (DTS), the VICAL used by verifiers to establish trust in issuing authority certificates.",
+    "website": "https://www.aamva.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=aamva.org&sz=128",
+    "country": "US",
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "industry_association",
+      "conformity_scheme_owner",
+      "trust_infrastructure_provider"
+    ],
+    "tags": [
+      "mdl",
+      "iso-18013-5",
+      "vical",
+      "trust scheme"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T17:54:58.924Z"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cabforum",
+    "name": "CA/Browser Forum",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Voluntary consortium of certification authorities, browser vendors and other PKI stakeholders that develops the Baseline Requirements and related guidelines governing publicly trusted X.509 certificates. The Forum defines the rules of the Web PKI trust scheme; individual root programmes decide which authorities are included in their trust stores.",
+    "website": "https://cabforum.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=cabforum.org&sz=128",
+    "country": "US",
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "industry_association",
+      "standards_development_organization",
+      "conformity_scheme_owner"
+    ],
+    "tags": [
+      "web pki",
+      "x509",
+      "baseline requirements",
+      "trust scheme"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T17:54:58.924Z"
+}

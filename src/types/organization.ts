@@ -143,6 +143,25 @@ export interface EcosystemRef {
   catalogUrl?: string;
 }
 
+/** Role this organization performs in the governance of a trust scheme. */
+export type TrustSchemeRefRole =
+  | 'scheme_owner'
+  | 'standards_body'
+  | 'accreditation_body'
+  | 'supervisory_body'
+  | 'certification_body'
+  | 'registry_operator';
+
+export interface TrustSchemeRef extends EcosystemRef {
+  role: TrustSchemeRefRole;
+}
+
+export interface TrustRegistryRef extends EcosystemRef {
+  /** Trust scheme the registry belongs to. */
+  schemeId: string;
+  role: 'owner' | 'operator';
+}
+
 // Enriched / aggregated types (what ends up in data/aggregated.json)
 
 export type OrganizationSource = 'community-catalog' | 'did-endpoint' | 'vc';
@@ -179,6 +198,10 @@ export interface AggregatedOrganization {
     personalWallets: EcosystemRef[];
     businessWallets: EcosystemRef[];
     relyingParties: EcosystemRef[];
+    /** Trust schemes this organization owns or helps govern. */
+    trustSchemes: TrustSchemeRef[];
+    /** Trust registries this organization owns or operates. */
+    trustRegistries: TrustRegistryRef[];
   };
 
   /** Declared in community-catalog JSON (form submissions). */
@@ -205,6 +228,7 @@ export interface AggregatedStats {
   withCredentialTypes: number;
   withWallets: number;
   withRelyingParties: number;
+  withTrustSchemes: number;
   /** DIDs with a successful Blue Pages validations response (crawler) */
   withBluePagesProfile?: number;
 }

@@ -15,6 +15,9 @@ import type {
   OrganizationCertification,
   OrganizationHistoryState,
   OrganizationSectorCode,
+  TrustRegistryRef,
+  TrustSchemeRef,
+  TrustSchemeRefRole,
 } from '../types/organization.js';
 import { ORGANIZATION_SECTOR_CODES } from '../types/organization.js';
 import {
@@ -189,6 +192,10 @@ const CROSS_CATALOGS = {
     url: 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json',
     local: path.resolve(ROOT, '..', 'rp-catalog', 'data', 'aggregated.json'),
   },
+  trustScheme: {
+    url: 'https://raw.githubusercontent.com/FIDEScommunity/fides-trust-scheme-catalog/main/data/aggregated.json',
+    local: path.resolve(ROOT, '..', 'trust-scheme-catalog', 'data', 'aggregated.json'),
+  },
 };
 
 const gitDateCache = new Map<string, string | null>();
@@ -262,6 +269,19 @@ interface CrossCatalogData {
     provider: { name: string; did?: string };
   }>;
   rps: Array<{ id: string; name: string; provider: { name: string; did?: string } }>;
+  trustSchemes: Array<{
+    id: string;
+    name: string;
+    ownerOrgId?: string;
+    governanceOrganizations?: Array<{ orgId?: string; role?: string }>;
+    trustRegistries?: Array<{
+      id: string;
+      name: string;
+      schemeId?: string;
+      ownerOrgId?: string;
+      operatorOrgId?: string;
+    }>;
+  }>;
 }
 
 async function loadCrossCatalogs(): Promise<CrossCatalogData> {
@@ -279,13 +299,58 @@ async function loadCrossCatalogs(): Promise<CrossCatalogData> {
   const rpData = await loadJson<{ relyingParties?: CrossCatalogData['rps'] }>(
     CROSS_CATALOGS.rp.url, CROSS_CATALOGS.rp.local, 'rp-catalog',
   );
+  const trustSchemeData = await loadJson<{ trustSchemes?: CrossCatalogData['trustSchemes'] }>(
+    CROSS_CATALOGS.trustScheme.url, CROSS_CATALOGS.trustScheme.local, 'trust-scheme-catalog',
+  );
 
   return {
     wallets: walletData?.wallets || [],
     issuers: issuerData?.issuers || [],
     credentials: credData?.credentials || [],
     rps: rpData?.relyingParties || [],
+    trustSchemes: trustSchemeData?.trustSchemes || [],
   };
+}
+
+/**
+ * Trust scheme and trust registry links for one organization.
+ *
+ * Matching is on `org:` id only: the trust scheme catalog validates every orgId
+ * against this catalog, so name-based fuzzy matching would only add false positives.
+ * The scheme owner is recorded as scheme_owner even when the source file does not
+ * repeat that role in `organizations[]`.
+ */
+function buildTrustSchemeLinks(
+  orgId: string,
+  cross: CrossCatalogData,
+): Pick<AggregatedOrganization['ecosystemRoles'], 'trustSchemes' | 'trustRegistries'> {
+  const trustSchemes: TrustSchemeRef[] = [];
+  const trustRegistries: TrustRegistryRef[] = [];
+
+  for (const scheme of cross.trustSchemes) {
+    if (!scheme?.id) continue;
+    const roles = new Set<TrustSchemeRefRole>();
+    if (scheme.ownerOrgId === orgId) roles.add('scheme_owner');
+    for (const entry of scheme.governanceOrganizations || []) {
+      if (entry?.orgId === orgId && entry.role) roles.add(entry.role as TrustSchemeRefRole);
+    }
+    for (const role of roles) {
+      trustSchemes.push({ id: scheme.id, displayName: scheme.name || scheme.id, role });
+    }
+
+    for (const registry of scheme.trustRegistries || []) {
+      if (!registry?.id) continue;
+      const ref = {
+        id: registry.id,
+        displayName: registry.name || registry.id,
+        schemeId: registry.schemeId || scheme.id,
+      };
+      if (registry.ownerOrgId === orgId) trustRegistries.push({ ...ref, role: 'owner' });
+      if (registry.operatorOrgId === orgId) trustRegistries.push({ ...ref, role: 'operator' });
+    }
+  }
+
+  return { trustSchemes, trustRegistries };
 }
 
 function buildEcosystemRoles(
@@ -336,7 +401,14 @@ function buildEcosystemRoles(
     .filter((r) => matchesOrganization({ ...org, did: orgDid }, { name: r.provider.name, did: r.provider.did, dirName: undefined }))
     .map((r) => ({ id: r.id, displayName: r.name }));
 
-  return { issuers, credentialTypes, personalWallets, businessWallets, relyingParties };
+  return {
+    issuers,
+    credentialTypes,
+    personalWallets,
+    businessWallets,
+    relyingParties,
+    ...buildTrustSchemeLinks(org.id, cross),
+  };
 }
 
 function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
@@ -345,6 +417,7 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
   let withCredentialTypes = 0;
   let withWallets = 0;
   let withRelyingParties = 0;
+  let withTrustSchemes = 0;
   let withBluePagesProfile = 0;
 
   for (const o of orgs) {
@@ -353,6 +426,7 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
     if (o.ecosystemRoles.credentialTypes.length > 0) withCredentialTypes++;
     if (o.ecosystemRoles.personalWallets.length + o.ecosystemRoles.businessWallets.length > 0) withWallets++;
     if (o.ecosystemRoles.relyingParties.length > 0) withRelyingParties++;
+    if (o.ecosystemRoles.trustSchemes.length + o.ecosystemRoles.trustRegistries.length > 0) withTrustSchemes++;
     if (o.bluePages?.profileAvailable === true) withBluePagesProfile++;
   }
 
@@ -363,6 +437,7 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
     withCredentialTypes,
     withWallets,
     withRelyingParties,
+    withTrustSchemes,
     withBluePagesProfile,
   };
 }
@@ -443,7 +518,9 @@ async function crawl(): Promise<void> {
       ecosystemRoles.credentialTypes.length +
       ecosystemRoles.personalWallets.length +
       ecosystemRoles.businessWallets.length +
-      ecosystemRoles.relyingParties.length;
+      ecosystemRoles.relyingParties.length +
+      ecosystemRoles.trustSchemes.length +
+      ecosystemRoles.trustRegistries.length;
 
     console.log(`  ${org.name} (${org.id}) — ${ecosystemRoleCodes.length} role code(s), ${totalRoles} catalog link(s)`);
 

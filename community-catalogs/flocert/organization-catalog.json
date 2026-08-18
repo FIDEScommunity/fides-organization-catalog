@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:flocert",
+    "name": "FLOCERT",
+    "legalName": "FLOCERT GmbH",
+    "sectors": [
+      "agriculture",
+      "food"
+    ],
+    "description": "Independent certification body that audits and certifies producers and traders against the Fairtrade Standards. FLOCERT operates the public Fairtrade customer search, through which certification status and FLO ID of certified operators can be verified.",
+    "website": "https://www.flocert.net/",
+    "logo": "https://www.google.com/s2/favicons?domain=flocert.net&sz=128",
+    "country": "DE",
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "certification_body",
+      "conformity_assessment_body",
+      "trust_infrastructure_provider"
+    ],
+    "tags": [
+      "fairtrade",
+      "certification body"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T17:54:58.924Z"
+}

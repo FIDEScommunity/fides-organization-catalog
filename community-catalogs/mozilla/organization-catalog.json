@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mozilla",
+    "name": "Mozilla",
+    "legalName": "Mozilla Foundation",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Non-profit organization behind the Firefox browser and the Mozilla Root Program. Mozilla operates the Common CA Database (CCADB), the shared repository used by multiple browser and operating system root programmes to publish and audit information about publicly trusted certification authorities.",
+    "website": "https://www.mozilla.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=mozilla.org&sz=128",
+    "country": "US",
+    "fidesManifestoSupporter": false,
+    "ecosystemRoleCodes": [
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "tags": [
+      "ccadb",
+      "root program",
+      "web pki"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-13T17:54:58.924Z"
+}
