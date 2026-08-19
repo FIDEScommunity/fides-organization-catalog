@@ -3,6 +3,32 @@
 
   const duration = 4500;
 
+  function trackMatomoEvent(category, action, name) {
+    if (typeof window._paq === "undefined") return;
+    if (navigator.doNotTrack === "1" || navigator.doNotTrack === "yes") return;
+    try {
+      if (name) {
+        window._paq.push(["trackEvent", category, action, name]);
+      } else {
+        window._paq.push(["trackEvent", category, action]);
+      }
+    } catch (_err) {
+      /* analytics must never break the page */
+    }
+  }
+
+  function bindMatomoClicks(container) {
+    container.addEventListener("click", (event) => {
+      const link = event.target.closest("a[data-matomo-category][data-matomo-action]");
+      if (!link || !container.contains(link)) return;
+      trackMatomoEvent(
+        link.getAttribute("data-matomo-category"),
+        link.getAttribute("data-matomo-action"),
+        link.getAttribute("data-matomo-name") || undefined
+      );
+    });
+  }
+
   function animateValue(element, target) {
     let startTime = null;
     element.textContent = "0";
@@ -103,6 +129,7 @@
   function init() {
     const showcases = document.querySelectorAll(".fides-org-showcase");
     showcases.forEach((showcase) => {
+      bindMatomoClicks(showcase);
       const carousel = showcase.querySelector("[data-fides-org-carousel]");
       if (carousel) initCarousel(carousel);
     });
