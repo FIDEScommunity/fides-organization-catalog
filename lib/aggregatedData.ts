@@ -76,6 +76,8 @@ export interface AggregatedOrganization {
   offerings?: string[];
   /** Community (free) or Pro; Pro-only fields present only when Pro. */
   catalogTier?: 'Community' | 'Pro' | string;
+  /** Curated Community listings that keep full public fields. */
+  catalogListingDepth?: 'full';
   fidesManifestoSupporter?: boolean;
   ecosystemRoles: {
     issuers: { id: string; displayName: string }[];

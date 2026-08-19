@@ -465,6 +465,7 @@ async function crawl(): Promise<void> {
       ...(Array.isArray(org.tags) && org.tags.length ? { tags: org.tags } : {}),
       ...(Array.isArray(org.offerings) && org.offerings.length ? { offerings: org.offerings } : {}),
       ...(org.catalogTier ? { catalogTier: org.catalogTier } : {}),
+      ...(org.catalogListingDepth === 'full' ? { catalogListingDepth: 'full' as const } : {}),
       ...(org.fidesManifestoSupporter === true ? { fidesManifestoSupporter: true } : {}),
       ...(normalizedContact ? { contact: normalizedContact } : {}),
       ...(org.media &&
