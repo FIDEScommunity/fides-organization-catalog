@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.25
+Stable tag: 1.14.26
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,9 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.26 =
+* Do not stretch a single use-case card across the full modal width.
 
 = 1.14.25 =
 * Wire Matomo click tracking for Organization Showcase (cards, view all, find CTA).
