@@ -304,7 +304,8 @@ final class Fides_Organization_Showcase {
                     </span>
                 </div>
                 <a class="fides-org-showcase__toolbar-link" href="<?php echo esc_url($catalog_url); ?>"
-                   data-matomo-category="Organization Showcase" data-matomo-action="View all organizations">
+                   data-matomo-category="Organization Showcase" data-matomo-action="View all organizations"
+                   data-matomo-name="view-all">
                     <?php esc_html_e('Explore all organisations', 'fides-organization-catalog'); ?>
                     <span aria-hidden="true">→</span>
                 </a>
@@ -336,7 +337,7 @@ final class Fides_Organization_Showcase {
                             ?>
                             <a class="fides-org-showcase__card" href="<?php echo esc_url($detail_url); ?>"
                                data-matomo-category="Organization Showcase" data-matomo-action="Open organization"
-                               data-matomo-name="<?php echo esc_attr($name); ?>">
+                               data-matomo-name="<?php echo esc_attr($id . '|' . $name); ?>">
                                 <span class="fides-org-showcase__header">
                                     <span class="fides-org-showcase__identity">
                                         <span class="fides-org-showcase__title-row">
@@ -399,7 +400,8 @@ final class Fides_Organization_Showcase {
                         <strong><?php esc_html_e('Is your organisation already listed?', 'fides-organization-catalog'); ?></strong>
                         <span><?php esc_html_e('Find your profile, see how your organisation appears in the FIDES ecosystem and check whether the information is complete.', 'fides-organization-catalog'); ?></span>
                     </div>
-                    <a href="<?php echo esc_url($catalog_url); ?>" data-matomo-category="Organization Showcase" data-matomo-action="Find organization">
+                    <a href="<?php echo esc_url($catalog_url); ?>" data-matomo-category="Organization Showcase" data-matomo-action="Find organization"
+                       data-matomo-name="find-organization">
                         <?php esc_html_e('Find your organisation', 'fides-organization-catalog'); ?>
                         <span aria-hidden="true">→</span>
                     </a>
