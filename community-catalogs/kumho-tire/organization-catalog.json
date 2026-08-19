@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:kumho-tire",
+    "name": "Kumho Tire",
+    "sectors": [
+      "manufacturing"
+    ],
+    "description": "Global tyre manufacturer headquartered in South Korea, serving passenger, commercial and motorsport markets.",
+    "website": "https://www.kumhotire.com/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=kumhotire.com&sz=128",
+    "country": "KR"
+  }
+}

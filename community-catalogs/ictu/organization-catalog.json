@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ictu",
+    "name": "ICTU",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Dutch foundation that helps government organisations design and deliver digital public services and shared ICT programmes.",
+    "website": "https://www.ictu.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=ictu.nl&sz=128",
+    "country": "NL"
+  }
+}

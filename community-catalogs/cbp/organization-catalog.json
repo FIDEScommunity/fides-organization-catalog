@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cbp",
+    "name": "U.S. Customs and Border Protection",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "U.S. federal agency responsible for border security, customs enforcement and facilitation of lawful trade and travel.",
+    "website": "https://www.cbp.gov/",
+    "logo": "https://www.google.com/s2/favicons?domain=cbp.gov&sz=128",
+    "country": "US"
+  }
+}

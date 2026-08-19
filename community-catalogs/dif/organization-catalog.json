@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dif",
+    "name": "Decentralized Identity Foundation",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Open industry consortium developing standards and open-source software for decentralized identity and verifiable credentials.",
+    "website": "https://identity.foundation/",
+    "logo": "https://www.google.com/s2/favicons?domain=identity.foundation&sz=128",
+    "country": "US"
+  }
+}

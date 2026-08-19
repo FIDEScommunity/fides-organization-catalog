@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trumerit",
+    "name": "TruMerit",
+    "sectors": [
+      "healthcare"
+    ],
+    "description": "Organisation advancing verifiable digital credentials for healthcare and professional workforce mobility.",
+    "website": "https://www.trumerit.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=trumerit.org&sz=128",
+    "country": "US"
+  }
+}

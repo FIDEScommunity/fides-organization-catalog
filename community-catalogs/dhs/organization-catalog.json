@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dhs",
+    "name": "U.S. Department of Homeland Security",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "U.S. federal department charged with homeland security, including border protection, cybersecurity and emergency response.",
+    "website": "https://www.dhs.gov/",
+    "logo": "https://www.google.com/s2/favicons?domain=dhs.gov&sz=128",
+    "country": "US"
+  }
+}

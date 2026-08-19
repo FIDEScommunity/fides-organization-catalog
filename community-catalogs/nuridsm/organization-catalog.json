@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:nuridsm",
+    "name": "NURIDSM",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Korean technology company focused on RFID and digital identification solutions for industrial and supply-chain applications.",
+    "website": "https://www.nuridsm.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=nuridsm.com&sz=128",
+    "country": "KR"
+  }
+}

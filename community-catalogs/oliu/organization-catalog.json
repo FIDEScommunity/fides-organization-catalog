@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:oliu",
+    "name": "Oliu",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Canadian digital identity and credentials organisation supporting verifiable professional and workforce credentials.",
+    "website": "https://oliu.ca/",
+    "logo": "https://www.google.com/s2/favicons?domain=oliu.ca&sz=128",
+    "country": "CA"
+  }
+}

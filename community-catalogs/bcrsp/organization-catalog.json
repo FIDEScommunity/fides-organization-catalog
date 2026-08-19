@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bcrsp",
+    "name": "Board of Canadian Registered Safety Professionals",
+    "sectors": [
+      "healthcare"
+    ],
+    "description": "Canadian professional certification body for occupational health and safety practitioners.",
+    "website": "https://bcrsp.ca/en",
+    "logo": "https://www.google.com/s2/favicons?domain=bcrsp.ca&sz=128",
+    "country": "CA"
+  }
+}

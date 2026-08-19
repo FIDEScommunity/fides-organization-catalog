@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:deutsche-bank",
+    "name": "Deutsche Bank",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Global bank headquartered in Germany, providing corporate, investment and retail banking services.",
+    "website": "https://www.deutsche-bank.de",
+    "logo": "https://www.google.com/s2/favicons?domain=deutsche-bank.de&sz=128",
+    "country": "DE"
+  }
+}

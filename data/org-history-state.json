@@ -1546,5 +1546,95 @@
   },
   "org:hypermine": {
     "firstSeenAt": "2026-08-18T14:14:54+00:00"
+  },
+  "org:ayuntamiento-cordoba": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:bcrsp": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:boostn": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:bosch": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:cbp": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:ccc-tech-center": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:deutsche-bank": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:dhs": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:dif": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:dyetec": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:esatus": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:finspot": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:first-canadian-title": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:gs1-korea": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:ictu": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:ifc": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:indicio": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:inteleos": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:kumho-tire": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:lindner-group": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:natixar": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:neoflow": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:nuridsm": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:oliu": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:rtgs-global": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:sbi-xdc-network-apac": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:tibe": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:trumerit": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:world-bank": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:zijin-mining": {
+    "firstSeenAt": "2026-08-19T19:51:55.524Z"
   }
 }

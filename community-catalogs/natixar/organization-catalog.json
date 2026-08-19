@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:natixar",
+    "name": "Natixar",
+    "sectors": [
+      "energy"
+    ],
+    "description": "Climate-tech company providing industrial carbon accounting, ESG monitoring and supply-chain traceability platforms.",
+    "website": "https://www.natixar.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=natixar.com&sz=128",
+    "country": "FR"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:finspot",
+    "name": "Finspot",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Fintech company providing invoice financing and factoring solutions for SMEs.",
+    "website": "https://finspot.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=finspot.com&sz=128",
+    "country": "RS"
+  }
+}

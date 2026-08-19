@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:inteleos",
+    "name": "Inteleos",
+    "sectors": [
+      "healthcare"
+    ],
+    "description": "Non-profit certification organisation for medical imaging and related healthcare professionals, advancing global competency standards.",
+    "website": "https://www.inteleos.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=inteleos.org&sz=128",
+    "country": "US"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:neoflow",
+    "name": "Neoflow",
+    "sectors": [
+      "energy"
+    ],
+    "description": "Canadian platform for digital energy passports and cross-border energy commodity clearance workflows.",
+    "website": "https://neoflow.energy",
+    "logo": "https://www.google.com/s2/favicons?domain=neoflow.energy&sz=128",
+    "country": "CA"
+  }
+}

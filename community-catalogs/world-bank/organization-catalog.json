@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:world-bank",
+    "name": "World Bank",
+    "sectors": [
+      "finance"
+    ],
+    "description": "International financial institution providing financing, policy advice and technical assistance to developing countries.",
+    "website": "https://www.worldbank.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=worldbank.org&sz=128",
+    "country": "US"
+  }
+}

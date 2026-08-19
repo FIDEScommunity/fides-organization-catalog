@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:rtgs-global",
+    "name": "RTGS.global",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Provider of cross-border financial messaging and settlement infrastructure for banks and payment institutions.",
+    "website": "https://rtgs.global/",
+    "logo": "https://www.google.com/s2/favicons?domain=rtgs.global&sz=128",
+    "country": "GB"
+  }
+}

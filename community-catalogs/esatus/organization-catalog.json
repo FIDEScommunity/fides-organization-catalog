@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:esatus",
+    "name": "esatus AG",
+    "sectors": [
+      "digital"
+    ],
+    "description": "German company specialising in self-sovereign identity, digital wallets and verifiable credential solutions for enterprises.",
+    "website": "https://esatus.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=esatus.com&sz=128",
+    "country": "DE"
+  }
+}

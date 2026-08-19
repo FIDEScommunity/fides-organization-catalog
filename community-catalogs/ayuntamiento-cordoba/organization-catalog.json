@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ayuntamiento-cordoba",
+    "name": "Ayuntamiento de Córdoba",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Municipal government of Córdoba, Spain, responsible for local public services and citizen administration.",
+    "website": "https://www.cordoba.es/",
+    "logo": "https://www.google.com/s2/favicons?domain=cordoba.es&sz=128",
+    "country": "ES"
+  }
+}

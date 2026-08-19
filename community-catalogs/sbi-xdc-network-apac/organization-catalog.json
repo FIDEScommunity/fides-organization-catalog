@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sbi-xdc-network-apac",
+    "name": "SBI XDC Network APAC",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Joint venture expanding XDC Network blockchain solutions for trade finance and enterprise use across the Asia-Pacific region.",
+    "website": "https://www.sbixdc.network/",
+    "logo": "https://www.google.com/s2/favicons?domain=sbixdc.network&sz=128",
+    "country": "JP",
+    "legalName": "SBI XDC Network APAC Co., Ltd."
+  }
+}

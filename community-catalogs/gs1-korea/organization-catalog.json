@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:gs1-korea",
+    "name": "GS1 Korea",
+    "sectors": [
+      "trade"
+    ],
+    "description": "Korean member organisation of GS1, providing global standards for product identification, barcodes and supply-chain data exchange.",
+    "website": "https://gs1kr.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=gs1kr.org&sz=128",
+    "country": "KR"
+  }
+}

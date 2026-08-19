@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:lindner-group",
+    "name": "Lindner Group",
+    "sectors": [
+      "construction"
+    ],
+    "description": "German construction and interior-fitout company delivering building products and project services across Europe.",
+    "website": "https://www.lindner-group.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=lindner-group.com&sz=128",
+    "country": "DE",
+    "legalName": "Lindner Group KG"
+  }
+}

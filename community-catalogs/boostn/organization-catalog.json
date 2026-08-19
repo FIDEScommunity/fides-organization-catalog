@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:boostn",
+    "name": "BoostN GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "description": "German technology company focused on business verification and digital trust solutions for KYB and due diligence workflows.",
+    "website": "https://boostn.team/",
+    "logo": "https://www.google.com/s2/favicons?domain=boostn.team&sz=128",
+    "country": "DE"
+  }
+}

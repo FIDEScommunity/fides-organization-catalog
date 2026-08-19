@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:first-canadian-title",
+    "name": "First Canadian Title",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Canadian provider of title insurance and real-estate transaction solutions for property owners, legal professionals and lenders.",
+    "website": "https://fct.ca/",
+    "logo": "https://www.google.com/s2/favicons?domain=fct.ca&sz=128",
+    "country": "CA",
+    "legalName": "First Canadian Title Company Limited"
+  }
+}

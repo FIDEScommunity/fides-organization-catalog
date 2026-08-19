@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zijin-mining",
+    "name": "Zijin Mining",
+    "sectors": [
+      "manufacturing"
+    ],
+    "description": "Global mining company producing gold, copper and other metals, with operations across multiple continents.",
+    "website": "https://www.zijinmining.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=zijinmining.com&sz=128",
+    "country": "CN",
+    "legalName": "Zijin Mining Group Co., Ltd."
+  }
+}

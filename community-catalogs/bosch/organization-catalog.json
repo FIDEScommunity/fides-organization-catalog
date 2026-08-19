@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bosch",
+    "name": "Robert Bosch GmbH",
+    "sectors": [
+      "manufacturing"
+    ],
+    "description": "Global engineering and technology company active in mobility, industrial technology, consumer goods and energy solutions.",
+    "website": "https://www.bosch.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=bosch.com&sz=128",
+    "country": "DE"
+  }
+}

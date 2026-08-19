@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:indicio",
+    "name": "Indicio",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Provider of decentralized identity networks, verifiable credential infrastructure and professional services for digital trust ecosystems.",
+    "website": "https://indicio.tech/",
+    "logo": "https://www.google.com/s2/favicons?domain=indicio.tech&sz=128",
+    "country": "US"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tibe",
+    "name": "tibe.io GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "description": "German company building digital identity and access solutions for secure workplace and site operations.",
+    "website": "https://www.tibe.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=tibe.io&sz=128",
+    "country": "DE"
+  }
+}
