@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.17
+Stable tag: 1.14.24
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,27 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.24 =
+* Use-case scroll arrows: filled blue when active for clearer affordance.
+
+= 1.14.23 =
+* Softer use-case card/nav hover (no clipped focus ring in the scroll row).
+
+= 1.14.22 =
+* Use-case scroll arrows sit left/right of the cards (no extra bottom row).
+
+= 1.14.21 =
+* Use-case cards: clearer scroll affordance (larger peek, “More use cases”, nav arrows).
+
+= 1.14.20 =
+* Use-case cards: peek + fade when more than 3 so horizontal scroll is obvious.
+
+= 1.14.19 =
+* Organisation modal: Use cases as similar-style cards; horizontal scroll when more than 3.
+
+= 1.14.18 =
+* Organisation modal: open the Use cases accordion by default when linked use cases exist.
 
 = 1.14.17 =
 * Official badge requires explicit `catalogTier: Pro`. Curated Community

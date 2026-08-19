@@ -8,6 +8,8 @@
     search: '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>',
     filter: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>',
     chevronDown: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>',
+    chevronLeft: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>',
+    chevronRight: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>',
     chevronDoubleDown: '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 8 6 6 6-6"></path><path d="m6 14 6 6 6-6"></path></svg>',
     chevronUp: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>',
     x: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>',
@@ -1656,44 +1658,103 @@
 
   /**
    * Accordion listing the use cases this organization is involved in.
+   * Card layout mirrors the use-case modal "similar" cards; scrolls
+   * horizontally when there are more than three items.
    * Returns '' when there are none, so the accordion is simply omitted.
    */
   function renderUseCasesAccordion(useCases) {
     if (!Array.isArray(useCases) || useCases.length === 0) return '';
     const base = (config.useCaseCatalogUrl || '').replace(/\/$/, '');
-    const rowsHtml = useCases.map((uc) => {
-      const label = escapeHtml(uc.title || uc.id);
-      const itemId = escapeHtml(uc.id || '');
-      const likeSlot = uc.id
-        ? `<span class="fides-modal-entity-like-slot" data-entity-like-type="usecase" data-entity-like-id="${itemId}">${renderModalEntityLikeInline('usecase', uc.id)}</span>`
+    const scrollClass = useCases.length > 3 ? ' fides-org-use-cases--scroll' : '';
+    const wrapClass = useCases.length > 3 ? ' fides-org-use-cases-wrap--scroll' : '';
+    const cardsHtml = useCases.map((uc) => {
+      const title = escapeHtml(uc.title || uc.id || 'Use case');
+      const itemId = uc.id ? String(uc.id) : '';
+      const href = base && itemId ? `${base}/?usecase=${encodeURIComponent(itemId)}` : '';
+      const likeSlot = itemId
+        ? `<span class="fides-org-use-case-card__like fides-modal-entity-like-slot" data-entity-like-type="usecase" data-entity-like-id="${escapeHtml(itemId)}">${renderModalEntityLikeInline('usecase', itemId)}</span>`
         : '';
-      if (base && uc.id) {
-        const href = `${base}/?usecase=${encodeURIComponent(uc.id)}`;
-        return `<tr><td><a href="${escapeHtml(href)}" class="fides-modal-link-inline" onclick="event.stopPropagation();">${label}</a>${likeSlot}</td></tr>`;
+      const body = `
+        <span class="fides-org-use-case-card__top">
+          <span class="fides-org-use-case-card__eyebrow">Use case</span>
+          ${likeSlot}
+        </span>
+        <strong class="fides-org-use-case-card__title">${title}</strong>
+        <span class="fides-org-use-case-card__link">View use case <span aria-hidden="true">→</span></span>
+      `;
+      if (href) {
+        return `<a class="fides-org-use-case-card" href="${escapeHtml(href)}" onclick="event.stopPropagation();">${body}</a>`;
       }
-      return `<tr><td>${label}${likeSlot}</td></tr>`;
+      return `<div class="fides-org-use-case-card fides-org-use-case-card--static">${body}</div>`;
     }).join('');
+    const navPrev = useCases.length > 3
+      ? `<button type="button" class="fides-org-use-cases-nav-btn fides-org-use-cases-nav-btn--prev" data-org-uc-scroll="prev" aria-label="Previous use cases" disabled>${icons.chevronLeft}</button>`
+      : '';
+    const navNext = useCases.length > 3
+      ? `<button type="button" class="fides-org-use-cases-nav-btn fides-org-use-cases-nav-btn--next" data-org-uc-scroll="next" aria-label="Next use cases">${icons.chevronRight}</button>`
+      : '';
     return `
-      <div class="fides-accordion" id="fides-accordion-use-cases">
+      <div class="fides-accordion is-open" id="fides-accordion-use-cases">
         <div class="fides-accordion-header-bar">
-          <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+          <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="true">
             <span class="fides-accordion-title">${icons.useCases} Use cases <span class="fides-accordion-count">${useCases.length}</span></span>
           </button>
-          <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle use cases">
+          <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="true" aria-label="Toggle use cases">
             <span class="fides-accordion-chevron">${icons.chevronDown}</span>
           </button>
         </div>
         <div class="fides-accordion-body">
-          <div class="fides-attributes-table-wrap">
-            <table class="fides-attributes-table fides-modal-entity-table" aria-label="Use cases">
-              <tbody>
-                ${rowsHtml}
-              </tbody>
-            </table>
+          <div class="fides-org-use-cases-wrap${wrapClass}">
+            ${navPrev}
+            <div class="fides-org-use-cases${scrollClass}" aria-label="Use cases">${cardsHtml}</div>
+            ${navNext}
           </div>
         </div>
       </div>
     `;
+  }
+
+  function bindOrgUseCasesScroll(overlay) {
+    if (!overlay) return;
+    const wrap = overlay.querySelector('.fides-org-use-cases-wrap--scroll');
+    if (!wrap) return;
+    const scroller = wrap.querySelector('.fides-org-use-cases--scroll');
+    if (!scroller) return;
+    const prevBtn = wrap.querySelector('[data-org-uc-scroll="prev"]');
+    const nextBtn = wrap.querySelector('[data-org-uc-scroll="next"]');
+
+    function updateNavState() {
+      const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+      const left = scroller.scrollLeft;
+      const atStart = left <= 4;
+      const atEnd = left >= maxScroll - 4;
+      if (prevBtn) prevBtn.disabled = atStart;
+      if (nextBtn) nextBtn.disabled = atEnd;
+      wrap.classList.toggle('is-at-start', atStart);
+      wrap.classList.toggle('is-at-end', atEnd);
+    }
+
+    function scrollByPage(direction) {
+      const amount = Math.max(scroller.clientWidth * 0.72, 180);
+      scroller.scrollBy({ left: direction * amount, behavior: 'smooth' });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        scrollByPage(-1);
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        scrollByPage(1);
+      });
+    }
+    scroller.addEventListener('scroll', updateNavState, { passive: true });
+    updateNavState();
   }
 
   function renderModal() {
@@ -2269,6 +2330,7 @@
           btn.remove();
         });
       });
+      bindOrgUseCasesScroll(overlay);
     }
 
     document.addEventListener('keydown', function escHandler(e) {
