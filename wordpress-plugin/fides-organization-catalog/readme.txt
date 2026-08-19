@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.26
+Stable tag: 1.14.27
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,10 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.27 =
+* Clarify the Community modal profile CTA: keep “Is this your organisation?”,
+  sharpen the supporting copy, and link to “Manage your Official Listing”.
 
 = 1.14.26 =
 * Do not stretch a single use-case card across the full modal width.

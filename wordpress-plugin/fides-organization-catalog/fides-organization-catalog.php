@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.14.26
+ * Version: 1.14.27
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.14.26');
+define('FIDES_ORG_CATALOG_VERSION', '1.14.27');
 define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
 define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
 
@@ -236,7 +236,7 @@ class Fides_Organization_Catalog {
                                 <?php echo esc_html__('Show “Is this your organisation?” at the bottom of Community organization modals', 'fides-organization-catalog'); ?>
                             </label>
                             <p class="description">
-                                <?php echo esc_html__('Links visitors to the Pro Plan page where they can manage their organization profile.', 'fides-organization-catalog'); ?>
+                                <?php echo esc_html__('Links visitors to the Pro Plan page so they can manage their Official Listing.', 'fides-organization-catalog'); ?>
                             </p>
                         </td>
                     </tr>

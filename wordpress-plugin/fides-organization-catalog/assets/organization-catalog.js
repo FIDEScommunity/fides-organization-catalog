@@ -424,11 +424,11 @@
       <div class="fides-modal-footer fides-org-official-profile-cta">
         <div class="fides-org-official-profile-cta__copy">
           <strong>Is this your organisation?</strong>
-          <span>Manage your catalog presence and show where your organisation is active.</span>
+          <span>Manage your organisation information and keep your ecosystem presence up to date.</span>
         </div>
         <a href="${escapeHtml(href)}" class="fides-org-official-profile-cta__link"
-           data-matomo-name="Manage organization profile with a Pro Plan">
-          Manage your profile with a Pro Plan <span aria-hidden="true">→</span>
+           data-matomo-name="Manage your Official Listing">
+          Manage your Official Listing <span aria-hidden="true">→</span>
         </a>
       </div>
     `;
