@@ -401,6 +401,11 @@
           "enum": ["Community", "Pro"],
           "description": "Community (free) or Pro plan. Set on WordPress export from ownership linkage; Pro-only fields are omitted for Community."
         },
+        "catalogListingDepth": {
+          "type": "string",
+          "enum": ["full"],
+          "description": "Present only on curated Community listings that keep full public fields. Official/Pro listings omit this; they already have full fields."
+        },
         "fidesManifestoSupporter": {
           "type": "boolean",
           "description": "When true, the organization is listed under FIDES Supporters on https://fides.community/manifesto/ (logo wall). Not the same as submitting the optional ratification form."

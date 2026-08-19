@@ -15,29 +15,27 @@ Programmatic override: `fides_catalog_tier_ui_force_enable` filter (same pattern
 
 ## Default when `catalogTier` is missing
 
-**Not Community — treated as Pro.**
+**Community.** Official badge and full fields require an explicit Pro export (or curated `catalogListingDepth: full`).
 
 Missing `catalogTier` in `community-catalogs/…/organization-catalog.json` or `aggregated.json` means:
 
-- Explorer modal and SSR behave as **Pro** (website, tags, offerings, contact stay visible if present in JSON).
-- PHP: `Fides_Catalog_Org_Tier::item_is_community()` returns `false` when the field is absent.
-- JS: `resolveCatalogTier()` returns `Pro` when the field is absent.
+- Explorer modal shows a Community badge; Pro-only fields stay hidden unless `catalogListingDepth` is `full`.
+- PHP: `Fides_Catalog_Org_Tier::item_is_community()` returns `true` when the field is absent.
+- JS: Official badge uses explicit Pro only.
 
-This is intentional for backwards compatibility with legacy Git JSON. It does **not** mean “free tier until proven otherwise”.
-
-Only explicit values count:
+Re-export WordPress-managed orgs before this UI goes live so listings that should stay Official have `"catalogTier": "Pro"`.
 
 | `catalogTier` in JSON | Public behaviour |
 |----------------------|------------------|
-| `"Community"` | Pro-only fields hidden; description capped at export |
-| `"Pro"` | Full public payload |
-| *(absent)* | **Same as Pro** (legacy) |
+| `"Community"` | Community badge; Pro-only fields hidden unless `catalogListingDepth: full` |
+| `"Pro"` | Official badge; full public payload |
+| *(absent)* | **Same as Community** |
 
 Legacy slug `gratis` in old JSON is still accepted when reading and maps to Community.
 
 ## Where the field lives
 
-`catalogTier` is **not** stored in the WordPress submission payload. It is computed at **export** from ownership (`fides_catalog_ownership`: linked WP user ⇒ Pro, else Community).
+`catalogTier` is **not** stored in the WordPress submission payload. It is computed at **export** from the WordPress entitlement (paid / invoice / trial / sponsored). Until strict mode is on, a linked ownership row still counts as Official. Curated Community listings may also export `catalogListingDepth: full`.
 
 It must appear in:
 

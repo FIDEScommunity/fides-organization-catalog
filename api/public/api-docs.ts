@@ -264,6 +264,11 @@ const spec = {
             enum: ['Community', 'Pro'],
             description: 'Community (free) or Pro plan. Pro-only fields are omitted for Community.',
           },
+          catalogListingDepth: {
+            type: 'string',
+            enum: ['full'],
+            description: 'Present only on curated Community listings that keep full public fields.',
+          },
           ecosystemRoles: {
             type: 'object',
             properties: {

@@ -117,6 +117,10 @@ export interface SourceOrganization {
   tags?: string[];
   /** Pro-only: customer-facing services; searchable in the Trust Explorer. */
   offerings?: string[];
+  /** Community (free) or Pro; set on WordPress export. */
+  catalogTier?: 'Community' | 'Pro' | string;
+  /** Curated Community listings that keep full public fields. */
+  catalogListingDepth?: 'full';
   /** Listed on fides.community/manifesto FIDES Supporters section */
   fidesManifestoSupporter?: boolean;
   contact?: {
@@ -162,6 +166,8 @@ export interface AggregatedOrganization {
   offerings?: string[];
   /** Community (free) or Pro; Pro-only fields present only when Pro. */
   catalogTier?: 'Community' | 'Pro' | string;
+  /** Curated Community listings that keep full public fields. */
+  catalogListingDepth?: 'full';
   fidesManifestoSupporter?: boolean;
   contact?: {
     email?: string;
