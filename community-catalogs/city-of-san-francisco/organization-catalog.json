@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:city-of-san-francisco",
+    "name": "City of San Francisco",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Municipal government of San Francisco, California.",
+    "website": "https://sf.gov/",
+    "logo": "https://www.google.com/s2/favicons?domain=sf.gov&sz=128",
+    "country": "US"
+  }
+}

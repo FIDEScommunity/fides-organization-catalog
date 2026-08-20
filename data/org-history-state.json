@@ -1636,5 +1636,116 @@
   },
   "org:zijin-mining": {
     "firstSeenAt": "2026-08-19T19:51:55.524Z"
+  },
+  "org:a4-advisory": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:aamva": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:abn-amro": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:ashiana-housing": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:austroads": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:banco-do-brasil": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:cal-oes": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:california-emsa": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:catholic-charities-california": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:city-of-san-francisco": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:copper-mark": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:credissuer": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:deloitte": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:dgrn": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:ecp": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:ereg": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:hideez": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:hudbay-minerals": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:igovtt": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:iiit-bangalore": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:jan-sahas": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:kyckr": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:lahsa": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:melento": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:mining-association-of-canada": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:pyx-global": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:quartech": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:rdw": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:snapkyc": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:task-force-7": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:total-environment": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:truage": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:trustlayer-foundation": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:tsa": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:tuno-labs": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:valid8": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
+  },
+  "org:vouched": {
+    "firstSeenAt": "2026-08-20T20:26:31.920Z"
   }
 }

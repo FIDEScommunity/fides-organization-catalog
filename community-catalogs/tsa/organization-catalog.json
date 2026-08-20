@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tsa",
+    "name": "Transportation Security Administration (TSA)",
+    "sectors": [
+      "public_sector",
+      "mobility"
+    ],
+    "description": "U.S. agency responsible for transportation security, including aviation passenger and checkpoint screening.",
+    "website": "https://www.tsa.gov/",
+    "logo": "https://www.google.com/s2/favicons?domain=tsa.gov&sz=128",
+    "country": "US"
+  }
+}

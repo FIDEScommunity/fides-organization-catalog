@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hideez",
+    "name": "Hideez Development LLC",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Provides passwordless workforce identity solutions including SSO, MFA, and workstation access control.",
+    "website": "https://hideez.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=hideez.com&sz=128",
+    "country": "US"
+  }
+}

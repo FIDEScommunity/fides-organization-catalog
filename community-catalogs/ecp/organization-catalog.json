@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ecp",
+    "name": "ECP",
+    "sectors": [
+      "digital",
+      "public_sector"
+    ],
+    "description": "Independent Dutch platform where government, business, academia, and civil society collaborate on the digital society.",
+    "website": "https://ecp.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=ecp.nl&sz=128",
+    "country": "NL"
+  }
+}

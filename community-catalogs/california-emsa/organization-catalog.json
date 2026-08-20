@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:california-emsa",
+    "name": "California Emergency Medical Services Authority",
+    "sectors": [
+      "public_sector",
+      "healthcare"
+    ],
+    "description": "California state agency providing leadership for EMS systems, personnel standards, and disaster medical preparedness.",
+    "website": "https://emsa.ca.gov/",
+    "logo": "https://www.google.com/s2/favicons?domain=emsa.ca.gov&sz=128",
+    "country": "US"
+  }
+}

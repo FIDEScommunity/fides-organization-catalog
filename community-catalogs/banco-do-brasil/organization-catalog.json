@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:banco-do-brasil",
+    "name": "Banco do Brasil",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Brazilian bank offering retail, commercial, and digital banking services.",
+    "website": "https://www.bb.com.br/",
+    "logo": "https://www.google.com/s2/favicons?domain=bb.com.br&sz=128",
+    "country": "BR"
+  }
+}

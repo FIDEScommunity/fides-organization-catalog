@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trustlayer-foundation",
+    "name": "TrustLayer Foundation",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Nonprofit developing open standards and governance for trustworthy AI.",
+    "website": "https://www.trustlayer.foundation/",
+    "logo": "https://www.google.com/s2/favicons?domain=trustlayer.foundation&sz=128",
+    "country": "US"
+  }
+}

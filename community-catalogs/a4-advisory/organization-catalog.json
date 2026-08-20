@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:a4-advisory",
+    "name": "A4 Advisory",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Consulting and technology firm focused on digital identity solutions and interoperable credential systems.",
+    "website": "https://www.a4advisory.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=a4advisory.com&sz=128",
+    "country": "AU"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:deloitte",
+    "name": "Deloitte",
+    "sectors": [
+      "finance",
+      "digital"
+    ],
+    "description": "Global professional services network offering audit, consulting, tax, and advisory services.",
+    "website": "https://www.deloitte.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=deloitte.com&sz=128",
+    "country": "US"
+  }
+}

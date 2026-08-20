@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:austroads",
+    "name": "Austroads",
+    "sectors": [
+      "public_sector",
+      "mobility"
+    ],
+    "description": "Association of Australian and New Zealand transport agencies providing guidance and services for road transport.",
+    "website": "https://austroads.gov.au/",
+    "logo": "https://www.google.com/s2/favicons?domain=austroads.gov.au&sz=128",
+    "country": "AU"
+  }
+}

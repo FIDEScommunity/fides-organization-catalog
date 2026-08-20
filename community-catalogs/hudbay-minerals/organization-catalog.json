@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hudbay-minerals",
+    "name": "Hudbay Minerals",
+    "sectors": [
+      "supply_chain",
+      "energy"
+    ],
+    "description": "Diversified mining company producing copper and other base metals.",
+    "website": "https://hudbayminerals.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=hudbayminerals.com&sz=128",
+    "country": "CA"
+  }
+}

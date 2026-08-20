@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aamva",
+    "name": "AAMVA",
+    "sectors": [
+      "public_sector",
+      "mobility"
+    ],
+    "description": "American Association of Motor Vehicle Administrators \u2014 nonprofit supporting motor vehicle administration, traffic services, and highway safety.",
+    "website": "https://www.aamva.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=aamva.org&sz=128",
+    "country": "US"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:abn-amro",
+    "name": "ABN AMRO",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Dutch bank providing personal and business banking and financial services.",
+    "website": "https://www.abnamro.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=abnamro.com&sz=128",
+    "country": "NL"
+  }
+}

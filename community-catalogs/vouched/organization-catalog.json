@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:vouched",
+    "name": "Vouched",
+    "sectors": [
+      "digital"
+    ],
+    "description": "AI-powered identity verification using document authentication, biometrics, and fraud detection.",
+    "website": "https://www.vouched.id/",
+    "logo": "https://www.google.com/s2/favicons?domain=vouched.id&sz=128",
+    "country": "US"
+  }
+}

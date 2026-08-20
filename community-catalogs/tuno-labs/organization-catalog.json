@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tuno-labs",
+    "name": "Tuno Labs",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Builds custom AI solutions for SMEs in Latin America, with local data control.",
+    "website": "https://www.tuno.bar/",
+    "logo": "https://www.google.com/s2/favicons?domain=tuno.bar&sz=128",
+    "country": "MX"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:catholic-charities-california",
+    "name": "Catholic Charities of California",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Statewide network of Catholic Charities agencies providing human services across California.",
+    "website": "https://catholiccharitiesca.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=catholiccharitiesca.org&sz=128",
+    "country": "US"
+  }
+}

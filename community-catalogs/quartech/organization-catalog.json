@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:quartech",
+    "name": "Quartech Systems Ltd.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Canadian IT services firm delivering people-centric technology solutions for public and private sector clients.",
+    "website": "https://quartech.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=quartech.com&sz=128",
+    "country": "CA"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:valid8",
+    "name": "Valid8",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Advisory firm helping governments and businesses design interoperable digital identity and wallet programmes.",
+    "website": "https://valid8advisory.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=valid8advisory.com&sz=128",
+    "country": "AU"
+  }
+}

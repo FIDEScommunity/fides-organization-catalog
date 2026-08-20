@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:igovtt",
+    "name": "iGovTT",
+    "sectors": [
+      "public_sector",
+      "digital"
+    ],
+    "description": "National ICT company of Trinidad and Tobago delivering digital solutions for public-sector services.",
+    "website": "https://igovtt.tt/",
+    "logo": "https://www.google.com/s2/favicons?domain=igovtt.tt&sz=128",
+    "country": "TT"
+  }
+}

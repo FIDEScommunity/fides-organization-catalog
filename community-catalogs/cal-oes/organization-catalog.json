@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:cal-oes",
+    "name": "California Office of Emergency Services",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "California Governor's Office of Emergency Services \u2014 leads statewide emergency preparedness, response, and recovery.",
+    "website": "https://www.caloes.ca.gov/",
+    "logo": "https://www.google.com/s2/favicons?domain=caloes.ca.gov&sz=128",
+    "country": "US"
+  }
+}

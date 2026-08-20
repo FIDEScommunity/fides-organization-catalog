@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ereg",
+    "name": "EReg",
+    "sectors": [
+      "public_sector",
+      "mobility"
+    ],
+    "description": "Association of European Vehicle and Driver Registration Authorities.",
+    "website": "https://www.ereg-association.eu/",
+    "logo": "https://www.google.com/s2/favicons?domain=ereg-association.eu&sz=128",
+    "country": "EU"
+  }
+}

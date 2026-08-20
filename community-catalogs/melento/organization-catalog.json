@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:melento",
+    "name": "Melento",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Collaborative intelligence platform for contract lifecycle management, eSign, eStamp, and workflow automation.",
+    "website": "https://melento.ai/",
+    "logo": "https://www.google.com/s2/favicons?domain=melento.ai&sz=128",
+    "country": "IN"
+  }
+}

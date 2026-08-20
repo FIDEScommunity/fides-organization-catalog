@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:pyx-global",
+    "name": "Pyx Global",
+    "sectors": [
+      "digital",
+      "supply_chain"
+    ],
+    "description": "Australian company building open-source digital trust tools for supply-chain transparency and UNTP-aligned credentials.",
+    "website": "https://pyx.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=pyx.io&sz=128",
+    "country": "AU"
+  }
+}

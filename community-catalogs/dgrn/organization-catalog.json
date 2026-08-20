@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dgrn",
+    "name": "DGRN",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Dire\u00e7\u00e3o Geral dos Registos e do Notariado of S\u00e3o Tom\u00e9 and Pr\u00edncipe \u2014 central authority for civil registration, identification, and notarial services.",
+    "website": "https://dgrn.gov.st/",
+    "logo": "https://www.google.com/s2/favicons?domain=dgrn.gov.st&sz=128",
+    "country": "ST"
+  }
+}

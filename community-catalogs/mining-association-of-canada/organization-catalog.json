@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:mining-association-of-canada",
+    "name": "Mining Association of Canada",
+    "sectors": [
+      "supply_chain",
+      "energy"
+    ],
+    "description": "National industry association representing the Canadian mining sector since 1935.",
+    "website": "https://mining.ca/",
+    "logo": "https://www.google.com/s2/favicons?domain=mining.ca&sz=128",
+    "country": "CA"
+  }
+}

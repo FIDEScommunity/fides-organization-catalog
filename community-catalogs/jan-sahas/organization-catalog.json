@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:jan-sahas",
+    "name": "Jan Sahas",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Indian nonprofit focused on safe migration, worker protection, and ending forced labour and sexual violence.",
+    "website": "https://jansahas.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=jansahas.org&sz=128",
+    "country": "IN"
+  }
+}

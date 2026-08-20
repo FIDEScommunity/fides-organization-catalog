@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:lahsa",
+    "name": "Los Angeles Homeless Services Authority",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Joint powers authority coordinating housing and services for people experiencing homelessness in Los Angeles County.",
+    "website": "https://www.lahsa.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=lahsa.org&sz=128",
+    "country": "US"
+  }
+}

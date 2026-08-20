@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:rdw",
+    "name": "RDW",
+    "sectors": [
+      "public_sector",
+      "mobility"
+    ],
+    "description": "Dutch authority for vehicle registration, driving licences, and related mobility services.",
+    "website": "https://www.rdw.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=rdw.nl&sz=128",
+    "country": "NL"
+  }
+}

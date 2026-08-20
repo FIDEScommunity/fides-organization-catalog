@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:kyckr",
+    "name": "Kyckr",
+    "sectors": [
+      "finance",
+      "digital"
+    ],
+    "description": "Global business register platform for company verification, registry documents, and beneficial ownership checks.",
+    "website": "https://kyckr.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=kyckr.com&sz=128",
+    "country": "IE"
+  }
+}

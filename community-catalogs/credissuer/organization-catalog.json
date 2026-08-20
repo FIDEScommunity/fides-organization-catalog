@@ -1,0 +1,14 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:credissuer",
+    "name": "CredIssuer",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Platform for issuing secure, tamper-evident, and shareable digital credentials.",
+    "website": "https://credissuer.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=credissuer.com&sz=128",
+    "country": "IN"
+  }
+}

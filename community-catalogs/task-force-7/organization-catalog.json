@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:task-force-7",
+    "name": "Task Force 7",
+    "sectors": [
+      "digital",
+      "mobility"
+    ],
+    "description": "Community focused on education and application of ISO/IEC 18013 and 23220 standards for mobile driving licences and mDocs.",
+    "website": "https://www.taskforce7.net/",
+    "logo": "https://www.google.com/s2/favicons?domain=taskforce7.net&sz=128",
+    "country": "US"
+  }
+}
