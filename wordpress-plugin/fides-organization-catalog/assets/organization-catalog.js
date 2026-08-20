@@ -414,12 +414,30 @@
     }
   }
 
+  function matomoSafePart(value) {
+    return String(value || 'unknown')
+      .trim()
+      .toLowerCase()
+      .replace(/^org:/i, '')
+      .replace(/\|/g, '-')
+      .replace(/\s+/g, '-') || 'unknown';
+  }
+
+  function organizationListingType(org) {
+    return orgCatalogTierIsCommunity(org) ? 'community' : 'official';
+  }
+
+  function organizationPlansMatomoName(org) {
+    return [matomoSafePart(org && org.id), 'plans', organizationListingType(org)].join('|');
+  }
+
   function renderOrganizationOfficialProfileCta(org) {
     syncCatalogConfig();
     if (!config.showOfficialProfileCta) return '';
     if (!tierUiEnabled() || !orgCatalogTierIsCommunity(org)) return '';
     const href = officialProfileUrl(org?.id);
     if (!href) return '';
+    const matomoName = organizationPlansMatomoName(org);
     return `
       <div class="fides-modal-footer fides-org-official-profile-cta">
         <div class="fides-org-official-profile-cta__copy">
@@ -427,7 +445,7 @@
           <span>Manage your organisation information and keep your ecosystem presence up to date.</span>
         </div>
         <a href="${escapeHtml(href)}" class="fides-org-official-profile-cta__link"
-           data-matomo-name="Manage your Official Listing">
+           data-matomo-name="${escapeHtml(matomoName)}">
           Manage your Official Listing <span aria-hidden="true">→</span>
         </a>
       </div>
@@ -2249,23 +2267,40 @@
   }
 
   function trackOrganizationModalOpen(org) {
-    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.trackOrganizationDetailOpen === 'function') {
-      window.FidesCatalogUI.trackOrganizationDetailOpen(org);
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.trackMatomoEvent !== 'function') {
+      if (window.FidesCatalogUI && typeof window.FidesCatalogUI.trackOrganizationDetailOpen === 'function') {
+        window.FidesCatalogUI.trackOrganizationDetailOpen(org);
+      }
+      return;
     }
+    let name = matomoSafePart(org && org.id);
+    try {
+      const from = String(new URLSearchParams(window.location.search).get('from') || '').trim();
+      const match = /^usecase:(.+)$/i.exec(from);
+      if (match && match[1]) {
+        name = name + '|from:usecase:' + matomoSafePart(match[1]);
+      }
+    } catch (_err) {
+      /* ignore malformed URL */
+    }
+    window.FidesCatalogUI.trackMatomoEvent('Organization Catalog', 'Modal Open', name);
   }
 
-  function openModal(id) {
+  function openModal(id, options) {
     selectedOrg = organizations.find((o) => o.id === id) || null;
     if (!selectedOrg) return;
     const existing = document.getElementById('fides-modal-overlay');
     if (existing) existing.remove();
+    const params = new URLSearchParams(window.location.search);
+    params.set('org', id);
+    if (!(options && options.keepFrom)) {
+      params.delete('from');
+    }
+    history.replaceState(null, '', '?' + params.toString());
     document.body.insertAdjacentHTML('beforeend', renderModal());
     document.body.style.overflow = 'hidden';
     bindModalEvents();
     trackOrganizationModalOpen(selectedOrg);
-    const params = new URLSearchParams(window.location.search);
-    params.set('org', id);
-    history.replaceState(null, '', '?' + params.toString());
   }
 
   function closeModal() {
@@ -2289,6 +2324,7 @@
     }
     const params = new URLSearchParams(window.location.search);
     params.delete('org');
+    params.delete('from');
     const qs = params.toString();
     history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
   }
@@ -2482,7 +2518,7 @@
   function checkDeepLink() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('org');
-    if (id) openModal(id);
+    if (id) openModal(id, { keepFrom: true });
   }
 
   async function fetchJsonWithTimeout(url, timeoutMs) {

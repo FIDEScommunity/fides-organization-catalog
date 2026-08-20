@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.27
+Stable tag: 1.14.28
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,10 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.28 =
+* Matomo funnel: Official Listing CTA Event Name is org_id|plans|listing_type;
+  Modal Open includes from:usecase:{id} when opened via use-case attribution.
 
 = 1.14.27 =
 * Clarify the Community modal profile CTA: keep “Is this your organisation?”,
