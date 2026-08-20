@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.28
+Stable tag: 1.14.30
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,12 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.30 =
+* Use-case cards include Matomo Use Case Click ({orgId}|{useCaseId}).
+
+= 1.14.29 =
+* Use-case cards use the shared modal UI helper/CSS (still open by default).
 
 = 1.14.28 =
 * Matomo funnel: Official Listing CTA Event Name is org_id|plans|listing_type;

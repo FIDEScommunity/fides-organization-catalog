@@ -1676,41 +1676,22 @@
 
   /**
    * Accordion listing the use cases this organization is involved in.
-   * Card layout mirrors the use-case modal "similar" cards; scrolls
-   * horizontally when there are more than three items.
+   * Card layout via shared FidesCatalogUI; open by default when present.
    * Returns '' when there are none, so the accordion is simply omitted.
    */
-  function renderUseCasesAccordion(useCases) {
+  function renderUseCasesAccordion(useCases, sourceOrg) {
     if (!Array.isArray(useCases) || useCases.length === 0) return '';
     const base = (config.useCaseCatalogUrl || '').replace(/\/$/, '');
-    const scrollClass = useCases.length > 3 ? ' fides-org-use-cases--scroll' : '';
-    const wrapClass = useCases.length > 3 ? ' fides-org-use-cases-wrap--scroll' : '';
-    const cardsHtml = useCases.map((uc) => {
-      const title = escapeHtml(uc.title || uc.id || 'Use case');
-      const itemId = uc.id ? String(uc.id) : '';
-      const href = base && itemId ? `${base}/?usecase=${encodeURIComponent(itemId)}` : '';
-      const likeSlot = itemId
-        ? `<span class="fides-org-use-case-card__like fides-modal-entity-like-slot" data-entity-like-type="usecase" data-entity-like-id="${escapeHtml(itemId)}">${renderModalEntityLikeInline('usecase', itemId)}</span>`
-        : '';
-      const body = `
-        <span class="fides-org-use-case-card__top">
-          <span class="fides-org-use-case-card__eyebrow">Use case</span>
-          ${likeSlot}
-        </span>
-        <strong class="fides-org-use-case-card__title">${title}</strong>
-        <span class="fides-org-use-case-card__link">View use case <span aria-hidden="true">→</span></span>
-      `;
-      if (href) {
-        return `<a class="fides-org-use-case-card" href="${escapeHtml(href)}" onclick="event.stopPropagation();">${body}</a>`;
-      }
-      return `<div class="fides-org-use-case-card fides-org-use-case-card--static">${body}</div>`;
-    }).join('');
-    const navPrev = useCases.length > 3
-      ? `<button type="button" class="fides-org-use-cases-nav-btn fides-org-use-cases-nav-btn--prev" data-org-uc-scroll="prev" aria-label="Previous use cases" disabled>${icons.chevronLeft}</button>`
-      : '';
-    const navNext = useCases.length > 3
-      ? `<button type="button" class="fides-org-use-cases-nav-btn fides-org-use-cases-nav-btn--next" data-org-uc-scroll="next" aria-label="Next use cases">${icons.chevronRight}</button>`
-      : '';
+    let body = '';
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.buildUseCasesCardsHtml === 'function') {
+      body = window.FidesCatalogUI.buildUseCasesCardsHtml(useCases, base, {
+        matomoSourceId: sourceOrg && sourceOrg.id ? sourceOrg.id : '',
+        renderUseCaseLikeHtml: function(itemId) {
+          return `<span class="fides-modal-use-case-card__like fides-modal-entity-like-slot" data-entity-like-type="usecase" data-entity-like-id="${escapeHtml(itemId)}">${renderModalEntityLikeInline('usecase', itemId)}</span>`;
+        }
+      });
+    }
+    if (!body) return '';
     return `
       <div class="fides-accordion is-open" id="fides-accordion-use-cases">
         <div class="fides-accordion-header-bar">
@@ -1722,57 +1703,16 @@
           </button>
         </div>
         <div class="fides-accordion-body">
-          <div class="fides-org-use-cases-wrap${wrapClass}">
-            ${navPrev}
-            <div class="fides-org-use-cases${scrollClass}" aria-label="Use cases">${cardsHtml}</div>
-            ${navNext}
-          </div>
+          ${body}
         </div>
       </div>
     `;
   }
 
   function bindOrgUseCasesScroll(overlay) {
-    if (!overlay) return;
-    const wrap = overlay.querySelector('.fides-org-use-cases-wrap--scroll');
-    if (!wrap) return;
-    const scroller = wrap.querySelector('.fides-org-use-cases--scroll');
-    if (!scroller) return;
-    const prevBtn = wrap.querySelector('[data-org-uc-scroll="prev"]');
-    const nextBtn = wrap.querySelector('[data-org-uc-scroll="next"]');
-
-    function updateNavState() {
-      const maxScroll = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
-      const left = scroller.scrollLeft;
-      const atStart = left <= 4;
-      const atEnd = left >= maxScroll - 4;
-      if (prevBtn) prevBtn.disabled = atStart;
-      if (nextBtn) nextBtn.disabled = atEnd;
-      wrap.classList.toggle('is-at-start', atStart);
-      wrap.classList.toggle('is-at-end', atEnd);
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.bindModalUseCasesScroll === 'function') {
+      window.FidesCatalogUI.bindModalUseCasesScroll(overlay);
     }
-
-    function scrollByPage(direction) {
-      const amount = Math.max(scroller.clientWidth * 0.72, 180);
-      scroller.scrollBy({ left: direction * amount, behavior: 'smooth' });
-    }
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-        scrollByPage(-1);
-      });
-    }
-    if (nextBtn) {
-      nextBtn.addEventListener('click', (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-        scrollByPage(1);
-      });
-    }
-    scroller.addEventListener('scroll', updateNavState, { passive: true });
-    updateNavState();
   }
 
   function renderModal() {
@@ -1794,7 +1734,7 @@
     ];
 
     const derivedUseCases = getDerivedUseCasesForOrg(org);
-    const useCasesAccordionHtml = renderUseCasesAccordion(derivedUseCases);
+    const useCasesAccordionHtml = renderUseCasesAccordion(derivedUseCases, org);
     const certCount = countCatalogCertifications(org);
     const certCountBadge = certCount > 0 ? ` <span class="fides-accordion-count">${certCount}</span>` : '';
     const identifierRowsHtml = renderOrganizationIdentifierRows(org);
