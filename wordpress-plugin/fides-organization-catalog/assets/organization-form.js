@@ -24,11 +24,15 @@
   let planTier =
     config.planTier && typeof config.planTier === "object"
       ? { ...config.planTier }
-      : { tierUiEnabled: false, tier: "Community", isPro: false, plansUrl: "/plans/", descriptionMaxLength: 200 };
+      : { tierUiEnabled: false, tier: "Community", isPro: false, hasFullListing: false, plansUrl: "/plans/", descriptionMaxLength: 200 };
   const v2Limits = config.v2Limits && typeof config.v2Limits === "object" ? config.v2Limits : {};
 
   function tierUiEnabled() {
     return planTier.tierUiEnabled === true;
+  }
+
+  function fullListingFieldsEnabled() {
+    return !tierUiEnabled() || !!planTier.isPro || !!planTier.hasFullListing;
   }
 
   const ORG_PRO_FIELD_IDS = [
@@ -45,13 +49,12 @@
   let offeringsValues = [];
   let offeringsSuggestionIndex = -1;
 
-  function proPlanBadgeIsStatic() {
-    return !!planTier.isPro || planTier.tier === "Pro";
-  }
-
   function proBadgeHtml() {
-    if (proPlanBadgeIsStatic()) {
+    if (!!planTier.isPro || planTier.tier === "Pro") {
       return '<span class="fides-pro-plan-badge fides-pro-plan-badge--label">Pro plan</span>';
+    }
+    if (fullListingFieldsEnabled()) {
+      return '<span class="fides-pro-plan-badge fides-pro-plan-badge--label">Full listing</span>';
     }
     const url = String(planTier.plansUrl || "/plans/");
     return `<a href="${escapeHtml(url)}" class="fides-pro-plan-badge" target="_blank" rel="noopener">Pro plan</a>`;
@@ -76,6 +79,7 @@
         tierUiEnabled: planTier.tierUiEnabled,
         tier: "Community",
         isPro: false,
+        hasFullListing: false,
         plansUrl: planTier.plansUrl || "/plans/",
         descriptionMaxLength: 200,
       };
@@ -103,8 +107,8 @@
   const ORG_DESC_MAX_PRO = 2000;
 
   function updateDescriptionLimitUi() {
-    const isPro = !!planTier.isPro;
-    const maxLen = isPro ? ORG_DESC_MAX_PRO : ORG_DESC_MAX_COMMUNITY;
+    const hasFullListing = fullListingFieldsEnabled();
+    const maxLen = hasFullListing ? ORG_DESC_MAX_PRO : ORG_DESC_MAX_COMMUNITY;
     const descEl = root.querySelector("#fides-org-description");
     const labelEl = root.querySelector("#fides-org-description-label");
     const noticeEl = root.querySelector("#fides-org-description-limit-notice");
@@ -114,7 +118,7 @@
     }
     if (noticeEl) {
       const plansUrl = escapeHtml(String(planTier.plansUrl || "/plans/"));
-      if (!tierUiEnabled() || isPro) {
+      if (hasFullListing) {
         noticeEl.textContent = `You can use up to ${ORG_DESC_MAX_PRO.toLocaleString("en-US")} characters in the published catalog description.`;
       } else {
         noticeEl.innerHTML = `Community plan: maximum ${ORG_DESC_MAX_COMMUNITY} characters in the catalog. <a href="${plansUrl}" target="_blank" rel="noopener">Pro plan</a> allows up to ${ORG_DESC_MAX_PRO.toLocaleString("en-US")} characters.`;
@@ -141,12 +145,15 @@
       return;
     }
     const isPro = !!planTier.isPro;
+    const hasFullListing = fullListingFieldsEnabled();
     badge.hidden = false;
-    badge.textContent = isPro ? "Pro plan" : "Community plan";
+    badge.textContent = isPro ? "Pro plan" : hasFullListing ? "Full Community listing" : "Community plan";
     badge.className = `fides-update-banner-plan ${isPro ? "fides-pro-plan-badge" : "fides-free-plan-badge"}`;
     badge.title = isPro
       ? "This organization has a linked Pro account. Extended catalog fields are enabled."
-      : "Community plan limits apply to fields published in the catalog.";
+      : hasFullListing
+        ? "This Community listing includes all catalog fields."
+        : "Community plan limits apply to fields published in the catalog.";
   }
 
   function normalizeOfferingLabel(value) {
@@ -172,7 +179,7 @@
   function renderOfferingsChips() {
     const listEl = root.querySelector("#fides-org-offerings-chips");
     if (!listEl) return;
-    const locked = !planTier.isPro;
+    const locked = !fullListingFieldsEnabled();
     listEl.innerHTML = offeringsValues
       .map(
         (label, index) =>
@@ -253,7 +260,7 @@
   }
 
   function addOffering(rawValue) {
-    if (!planTier.isPro) return false;
+    if (!fullListingFieldsEnabled()) return false;
     const label = normalizeOfferingLabel(rawValue);
     if (!label) return false;
     if (offeringsValues.some((value) => value.toLowerCase() === label.toLowerCase())) return false;
@@ -324,26 +331,26 @@
   }
 
   function applyTierFieldState() {
-    const isPro = !!planTier.isPro;
+    const hasFullListing = fullListingFieldsEnabled();
     ORG_PRO_FIELD_IDS.forEach((fieldId) => {
       const el = root.querySelector(`#${fieldId}`);
       if (!el) return;
-      el.disabled = !isPro;
-      el.readOnly = !isPro;
-      el.classList.toggle("fides-input-pro-locked", !isPro);
+      el.disabled = !hasFullListing;
+      el.readOnly = !hasFullListing;
+      el.classList.toggle("fides-input-pro-locked", !hasFullListing);
       const row = el.closest(".fides-form-row");
-      if (row) row.classList.toggle("fides-form-row--pro-locked", !isPro);
+      if (row) row.classList.toggle("fides-form-row--pro-locked", !hasFullListing);
     });
     const offeringsRow = root.querySelector(".fides-form-row--offerings");
-    if (offeringsRow) offeringsRow.classList.toggle("fides-form-row--pro-locked", !isPro);
+    if (offeringsRow) offeringsRow.classList.toggle("fides-form-row--pro-locked", !hasFullListing);
     root.querySelectorAll(".fides-form-section--pro-tier").forEach((section) => {
-      section.classList.toggle("fides-form-section--pro-locked", !isPro);
+      section.classList.toggle("fides-form-section--pro-locked", !hasFullListing);
     });
     const mediaSection = root.querySelector(".fides-org-media-section");
     if (mediaSection) {
-      mediaSection.classList.toggle("fides-form-section--pro-locked", !isPro);
+      mediaSection.classList.toggle("fides-form-section--pro-locked", !hasFullListing);
       mediaSection.querySelectorAll("input, button").forEach((el) => {
-        el.disabled = !isPro;
+        el.disabled = !hasFullListing;
       });
     }
     renderOfferingsChips();
