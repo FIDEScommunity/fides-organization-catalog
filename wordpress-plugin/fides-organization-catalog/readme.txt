@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.31
+Stable tag: 1.14.32
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,10 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.32 =
+* Full Community organizations now expose website, tags, offerings, media and contact details in the modal while retaining the Community badge.
+* SSR website and offerings visibility now follows full listing depth instead of Official status.
 
 = 1.14.31 =
 * Full Community listings unlock all organization form fields without showing an Official badge (requires tiles ≥ 1.13.7).

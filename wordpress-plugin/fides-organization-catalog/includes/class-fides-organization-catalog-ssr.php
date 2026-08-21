@@ -167,10 +167,29 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
              * JSON-LD enrichment
              * -------------------------------------------------------------- */
 
+            private static function item_has_full_listing(array $item): bool {
+                if (! class_exists('Fides_Catalog_Org_Tier') || ! Fides_Catalog_Org_Tier::tier_ui_enabled()) {
+                    return true;
+                }
+                if (
+                    isset($item['catalogListingDepth'])
+                    && strtolower(trim((string) $item['catalogListingDepth'])) === 'full'
+                ) {
+                    return true;
+                }
+                if (isset($item['catalogTier'])) {
+                    $tier = strtolower(trim((string) $item['catalogTier']));
+                    if ($tier !== '' && $tier !== 'community' && $tier !== 'gratis') {
+                        return true;
+                    }
+                }
+                $org_id = isset($item['id']) ? (string) $item['id'] : '';
+                return $org_id !== '' && Fides_Catalog_Org_Tier::has_full_listing($org_id);
+            }
+
             protected function enrich_jsonld(array $jsonld, array $item): array {
                 if (! empty($item['website'])) {
-                    $org_id = isset($item['id']) ? (string) $item['id'] : '';
-                    if (! class_exists('Fides_Catalog_Org_Tier') || Fides_Catalog_Org_Tier::is_pro($org_id)) {
+                    if (self::item_has_full_listing($item)) {
                         $jsonld['url'] = (string) $item['website'];
                     }
                 }
@@ -217,12 +236,7 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                         'html'  => esc_html($country),
                     );
                 }
-                if ($website !== ''
-                    && (
-                        ! class_exists('Fides_Catalog_Org_Tier')
-                        || ! Fides_Catalog_Org_Tier::tier_ui_enabled()
-                        || Fides_Catalog_Org_Tier::is_pro(isset($item['id']) ? (string) $item['id'] : '')
-                    )) {
+                if ($website !== '' && self::item_has_full_listing($item)) {
                     $rows[] = array(
                         'label' => __('Website', $td),
                         'html'  => sprintf(
@@ -266,10 +280,7 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                 if (! empty($role_labels)) {
                     echo $this->render_ecosystem_role_chip_section($role_labels, __('Ecosystem roles', $td));
                 }
-                $hide_offerings = class_exists('Fides_Catalog_Org_Tier')
-                    && Fides_Catalog_Org_Tier::tier_ui_enabled()
-                    && Fides_Catalog_Org_Tier::item_is_community($item);
-                if (! $hide_offerings) {
+                if (self::item_has_full_listing($item)) {
                     echo $this->render_offering_chip_section(
                         $this->list_field($item, 'offerings'),
                         __('Offerings', $td)

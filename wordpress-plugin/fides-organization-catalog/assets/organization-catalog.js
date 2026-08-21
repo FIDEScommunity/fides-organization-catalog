@@ -892,6 +892,23 @@
     return orgIdInProOrgIds(org.id);
   }
 
+  /** Full public fields for Official or Full Community listings; legacy always on. */
+  function orgHasFullCatalogContent(org) {
+    if (!tierUiEnabled()) return true;
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.catalogListingHasFullFields === 'function') {
+      return window.FidesCatalogUI.catalogListingHasFullFields(org, {
+        tierUiEnabled: tierUiEnabled(),
+        editAccess: config.editAccess,
+      });
+    }
+    if (orgCatalogTierIsPro(org)) return true;
+    if (String(org && org.catalogListingDepth || '').toLowerCase() === 'full') return true;
+    syncCatalogConfig();
+    const access = config.editAccess && typeof config.editAccess === 'object' ? config.editAccess : {};
+    const fullOrgIds = Array.isArray(access.fullOrgIds) ? access.fullOrgIds : [];
+    return !!org && fullOrgIds.indexOf(String(org.id || '').trim()) >= 0;
+  }
+
   function orgOfficialCardClass(org) {
     return orgCatalogTierIsPro(org) ? ' fides-org-card--official' : '';
   }
@@ -914,11 +931,11 @@
     return '';
   }
 
-  /** Country + website link under the modal title (website for Official accounts only). */
+  /** Country + website link under the modal title (website for full listings). */
   function renderOrganizationModalHeaderMeta(org) {
     const countryPart = org.country ? renderOrgCountryMeta(org) : '';
     const websiteHref = tierUiEnabled()
-      ? (orgCatalogTierIsPro(org) ? orgWebsiteHref(org.website) : '')
+      ? (orgHasFullCatalogContent(org) ? orgWebsiteHref(org.website) : '')
       : orgWebsiteHref(org.website);
     const websitePart = websiteHref
       ? `<a href="${escapeHtml(websiteHref)}" target="_blank" rel="noopener" class="fides-modal-provider-link fides-modal-header-website" data-matomo-name="Organization website"${orgSalesTrackAttrs(org, 'website')} onclick="event.stopPropagation();">${icons.externalLink} <span class="fides-url-ellipsis">${escapeHtml(orgWebsiteLabel(org.website))}</span></a>`
@@ -938,7 +955,7 @@
   }
 
   function renderOrganizationModalAboutBody(org) {
-    const isCommunity = orgCatalogTierIsCommunity(org);
+    const hasFullContent = orgHasFullCatalogContent(org);
     const codes = orgSectorCodes(org);
     const sectorLabels = codes
       .map((c) => SECTOR_LABELS[c] || c)
@@ -963,8 +980,8 @@
           <div class="fides-modal-taxonomy-tags">${sectorInner || '<span class="fides-modal-taxonomy-empty">\u2014</span>'}</div>
         </div>
         ${ecosystemRoleLabels.length ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.share} Ecosystem roles</span><div class="fides-modal-taxonomy-tags">${ecosystemRolesInner}</div></div>` : ''}
-        ${!isCommunity && tagsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.tag} Tags</span><div class="fides-modal-taxonomy-tags">${tagsInner}</div></div>` : ''}
-        ${!isCommunity && offeringsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.offerings} Offerings</span><div class="fides-modal-taxonomy-tags">${offeringsInner}</div></div>` : ''}
+        ${hasFullContent && tagsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.tag} Tags</span><div class="fides-modal-taxonomy-tags">${tagsInner}</div></div>` : ''}
+        ${hasFullContent && offeringsInner ? `<div class="fides-modal-taxonomy-row"><span class="fides-modal-taxonomy-label">${icons.offerings} Offerings</span><div class="fides-modal-taxonomy-tags">${offeringsInner}</div></div>` : ''}
       </div>
     `;
   }
