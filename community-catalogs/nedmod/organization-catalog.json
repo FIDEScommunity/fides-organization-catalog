@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:nedmod",
+    "name": "Nedmod",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Nedmod Information Technologies",
+    "description": "Nedmod develops open-standards digital trust solutions under the Credenid product family for issuing, holding, presenting and verifying credentials, including EUDI-aligned wallets.",
+    "logo": "https://nedmod.com/assets/logo.png",
+    "country": "TR",
+    "ecosystemRoleCodes": [
+      "business_wallet_provider",
+      "vc_type_authority",
+      "issuer",
+      "relying_party",
+      "idv_provider",
+      "software_vendor",
+      "eudi_wallet_intermediary",
+      "trust_infrastructure_provider"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-08-23T14:57:55+00:00"
+}
