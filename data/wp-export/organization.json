@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-24T11:17:48+00:00",
+    "generatedAt": "2026-08-24T14:26:56+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -154,7 +154,7 @@
                         "digital"
                     ],
                     "legalName": "Banqup SA",
-                    "description": "Banqup is a European Qualified Trust Service Provider (QTSP) positioned to support the European Union Digital Identity / Business Wallet (EUDIW / EUBW) ecosystem, leveraging its active status on the Belgian Trusted List\n\nOur EUBW-ready offerings include:\n- QES for Remote Sealing/Signing: Fully compliant Qualified Electronic Signatures (QES) \n- QCert for QSeal: Qualified Certificates for Electronic Seals, enabling automated, cloud-based bulk sealing to legally secure outbound data, invoices, and attestations\n- QeRDS: Qualified Electronic Registered Delivery Service to traceably and securely exchange credentials\n\nPlanned & Organizational Wallet Services:\nOrganizational Wallet Provider: Acting as a business wallet provider to enable legal entities to hold, manage, and present verified corporate credentials\n\nQualified Electronic Attestation of Attributes Provider (QEAAP) (Planned): Deploying QEAAP capabilities to issue legally recognized Qualified Electronic Attestations of Attributes (QEAA):\n- IBAN Credentials: Support for the issuance of verified IBAN credentials \n- Verifier Attestations (Economic Operator): Enabling economic operators to hold and present identity data \n\nBanqup is an Active participant of the WeBuild Large Scale Pilot, driving the implementation standards for the European Business Wallet",
+                    "description": "Banqup is a certified Qualified Trust Service Provider (QTSP) delivering legally binding digital identity and trust services across all 27 EU member states.  We enable individuals and organizations to generate handwritten-equivalent electronic signatures (QES), run automated cloud-based document and invoice sealing (QCert for QSeal), and securely exchange credentials via trackable delivery (QeRDS). \n\nAs an active participant in the WeBuild pilot driving European Business Wallet (EUBW) standards, Banqup is also expanding into organizational wallet services and Qualified Electronic Attestations of Attributes (QEAA) to issue verified corporate identity data, such as IBAN credentials and economic operator attestations.",
                     "website": "https://www.banqup.com",
                     "logo": "https://integr-assets.btx.eu.banqup.com/1.0.2632/img/banqup-logo-triangle.png",
                     "country": "BE",
@@ -219,10 +219,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-08-18T16:14:57+00:00"
+                "lastUpdated": "2026-08-24T14:26:56+00:00"
             },
-            "publishedAt": "2026-08-18 16:14:57",
-            "updatedAt": "2026-08-18 16:14:57"
+            "publishedAt": "2026-08-24 14:26:56",
+            "updatedAt": "2026-08-24 14:26:56"
         },
         {
             "itemId": "org:bcgov",
