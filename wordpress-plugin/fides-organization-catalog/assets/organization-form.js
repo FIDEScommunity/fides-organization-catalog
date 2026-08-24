@@ -156,6 +156,22 @@
         : "Community plan limits apply to fields published in the catalog.";
   }
 
+  function updateOfficialClaimRequestUi() {
+    const wrap = root.querySelector("#fides-org-official-claim-request");
+    const checkbox = root.querySelector("#fides-org-request-official-claim");
+    if (!wrap || !checkbox) return;
+
+    const eligible =
+      mode === "update" &&
+      Boolean(selectedOrgId) &&
+      !planTier.isOfficial &&
+      !planTier.isPro &&
+      !planTier.isOwner;
+
+    wrap.hidden = !eligible;
+    if (!eligible) checkbox.checked = false;
+  }
+
   function normalizeOfferingLabel(value) {
     return String(value || "")
       .trim()
@@ -356,6 +372,7 @@
     renderOfferingsChips();
     updateDescriptionLimitUi();
     updatePlanTierBanner();
+    updateOfficialClaimRequestUi();
     updateProFieldLabels();
   }
 
@@ -850,12 +867,28 @@
         </div>
         ${
           contactEmail
-            ? `<div class="fides-form-grid fides-form-grid-pair fides-submitter-grid">
-          <div class="fides-form-row">
-            <label for="fides-org-contact">Your account email (for review) *</label>
-            ${helpHtml("contactEmail")}
-            <input id="fides-org-contact" class="fides-input-locked" type="email" value="${escapeHtml(contactEmail)}" readonly aria-readonly="true" tabindex="-1" />
+            ? `<div class="fides-submitter-block">
+          <div class="fides-form-grid fides-form-grid-pair fides-submitter-grid">
+            <div class="fides-form-row">
+              <label for="fides-org-contact">Your account email (for review) *</label>
+              ${helpHtml("contactEmail")}
+              <input id="fides-org-contact" class="fides-input-locked" type="email" value="${escapeHtml(contactEmail)}" readonly aria-readonly="true" tabindex="-1" />
+            </div>
           </div>
+          ${
+            mode === "update"
+              ? `<div id="fides-org-official-claim-request" class="fides-org-official-claim-request" hidden>
+            <label class="fides-official-claim-choice">
+              <input type="checkbox" id="fides-org-request-official-claim" name="requestOfficialClaim" value="1" />
+              <span>I am authorized to represent this organization and would like to request access to manage its Official listing.</span>
+            </label>
+            <p>
+              FIDES will contact you using the account email shown above to discuss the most appropriate plan or trial. Please make sure this is your organization email address.<br />
+              Submitting this request does not grant access automatically.
+            </p>
+          </div>`
+              : ""
+          }
         </div>`
             : `<p class="fides-form-message is-error">Your WordPress profile must have a valid email address before you can submit.</p>`
         }
@@ -1306,6 +1339,10 @@
     if (Object.keys(contact).length) payload.contact = contact;
     const manifestoEl = root.querySelector("#fides-org-manifesto-supporter");
     payload.fidesManifestoSupporter = Boolean(manifestoEl && manifestoEl.checked);
+    const officialClaimEl = root.querySelector("#fides-org-request-official-claim");
+    if (mode === "update" && officialClaimEl && officialClaimEl.checked) {
+      payload.requestOfficialClaim = true;
+    }
     payload.certifications = buildCertificationsFromForm();
     payload.ecosystemRoleCodes = getCheckedEcosystemRoleCodes();
     const videos = collectMediaUrls(videoRowsState);
@@ -1372,6 +1409,8 @@
   async function selectOrganization(item) {
     selectedOrgId = String(item.id || "").trim();
     selectedOrgLabel = String(item.label || selectedOrgId).trim();
+    const officialClaimEl = root.querySelector("#fides-org-request-official-claim");
+    if (officialClaimEl) officialClaimEl.checked = false;
     if (lookupResults) lookupResults.innerHTML = "";
     if (lookupHint) lookupHint.hidden = true;
     showUpdateSelectionUi();
@@ -1382,6 +1421,8 @@
   function resetUpdateSelection() {
     selectedOrgId = "";
     selectedOrgLabel = "";
+    const officialClaimEl = root.querySelector("#fides-org-request-official-claim");
+    if (officialClaimEl) officialClaimEl.checked = false;
     if (searchInput) {
       searchInput.value = "";
       searchInput.focus();

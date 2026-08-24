@@ -121,6 +121,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                     'validate_payload'      => array(__CLASS__, 'validate_payload'),
                     'payload_to_export'     => array(__CLASS__, 'payload_to_export'),
                     'catalog_item_to_payload' => array(__CLASS__, 'catalog_item_to_payload'),
+                    'prepare_payload_for_diff' => array(__CLASS__, 'prepare_payload_for_diff'),
                     'diff_field_labels'     => array(
                         'id'              => 'Catalog id',
                         'name'            => 'Organization name',
@@ -150,6 +151,17 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                     ),
                 )
             );
+        }
+
+        /**
+         * Remove WordPress-only review metadata from catalog change diffs.
+         *
+         * @param array<string, mixed> $payload Submission or catalog payload.
+         * @return array<string, mixed>
+         */
+        public static function prepare_payload_for_diff(array $payload): array {
+            unset($payload['requestOfficialClaim']);
+            return $payload;
         }
 
         /**
@@ -360,6 +372,12 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
 
             if (array_key_exists('ecosystemRoleCodes', $payload)) {
                 $normalized['ecosystemRoleCodes'] = self::normalize_ecosystem_role_codes($payload['ecosystemRoleCodes']);
+            }
+
+            // Administrative signal only: retained in the WordPress submission
+            // payload, but deliberately omitted by payload_to_export().
+            if ($action === 'update' && ! empty($payload['requestOfficialClaim'])) {
+                $normalized['requestOfficialClaim'] = true;
             }
 
             if (array_key_exists('media', $payload)) {

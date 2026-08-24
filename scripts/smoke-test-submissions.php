@@ -217,6 +217,35 @@ smoke('Update merge: empty identifiers in payload keeps catalog identifiers', st
     return 'catalog identifiers preserved when form sends none';
 });
 
+smoke('Official claim stays in WordPress payload and out of export', static function (): string {
+    $normalized = Fides_Organization_Catalog_Submission_Adapter::validate_payload(
+        array(
+            'name'                   => 'Gaia-X AISBL',
+            'sectors'                => array('digital'),
+            'country'                => 'BE',
+            'requestOfficialClaim'   => true,
+        ),
+        array(
+            'action'  => 'update',
+            'type'    => 'organization',
+            'item_id' => 'org:gaia-x',
+        )
+    );
+    if ($normalized instanceof WP_Error) {
+        throw new RuntimeException($normalized->get_error_message());
+    }
+    assert_true(! empty($normalized['requestOfficialClaim']), 'Claim signal missing from normalized submission');
+
+    $export = Fides_Organization_Catalog_Submission_Adapter::payload_to_export($normalized);
+    $organization = isset($export['organization']) && is_array($export['organization'])
+        ? $export['organization']
+        : array();
+    assert_true(! array_key_exists('requestOfficialClaim', $organization), 'Claim signal leaked into catalog export');
+    $diff_payload = Fides_Organization_Catalog_Submission_Adapter::prepare_payload_for_diff($normalized);
+    assert_true(! array_key_exists('requestOfficialClaim', $diff_payload), 'Claim signal leaked into catalog diff');
+    return 'claim retained for review only';
+});
+
 smoke('Identifiers: adapter accepts full set via REST', static function (): string {
     $payload = array(
         'name'        => 'Identifier Test',
