@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-24T09:35:57+00:00",
+    "generatedAt": "2026-08-24T11:17:48+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -810,6 +810,32 @@
             },
             "publishedAt": "2026-07-02 10:08:47",
             "updatedAt": "2026-07-02 10:08:47"
+        },
+        {
+            "itemId": "org:italy",
+            "slug": "italy",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:italy",
+                    "name": "Italian Government",
+                    "sectors": [
+                        "public_sector"
+                    ],
+                    "description": "The Italian Government's IO platform enables citizens to receive official notifications, manage public documents, access benefits, and complete digital payments and signatures.",
+                    "website": "https://io.italia.it/",
+                    "logo": "https://www.google.com/s2/favicons?domain=io.italia.it&sz=128",
+                    "country": "IT",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community",
+                    "catalogListingDepth": "full"
+                },
+                "lastUpdated": "2026-08-24T11:17:48+00:00"
+            },
+            "publishedAt": "2026-08-24 11:17:48",
+            "updatedAt": "2026-08-24 11:17:48"
         },
         {
             "itemId": "org:izertis",
