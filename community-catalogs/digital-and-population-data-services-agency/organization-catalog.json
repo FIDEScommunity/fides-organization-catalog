@@ -23,6 +23,14 @@
               "name": "Qualified cert esig"
             },
             {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            },
+            {
               "code": "Q_WAC",
               "name": "Qualified website authentication certificate"
             }

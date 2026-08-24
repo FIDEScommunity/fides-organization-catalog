@@ -1,9 +1,9 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
-    "id": "org:zealid",
-    "name": "ZealiD",
-    "legalName": "ZealiD AB",
+    "id": "org:fourthline-trust-services",
+    "name": "Fourthline Trust Services",
+    "legalName": "Fourthline Trust Services AB",
     "sectors": [
       "digital"
     ],
@@ -13,7 +13,7 @@
         "code": "qtsp",
         "evidence": {
           "kind": "url",
-          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SE/tsp/3",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/SE/tsp/5",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
         },
         "details": {
@@ -25,19 +25,12 @@
             {
               "code": "Q_REM_MANAGE_Q_SIG_CD",
               "name": "Qualified rem manage q sig cd"
-            },
-            {
-              "code": "Q_TIMESTAMP",
-              "name": "Qualified timestamp"
             }
           ]
         }
       }
     ],
-    "website": "https://www.zealid.com/en/contact",
-    "logo": "https://www.zealid.com/hubfs/foxit%20and%20zealid%20partnership%20%281%29.jpg",
-    "description": "ZealiD is a Qualified Trust Service Provider on the EU eIDAS Trust List for Sweden.",
-    "catalogTier": "Community"
+    "website": "https://fourthline-trust-services.com/"
   },
-  "lastUpdated": "2026-07-06T08:59:41.092Z"
+  "lastUpdated": "2026-08-24T05:36:32.276Z"
 }

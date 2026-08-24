@@ -37,6 +37,10 @@
             {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
+            },
+            {
+              "code": "QEAA",
+              "name": "Qualified electronic attestation of attributes"
             }
           ]
         }

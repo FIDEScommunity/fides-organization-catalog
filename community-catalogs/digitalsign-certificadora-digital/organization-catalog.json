@@ -45,6 +45,10 @@
             {
               "code": "Q_VAL_ESIG",
               "name": "Qualified val esig"
+            },
+            {
+              "code": "QEAA",
+              "name": "Qualified electronic attestation of attributes"
             }
           ]
         }
