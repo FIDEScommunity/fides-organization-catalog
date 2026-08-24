@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-23T14:57:56+00:00",
+    "generatedAt": "2026-08-24T09:35:57+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -282,6 +282,30 @@
             },
             "publishedAt": "2026-08-13 19:23:41",
             "updatedAt": "2026-08-13 19:23:41"
+        },
+        {
+            "itemId": "org:caesar",
+            "slug": "caesar",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:caesar",
+                    "name": "Caesar Groep",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Caesar Groep is an IT services company supporting organizations in their digital transformation. With over 150 professionals across multiple business units, the group delivers solutions in areas such",
+                    "logo": "https://www.google.com/s2/favicons?domain=caesar.nl&sz=128",
+                    "country": "NL",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-24T09:35:57+00:00"
+            },
+            "publishedAt": "2026-08-24 09:35:57",
+            "updatedAt": "2026-08-24 09:35:57"
         },
         {
             "itemId": "org:city-of-vancouver",
