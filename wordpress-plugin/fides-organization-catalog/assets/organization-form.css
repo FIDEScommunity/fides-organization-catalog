@@ -804,6 +804,41 @@
   color: #334155;
   cursor: default;
 }
+
+.fides-org-official-claim-request {
+  display: grid;
+  gap: 2px;
+  margin-top: 12px;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.fides-org-official-claim-request[hidden] {
+  display: none !important;
+}
+
+.fides-official-claim-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.fides-official-claim-choice input {
+  flex: 0 0 auto;
+  margin-top: 3px;
+}
+
+.fides-org-official-claim-request p {
+  margin: 0 0 0 24px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #475569;
+}
 .fides-form-section {
   margin: var(--fides-section-block-gap) 0 12px;
   padding: 18px 16px 16px;

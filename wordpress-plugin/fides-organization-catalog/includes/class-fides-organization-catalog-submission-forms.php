@@ -156,6 +156,9 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
          * @param array<string, mixed> $extra Extra config for inline script.
          */
         private static function render_form_shortcode($mode, array $extra = array()): string {
+            // Early-return notices use the same card styles as the form.
+            wp_enqueue_style('fides-organization-form');
+
             if (! class_exists('Fides_Catalog_Submission_Registry')
                 || ! Fides_Catalog_Submission_Registry::exists('organization')) {
                 return '<div class="fides-use-case-card"><p>' . esc_html__(
@@ -165,7 +168,6 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             }
 
             if (! is_user_logged_in()) {
-                wp_enqueue_style('fides-organization-form');
                 $login_url = self::form_login_url();
                 return sprintf(
                     '<div class="fides-use-case-card"><p>%s</p><p><a class="fides-org-form-login-link" href="%s">%s</a></p></div>',
@@ -189,7 +191,6 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
                 ) . '</p></div>';
             }
 
-            wp_enqueue_style('fides-organization-form');
             wp_enqueue_script('fides-organization-form');
 
             $sectors = array();
