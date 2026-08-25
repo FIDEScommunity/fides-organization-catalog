@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-25T06:41:17+00:00",
+    "generatedAt": "2026-08-25T06:46:24+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -836,6 +836,31 @@
             },
             "publishedAt": "2026-07-02 10:08:47",
             "updatedAt": "2026-07-02 10:08:47"
+        },
+        {
+            "itemId": "org:innovalor",
+            "slug": "innovalor",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:innovalor",
+                    "name": "InnoValor",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "InnoValor Advies is an independent consultancy that helps organizations realize value from digital innovation through research-based advisory. It works across domains such as data-driven innovation, d",
+                    "website": "https://innovalor.nl/",
+                    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkkqpNgGvKedahQ3vBQgRlT6Cqhbp1d405Y0AzcwHgg&s",
+                    "country": "NL",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-08-25T06:46:23+00:00"
+            },
+            "publishedAt": "2026-08-25 06:46:23",
+            "updatedAt": "2026-08-25 06:46:23"
         },
         {
             "itemId": "org:italy",
