@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-24T14:26:56+00:00",
+    "generatedAt": "2026-08-25T06:41:17+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -584,6 +584,32 @@
             },
             "publishedAt": "2026-07-02 09:17:26",
             "updatedAt": "2026-07-02 09:17:26"
+        },
+        {
+            "itemId": "org:france",
+            "slug": "france",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:france",
+                    "name": "French Government",
+                    "sectors": [
+                        "public_sector"
+                    ],
+                    "description": "France Identite is the French government digital identity initiative, linking the national ID card and smartphone for secure online and in-person use.",
+                    "website": "https://france-identite.gouv.fr/",
+                    "logo": "https://france-identite.gouv.fr/assets/img/FIN-profile-picture.jpg",
+                    "country": "FR",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community",
+                    "catalogListingDepth": "full"
+                },
+                "lastUpdated": "2026-08-25T06:41:16+00:00"
+            },
+            "publishedAt": "2026-08-25 06:41:16",
+            "updatedAt": "2026-08-25 06:41:16"
         },
         {
             "itemId": "org:gataca",
