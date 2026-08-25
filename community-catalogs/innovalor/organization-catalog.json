@@ -2,16 +2,16 @@
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
     "id": "org:innovalor",
-    "name": "Innovalor",
+    "name": "InnoValor",
     "sectors": [
       "digital"
     ],
+    "description": "InnoValor Advies is an independent consultancy that helps organizations realize value from digital innovation through research-based advisory. It works across domains such as data-driven innovation, d",
     "website": "https://innovalor.nl/",
-    "logo": "https://www.google.com/s2/favicons?domain=innovalor.nl&sz=128",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkkqpNgGvKedahQ3vBQgRlT6Cqhbp1d405Y0AzcwHgg&s",
     "country": "NL",
     "fidesManifestoSupporter": true,
-    "description": "InnoValor Advies is an independent consultancy that helps organizations realize value from digital innovation through research-based advisory. It works across domains such as data-driven innovation, digital identity, wallets, standards, and public sector transformation.",
-    "catalogTier": "Community"
+    "catalogTier": "Pro"
   },
-  "lastUpdated": "2026-04-02T13:19:49.000Z"
+  "lastUpdated": "2026-08-25T06:46:23+00:00"
 }
