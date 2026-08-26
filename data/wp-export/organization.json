@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-26T11:49:41+00:00",
+    "generatedAt": "2026-08-26T13:44:44+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1313,6 +1313,41 @@
             },
             "publishedAt": "2026-08-07 07:54:33",
             "updatedAt": "2026-08-07 07:54:33"
+        },
+        {
+            "itemId": "org:siros-foundation",
+            "slug": "siros-foundation",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:siros-foundation",
+                    "name": "SIROS Foundation",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "SIROS Foundation",
+                    "description": "SIROS Foundation is a non-profit, privately funded foundation setup to manage the SIROS ID based on the work in wwWallet.",
+                    "country": "SE",
+                    "identifiers": {
+                        "business_registration_number": "5595421925",
+                        "vat_number": "SE559542192501",
+                        "duns": "351421971"
+                    },
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider",
+                        "business_wallet_provider",
+                        "software_vendor",
+                        "trust_infrastructure_provider"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-26T13:44:44+00:00"
+            },
+            "publishedAt": "2026-08-26 13:44:44",
+            "updatedAt": "2026-08-26 13:44:44"
         },
         {
             "itemId": "org:solidus-network",
