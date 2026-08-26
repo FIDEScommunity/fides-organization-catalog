@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-25T06:48:37+00:00",
+    "generatedAt": "2026-08-26T11:49:41+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -729,6 +729,39 @@
             },
             "publishedAt": "2026-08-18 14:14:54",
             "updatedAt": "2026-08-18 14:14:54"
+        },
+        {
+            "itemId": "org:idakto",
+            "slug": "idakto",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:idakto",
+                    "name": "iDAKTO",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "iDAKTO SAS",
+                    "description": "iDAKTO develops solutions that meet the increasing need for identification and authentication of citizens and large public and private organisations.",
+                    "logo": "https://www.idakto.com/wp-content/uploads/2024/05/logo-idakto-couleur.svg",
+                    "country": "FR",
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider",
+                        "business_wallet_provider",
+                        "system_integrator",
+                        "consultancy",
+                        "software_vendor",
+                        "eudi_wallet_intermediary"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-08-26T11:49:41+00:00"
+            },
+            "publishedAt": "2026-08-26 11:49:41",
+            "updatedAt": "2026-08-26 11:49:41"
         },
         {
             "itemId": "org:igrant",
