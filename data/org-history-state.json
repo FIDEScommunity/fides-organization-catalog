@@ -1756,5 +1756,41 @@
   },
   "org:idakto": {
     "firstSeenAt": "2026-08-26T11:49:41+00:00"
+  },
+  "org:cdpi": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:coss": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:credenid": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:eutwinlink": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:hopae": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:jabatan-perumahan-negara": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:onepoint": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:op-bank": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:pos-digicert": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:receipthero": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:trip-com": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
+  },
+  "org:valtiokonttori": {
+    "firstSeenAt": "2026-08-26T12:30:16.000Z"
   }
 }
