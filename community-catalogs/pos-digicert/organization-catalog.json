@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:pos-digicert",
+    "name": "Pos Digicert",
+    "sectors": [
+      "digital",
+      "public_sector"
+    ],
+    "legalName": "Pos Digicert Sdn Bhd",
+    "description": "Malaysian licensed certification authority providing digital certificates, eKYC, e-signing and digital identity services for government and business.",
+    "website": "https://www.posdigicert.com.my/",
+    "logo": "https://www.google.com/s2/favicons?domain=posdigicert.com.my&sz=128",
+    "country": "MY"
+  }
+}

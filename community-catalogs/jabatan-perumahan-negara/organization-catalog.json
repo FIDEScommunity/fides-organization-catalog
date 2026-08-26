@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:jabatan-perumahan-negara",
+    "name": "National Housing Department",
+    "sectors": [
+      "public_sector",
+      "construction"
+    ],
+    "legalName": "Jabatan Perumahan Negara (JPN)",
+    "description": "Malaysia's National Housing Department under KPKT, overseeing housing policy, developer oversight and digital services such as HIMS and eSPA.",
+    "website": "https://ehome.kpkt.gov.my/",
+    "logo": "https://www.google.com/s2/favicons?domain=kpkt.gov.my&sz=128",
+    "country": "MY"
+  }
+}

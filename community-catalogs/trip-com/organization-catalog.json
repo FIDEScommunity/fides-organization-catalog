@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trip-com",
+    "name": "Trip.com",
+    "sectors": [
+      "digital",
+      "mobility"
+    ],
+    "description": "Global online travel platform for flights, hotels and transport booking, operated by Trip.com Group, one of the world's largest travel companies.",
+    "website": "https://www.trip.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=trip.com&sz=128",
+    "country": "CN"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:op-bank",
+    "name": "OP Bank",
+    "sectors": [
+      "finance",
+      "digital"
+    ],
+    "legalName": "OP Financial Group",
+    "description": "Finland's largest customer-owned financial services group, offering banking, insurance and wealth management to personal and corporate customers.",
+    "website": "https://www.op.fi/",
+    "logo": "https://www.google.com/s2/favicons?domain=op.fi&sz=128",
+    "country": "FI"
+  }
+}

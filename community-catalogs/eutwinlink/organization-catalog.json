@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eutwinlink",
+    "name": "EUTwinLink",
+    "sectors": [
+      "digital",
+      "public_sector"
+    ],
+    "description": "EU pilot under LDT4SSC linking local digital twins, data spaces and verifiable credentials to prove interoperability for smart community use cases.",
+    "website": "https://knowledgehub.ldt4ssc.eu/",
+    "logo": "https://www.google.com/s2/favicons?domain=ldt4ssc.eu&sz=128",
+    "country": "EU"
+  }
+}

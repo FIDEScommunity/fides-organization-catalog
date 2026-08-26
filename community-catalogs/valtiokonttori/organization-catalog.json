@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:valtiokonttori",
+    "name": "Valtiokonttori",
+    "sectors": [
+      "public_sector",
+      "finance"
+    ],
+    "legalName": "State Treasury of Finland",
+    "description": "Finnish State Treasury agency providing central government financial administration, statistics, procurement data and public sector digital services.",
+    "website": "https://www.valtiokonttori.fi/",
+    "logo": "https://www.google.com/s2/favicons?domain=valtiokonttori.fi&sz=128",
+    "country": "FI"
+  }
+}

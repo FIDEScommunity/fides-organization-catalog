@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hopae",
+    "name": "Hopae",
+    "sectors": [
+      "digital",
+      "mobility"
+    ],
+    "description": "Digital identity infrastructure connecting enterprises to government eIDs and trusted credentials through a single API, with EUDI wallet SDK products.",
+    "website": "https://www.hopae.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=hopae.com&sz=128",
+    "country": "LU"
+  }
+}

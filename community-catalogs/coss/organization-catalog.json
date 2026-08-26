@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:coss",
+    "name": "Centre for Open Societal Systems",
+    "sectors": [
+      "digital",
+      "public_sector"
+    ],
+    "description": "Nonprofit initiative of EkStep and IIIT Bangalore helping countries adopt digital public infrastructure and digital public goods at scale.",
+    "website": "https://coss.org.in/",
+    "logo": "https://www.google.com/s2/favicons?domain=coss.org.in&sz=128",
+    "country": "IN"
+  }
+}

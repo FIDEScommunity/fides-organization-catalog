@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:onepoint",
+    "name": "Onepoint",
+    "sectors": [
+      "digital",
+      "finance"
+    ],
+    "description": "French digital transformation consultancy serving enterprises and public sector clients across cloud, data, AI and payment modernization.",
+    "website": "https://www.groupeonepoint.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=groupeonepoint.com&sz=128",
+    "country": "FR"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:receipthero",
+    "name": "ReceiptHero",
+    "sectors": [
+      "digital",
+      "finance"
+    ],
+    "description": "Digital receipt platform linking POS purchase data to card payments, helping merchants replace paper receipts and banks deliver receipts in apps.",
+    "website": "https://getreceipthero.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=getreceipthero.com&sz=128",
+    "country": "FI"
+  }
+}

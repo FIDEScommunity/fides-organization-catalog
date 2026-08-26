@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:credenid",
+    "name": "Credenid",
+    "sectors": [
+      "digital",
+      "finance"
+    ],
+    "description": "Business wallet and verification platform for issuing, holding and verifying credentials, including wallet-based KYB and corporate onboarding.",
+    "website": "https://credenid.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=credenid.com&sz=128",
+    "country": "TR"
+  }
+}
