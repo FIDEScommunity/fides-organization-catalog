@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-27T10:35:27+00:00",
+    "generatedAt": "2026-08-27T13:22:57+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -543,7 +543,7 @@
                         "eudi_wallet_intermediary"
                     ],
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Community"
+                    "catalogTier": "Pro"
                 },
                 "lastUpdated": "2026-07-27T14:38:42+00:00"
             },
