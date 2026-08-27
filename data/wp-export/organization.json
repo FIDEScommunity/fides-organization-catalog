@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-26T13:44:44+00:00",
+    "generatedAt": "2026-08-27T10:35:27+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1493,6 +1493,39 @@
             },
             "publishedAt": "2026-08-13 19:33:12",
             "updatedAt": "2026-08-13 19:33:12"
+        },
+        {
+            "itemId": "org:swiyu",
+            "slug": "swiyu",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:swiyu",
+                    "name": "Swiss Confederation",
+                    "sectors": [
+                        "public_sector"
+                    ],
+                    "legalName": "Swiss Government",
+                    "description": "e-ID Switzerland: The state issued digital identity, secure, privacy-compliant, free of charge – for everyday use, public authorities, and businesses.",
+                    "website": "https://www.eid.admin.ch/en",
+                    "logo": "https://play-lh.googleusercontent.com/24M9nEXiuSVZAfEnkDzJ2koRLLfd7s_sSw3CgfzVeNfQjALW800TPcVB_mwDrKpJhz0V",
+                    "country": "CH",
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider",
+                        "business_wallet_provider",
+                        "vc_type_authority",
+                        "issuer",
+                        "relying_party"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Pro"
+                },
+                "lastUpdated": "2026-08-27T10:35:26+00:00"
+            },
+            "publishedAt": "2026-08-27 10:35:26",
+            "updatedAt": "2026-08-27 10:35:26"
         },
         {
             "itemId": "org:t7m8",
