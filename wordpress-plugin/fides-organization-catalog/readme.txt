@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.37
+Stable tag: 1.14.38
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,9 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.38 =
+* Align organization cards, detail opens, and external provider links with the shared analytics identity and outbound contracts, including Matomo outlink deduplication (tiles ≥ 1.13.21).
 
 = 1.14.37 =
 * Sync shared modal UI: Use cases accordion scroll arrows overlay cards on narrow screens (tiles ≥ 1.13.18).

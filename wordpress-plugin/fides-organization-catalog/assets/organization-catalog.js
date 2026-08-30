@@ -928,7 +928,30 @@
     if (window.FidesCatalogUI && typeof window.FidesCatalogUI.organizationSalesTrackAttrString === 'function') {
       return window.FidesCatalogUI.organizationSalesTrackAttrString(org, linkType);
     }
-    return '';
+    const allowed = ['website', 'product', 'documentation', 'contact', 'app_store', 'google_play', 'demo', 'code_repository'];
+    const normalizedLinkType = String(linkType || '').trim().toLowerCase();
+    const rawProviderId = String((org && (org.id || org.orgId)) || '').trim().replace(/^org:/i, '');
+    const providerId = rawProviderId.toLowerCase().replace(/\|/g, '-').replace(/\s+/g, '-');
+    if (!providerId || !allowed.includes(normalizedLinkType)) return '';
+    return ' data-matomo-action="Provider Outbound"' +
+      ` data-matomo-name="${escapeHtml([providerId, 'organization', providerId, normalizedLinkType, 'legacy'].join('|'))}"` +
+      ' data-matomo-ignore="1"';
+  }
+
+  function orgSalesTrackClass(org, linkType) {
+    return orgSalesTrackAttrs(org, linkType) ? ' matomo_ignore piwik_ignore' : '';
+  }
+
+  function orgCardAnalyticsAttrs(org) {
+    const rawProviderId = String((org && (org.id || org.orgId)) || '').trim().replace(/^org:/i, '');
+    const providerId = rawProviderId.toLowerCase().replace(/\|/g, '-').replace(/\s+/g, '-');
+    const providerName = String((org && (org.name || org.displayName)) || '').trim();
+    if (!providerId) return '';
+    return ` data-provider-id="${escapeHtml(providerId)}"` +
+      ` data-provider-name="${escapeHtml(providerName)}"` +
+      ' data-entity-type="organization"' +
+      ` data-entity-id="${escapeHtml(providerId)}"` +
+      ` data-entity-name="${escapeHtml(providerName)}"`;
   }
 
   /** Country + website link under the modal title (website for full listings). */
@@ -938,7 +961,7 @@
       ? (orgHasFullCatalogContent(org) ? orgWebsiteHref(org.website) : '')
       : orgWebsiteHref(org.website);
     const websitePart = websiteHref
-      ? `<a href="${escapeHtml(websiteHref)}" target="_blank" rel="noopener" class="fides-modal-provider-link fides-modal-header-website" data-matomo-name="Organization website"${orgSalesTrackAttrs(org, 'website')} onclick="event.stopPropagation();">${icons.externalLink} <span class="fides-url-ellipsis">${escapeHtml(orgWebsiteLabel(org.website))}</span></a>`
+      ? `<a href="${escapeHtml(websiteHref)}" target="_blank" rel="noopener" class="fides-modal-provider-link fides-modal-header-website${orgSalesTrackClass(org, 'website')}"${orgSalesTrackAttrs(org, 'website')} onclick="event.stopPropagation();">${icons.externalLink} <span class="fides-url-ellipsis">${escapeHtml(orgWebsiteLabel(org.website))}</span></a>`
       : '';
     const supporterPart = org.fidesManifestoSupporter === true
       ? `<span class="fides-org-footer-badge fides-org-footer-badge--manifesto fides-modal-header-meta-badge" role="img" aria-label="FIDES Supporter" title="FIDES Supporter">${icons.community}</span>`
@@ -1236,10 +1259,10 @@
           const linkLabel = c.code === 'qtsp'
             ? 'EU eIDAS Trust List'
             : ((ev.label && String(ev.label).trim()) || 'Documentation');
-          extra = ` <a href="${escapeHtml(ev.url)}" class="fides-modal-link-inline" target="_blank" rel="noopener" onclick="event.stopPropagation();">${escapeHtml(linkLabel)} ${icons.externalLink}</a>`;
+          extra = ` <a href="${escapeHtml(ev.url)}" class="fides-modal-link-inline${orgSalesTrackClass(org, 'documentation')}" target="_blank" rel="noopener"${orgSalesTrackAttrs(org, 'documentation')} onclick="event.stopPropagation();">${escapeHtml(linkLabel)} ${icons.externalLink}</a>`;
         } else if (ev && typeof ev === 'object' && ev.kind === 'verifiable_credential' && ev.credentialUri) {
           const fmt = ev.format ? String(ev.format) : 'Credential';
-          extra = ` <a href="${escapeHtml(ev.credentialUri)}" class="fides-modal-link-inline" target="_blank" rel="noopener" onclick="event.stopPropagation();">${escapeHtml(fmt)} VC ${icons.externalLink}</a>`;
+          extra = ` <a href="${escapeHtml(ev.credentialUri)}" class="fides-modal-link-inline${orgSalesTrackClass(org, 'documentation')}" target="_blank" rel="noopener"${orgSalesTrackAttrs(org, 'documentation')} onclick="event.stopPropagation();">${escapeHtml(fmt)} VC ${icons.externalLink}</a>`;
           if (ev.notes && String(ev.notes).trim()) {
             extra += ` <span class="fides-org-cert-notes">${escapeHtml(String(ev.notes).trim())}</span>`;
           }
@@ -1295,7 +1318,7 @@
                 proofTitle = 'View DIACC PCTF credential';
               }
               if (href) {
-                return `<a href="${escapeHtml(href)}" class="fides-tag fides-tag--cert fides-tag--diacc-component fides-tag--diacc-proof" target="_blank" rel="noopener" title="${escapeHtml(proofTitle)}" onclick="event.stopPropagation();"><span class="fides-tag--diacc-proof-label">${escapeHtml(label)}</span><span class="fides-tag--diacc-proof-action"><span class="fides-tag--diacc-proof-icon" aria-hidden="true">${icons.shield}</span>Proof<span class="fides-tag--diacc-proof-ext" aria-hidden="true">${icons.externalLink}</span></span></a>`;
+                return `<a href="${escapeHtml(href)}" class="fides-tag fides-tag--cert fides-tag--diacc-component fides-tag--diacc-proof${orgSalesTrackClass(org, 'documentation')}" target="_blank" rel="noopener" title="${escapeHtml(proofTitle)}"${orgSalesTrackAttrs(org, 'documentation')} onclick="event.stopPropagation();"><span class="fides-tag--diacc-proof-label">${escapeHtml(label)}</span><span class="fides-tag--diacc-proof-action"><span class="fides-tag--diacc-proof-icon" aria-hidden="true">${icons.shield}</span>Proof<span class="fides-tag--diacc-proof-ext" aria-hidden="true">${icons.externalLink}</span></span></a>`;
               }
               return `<span class="fides-tag fides-tag--cert fides-tag--diacc-component">${escapeHtml(label)}</span>`;
             })
@@ -1400,7 +1423,7 @@
     return 'fides-bp-badge fides-bp-badge--neutral';
   }
 
-  function renderBluePagesAttrRows(attributes) {
+  function renderBluePagesAttrRows(attributes, org) {
     if (!attributes || !attributes.length) {
       return '<p class="fides-org-bluepages-empty">No attributes.</p>';
     }
@@ -1410,7 +1433,7 @@
       if (raw.startsWith('data:image/')) return '';
       const isUrl = /^https?:\/\//i.test(raw.trim());
       const valInner = isUrl
-        ? `<a href="${escapeHtml(raw.trim())}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-url-ellipsis" onclick="event.stopPropagation();">${escapeHtml(raw.trim())} ${icons.externalLink}</a>`
+        ? `<a href="${escapeHtml(raw.trim())}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-url-ellipsis${orgSalesTrackClass(org, 'documentation')}"${orgSalesTrackAttrs(org, 'documentation')} onclick="event.stopPropagation();">${escapeHtml(raw.trim())} ${icons.externalLink}</a>`
         : `<span>${escapeAttrMultiline(raw)}</span>`;
       return `<div class="fides-kv-row"><span class="fides-kv-key">${label}</span><span class="fides-kv-val">${valInner}</span></div>`;
     }).filter(Boolean);
@@ -1423,7 +1446,7 @@
   /**
    * Build credential cards from Blue Pages validations payload (same shape as fides-blue-pages did-detail).
    */
-  function renderBluePagesCredentials(data) {
+  function renderBluePagesCredentials(data, org) {
     const services = data.services;
     if (!services || !Array.isArray(services) || services.length === 0) {
       return '<p class="fides-org-bluepages-empty">No verified credentials returned from Blue Pages.</p>';
@@ -1443,7 +1466,7 @@
               <h4 class="fides-bp-credential__title">${escapeHtml(title)}</h4>
               <span class="fides-bp-badge fides-bp-badge--self">Self-declared</span>
             </div>
-            <div class="fides-bp-credential__body">${renderBluePagesAttrRows(attrs)}</div>
+            <div class="fides-bp-credential__body">${renderBluePagesAttrRows(attrs, org)}</div>
           </div>
         `);
       }
@@ -1459,7 +1482,7 @@
           const href = issuerBase ? issuerBase + encodeURIComponent(issuerDid) + '/' : '';
           const label = escapeHtml(issuerDid.length > 48 ? issuerDid.slice(0, 46) + '…' : issuerDid);
           issuerLine = href
-            ? `<p class="fides-bp-credential__issuer"><span class="fides-bp-credential__issuer-label">Issued by:</span> <a href="${escapeHtml(href)}" class="fides-modal-link-inline" target="_blank" rel="noopener" onclick="event.stopPropagation();">${label} ${icons.externalLink}</a></p>`
+            ? `<p class="fides-bp-credential__issuer"><span class="fides-bp-credential__issuer-label">Issued by:</span> <a href="${escapeHtml(href)}" class="fides-modal-link-inline${orgSalesTrackClass(org, 'documentation')}" target="_blank" rel="noopener"${orgSalesTrackAttrs(org, 'documentation')} onclick="event.stopPropagation();">${label} ${icons.externalLink}</a></p>`
             : `<p class="fides-bp-credential__issuer"><span class="fides-bp-credential__issuer-label">Issued by:</span> <span title="${escapeHtml(issuerDid)}">${label}</span></p>`;
         }
         const badgeClass = bluePagesBadgeClass(status);
@@ -1473,7 +1496,7 @@
               </div>
               <span class="${badgeClass}">${badgeLabel}</span>
             </div>
-            <div class="fides-bp-credential__body">${Array.isArray(attrs) ? renderBluePagesAttrRows(attrs) : '<p class="fides-org-bluepages-empty">No attributes.</p>'}</div>
+            <div class="fides-bp-credential__body">${Array.isArray(attrs) ? renderBluePagesAttrRows(attrs, org) : '<p class="fides-org-bluepages-empty">No attributes.</p>'}</div>
           </div>
         `);
       });
@@ -1502,9 +1525,9 @@
       const fetchedAt = payload.fetchedAt ? `<p class="fides-org-bluepages__meta">Last checked: ${escapeHtml(formatDateTimeIso(payload.fetchedAt))}</p>` : '';
       const fullUrl = bluePagesProfileUrlForDid(did);
       const linkRow = fullUrl
-        ? `<div class="fides-org-bluepages__head"><a href="${escapeHtml(fullUrl)}" class="fides-modal-link-inline" target="_blank" rel="noopener" onclick="event.stopPropagation();">Open full Blue Pages profile ${icons.externalLink}</a></div>`
+        ? `<div class="fides-org-bluepages__head"><a href="${escapeHtml(fullUrl)}" class="fides-modal-link-inline${orgSalesTrackClass(selectedOrg, 'documentation')}" target="_blank" rel="noopener"${orgSalesTrackAttrs(selectedOrg, 'documentation')} onclick="event.stopPropagation();">Open full Blue Pages profile ${icons.externalLink}</a></div>`
         : '';
-      root.innerHTML = `${linkRow}${fetchedAt}<div class="fides-org-bluepages-credentials">${renderBluePagesCredentials(data)}</div>`;
+      root.innerHTML = `${linkRow}${fetchedAt}<div class="fides-org-bluepages-credentials">${renderBluePagesCredentials(data, selectedOrg)}</div>`;
     } catch (err) {
       root.innerHTML = `<p class="fides-org-bluepages-error">${escapeHtml(bluePagesFriendlyErrorMessage(err.message || 'Network error.'))}</p>`;
     }
@@ -1619,7 +1642,7 @@
       ? `<img src="${escapeHtml(logo)}" alt="" width="64" height="64" loading="lazy" decoding="async"${logoFallbackAttr}>`
       : icons.building;
     return `
-      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}" tabindex="0" role="button" aria-label="${orgCardAriaLabel(org)}">
+      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}"${orgCardAnalyticsAttrs(org)} tabindex="0" role="button" aria-label="${orgCardAriaLabel(org)}">
         <header class="fides-credential-header fides-org-card-header--text-only">
           <div class="fides-credential-header-text">
             <h3 class="fides-credential-name" title="${escapeHtml(org.name)}">${escapeHtml(org.name)}</h3>
@@ -2127,7 +2150,7 @@
 
     const officialClass = orgOfficialCardClass(org);
     return `
-      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}" tabindex="0" role="button" aria-label="${orgCardAriaLabel(org, true)}">
+      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}"${orgCardAnalyticsAttrs(org)} tabindex="0" role="button" aria-label="${orgCardAriaLabel(org, true)}">
         <div class="fides-org-card-logo-wrap fides-org-card-logo-wrap--list">
           <div class="fides-row-icon" aria-hidden="true">
             ${logo
@@ -2224,23 +2247,35 @@
   }
 
   function trackOrganizationModalOpen(org) {
-    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.trackMatomoEvent !== 'function') {
-      if (window.FidesCatalogUI && typeof window.FidesCatalogUI.trackOrganizationDetailOpen === 'function') {
-        window.FidesCatalogUI.trackOrganizationDetailOpen(org);
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.trackOrganizationDetailOpen === 'function') {
+      let attributionFrom = '';
+      try {
+        attributionFrom = String(new URLSearchParams(window.location.search).get('from') || '').trim();
+      } catch (_err) {
+        attributionFrom = '';
       }
+      window.FidesCatalogUI.trackOrganizationDetailOpen(
+        org,
+        attributionFrom ? { attributionFrom } : undefined
+      );
       return;
     }
-    let name = matomoSafePart(org && org.id);
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.trackMatomoEvent !== 'function') return;
+    const providerId = matomoSafePart(org && org.id);
+    if (!providerId || providerId === 'unknown') return;
+    const eventNameParts = [providerId, 'organization', providerId];
     try {
       const from = String(new URLSearchParams(window.location.search).get('from') || '').trim();
       const match = /^usecase:(.+)$/i.exec(from);
-      if (match && match[1]) {
-        name = name + '|from:usecase:' + matomoSafePart(match[1]);
-      }
+      if (match && match[1]) eventNameParts.push('from:usecase:' + matomoSafePart(match[1]));
     } catch (_err) {
-      /* ignore malformed URL */
+      /* Ignore malformed URLs. */
     }
-    window.FidesCatalogUI.trackMatomoEvent('Organization Catalog', 'Modal Open', name);
+    window.FidesCatalogUI.trackMatomoEvent(
+      'Organization Catalog',
+      'Detail Open',
+      eventNameParts.join('|')
+    );
   }
 
   function openModal(id, options) {
