@@ -35,8 +35,28 @@
               "name": "Qualified pres esig"
             },
             {
+              "code": "Q_REM_MANAGE_Q_SEAL_CD",
+              "name": "Qualified rem manage q seal cd"
+            },
+            {
+              "code": "Q_REM_MANAGE_Q_SIG_CD",
+              "name": "Qualified rem manage q sig cd"
+            },
+            {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
+            },
+            {
+              "code": "Q_VAL_ESEAL",
+              "name": "Qualified val eseal"
+            },
+            {
+              "code": "Q_VAL_ESIG",
+              "name": "Qualified val esig"
+            },
+            {
+              "code": "QE_ARCH",
+              "name": "Qualified qe arch"
             }
           ]
         }
