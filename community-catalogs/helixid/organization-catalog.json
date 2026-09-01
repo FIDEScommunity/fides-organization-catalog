@@ -7,14 +7,10 @@
       "digital"
     ],
     "description": "German company (Blockchain HELIX AG) providing decentralized identity and verifiable credential solutions for regulated industries.",
-    "website": "https://helixid.io",
     "logo": "https://helixid.io/wp-content/uploads/2019/06/cropped-id-180x180.png",
     "country": "DE",
-    "contact": {
-      "email": "oliver@blockchain-helix.com"
-    },
     "fidesManifestoSupporter": false,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T10:10:06+00:00"
 }

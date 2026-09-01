@@ -7,14 +7,10 @@
       "digital"
     ],
     "description": "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI).",
-    "website": "https://gataca.io",
     "logo": "https://www.google.com/s2/favicons?domain=gataca.io&sz=128",
     "country": "ES",
-    "contact": {
-      "email": "samuel@gataca.io"
-    },
     "fidesManifestoSupporter": false,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T10:13:13+00:00"
 }

@@ -7,14 +7,10 @@
       "digital"
     ],
     "description": "German cybersecurity company offering consulting, managed security, and identity-related protection for organizations.",
-    "website": "https://www.k4-security.com/",
     "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
     "country": "KR",
-    "contact": {
-      "email": "contact@k4-security.com"
-    },
     "fidesManifestoSupporter": false,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T10:07:25+00:00"
 }

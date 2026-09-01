@@ -7,11 +7,10 @@
       "digital"
     ],
     "description": "Deploy SSI and EUDI compliant wallets with Talao’s Wallet as a Service. Simplify identity and data management using Verifiable Credentials.",
-    "website": "https://talao.io",
     "logo": "https://www.google.com/s2/favicons?domain=talao.io&sz=128",
     "country": "FR",
     "fidesManifestoSupporter": true,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T09:53:06+00:00"
 }

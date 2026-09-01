@@ -7,11 +7,10 @@
       "digital"
     ],
     "description": "Authbound provides seamless EU Digital Identity Wallet integration. Secure your services with compliant, user-friendly identity verification. Ready for 2026.",
-    "website": "https://authbound.io",
     "logo": "https://www.google.com/s2/favicons?domain=authbound.io&sz=128",
     "country": "FI",
     "fidesManifestoSupporter": false,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-11T07:34:04+00:00"
 }

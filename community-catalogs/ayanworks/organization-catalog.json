@@ -7,11 +7,10 @@
       "digital"
     ],
     "description": "Indian software company behind Credebl, an open-source stack for verifiable credentials and decentralized identity.",
-    "website": "https://credebl.id",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ayanworks/ayanworks_logo.png",
     "country": "IN",
     "fidesManifestoSupporter": false,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T09:53:51+00:00"
 }
