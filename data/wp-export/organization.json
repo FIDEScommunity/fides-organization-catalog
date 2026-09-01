@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-08-27T13:22:57+00:00",
+    "generatedAt": "2026-09-01T09:16:17+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -50,11 +50,10 @@
                         "digital"
                     ],
                     "description": "A3BC is a unique biometric Digital Identity Service Provider (DISP) device-less, card-less and id-less patented platform.",
-                    "website": "https://www.a3bc.io/",
                     "logo": "https://www.a3bc.io/img/favicon/apple-touch-icon.png?v=3",
                     "country": "FR",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:09:23+00:00"
             },
@@ -104,11 +103,10 @@
                         "digital"
                     ],
                     "description": "Authbound provides seamless EU Digital Identity Wallet integration. Secure your services with compliant, user-friendly identity verification. Ready for 2026.",
-                    "website": "https://authbound.io",
                     "logo": "https://www.google.com/s2/favicons?domain=authbound.io&sz=128",
                     "country": "FI",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-11T07:34:04+00:00"
             },
@@ -129,11 +127,10 @@
                         "digital"
                     ],
                     "description": "Indian software company behind Credebl, an open-source stack for verifiable credentials and decentralized identity.",
-                    "website": "https://credebl.id",
                     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ayanworks/ayanworks_logo.png",
                     "country": "IN",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:53:51+00:00"
             },
@@ -625,14 +622,10 @@
                         "digital"
                     ],
                     "description": "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI).",
-                    "website": "https://gataca.io",
                     "logo": "https://www.google.com/s2/favicons?domain=gataca.io&sz=128",
                     "country": "ES",
-                    "contact": {
-                        "email": "samuel@gataca.io"
-                    },
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:13:13+00:00"
             },
@@ -653,14 +646,10 @@
                         "digital"
                     ],
                     "description": "German company (Blockchain HELIX AG) providing decentralized identity and verifiable credential solutions for regulated industries.",
-                    "website": "https://helixid.io",
                     "logo": "https://helixid.io/wp-content/uploads/2019/06/cropped-id-180x180.png",
                     "country": "DE",
-                    "contact": {
-                        "email": "oliver@blockchain-helix.com"
-                    },
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:10:06+00:00"
             },
@@ -681,14 +670,10 @@
                         "digital"
                     ],
                     "description": "Discover Hovi’s self-sovereign identity platform, designed to effortlessly integrate verifiable credentials for businesses of all sizes.",
-                    "website": "https://www.hovi.id/",
                     "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
                     "country": "FI",
-                    "contact": {
-                        "email": "contact@hovi.id"
-                    },
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:12:52+00:00"
             },
@@ -777,14 +762,10 @@
                         "digital"
                     ],
                     "description": "EUDI and European Business Wallet software provider offering ready-to-use extensions for payments, signing, and passwordless login for individuals and organisations.",
-                    "website": "https://igrant.io",
                     "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
                     "country": "SE",
-                    "contact": {
-                        "email": "support@igrant.io"
-                    },
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-06T07:09:11+00:00"
             },
@@ -859,11 +840,10 @@
                         "digital"
                     ],
                     "description": "European IT services and digital solutions group supporting public sector and enterprise transformation across multiple countries.",
-                    "website": "https://www.inetum.com/es/es.html",
                     "logo": "https://static-p165453-e1803721.adobeaemcloud.com/489b2b9c0d2194574538d78ff4171adc6159a8742a0bddcf233b039a09bb815e/resources/images/favicon.ico",
                     "country": "ES",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:08:47+00:00"
             },
@@ -935,11 +915,10 @@
                         "digital"
                     ],
                     "description": "Izertis S.A provides digital services and solutions in the trust and credentials ecosystem via izertis.com.",
-                    "website": "https://www.izertis.com/",
                     "logo": "https://www.izertis.com/documents/35913/207169/IMAGEN_OG.webp/6a09f6d5-9741-d367-41e1-fbd048febb54?version=1.0&t=1760599004227&imagePreview=1",
                     "country": "ES",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:45:25+00:00"
             },
@@ -960,14 +939,10 @@
                         "digital"
                     ],
                     "description": "German cybersecurity company offering consulting, managed security, and identity-related protection for organizations.",
-                    "website": "https://www.k4-security.com/",
                     "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
                     "country": "KR",
-                    "contact": {
-                        "email": "contact@k4-security.com"
-                    },
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:07:25+00:00"
             },
@@ -1012,11 +987,10 @@
                         "finance"
                     ],
                     "description": "Convergence infrastructure for enterprises and governments: verifiable data sharing, compliance automation, and high-volume secured processing.",
-                    "website": "https://mintblue.com/",
                     "logo": "https://www.google.com/s2/favicons?domain=mintblue.com&sz=128",
                     "country": "NL",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-08-04T05:26:45+00:00"
             },
@@ -1087,7 +1061,6 @@
                         "digital"
                     ],
                     "description": "Customer identification and identity verification with the suite Namirial Onboarding",
-                    "website": "https://www.namirial.com",
                     "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
                     "country": "IT",
                     "certifications": [
@@ -1109,7 +1082,7 @@
                         }
                     ],
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:49:59+00:00"
             },
@@ -1236,11 +1209,10 @@
                         "digital"
                     ],
                     "description": "Procivis One is a modular, open-source technology for digital identities and credentials — compliant with eIDAS 2.0, Swiss E-ID ecosystem , and mDL standards.",
-                    "website": "https://www.procivis.ch",
                     "logo": "https://www.google.com/s2/favicons?domain=procivis.ch&sz=128",
                     "country": "CH",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:46:48+00:00"
             },
@@ -1568,11 +1540,10 @@
                         "digital"
                     ],
                     "description": "Deploy SSI and EUDI compliant wallets with Talao’s Wallet as a Service. Simplify identity and data management using Verifiable Credentials.",
-                    "website": "https://talao.io",
                     "logo": "https://www.google.com/s2/favicons?domain=talao.io&sz=128",
                     "country": "FR",
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:53:06+00:00"
             },
@@ -1657,11 +1628,10 @@
                         "digital"
                     ],
                     "description": "Ubique Innovation provides digital services and solutions in the trust and credentials ecosystem via ubique.ch.",
-                    "website": "https://ubique.ch",
                     "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/2d/44/132d44a4-424b-3dfc-174e-541248ef421b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/400x400ia-75.webp",
                     "country": "CH",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:48:28+00:00"
             },
@@ -1720,7 +1690,6 @@
                     ],
                     "legalName": "VALIDATED ID, S.L",
                     "description": "Provide trust to your electronic signatures and digital identity. Simple and secure solutions: electronic signatures, digital identity and electronic invoices.",
-                    "website": "https://validatedid.com",
                     "logo": "https://cdn.prod.website-files.com/5ec68f0bd0db4b52be8cf1d5/611cdede040214a673afec55_h_home_en.png",
                     "country": "ES",
                     "certifications": [
@@ -1750,7 +1719,7 @@
                         }
                     ],
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:52:08+00:00"
             },
@@ -1817,7 +1786,7 @@
                     "logo": "https://yivi.app/icons/yivi-logo.svg",
                     "country": "NL",
                     "fidesManifestoSupporter": false,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:19:49+00:00"
             },
@@ -1838,11 +1807,10 @@
                         "digital"
                     ],
                     "description": "Ignite Data Ownership",
-                    "website": "https://yourd.xyz",
                     "logo": "https://www.google.com/s2/favicons?domain=yourd.xyz&sz=128",
                     "country": "KR",
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T09:49:16+00:00"
             },
