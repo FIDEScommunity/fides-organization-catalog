@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-09-07T19:29:48+00:00",
+    "generatedAt": "2026-09-07T19:31:01+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -629,10 +629,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-07-02T09:17:26+00:00"
+                "lastUpdated": "2026-09-07T19:31:01+00:00"
             },
-            "publishedAt": "2026-07-02 09:17:26",
-            "updatedAt": "2026-07-02 09:17:26"
+            "publishedAt": "2026-09-07 19:31:01",
+            "updatedAt": "2026-09-07 19:31:01"
         },
         {
             "itemId": "org:france",
