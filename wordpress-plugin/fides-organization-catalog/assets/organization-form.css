@@ -1180,6 +1180,16 @@ span.fides-pro-plan-badge:hover {
   grid-template-columns: minmax(0, 1fr) 5.75rem;
 }
 
+.fides-use-case-form .fides-media-row .fides-media-inputs--recognition {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr) 5.75rem;
+}
+
+.fides-use-case-form .fides-recognition-group .fides-media-inputs .fides-recognition-title,
+.fides-use-case-form .fides-recognition-group .fides-media-inputs .fides-recognition-url {
+  min-width: 0;
+}
+
+.fides-use-case-form .fides-media-row .fides-media-field-input,
 .fides-use-case-form .fides-media-row .fides-media-url-input {
   width: 100%;
   min-width: 0;
@@ -1195,6 +1205,7 @@ span.fides-pro-plan-badge:hover {
   color: #0f172a;
 }
 
+.fides-use-case-form .fides-media-row .fides-media-field-input:focus,
 .fides-use-case-form .fides-media-row .fides-media-url-input:focus {
   outline: none;
   border-color: #2563eb;
@@ -1237,6 +1248,7 @@ span.fides-pro-plan-badge:hover {
   overflow: hidden;
 }
 
+.fides-org-submission-root .fides-use-case-form .fides-media-row .fides-media-field-input,
 .fides-org-submission-root .fides-use-case-form .fides-media-row .fides-media-url-input,
 .fides-org-submission-root .fides-use-case-form .fides-media-row .fides-media-action-btn {
   background-color: #ffffff !important;
@@ -1252,7 +1264,8 @@ span.fides-pro-plan-badge:hover {
 
 @media (max-width: 540px) {
   .fides-use-case-form .fides-media-row .fides-media-inputs--image,
-  .fides-use-case-form .fides-media-row .fides-media-inputs--video {
+  .fides-use-case-form .fides-media-row .fides-media-inputs--video,
+  .fides-use-case-form .fides-media-row .fides-media-inputs--recognition {
     grid-template-columns: 1fr;
   }
 

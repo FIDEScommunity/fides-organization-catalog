@@ -148,6 +148,8 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                         'certifications'                           => 'Certifications',
                         'media.videos'                             => 'Media videos',
                         'media.images'                             => 'Media images',
+                        'recognitions.customerStories'             => 'Customer stories',
+                        'recognitions.awardsAndRecognitions'       => 'Awards & recognitions',
                     ),
                 )
             );
@@ -392,6 +394,13 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 return $media_check;
             }
 
+            if (array_key_exists('recognitions', $payload)) {
+                $recognitions = Fides_Organization_Catalog_Recognitions_Normalizer::normalize_recognitions($payload);
+                if ($recognitions !== array()) {
+                    $normalized['recognitions'] = $recognitions;
+                }
+            }
+
             if (class_exists('Fides_Catalog_Org_Tier')) {
                 $existing = null;
                 if ($action === 'update') {
@@ -417,13 +426,20 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 $item_id = 'org:' . sanitize_title((string) ($payload['name'] ?? 'unknown'));
             }
 
+            $contact = self::normalize_contact($payload['contact'] ?? array());
+            if ($contact !== array()) {
+                $payload['contact'] = $contact;
+            } else {
+                unset($payload['contact']);
+            }
+
             $organization = array(
                 'id'      => $item_id !== '' ? $item_id : 'org:unknown',
                 'name'    => (string) $payload['name'],
                 'sectors' => $payload['sectors'],
             );
 
-            foreach (array('legalName', 'description', 'website', 'logo', 'country', 'tags', 'offerings', 'contact', 'identifiers', 'certifications', 'ecosystemRoleCodes', 'media') as $key) {
+            foreach (array('legalName', 'description', 'website', 'logo', 'country', 'tags', 'offerings', 'contact', 'identifiers', 'certifications', 'ecosystemRoleCodes', 'media', 'recognitions') as $key) {
                 if (! empty($payload[ $key ])) {
                     $organization[ $key ] = $payload[ $key ];
                 }
@@ -481,6 +497,12 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 $media = Fides_Organization_Catalog_Media_Normalizer::normalize_media($item);
                 if ($media !== array()) {
                     $payload['media'] = $media;
+                }
+            }
+            if (isset($item['recognitions']) && is_array($item['recognitions'])) {
+                $recognitions = Fides_Organization_Catalog_Recognitions_Normalizer::normalize_recognitions($item);
+                if ($recognitions !== array()) {
+                    $payload['recognitions'] = $recognitions;
                 }
             }
 

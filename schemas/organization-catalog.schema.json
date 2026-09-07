@@ -258,6 +258,52 @@
       ],
       "description": "Closed sector taxonomy; pick one sector per organization."
     },
+    "RecognitionItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "OrganizationRecognitions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "customerStories": {
+          "type": "array",
+          "maxItems": 5,
+          "items": { "$ref": "#/$defs/RecognitionItem" }
+        },
+        "awardsAndRecognitions": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "$ref": "#/$defs/RecognitionItem" }
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["customerStories"],
+          "properties": {
+            "customerStories": { "type": "array", "minItems": 1 }
+          }
+        },
+        {
+          "required": ["awardsAndRecognitions"],
+          "properties": {
+            "awardsAndRecognitions": { "type": "array", "minItems": 1 }
+          }
+        }
+      ]
+    },
     "OrganizationMedia": {
       "type": "object",
       "description": "Promotional media (Pro tier in public export)",
@@ -435,6 +481,10 @@
         "media": {
           "$ref": "#/$defs/OrganizationMedia",
           "description": "Promotional media (Pro tier in public export)"
+        },
+        "recognitions": {
+          "$ref": "#/$defs/OrganizationRecognitions",
+          "description": "Full-listing only: customer stories and awards, each with a title and optional public URL."
         }
       }
     }

@@ -13,7 +13,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
 
     class Fides_Organization_Catalog_Submission_Forms {
 
-        const VERSION = '1.13.0';
+        const VERSION = '1.14.40';
 
         /**
          * @return array<int, array{code: string, label: string}>
@@ -72,6 +72,8 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             'offerings'    => 'Services or solutions your organization offers to customers (e.g. consulting, wallet development). Press Enter to add each item. Searchable in the Trust Explorer.',
             'mediaVideos'  => 'Short product demos embedded on your public listing. Paste YouTube or Vimeo links — one per row (max 3).',
             'mediaImages'  => 'Screenshots or product images visitors see on your organization page. Upload a file or paste a URL — one per row (max 10).',
+            'recognitionsCustomerStories' => 'Organizations or programmes that worked with you — enter a short title and optionally link to a case study or announcement.',
+            'recognitionsAwards'          => 'Awards or analyst recognition received by your organization. A title is required; a link to the announcement is optional.',
             'ecosystemRoleCodes' => 'Optional roles your organization plays in the digital identity ecosystem. Issuer, VC type authority, wallet provider, and relying party may also be inferred from linked catalog entries.',
             'catalogId'    => 'Assigned on submit; matches the folder name after org:.',
             'search'       => 'Search by name or catalog id, then select the correct entry.',
@@ -217,9 +219,18 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
                     'selfDeclaredCertifications' => Fides_Organization_Catalog_Submission_Adapter::self_declared_certification_options(),
                     'diaccComponents'            => Fides_Organization_Catalog_Submission_Adapter::diacc_component_options(),
                     'offeringsSuggestions'       => Fides_Organization_Catalog_Submission_Adapter::offerings_suggestions_for_form(),
-                    'v2Limits'                   => class_exists('Fides_Organization_Catalog_Media_Normalizer')
-                        ? Fides_Organization_Catalog_Media_Normalizer::limits_for_form()
-                        : array('mediaVideos' => 3, 'mediaImages' => 10),
+                    'v2Limits'                   => array_merge(
+                        class_exists('Fides_Organization_Catalog_Media_Normalizer')
+                            ? Fides_Organization_Catalog_Media_Normalizer::limits_for_form()
+                            : array('mediaVideos' => 3, 'mediaImages' => 10),
+                        class_exists('Fides_Organization_Catalog_Recognitions_Normalizer')
+                            ? Fides_Organization_Catalog_Recognitions_Normalizer::limits_for_form()
+                            : array(
+                                'customerStories'       => 5,
+                                'awardsAndRecognitions' => 10,
+                                'recognitionTitle'      => 100,
+                            )
+                    ),
                     'preselectOrgId' => '',
                     'planTier'       => class_exists('Fides_Catalog_Org_Tier')
                         ? Fides_Catalog_Org_Tier::form_config(

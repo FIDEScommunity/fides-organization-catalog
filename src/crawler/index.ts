@@ -473,6 +473,11 @@ async function crawl(): Promise<void> {
         (Array.isArray(org.media.images) && org.media.images.length))
         ? { media: org.media }
         : {}),
+      ...(org.recognitions &&
+      ((Array.isArray(org.recognitions.customerStories) && org.recognitions.customerStories.length) ||
+        (Array.isArray(org.recognitions.awardsAndRecognitions) && org.recognitions.awardsAndRecognitions.length))
+        ? { recognitions: org.recognitions }
+        : {}),
       source: 'community-catalog',
       catalogUrl: repoRelativeCatalogPath(filePath),
       ecosystemRoles,

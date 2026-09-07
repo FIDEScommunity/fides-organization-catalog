@@ -285,6 +285,52 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                         $this->list_field($item, 'offerings'),
                         __('Offerings', $td)
                     );
+                    echo $this->render_recognition_sections($item);
+                }
+                return (string) ob_get_clean();
+            }
+
+            /**
+             * @param array<string, mixed> $item Organization item.
+             */
+            private function render_recognition_sections(array $item): string {
+                if (empty($item['recognitions']) || ! is_array($item['recognitions'])) {
+                    return '';
+                }
+                $groups = array(
+                    'customerStories'       => __('Customer stories', 'fides-organization-catalog'),
+                    'awardsAndRecognitions' => __('Awards & recognitions', 'fides-organization-catalog'),
+                );
+                ob_start();
+                foreach ($groups as $key => $title) {
+                    $rows = isset($item['recognitions'][ $key ]) && is_array($item['recognitions'][ $key ])
+                        ? $item['recognitions'][ $key ]
+                        : array();
+                    $rows = array_filter(
+                        $rows,
+                        static function ($row) {
+                            return is_array($row) && ! empty($row['title']);
+                        }
+                    );
+                    if (empty($rows)) {
+                        continue;
+                    }
+                    ?>
+                    <section class="fides-ssr-detail__section fides-ssr-detail__section--recognitions">
+                        <h2 class="fides-ssr-detail__section-title"><?php echo esc_html($title); ?></h2>
+                        <ul class="fides-ssr-detail__list">
+                            <?php foreach ($rows as $row) : ?>
+                                <li>
+                                    <?php if (! empty($row['url'])) : ?>
+                                        <a href="<?php echo esc_url((string) $row['url']); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html((string) $row['title']); ?></a>
+                                    <?php else : ?>
+                                        <?php echo esc_html((string) $row['title']); ?>
+                                    <?php endif; ?>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </section>
+                    <?php
                 }
                 return (string) ob_get_clean();
             }

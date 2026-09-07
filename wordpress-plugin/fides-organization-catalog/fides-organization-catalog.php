@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.14.39
+ * Version: 1.14.40
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.14.39');
+define('FIDES_ORG_CATALOG_VERSION', '1.14.40');
 define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
 define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
 
@@ -19,6 +19,7 @@ const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
 
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-ssr.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-media-normalizer.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-recognitions-normalizer.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-submission-adapter.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-submission-forms.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-showcase.php';

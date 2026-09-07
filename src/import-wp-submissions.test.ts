@@ -6,12 +6,29 @@ import path from 'node:path';
 import {
   buildImportPlan,
   emptyState,
+  forceHttpExport,
   hasQtspCertification,
   loadCommittedExportPayload,
   mergeQtspCertifications,
   normalizeDocument,
+  preserveMissingWpEntries,
   type WpExportEntry,
 } from '../scripts/import-wp-submissions.ts';
+
+test('forceHttpExport enables explicit local HTTP sync', () => {
+  assert.equal(forceHttpExport({ FIDES_WP_EXPORT_FORCE_HTTP: '1' }), true);
+  assert.equal(forceHttpExport({ FIDES_WP_EXPORT_FORCE_HTTP: 'true' }), true);
+  assert.equal(forceHttpExport({ FIDES_WP_EXPORT_FORCE_HTTP: 'yes' }), true);
+  assert.equal(forceHttpExport({ FIDES_WP_EXPORT_FORCE_HTTP: '0' }), false);
+  assert.equal(forceHttpExport({}), false);
+});
+
+test('preserveMissingWpEntries enables non-destructive local overlays', () => {
+  assert.equal(preserveMissingWpEntries({ FIDES_WP_EXPORT_PRESERVE_MISSING: '1' }), true);
+  assert.equal(preserveMissingWpEntries({ FIDES_WP_EXPORT_PRESERVE_MISSING: 'true' }), true);
+  assert.equal(preserveMissingWpEntries({ FIDES_WP_EXPORT_PRESERVE_MISSING: '0' }), false);
+  assert.equal(preserveMissingWpEntries({}), false);
+});
 
 test('loadCommittedExportPayload returns null when the file is absent', async () => {
   const missing = path.join(os.tmpdir(), `fides-missing-${Date.now()}.json`);

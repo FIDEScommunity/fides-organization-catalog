@@ -91,6 +91,16 @@ export interface OrganizationMedia {
   images?: string[];
 }
 
+export interface RecognitionItem {
+  title: string;
+  url?: string;
+}
+
+export interface OrganizationRecognitions {
+  customerStories?: RecognitionItem[];
+  awardsAndRecognitions?: RecognitionItem[];
+}
+
 export interface OrganizationIdentifiers {
   business_registration_number?: string;
   vat_number?: string;
@@ -131,6 +141,8 @@ export interface SourceOrganization {
   ecosystemRoleCodes?: OrganizationEcosystemRoleCode[];
   /** Pro-only: promotional videos and images for the public listing modal. */
   media?: OrganizationMedia;
+  /** Full-listing only: customer references and awards. */
+  recognitions?: OrganizationRecognitions;
 }
 
 export interface SourceOrganizationCatalog {
@@ -174,6 +186,7 @@ export interface AggregatedOrganization {
     bookMeetingUrl?: string;
   };
   media?: OrganizationMedia;
+  recognitions?: OrganizationRecognitions;
 
   source: OrganizationSource;
   /** Community catalog JSON path relative to repo root (POSIX-style slashes). */

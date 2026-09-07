@@ -291,11 +291,26 @@ export async function loadCommittedExportPayload(
   }
 }
 
+export function forceHttpExport(env: NodeJS.ProcessEnv = process.env): boolean {
+  const value = String(env.FIDES_WP_EXPORT_FORCE_HTTP ?? '').trim().toLowerCase();
+  return value === '1' || value === 'true' || value === 'yes';
+}
+
+export function preserveMissingWpEntries(env: NodeJS.ProcessEnv = process.env): boolean {
+  const value = String(env.FIDES_WP_EXPORT_PRESERVE_MISSING ?? '').trim().toLowerCase();
+  return value === '1' || value === 'true' || value === 'yes';
+}
+
 export async function loadExportPayload(wpUrl: string, secret: string): Promise<WpExportPayload> {
   const inline = loadInlineExportPayload();
   if (inline) {
     console.log('Using inline export payload (WordPress push sync).');
     return inline;
+  }
+
+  if (forceHttpExport()) {
+    console.log('Pulling export via HTTP (forced for local WordPress sync).');
+    return fetchWpExport(wpUrl, secret);
   }
 
   // Primary: the export file WordPress committed via the Contents API.
@@ -419,6 +434,10 @@ async function main() {
   const previousState = await readState();
   const payload = await loadExportPayload(wpUrl, secret);
   const plan = buildImportPlan(payload.entries, previousState);
+  const preserveMissing = preserveMissingWpEntries();
+  if (preserveMissing) {
+    plan.prune = [];
+  }
 
   console.log(`Export entries: ${payload.entries.length}`);
   console.log(`Would write: ${plan.write.length}, prune: ${plan.prune.length}, skipped: ${plan.skipped.length}`);
@@ -432,6 +451,11 @@ async function main() {
   if (apply) {
     nextState.catalogType = payload.catalogType || 'organization';
     nextState.lastImportAt = new Date().toISOString();
+    if (preserveMissing) {
+      nextState.managedSlugs = Array.from(
+        new Set([...previousState.managedSlugs, ...nextState.managedSlugs]),
+      ).sort();
+    }
     await fs.mkdir(path.dirname(STATE_PATH), { recursive: true });
     await fs.writeFile(STATE_PATH, `${JSON.stringify(nextState, null, 2)}\n`, 'utf8');
     console.log(`State updated: ${path.relative(ROOT, STATE_PATH)}`);

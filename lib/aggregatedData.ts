@@ -61,6 +61,16 @@ interface OrganizationCertification {
   };
 }
 
+interface RecognitionItem {
+  title: string;
+  url?: string;
+}
+
+interface OrganizationRecognitions {
+  customerStories?: RecognitionItem[];
+  awardsAndRecognitions?: RecognitionItem[];
+}
+
 export interface AggregatedOrganization {
   id: string;
   name: string;
@@ -79,6 +89,7 @@ export interface AggregatedOrganization {
   /** Curated Community listings that keep full public fields. */
   catalogListingDepth?: 'full';
   fidesManifestoSupporter?: boolean;
+  recognitions?: OrganizationRecognitions;
   ecosystemRoles: {
     issuers: { id: string; displayName: string }[];
     credentialTypes: { id: string; displayName: string }[];

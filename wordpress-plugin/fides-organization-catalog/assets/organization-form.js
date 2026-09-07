@@ -48,6 +48,24 @@
   const offeringsSuggestions = Array.isArray(config.offeringsSuggestions) ? config.offeringsSuggestions : [];
   let offeringsValues = [];
   let offeringsSuggestionIndex = -1;
+  const RECOGNITION_GROUPS = [
+    {
+      key: "customerStories",
+      label: "Customer stories",
+      helpKey: "recognitionsCustomerStories",
+      limitKey: "customerStories",
+    },
+    {
+      key: "awardsAndRecognitions",
+      label: "Awards & recognitions",
+      helpKey: "recognitionsAwards",
+      limitKey: "awardsAndRecognitions",
+    },
+  ];
+  const recognitionRowsState = {
+    customerStories: [{ title: "", url: "" }],
+    awardsAndRecognitions: [{ title: "", url: "" }],
+  };
 
   function proBadgeHtml() {
     if (!!planTier.isPro || planTier.tier === "Pro") {
@@ -346,6 +364,113 @@
     });
   }
 
+  function recognitionMax(key) {
+    const group = RECOGNITION_GROUPS.find((item) => item.key === key);
+    const limit = group ? Number(v2Limits[group.limitKey]) : 0;
+    return limit > 0 ? limit : 10;
+  }
+
+  function renderRecognitionGroupRows(key) {
+    const container = root.querySelector(`#fides-org-recognition-${key}`);
+    const state = recognitionRowsState[key];
+    if (!container || !Array.isArray(state)) return;
+    const max = recognitionMax(key);
+    const lastIndex = state.length - 1;
+    container.innerHTML = state
+      .map((entry, index) => {
+        const isLast = index === lastIndex;
+        const canAdd = state.length < max;
+        let rowAction = "";
+        if (isLast && canAdd) {
+          rowAction = `<button type="button" class="fides-secondary-btn fides-media-action-btn" data-add-recognition="${escapeHtml(key)}">Add</button>`;
+        } else if (!isLast || state.length > 1) {
+          rowAction = `<button type="button" class="fides-secondary-btn fides-media-action-btn" data-remove-recognition="${escapeHtml(key)}:${index}" aria-label="Remove item">Remove</button>`;
+        }
+        return `
+          <div class="fides-media-row" data-recognition-key="${escapeHtml(key)}" data-recognition-index="${index}">
+            <div class="fides-media-inputs fides-media-inputs--recognition">
+              <input type="text" class="fides-recognition-title fides-media-field-input" data-recognition-title="${escapeHtml(key)}:${index}" placeholder="Title" maxlength="${Number(v2Limits.recognitionTitle) || 100}" value="${escapeHtml(entry.title || "")}" />
+              <input type="url" class="fides-recognition-url fides-media-field-input" data-recognition-url="${escapeHtml(key)}:${index}" placeholder="https://… (optional)" value="${escapeHtml(entry.url || "")}" />
+              ${rowAction}
+            </div>
+          </div>`;
+      })
+      .join("");
+  }
+
+  function setRecognitionRowsFromPayload(payload) {
+    const recognitions =
+      payload && payload.recognitions && typeof payload.recognitions === "object"
+        ? payload.recognitions
+        : {};
+    RECOGNITION_GROUPS.forEach(({ key }) => {
+      const items = Array.isArray(recognitions[key]) ? recognitions[key] : [];
+      const rows = items.slice(0, recognitionMax(key)).map((item) => ({
+        title: item && item.title ? String(item.title) : "",
+        url: item && item.url ? String(item.url) : "",
+      }));
+      recognitionRowsState[key] = rows.length ? rows : [{ title: "", url: "" }];
+      renderRecognitionGroupRows(key);
+    });
+  }
+
+  function readRecognitionGroup(key) {
+    const state = recognitionRowsState[key];
+    if (!Array.isArray(state)) return [];
+    return state
+      .map((entry) => {
+        const title = String(entry.title || "").trim();
+        const url = String(entry.url || "").trim();
+        if (!title) return null;
+        return url ? { title, url } : { title };
+      })
+      .filter(Boolean)
+      .slice(0, recognitionMax(key));
+  }
+
+  function initRecognitionControls() {
+    RECOGNITION_GROUPS.forEach(({ key }) => {
+      const container = root.querySelector(`#fides-org-recognition-${key}`);
+      if (!container) return;
+      container.addEventListener("input", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLInputElement)) return;
+        const titleAttr = target.getAttribute("data-recognition-title");
+        const urlAttr = target.getAttribute("data-recognition-url");
+        const attr = titleAttr || urlAttr;
+        if (!attr) return;
+        const [groupKey, indexRaw] = attr.split(":");
+        const index = Number(indexRaw);
+        if (!groupKey || !Number.isFinite(index) || !recognitionRowsState[groupKey]?.[index]) return;
+        if (titleAttr) recognitionRowsState[groupKey][index].title = target.value;
+        if (urlAttr) recognitionRowsState[groupKey][index].url = target.value;
+      });
+      container.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        const addKey = target.getAttribute("data-add-recognition");
+        if (addKey) {
+          const state = recognitionRowsState[addKey];
+          if (!state || state.length >= recognitionMax(addKey)) return;
+          state.push({ title: "", url: "" });
+          renderRecognitionGroupRows(addKey);
+          applyTierFieldState();
+          return;
+        }
+        const removeAttr = target.getAttribute("data-remove-recognition");
+        if (!removeAttr) return;
+        const [groupKey, indexRaw] = removeAttr.split(":");
+        const index = Number(indexRaw);
+        const state = recognitionRowsState[groupKey];
+        if (!state || !Number.isFinite(index) || state.length <= 1) return;
+        state.splice(index, 1);
+        renderRecognitionGroupRows(groupKey);
+        applyTierFieldState();
+      });
+      renderRecognitionGroupRows(key);
+    });
+  }
+
   function applyTierFieldState() {
     const hasFullListing = fullListingFieldsEnabled();
     ORG_PRO_FIELD_IDS.forEach((fieldId) => {
@@ -361,6 +486,9 @@
     if (offeringsRow) offeringsRow.classList.toggle("fides-form-row--pro-locked", !hasFullListing);
     root.querySelectorAll(".fides-form-section--pro-tier").forEach((section) => {
       section.classList.toggle("fides-form-section--pro-locked", !hasFullListing);
+    });
+    root.querySelectorAll(".fides-recognition-group input, .fides-recognition-group .fides-media-action-btn").forEach((el) => {
+      el.disabled = !hasFullListing;
     });
     const mediaSection = root.querySelector(".fides-org-media-section");
     if (mediaSection) {
@@ -561,6 +689,17 @@
       </div>`;
   }
 
+  function recognitionsPanelHtml() {
+    return RECOGNITION_GROUPS.map(
+      ({ key, label, helpKey }) => `
+        <div class="fides-form-row fides-recognition-group fides-form-section--pro-tier" data-recognition-key="${escapeHtml(key)}">
+          <label class="fides-form-label" data-pro-label="${escapeHtml(label)}">${labelWithProIfNeeded(label, true)}</label>
+          ${helpHtml(helpKey)}
+          <div class="fides-recognition-rows fides-media-rows" id="fides-org-recognition-${escapeHtml(key)}" aria-live="polite"></div>
+        </div>`
+    ).join("");
+  }
+
   function identifiersPanelHtml() {
     return `<div class="fides-form-grid fides-form-grid-pair fides-org-identifiers-grid">${identifierFieldsHtml()}</div>`;
   }
@@ -578,6 +717,11 @@
         helpText("certificationsIntro") ||
           "Select certifications your organization holds. These may be reviewed before publication.",
         certificationsPanelHtml()
+      )}
+      ${accordionSection(
+        "Recognitions",
+        "Trust signals about this organization: customer references and awards. Each row needs a title; a link is optional.",
+        recognitionsPanelHtml()
       )}
       ${accordionSection(
         "Business & technical identifiers",
@@ -1194,6 +1338,7 @@
   wireOfferingsField();
   setOfferingsValues([]);
   initOrgMediaControls();
+  initRecognitionControls();
 
   const orgDescInput = root.querySelector("#fides-org-description");
   if (orgDescInput) {
@@ -1285,6 +1430,7 @@
     const manifestoEl = root.querySelector("#fides-org-manifesto-supporter");
     if (manifestoEl) manifestoEl.checked = payload.fidesManifestoSupporter === true;
     fillCertificationsFromPayload(payload.certifications);
+    setRecognitionRowsFromPayload(payload);
     setCheckedSectors(payload.sectors || []);
     setCheckedEcosystemRoleCodes(payload.ecosystemRoleCodes || []);
     const media = payload.media && typeof payload.media === "object" ? payload.media : {};
@@ -1344,6 +1490,15 @@
       payload.requestOfficialClaim = true;
     }
     payload.certifications = buildCertificationsFromForm();
+    const customerStories = readRecognitionGroup("customerStories");
+    const awardsAndRecognitions = readRecognitionGroup("awardsAndRecognitions");
+    if (customerStories.length || awardsAndRecognitions.length) {
+      payload.recognitions = {};
+      if (customerStories.length) payload.recognitions.customerStories = customerStories;
+      if (awardsAndRecognitions.length) {
+        payload.recognitions.awardsAndRecognitions = awardsAndRecognitions;
+      }
+    }
     payload.ecosystemRoleCodes = getCheckedEcosystemRoleCodes();
     const videos = collectMediaUrls(videoRowsState);
     const images = collectMediaUrls(imageRowsState);

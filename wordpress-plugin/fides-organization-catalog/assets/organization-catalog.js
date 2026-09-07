@@ -1338,6 +1338,81 @@
     return `<div class="fides-org-cert-list">${lines.join('')}</div>`;
   }
 
+  function organizationRecognitionItems(org, key) {
+    if (!orgHasFullCatalogContent(org)) return [];
+    const recognitions =
+      org && org.recognitions && typeof org.recognitions === 'object'
+        ? org.recognitions
+        : null;
+    if (!recognitions || !Array.isArray(recognitions[key])) return [];
+    return recognitions[key].filter(
+      (item) => item && typeof item === 'object' && typeof item.title === 'string' && item.title.trim()
+    );
+  }
+
+  function countOrganizationRecognitions(org) {
+    return (
+      organizationRecognitionItems(org, 'customerStories').length +
+      organizationRecognitionItems(org, 'awardsAndRecognitions').length
+    );
+  }
+
+  function renderOrganizationRecognitionItem(org, item) {
+    const title = escapeHtml(String(item.title || '').trim());
+    const url = typeof item.url === 'string' ? item.url.trim() : '';
+    if (!url) {
+      return `<li class="fides-recognition-item"><span class="fides-recognition-item-title">${title}</span></li>`;
+    }
+    return `<li class="fides-recognition-item">` +
+      `<span class="fides-recognition-item-title">${title}</span>` +
+      `<a href="${escapeHtml(url)}" target="_blank" rel="noopener" class="fides-modal-link-inline fides-recognition-item-link${orgSalesTrackClass(org, 'documentation')}"${orgSalesTrackAttrs(org, 'documentation')} onclick="event.stopPropagation();">Learn more ${icons.externalLink}</a>` +
+      `</li>`;
+  }
+
+  function renderOrganizationRecognitionsAccordion(org) {
+    const sections = [
+      {
+        key: 'customerStories',
+        title: 'Customer stories',
+        items: organizationRecognitionItems(org, 'customerStories'),
+      },
+      {
+        key: 'awardsAndRecognitions',
+        title: 'Awards & recognitions',
+        items: organizationRecognitionItems(org, 'awardsAndRecognitions'),
+      },
+    ].filter((section) => section.items.length > 0);
+    if (sections.length === 0) return '';
+
+    const count = countOrganizationRecognitions(org);
+    const body = sections
+      .map(
+        (section) =>
+          `<div class="fides-recognitions-section" data-section="${escapeHtml(section.key)}">` +
+          `<div class="fides-recognitions-section-title">${escapeHtml(section.title)}</div>` +
+          `<ul class="fides-recognitions-list">${section.items
+            .map((item) => renderOrganizationRecognitionItem(org, item))
+            .join('')}</ul>` +
+          `</div>`
+      )
+      .join('');
+
+    return `
+      <div class="fides-accordion" id="fides-accordion-recognitions">
+        <div class="fides-accordion-header-bar">
+          <button class="fides-accordion-header fides-accordion-toggle" type="button" aria-expanded="false">
+            <span class="fides-accordion-title">${icons.fileCheck} Recognitions <span class="fides-accordion-count">${count}</span></span>
+          </button>
+          <button type="button" class="fides-accordion-chevron-btn fides-accordion-toggle" aria-expanded="false" aria-label="Toggle recognitions">
+            <span class="fides-accordion-chevron">${icons.chevronDown}</span>
+          </button>
+        </div>
+        <div class="fides-accordion-body">
+          <div class="fides-modal-recognitions fides-modal-recognitions--accordion">${body}</div>
+        </div>
+      </div>`;
+  }
+
   function debounce(fn, ms) {
     let timer;
     return function (...args) { clearTimeout(timer); timer = setTimeout(() => fn.apply(this, args), ms); };
@@ -1779,6 +1854,7 @@
     const useCasesAccordionHtml = renderUseCasesAccordion(derivedUseCases, org);
     const certCount = countCatalogCertifications(org);
     const certCountBadge = certCount > 0 ? ` <span class="fides-accordion-count">${certCount}</span>` : '';
+    const recognitionsAccordionHtml = renderOrganizationRecognitionsAccordion(org);
     const identifierRowsHtml = renderOrganizationIdentifierRows(org);
     const listingHeaderBadge = renderOrganizationListingHeaderBadge(org);
 
@@ -1875,6 +1951,8 @@
                 ${renderCertificationsAccordionBody(org)}
               </div>
             </div>
+
+            ${recognitionsAccordionHtml}
 
             ${orgHasIdentifiers(org) ? `
             <div class="fides-accordion" id="fides-accordion-identifiers">
