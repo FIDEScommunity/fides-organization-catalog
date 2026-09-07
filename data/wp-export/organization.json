@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-09-02T18:47:11+00:00",
+    "generatedAt": "2026-09-07T19:29:48+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -136,6 +136,34 @@
             },
             "publishedAt": "2026-07-11 07:34:04",
             "updatedAt": "2026-07-11 07:34:04"
+        },
+        {
+            "itemId": "org:authologic",
+            "slug": "authologic",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:authologic",
+                    "name": "Authologic",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Authologic provides digital identity infrastructure for identity verification and EUDI Wallet credential issuance, enabling businesses to integrate digital IDs, wallets and verifiable credentials thro",
+                    "logo": "https://mobywatel.authologic.com/_nuxt/logo.DrrOjNXC.svg",
+                    "country": "PL",
+                    "ecosystemRoleCodes": [
+                        "issuer",
+                        "relying_party"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-09-07T19:29:48+00:00"
+            },
+            "publishedAt": "2026-09-07 19:29:48",
+            "updatedAt": "2026-09-07 19:29:48"
         },
         {
             "itemId": "org:ayanworks",
