@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.38
+Stable tag: 1.14.39
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,9 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.14.39 =
+* Mobile org modal: icon-only listing badge so names stay readable; close the overlay immediately when opening another org, ignore taps during the close animation, and unbind Escape so the X keeps working after several opens (tiles ≥ 1.13.22).
 
 = 1.14.38 =
 * Align organization cards, detail opens, and external provider links with the shared analytics identity and outbound contracts, including Matomo outlink deduplication (tiles ≥ 1.13.21).

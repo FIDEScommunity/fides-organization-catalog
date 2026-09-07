@@ -1114,10 +1114,6 @@
   padding: 0.15rem 0.45rem 0.15rem 0.35rem;
 }
 
-.fides-org-card-footer-listing .fides-modal-header-listing-badge--community {
-  padding-left: 0.45rem;
-}
-
 .fides-org-card-footer-listing .fides-modal-header-listing-badge svg {
   width: 12px;
   height: 12px;
@@ -1469,6 +1465,7 @@
 
 .fides-modal-overlay.closing {
   animation: fides-modal-fade-out 0.2s ease forwards;
+  pointer-events: none;
 }
 
 @keyframes fides-modal-fade-in {
@@ -1517,6 +1514,8 @@
   padding: 1.5rem 1.5rem 1rem;
   border-bottom: 1px solid var(--fides-border, rgba(255, 255, 255, 0.1));
   flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .fides-modal-header-content {
@@ -1616,7 +1615,6 @@
   color: #475569;
   background: #f1f5f9;
   border-color: rgba(71, 85, 105, 0.3);
-  padding-left: 0.55rem;
 }
 
 .fides-modal-header-official-badge svg {
@@ -1700,16 +1698,17 @@
 
   .fides-modal-overlay--organization .fides-modal-header-official-badge,
   .fides-modal-overlay--organization .fides-modal-header-listing-badge {
-    padding: 0.12rem 0.38rem 0.12rem 0.3rem;
-    gap: 0.2rem;
-    font-size: 0.625rem;
-    letter-spacing: 0.02em;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
   }
 
   .fides-modal-overlay--organization .fides-modal-header-official-badge svg,
   .fides-modal-overlay--organization .fides-modal-header-listing-badge svg {
-    width: 11px;
-    height: 11px;
+    width: 14px;
+    height: 14px;
   }
 
   .fides-modal-overlay--organization .fides-modal-header-meta-badge {
@@ -1719,6 +1718,8 @@
   .fides-modal-overlay--organization .fides-modal-header-actions {
     grid-area: actions;
     align-self: start;
+    position: relative;
+    z-index: 3;
   }
 
   .fides-modal-provider--org {

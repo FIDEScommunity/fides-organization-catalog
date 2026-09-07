@@ -571,6 +571,8 @@
   let sortBy = readStoredSort();
   let selectedOrg = null;
   let forcedModalTheme = null;
+  let modalCloseTimer = null;
+  let modalEscHandler = null;
   let root;
   let catalogLoadMeta = { showStaleNotice: false, remoteFailed: false, snapshotDate: '' };
 
@@ -1800,7 +1802,7 @@
             <div class="fides-modal-header-actions">
               ${renderModalEditAction(org)}
               <button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link" title="Copy link">${icons.share}</button>
-              <button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">${icons.xLarge}</button>
+              <button type="button" class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">${icons.xLarge}</button>
             </div>
           </div>
 
@@ -2278,11 +2280,43 @@
     );
   }
 
+  function unbindModalEsc() {
+    if (!modalEscHandler) return;
+    document.removeEventListener('keydown', modalEscHandler);
+    modalEscHandler = null;
+  }
+
+  function removeModalOverlayNow() {
+    if (modalCloseTimer) {
+      clearTimeout(modalCloseTimer);
+      modalCloseTimer = null;
+    }
+    unbindModalEsc();
+    const overlay = document.getElementById('fides-modal-overlay');
+    if (overlay) overlay.remove();
+  }
+
+  function syncOrgModalScrollLock() {
+    if (window.FidesCatalogUI && typeof window.FidesCatalogUI.syncCatalogBodyScrollLock === 'function') {
+      window.FidesCatalogUI.syncCatalogBodyScrollLock({ root: root });
+    } else if (!(root && root.querySelector('.fides-sidebar.mobile-open'))) {
+      document.body.style.overflow = '';
+    }
+  }
+
+  function clearOrgModalQuery() {
+    const params = new URLSearchParams(window.location.search);
+    params.delete('org');
+    params.delete('from');
+    const qs = params.toString();
+    history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
+  }
+
   function openModal(id, options) {
     selectedOrg = organizations.find((o) => o.id === id) || null;
     if (!selectedOrg) return;
-    const existing = document.getElementById('fides-modal-overlay');
-    if (existing) existing.remove();
+    getMobileFilters()?.setOpen(false);
+    removeModalOverlayNow();
     const params = new URLSearchParams(window.location.search);
     params.set('org', id);
     if (!(options && options.keepFrom)) {
@@ -2298,36 +2332,30 @@
   function closeModal() {
     selectedOrg = null;
     forcedModalTheme = null;
+    unbindModalEsc();
+    clearOrgModalQuery();
     const overlay = document.getElementById('fides-modal-overlay');
-    if (overlay) {
-      overlay.classList.add('closing');
-      setTimeout(() => {
-        overlay.remove();
-        if (window.FidesCatalogUI && typeof window.FidesCatalogUI.syncCatalogBodyScrollLock === 'function') {
-          window.FidesCatalogUI.syncCatalogBodyScrollLock({ root: root });
-        } else if (!(root && root.querySelector('.fides-sidebar.mobile-open'))) {
-          document.body.style.overflow = '';
-        }
-      }, 200);
-    } else if (window.FidesCatalogUI && typeof window.FidesCatalogUI.syncCatalogBodyScrollLock === 'function') {
-      window.FidesCatalogUI.syncCatalogBodyScrollLock({ root: root });
-    } else if (!(root && root.querySelector('.fides-sidebar.mobile-open'))) {
-      document.body.style.overflow = '';
+    if (!overlay) {
+      syncOrgModalScrollLock();
+      return;
     }
-    const params = new URLSearchParams(window.location.search);
-    params.delete('org');
-    params.delete('from');
-    const qs = params.toString();
-    history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
+    if (overlay.classList.contains('closing')) return;
+    overlay.classList.add('closing');
+    modalCloseTimer = setTimeout(() => {
+      modalCloseTimer = null;
+      overlay.remove();
+      syncOrgModalScrollLock();
+    }, 200);
   }
 
   function bindModalEvents() {
-    const closeBtn = document.getElementById('fides-modal-close');
-    if (closeBtn) closeBtn.addEventListener('click', closeModal);
     const overlay = document.getElementById('fides-modal-overlay');
-    if (overlay) overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
-    if (overlay) bindLogoFallbackHandlers(overlay);
-    const copyBtn = document.getElementById('fides-modal-copy-link');
+    if (!overlay) return;
+    const closeBtn = overlay.querySelector('.fides-modal-close');
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+    bindLogoFallbackHandlers(overlay);
+    const copyBtn = overlay.querySelector('.fides-modal-copy-link');
     if (copyBtn) copyBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       if (!selectedOrg) return;
@@ -2338,7 +2366,7 @@
       }
     });
 
-    document.querySelectorAll('.fides-modal-overlay .fides-accordion-toggle[type="button"]').forEach((btn) => {
+    overlay.querySelectorAll('.fides-accordion-toggle[type="button"]').forEach((btn) => {
       btn.addEventListener('click', () => {
         const accordion = btn.closest('.fides-accordion');
         if (!accordion) return;
@@ -2347,23 +2375,23 @@
       });
     });
 
-    if (overlay) {
-      overlay.querySelectorAll('.fides-org-cert-more-toggle').forEach((btn) => {
-        btn.addEventListener('click', (event) => {
-          event.stopPropagation();
-          const next = btn.nextElementSibling;
-          if (next && next.classList.contains('fides-org-cert-more-items')) {
-            next.removeAttribute('hidden');
-          }
-          btn.remove();
-        });
+    overlay.querySelectorAll('.fides-org-cert-more-toggle').forEach((btn) => {
+      btn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const next = btn.nextElementSibling;
+        if (next && next.classList.contains('fides-org-cert-more-items')) {
+          next.removeAttribute('hidden');
+        }
+        btn.remove();
       });
-      bindOrgUseCasesScroll(overlay);
-    }
-
-    document.addEventListener('keydown', function escHandler(e) {
-      if (e.key === 'Escape') { closeModal(); document.removeEventListener('keydown', escHandler); }
     });
+    bindOrgUseCasesScroll(overlay);
+
+    unbindModalEsc();
+    modalEscHandler = function(e) {
+      if (e.key === 'Escape') closeModal();
+    };
+    document.addEventListener('keydown', modalEscHandler);
 
     if (selectedOrg) {
       loadAndApplyModalRoleLikes(selectedOrg);
@@ -2681,8 +2709,8 @@
     }
     selectedOrg = org;
     forcedModalTheme = (options && options.theme) ? String(options.theme) : null;
-    const existing = document.getElementById('fides-modal-overlay');
-    if (existing) existing.remove();
+    getMobileFilters()?.setOpen(false);
+    removeModalOverlayNow();
     document.body.insertAdjacentHTML('beforeend', renderModal());
     document.body.style.overflow = 'hidden';
     bindModalEvents();
