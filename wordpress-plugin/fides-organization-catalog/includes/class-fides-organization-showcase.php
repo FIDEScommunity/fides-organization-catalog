@@ -333,7 +333,10 @@ final class Fides_Organization_Showcase {
                             $country_flag_url = preg_match('/^[A-Z]{2}$/', $country_code)
                                 ? 'https://flagcdn.com/w40/' . strtolower($country_code) . '.png'
                                 : '';
-                            $detail_url = add_query_arg('org', $id, $catalog_url);
+                            $share = function_exists('fides_org_catalog_share_path')
+                                ? fides_org_catalog_share_path()
+                                : '/organization/';
+                            $detail_url = home_url($share . rawurlencode($id) . '/');
                             ?>
                             <a class="fides-org-showcase__card" href="<?php echo esc_url($detail_url); ?>"
                                data-matomo-category="Organization Showcase" data-matomo-action="Open organization"

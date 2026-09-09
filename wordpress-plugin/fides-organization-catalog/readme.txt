@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.14.40
+Stable tag: 1.16.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,16 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.16.0 =
+* List view shows use-case, issuer, and wallet counts (use cases first) instead of relying parties.
+* Default listing sort is use-case count (then A–Z); Last updated remains available.
+* Organization modal share matches use cases: LinkedIn plus copy, using a crawlable `/organization/{id}/` URL instead of `?org=` (LinkedIn ignores listing query strings).
+* Organization detail URLs emit `{name} - FIDES Trust Explorer` and the logo (or a branded 1200×627 card) as Open Graph title/image for LinkedIn.
+
+= 1.15.0 =
+* Client-side “Show more” on the organization listing so the catalog stays usable as the list grows.
+* Filter and badge for UIDAI OVSE (Aadhaar offline verification) registrations imported from the UIDAI public register.
 
 = 1.14.40 =
 * Full and Pro organization listings can publish customer stories and awards with an optional public link; recognitions appear in the modal and SSR detail fallback (requires tiles ≥ 1.13.23 for tier enforcement).

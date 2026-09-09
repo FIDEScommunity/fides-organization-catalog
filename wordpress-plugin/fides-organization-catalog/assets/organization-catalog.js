@@ -22,6 +22,8 @@
     wallet: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>',
     server: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>',
     share: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>',
+    link: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+    linkedin: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.36 4.26 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>',
     pencil: '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>',
     check: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
     qtsp: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="4" width="19" height="16" rx="2.5" fill="#1E3A8A"/><circle cx="12" cy="7.2" r="0.8" fill="#FACC15"/><circle cx="15.2" cy="8.2" r="0.8" fill="#FACC15"/><circle cx="16.8" cy="11" r="0.8" fill="#FACC15"/><circle cx="15.8" cy="14.2" r="0.8" fill="#FACC15"/><circle cx="13" cy="15.8" r="0.8" fill="#FACC15"/><circle cx="9.8" cy="14.8" r="0.8" fill="#FACC15"/><circle cx="8.2" cy="12" r="0.8" fill="#FACC15"/><circle cx="9.2" cy="8.8" r="0.8" fill="#FACC15"/><path d="M8.6 12.6l2.1 2.1 4.8-4.8" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
@@ -31,6 +33,8 @@
     community: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
     /** Lucide "badge-check" — DIACC PCTF certified badge */
     diacc: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>',
+    /** UIDAI Offline Verification Seeking Entity (Aadhaar VC) */
+    uidaiOvse: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" fill="#0B3A82"/><path d="M8 12.2l2.2 2.2 5.2-5.2" stroke="#FF9933" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     eye: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
     globe: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',
     tag: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>',
@@ -334,6 +338,8 @@
     tierUiEnabled: false,
     askFidesAvailable: false,
     askFidesPlaceholder: 'Ask anything about organizations…',
+    sharePath: '/organization/',
+    listingPath: '/organizations/',
   };
   const config = Object.assign({}, configDefaults, window.fidesOrganizationCatalog || {});
 
@@ -552,9 +558,9 @@
     applyModalEntityLikes(document.getElementById('fides-modal-overlay'));
   }
 
-  const SORT_STORAGE_KEY = 'fides-org-sort';
-  const SORT_OPTIONS = ['name', 'country', 'updatedAt'];
-  const DEFAULT_SORT = 'updatedAt';
+  const SORT_STORAGE_KEY = 'fides-org-sort-v2';
+  const SORT_OPTIONS = ['useCases', 'name', 'country', 'updatedAt'];
+  const DEFAULT_SORT = 'useCases';
 
   function readStoredSort() {
     try {
@@ -570,6 +576,7 @@
   let useCasesByOrgId = Object.create(null);
   let sortBy = readStoredSort();
   let selectedOrg = null;
+  let listingUrlWhenOpened = '';
   let forcedModalTheme = null;
   let modalCloseTimer = null;
   let modalEscHandler = null;
@@ -586,6 +593,55 @@
   }
   let viewMode = localStorage.getItem('fides-org-view') || 'grid';
   const LIST_BREAKPOINT = 1024;
+  const LISTING_PAGE_SIZE = 48;
+  let visibleCount = LISTING_PAGE_SIZE;
+
+  function resetVisibleCount() {
+    visibleCount = LISTING_PAGE_SIZE;
+  }
+
+  function visibleSlice(filtered) {
+    const list = Array.isArray(filtered) ? filtered : [];
+    return list.slice(0, Math.max(LISTING_PAGE_SIZE, visibleCount));
+  }
+
+  function renderLoadMoreBar(filtered) {
+    const total = Array.isArray(filtered) ? filtered.length : 0;
+    if (total === 0) return '';
+    const shown = Math.min(visibleCount, total);
+    if (shown >= total) {
+      return `<div class="fides-org-load-more" data-fides-org-load-more>
+        <p class="fides-org-load-more-meta">Showing ${shown} of ${total}</p>
+      </div>`;
+    }
+    const next = Math.min(LISTING_PAGE_SIZE, total - shown);
+    return `<div class="fides-org-load-more" data-fides-org-load-more>
+      <p class="fides-org-load-more-meta">Showing ${shown} of ${total}</p>
+      <button type="button" class="fides-org-load-more-btn" id="fides-org-load-more">Show ${next} more</button>
+    </div>`;
+  }
+
+  function bindLoadMoreButton() {
+    const btn = root && root.querySelector('#fides-org-load-more');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      visibleCount += LISTING_PAGE_SIZE;
+      renderOrgGridOnly();
+    });
+  }
+
+  function syncLoadMoreBar(filtered) {
+    if (!root) return;
+    const html = renderLoadMoreBar(filtered);
+    const existing = root.querySelector('[data-fides-org-load-more]');
+    if (existing) {
+      existing.outerHTML = html;
+    } else {
+      const results = root.querySelector('.fides-results');
+      if (results) results.insertAdjacentHTML('beforeend', html);
+    }
+    bindLoadMoreButton();
+  }
   function effectiveView() {
     return window.innerWidth < LIST_BREAKPOINT ? 'grid' : viewMode;
   }
@@ -668,6 +724,13 @@
     return orgCertificationCodes(org).includes('diacc');
   }
 
+  const UIDAI_OVSE_TITLE = 'UIDAI OVSE — authorised to verify Aadhaar verifiable credentials offline';
+
+  /** Whether org is a UIDAI registered Offline Verification Seeking Entity. */
+  function orgHasUidaiOvseBadge(org) {
+    return orgCertificationCodes(org).includes('uidai_ovse');
+  }
+
   const OFFICIAL_ACCOUNT_TITLE = 'Official account — claimed by the organization';
 
   /** Grid card: listing badge + outline badges bottom-left in footer (quiet, no fill). */
@@ -689,6 +752,9 @@
     }
     if (orgHasDiaccBadge(org)) {
       parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--diacc" role="img" aria-label="DIACC Certified (PCTF)" title="DIACC Certified (PCTF)">${icons.diacc}</span>`);
+    }
+    if (orgHasUidaiOvseBadge(org)) {
+      parts.push(`<span class="fides-org-footer-badge fides-org-footer-badge--uidai-ovse" role="img" aria-label="${UIDAI_OVSE_TITLE}" title="${UIDAI_OVSE_TITLE}">${icons.uidaiOvse}</span>`);
     }
     if (parts.length === 0) return '';
     const listingClass = tierUiEnabled() ? ' fides-org-card-footer-listing' : '';
@@ -713,6 +779,9 @@
     if (orgHasDiaccBadge(org)) {
       parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--diacc" role="img" aria-label="DIACC Certified (PCTF)" title="DIACC Certified (PCTF)">${icons.diacc}</span>`);
     }
+    if (orgHasUidaiOvseBadge(org)) {
+      parts.push(`<span class="fides-row-badge-icon fides-row-badge-icon--uidai-ovse" role="img" aria-label="${UIDAI_OVSE_TITLE}" title="${UIDAI_OVSE_TITLE}">${icons.uidaiOvse}</span>`);
+    }
     if (parts.length === 0) return '';
     return `<div class="fides-row-badges">${parts.join('')}</div>`;
   }
@@ -725,6 +794,7 @@
     if (forListView && org && org.fidesManifestoSupporter === true) bits.push('FIDES Supporter');
     if (orgHasQtspBadge(org)) bits.push('qualified trust service provider');
     if (orgHasDiaccBadge(org)) bits.push('DIACC certified');
+    if (orgHasUidaiOvseBadge(org)) bits.push('UIDAI OVSE');
     if (bits.length === 0) return name;
     return `${name}, ${bits.join(', ')}`;
   }
@@ -740,6 +810,7 @@
     iso27001: 'ISO 27001',
     iso27701: 'ISO 27701',
     qtsp: 'QTSP (eIDAS)',
+    uidai_ovse: 'UIDAI OVSE',
     soc2: 'SOC 2',
     diacc: 'DIACC Certified',
   };
@@ -1260,7 +1331,9 @@
         if (ev && typeof ev === 'object' && ev.kind === 'url' && ev.url) {
           const linkLabel = c.code === 'qtsp'
             ? 'EU eIDAS Trust List'
-            : ((ev.label && String(ev.label).trim()) || 'Documentation');
+            : (c.code === 'uidai_ovse'
+              ? 'UIDAI OVSE register'
+              : ((ev.label && String(ev.label).trim()) || 'Documentation'));
           extra = ` <a href="${escapeHtml(ev.url)}" class="fides-modal-link-inline${orgSalesTrackClass(org, 'documentation')}" target="_blank" rel="noopener"${orgSalesTrackAttrs(org, 'documentation')} onclick="event.stopPropagation();">${escapeHtml(linkLabel)} ${icons.externalLink}</a>`;
         } else if (ev && typeof ev === 'object' && ev.kind === 'verifiable_credential' && ev.credentialUri) {
           const fmt = ev.format ? String(ev.format) : 'Credential';
@@ -1304,6 +1377,8 @@
         }
         if (c.code === 'qtsp') {
           lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert fides-tag--qtsp-core">${escapeHtml(title)}</span>${trustServicesHtml}${extra}</div>`);
+        } else if (c.code === 'uidai_ovse') {
+          lines.push(`<div class="fides-org-cert-line"><span class="fides-tag fides-tag--cert fides-tag--uidai-ovse">${escapeHtml(title)}</span>${extra}</div>`);
         } else if (c.code === 'diacc') {
           const components = orgDiaccComponents(org);
           const compHtml = components
@@ -1703,6 +1778,11 @@
       }
       return true;
     }).sort((a, b) => {
+      if (sortBy === 'useCases') {
+        const diff = getDerivedUseCasesForOrg(b).length - getDerivedUseCasesForOrg(a).length;
+        if (diff !== 0) return diff;
+        return a.name.localeCompare(b.name);
+      }
       if (sortBy === 'country') return countryName(a.country || '').localeCompare(countryName(b.country || '')) || a.name.localeCompare(b.name);
       if (sortBy === 'updatedAt') return (b.updatedAt || '').localeCompare(a.updatedAt || '');
       return a.name.localeCompare(b.name);
@@ -1877,7 +1957,20 @@
             </div>
             <div class="fides-modal-header-actions">
               ${renderModalEditAction(org)}
-              <button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Copy link" title="Copy link">${icons.share}</button>
+              <div class="fides-modal-share">
+                <button type="button" class="fides-modal-copy-link" id="fides-modal-copy-link" aria-label="Share this organization" title="Share this organization" aria-haspopup="menu" aria-expanded="false" aria-controls="fides-modal-share-popover">
+                  ${icons.share}
+                </button>
+                <div class="fides-modal-share-popover" id="fides-modal-share-popover" hidden role="menu" aria-label="Share this organization">
+                  <p class="fides-modal-share-popover-title">Share this organization</p>
+                  <button type="button" class="fides-modal-share-option" id="fides-modal-share-linkedin" role="menuitem">
+                    ${icons.linkedin} Share on LinkedIn
+                  </button>
+                  <button type="button" class="fides-modal-share-option" id="fides-modal-share-copy" role="menuitem">
+                    ${icons.link} <span data-share-copy-label>Copy link</span>
+                  </button>
+                </div>
+              </div>
               <button type="button" class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">${icons.xLarge}</button>
             </div>
           </div>
@@ -2204,9 +2297,9 @@
         <div></div>
         <div>Organization</div>
         <div class="fides-org-list-header-status"></div>
+        <div class="fides-list-col-right" title="Use cases">${icons.useCases}</div>
         <div class="fides-list-col-right" title="Issuers">${icons.server}</div>
         <div class="fides-list-col-right" title="Wallets">${icons.wallet}</div>
-        <div class="fides-list-col-right" title="Relying parties">${icons.shield}</div>
       </div>
     `;
   }
@@ -2219,9 +2312,9 @@
     const logoFallback = logoFallbackFromWebsite(org.website);
     const logoFallbackAttr = logoFallback ? ` data-fides-logo-fallback="${escapeHtml(logoFallback)}"` : '';
     const r = org.ecosystemRoles || {};
+    const useCaseCount = getDerivedUseCasesForOrg(org).length;
     const issuerCount = (r.issuers || []).length;
     const walletCount = (r.personalWallets || []).length + (r.businessWallets || []).length;
-    const rpCount = (r.relyingParties || []).length;
     const ccRaw = (org.country || '').trim();
     const cc = normalizeOrgCountryCode(ccRaw);
     const countryCell = cc
@@ -2250,15 +2343,18 @@
           ${renderOrgListBadges(org)}
           <div class="fides-row-environment">${countryCell}</div>
         </div>
+        <div class="fides-row-count fides-list-col-right">${useCaseCount}</div>
         <div class="fides-row-count fides-list-col-right">${issuerCount}</div>
         <div class="fides-row-count fides-list-col-right">${walletCount}</div>
-        <div class="fides-row-count fides-list-col-right">${rpCount}</div>
       </div>
     `;
   }
 
-  function render() {
+  function render(options) {
+    const keepVisibleCount = options && options.keepVisibleCount;
+    if (!keepVisibleCount) resetVisibleCount();
     const filtered = getFilteredOrgs();
+    const visible = visibleSlice(filtered);
     const metrics = computeMetrics(filtered);
     const mobileFiltersOpen = getMobileFilters()?.captureOpenState() || false;
 
@@ -2287,6 +2383,7 @@
                 <label class="fides-sort-label" for="fides-sort-select">
                   <span class="fides-sort-text">Sort by:</span>
                   <select id="fides-sort-select" class="fides-sort-select">
+                    <option value="useCases" ${sortBy === 'useCases' ? 'selected' : ''}>Use cases</option>
                     <option value="name" ${sortBy === 'name' ? 'selected' : ''}>A–Z</option>
                     <option value="country" ${sortBy === 'country' ? 'selected' : ''}>Country</option>
                     <option value="updatedAt" ${sortBy === 'updatedAt' ? 'selected' : ''}>Last updated</option>
@@ -2299,11 +2396,12 @@
             <div class="fides-results">
               <div class="fides-org-grid" data-view="${effectiveView()}" data-columns="${escapeHtml(settings.columns)}">
                 ${effectiveView() === 'list' ? renderOrgListHeader() : ''}
-                ${filtered.length > 0
-                  ? filtered.map(effectiveView() === 'list' ? renderOrgRow : renderOrgCard).join('')
+                ${visible.length > 0
+                  ? visible.map(effectiveView() === 'list' ? renderOrgRow : renderOrgCard).join('')
                   : '<p class="fides-empty">No organizations found.</p>'
                 }
               </div>
+              ${renderLoadMoreBar(filtered)}
             </div>
           </section>
         </div>
@@ -2311,6 +2409,7 @@
     `;
     _lastOrgEffectiveView = effectiveView();
     bindEvents();
+    bindLoadMoreButton();
     getMobileFilters()?.applyAfterRender(mobileFiltersOpen);
     applyStaleCatalogNotice();
   }
@@ -2324,6 +2423,189 @@
     toast.innerHTML = `<span class="fides-toast-icon">${type === 'success' ? icons.check : icons.x}</span><span class="fides-toast-message">${escapeHtml(message)}</span>`;
     document.body.appendChild(toast);
     setTimeout(() => { toast.style.animation = 'fides-toast-out 0.3s ease forwards'; setTimeout(() => toast.remove(), 300); }, 3000);
+  }
+
+  function orgSharePath() {
+    return String(config.sharePath || '/organization/').replace(/\/?$/, '/');
+  }
+
+  function orgListingPath() {
+    return String(config.listingPath || '/organizations/').replace(/\/?$/, '/') || '/organizations/';
+  }
+
+  function orgCanonicalUrl(orgId) {
+    const id = String(orgId || '').trim();
+    if (!id) return '';
+    try {
+      const url = new URL(orgSharePath() + encodeURIComponent(id) + '/', window.location.origin);
+      url.search = '';
+      url.hash = '';
+      return url.toString();
+    } catch {
+      return window.location.origin + orgSharePath() + encodeURIComponent(id) + '/';
+    }
+  }
+
+  function orgIdFromLocation() {
+    const fromQuery = new URLSearchParams(window.location.search).get('org');
+    if (fromQuery) return fromQuery;
+    const sharePath = orgSharePath();
+    const path = String(window.location.pathname || '').replace(/\/+$/, '') + '/';
+    if (path.indexOf(sharePath) !== 0) return '';
+    const rest = path.slice(sharePath.length).replace(/\/+$/, '');
+    if (!rest || rest.indexOf('/') !== -1) return '';
+    try {
+      return decodeURIComponent(rest);
+    } catch {
+      return rest;
+    }
+  }
+
+  function isOrgSharePath() {
+    return !!orgIdFromLocation() && String(window.location.pathname || '').indexOf(orgSharePath()) === 0;
+  }
+
+  function orgLinkedInShareUrl(orgId) {
+    const canonical = orgCanonicalUrl(orgId);
+    if (!canonical) return '';
+    try {
+      const tracked = new URL(canonical);
+      tracked.searchParams.set('utm_source', 'linkedin');
+      tracked.searchParams.set('utm_medium', 'social');
+      tracked.searchParams.set('utm_campaign', 'organization_share');
+      return 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(tracked.toString());
+    } catch {
+      return '';
+    }
+  }
+
+  function shouldUseNativeShare() {
+    if (typeof navigator === 'undefined' || typeof navigator.share !== 'function') return false;
+    const coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+    const narrow = window.matchMedia && window.matchMedia('(max-width: 720px)').matches;
+    return !!(coarse || narrow);
+  }
+
+  function shareButtonEl() {
+    return document.getElementById('fides-modal-copy-link');
+  }
+
+  function sharePopoverEl() {
+    return document.getElementById('fides-modal-share-popover');
+  }
+
+  function isSharePopoverOpen() {
+    const popover = sharePopoverEl();
+    return !!(popover && !popover.hidden);
+  }
+
+  function onSharePopoverOutsideClick(event) {
+    const wrap = document.querySelector('#fides-modal-overlay .fides-modal-share');
+    if (wrap && wrap.contains(event.target)) return;
+    closeSharePopover();
+  }
+
+  function closeSharePopover() {
+    const popover = sharePopoverEl();
+    const button = shareButtonEl();
+    if (popover) popover.hidden = true;
+    if (button) button.setAttribute('aria-expanded', 'false');
+    document.removeEventListener('mousedown', onSharePopoverOutsideClick, true);
+  }
+
+  function openSharePopover() {
+    const popover = sharePopoverEl();
+    const button = shareButtonEl();
+    if (!popover || !button) return;
+    popover.hidden = false;
+    button.setAttribute('aria-expanded', 'true');
+    document.addEventListener('mousedown', onSharePopoverOutsideClick, true);
+  }
+
+  function toggleSharePopover() {
+    if (isSharePopoverOpen()) closeSharePopover();
+    else openSharePopover();
+  }
+
+  function organizationShareSummary(org) {
+    const raw = String((org && org.description) || '').replace(/\s+/g, ' ').trim();
+    if (!raw) return '';
+    return raw.length > 180 ? raw.slice(0, 177) + '…' : raw;
+  }
+
+  function markCopyLinkSuccess() {
+    const label = document.querySelector('#fides-modal-share-copy [data-share-copy-label]');
+    if (label) label.textContent = 'Link copied ✓';
+    setTimeout(() => {
+      if (label) label.textContent = 'Copy link';
+      closeSharePopover();
+    }, 900);
+  }
+
+  function trackOrganizationShare(orgId, method) {
+    if (!window.FidesCatalogUI || typeof window.FidesCatalogUI.trackMatomoEvent !== 'function') return;
+    const name = [matomoSafePart(orgId), matomoSafePart(method)].join('|');
+    window.FidesCatalogUI.trackMatomoEvent('Organization Catalog', 'share_organization', name);
+  }
+
+  async function nativeShareOrganization() {
+    if (!selectedOrg || !selectedOrg.id) return;
+    const url = orgCanonicalUrl(selectedOrg.id);
+    const title = String(selectedOrg.name || selectedOrg.id || 'FIDES organization');
+    const text = organizationShareSummary(selectedOrg) || title;
+    try {
+      await navigator.share({ title: title, text: text, url: url });
+      trackOrganizationShare(selectedOrg.id, 'native');
+    } catch (err) {
+      if (err && err.name === 'AbortError') return;
+      openSharePopover();
+    }
+  }
+
+  function onShareButtonClick(event) {
+    event.stopPropagation();
+    if (!selectedOrg || !selectedOrg.id) return;
+    if (shouldUseNativeShare()) {
+      nativeShareOrganization();
+      return;
+    }
+    toggleSharePopover();
+  }
+
+  function shareOrganizationOnLinkedIn() {
+    if (!selectedOrg || !selectedOrg.id) return;
+    const href = orgLinkedInShareUrl(selectedOrg.id);
+    if (!href) return;
+    trackOrganizationShare(selectedOrg.id, 'linkedin');
+    closeSharePopover();
+    window.open(href, '_blank', 'noopener,noreferrer');
+  }
+
+  function copyOrganizationLink() {
+    if (!selectedOrg || !selectedOrg.id) return;
+    const text = orgCanonicalUrl(selectedOrg.id);
+    const onSuccess = () => {
+      trackOrganizationShare(selectedOrg.id, 'copy_link');
+      if (isSharePopoverOpen()) markCopyLinkSuccess();
+      else showToast('Link copied to clipboard');
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(onSuccess).catch(() => {
+        showToast('Failed to copy link', 'error');
+      });
+      return;
+    }
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    const success = document.execCommand('copy');
+    textarea.remove();
+    if (success) onSuccess();
+    else showToast('Failed to copy link', 'error');
   }
 
   function trackOrganizationModalOpen(org) {
@@ -2369,6 +2651,7 @@
       clearTimeout(modalCloseTimer);
       modalCloseTimer = null;
     }
+    closeSharePopover();
     unbindModalEsc();
     const overlay = document.getElementById('fides-modal-overlay');
     if (overlay) overlay.remove();
@@ -2383,11 +2666,12 @@
   }
 
   function clearOrgModalQuery() {
-    const params = new URLSearchParams(window.location.search);
-    params.delete('org');
-    params.delete('from');
-    const qs = params.toString();
-    history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
+    if (listingUrlWhenOpened) {
+      history.replaceState(null, '', listingUrlWhenOpened);
+      listingUrlWhenOpened = '';
+      return;
+    }
+    history.replaceState(null, '', orgListingPath());
   }
 
   function openModal(id, options) {
@@ -2395,12 +2679,28 @@
     if (!selectedOrg) return;
     getMobileFilters()?.setOpen(false);
     removeModalOverlayNow();
-    const params = new URLSearchParams(window.location.search);
-    params.set('org', id);
-    if (!(options && options.keepFrom)) {
-      params.delete('from');
+    if (!listingUrlWhenOpened && !isOrgSharePath()) {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('org');
+      if (!(options && options.keepFrom)) {
+        url.searchParams.delete('from');
+      }
+      listingUrlWhenOpened = url.pathname + url.search + url.hash;
     }
-    history.replaceState(null, '', '?' + params.toString());
+    let href = orgCanonicalUrl(id);
+    if (options && options.keepFrom) {
+      try {
+        const from = String(new URLSearchParams(window.location.search).get('from') || '').trim();
+        if (from) {
+          const tracked = new URL(href);
+          tracked.searchParams.set('from', from);
+          href = tracked.pathname + tracked.search + tracked.hash;
+        }
+      } catch (_err) {
+        /* keep canonical href */
+      }
+    }
+    history.replaceState(null, '', href);
     document.body.insertAdjacentHTML('beforeend', renderModal());
     document.body.style.overflow = 'hidden';
     bindModalEvents();
@@ -2410,6 +2710,7 @@
   function closeModal() {
     selectedOrg = null;
     forcedModalTheme = null;
+    closeSharePopover();
     unbindModalEsc();
     clearOrgModalQuery();
     const overlay = document.getElementById('fides-modal-overlay');
@@ -2433,16 +2734,22 @@
     if (closeBtn) closeBtn.addEventListener('click', closeModal);
     overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
     bindLogoFallbackHandlers(overlay);
-    const copyBtn = overlay.querySelector('.fides-modal-copy-link');
-    if (copyBtn) copyBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (!selectedOrg) return;
-      const url = new URL(window.location.href);
-      url.searchParams.set('org', selectedOrg.id);
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(url.toString()).then(() => showToast('Link copied to clipboard'), () => showToast('Failed to copy link', 'error'));
-      }
-    });
+    const copyBtn = overlay.querySelector('#fides-modal-copy-link');
+    if (copyBtn) copyBtn.addEventListener('click', onShareButtonClick);
+    const linkedInButton = overlay.querySelector('#fides-modal-share-linkedin');
+    if (linkedInButton) {
+      linkedInButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        shareOrganizationOnLinkedIn();
+      });
+    }
+    const copyOption = overlay.querySelector('#fides-modal-share-copy');
+    if (copyOption) {
+      copyOption.addEventListener('click', (e) => {
+        e.stopPropagation();
+        copyOrganizationLink();
+      });
+    }
 
     overlay.querySelectorAll('.fides-accordion-toggle[type="button"]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -2467,7 +2774,15 @@
 
     unbindModalEsc();
     modalEscHandler = function(e) {
-      if (e.key === 'Escape') closeModal();
+      if (e.key !== 'Escape') return;
+      if (isSharePopoverOpen()) {
+        e.preventDefault();
+        closeSharePopover();
+        const button = shareButtonEl();
+        if (button) button.focus();
+        return;
+      }
+      closeModal();
     };
     document.addEventListener('keydown', modalEscHandler);
 
@@ -2488,10 +2803,11 @@
     const handleSearch = debounce((e) => {
       filters.search = e.target.value || '';
       if (searchClear) searchClear.classList.toggle('hidden', !filters.search);
+      resetVisibleCount();
       renderOrgGridOnly();
     }, 300);
     if (searchInput) searchInput.addEventListener('input', handleSearch);
-    if (searchClear) searchClear.addEventListener('click', () => { filters.search = ''; if (searchInput) searchInput.value = ''; searchClear.classList.add('hidden'); renderOrgGridOnly(); });
+    if (searchClear) searchClear.addEventListener('click', () => { filters.search = ''; if (searchInput) searchInput.value = ''; searchClear.classList.add('hidden'); resetVisibleCount(); renderOrgGridOnly(); });
     if (askFidesTrigger) {
       askFidesTrigger.addEventListener('click', () => {
         if (!window.FidesAssistant || typeof window.FidesAssistant.open !== 'function') return;
@@ -2593,6 +2909,7 @@
     const ev = effectiveView();
     grid.setAttribute('data-view', ev);
     const filtered = getFilteredOrgs();
+    const visible = visibleSlice(filtered);
     const metrics = computeMetrics(filtered);
     const kpiValues = root.querySelectorAll('.fides-kpi-card .fides-kpi-value');
     if (kpiValues.length >= 4) {
@@ -2602,8 +2919,8 @@
       kpiValues[3].textContent = String(metrics.relyingParties);
     }
     const header = ev === 'list' ? renderOrgListHeader() : '';
-    const items = filtered.length > 0
-      ? filtered.map(ev === 'list' ? renderOrgRow : renderOrgCard).join('')
+    const items = visible.length > 0
+      ? visible.map(ev === 'list' ? renderOrgRow : renderOrgCard).join('')
       : '<p class="fides-empty">No organizations found.</p>';
     grid.innerHTML = header + items;
     _lastOrgEffectiveView = ev;
@@ -2611,11 +2928,11 @@
       card.addEventListener('click', () => openModal(card.dataset.id));
       card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(card.dataset.id); } });
     });
+    syncLoadMoreBar(filtered);
   }
 
   function checkDeepLink() {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('org');
+    const id = orgIdFromLocation();
     if (id) openModal(id, { keepFrom: true });
   }
 

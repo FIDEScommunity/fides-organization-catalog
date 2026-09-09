@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.14.40
+ * Version: 1.16.0
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,13 +10,16 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.14.40');
+define('FIDES_ORG_CATALOG_VERSION', '1.16.0');
 define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
 define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
+/** Bump this when share rewrite rules change so existing sites flush once. */
+define('FIDES_ORG_CATALOG_SHARE_REWRITE_VERSION', '1.16.0');
 
 /** @var string Option group for Settings → FIDES Org Catalog */
 const FIDES_ORG_CATALOG_SETTINGS_GROUP = 'fides_org_catalog_settings';
 
+require_once plugin_dir_path(__FILE__) . 'includes/organization-share-url.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-ssr.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-media-normalizer.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-fides-organization-catalog-recognitions-normalizer.php';
@@ -511,6 +514,8 @@ class Fides_Organization_Catalog {
             'tierUiEnabled'             => function_exists('fides_catalog_tier_ui_enabled') && fides_catalog_tier_ui_enabled(),
             'askFidesAvailable'         => has_action('fides_assistant_enqueue_headless') !== false,
             'askFidesPlaceholder'       => __('Ask anything about organizations…', 'fides-organization-catalog'),
+            'sharePath'                 => fides_org_catalog_share_path(),
+            'listingPath'               => fides_org_catalog_listing_path(),
         ];
 
         return array_merge($base, $overrides);
@@ -621,5 +626,100 @@ class Fides_Organization_Catalog {
         );
     }
 }
+
+/**
+ * @param array<int, string> $vars
+ * @return array<int, string>
+ */
+function fides_org_catalog_share_query_vars(array $vars): array {
+    $vars[] = 'org';
+    return $vars;
+}
+
+function fides_org_catalog_listing_page_id(): int {
+    $path = trim(fides_org_catalog_listing_path(), '/');
+    if ($path === '') {
+        return 0;
+    }
+    $page = get_page_by_path($path);
+    if ($page instanceof WP_Post) {
+        return (int) $page->ID;
+    }
+    $segments = explode('/', $path);
+    $leaf = end($segments);
+    if (is_string($leaf) && $leaf !== '') {
+        $page = get_page_by_path($leaf);
+        if ($page instanceof WP_Post) {
+            return (int) $page->ID;
+        }
+    }
+    return 0;
+}
+
+function fides_org_catalog_register_share_rewrites(): void {
+    $page_id = fides_org_catalog_listing_page_id();
+    if ($page_id < 1) {
+        return;
+    }
+    $share = trim(fides_org_catalog_share_path(), '/');
+    if ($share === '') {
+        return;
+    }
+    add_rewrite_rule(
+        '^' . preg_quote($share, '/') . '/([^/]+)/?$',
+        'index.php?page_id=' . $page_id . '&org=$matches[1]',
+        'top'
+    );
+}
+
+function fides_org_catalog_maybe_flush_share_rewrites(): void {
+    if (get_option('fides_org_catalog_share_rewrite') === FIDES_ORG_CATALOG_SHARE_REWRITE_VERSION) {
+        return;
+    }
+    if (fides_org_catalog_listing_page_id() < 1) {
+        return;
+    }
+    fides_org_catalog_register_share_rewrites();
+    flush_rewrite_rules(false);
+    update_option('fides_org_catalog_share_rewrite', FIDES_ORG_CATALOG_SHARE_REWRITE_VERSION);
+}
+
+/**
+ * LinkedIn ignores ?org= on the listing page. Send those listing URLs to
+ * the unique path. Update/submit forms also use ?org= and must not redirect.
+ */
+function fides_org_catalog_redirect_query_share_urls(): void {
+    if (is_admin() || wp_doing_ajax() || (function_exists('wp_is_json_request') && wp_is_json_request())) {
+        return;
+    }
+    if (isset($_SERVER['REQUEST_METHOD']) && strtoupper((string) $_SERVER['REQUEST_METHOD']) !== 'GET') {
+        return;
+    }
+    // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+    if (empty($_GET['org'])) {
+        return;
+    }
+    $request_uri = isset($_SERVER['REQUEST_URI']) ? wp_unslash((string) $_SERVER['REQUEST_URI']) : '';
+    $path = wp_parse_url($request_uri, PHP_URL_PATH);
+    if (! fides_org_catalog_is_listing_request_path(is_string($path) ? $path : '')) {
+        return;
+    }
+    $share = fides_org_catalog_share_path();
+    if (is_string($path) && str_starts_with(trailingslashit($path), $share)) {
+        return;
+    }
+    // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+    $id = sanitize_text_field(wp_unslash((string) $_GET['org']));
+    if ($id === '' || strpos($id, '/') !== false) {
+        return;
+    }
+    wp_safe_redirect(home_url($share . rawurlencode($id) . '/'), 301);
+    exit;
+}
+
+add_action('init', 'fides_org_catalog_register_share_rewrites', 6);
+add_action('init', 'fides_org_catalog_maybe_flush_share_rewrites', 20);
+add_filter('query_vars', 'fides_org_catalog_share_query_vars');
+add_action('template_redirect', 'fides_org_catalog_redirect_query_share_urls', 1);
 
 Fides_Organization_Catalog::get_instance();
