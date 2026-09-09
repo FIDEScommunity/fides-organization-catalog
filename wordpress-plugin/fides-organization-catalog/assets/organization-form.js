@@ -684,7 +684,7 @@
         ${simpleRows}
         ${diaccGroupHtml()}
         <p class="fides-form-section-intro fides-org-certifications-note">${escapeHtml(
-          helpText("certificationsPreserved") || "QTSP (eIDAS) entries are imported from the EU Trust List and cannot be edited here."
+          helpText("certificationsPreserved") || "QTSP (eIDAS) and UIDAI OVSE entries are imported from official registers and cannot be edited here."
         )}</p>
       </div>`;
   }

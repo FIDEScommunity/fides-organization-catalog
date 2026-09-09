@@ -15,10 +15,11 @@
     "check-links": "tsx scripts/check-links.ts",
     "check:scaling": "node scripts/check-scaling-gates.mjs",
     "import-qtsp": "node scripts/import-qtsp-from-efda.mjs",
+    "import-ovse": "node scripts/import-ovse-from-uidai.mjs",
     "import-wp-submissions": "tsx scripts/import-wp-submissions.ts",
     "import-wp-submissions:apply": "tsx scripts/import-wp-submissions.ts --apply",
     "wp-sync:local": "FIDES_WP_EXPORT_FORCE_HTTP=1 FIDES_WP_EXPORT_PRESERVE_MISSING=1 FIDES_CATALOG_SECRET=$(php scripts/read-wp-catalog-secret.php 2>/dev/null) tsx scripts/import-wp-submissions.ts --apply --wp-url http://utrecht-demo.local/wp-json/fides-catalog/v1/export/organization && npm run validate && npm run crawl && npm run sync-local",
-    "test": "node --import tsx --test src/crawler/matching.test.ts src/import-wp-submissions.test.ts src/lib/ecosystemRoleCodes.test.ts src/lib/migrate-org-contact-v1-to-v2.test.ts src/organization-catalog-schema.test.ts"
+    "test": "node --import tsx --test src/crawler/matching.test.ts src/import-wp-submissions.test.ts src/import-ovse-from-uidai.test.ts src/lib/ecosystemRoleCodes.test.ts src/lib/migrate-org-contact-v1-to-v2.test.ts src/organization-catalog-schema.test.ts"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,8 @@
   },
   "dependencies": {
     "ajv": "^8.12.0",
-    "ajv-formats": "^2.1.1"
+    "ajv-formats": "^2.1.1",
+    "unpdf": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",

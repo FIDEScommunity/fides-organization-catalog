@@ -3,8 +3,8 @@
  * Import published WordPress catalog submissions into community-catalogs/.
  *
  * Fetches GET /wp-json/fides-catalog/v1/export/{type} (secret header), writes one JSON
- * file per entry, tracks WP-managed slugs for pruning, and preserves QTSP certifications
- * on merge when the existing community file already has them.
+ * file per entry, tracks WP-managed slugs for pruning, and preserves importer-owned
+ * certifications (QTSP, UIDAI OVSE) on merge when the existing community file has them.
  *
  * Usage:
  *   FIDES_CATALOG_SECRET=... npm run import-wp-submissions
@@ -125,38 +125,69 @@ export async function readState(): Promise<WpSubmissionState> {
   }
 }
 
-export function hasQtspCertification(document: Record<string, unknown>): boolean {
+/** Certification codes owned by import pipelines, not the WordPress form. */
+export const PRESERVED_CERT_CODES = ['qtsp', 'uidai_ovse'] as const;
+
+function certificationCode(item: unknown): string {
+  if (!item || typeof item !== 'object') return '';
+  const code = (item as Record<string, unknown>).code;
+  return typeof code === 'string' ? code : '';
+}
+
+function orgCertifications(document: Record<string, unknown>): unknown[] {
   const org = document.organization;
-  if (!org || typeof org !== 'object') {
-    return false;
-  }
+  if (!org || typeof org !== 'object') return [];
   const certifications = (org as Record<string, unknown>).certifications;
-  if (!Array.isArray(certifications)) {
-    return false;
-  }
-  return certifications.some(
-    (item) => item && typeof item === 'object' && (item as Record<string, unknown>).code === 'qtsp',
+  return Array.isArray(certifications) ? certifications : [];
+}
+
+export function hasPreservedCertification(document: Record<string, unknown>): boolean {
+  return orgCertifications(document).some((item) =>
+    (PRESERVED_CERT_CODES as readonly string[]).includes(certificationCode(item)),
   );
+}
+
+export function hasQtspCertification(document: Record<string, unknown>): boolean {
+  return orgCertifications(document).some((item) => certificationCode(item) === 'qtsp');
+}
+
+/**
+ * Keep importer-owned certs (QTSP, UIDAI OVSE) from the existing GitHub file
+ * when WordPress overwrites the listing.
+ */
+export function mergePreservedCertifications(
+  incoming: Record<string, unknown>,
+  existing: Record<string, unknown>,
+): Record<string, unknown> {
+  if (!hasPreservedCertification(existing)) {
+    return incoming;
+  }
+  const merged = structuredClone(incoming);
+  const incomingOrg = merged.organization;
+  if (!incomingOrg || typeof incomingOrg !== 'object') {
+    return incoming;
+  }
+  const preserved = orgCertifications(existing).filter((item) =>
+    (PRESERVED_CERT_CODES as readonly string[]).includes(certificationCode(item)),
+  );
+  if (preserved.length === 0) {
+    return incoming;
+  }
+  const incomingRest = orgCertifications(merged).filter(
+    (item) => !(PRESERVED_CERT_CODES as readonly string[]).includes(certificationCode(item)),
+  );
+  (incomingOrg as Record<string, unknown>).certifications = [
+    ...structuredClone(preserved),
+    ...incomingRest,
+  ];
+  return merged;
 }
 
 export function mergeQtspCertifications(
   incoming: Record<string, unknown>,
   existing: Record<string, unknown>,
 ): Record<string, unknown> {
-  if (!hasQtspCertification(existing)) {
-    return incoming;
-  }
-  const merged = structuredClone(incoming);
-  const existingOrg = existing.organization;
-  const incomingOrg = merged.organization;
-  if (!existingOrg || typeof existingOrg !== 'object' || !incomingOrg || typeof incomingOrg !== 'object') {
-    return incoming;
-  }
-  const certifications = (existingOrg as Record<string, unknown>).certifications;
-  if (Array.isArray(certifications) && certifications.length > 0) {
-    (incomingOrg as Record<string, unknown>).certifications = structuredClone(certifications);
-  }
-  return merged;
+  return mergePreservedCertifications(incoming, existing);
 }
 
 export function normalizeDocument(entry: WpExportEntry): Record<string, unknown> {
@@ -374,9 +405,9 @@ export async function applyImportPlan(
     }
     let document = normalizeDocument(entry);
     const existing = await readExistingCatalog(item.slug);
-    const qtspMerge = Boolean(existing && hasQtspCertification(existing));
-    if (qtspMerge && existing) {
-      document = mergeQtspCertifications(document, existing);
+    const preservedMerge = Boolean(existing && hasPreservedCertification(existing));
+    if (preservedMerge && existing) {
+      document = mergePreservedCertifications(document, existing);
     }
 
     const dir = path.join(COMMUNITY_DIR, item.slug);
@@ -397,7 +428,7 @@ export async function applyImportPlan(
     }
 
     managedSlugs.push(item.slug);
-    const mergeNote = qtspMerge ? ' (QTSP certifications preserved)' : '';
+    const mergeNote = preservedMerge ? ' (importer certifications preserved)' : '';
     console.log(`${apply ? 'WRITE' : 'DRY '} ${item.slug} -> ${path.relative(ROOT, catalogPath)}${mergeNote}`);
   }
 

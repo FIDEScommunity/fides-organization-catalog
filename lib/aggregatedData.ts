@@ -12,7 +12,7 @@ export interface OrganizationIdentifiers {
   did?: string;
 }
 
-type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2' | 'diacc';
+type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2' | 'diacc' | 'uidai_ovse';
 
 type OrganizationSectorCode =
   | 'public_sector'

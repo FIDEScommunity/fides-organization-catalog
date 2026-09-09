@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:axis-my-india",
+    "name": "Axis My India",
+    "legalName": "Axis My India Limited",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IN",
+    "description": "Axis My India Limited is a registered Offline Verification Seeking Entity (OVSE) with the Unique Identification Authority of India (UIDAI), authorised to request Aadhaar verifiable credentials for offline identity verification.",
+    "website": "https://www.axismyindia.org",
+    "logo": "https://www.google.com/s2/favicons?domain=axismyindia.org&sz=128",
+    "certifications": [
+      {
+        "code": "uidai_ovse",
+        "evidence": {
+          "kind": "url",
+          "url": "https://uidai.gov.in/en/ovse",
+          "label": "UIDAI registered Offline Verification Seeking Entity"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-09-08T20:43:56.619Z"
+}

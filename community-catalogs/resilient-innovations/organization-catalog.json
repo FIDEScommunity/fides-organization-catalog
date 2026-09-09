@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:resilient-innovations",
+    "name": "Resilient Innovations",
+    "legalName": "Resilient Innovations Private Limited",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IN",
+    "description": "Resilient Innovations Private Limited is a registered Offline Verification Seeking Entity (OVSE) with the Unique Identification Authority of India (UIDAI), authorised to request Aadhaar verifiable credentials for offline identity verification.",
+    "website": "https://bharatpe.com",
+    "logo": "https://www.google.com/s2/favicons?domain=bharatpe.com&sz=128",
+    "certifications": [
+      {
+        "code": "uidai_ovse",
+        "evidence": {
+          "kind": "url",
+          "url": "https://uidai.gov.in/en/ovse",
+          "label": "UIDAI registered Offline Verification Seeking Entity"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-09-08T20:43:56.627Z"
+}

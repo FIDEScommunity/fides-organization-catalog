@@ -73,8 +73,8 @@
       "properties": {
         "code": {
           "type": "string",
-          "enum": ["iso27001", "iso27701", "qtsp", "soc2", "diacc"],
-          "description": "iso27001: ISO/IEC 27001 (ISMS). iso27701: ISO/IEC 27701 (privacy extension). qtsp: Qualified Trust Service Provider under EU eIDAS. soc2: SOC 2 attestation. diacc: DIACC Certified under the Pan-Canadian Trust Framework (PCTF)."
+          "enum": ["iso27001", "iso27701", "qtsp", "soc2", "diacc", "uidai_ovse"],
+          "description": "iso27001: ISO/IEC 27001 (ISMS). iso27701: ISO/IEC 27701 (privacy extension). qtsp: Qualified Trust Service Provider under EU eIDAS. soc2: SOC 2 attestation. diacc: DIACC Certified under the Pan-Canadian Trust Framework (PCTF). uidai_ovse: UIDAI registered Offline Verification Seeking Entity (Aadhaar VC offline verification)."
         },
         "evidence": {
           "$ref": "#/$defs/CertificationEvidence"

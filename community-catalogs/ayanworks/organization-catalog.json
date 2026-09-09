@@ -10,7 +10,20 @@
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ayanworks/ayanworks_logo.png",
     "country": "IN",
     "fidesManifestoSupporter": false,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "certifications": [
+      {
+        "code": "uidai_ovse",
+        "evidence": {
+          "kind": "url",
+          "url": "https://uidai.gov.in/en/ovse",
+          "label": "UIDAI registered Offline Verification Seeking Entity"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ]
   },
   "lastUpdated": "2026-07-02T09:53:51+00:00"
 }

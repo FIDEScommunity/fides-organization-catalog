@@ -42,7 +42,7 @@ export const ORGANIZATION_SECTOR_CODES: readonly OrganizationSectorCode[] = [
   'digital',
 ] as const;
 
-export type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2' | 'diacc';
+export type CertificationCode = 'iso27001' | 'iso27701' | 'qtsp' | 'soc2' | 'diacc' | 'uidai_ovse';
 
 export type CertificationEvidence =
   | { kind: 'url'; url: string; label?: string }

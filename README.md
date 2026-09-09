@@ -112,12 +112,15 @@ Folder-level notes: [community-catalogs/README.md](community-catalogs/README.md)
 4. After merge, the **crawl** workflow regenerates the aggregated data automatically
 
 Verified **QTSP** entries are imported from the EU Trust List (`import-qtsp`) — do not overwrite them in PRs.
+UIDAI **OVSE** registrations are imported from the public UIDAI list (`import-ovse`) — do not hand-edit those certification blocks.
 
 ### CI: validate and crawl
 
 - **Validate** — runs on push/PR when catalog or schema files change; checks JSON Schema + runs unit tests
 - **Crawl** — runs on push to `main`, daily at 06:00 UTC, and via manual dispatch; regenerates `data/aggregated.json` and commits
 - **WP Submissions Sync** — imports published WordPress submissions into `community-catalogs/`, then crawls (see `.github/workflows/wp-submissions-sync.yml`)
+- **QTSP Sync** — weekly import from the EU eIDAS Trust List
+- **OVSE Sync** — monthly import of UIDAI Offline Verification Seeking Entities
 - **Check links** — runs weekly (Monday 08:00 UTC); validates all website and logo URLs
 
 ## Seed from existing catalogs

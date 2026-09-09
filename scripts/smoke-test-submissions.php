@@ -270,6 +270,7 @@ smoke('Identifiers: adapter accepts full set via REST', static function (): stri
 smoke('Certifications: self-declared merge keeps QTSP from catalog', static function (): string {
     $existing = array(
         array('code' => 'qtsp', 'details' => array('trustServices' => array(array('code' => 'Q_TIMESTAMP')))),
+        array('code' => 'uidai_ovse', 'evidence' => array('kind' => 'url', 'url' => 'https://uidai.gov.in/en/ovse')),
         array('code' => 'iso27001'),
     );
     $merged = (new ReflectionClass(Fides_Organization_Catalog_Submission_Adapter::class))
@@ -289,9 +290,10 @@ smoke('Certifications: self-declared merge keeps QTSP from catalog', static func
         return is_array($cert) ? (string) ($cert['code'] ?? '') : '';
     }, $result);
     assert_true(in_array('qtsp', $codes, true), 'QTSP certification dropped on merge');
+    assert_true(in_array('uidai_ovse', $codes, true), 'UIDAI OVSE certification dropped on merge');
     assert_true(in_array('diacc', $codes, true), 'DIACC certification missing after merge');
     assert_true(! in_array('iso27001', $codes, true), 'Unchecked self-declared certification should be removed');
-    return 'QTSP preserved; self-declared selections replaced';
+    return 'QTSP and UIDAI OVSE preserved; self-declared selections replaced';
 });
 
 smoke('Certifications: form uses accordions and inline proof URLs', static function (): string {

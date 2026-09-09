@@ -44,6 +44,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
         /** @var string[] Certification codes maintained outside the public form (import pipelines). */
         const PRESERVED_CERT_CODES = array(
             'qtsp',
+            'uidai_ovse',
         );
 
         /** @var string[] */

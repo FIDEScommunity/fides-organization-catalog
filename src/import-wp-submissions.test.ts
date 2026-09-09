@@ -7,8 +7,10 @@ import {
   buildImportPlan,
   emptyState,
   forceHttpExport,
+  hasPreservedCertification,
   hasQtspCertification,
   loadCommittedExportPayload,
+  mergePreservedCertifications,
   mergeQtspCertifications,
   normalizeDocument,
   preserveMissingWpEntries,
@@ -126,4 +128,29 @@ test('mergeQtspCertifications preserves qtsp block from existing file', () => {
   assert.equal(org.name, 'QTSP Co Updated');
   assert.equal(org.description, 'From WordPress');
   assert.deepEqual(org.certifications, existing.organization.certifications);
+});
+
+test('mergePreservedCertifications keeps UIDAI OVSE and WordPress self-declared certs', () => {
+  const existing = {
+    organization: {
+      id: 'org:ayanworks',
+      name: 'AyanWorks',
+      certifications: [
+        { code: 'uidai_ovse', evidence: { kind: 'url', url: 'https://uidai.gov.in/en/ovse' } },
+        { code: 'qtsp', evidence: { kind: 'url', url: 'https://example.test/qtsp' } },
+      ],
+    },
+  };
+  const incoming = {
+    organization: {
+      id: 'org:ayanworks',
+      name: 'AyanWorks',
+      certifications: [{ code: 'iso27001' }],
+    },
+  };
+  assert.ok(hasPreservedCertification(existing));
+  const merged = mergePreservedCertifications(incoming, existing);
+  const org = merged.organization as Record<string, unknown>;
+  const codes = (org.certifications as Array<{ code: string }>).map((c) => c.code);
+  assert.deepEqual(codes, ['uidai_ovse', 'qtsp', 'iso27001']);
 });

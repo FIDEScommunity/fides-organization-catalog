@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:iverifi-iam",
+    "name": "Iverifi Iam",
+    "legalName": "Iverifi Iam Private Limited",
+    "sectors": [
+      "digital"
+    ],
+    "country": "IN",
+    "description": "Iverifi Iam Private Limited is a registered Offline Verification Seeking Entity (OVSE) with the Unique Identification Authority of India (UIDAI), authorised to request Aadhaar verifiable credentials for offline identity verification.",
+    "certifications": [
+      {
+        "code": "uidai_ovse",
+        "evidence": {
+          "kind": "url",
+          "url": "https://uidai.gov.in/en/ovse",
+          "label": "UIDAI registered Offline Verification Seeking Entity"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-09-08T20:43:56.624Z"
+}

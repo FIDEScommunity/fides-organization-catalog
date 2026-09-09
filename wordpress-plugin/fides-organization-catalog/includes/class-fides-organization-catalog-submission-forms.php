@@ -67,7 +67,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             'certificationsIntro'             => 'Certifications shown in the Trust Explorer. Select only what your organization holds.',
             'certificationEvidence'           => 'Optional public link to a certificate, attestation page, or PDF.',
             'diaccComponents'                 => 'Select the DIACC PCTF components your organization is certified for.',
-            'certificationsPreserved'         => 'QTSP (eIDAS) entries are imported from the EU Trust List and cannot be edited in this form.',
+            'certificationsPreserved'         => 'QTSP (eIDAS) and UIDAI OVSE entries are imported from official registers and cannot be edited in this form.',
             'tags'         => 'Comma-separated labels (e.g. FIDES Supporter).',
             'offerings'    => 'Services or solutions your organization offers to customers (e.g. consulting, wallet development). Press Enter to add each item. Searchable in the Trust Explorer.',
             'mediaVideos'  => 'Short product demos embedded on your public listing. Paste YouTube or Vimeo links — one per row (max 3).',

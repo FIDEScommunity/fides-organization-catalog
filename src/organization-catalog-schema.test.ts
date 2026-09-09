@@ -25,6 +25,31 @@ function catalogWithRecognitions(recognitions: unknown) {
   };
 }
 
+describe('organization certification schema', () => {
+  it('accepts uidai_ovse with URL evidence and no details', () => {
+    const valid = validate({
+      $schema: 'https://fides.community/schemas/organization-catalog/v1',
+      organization: {
+        id: 'org:example-ovse',
+        name: 'Example OVSE',
+        sectors: ['digital'],
+        country: 'IN',
+        certifications: [
+          {
+            code: 'uidai_ovse',
+            evidence: {
+              kind: 'url',
+              url: 'https://uidai.gov.in/en/ovse',
+              label: 'UIDAI registered Offline Verification Seeking Entity',
+            },
+          },
+        ],
+      },
+    });
+    assert.equal(valid, true, JSON.stringify(validate.errors));
+  });
+});
+
 describe('organization recognition schema', () => {
   it('accepts customer stories and awards with optional links', () => {
     const valid = validate(

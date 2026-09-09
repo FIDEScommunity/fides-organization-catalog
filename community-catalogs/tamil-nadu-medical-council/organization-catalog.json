@@ -10,7 +10,20 @@
     "website": "https://www.tamilnadumedicalcouncil.org/",
     "logo": "https://www.google.com/s2/favicons?domain=tamilnadumedicalcouncil.org&sz=128",
     "country": "IN",
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "certifications": [
+      {
+        "code": "uidai_ovse",
+        "evidence": {
+          "kind": "url",
+          "url": "https://uidai.gov.in/en/ovse",
+          "label": "UIDAI registered Offline Verification Seeking Entity"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ]
   },
   "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

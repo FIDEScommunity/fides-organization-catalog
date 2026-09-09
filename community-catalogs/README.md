@@ -47,7 +47,7 @@ The directory name must match the org code in `organization.id` (e.g. `org:your-
 }
 ```
 
-**Note:** verified **QTSP** (eIDAS Trust List) certifications are maintained by the `import-qtsp` pipeline — do not hand-edit those entries in PRs. Self-declared certifications (ISO 27001, SOC 2, DIACC, etc.) can be submitted via the WordPress form.
+**Note:** verified **QTSP** (eIDAS Trust List) certifications are maintained by the `import-qtsp` pipeline, and **UIDAI OVSE** registrations by `import-ovse` — do not hand-edit those entries in PRs. Self-declared certifications (ISO 27001, SOC 2, DIACC, etc.) can be submitted via the WordPress form.
 
 ## Validation
 
