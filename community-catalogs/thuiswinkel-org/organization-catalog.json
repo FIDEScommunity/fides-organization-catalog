@@ -1,0 +1,24 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:thuiswinkel-org",
+    "name": "Thuiswinkel.org",
+    "legalName": "Vereniging Nederlandse Thuiswinkel Organisatie",
+    "sectors": [
+      "retail"
+    ],
+    "description": "Dutch e-commerce industry association representing more than 2,000 online shops. Thuiswinkel.org advocates for the sector and operates the Thuiswinkel Waarborg trustmark for safer online shopping.",
+    "identifiers": {
+      "business_registration_number": "40407228",
+      "vat_number": "NL004770675B01"
+    },
+    "website": "https://www.thuiswinkel.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=thuiswinkel.org&sz=128",
+    "country": "NL",
+    "ecosystemRoleCodes": [
+      "industry_association",
+      "conformity_scheme_owner"
+    ],
+    "catalogTier": "Community"
+  }
+}

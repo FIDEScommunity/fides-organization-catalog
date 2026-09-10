@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:enable-u",
+    "name": "Enable U",
+    "legalName": "Enable U B.V.",
+    "sectors": [
+      "digital",
+      "public_sector"
+    ],
+    "description": "Dutch data and integration specialist for government and education. Enable U operates a managed integration platform that connects applications, registers and identity services such as DigiD, eHerkenning and eIDAS, and is working on EUDI Wallet and OOTS integrations for municipalities.",
+    "identifiers": {
+      "business_registration_number": "34228397",
+      "vat_number": "NL814771725B01"
+    },
+    "website": "https://enable-u.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=enable-u.nl&sz=128",
+    "country": "NL",
+    "ecosystemRoleCodes": [
+      "system_integrator",
+      "software_vendor",
+      "eudi_wallet_intermediary"
+    ],
+    "catalogTier": "Community"
+  }
+}

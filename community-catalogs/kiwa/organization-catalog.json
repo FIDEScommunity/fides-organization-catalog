@@ -1,0 +1,23 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:kiwa",
+    "name": "Kiwa",
+    "legalName": "Kiwa Nederland B.V.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Dutch-founded testing, inspection and certification (TIC) company. Kiwa provides independent certification, inspection, testing, training and related services across sectors such as construction, energy, water, healthcare and food.",
+    "identifiers": {
+      "business_registration_number": "08090048"
+    },
+    "website": "https://www.kiwa.com/nl/nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=kiwa.com&sz=128",
+    "country": "NL",
+    "ecosystemRoleCodes": [
+      "certification_body",
+      "conformity_assessment_body"
+    ],
+    "catalogTier": "Community"
+  }
+}

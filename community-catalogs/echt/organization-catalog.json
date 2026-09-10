@@ -1,0 +1,23 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:echt",
+    "name": "ECHT",
+    "legalName": "ECHT Onderwijs B.V.",
+    "sectors": [
+      "education"
+    ],
+    "description": "Dutch talent organisation for education, childcare and care. ECHT finds, trains and guides professionals into these sectors, including career-switch programmes for childcare employers.",
+    "identifiers": {
+      "business_registration_number": "57146594",
+      "vat_number": "NL852457157B01"
+    },
+    "website": "https://echtonderwijs.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=echtonderwijs.nl&sz=128",
+    "country": "NL",
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  }
+}

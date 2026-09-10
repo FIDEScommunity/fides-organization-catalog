@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:oribi",
+    "name": "Oribi",
+    "legalName": "Oribi Groep B.V.",
+    "sectors": [
+      "digital",
+      "construction"
+    ],
+    "description": "Dutch identity, compliance and access platform bringing together brands such as ORIBI ID-Solutions, JanusID, Bouwpas, Certwell and SmartAIM. Products include ShowID, a digital identity vault, and WorkpassID for workforce identity and site access.",
+    "identifiers": {
+      "business_registration_number": "84501545",
+      "vat_number": "NL863235578B01"
+    },
+    "website": "https://www.oribi.nl/",
+    "logo": "https://www.google.com/s2/favicons?domain=oribi.nl&sz=128",
+    "country": "NL",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "idv_provider",
+      "software_vendor"
+    ],
+    "catalogTier": "Community"
+  }
+}

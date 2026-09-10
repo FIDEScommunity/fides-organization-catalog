@@ -1,0 +1,24 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:3webapps",
+    "name": "3WebApps",
+    "legalName": "3Webapps B.V.",
+    "sectors": [
+      "digital",
+      "retail"
+    ],
+    "description": "Dutch Magento 2 e-commerce agency that builds and maintains webshops. 3WebApps is developing EUDI Wallet integrations for login, data sharing and checkout in online stores.",
+    "identifiers": {
+      "business_registration_number": "61834890"
+    },
+    "website": "https://www.3webapps.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=3webapps.com&sz=128",
+    "country": "NL",
+    "ecosystemRoleCodes": [
+      "software_vendor",
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  }
+}
