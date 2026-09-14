@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-09-07T19:31:15.205Z",
+  "lastImportAt": "2026-09-14T11:45:15.592Z",
   "managedSlugs": [
     "2060",
     "a3bc",
@@ -42,6 +42,7 @@
     "mosip",
     "namirial",
     "nedmod",
+    "ods2",
     "pass2rent-by-odifis",
     "passportreader",
     "procivis",

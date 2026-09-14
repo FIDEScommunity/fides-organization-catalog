@@ -58,6 +58,9 @@
             }
           ]
         }
+      },
+      {
+        "code": "iso27001"
       }
     ],
     "ecosystemRoleCodes": [
