@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-09-07T19:31:01+00:00",
+    "generatedAt": "2026-09-14T11:45:01+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1175,6 +1175,45 @@
             },
             "publishedAt": "2026-08-23 14:57:55",
             "updatedAt": "2026-08-23 14:57:55"
+        },
+        {
+            "itemId": "org:ods2",
+            "slug": "ods2",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:ods2",
+                    "name": "ODS2",
+                    "sectors": [
+                        "finance"
+                    ],
+                    "description": "We make digital identity operational. ODS2 provides the Business Support System behind managed identity wallets. We connect providers, wallet technology and customer organizations through one platform",
+                    "logo": "https://ods2.com/wp-content/themes/ods2-bss/assets/images/ods2-logo.svg",
+                    "country": "NL",
+                    "certifications": [
+                        {
+                            "code": "iso27001",
+                            "evidence": {
+                                "kind": "url",
+                                "url": "https://ods2.com/wp-content/uploads/2025/03/ODS2-FZ-LLC-ISO-27001-2025-2026.pdf"
+                            }
+                        }
+                    ],
+                    "ecosystemRoleCodes": [
+                        "business_wallet_provider",
+                        "system_integrator",
+                        "software_vendor",
+                        "business_registry"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-09-14T11:45:00+00:00"
+            },
+            "publishedAt": "2026-09-14 11:45:00",
+            "updatedAt": "2026-09-14 11:45:00"
         },
         {
             "itemId": "org:pass2rent-by-odifis",
