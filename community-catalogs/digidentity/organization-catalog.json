@@ -12,9 +12,6 @@
     "country": "NL",
     "certifications": [
       {
-        "code": "iso27001"
-      },
-      {
         "code": "qtsp",
         "evidence": {
           "kind": "url",
@@ -33,6 +30,9 @@
             }
           ]
         }
+      },
+      {
+        "code": "iso27001"
       }
     ],
     "fidesManifestoSupporter": true,
