@@ -1,0 +1,22 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:emvco",
+    "name": "EMVCo",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "EMVCo, LLC",
+    "description": "EMVCo (Europay, Mastercard and Visa Consortium) is a global technical body that facilitates the worldwide interoperability and acceptance of secure payment transactions by developing and managing EMV",
+    "logo": "https://www.emvco.com/wp-content/uploads/2025/04/EMVCo_logo.svg",
+    "country": "US",
+    "ecosystemRoleCodes": [
+      "vc_type_authority",
+      "standards_development_organization",
+      "conformity_scheme_owner"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-09-16T20:04:22+00:00"
+}
