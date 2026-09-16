@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:uber",
+    "name": "Uber",
+    "sectors": [
+      "mobility"
+    ],
+    "legalName": "Uber Technologies, Inc",
+    "description": "Uber Technologies, Inc. is a global technology company providing mobility, delivery and logistics services through its digital platform.",
+    "logo": "https://commons.wikimedia.org/wiki/File:Uber_logo_2018.png",
+    "country": "US",
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-09-16T15:51:34+00:00"
+}
