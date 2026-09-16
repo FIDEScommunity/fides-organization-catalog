@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:turo",
+    "name": "Turo",
+    "sectors": [
+      "mobility"
+    ],
+    "legalName": "Turo Inc.",
+    "description": "Turo Inc. operates a peer-to-peer car sharing marketplace that connects vehicle owners with people looking to book vehicles.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/Turo_company_logo.png",
+    "country": "US",
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-09-16T15:55:42+00:00"
+}
