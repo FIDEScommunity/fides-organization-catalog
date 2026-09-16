@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-09-16T15:55:42+00:00",
+    "generatedAt": "2026-09-16T15:57:22+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1748,7 +1748,7 @@
                     ],
                     "legalName": "Uber Technologies, Inc",
                     "description": "Uber Technologies, Inc. is a global technology company providing mobility, delivery and logistics services through its digital platform.",
-                    "logo": "https://commons.wikimedia.org/wiki/File:Uber_logo_2018.png",
+                    "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Uber_logo_2018.png/1920px-Uber_logo_2018.png",
                     "country": "US",
                     "ecosystemRoleCodes": [
                         "relying_party"
@@ -1756,10 +1756,10 @@
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-09-16T15:51:34+00:00"
+                "lastUpdated": "2026-09-16T15:57:22+00:00"
             },
-            "publishedAt": "2026-09-16 15:51:34",
-            "updatedAt": "2026-09-16 15:51:34"
+            "publishedAt": "2026-09-16 15:57:22",
+            "updatedAt": "2026-09-16 15:57:22"
         },
         {
             "itemId": "org:ubique",
