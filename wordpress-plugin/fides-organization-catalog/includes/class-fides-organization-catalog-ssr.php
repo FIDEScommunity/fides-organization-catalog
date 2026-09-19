@@ -33,7 +33,7 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
             const LEGACY_CATALOG_PATH   = '/ecosystem-explorer/organization-catalog/';
             const OPTION_CATALOG_URL    = 'fides_org_catalog_page_url';
             const OPTION_MIGRATED_VER   = 'fides_org_catalog_path_migrated_to';
-            const MAX_LISTING_ITEMS     = 30;
+            const MAX_LISTING_ITEMS     = 48;
             public static function bootstrap() { /* no-op without base */ }
             public static function build_initial_html(array $atts) { return ''; }
         }
@@ -47,7 +47,7 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
             const LEGACY_CATALOG_PATH   = '/ecosystem-explorer/organization-catalog/';
             const OPTION_CATALOG_URL    = 'fides_org_catalog_page_url';
             const OPTION_MIGRATED_VER   = 'fides_org_catalog_path_migrated_to';
-            const MAX_LISTING_ITEMS     = 30;
+            const MAX_LISTING_ITEMS     = 48;
 
             /** @var self|null */
             private static $instance = null;
@@ -303,6 +303,7 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
             protected function shortcode_root_id(): string { return 'fides-org-catalog-root'; }
             protected function loading_label(): string    { return __('Loading organization catalog…', 'fides-organization-catalog'); }
             protected function max_listing_items(): int   { return self::MAX_LISTING_ITEMS; }
+            protected function supports_standalone_detail_page(): bool { return true; }
 
             public function register_with_core(): void {
                 if (! class_exists('Fides_Catalog_Registry')) {
@@ -363,6 +364,14 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
 
             protected function listing_page_url(string $page_slug): string {
                 return home_url(self::catalog_path());
+            }
+
+            protected function related_listing_title(): string {
+                return __('More organizations', 'fides-organization-catalog');
+            }
+
+            protected function catalog_index_label(): string {
+                return __('View organization catalog', 'fides-organization-catalog');
             }
 
             /* --------------------------------------------------------------
@@ -478,6 +487,7 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                 $td = 'fides-organization-catalog';
                 ob_start();
                 echo $this->render_chip_section($this->list_field($item, 'sectors'), __('Sectors', $td));
+                echo $this->render_related_catalog_links($item);
                 $role_labels = self::ecosystem_role_code_labels($item);
                 if (! empty($role_labels)) {
                     echo $this->render_ecosystem_role_chip_section($role_labels, __('Ecosystem roles', $td));
@@ -528,6 +538,86 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
                                     <?php else : ?>
                                         <?php echo esc_html((string) $row['title']); ?>
                                     <?php endif; ?>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </section>
+                    <?php
+                }
+                return (string) ob_get_clean();
+            }
+
+            /**
+             * Ordinary links to related wallets / issuers / RPs / credentials.
+             */
+            private function render_related_catalog_links(array $item): string {
+                if (empty($item['ecosystemRoles']) || ! is_array($item['ecosystemRoles'])) {
+                    return '';
+                }
+                $groups = array(
+                    'personalWallets' => array(
+                        'title' => __('Personal wallets', 'fides-organization-catalog'),
+                        'type'  => 'wallet',
+                    ),
+                    'businessWallets' => array(
+                        'title' => __('Business wallets', 'fides-organization-catalog'),
+                        'type'  => 'wallet',
+                    ),
+                    'issuers' => array(
+                        'title' => __('Issuers', 'fides-organization-catalog'),
+                        'type'  => 'issuer',
+                    ),
+                    'relyingParties' => array(
+                        'title' => __('Relying parties', 'fides-organization-catalog'),
+                        'type'  => 'rp',
+                    ),
+                    'credentialTypes' => array(
+                        'title' => __('Credential types', 'fides-organization-catalog'),
+                        'type'  => 'credential',
+                    ),
+                );
+                ob_start();
+                foreach ($groups as $key => $meta) {
+                    $rows = isset($item['ecosystemRoles'][ $key ]) && is_array($item['ecosystemRoles'][ $key ])
+                        ? $item['ecosystemRoles'][ $key ]
+                        : array();
+                    $links = array();
+                    foreach ($rows as $row) {
+                        if (! is_array($row) || empty($row['id'])) {
+                            continue;
+                        }
+                        $id = (string) $row['id'];
+                        $name = '';
+                        foreach (array('displayName', 'name', 'title') as $field) {
+                            if (! empty($row[ $field ]) && is_string($row[ $field ])) {
+                                $name = $row[ $field ];
+                                break;
+                            }
+                        }
+                        if ($name === '') {
+                            $name = $id;
+                        }
+                        $url = class_exists('Fides_Catalog_Registry')
+                            ? Fides_Catalog_Registry::detail_url_for($meta['type'], array('id' => $id))
+                            : null;
+                        if (! $url && $meta['type'] === 'wallet') {
+                            $url = home_url('/wallet/' . rawurlencode($id) . '/');
+                        }
+                        if (! $url) {
+                            continue;
+                        }
+                        $links[] = array('url' => $url, 'name' => $name);
+                    }
+                    if (empty($links)) {
+                        continue;
+                    }
+                    ?>
+                    <section class="fides-ssr-detail__section">
+                        <h2 class="fides-ssr-detail__section-title"><?php echo esc_html($meta['title']); ?></h2>
+                        <ul class="fides-ssr-detail__related">
+                            <?php foreach ($links as $link) : ?>
+                                <li>
+                                    <a href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['name']); ?></a>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
