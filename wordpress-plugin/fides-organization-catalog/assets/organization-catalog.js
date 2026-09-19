@@ -594,53 +594,146 @@
   let viewMode = localStorage.getItem('fides-org-view') || 'grid';
   const LIST_BREAKPOINT = 1024;
   const LISTING_PAGE_SIZE = 48;
-  let visibleCount = LISTING_PAGE_SIZE;
+  const LISTING_PAGE_PARAM = 'catalog_page';
+  let listingPage = 1;
 
-  function resetVisibleCount() {
-    visibleCount = LISTING_PAGE_SIZE;
+  function listingPageFromLocation() {
+    try {
+      const raw = new URLSearchParams(window.location.search).get(LISTING_PAGE_PARAM);
+      const page = parseInt(raw || '1', 10);
+      return Number.isFinite(page) && page > 0 ? page : 1;
+    } catch {
+      return 1;
+    }
+  }
+
+  function listingHrefForPage(page) {
+    try {
+      const url = new URL(window.location.href);
+      if (page <= 1) url.searchParams.delete(LISTING_PAGE_PARAM);
+      else url.searchParams.set(LISTING_PAGE_PARAM, String(page));
+      return url.pathname + url.search + url.hash;
+    } catch {
+      return orgListingPath();
+    }
+  }
+
+  function setListingPage(page, push) {
+    listingPage = Math.max(1, page);
+    try {
+      const next = listingHrefForPage(listingPage);
+      if (push) history.pushState({ fidesCatalogPage: listingPage }, '', next);
+      else history.replaceState({ fidesCatalogPage: listingPage }, '', next);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function resetListingPage() {
+    if (listingPage !== 1) setListingPage(1, false);
+    else listingPage = 1;
   }
 
   function visibleSlice(filtered) {
     const list = Array.isArray(filtered) ? filtered : [];
-    return list.slice(0, Math.max(LISTING_PAGE_SIZE, visibleCount));
+    const totalPages = Math.max(1, Math.ceil(list.length / LISTING_PAGE_SIZE));
+    if (listingPage > totalPages) listingPage = totalPages;
+    const start = (listingPage - 1) * LISTING_PAGE_SIZE;
+    return list.slice(start, start + LISTING_PAGE_SIZE);
   }
 
-  function renderLoadMoreBar(filtered) {
+  function paginationPageNumbers(page, totalPages) {
+    if (totalPages <= 9) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    const pages = [1];
+    const start = Math.max(2, page - 2);
+    const end = Math.min(totalPages - 1, page + 2);
+    for (let n = start; n <= end; n += 1) pages.push(n);
+    pages.push(totalPages);
+    return pages.filter((n, i, arr) => arr.indexOf(n) === i);
+  }
+
+  function renderPaginationBar(filtered) {
     const total = Array.isArray(filtered) ? filtered.length : 0;
     if (total === 0) return '';
-    const shown = Math.min(visibleCount, total);
-    if (shown >= total) {
-      return `<div class="fides-org-load-more" data-fides-org-load-more>
-        <p class="fides-org-load-more-meta">Showing ${shown} of ${total}</p>
-      </div>`;
-    }
-    const next = Math.min(LISTING_PAGE_SIZE, total - shown);
-    return `<div class="fides-org-load-more" data-fides-org-load-more>
-      <p class="fides-org-load-more-meta">Showing ${shown} of ${total}</p>
-      <button type="button" class="fides-org-load-more-btn" id="fides-org-load-more">Show ${next} more</button>
-    </div>`;
+    const totalPages = Math.max(1, Math.ceil(total / LISTING_PAGE_SIZE));
+    const page = Math.min(listingPage, totalPages);
+    const start = (page - 1) * LISTING_PAGE_SIZE + 1;
+    const end = Math.min(page * LISTING_PAGE_SIZE, total);
+    const pages = paginationPageNumbers(page, totalPages);
+    let pageLinks = '';
+    let previous = 0;
+    pages.forEach((n) => {
+      if (previous > 0 && n > previous + 1) pageLinks += '<li class="fides-catalog-pagination__ellipsis" aria-hidden="true">…</li>';
+      previous = n;
+      const current = n === page ? ' aria-current="page"' : '';
+      pageLinks += `<li><a href="${escapeHtml(listingHrefForPage(n))}" data-catalog-page="${n}"${current}>${n}</a></li>`;
+    });
+    const prev = page > 1
+      ? `<a class="fides-catalog-pagination__prev" href="${escapeHtml(listingHrefForPage(page - 1))}" data-catalog-page="${page - 1}" rel="prev">Previous</a>`
+      : '';
+    const next = page < totalPages
+      ? `<a class="fides-catalog-pagination__next" href="${escapeHtml(listingHrefForPage(page + 1))}" data-catalog-page="${page + 1}" rel="next">Next</a>`
+      : '';
+    return `<nav class="fides-catalog-pagination" data-fides-org-pagination aria-label="Catalog pages">
+      <p class="fides-catalog-pagination__meta">Showing ${start}–${end} of ${total}</p>
+      <div class="fides-catalog-pagination__nav">${prev}<ol class="fides-catalog-pagination__pages">${pageLinks}</ol>${next}</div>
+    </nav>`;
   }
 
-  function bindLoadMoreButton() {
-    const btn = root && root.querySelector('#fides-org-load-more');
-    if (!btn) return;
-    btn.addEventListener('click', () => {
-      visibleCount += LISTING_PAGE_SIZE;
-      renderOrgGridOnly();
+  function bindPaginationLinks() {
+    if (!root) return;
+    root.querySelectorAll('[data-catalog-page]').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+        e.preventDefault();
+        const page = parseInt(link.getAttribute('data-catalog-page') || '1', 10);
+        setListingPage(page, true);
+        renderOrgGridOnly();
+      });
     });
   }
 
-  function syncLoadMoreBar(filtered) {
+  function syncPaginationBar(filtered) {
     if (!root) return;
-    const html = renderLoadMoreBar(filtered);
-    const existing = root.querySelector('[data-fides-org-load-more]');
-    if (existing) {
-      existing.outerHTML = html;
-    } else {
+    const html = renderPaginationBar(filtered);
+    const existing = root.querySelector('[data-fides-org-pagination]');
+    if (existing) existing.outerHTML = html;
+    else {
       const results = root.querySelector('.fides-results');
       if (results) results.insertAdjacentHTML('beforeend', html);
     }
-    bindLoadMoreButton();
+    bindPaginationLinks();
+  }
+
+  function isModifiedClick(e) {
+    return !!(e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0);
+  }
+
+  function bindOrgCardLinks() {
+    if (!root) return;
+    root.querySelectorAll('.fides-org-card[data-id]').forEach((card) => {
+      card.addEventListener('click', (e) => {
+        if (isModifiedClick(e)) return;
+        e.preventDefault();
+        openModal(card.dataset.id);
+      });
+    });
+  }
+
+  function retainStandaloneDetailPage() {
+    if (!root) return false;
+    const detailPage = root.querySelector('[data-fides-ssr-page="detail"]');
+    if (!detailPage && !isOrgSharePath()) return false;
+    const spinner = root.querySelector('[data-fides-ssr-spinner="1"]');
+    if (spinner) spinner.remove();
+    const ssr = root.querySelector('[data-fides-ssr]');
+    if (ssr) {
+      ssr.style.display = '';
+      ssr.removeAttribute('aria-hidden');
+    }
+    return !!(detailPage || ssr);
   }
   function effectiveView() {
     return window.innerWidth < LIST_BREAKPOINT ? 'grid' : viewMode;
@@ -1798,8 +1891,9 @@
     const logoMain = logo
       ? `<img src="${escapeHtml(logo)}" alt="" width="64" height="64" loading="lazy" decoding="async"${logoFallbackAttr}>`
       : icons.building;
+    const detailHref = orgCanonicalUrl(org.id);
     return `
-      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}"${orgCardAnalyticsAttrs(org)} tabindex="0" role="button" aria-label="${orgCardAriaLabel(org)}">
+      <a class="fides-org-card${officialClass}" href="${escapeHtml(detailHref)}" data-id="${escapeHtml(org.id)}"${orgCardAnalyticsAttrs(org)} aria-label="${orgCardAriaLabel(org)}">
         <header class="fides-credential-header fides-org-card-header--text-only">
           <div class="fides-credential-header-text">
             <h3 class="fides-credential-name" title="${escapeHtml(org.name)}">${escapeHtml(org.name)}</h3>
@@ -1818,7 +1912,7 @@
           </div>
           <span class="fides-view-details">${icons.eye} View details</span>
         </div>
-      </div>
+      </a>
     `;
   }
 
@@ -2322,8 +2416,9 @@
       : '\u2014';
 
     const officialClass = orgOfficialCardClass(org);
+    const detailHref = orgCanonicalUrl(org.id);
     return `
-      <div class="fides-org-card${officialClass}" data-id="${escapeHtml(org.id)}"${orgCardAnalyticsAttrs(org)} tabindex="0" role="button" aria-label="${orgCardAriaLabel(org, true)}">
+      <a class="fides-org-card${officialClass}" href="${escapeHtml(detailHref)}" data-id="${escapeHtml(org.id)}"${orgCardAnalyticsAttrs(org)} aria-label="${orgCardAriaLabel(org, true)}">
         <div class="fides-org-card-logo-wrap fides-org-card-logo-wrap--list">
           <div class="fides-row-icon" aria-hidden="true">
             ${logo
@@ -2346,13 +2441,13 @@
         <div class="fides-row-count fides-list-col-right">${useCaseCount}</div>
         <div class="fides-row-count fides-list-col-right">${issuerCount}</div>
         <div class="fides-row-count fides-list-col-right">${walletCount}</div>
-      </div>
+      </a>
     `;
   }
 
   function render(options) {
-    const keepVisibleCount = options && options.keepVisibleCount;
-    if (!keepVisibleCount) resetVisibleCount();
+    const keepListingPage = options && options.keepListingPage;
+    if (!keepListingPage) resetListingPage();
     const filtered = getFilteredOrgs();
     const visible = visibleSlice(filtered);
     const metrics = computeMetrics(filtered);
@@ -2401,7 +2496,7 @@
                   : '<p class="fides-empty">No organizations found.</p>'
                 }
               </div>
-              ${renderLoadMoreBar(filtered)}
+              ${renderPaginationBar(filtered)}
             </div>
           </section>
         </div>
@@ -2409,7 +2504,7 @@
     `;
     _lastOrgEffectiveView = effectiveView();
     bindEvents();
-    bindLoadMoreButton();
+    bindPaginationLinks();
     getMobileFilters()?.applyAfterRender(mobileFiltersOpen);
     applyStaleCatalogNotice();
   }
@@ -2803,11 +2898,11 @@
     const handleSearch = debounce((e) => {
       filters.search = e.target.value || '';
       if (searchClear) searchClear.classList.toggle('hidden', !filters.search);
-      resetVisibleCount();
+      resetListingPage();
       renderOrgGridOnly();
     }, 300);
     if (searchInput) searchInput.addEventListener('input', handleSearch);
-    if (searchClear) searchClear.addEventListener('click', () => { filters.search = ''; if (searchInput) searchInput.value = ''; searchClear.classList.add('hidden'); resetVisibleCount(); renderOrgGridOnly(); });
+    if (searchClear) searchClear.addEventListener('click', () => { filters.search = ''; if (searchInput) searchInput.value = ''; searchClear.classList.add('hidden'); resetListingPage(); renderOrgGridOnly(); });
     if (askFidesTrigger) {
       askFidesTrigger.addEventListener('click', () => {
         if (!window.FidesAssistant || typeof window.FidesAssistant.open !== 'function') return;
@@ -2882,10 +2977,7 @@
       if (filters.certification.some((v) => v.startsWith(prefix))) input.indeterminate = true;
     });
 
-    root.querySelectorAll('.fides-org-card').forEach((card) => {
-      card.addEventListener('click', () => openModal(card.dataset.id));
-      card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(card.dataset.id); } });
-    });
+    bindOrgCardLinks();
 
     getMobileFilters()?.bindShell();
 
@@ -2924,11 +3016,8 @@
       : '<p class="fides-empty">No organizations found.</p>';
     grid.innerHTML = header + items;
     _lastOrgEffectiveView = ev;
-    root.querySelectorAll('.fides-org-card').forEach((card) => {
-      card.addEventListener('click', () => openModal(card.dataset.id));
-      card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(card.dataset.id); } });
-    });
-    syncLoadMoreBar(filtered);
+    bindOrgCardLinks();
+    syncPaginationBar(filtered);
   }
 
   function checkDeepLink() {
@@ -3037,8 +3126,24 @@
     await loadUseCaseIndex();
     applySectorFromUrl();
     applyCountryFromUrl();
+    listingPage = listingPageFromLocation();
     try {
-      render();
+      if (organizations.length === 0) {
+        const ssrFallback = root && root.querySelector('[data-fides-ssr="organization"]');
+        if (ssrFallback) {
+          ssrFallback.style.display = '';
+          ssrFallback.removeAttribute('aria-hidden');
+          const spinner = root.querySelector('[data-fides-ssr-spinner="1"]');
+          if (spinner) spinner.remove();
+          applyStaleCatalogNotice();
+          return;
+        }
+      }
+      if (retainStandaloneDetailPage()) {
+        applyStaleCatalogNotice();
+        return;
+      }
+      render({ keepListingPage: true });
       checkDeepLink();
     } catch (err) {
       console.error('Failed to render organization catalog:', err);
@@ -3087,6 +3192,10 @@
     document.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
       getMobileFilters()?.setOpen(false);
+    });
+    window.addEventListener('popstate', () => {
+      listingPage = listingPageFromLocation();
+      if (root && root.querySelector('.fides-org-grid')) renderOrgGridOnly();
     });
     loadOrganizations();
   }

@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.16.0
+Stable tag: 1.17.0
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,11 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.17.0 =
+* Catalog cards are real `<a href="/organization/{id}/">` links (open in a new tab works; left-click still opens the modal).
+* Listing pagination uses stable `?catalog_page=` URLs instead of a Load more button.
+* Direct detail URLs keep the item H1 and content visible after JavaScript rendering.
 
 = 1.16.0 =
 * List view shows use-case, issuer, and wallet counts (use cases first) instead of relying parties.
