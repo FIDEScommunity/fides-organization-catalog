@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.17.0
+Stable tag: 1.17.2
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,12 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.17.2 =
+* Prevent WordPress theme link styles from underlining organization names and country metadata on catalog cards.
+
+= 1.17.1 =
+* Open the organization detail modal for direct `/organization/{id}/` links while preserving the server-rendered detail page for crawlers and visitors without JavaScript.
 
 = 1.17.0 =
 * Catalog cards are real `<a href="/organization/{id}/">` links (open in a new tab works; left-click still opens the modal).

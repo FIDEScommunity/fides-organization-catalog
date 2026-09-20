@@ -722,19 +722,6 @@
     });
   }
 
-  function retainStandaloneDetailPage() {
-    if (!root) return false;
-    const detailPage = root.querySelector('[data-fides-ssr-page="detail"]');
-    if (!detailPage && !isOrgSharePath()) return false;
-    const spinner = root.querySelector('[data-fides-ssr-spinner="1"]');
-    if (spinner) spinner.remove();
-    const ssr = root.querySelector('[data-fides-ssr]');
-    if (ssr) {
-      ssr.style.display = '';
-      ssr.removeAttribute('aria-hidden');
-    }
-    return !!(detailPage || ssr);
-  }
   function effectiveView() {
     return window.innerWidth < LIST_BREAKPOINT ? 'grid' : viewMode;
   }
@@ -3138,10 +3125,6 @@
           applyStaleCatalogNotice();
           return;
         }
-      }
-      if (retainStandaloneDetailPage()) {
-        applyStaleCatalogNotice();
-        return;
       }
       render({ keepListingPage: true });
       checkDeepLink();

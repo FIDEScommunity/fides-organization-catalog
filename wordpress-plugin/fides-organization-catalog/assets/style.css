@@ -1146,6 +1146,16 @@
   text-decoration: none;
 }
 
+#fides-org-catalog-root a.fides-org-card,
+#fides-org-catalog-root a.fides-org-card:hover,
+#fides-org-catalog-root a.fides-org-card:focus,
+#fides-org-catalog-root a.fides-org-card .fides-credential-name,
+#fides-org-catalog-root a.fides-org-card .fides-credential-provider,
+#fides-org-catalog-root a.fides-org-card .fides-catalog-country-meta,
+#fides-org-catalog-root a.fides-org-card .fides-org-provider-text {
+  text-decoration: none !important;
+}
+
 .fides-org-card:hover .fides-view-details {
   text-decoration: underline;
 }
