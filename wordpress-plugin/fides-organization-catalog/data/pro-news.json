@@ -1,16 +1,16 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-20T19:35:00.000Z",
+  "generatedAt": "2026-09-21T12:58:00.000Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
-  "notes": "First test harvest for Official (Pro) listings. Titles and URLs were opened; full article text is not stored. Skip empty orgs. walletIds marks items that may appear on that wallet modal; omit it for company news.",
+  "notes": "Weekly Official (Pro) harvest. Titles and URLs were opened; full article text is not stored. Skip empty orgs. walletIds marks items that may appear on that wallet modal; omit it for company, QTSP, ecosystem, or playground news.",
   "organizations": {
     "org:banqup": {
       "items": [
         {
-          "title": "A clear direction for the future of Banqup",
-          "url": "https://www.banqup.com/resources/news/a-clear-direction-for-the-future-of-banqup",
-          "publishedAt": "2026-08-24",
+          "title": "Whitepaper - Everyone checks the e-invoice, but nobody checks the VAT",
+          "url": "https://www.banqup.com/resources/news/whitepaper-everyone-checks-the-e-invoice-but-nobody-checks-the-vat",
+          "publishedAt": "2026-09-15",
           "sourceLabel": "banqup.com",
           "sourceKind": "site"
         },
@@ -18,6 +18,13 @@
           "title": "Banqup SA is now a certified Qualified Trust Service Provider",
           "url": "https://www.banqup.com/resources/news/banqup-sa-is-now-a-certified-qualified-trust-service-provider",
           "publishedAt": "2026-07-14",
+          "sourceLabel": "banqup.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "A clear direction for the future of Banqup",
+          "url": "https://www.banqup.com/resources/news/a-clear-direction-for-the-future-of-banqup",
+          "publishedAt": "2026-07-06",
           "sourceLabel": "banqup.com",
           "sourceKind": "site"
         }
@@ -37,8 +44,7 @@
           "url": "https://www.credenco.com/news/fides-community-awards-2026-winners",
           "publishedAt": "2026-09-16",
           "sourceLabel": "credenco.com",
-          "sourceKind": "site",
-          "walletIds": ["credenco-business-wallet"]
+          "sourceKind": "site"
         },
         {
           "title": "Credenco Joins the France Identité Playground",
@@ -111,9 +117,16 @@
     "org:innovalor": {
       "items": [
         {
-          "title": "AI-uitdagingen: de stijgende kosten van AI",
+          "title": "AI uitdagingen: de stijgende kosten van AI",
           "url": "https://innovalor.nl/Blogs/AI-uitdagingen-kosten",
           "publishedAt": "2026-09-15",
+          "sourceLabel": "innovalor.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Mijn eerste maand bij InnoValor",
+          "url": "https://innovalor.nl/Blogs/Mijn-eerste-maand-bij-InnoValor",
+          "publishedAt": "2026-09-14",
           "sourceLabel": "innovalor.nl",
           "sourceKind": "site"
         },
@@ -121,6 +134,13 @@
           "title": "De strijd tussen Google Wallet en EDI Wallets",
           "url": "https://innovalor.nl/Blogs/De-strijd-tussen-Google-Wallet-en-EDI-Wallets",
           "publishedAt": "2026-08-31",
+          "sourceLabel": "innovalor.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Zonder cloud-portabiliteit geen digitale soevereiniteit: waarom overstappen tussen clouds de echte uitdaging is",
+          "url": "https://innovalor.nl/Blogs/cloud-portabiliteit-onderzoek",
+          "publishedAt": "2026-07-24",
           "sourceLabel": "innovalor.nl",
           "sourceKind": "site"
         },
@@ -136,6 +156,13 @@
     "org:mosip": {
       "items": [
         {
+          "title": "MOSIP broadens Inji beyond digital ID into open credentialing platform",
+          "url": "https://www.biometricupdate.com/202609/mosip-broadens-inji-beyond-digital-id-into-open-credentialing-platform",
+          "publishedAt": "2026-09-01",
+          "sourceLabel": "biometricupdate.com",
+          "sourceKind": "site"
+        },
+        {
           "title": "Inji Wallet v1.0.0-alpha.1",
           "url": "https://github.com/inji/inji-wallet/releases/tag/v1.0.0-alpha.1",
           "publishedAt": "2026-08-17",
@@ -147,13 +174,6 @@
           "title": "A Conversation on MOSIP’s Growing Ecosystem",
           "url": "https://www.mosip.io/news_events/a-conversation-on-mosip-s-growing-ecosystem",
           "publishedAt": "2026-07-09",
-          "sourceLabel": "mosip.io",
-          "sourceKind": "site"
-        },
-        {
-          "title": "MOSIP at the DHIS2 Annual Conference 2026",
-          "url": "https://www.mosip.io/news_events/mosip-at-the-dhis2-annual-conference-2026",
-          "publishedAt": "2026-06-22",
           "sourceLabel": "mosip.io",
           "sourceKind": "site"
         }
@@ -172,6 +192,13 @@
           "title": "Public Beta becomes Sandbox",
           "url": "https://www.eid.admin.ch/en/20260903-public-beta-becomes-sandbox",
           "publishedAt": "2026-09-04",
+          "sourceLabel": "eid.admin.ch",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Advisory Council Digital Switzerland: Security and Trust Come First",
+          "url": "https://www.eid.admin.ch/en/20260903-beirat-digitale-schweiz-sicherheit-und-ver-trauen-stehen-an-oberster-stelle-e",
+          "publishedAt": "2026-09-03",
           "sourceLabel": "eid.admin.ch",
           "sourceKind": "site"
         },
