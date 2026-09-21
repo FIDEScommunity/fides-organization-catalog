@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:the-wallet-crew",
+    "name": "The Wallet Crew",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Neostore SAS",
+    "description": "The Wallet Crew provides wallet-as-a-service infrastructure that connects Apple Wallet and Google Wallet passes to CRM, POS, loyalty, and ticketing systems.",
+    "website": "https://www.thewalletcrew.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=thewalletcrew.io&sz=128",
+    "country": "FR",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "contact@walletcrew.io"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:passcloud",
+    "name": "Passcloud",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Passcloud provides offer passes that consumers can save to Apple Wallet and Google Wallet without sharing personal data, supporting acquisition and in-store attribution.",
+    "website": "https://passcloud.ai/",
+    "logo": "https://www.google.com/s2/favicons?domain=passcloud.ai&sz=128",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

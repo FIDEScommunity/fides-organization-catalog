@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bambu",
+    "name": "Bambu",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Bambu is a mobile wallet engagement platform for loyalty cards, coupons, memberships, event passes, and proof-of-insurance passes in Google Wallet.",
+    "website": "https://bambuwallet.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=bambuwallet.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "info@bambuwallet.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

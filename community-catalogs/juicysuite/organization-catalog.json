@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:juicysuite",
+    "name": "JuicySuite",
+    "sectors": [
+      "digital"
+    ],
+    "description": "JuicySuite is a CRM and loyalty platform that issues branded membership, loyalty, and stamp cards through Apple Wallet and Google Wallet.",
+    "website": "https://www.juicysuite.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=juicysuite.com&sz=128",
+    "country": "HK",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

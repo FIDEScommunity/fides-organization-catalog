@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:vibes",
+    "name": "Vibes",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Vibes is a mobile engagement platform combining SMS, RCS, and mobile wallet experiences for retail and brand marketing.",
+    "website": "https://www.vibes.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=vibes.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

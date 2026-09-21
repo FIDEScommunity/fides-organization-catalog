@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:yourpass",
+    "name": "YOUR PASS",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "YOUR PASS, s.r.o.",
+    "description": "YOUR PASS provides SaaS infrastructure for creating and managing mobile wallet passes for insurance, loyalty, ticketing, employee ID, and emergency use cases.",
+    "website": "https://www.yourpass.eu/",
+    "logo": "https://www.google.com/s2/favicons?domain=yourpass.eu&sz=128",
+    "country": "CZ",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

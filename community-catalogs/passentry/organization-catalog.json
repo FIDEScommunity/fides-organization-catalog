@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:passentry",
+    "name": "PassEntry",
+    "sectors": [
+      "digital"
+    ],
+    "description": "PassEntry provides a platform and API for designing, distributing, and updating Apple Wallet and Google Wallet passes for ticketing, transit, loyalty, membership, and access.",
+    "website": "https://passentry.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=passentry.com&sz=128",
+    "country": "GB",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "sales@passentry.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

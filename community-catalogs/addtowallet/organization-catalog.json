@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:addtowallet",
+    "name": "Addtowallet",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Addtowallet is a no-code platform for creating, distributing, updating, and tracking Apple Wallet and Google Wallet passes.",
+    "website": "https://www.addtowallet.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=addtowallet.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "hello@addtowallet.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

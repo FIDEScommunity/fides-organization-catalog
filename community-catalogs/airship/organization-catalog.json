@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:airship",
+    "name": "Airship",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Urban Airship, Inc.",
+    "description": "Airship is a mobile-first customer experience platform for push, SMS, email, in-app messaging, and mobile wallet experiences, including Google Wallet passes.",
+    "website": "https://www.airship.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=airship.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:passkit",
+    "name": "PassKit",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "PassKit, Inc.",
+    "description": "PassKit is a wallet engagement platform for Apple Wallet and Google Wallet loyalty cards, memberships, coupons, gift cards, event tickets, and boarding passes.",
+    "website": "https://passkit.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=passkit.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

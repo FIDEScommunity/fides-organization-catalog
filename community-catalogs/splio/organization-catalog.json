@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:splio",
+    "name": "Splio",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Splio SAS",
+    "description": "Splio is a CRM, customer data, and loyalty platform that supports loyalty cards, event invitations, and coupons in Apple Wallet, Google Wallet, and Samsung Wallet.",
+    "website": "https://www.splio.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=splio.com&sz=128",
+    "country": "FR",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "contact@splio.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

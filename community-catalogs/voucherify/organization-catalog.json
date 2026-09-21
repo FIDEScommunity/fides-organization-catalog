@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:voucherify",
+    "name": "Voucherify",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Voucherify PSA",
+    "description": "Voucherify provides APIs for promotions, loyalty programs, referrals, rewards, and digital wallet incentives.",
+    "website": "https://www.voucherify.io/",
+    "logo": "https://www.google.com/s2/favicons?domain=voucherify.io&sz=128",
+    "country": "PL",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:pass2u",
+    "name": "Pass2U",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "MicroMacro",
+    "description": "Pass2U provides tools and APIs to create, distribute, manage, and redeem Apple Wallet and Google Wallet passes, including cards, tickets, and digital keys.",
+    "website": "https://www.pass2u.net/",
+    "logo": "https://www.google.com/s2/favicons?domain=pass2u.net&sz=128",
+    "country": "TW",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "contact@micromacro.com.tw"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

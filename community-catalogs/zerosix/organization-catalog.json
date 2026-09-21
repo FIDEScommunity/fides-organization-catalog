@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:zerosix",
+    "name": "ZEROSIX",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "ZS SERVICES",
+    "description": "ZEROSIX provides digital loyalty infrastructure that places merchant loyalty cards in Apple Wallet and Google Wallet for retailers and restaurant groups.",
+    "website": "https://www.zerosix.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=zerosix.com&sz=128",
+    "country": "FR",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "contact@zerosix.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

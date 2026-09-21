@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:miss-moneypenny",
+    "name": "Wallet Studio",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Miss Moneypenny Technologies GmbH",
+    "description": "Wallet Studio by Miss Moneypenny Technologies provides no-code wallet infrastructure for insurance customer journeys, digital insurance cards, service access, and authentication.",
+    "website": "https://www.walletstudio.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=walletstudio.com&sz=128",
+    "country": "DE",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "info@missmp.eu"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

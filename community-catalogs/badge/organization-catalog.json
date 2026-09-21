@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:badge",
+    "name": "Badge",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Badge Group, Inc.",
+    "description": "Badge provides infrastructure for creating, operating, and measuring customer experiences in Apple Wallet and Google Wallet through no-code tools, APIs, and a white-label SDK.",
+    "website": "https://www.trybadge.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=trybadge.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

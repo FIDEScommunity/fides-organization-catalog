@@ -1,0 +1,31 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:passcreator",
+    "name": "Passcreator",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Passcreator GmbH",
+    "description": "Passcreator is an EU-hosted SaaS platform for creating and managing Apple Wallet and Google Wallet passes such as loyalty cards, coupons, memberships, and tickets.",
+    "website": "https://www.passcreator.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=passcreator.com&sz=128",
+    "country": "DE",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "hello@passcreator.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

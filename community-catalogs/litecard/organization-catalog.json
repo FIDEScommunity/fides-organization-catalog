@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:litecard",
+    "name": "Litecard",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Litecard is a mobile wallet CRM and marketing platform for loyalty cards, memberships, and offers in Apple Wallet, Google Wallet, and Samsung Wallet.",
+    "website": "https://litecard.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=litecard.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "contact@litecard.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

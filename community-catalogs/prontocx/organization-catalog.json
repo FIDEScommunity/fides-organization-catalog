@@ -1,0 +1,32 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:prontocx",
+    "name": "ProntoCX",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Pronto CX, Inc.",
+    "description": "ProntoCX provides NFC mobile wallet passes for live events, stadium access, contactless ticketing, loyalty, and transit experiences.",
+    "website": "https://www.prontocx.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=prontocx.com&sz=128",
+    "country": "US",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "info@prontocx.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor",
+      "system_integrator"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

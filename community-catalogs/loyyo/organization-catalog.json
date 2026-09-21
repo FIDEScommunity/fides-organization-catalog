@@ -1,0 +1,30 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:loyyo",
+    "name": "Loyyo",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Loyyo combines payment-linked customer insights with Apple Wallet, Google Wallet, and Samsung Wallet pass issuance for retailers.",
+    "website": "https://loyyo.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=loyyo.com&sz=128",
+    "country": "NL",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "contact": {
+      "email": "info@loyyo.com"
+    },
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}

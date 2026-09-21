@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:brevo",
+    "name": "Brevo",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Brevo SAS",
+    "description": "Brevo is a CRM and marketing platform for email, SMS, WhatsApp, loyalty, and mobile wallet engagement, including Google Wallet passes.",
+    "website": "https://www.brevo.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=brevo.com&sz=128",
+    "country": "FR",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "recognitions": {
+      "awardsAndRecognitions": [
+        {
+          "title": "Google Wallet Premier Partner",
+          "url": "https://developers.google.com/wallet/partners/find-a-partner"
+        }
+      ]
+    }
+  }
+}
