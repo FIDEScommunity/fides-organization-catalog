@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "Known news sources for Official (Pro) organizations. Used by the weekly news agent. Do not crawl Community listings or test orgs.",
+  "skipOrgIds": [
+    "org:profound-it",
+    "org:van-der-kooij-consulting"
+  ],
+  "organizations": {
+    "org:2060": {
+      "name": "2060.io",
+      "website": "https://2060.io",
+      "notes": "No public blog or RSS on the homepage. GitHub org atom had no usable entries in the first harvest."
+    },
+    "org:banqup": {
+      "name": "Banqup",
+      "website": "https://www.banqup.com",
+      "indexUrl": "https://www.banqup.com/resources/news",
+      "kind": "html-index"
+    },
+    "org:credenco": {
+      "name": "Credenco",
+      "website": "https://www.credenco.com",
+      "indexUrl": "https://www.credenco.com/news",
+      "kind": "spa-index",
+      "notes": "Homepage and /news are a JS app. English article URLs are in sitemap.xml as /news/{slug}. Open the rendered /news index in a browser; do not trust the empty HTML shell."
+    },
+    "org:digidentity": {
+      "name": "Digidentity",
+      "website": "https://www.digidentity.eu",
+      "indexUrl": "https://www.digidentity.eu/news",
+      "kind": "html-index",
+      "notes": "digidentity.com redirects to .eu"
+    },
+    "org:espuni": {
+      "name": "espuni",
+      "website": "https://www.espuni.com",
+      "notes": "Organization listing has no website field. Site was flaky (connection reset) during harvest."
+    },
+    "org:fides": {
+      "name": "FIDES Labs",
+      "website": "https://fides.community",
+      "indexUrl": "https://fides.community/news/",
+      "kind": "wordpress",
+      "notes": "Feed and news URLs returned 403 to automated clients."
+    },
+    "org:ilabs": {
+      "name": "iLabs",
+      "website": "https://www.ilabs.ai/",
+      "notes": "Marketing SPA. /feed and /blog return 200 HTML, not RSS."
+    },
+    "org:impierce": {
+      "name": "Impierce Technologies",
+      "website": "https://www.impierce.com",
+      "indexUrl": "https://www.impierce.com/resources/blog",
+      "githubReleases": [
+        "https://github.com/impierce/ssi-agent/releases.atom"
+      ],
+      "kind": "html-index"
+    },
+    "org:innovalor": {
+      "name": "InnoValor",
+      "website": "https://innovalor.nl/",
+      "indexUrl": "https://innovalor.nl/Blogs",
+      "kind": "html-index"
+    },
+    "org:mosip": {
+      "name": "MOSIP",
+      "website": "https://www.mosip.io",
+      "indexUrl": "https://www.mosip.io/news_events",
+      "githubReleases": [
+        "https://github.com/inji/inji-wallet/releases.atom"
+      ],
+      "kind": "html-index"
+    },
+    "org:sphereon": {
+      "name": "Sphereon",
+      "website": "https://sphereon.com",
+      "rssUrl": "https://sphereon.com/feed",
+      "githubReleases": [
+        "https://github.com/Sphereon-Opensource/mobile-wallet/releases.atom"
+      ],
+      "notes": "WordPress /feed exists but only contained Hello world! in the first harvest. GitHub releases were older than 90 days."
+    },
+    "org:swiyu": {
+      "name": "Swiss Confederation",
+      "website": "https://www.eid.admin.ch/en",
+      "indexUrl": "https://www.eid.admin.ch/en/blog-e",
+      "kind": "html-index"
+    },
+    "org:verana": {
+      "name": "Verana",
+      "website": "https://verana.io",
+      "githubReleases": [
+        "https://github.com/verana-labs/vs-agent/releases.atom"
+      ],
+      "notes": "No blog. GitHub tags are frequent -dev prereleases; do not treat those as listing news."
+    }
+  }
+}

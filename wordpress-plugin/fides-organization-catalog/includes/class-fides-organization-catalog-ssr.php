@@ -303,7 +303,9 @@ if (! class_exists('Fides_Organization_Catalog_SSR')) {
             protected function shortcode_root_id(): string { return 'fides-org-catalog-root'; }
             protected function loading_label(): string    { return __('Loading organization catalog…', 'fides-organization-catalog'); }
             protected function max_listing_items(): int   { return self::MAX_LISTING_ITEMS; }
-            protected function supports_standalone_detail_page(): bool { return true; }
+            // JS replaces #fides-org-catalog-root with the interactive catalog and
+            // modal. Visible standalone SSR would paint first and then flicker.
+            protected function supports_standalone_detail_page(): bool { return false; }
 
             public function register_with_core(): void {
                 if (! class_exists('Fides_Catalog_Registry')) {

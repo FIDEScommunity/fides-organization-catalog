@@ -246,6 +246,28 @@ smoke('Official claim stays in WordPress payload and out of export', static func
     return 'claim retained for review only';
 });
 
+smoke('Listing news opt-out is omitted for non-Official export', static function (): string {
+    $normalized = Fides_Organization_Catalog_Submission_Adapter::validate_payload(
+        array(
+            'name'                => 'News Opt Out Test',
+            'sectors'             => array('digital'),
+            'country'             => 'NL',
+            'listingNewsEnabled'  => false,
+        ),
+        array('action' => 'create')
+    );
+    if ($normalized instanceof WP_Error) {
+        throw new RuntimeException($normalized->get_error_message());
+    }
+    assert_true(! array_key_exists('listingNewsEnabled', $normalized), 'News flag kept on Community submission');
+    $export = Fides_Organization_Catalog_Submission_Adapter::payload_to_export($normalized);
+    $organization = isset($export['organization']) && is_array($export['organization'])
+        ? $export['organization']
+        : array();
+    assert_true(! array_key_exists('listingNewsEnabled', $organization), 'News flag leaked into Community export');
+    return 'listingNewsEnabled omitted unless Official';
+});
+
 smoke('Identifiers: adapter accepts full set via REST', static function (): string {
     $payload = array(
         'name'        => 'Identifier Test',

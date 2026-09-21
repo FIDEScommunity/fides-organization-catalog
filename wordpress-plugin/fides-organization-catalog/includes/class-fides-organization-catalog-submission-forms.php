@@ -13,7 +13,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
 
     class Fides_Organization_Catalog_Submission_Forms {
 
-        const VERSION = '1.14.40';
+        const VERSION = '1.14.42';
 
         /**
          * @return array<int, array{code: string, label: string}>
@@ -64,6 +64,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Forms')) {
             'bookMeetingUrl'                  => 'Scheduling URL shown as the Book a Meeting button in catalog modals.',
             'contactEmail'                    => 'Taken from your FIDES account; used for submission review only, not published as the org contact.',
             'fidesManifestoSupporter'         => 'Organization endorses the FIDES Manifesto.',
+            'listingNewsEnabled'              => 'Official listings can let FIDES add recent public headlines from the organization website (default on). Uncheck to hide news and stop the weekly harvest. Community listings see this option locked.',
             'certificationsIntro'             => 'Certifications shown in the Trust Explorer. Select only what your organization holds.',
             'certificationEvidence'           => 'Optional public link to a certificate, attestation page, or PDF.',
             'diaccComponents'                 => 'Select the DIACC PCTF components your organization is certified for.',

@@ -145,6 +145,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                         'contact.email'                            => 'Contact email',
                         'contact.bookMeetingUrl'                   => 'Book a meeting URL',
                         'fidesManifestoSupporter'                  => 'FIDES Manifesto supporter',
+                        'listingNewsEnabled'                       => 'Latest news on this listing',
                         'ecosystemRoleCodes'                       => 'Ecosystem roles',
                         'certifications'                           => 'Certifications',
                         'media.videos'                             => 'Media videos',
@@ -373,6 +374,10 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 $normalized['fidesManifestoSupporter'] = ! empty($payload['fidesManifestoSupporter']);
             }
 
+            if (array_key_exists('listingNewsEnabled', $payload)) {
+                $normalized['listingNewsEnabled'] = ! empty($payload['listingNewsEnabled']);
+            }
+
             if (array_key_exists('ecosystemRoleCodes', $payload)) {
                 $normalized['ecosystemRoleCodes'] = self::normalize_ecosystem_role_codes($payload['ecosystemRoleCodes']);
             }
@@ -450,6 +455,10 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
                 $organization['fidesManifestoSupporter'] = ! empty($payload['fidesManifestoSupporter']);
             }
 
+            if (array_key_exists('listingNewsEnabled', $payload) && $payload['listingNewsEnabled'] === false) {
+                $organization['listingNewsEnabled'] = false;
+            }
+
             if (class_exists('Fides_Catalog_Org_Tier')) {
                 $organization = Fides_Catalog_Org_Tier::filter_org_export($organization, $item_id);
             }
@@ -491,6 +500,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             if (array_key_exists('fidesManifestoSupporter', $item)) {
                 $payload['fidesManifestoSupporter'] = (bool) $item['fidesManifestoSupporter'];
             }
+            $payload['listingNewsEnabled'] = ! isset($item['listingNewsEnabled']) || $item['listingNewsEnabled'] !== false;
             if (isset($item['declaredEcosystemRoleCodes']) && is_array($item['declaredEcosystemRoleCodes'])) {
                 $payload['ecosystemRoleCodes'] = array_values($item['declaredEcosystemRoleCodes']);
             }

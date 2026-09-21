@@ -820,6 +820,15 @@
   display: none !important;
 }
 
+.fides-org-listing-news-enabled[hidden] {
+  display: none !important;
+}
+
+.fides-form-row--pro-locked .fides-form-choice {
+  cursor: not-allowed;
+  opacity: 0.72;
+}
+
 .fides-official-claim-choice {
   display: flex;
   align-items: flex-start;

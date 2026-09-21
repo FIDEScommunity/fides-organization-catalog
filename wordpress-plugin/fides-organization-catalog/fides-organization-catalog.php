@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.17.2
+ * Version: 1.18.2
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.17.2');
+define('FIDES_ORG_CATALOG_VERSION', '1.18.2');
 define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
 define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
 /** Bump this when share rewrite rules change so existing sites flush once. */
@@ -461,6 +461,8 @@ class Fides_Organization_Catalog {
 
         $aggregated_path = plugin_dir_path(__FILE__) . 'data/aggregated.json';
         $aggregated_version = file_exists($aggregated_path) ? (string) filemtime($aggregated_path) : '';
+        $pro_news_path = plugin_dir_path(__FILE__) . 'data/pro-news.json';
+        $pro_news_version = file_exists($pro_news_path) ? (string) filemtime($pro_news_path) : '';
 
         $base = [
             'pluginUrl'               => $this->plugin_url,
@@ -468,8 +470,10 @@ class Fides_Organization_Catalog {
                 'fides_org_catalog_github_data_url',
                 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json'
             ),
+            'proNewsDataUrl'          => 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/pro-news.json',
             'cacheDataUrl'            => rest_url('fides-catalog/v1/aggregated/organization'),
             'aggregatedDataVersion'     => $aggregated_version,
+            'proNewsDataVersion'        => $pro_news_version,
             'issuerCatalogUrl'        => get_option(
                 'fides_org_catalog_issuer_catalog_url',
                 'https://fides.community/ecosystem-explorer/issuer-catalog/'

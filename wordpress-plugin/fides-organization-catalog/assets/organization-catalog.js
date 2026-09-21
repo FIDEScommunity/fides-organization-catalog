@@ -320,7 +320,9 @@
   const configDefaults = {
     pluginUrl: '',
     githubDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/aggregated.json',
+    proNewsDataUrl: 'https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/data/pro-news.json',
     aggregatedDataVersion: '',
+    proNewsDataVersion: '',
     issuerCatalogUrl: '',
     credentialCatalogUrl: '',
     walletCatalogUrl: '',
@@ -2074,6 +2076,14 @@
 
             ${useCasesAccordionHtml}
 
+            ${window.FidesCatalogUI && typeof window.FidesCatalogUI.buildListingNewsAccordionHtml === 'function'
+              ? window.FidesCatalogUI.buildListingNewsAccordionHtml(org, {
+                  entityType: 'organization',
+                  salesItem: org,
+                  accordionId: 'fides-accordion-org-news'
+                })
+              : ''}
+
             <!-- Role accordions -->
             ${roleSections.map((sec) => {
               if (sec.items.length === 0) return '';
@@ -2839,6 +2849,9 @@
         if (!accordion) return;
         const isOpen = accordion.classList.toggle('is-open');
         accordion.querySelectorAll('.fides-accordion-toggle[type="button"]').forEach((b) => b.setAttribute('aria-expanded', isOpen ? 'true' : 'false'));
+        if (isOpen) {
+          requestAnimationFrame(() => bindOrgUseCasesScroll(overlay));
+        }
       });
     });
 
@@ -3075,6 +3088,26 @@
     return useCasesByOrgId[org.id] || [];
   }
 
+  async function loadListingNews() {
+    const ui = window.FidesCatalogUI;
+    const version = config.proNewsDataVersion ? `?v=${encodeURIComponent(config.proNewsDataVersion)}` : '';
+    const localUrl = `${config.pluginUrl}data/pro-news.json${version}`;
+    const remoteUrl = config.proNewsDataUrl || '';
+    const sources = isFidesLocalDevHost() ? [localUrl, remoteUrl] : [remoteUrl, localUrl];
+    for (const url of sources) {
+      if (!url) continue;
+      const result = ui && typeof ui.fetchJsonWithTimeout === 'function'
+        ? await ui.fetchJsonWithTimeout(url, 4000)
+        : await fetchJsonWithTimeout(url, 4000);
+      if (result && result.ok && result.data && result.data.organizations) {
+        if (ui && typeof ui.attachListingNews === 'function') {
+          ui.attachListingNews(organizations, result.data, function (org) { return org && org.id; });
+        }
+        return;
+      }
+    }
+  }
+
   async function loadOrganizations() {
     const localVersion = config.aggregatedDataVersion ? `?v=${encodeURIComponent(config.aggregatedDataVersion)}` : '';
     const localUrl = `${config.pluginUrl}data/aggregated.json${localVersion}`;
@@ -3110,6 +3143,7 @@
       }
     }
     if (sourceName) console.log(`Loaded ${organizations.length} organizations from ${sourceName}`);
+    await loadListingNews();
     await loadUseCaseIndex();
     applySectorFromUrl();
     applyCountryFromUrl();
@@ -3154,9 +3188,25 @@
     }
   }
 
+  function hideStandaloneSsrForJsUsers() {
+    if (!root) return;
+    const ssr = root.querySelector('.fides-ssr-fallback--visible, [data-fides-ssr-page="detail"]');
+    if (!ssr) return;
+    ssr.style.display = 'none';
+    ssr.setAttribute('aria-hidden', 'true');
+    ssr.classList.remove('fides-ssr-fallback--visible');
+    if (root.querySelector('[data-fides-ssr-spinner="1"]')) return;
+    const loading = document.createElement('div');
+    loading.className = 'fides-loading';
+    loading.setAttribute('data-fides-ssr-spinner', '1');
+    loading.innerHTML = '<div class="fides-spinner"></div><p>Loading organization catalog…</p>';
+    root.appendChild(loading);
+  }
+
   function init() {
     root = document.getElementById('fides-org-catalog-root');
     if (!root) return;
+    hideStandaloneSsrForJsUsers();
     syncCatalogConfig();
     settings = {
       showFilters: root.dataset.showFilters !== 'false',

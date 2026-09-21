@@ -456,6 +456,10 @@
           "type": "boolean",
           "description": "When true, the organization is listed under FIDES Supporters on https://fides.community/manifesto/ (logo wall). Not the same as submitting the optional ratification form."
         },
+        "listingNewsEnabled": {
+          "type": "boolean",
+          "description": "Official/Pro only. When false, FIDES does not harvest or show Latest news for this listing. Omitted or true means news is allowed (the form default)."
+        },
         "contact": {
           "type": "object",
           "additionalProperties": false,

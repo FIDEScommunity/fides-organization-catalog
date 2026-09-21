@@ -467,6 +467,7 @@ async function crawl(): Promise<void> {
       ...(org.catalogTier ? { catalogTier: org.catalogTier } : {}),
       ...(org.catalogListingDepth === 'full' ? { catalogListingDepth: 'full' as const } : {}),
       ...(org.fidesManifestoSupporter === true ? { fidesManifestoSupporter: true } : {}),
+      ...(org.listingNewsEnabled === false ? { listingNewsEnabled: false } : {}),
       ...(normalizedContact ? { contact: normalizedContact } : {}),
       ...(org.media &&
       ((Array.isArray(org.media.videos) && org.media.videos.length) ||

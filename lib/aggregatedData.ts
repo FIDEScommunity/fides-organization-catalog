@@ -89,6 +89,7 @@ export interface AggregatedOrganization {
   /** Curated Community listings that keep full public fields. */
   catalogListingDepth?: 'full';
   fidesManifestoSupporter?: boolean;
+  listingNewsEnabled?: boolean;
   recognitions?: OrganizationRecognitions;
   ecosystemRoles: {
     issuers: { id: string; displayName: string }[];

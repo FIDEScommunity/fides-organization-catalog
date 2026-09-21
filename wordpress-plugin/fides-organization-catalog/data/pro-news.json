@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-20T19:35:00.000Z",
+  "windowDays": 90,
+  "maxItemsPerOrg": 5,
+  "notes": "First test harvest for Official (Pro) listings. Titles and URLs were opened; full article text is not stored. Skip empty orgs. walletIds marks items that may appear on that wallet modal; omit it for company news.",
+  "organizations": {
+    "org:banqup": {
+      "items": [
+        {
+          "title": "A clear direction for the future of Banqup",
+          "url": "https://www.banqup.com/resources/news/a-clear-direction-for-the-future-of-banqup",
+          "publishedAt": "2026-08-24",
+          "sourceLabel": "banqup.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Banqup SA is now a certified Qualified Trust Service Provider",
+          "url": "https://www.banqup.com/resources/news/banqup-sa-is-now-a-certified-qualified-trust-service-provider",
+          "publishedAt": "2026-07-14",
+          "sourceLabel": "banqup.com",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:credenco": {
+      "items": [
+        {
+          "title": "Business Wallets in Action: The Recap",
+          "url": "https://www.credenco.com/news/business-wallets-in-action-recap",
+          "publishedAt": "2026-09-18",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "We Won Two FIDES Community Awards",
+          "url": "https://www.credenco.com/news/fides-community-awards-2026-winners",
+          "publishedAt": "2026-09-16",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site",
+          "walletIds": ["credenco-business-wallet"]
+        },
+        {
+          "title": "Credenco Joins the France Identité Playground",
+          "url": "https://www.credenco.com/news/france-identite-playground",
+          "publishedAt": "2026-09-15",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "One Week Left to Vote for the Business Wallet",
+          "url": "https://www.credenco.com/news/fides-awards-2026-final-voting-week",
+          "publishedAt": "2026-09-10",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site",
+          "walletIds": ["credenco-business-wallet"]
+        },
+        {
+          "title": "The Future of Business Wallets",
+          "url": "https://www.credenco.com/news/gdc-2026-geneva-recap",
+          "publishedAt": "2026-09-08",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:digidentity": {
+      "items": [
+        {
+          "title": "Digidentity included in KuppingerCole Leadership Compass for a second year",
+          "url": "https://www.digidentity.eu/news/digidentity-included-in-kuppingercole-analysts-leadership-compass-for-a-second-year-",
+          "publishedAt": "2026-09-10",
+          "sourceLabel": "digidentity.eu",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Digidentity recognised as a Sample Vendor in the Gartner Hype Cycle for Government Tax and Revenue, 2026",
+          "url": "https://www.digidentity.eu/news/digidentity-erkend-als-sample-vendor-in-de-gartner-hype-cycle-for-government-tax-and-revenue-2026",
+          "publishedAt": "2026-09-02",
+          "sourceLabel": "digidentity.eu",
+          "sourceKind": "site"
+        },
+        {
+          "title": "18 years of building trust in digital identity",
+          "url": "https://www.digidentity.eu/news/18-years-of-building-trust-in-digital-identity",
+          "publishedAt": "2026-07-15",
+          "sourceLabel": "digidentity.eu",
+          "sourceKind": "site"
+        },
+        {
+          "title": "SMS authentication is being phased out",
+          "url": "https://www.digidentity.eu/news/sms-authentication-is-being-phased-out",
+          "publishedAt": "2026-07-08",
+          "sourceLabel": "digidentity.eu",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:impierce": {
+      "items": [
+        {
+          "title": "UniTrust / ssi-agent v1.0.0-beta.19",
+          "url": "https://github.com/impierce/ssi-agent/releases/tag/v1.0.0-beta.19",
+          "publishedAt": "2026-06-26",
+          "sourceLabel": "GitHub",
+          "sourceKind": "github_release",
+          "walletIds": ["impierce-unitrust"]
+        }
+      ]
+    },
+    "org:innovalor": {
+      "items": [
+        {
+          "title": "AI-uitdagingen: de stijgende kosten van AI",
+          "url": "https://innovalor.nl/Blogs/AI-uitdagingen-kosten",
+          "publishedAt": "2026-09-15",
+          "sourceLabel": "innovalor.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "De strijd tussen Google Wallet en EDI Wallets",
+          "url": "https://innovalor.nl/Blogs/De-strijd-tussen-Google-Wallet-en-EDI-Wallets",
+          "publishedAt": "2026-08-31",
+          "sourceLabel": "innovalor.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "DICE 2026: experts werken aan de toekomst van identity",
+          "url": "https://innovalor.nl/Blogs/DICE-2026",
+          "publishedAt": "2026-07-23",
+          "sourceLabel": "innovalor.nl",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:mosip": {
+      "items": [
+        {
+          "title": "Inji Wallet v1.0.0-alpha.1",
+          "url": "https://github.com/inji/inji-wallet/releases/tag/v1.0.0-alpha.1",
+          "publishedAt": "2026-08-17",
+          "sourceLabel": "GitHub",
+          "sourceKind": "github_release",
+          "walletIds": ["inji-wallet"]
+        },
+        {
+          "title": "A Conversation on MOSIP’s Growing Ecosystem",
+          "url": "https://www.mosip.io/news_events/a-conversation-on-mosip-s-growing-ecosystem",
+          "publishedAt": "2026-07-09",
+          "sourceLabel": "mosip.io",
+          "sourceKind": "site"
+        },
+        {
+          "title": "MOSIP at the DHIS2 Annual Conference 2026",
+          "url": "https://www.mosip.io/news_events/mosip-at-the-dhis2-annual-conference-2026",
+          "publishedAt": "2026-06-22",
+          "sourceLabel": "mosip.io",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:swiyu": {
+      "items": [
+        {
+          "title": "WTO tender published for the launch communication campaign for e-ID and the swiyu ecosystem",
+          "url": "https://www.eid.admin.ch/en/20260915-wto-ausschreibung-zur-einfuehrungskommunikation-e-id-und-swiyu-oekosystem-publiziert-e",
+          "publishedAt": "2026-09-15",
+          "sourceLabel": "eid.admin.ch",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Public Beta becomes Sandbox",
+          "url": "https://www.eid.admin.ch/en/20260903-public-beta-becomes-sandbox",
+          "publishedAt": "2026-09-04",
+          "sourceLabel": "eid.admin.ch",
+          "sourceKind": "site"
+        },
+        {
+          "title": "New Timeline for the Introduction of the e-ID and the Trust Infrastructure",
+          "url": "https://www.eid.admin.ch/en/20260625-neuer-zeitplan-fuer-die-einfuehrung-der-e-id-und-der-vertrauensinfrastruktur-en",
+          "publishedAt": "2026-06-30",
+          "sourceLabel": "eid.admin.ch",
+          "sourceKind": "site"
+        }
+      ]
+    }
+  }
+}

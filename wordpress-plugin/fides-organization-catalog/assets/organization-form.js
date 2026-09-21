@@ -190,6 +190,25 @@
     if (!eligible) checkbox.checked = false;
   }
 
+  function listingNewsOptInEditable() {
+    return mode === "update" && Boolean(selectedOrgId) && (!!planTier.isPro || !!planTier.isOfficial);
+  }
+
+  function updateListingNewsEnabledUi() {
+    const wrap = root.querySelector("#fides-org-listing-news-enabled-wrap");
+    const checkbox = root.querySelector("#fides-org-listing-news-enabled");
+    if (!wrap) return;
+    const show = mode === "update" && Boolean(selectedOrgId);
+    wrap.hidden = !show;
+    const locked = show && !listingNewsOptInEditable();
+    wrap.classList.toggle("fides-form-row--pro-locked", locked);
+    if (checkbox) {
+      checkbox.disabled = locked;
+      checkbox.classList.toggle("fides-input-pro-locked", locked);
+      if (locked) checkbox.checked = true;
+    }
+  }
+
   function normalizeOfferingLabel(value) {
     return String(value || "")
       .trim()
@@ -501,6 +520,7 @@
     updateDescriptionLimitUi();
     updatePlanTierBanner();
     updateOfficialClaimRequestUi();
+    updateListingNewsEnabledUi();
     updateProFieldLabels();
   }
 
@@ -1009,6 +1029,16 @@
             </label>
           </div>
         </div>
+        <div id="fides-org-listing-news-enabled-wrap" class="fides-form-row fides-org-listing-news-enabled" hidden>
+          <span class="fides-form-label" id="fides-org-listing-news-label" data-pro-label="Latest news">${labelWithProIfNeeded("Latest news", true)}</span>
+          ${helpHtml("listingNewsEnabled")}
+          <div class="fides-form-choices fides-form-choices-inline" role="group" aria-labelledby="fides-org-listing-news-label">
+            <label class="fides-form-choice">
+              <input type="checkbox" id="fides-org-listing-news-enabled" name="listingNewsEnabled" value="1" checked />
+              <span>Allow FIDES to add recent public headlines from our website to this listing</span>
+            </label>
+          </div>
+        </div>
         ${
           contactEmail
             ? `<div class="fides-submitter-block">
@@ -1429,6 +1459,8 @@
     }
     const manifestoEl = root.querySelector("#fides-org-manifesto-supporter");
     if (manifestoEl) manifestoEl.checked = payload.fidesManifestoSupporter === true;
+    const listingNewsEl = root.querySelector("#fides-org-listing-news-enabled");
+    if (listingNewsEl) listingNewsEl.checked = payload.listingNewsEnabled !== false;
     fillCertificationsFromPayload(payload.certifications);
     setRecognitionRowsFromPayload(payload);
     setCheckedSectors(payload.sectors || []);
@@ -1485,6 +1517,10 @@
     if (Object.keys(contact).length) payload.contact = contact;
     const manifestoEl = root.querySelector("#fides-org-manifesto-supporter");
     payload.fidesManifestoSupporter = Boolean(manifestoEl && manifestoEl.checked);
+    if (listingNewsOptInEditable()) {
+      const listingNewsEl = root.querySelector("#fides-org-listing-news-enabled");
+      payload.listingNewsEnabled = Boolean(listingNewsEl && listingNewsEl.checked);
+    }
     const officialClaimEl = root.querySelector("#fides-org-request-official-claim");
     if (mode === "update" && officialClaimEl && officialClaimEl.checked) {
       payload.requestOfficialClaim = true;

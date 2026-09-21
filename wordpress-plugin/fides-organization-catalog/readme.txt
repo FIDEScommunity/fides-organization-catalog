@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.17.2
+Stable tag: 1.18.2
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -29,6 +29,15 @@ Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 
 == Changelog ==
+
+= 1.18.2 =
+* Community update forms show the Latest news checkbox locked, so visitors can see the Official listing benefit.
+
+= 1.18.1 =
+* Official listings can opt out of harvested Latest news with a form checkbox (default on). Community listings do not see this option.
+
+= 1.18.0 =
+* Official listings can show a Latest news accordion in the detail modal, filled from a weekly harvested `pro-news.json` sidecar.
 
 = 1.17.2 =
 * Prevent WordPress theme link styles from underlining organization names and country metadata on catalog cards.

@@ -133,6 +133,8 @@ export interface SourceOrganization {
   catalogListingDepth?: 'full';
   /** Listed on fides.community/manifesto FIDES Supporters section */
   fidesManifestoSupporter?: boolean;
+  /** Official/Pro only. False opts out of harvested Latest news. Omitted means allowed. */
+  listingNewsEnabled?: boolean;
   contact?: {
     email?: string;
     bookMeetingUrl?: string;
@@ -181,6 +183,8 @@ export interface AggregatedOrganization {
   /** Curated Community listings that keep full public fields. */
   catalogListingDepth?: 'full';
   fidesManifestoSupporter?: boolean;
+  /** Official/Pro only. False opts out of harvested Latest news. Omitted means allowed. */
+  listingNewsEnabled?: boolean;
   contact?: {
     email?: string;
     bookMeetingUrl?: string;
