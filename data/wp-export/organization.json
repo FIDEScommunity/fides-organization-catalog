@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-09-21T17:18:25+00:00",
+    "generatedAt": "2026-09-21T17:44:56+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -50,15 +50,15 @@
                         "digital"
                     ],
                     "description": "A3BC is a unique biometric Digital Identity Service Provider (DISP) device-less, card-less and id-less patented platform.",
-                    "logo": "https://www.a3bc.io/img/favicon/apple-touch-icon.png?v=3",
+                    "logo": "https://www.a3bc.io/images/logo/logo-horizontal-couleurs.svg",
                     "country": "FR",
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-07-02T10:09:23+00:00"
+                "lastUpdated": "2026-09-21T17:19:00+00:00"
             },
-            "publishedAt": "2026-07-02 10:09:23",
-            "updatedAt": "2026-07-02 10:09:23"
+            "publishedAt": "2026-09-21 17:19:00",
+            "updatedAt": "2026-09-21 17:19:00"
         },
         {
             "itemId": "org:aqta",
@@ -1094,15 +1094,15 @@
                     ],
                     "legalName": "Mobiera SAS",
                     "description": "Develop purpose-driven digital experiences that empower our clients to stand out in an ever-expanding and dynamic digital environment.",
-                    "logo": "https://www.mobiera.com/images/logo_mobiera.svg",
+                    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Js8loNyapKvtacLRHbPMQomMSs9m0lOmnxAiGb7Z9HXWvdejNbGCsjiu&s=10",
                     "country": "CO",
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-18T04:56:42+00:00"
+                "lastUpdated": "2026-09-21T17:18:45+00:00"
             },
-            "publishedAt": "2026-08-18 04:56:42",
-            "updatedAt": "2026-08-18 04:56:42"
+            "publishedAt": "2026-09-21 17:18:45",
+            "updatedAt": "2026-09-21 17:18:45"
         },
         {
             "itemId": "org:mosip",
@@ -1830,7 +1830,7 @@
                     ],
                     "legalName": "Unique Identification Authority of India",
                     "description": "The Unique Identification Authority of India (UIDAI) is the public authority responsible for Aadhaar, India’s unique identity system for residents.",
-                    "website": "https://uidai.gov.in/",
+                    "website": "https://uidai.gov.in/en",
                     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Aadhaar.svg/960px-Aadhaar.svg.png",
                     "country": "IN",
                     "tags": [
@@ -1847,10 +1847,10 @@
                     "catalogTier": "Community",
                     "catalogListingDepth": "full"
                 },
-                "lastUpdated": "2026-08-21T15:31:55+00:00"
+                "lastUpdated": "2026-09-21T17:19:16+00:00"
             },
-            "publishedAt": "2026-08-21 15:31:55",
-            "updatedAt": "2026-08-21 15:31:55"
+            "publishedAt": "2026-09-21 17:19:16",
+            "updatedAt": "2026-09-21 17:19:16"
         },
         {
             "itemId": "org:validated-id",
