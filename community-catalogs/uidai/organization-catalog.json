@@ -8,7 +8,7 @@
     ],
     "legalName": "Unique Identification Authority of India",
     "description": "The Unique Identification Authority of India (UIDAI) is the public authority responsible for Aadhaar, India’s unique identity system for residents.",
-    "website": "https://uidai.gov.in/",
+    "website": "https://uidai.gov.in/en",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Aadhaar.svg/960px-Aadhaar.svg.png",
     "country": "IN",
     "tags": [
@@ -25,5 +25,5 @@
     "catalogTier": "Community",
     "catalogListingDepth": "full"
   },
-  "lastUpdated": "2026-08-21T15:31:55+00:00"
+  "lastUpdated": "2026-09-21T17:19:16+00:00"
 }
