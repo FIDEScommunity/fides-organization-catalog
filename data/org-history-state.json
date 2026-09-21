@@ -2299,5 +2299,68 @@
   },
   "org:emvco": {
     "firstSeenAt": "2026-09-16T20:04:22+00:00"
+  },
+  "org:addtowallet": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:airship": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:badge": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:bambu": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:brevo": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:juicysuite": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:litecard": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:loyyo": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:miss-moneypenny": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:pass2u": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:passcloud": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:passcreator": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:passentry": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:passkit": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:prontocx": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:splio": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:the-wallet-crew": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:vibes": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:voucherify": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:yourpass": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
+  },
+  "org:zerosix": {
+    "firstSeenAt": "2026-09-21T08:11:10.000Z"
   }
 }
