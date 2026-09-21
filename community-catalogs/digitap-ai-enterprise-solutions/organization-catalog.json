@@ -10,7 +10,7 @@
     "country": "IN",
     "description": "Digitap.AI Enterprise Solutions Private Limited is a registered Offline Verification Seeking Entity (OVSE) with the Unique Identification Authority of India (UIDAI), authorised to request Aadhaar verifiable credentials for offline identity verification.",
     "website": "https://www.digitap.ai",
-    "logo": "https://www.google.com/s2/favicons?domain=digitap.ai&sz=128",
+    "logo": "https://www.digitap.ai/assets/images/favicon.png",
     "certifications": [
       {
         "code": "uidai_ovse",

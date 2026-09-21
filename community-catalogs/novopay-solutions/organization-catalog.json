@@ -10,7 +10,6 @@
     "country": "IN",
     "description": "Novopay Solutions Private Limited is a registered Offline Verification Seeking Entity (OVSE) with the Unique Identification Authority of India (UIDAI), authorised to request Aadhaar verifiable credentials for offline identity verification.",
     "website": "https://novopay.in",
-    "logo": "https://www.google.com/s2/favicons?domain=novopay.in&sz=128",
     "certifications": [
       {
         "code": "uidai_ovse",
