@@ -45,11 +45,23 @@ Always skip ids in `data/listing-news-sources.json` → `skipOrgIds`.
   ministry, municipality, country, university, police, or agency news stream.
 - Every article must be reviewed before it enters the PR.
 
-The initial pilot consists of:
+The controlled pilot consists of:
 
 - `org:webuild`: dedicated WE BUILD consortium news.
 - `org:germany`: dedicated German EUDI Wallet news.
 - `org:imda`: dedicated TradeTrust news, never general IMDA news.
+- `org:netherlands`: EDI-Stelsel NL wallet and digital-identity news.
+- `org:czechia`: stable first-party eDoklady articles.
+- `org:finland`: DVV press releases specifically about the EUDI or Suomi.fi Wallet.
+- `org:minisuomi`: dated updates on the dedicated Mini-Wallet domain.
+- `org:india`: dated posts on the dedicated DigiLocker blog.
+- `org:bhutan-ndi`: dedicated Bhutan NDI programme news.
+- `org:kingdom-of-belgium-federal-government`: technical Belgian eID releases.
+- `org:ethiopia`: first-party Fayda or National ID Program news.
+- `org:uncefact`: UN Transparency Protocol updates with distinct stable URLs.
+
+An allowlisted pilot may remain absent from `pro-news.json` when its source has
+no item that meets every URL, date, scope, and age requirement.
 
 ## Source procedure
 

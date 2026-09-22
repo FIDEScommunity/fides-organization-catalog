@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-22T05:49:17.370Z",
+  "generatedAt": "2026-09-22T07:14:14.955Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
@@ -281,6 +281,31 @@
           "url": "https://www.tradetrust.io/happenings-and-resources/china-singapore-end-to-end-digital-trade-pilot-successfully-implements-encd-using-aeotradechain-and-tradetrust/",
           "publishedAt": "2026-08-17",
           "sourceLabel": "tradetrust.io",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:netherlands": {
+      "items": [
+        {
+          "title": "Betere dienstverlening mogelijk met de ID-wallet",
+          "url": "https://edi.pleio.nl/news/view/54edfdd4-43c4-4baa-879e-32996427ffd8/betere-dienstverlening-mogelijk-met-de-id-wallet",
+          "publishedAt": "2026-09-18",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Nederland werkt mee aan veelgebruikte standaard voor wallet-certificering",
+          "url": "https://edi.pleio.nl/news/view/dbfeeb8f-b19d-4e56-b038-ff8a6e03f9fd/nederland-werkt-mee-aan-veelgebruikte-standaard-voor-wallet-certificering",
+          "publishedAt": "2026-09-17",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "eIDAS en wallets: een najaar vol events",
+          "url": "https://edi.pleio.nl/news/view/76f266fb-322d-436d-958c-087dd3ddc458/eidas-en-wallets-een-najaar-vol-events",
+          "publishedAt": "2026-08-27",
+          "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
       ]
