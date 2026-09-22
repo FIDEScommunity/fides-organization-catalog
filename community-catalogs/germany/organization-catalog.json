@@ -9,8 +9,13 @@
     "website": "https://eudi-wallet.gov.de/en",
     "country": "DE",
     "description": "German government programme for the official national EUDI Wallet (d-you), developed by SPRIND on behalf of BMDS, with launch scheduled for 2 January 2027.",
+    "tags": [
+      "d-you",
+      "EUDI Wallet"
+    ],
     "logo": "https://www.google.com/s2/favicons?domain=eudi-wallet.gov.de&sz=128",
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

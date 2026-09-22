@@ -12,12 +12,12 @@
     "logo": "https://digst.dk/media/cdld0gfa/digst_logo_dk_aubergine_rgb_new_png.png?format=webp&quality=92",
     "country": "DK",
     "tags": [
-      "Digital Identity Authority",
-      "Government Agency",
+      "AltID",
       "EUDI Wallet"
     ],
     "fidesManifestoSupporter": false,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-07-02T08:46:59.641Z"
 }

@@ -9,6 +9,7 @@
     ],
     "description": "California state agency providing leadership for EMS systems, personnel standards, and disaster medical preparedness.",
     "website": "https://emsa.ca.gov/",
-    "country": "US"
+    "country": "US",
+    "catalogListingDepth": "full"
   }
 }

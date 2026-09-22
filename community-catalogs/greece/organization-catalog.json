@@ -9,11 +9,16 @@
     "website": "https://www.gov.gr/",
     "country": "GR",
     "description": "Greek government, including the national wallet programme at wallet.gov.gr.",
+    "tags": [
+      "Gov.gr Wallet",
+      "EUDI Wallet"
+    ],
     "logo": "https://www.google.com/s2/favicons?domain=wallet.gov.gr&sz=128",
     "ecosystemRoleCodes": [
       "personal_wallet_provider"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

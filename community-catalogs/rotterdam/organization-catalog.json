@@ -11,7 +11,8 @@
     "country": "NL",
     "fidesManifestoSupporter": true,
     "description": "Gemeente Rotterdam provides public digital services and official information for citizens and businesses in Netherlands.",
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-26T05:14:31.000Z"
 }

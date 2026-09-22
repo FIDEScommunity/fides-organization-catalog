@@ -44,7 +44,11 @@
     ],
     "website": "https://eid.belgium.be/",
     "description": "Belgian federal government, including the national eID scheme and related public-key infrastructure.",
-    "catalogTier": "Community"
+    "tags": [
+      "Belgian eID"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-07-06T08:59:01.911Z"
 }

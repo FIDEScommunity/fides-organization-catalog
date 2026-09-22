@@ -13,7 +13,8 @@
     "ecosystemRoleCodes": [
       "relying_party"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

@@ -9,11 +9,15 @@
     "website": "https://www.gov.pl/",
     "country": "PL",
     "description": "Polish government, including the mObywatel digital-identity app.",
+    "tags": [
+      "mObywatel"
+    ],
     "logo": "https://www.gov.pl/img/fb_share_ogp.jpg",
     "ecosystemRoleCodes": [
       "personal_wallet_provider"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

@@ -4,11 +4,23 @@ on:
   push:
     paths:
       - 'community-catalogs/**/organization-catalog.json'
+      - 'data/listing-news-sources.json'
+      - 'data/pro-news.json'
       - 'schemas/**'
+      - 'scripts/listing-news-policy.mjs'
+      - 'scripts/listing-news-policy.test.mjs'
+      - 'scripts/validate-listing-news.mjs'
+      - 'package.json'
   pull_request:
     paths:
       - 'community-catalogs/**/organization-catalog.json'
+      - 'data/listing-news-sources.json'
+      - 'data/pro-news.json'
       - 'schemas/**'
+      - 'scripts/listing-news-policy.mjs'
+      - 'scripts/listing-news-policy.test.mjs'
+      - 'scripts/validate-listing-news.mjs'
+      - 'package.json'
 
 jobs:
   validate:
@@ -24,5 +36,7 @@ jobs:
       - run: npm ci
 
       - run: npm run validate
+
+      - run: npm run validate:news
 
       - run: npm test
