@@ -1,6 +1,12 @@
 {
-  "schemaVersion": "1.0.0",
-  "description": "Known news sources for Official (Pro) organizations. Used by the weekly news agent. Do not crawl Community listings or test orgs.",
+  "schemaVersion": "1.1.0",
+  "description": "Known news sources for Official (Pro) listings and explicitly allowlisted curated Community full-listing pilots. Community full listings are never eligible unless listingMode is curated-full-pilot.",
+  "pilotPolicy": {
+    "windowDays": 60,
+    "maxItemsPerOrg": 3,
+    "firstPartyOnly": true,
+    "manualReviewRequired": true
+  },
   "skipOrgIds": [
     "org:profound-it",
     "org:van-der-kooij-consulting"
@@ -43,10 +49,38 @@
       "kind": "wordpress",
       "notes": "Feed and news URLs returned 403 to automated clients."
     },
+    "org:germany": {
+      "name": "German Government",
+      "website": "https://eudi-wallet.gov.de/en",
+      "indexUrl": "https://eudi-wallet.gov.de/en/news",
+      "kind": "html-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "eudi-wallet.gov.de"
+      ],
+      "allowedPathPrefixes": [
+        "/en/news/"
+      ],
+      "notes": "Pilot source is dedicated to Germany's EUDI Wallet programme. Reject the generic /en/news/article CMS placeholder and LinkedIn-only destinations."
+    },
     "org:ilabs": {
       "name": "iLabs",
       "website": "https://www.ilabs.ai/",
       "notes": "Marketing SPA. /feed and /blog return 200 HTML, not RSS."
+    },
+    "org:imda": {
+      "name": "Infocomm Media Development Authority",
+      "website": "https://www.tradetrust.io/",
+      "indexUrl": "https://www.tradetrust.io/happenings-and-resources/",
+      "kind": "html-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "www.tradetrust.io"
+      ],
+      "allowedPathPrefixes": [
+        "/happenings-and-resources/"
+      ],
+      "notes": "Use only the dedicated first-party TradeTrust source. Never harvest IMDA's general news stream."
     },
     "org:impierce": {
       "name": "Impierce Technologies",
@@ -94,6 +128,20 @@
         "https://github.com/verana-labs/vs-agent/releases.atom"
       ],
       "notes": "No blog. GitHub tags are frequent -dev prereleases; do not treat those as listing news."
+    },
+    "org:webuild": {
+      "name": "WE BUILD Consortium",
+      "website": "https://www.webuildconsortium.eu/",
+      "indexUrl": "https://www.webuildconsortium.eu/news",
+      "kind": "html-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "www.webuildconsortium.eu"
+      ],
+      "allowedPathPrefixes": [
+        "/news/"
+      ],
+      "notes": "Dedicated first-party consortium news source for the EUDI Wallet and European Business Wallet large-scale pilot."
     }
   }
 }

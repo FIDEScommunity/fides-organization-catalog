@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-21T12:58:00.000Z",
+  "generatedAt": "2026-09-22T05:49:17.370Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
-  "notes": "Weekly Official (Pro) harvest. Titles and URLs were opened; full article text is not stored. Skip empty orgs. walletIds marks items that may appear on that wallet modal; omit it for company, QTSP, ecosystem, or playground news.",
+  "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
     "org:banqup": {
       "items": [
@@ -59,7 +59,9 @@
           "publishedAt": "2026-09-10",
           "sourceLabel": "credenco.com",
           "sourceKind": "site",
-          "walletIds": ["credenco-business-wallet"]
+          "walletIds": [
+            "credenco-business-wallet"
+          ]
         },
         {
           "title": "The Future of Business Wallets",
@@ -110,7 +112,9 @@
           "publishedAt": "2026-06-26",
           "sourceLabel": "GitHub",
           "sourceKind": "github_release",
-          "walletIds": ["impierce-unitrust"]
+          "walletIds": [
+            "impierce-unitrust"
+          ]
         }
       ]
     },
@@ -168,7 +172,9 @@
           "publishedAt": "2026-08-17",
           "sourceLabel": "GitHub",
           "sourceKind": "github_release",
-          "walletIds": ["inji-wallet"]
+          "walletIds": [
+            "inji-wallet"
+          ]
         },
         {
           "title": "A Conversation on MOSIP’s Growing Ecosystem",
@@ -207,6 +213,74 @@
           "url": "https://www.eid.admin.ch/en/20260625-neuer-zeitplan-fuer-die-einfuehrung-der-e-id-und-der-vertrauensinfrastruktur-en",
           "publishedAt": "2026-06-30",
           "sourceLabel": "eid.admin.ch",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:webuild": {
+      "items": [
+        {
+          "title": "WE BUILD at Global Digital Collaboration Conference 2026",
+          "url": "https://www.webuildconsortium.eu/news/we-build-at-global-digital-collaboration-conference-2026",
+          "publishedAt": "2026-09-18",
+          "sourceLabel": "webuildconsortium.eu",
+          "sourceKind": "site"
+        },
+        {
+          "title": "MEPs back European Business Wallets, to cut red tape and boost competitiveness",
+          "url": "https://www.webuildconsortium.eu/news/meps-back-european-business-wallets-to-cut-red-tape-and-boost-competitiveness",
+          "publishedAt": "2026-09-17",
+          "sourceLabel": "webuildconsortium.eu",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:germany": {
+      "items": [
+        {
+          "title": "d-you: Name and Logo of Germany’s EUDI Wallet Unveiled",
+          "url": "https://eudi-wallet.gov.de/en/news/d-you-name-and-logo-of-germany-s-eudi-wallet-unveiled",
+          "publishedAt": "2026-09-15",
+          "sourceLabel": "eudi-wallet.gov.de",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Community Event EUDI ON 2026 - The EUDI Wallet Summit",
+          "url": "https://eudi-wallet.gov.de/en/news/eudi-on-community-event-2026",
+          "publishedAt": "2026-09-15",
+          "sourceLabel": "eudi-wallet.gov.de",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Everyday Life with Digital Credentials: Simple and Secure",
+          "url": "https://eudi-wallet.gov.de/en/news/digitale-nachweise-einfach-sicher-datensparsam",
+          "publishedAt": "2026-09-15",
+          "sourceLabel": "eudi-wallet.gov.de",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:imda": {
+      "items": [
+        {
+          "title": "Advancing Trade Efficiency with SAP's Business Technology Platform (BTP)",
+          "url": "https://www.tradetrust.io/happenings-and-resources/advancing-trade-efficiency-with-sap-s-business-technology-platform--btp-/",
+          "publishedAt": "2026-09-01",
+          "sourceLabel": "tradetrust.io",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Beyond the Bill of Lading: Building Trust in Digital Customs Documentation",
+          "url": "https://www.tradetrust.io/happenings-and-resources/teleport-hashgraph-partnership-042026/",
+          "publishedAt": "2026-08-20",
+          "sourceLabel": "tradetrust.io",
+          "sourceKind": "site"
+        },
+        {
+          "title": "China-Singapore End-to-End Digital Trade Pilot Successfully Implements eNCD Using AEOTradeChain and TradeTrust",
+          "url": "https://www.tradetrust.io/happenings-and-resources/china-singapore-end-to-end-digital-trade-pilot-successfully-implements-encd-using-aeotradechain-and-tradetrust/",
+          "publishedAt": "2026-08-17",
+          "sourceLabel": "tradetrust.io",
           "sourceKind": "site"
         }
       ]
