@@ -15,7 +15,8 @@
       "relying_party"
     ],
     "fidesManifestoSupporter": true,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-08-13T19:33:20+00:00"
 }

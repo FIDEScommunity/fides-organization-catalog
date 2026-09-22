@@ -7,6 +7,7 @@
       "public_sector"
     ],
     "description": "Government of British Columbia; public services and digital credentials, including the BC Wallet.",
+    "website": "https://www2.gov.bc.ca/",
     "logo": "https://www.google.com/s2/favicons?domain=gov.bc.ca&sz=256",
     "country": "CA",
     "ecosystemRoleCodes": [
@@ -17,7 +18,8 @@
       "business_registry"
     ],
     "fidesManifestoSupporter": false,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-08-14T20:52:33+00:00"
 }
