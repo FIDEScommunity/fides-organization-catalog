@@ -9,8 +9,12 @@
     "website": "https://www.ria.ee/",
     "country": "EE",
     "description": "Estonian public sector digital governance; the Information System Authority (RIA) operates national e-ID, trust services, and cyber resilience.",
+    "tags": [
+      "EUDI Wallet"
+    ],
     "logo": "https://www.ria.ee/profiles/vp_distro/themes/vp_distro_theme/favicon.ico",
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

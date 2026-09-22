@@ -11,6 +11,10 @@
     "logo": "https://www.google.com/s2/favicons?domain=ec.europa.eu&sz=128",
     "country": "EU",
     "description": "The European Commission steers EU digital-identity policy, including the EUDI Wallet and related implementing acts.",
+    "tags": [
+      "EUDI Wallet",
+      "EUDI Wallet Reference Implementation"
+    ],
     "ecosystemRoleCodes": [
       "issuer",
       "vc_type_authority",
@@ -20,7 +24,8 @@
       "conformity_scheme_owner",
       "trust_infrastructure_provider"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

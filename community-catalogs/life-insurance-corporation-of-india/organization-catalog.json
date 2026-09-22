@@ -9,6 +9,9 @@
     ],
     "country": "IN",
     "description": "Life Insurance Corporation of India is a registered Offline Verification Seeking Entity (OVSE) with the Unique Identification Authority of India (UIDAI), authorised to request Aadhaar verifiable credentials for offline identity verification.",
+    "tags": [
+      "Aadhaar"
+    ],
     "website": "https://licindia.in",
     "logo": "https://www.google.com/s2/favicons?domain=licindia.in&sz=128",
     "certifications": [
@@ -24,7 +27,8 @@
     "ecosystemRoleCodes": [
       "relying_party"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-09-08T20:43:56.616Z"
 }

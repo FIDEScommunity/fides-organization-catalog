@@ -9,6 +9,9 @@
     ],
     "country": "IN",
     "description": "Police Computer Services and Standardization is a registered Offline Verification Seeking Entity (OVSE) with the Unique Identification Authority of India (UIDAI), authorised to request Aadhaar verifiable credentials for offline identity verification.",
+    "tags": [
+      "Aadhaar"
+    ],
     "certifications": [
       {
         "code": "uidai_ovse",
@@ -22,7 +25,8 @@
     "ecosystemRoleCodes": [
       "relying_party"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-09-08T20:43:56.614Z"
 }

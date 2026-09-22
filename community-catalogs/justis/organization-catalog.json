@@ -11,7 +11,8 @@
     "website": "https://www.justis.nl/",
     "logo": "https://www.google.com/s2/favicons?domain=justis.nl&sz=128",
     "country": "NL",
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-08-03T13:32:21.000Z"
 }

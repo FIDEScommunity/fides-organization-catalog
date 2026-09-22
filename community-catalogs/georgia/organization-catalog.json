@@ -9,8 +9,12 @@
     "website": "https://www.gov.ge/",
     "country": "GE",
     "description": "Government of Georgia digital identity programmes; pursuing EU-aligned national digital ID wallet capabilities for citizens.",
+    "tags": [
+      "EUDI Wallet"
+    ],
     "logo": "https://flagcdn.com/w80/ge.png",
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-07-08T19:54:46.000Z"
 }

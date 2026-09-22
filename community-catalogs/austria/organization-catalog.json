@@ -9,11 +9,15 @@
     "website": "https://www.oesterreich.gv.at/",
     "country": "AT",
     "description": "Austrian federal government; digital identity and wallet work involving A-SIT and partners.",
+    "tags": [
+      "eAusweise"
+    ],
     "logo": "https://plus.a-sit.at/assets/images/logos/social-preview.png",
     "ecosystemRoleCodes": [
       "personal_wallet_provider"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-26T04:53:55.000Z"
 }

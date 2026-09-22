@@ -13,13 +13,12 @@
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/logius/logius_logo.png",
     "country": "NL",
     "tags": [
-      "Digital Identity",
       "DigiD",
       "eHerkenning",
-      "Government Infrastructure",
-      "Trust Framework"
+      "MijnOverheid"
     ],
     "fidesManifestoSupporter": false,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   }
 }

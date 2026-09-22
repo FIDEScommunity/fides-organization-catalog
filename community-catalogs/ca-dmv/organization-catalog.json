@@ -9,12 +9,17 @@
     "website": "https://www.dmv.ca.gov/",
     "country": "US",
     "description": "California Department of Motor Vehicles (DMV) - apply for a REAL ID, register a vehicle, renew a driver's license, and more.",
+    "tags": [
+      "CA DMV Wallet",
+      "REAL ID"
+    ],
     "logo": "https://www.dmv.ca.gov/portal/uploads/2024/05/Five-Stars.png",
     "ecosystemRoleCodes": [
       "personal_wallet_provider",
       "relying_party"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-07-02T08:46:59.659Z"
 }

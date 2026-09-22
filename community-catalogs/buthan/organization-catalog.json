@@ -10,7 +10,11 @@
     "logo": "https://www.google.com/s2/favicons?domain=bhutanndi.com&sz=128",
     "country": "BT",
     "description": "We enable trusted interaction between individuals and service providers.",
-    "catalogTier": "Community"
+    "tags": [
+      "Bhutan NDI"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-01T20:56:26.000Z"
 }

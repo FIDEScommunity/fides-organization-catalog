@@ -9,11 +9,15 @@
     "website": "https://untp.unece.org",
     "country": "CH",
     "description": "Supporting governments and industry on practical measures to counter greenwashing by implementing supply chain traceability and transparency at the scale needed to achieve meaningful impacts on global sustainability outcomes.",
+    "tags": [
+      "UN Transparency Protocol"
+    ],
     "logo": "https://untp.unece.org/img/social-card.png",
     "ecosystemRoleCodes": [
       "vc_type_authority"
     ],
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
   },
   "lastUpdated": "2026-04-26T04:53:55.000Z"
 }
