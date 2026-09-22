@@ -23,12 +23,41 @@
       "indexUrl": "https://www.banqup.com/resources/news",
       "kind": "html-index"
     },
+    "org:bhutan-ndi": {
+      "name": "Bhutan NDI",
+      "website": "https://www.bhutanndi.com",
+      "indexUrl": "https://www.bhutanndi.com/resources/news",
+      "kind": "html-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "www.bhutanndi.com"
+      ],
+      "allowedPathPrefixes": [
+        "/resources/news/"
+      ],
+      "notes": "Dedicated first-party Bhutan NDI news. No current item falls inside the 60-day pilot window."
+    },
     "org:credenco": {
       "name": "Credenco",
       "website": "https://www.credenco.com",
       "indexUrl": "https://www.credenco.com/news",
       "kind": "spa-index",
       "notes": "Homepage and /news are a JS app. English article URLs are in sitemap.xml as /news/{slug}. Open the rendered /news index in a browser; do not trust the empty HTML shell."
+    },
+    "org:czechia": {
+      "name": "Czech Government",
+      "website": "https://edoklady.gov.cz/",
+      "indexUrl": "https://edoklady.gov.cz/novinky",
+      "kind": "html-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "edoklady.gov.cz"
+      ],
+      "allowedPathPrefixes": [
+        "/novinky/",
+        "/podpora-obcanu/clanky-a-navody/"
+      ],
+      "notes": "Use only stable first-party eDoklady article URLs. Inline index updates without a permanent article URL are not publishable."
     },
     "org:digidentity": {
       "name": "Digidentity",
@@ -42,12 +71,40 @@
       "website": "https://www.espuni.com",
       "notes": "Organization listing has no website field. Site was flaky (connection reset) during harvest."
     },
+    "org:ethiopia": {
+      "name": "National ID Program Ethiopia",
+      "website": "https://id.gov.et/",
+      "indexUrl": "https://id.gov.et/news",
+      "kind": "html-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "id.gov.et"
+      ],
+      "allowedPathPrefixes": [
+        "/news/"
+      ],
+      "notes": "Use only first-party Fayda or National ID Program articles with a stable URL and explicit publication date."
+    },
     "org:fides": {
       "name": "FIDES Labs",
       "website": "https://fides.community",
       "indexUrl": "https://fides.community/news/",
       "kind": "wordpress",
       "notes": "Feed and news URLs returned 403 to automated clients."
+    },
+    "org:finland": {
+      "name": "Finnish Government",
+      "website": "https://dvv.fi/en/european-digital-identity-wallet",
+      "indexUrl": "https://dvv.fi/en/european-digital-identity-wallet",
+      "kind": "programme-page",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "dvv.fi"
+      ],
+      "allowedPathPrefixes": [
+        "/en/-/"
+      ],
+      "notes": "The DVV host is broad. Publish only press releases explicitly about Finland's EUDI Wallet or Suomi.fi Wallet; never general DVV news."
     },
     "org:germany": {
       "name": "German Government",
@@ -67,6 +124,20 @@
       "name": "iLabs",
       "website": "https://www.ilabs.ai/",
       "notes": "Marketing SPA. /feed and /blog return 200 HTML, not RSS."
+    },
+    "org:india": {
+      "name": "India Government",
+      "website": "https://www.digilocker.gov.in/",
+      "indexUrl": "https://blog.digilocker.gov.in/",
+      "kind": "wordpress",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "blog.digilocker.gov.in"
+      ],
+      "allowedPathPrefixes": [
+        "/"
+      ],
+      "notes": "Dedicated DigiLocker blog. Keep only posts with a verifiable publication date inside the pilot window."
     },
     "org:imda": {
       "name": "Infocomm Media Development Authority",
@@ -97,6 +168,20 @@
       "indexUrl": "https://innovalor.nl/Blogs",
       "kind": "html-index"
     },
+    "org:kingdom-of-belgium-federal-government": {
+      "name": "Belgian Federal Government",
+      "website": "https://eid.belgium.be/en",
+      "indexUrl": "https://dist.eid.belgium.be/releases/",
+      "kind": "release-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "dist.eid.belgium.be"
+      ],
+      "allowedPathPrefixes": [
+        "/releases/"
+      ],
+      "notes": "Technical Belgian eID releases only. Do not use general federal-government news; no current release falls inside the 60-day window."
+    },
     "org:mosip": {
       "name": "MOSIP",
       "website": "https://www.mosip.io",
@@ -105,6 +190,34 @@
         "https://github.com/inji/inji-wallet/releases.atom"
       ],
       "kind": "html-index"
+    },
+    "org:minisuomi": {
+      "name": "Mini-Suomi",
+      "website": "https://wallet.minisuomi.fi/",
+      "indexUrl": "https://wallet.minisuomi.fi/",
+      "kind": "programme-page",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "wallet.minisuomi.fi"
+      ],
+      "allowedPathPrefixes": [
+        "/"
+      ],
+      "notes": "Dedicated Mini-Wallet domain. It currently exposes no stable, dated news articles, so the pilot remains empty."
+    },
+    "org:netherlands": {
+      "name": "Dutch Government",
+      "website": "https://www.nldigitalgovernment.nl/",
+      "indexUrl": "https://edi.pleio.nl/news",
+      "kind": "html-index",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "edi.pleio.nl"
+      ],
+      "allowedPathPrefixes": [
+        "/news/view/"
+      ],
+      "notes": "Use only first-party EDI-Stelsel NL articles about digital identity and wallets; never general Dutch-government news."
     },
     "org:sphereon": {
       "name": "Sphereon",
@@ -120,6 +233,20 @@
       "website": "https://www.eid.admin.ch/en",
       "indexUrl": "https://www.eid.admin.ch/en/blog-e",
       "kind": "html-index"
+    },
+    "org:uncefact": {
+      "name": "UN/CEFACT",
+      "website": "https://untp.unece.org/",
+      "indexUrl": "https://untp.unece.org/docs/governance/meetings/generalUpdates/",
+      "kind": "programme-page",
+      "listingMode": "curated-full-pilot",
+      "allowedHosts": [
+        "untp.unece.org"
+      ],
+      "allowedPathPrefixes": [
+        "/docs/governance/meetings/"
+      ],
+      "notes": "UN Transparency Protocol updates only. Table rows without a distinct stable URL are not publishable news items."
     },
     "org:verana": {
       "name": "Verana",
