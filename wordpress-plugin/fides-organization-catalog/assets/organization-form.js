@@ -514,6 +514,11 @@
       mediaSection.classList.toggle("fides-form-section--pro-locked", !hasFullListing);
       mediaSection.querySelectorAll("input, button").forEach((el) => {
         el.disabled = !hasFullListing;
+        el.classList.toggle("fides-input-pro-locked", !hasFullListing);
+      });
+      mediaSection.querySelectorAll(".fides-upload-btn").forEach((el) => {
+        el.classList.toggle("fides-input-pro-locked", !hasFullListing);
+        el.setAttribute("aria-disabled", hasFullListing ? "false" : "true");
       });
     }
     renderOfferingsChips();
@@ -905,7 +910,7 @@
 
   function formMediaSectionHtml() {
     return `
-        <section class="fides-form-section fides-form-section--pro-tier fides-org-media-section" aria-labelledby="fides-org-media-section-title" hidden>
+        <section class="fides-form-section fides-form-section--pro-tier fides-org-media-section" aria-labelledby="fides-org-media-section-title"${mode === "update" ? " hidden" : ""}>
           <div class="fides-form-accordion-heading">
             <h3 id="fides-org-media-section-title" class="fides-form-section-title" data-pro-label="Media">${labelWithProIfNeeded("Media", true)}</h3>
           </div>
