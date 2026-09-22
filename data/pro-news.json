@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-21T12:58:00.000Z",
+  "generatedAt": "2026-09-22T06:49:37.000Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly Official (Pro) harvest. Titles and URLs were opened; full article text is not stored. Skip empty orgs. walletIds marks items that may appear on that wallet modal; omit it for company, QTSP, ecosystem, or playground news.",
