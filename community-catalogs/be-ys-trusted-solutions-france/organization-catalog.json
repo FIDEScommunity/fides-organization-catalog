@@ -1,0 +1,32 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:be-ys-trusted-solutions-france",
+    "name": "BE YS TRUSTED SOLUTIONS FRANCE",
+    "legalName": "BE YS TRUSTED SOLUTIONS FRANCE",
+    "sectors": [
+      "digital"
+    ],
+    "country": "FR",
+    "certifications": [
+      {
+        "code": "qtsp",
+        "evidence": {
+          "kind": "url",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/FR/tsp/40",
+          "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
+        },
+        "details": {
+          "trustServices": [
+            {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            }
+          ]
+        }
+      }
+    ],
+    "website": "https://www.kipmi.com/"
+  },
+  "lastUpdated": "2026-09-28T11:26:39.784Z"
+}
