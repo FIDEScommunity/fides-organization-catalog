@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "catalogType": "organization",
-  "lastImportAt": "2026-09-22T18:14:26.108Z",
+  "lastImportAt": "2026-09-29T07:27:04.243Z",
   "managedSlugs": [
     "2060",
     "a3bc",
@@ -60,6 +60,7 @@
     "tech5",
     "trusttech",
     "turo",
+    "turva-dev",
     "uber",
     "ubique",
     "uidai",
