@@ -115,45 +115,6 @@
         }
       ]
     },
-    "org:innovalor": {
-      "items": [
-        {
-          "title": "AI uitdagingen: de stijgende kosten van AI",
-          "url": "https://innovalor.nl/Blogs/AI-uitdagingen-kosten",
-          "publishedAt": "2026-09-15",
-          "sourceLabel": "innovalor.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Mijn eerste maand bij InnoValor",
-          "url": "https://innovalor.nl/Blogs/Mijn-eerste-maand-bij-InnoValor",
-          "publishedAt": "2026-09-14",
-          "sourceLabel": "innovalor.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "De strijd tussen Google Wallet en EDI Wallets",
-          "url": "https://innovalor.nl/Blogs/De-strijd-tussen-Google-Wallet-en-EDI-Wallets",
-          "publishedAt": "2026-08-31",
-          "sourceLabel": "innovalor.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Zonder cloud-portabiliteit geen digitale soevereiniteit: waarom overstappen tussen clouds de echte uitdaging is",
-          "url": "https://innovalor.nl/Blogs/cloud-portabiliteit-onderzoek",
-          "publishedAt": "2026-07-24",
-          "sourceLabel": "innovalor.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "DICE 2026: experts werken aan de toekomst van identity",
-          "url": "https://innovalor.nl/Blogs/DICE-2026",
-          "publishedAt": "2026-07-23",
-          "sourceLabel": "innovalor.nl",
-          "sourceKind": "site"
-        }
-      ]
-    },
     "org:mosip": {
       "items": [
         {
