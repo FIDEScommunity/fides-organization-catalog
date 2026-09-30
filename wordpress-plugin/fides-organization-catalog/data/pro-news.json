@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-22T07:14:14.955Z",
+  "generatedAt": "2026-09-28T06:24:03.290Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
@@ -33,6 +33,20 @@
     "org:credenco": {
       "items": [
         {
+          "title": "Bringing digital wallets into practice",
+          "url": "https://www.credenco.com/news/centric-relatiedag-2026",
+          "publishedAt": "2026-09-23",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Credenco in Stockholm",
+          "url": "https://www.credenco.com/news/credenco-in-stockholm-we-build-wp4",
+          "publishedAt": "2026-09-22",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
           "title": "Business Wallets in Action: The Recap",
           "url": "https://www.credenco.com/news/business-wallets-in-action-recap",
           "publishedAt": "2026-09-18",
@@ -50,23 +64,6 @@
           "title": "Credenco Joins the France Identité Playground",
           "url": "https://www.credenco.com/news/france-identite-playground",
           "publishedAt": "2026-09-15",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "One Week Left to Vote for the Business Wallet",
-          "url": "https://www.credenco.com/news/fides-awards-2026-final-voting-week",
-          "publishedAt": "2026-09-10",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site",
-          "walletIds": [
-            "credenco-business-wallet"
-          ]
-        },
-        {
-          "title": "The Future of Business Wallets",
-          "url": "https://www.credenco.com/news/gdc-2026-geneva-recap",
-          "publishedAt": "2026-09-08",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
         }
@@ -107,9 +104,9 @@
     "org:impierce": {
       "items": [
         {
-          "title": "UniTrust / ssi-agent v1.0.0-beta.19",
-          "url": "https://github.com/impierce/ssi-agent/releases/tag/v1.0.0-beta.19",
-          "publishedAt": "2026-06-26",
+          "title": "v1.0.0-beta.20",
+          "url": "https://github.com/impierce/ssi-agent/releases/tag/v1.0.0-beta.20",
+          "publishedAt": "2026-09-24",
           "sourceLabel": "GitHub",
           "sourceKind": "github_release",
           "walletIds": [
@@ -209,9 +206,9 @@
           "sourceKind": "site"
         },
         {
-          "title": "New Timeline for the Introduction of the e-ID and the Trust Infrastructure",
-          "url": "https://www.eid.admin.ch/en/20260625-neuer-zeitplan-fuer-die-einfuehrung-der-e-id-und-der-vertrauensinfrastruktur-en",
-          "publishedAt": "2026-06-30",
+          "title": "Welcome Address to the Global Digital Collaboration Conference 2026 by Michael Schöll",
+          "url": "https://www.eid.admin.ch/en/260901-global-digital-collaboration-conference-e",
+          "publishedAt": "2026-09-01",
           "sourceLabel": "eid.admin.ch",
           "sourceKind": "site"
         }
@@ -230,6 +227,13 @@
           "title": "MEPs back European Business Wallets, to cut red tape and boost competitiveness",
           "url": "https://www.webuildconsortium.eu/news/meps-back-european-business-wallets-to-cut-red-tape-and-boost-competitiveness",
           "publishedAt": "2026-09-17",
+          "sourceLabel": "webuildconsortium.eu",
+          "sourceKind": "site"
+        },
+        {
+          "title": "WE BUILD joins Global Digital Collaboration 2026: discover our sessions",
+          "url": "https://www.webuildconsortium.eu/news/we-build-joins-global-digital-collaboration-2026-discover-our-sessions",
+          "publishedAt": "2026-08-05",
           "sourceLabel": "webuildconsortium.eu",
           "sourceKind": "site"
         }
@@ -290,14 +294,14 @@
         {
           "title": "Betere dienstverlening mogelijk met de ID-wallet",
           "url": "https://edi.pleio.nl/news/view/54edfdd4-43c4-4baa-879e-32996427ffd8/betere-dienstverlening-mogelijk-met-de-id-wallet",
-          "publishedAt": "2026-09-18",
+          "publishedAt": "2026-09-17",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         },
         {
           "title": "Nederland werkt mee aan veelgebruikte standaard voor wallet-certificering",
           "url": "https://edi.pleio.nl/news/view/dbfeeb8f-b19d-4e56-b038-ff8a6e03f9fd/nederland-werkt-mee-aan-veelgebruikte-standaard-voor-wallet-certificering",
-          "publishedAt": "2026-09-17",
+          "publishedAt": "2026-09-16",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         },
