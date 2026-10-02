@@ -7,8 +7,10 @@
       "digital"
     ],
     "description": "Consulting and technology firm focused on digital identity solutions and interoperable credential systems.",
-    "website": "https://www.a4advisory.com/",
     "logo": "https://www.a4advisory.com/hubfs/A4_logo_sm.png",
-    "country": "AU"
-  }
+    "country": "NL",
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-09-29T07:27:01+00:00"
 }

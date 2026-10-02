@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fido-alliance",
+    "name": "FIDO Alliance",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "FIDO Alliance, Inc.",
+    "description": "The FIDO Alliance enables identity technologies that put trust and simplicity at the center of interactions among people, services, and devices.",
+    "logo": "https://fidoalliance.org/wp-content/themes/frost/assets/images/fido-logo-v2.svg",
+    "country": "US",
+    "ecosystemRoleCodes": [
+      "standards_development_organization"
+    ],
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-10-02T14:06:09+00:00"
+}

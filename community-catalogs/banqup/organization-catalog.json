@@ -7,24 +7,9 @@
       "digital"
     ],
     "legalName": "Banqup SA",
-    "description": "Banqup is a certified Qualified Trust Service Provider (QTSP) delivering legally binding digital identity and trust services across all 27 EU member states.  We enable individuals and organizations to generate handwritten-equivalent electronic signatures (QES), run automated cloud-based document and invoice sealing (QCert for QSeal), and securely exchange credentials via trackable delivery (QeRDS). \n\nAs an active participant in the WeBuild pilot driving European Business Wallet (EUBW) standards, Banqup is also expanding into organizational wallet services and Qualified Electronic Attestations of Attributes (QEAA) to issue verified corporate identity data, such as IBAN credentials and economic operator attestations.",
-    "website": "https://www.banqup.com",
+    "description": "Banqup is a certified Qualified Trust Service Provider (QTSP) delivering legally binding digital identity and trust services across all 27 EU member states.  We enable individuals and organizations to",
     "logo": "https://integr-assets.btx.eu.banqup.com/1.0.2632/img/banqup-logo-triangle.png",
     "country": "BE",
-    "tags": [
-      "wallet",
-      "qtsp",
-      "identity"
-    ],
-    "offerings": [
-      "Business wallets",
-      "Digital signing",
-      "EUDI Wallet integration",
-      "Identity verification"
-    ],
-    "contact": {
-      "email": "hans.boone@banqup.com"
-    },
     "identifiers": {
       "business_registration_number": "BE 0649.860.804",
       "vat_number": "BE 0649.860.804",
@@ -70,7 +55,7 @@
       "eidas_trust_service_provider"
     ],
     "fidesManifestoSupporter": true,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-08-24T14:26:56+00:00"
 }
