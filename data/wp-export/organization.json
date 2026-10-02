@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-09-29T07:26:46+00:00",
+    "generatedAt": "2026-10-02T14:06:10+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -59,6 +59,30 @@
             },
             "publishedAt": "2026-09-21 17:19:00",
             "updatedAt": "2026-09-21 17:19:00"
+        },
+        {
+            "itemId": "org:a4-advisory",
+            "slug": "a4-advisory",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:a4-advisory",
+                    "name": "A4 Advisory",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Consulting and technology firm focused on digital identity solutions and interoperable credential systems.",
+                    "logo": "https://www.a4advisory.com/hubfs/A4_logo_sm.png",
+                    "country": "NL",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-09-29T07:27:01+00:00"
+            },
+            "publishedAt": "2026-09-29 07:27:01",
+            "updatedAt": "2026-09-29 07:27:01"
         },
         {
             "itemId": "org:aqta",
@@ -203,24 +227,9 @@
                         "digital"
                     ],
                     "legalName": "Banqup SA",
-                    "description": "Banqup is a certified Qualified Trust Service Provider (QTSP) delivering legally binding digital identity and trust services across all 27 EU member states.  We enable individuals and organizations to generate handwritten-equivalent electronic signatures (QES), run automated cloud-based document and invoice sealing (QCert for QSeal), and securely exchange credentials via trackable delivery (QeRDS). \n\nAs an active participant in the WeBuild pilot driving European Business Wallet (EUBW) standards, Banqup is also expanding into organizational wallet services and Qualified Electronic Attestations of Attributes (QEAA) to issue verified corporate identity data, such as IBAN credentials and economic operator attestations.",
-                    "website": "https://www.banqup.com",
+                    "description": "Banqup is a certified Qualified Trust Service Provider (QTSP) delivering legally binding digital identity and trust services across all 27 EU member states.  We enable individuals and organizations to",
                     "logo": "https://integr-assets.btx.eu.banqup.com/1.0.2632/img/banqup-logo-triangle.png",
                     "country": "BE",
-                    "tags": [
-                        "wallet",
-                        "qtsp",
-                        "identity"
-                    ],
-                    "offerings": [
-                        "Business wallets",
-                        "Digital signing",
-                        "EUDI Wallet integration",
-                        "Identity verification"
-                    ],
-                    "contact": {
-                        "email": "hans.boone@banqup.com"
-                    },
                     "identifiers": {
                         "business_registration_number": "BE 0649.860.804",
                         "vat_number": "BE 0649.860.804",
@@ -266,7 +275,7 @@
                         "eidas_trust_service_provider"
                     ],
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-08-24T14:26:56+00:00"
             },
@@ -463,7 +472,6 @@
                         "digital"
                     ],
                     "description": "Digidentity delivers secure digital identity, eHerkenning, SERMI, PKI solutions and more, for individuals, businesses, and governments across Europe.",
-                    "website": "https://www.digidentity.com",
                     "logo": "https://www.google.com/s2/favicons?domain=digidentity.com&sz=128",
                     "country": "NL",
                     "certifications": [
@@ -492,7 +500,7 @@
                         }
                     ],
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-02T10:12:35+00:00"
             },
@@ -675,6 +683,34 @@
             },
             "publishedAt": "2026-09-22 18:14:10",
             "updatedAt": "2026-09-22 18:14:10"
+        },
+        {
+            "itemId": "org:fido-alliance",
+            "slug": "fido-alliance",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:fido-alliance",
+                    "name": "FIDO Alliance",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "FIDO Alliance, Inc.",
+                    "description": "The FIDO Alliance enables identity technologies that put trust and simplicity at the center of interactions among people, services, and devices.",
+                    "logo": "https://fidoalliance.org/wp-content/themes/frost/assets/images/fido-logo-v2.svg",
+                    "country": "US",
+                    "ecosystemRoleCodes": [
+                        "standards_development_organization"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-10-02T14:06:09+00:00"
+            },
+            "publishedAt": "2026-10-02 14:06:09",
+            "updatedAt": "2026-10-02 14:06:09"
         },
         {
             "itemId": "org:france",
@@ -909,11 +945,10 @@
                         "digital"
                     ],
                     "description": "Impierce Technologies is a provider of digital identity trust infrastructure & services, including an EUDI Wallet, Identity Agent, Business Wallet and Ecosystem Orchestration tooling.",
-                    "website": "https://impierce.com",
                     "logo": "https://www.google.com/s2/favicons?domain=impierce.com&sz=128",
                     "country": "NL",
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-08-17T19:10:27+00:00"
             },
@@ -1500,24 +1535,8 @@
                     ],
                     "legalName": "Sphereon International B.V.",
                     "description": "We empower organizations with secure identities, trusted data and documents, trust registries, and infrastructure for verifiable digital interactions.",
-                    "website": "https://sphereon.com",
                     "logo": "https://www.google.com/s2/favicons?domain=sphereon.com&sz=128",
                     "country": "NL",
-                    "offerings": [
-                        "Trust infrastructure provider",
-                        "Business wallets",
-                        "OpenID4VC integration",
-                        "ISO 18013-5/7 integration",
-                        "Verifier apps",
-                        "Headless wallets",
-                        "Digital signing",
-                        "Skills-based solutions",
-                        "Workforce solutions",
-                        "GRC solutions"
-                    ],
-                    "contact": {
-                        "email": "info@sphereon.com"
-                    },
                     "ecosystemRoleCodes": [
                         "business_wallet_provider",
                         "kyb_provider",
@@ -1525,13 +1544,8 @@
                         "eudi_wallet_intermediary",
                         "trust_infrastructure_provider"
                     ],
-                    "media": {
-                        "images": [
-                            "https://sphereon.com/content/uploads/2026/03/the-infrastructure-of-verifiable-trust.jpeg"
-                        ]
-                    },
                     "fidesManifestoSupporter": true,
-                    "catalogTier": "Pro"
+                    "catalogTier": "Community"
                 },
                 "lastUpdated": "2026-07-20T16:26:14+00:00"
             },
