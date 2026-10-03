@@ -8,8 +8,24 @@
     ],
     "legalName": "Sphereon International B.V.",
     "description": "We empower organizations with secure identities, trusted data and documents, trust registries, and infrastructure for verifiable digital interactions.",
+    "website": "https://sphereon.com",
     "logo": "https://www.google.com/s2/favicons?domain=sphereon.com&sz=128",
     "country": "NL",
+    "offerings": [
+      "Trust infrastructure provider",
+      "Business wallets",
+      "OpenID4VC integration",
+      "ISO 18013-5/7 integration",
+      "Verifier apps",
+      "Headless wallets",
+      "Digital signing",
+      "Skills-based solutions",
+      "Workforce solutions",
+      "GRC solutions"
+    ],
+    "contact": {
+      "email": "info@sphereon.com"
+    },
     "ecosystemRoleCodes": [
       "business_wallet_provider",
       "kyb_provider",
@@ -17,8 +33,13 @@
       "eudi_wallet_intermediary",
       "trust_infrastructure_provider"
     ],
+    "media": {
+      "images": [
+        "https://sphereon.com/content/uploads/2026/03/the-infrastructure-of-verifiable-trust.jpeg"
+      ]
+    },
     "fidesManifestoSupporter": true,
-    "catalogTier": "Community"
+    "catalogTier": "Pro"
   },
   "lastUpdated": "2026-07-20T16:26:14+00:00"
 }
