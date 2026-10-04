@@ -1,0 +1,18 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:khaklin-technologies",
+    "name": "Khaklin Technologies",
+    "sectors": [
+      "digital"
+    ],
+    "website": "https://github.com/EgorKhaklin/polaris-id",
+    "country": "US",
+    "description": "Maintains Polaris, an open-source identity system, and polaris-oid4vp, an OpenID4VP 1.0 + HAIP 1.0 verifier for SD-JWT VC.",
+    "ecosystemRoleCodes": [
+      "relying_party"
+    ],
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-10-04T00:00:00.000Z"
+}
