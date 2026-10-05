@@ -1,37 +1,19 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-09-28T06:24:03.290Z",
+  "generatedAt": "2026-10-05T06:21:00.250Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
-    "org:banqup": {
-      "items": [
-        {
-          "title": "Whitepaper - Everyone checks the e-invoice, but nobody checks the VAT",
-          "url": "https://www.banqup.com/resources/news/whitepaper-everyone-checks-the-e-invoice-but-nobody-checks-the-vat",
-          "publishedAt": "2026-09-15",
-          "sourceLabel": "banqup.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Banqup SA is now a certified Qualified Trust Service Provider",
-          "url": "https://www.banqup.com/resources/news/banqup-sa-is-now-a-certified-qualified-trust-service-provider",
-          "publishedAt": "2026-07-14",
-          "sourceLabel": "banqup.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "A clear direction for the future of Banqup",
-          "url": "https://www.banqup.com/resources/news/a-clear-direction-for-the-future-of-banqup",
-          "publishedAt": "2026-07-06",
-          "sourceLabel": "banqup.com",
-          "sourceKind": "site"
-        }
-      ]
-    },
     "org:credenco": {
       "items": [
+        {
+          "title": "Business Wallets for Wtta authorisation",
+          "url": "https://www.credenco.com/news/ecp-symposium-wtta-authorisation",
+          "publishedAt": "2026-09-29",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Bringing digital wallets into practice",
           "url": "https://www.credenco.com/news/centric-relatiedag-2026",
@@ -59,59 +41,6 @@
           "publishedAt": "2026-09-16",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
-        },
-        {
-          "title": "Credenco Joins the France Identité Playground",
-          "url": "https://www.credenco.com/news/france-identite-playground",
-          "publishedAt": "2026-09-15",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        }
-      ]
-    },
-    "org:digidentity": {
-      "items": [
-        {
-          "title": "Digidentity included in KuppingerCole Leadership Compass for a second year",
-          "url": "https://www.digidentity.eu/news/digidentity-included-in-kuppingercole-analysts-leadership-compass-for-a-second-year-",
-          "publishedAt": "2026-09-10",
-          "sourceLabel": "digidentity.eu",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Digidentity recognised as a Sample Vendor in the Gartner Hype Cycle for Government Tax and Revenue, 2026",
-          "url": "https://www.digidentity.eu/news/digidentity-erkend-als-sample-vendor-in-de-gartner-hype-cycle-for-government-tax-and-revenue-2026",
-          "publishedAt": "2026-09-02",
-          "sourceLabel": "digidentity.eu",
-          "sourceKind": "site"
-        },
-        {
-          "title": "18 years of building trust in digital identity",
-          "url": "https://www.digidentity.eu/news/18-years-of-building-trust-in-digital-identity",
-          "publishedAt": "2026-07-15",
-          "sourceLabel": "digidentity.eu",
-          "sourceKind": "site"
-        },
-        {
-          "title": "SMS authentication is being phased out",
-          "url": "https://www.digidentity.eu/news/sms-authentication-is-being-phased-out",
-          "publishedAt": "2026-07-08",
-          "sourceLabel": "digidentity.eu",
-          "sourceKind": "site"
-        }
-      ]
-    },
-    "org:impierce": {
-      "items": [
-        {
-          "title": "v1.0.0-beta.20",
-          "url": "https://github.com/impierce/ssi-agent/releases/tag/v1.0.0-beta.20",
-          "publishedAt": "2026-09-24",
-          "sourceLabel": "GitHub",
-          "sourceKind": "github_release",
-          "walletIds": [
-            "impierce-unitrust"
-          ]
         }
       ]
     },
@@ -190,13 +119,6 @@
           "publishedAt": "2026-09-17",
           "sourceLabel": "webuildconsortium.eu",
           "sourceKind": "site"
-        },
-        {
-          "title": "WE BUILD joins Global Digital Collaboration 2026: discover our sessions",
-          "url": "https://www.webuildconsortium.eu/news/we-build-joins-global-digital-collaboration-2026-discover-our-sessions",
-          "publishedAt": "2026-08-05",
-          "sourceLabel": "webuildconsortium.eu",
-          "sourceKind": "site"
         }
       ]
     },
@@ -253,23 +175,23 @@
     "org:netherlands": {
       "items": [
         {
+          "title": "Van Europese kaders naar de Nederlandse praktijk",
+          "url": "https://edi.pleio.nl/news/view/e8c1d4ee-a55f-4766-b859-d4d21c3f08c2/van-europese-kaders-naar-de-nederlandse-praktijk",
+          "publishedAt": "2026-10-02",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Nederland zoekt Europese samenwerking rond certificering EDI-wallets",
+          "url": "https://edi.pleio.nl/news/view/f968d7d1-7716-49ae-aa24-ab61048968b9/nederland-zoekt-europese-samenwerking-rond-certificering-edi-wallets",
+          "publishedAt": "2026-10-01",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
           "title": "Betere dienstverlening mogelijk met de ID-wallet",
           "url": "https://edi.pleio.nl/news/view/54edfdd4-43c4-4baa-879e-32996427ffd8/betere-dienstverlening-mogelijk-met-de-id-wallet",
           "publishedAt": "2026-09-17",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Nederland werkt mee aan veelgebruikte standaard voor wallet-certificering",
-          "url": "https://edi.pleio.nl/news/view/dbfeeb8f-b19d-4e56-b038-ff8a6e03f9fd/nederland-werkt-mee-aan-veelgebruikte-standaard-voor-wallet-certificering",
-          "publishedAt": "2026-09-16",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "eIDAS en wallets: een najaar vol events",
-          "url": "https://edi.pleio.nl/news/view/76f266fb-322d-436d-958c-087dd3ddc458/eidas-en-wallets-een-najaar-vol-events",
-          "publishedAt": "2026-08-27",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
