@@ -1,21 +1,19 @@
 {
   "$schema": "https://fides.community/schemas/organization-catalog/v1",
   "organization": {
-    "id": "org:validated-id",
-    "name": "VALIDATED ID",
+    "id": "org:semnaturescu",
+    "name": "SEMNATURESCU",
+    "legalName": "SEMNATURESCU S.R.L.",
     "sectors": [
       "digital"
     ],
-    "legalName": "VALIDATED ID, S.L",
-    "description": "Provide trust to your electronic signatures and digital identity. Simple and secure solutions: electronic signatures, digital identity and electronic invoices.",
-    "logo": "https://cdn.prod.website-files.com/5ec68f0bd0db4b52be8cf1d5/611cdede040214a673afec55_h_home_en.png",
-    "country": "ES",
+    "country": "RO",
     "certifications": [
       {
         "code": "qtsp",
         "evidence": {
           "kind": "url",
-          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/ES/tsp/37",
+          "url": "https://eidas.ec.europa.eu/efda/trust-services/browse/eidas/tls/tl/RO/tsp/10",
           "label": "EU eIDAS Trust List (Qualified Trust Service Provider)"
         },
         "details": {
@@ -36,9 +34,7 @@
         }
       }
     ],
-    "fidesManifestoSupporter": false,
-    "catalogTier": "Community",
-    "website": "https://validatedid.com"
+    "website": "https://www.semnaturescu.ro"
   },
-  "lastUpdated": "2026-07-02T09:52:08+00:00"
+  "lastUpdated": "2026-10-05T12:02:55.462Z"
 }
