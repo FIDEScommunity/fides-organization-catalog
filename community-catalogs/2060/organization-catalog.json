@@ -7,19 +7,15 @@
       "digital"
     ],
     "description": "An independent research and engineering company inventing, specifying, and shipping the infrastructure that lets humans, services, and AI agents prove who they are, and act under verifiable authority.",
-    "website": "https://2060.io",
     "logo": "https://www.google.com/s2/favicons?domain=2060.io&sz=128",
     "country": "EE",
-    "contact": {
-      "email": "f@2060.io"
-    },
     "identifiers": {
       "business_registration_number": "16853041",
       "vat_number": "EE102810457",
       "duns": "565817658"
     },
     "fidesManifestoSupporter": true,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-10T05:41:16+00:00"
 }

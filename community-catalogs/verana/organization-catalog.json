@@ -8,18 +8,8 @@
     ],
     "legalName": "Verana Foundation (in formation)",
     "description": "Non-profit rebuilding digital trust in the AI era: Verana stewards open standards and decentralized infrastructure for verifiable, privacy-respecting exchange between people, services and AI agents.",
-    "website": "https://verana.io",
     "logo": "https://verana.io/logo.svg",
     "country": "EE",
-    "tags": [
-      "FIDES Supporter",
-      "Trust Networks",
-      "Ecosystem Governance",
-      "Verifiable Trust"
-    ],
-    "contact": {
-      "email": "fabrice@verana.io"
-    },
     "ecosystemRoleCodes": [
       "business_wallet_provider",
       "software_vendor",
@@ -29,7 +19,7 @@
       "trust_infrastructure_provider"
     ],
     "fidesManifestoSupporter": true,
-    "catalogTier": "Pro"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-08-05T16:35:25+00:00"
 }
