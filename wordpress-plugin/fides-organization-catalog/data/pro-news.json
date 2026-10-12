@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-10-05T06:21:00.250Z",
+  "generatedAt": "2026-10-12T06:21:18.327Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
@@ -47,6 +47,13 @@
     "org:mosip": {
       "items": [
         {
+          "title": "Reflecting on a Milestone: Technology Built before the Vocabulary Existed",
+          "url": "https://mosip.substack.com/p/reflecting-on-a-milestone-technology",
+          "publishedAt": "2026-09-16",
+          "sourceLabel": "mosip.substack.com",
+          "sourceKind": "site"
+        },
+        {
           "title": "MOSIP broadens Inji beyond digital ID into open credentialing platform",
           "url": "https://www.biometricupdate.com/202609/mosip-broadens-inji-beyond-digital-id-into-open-credentialing-platform",
           "publishedAt": "2026-09-01",
@@ -64,10 +71,17 @@
           ]
         },
         {
-          "title": "A Conversation on MOSIP’s Growing Ecosystem",
-          "url": "https://www.mosip.io/news_events/a-conversation-on-mosip-s-growing-ecosystem",
-          "publishedAt": "2026-07-09",
-          "sourceLabel": "mosip.io",
+          "title": "Release Announcement : Inji verify v1.0.0-alpha.1 is here!",
+          "url": "https://community.mosip.io/t/release-announcement-inji-verify-v1-0-0-alpha-1-is-here/2853",
+          "publishedAt": "2026-08-06",
+          "sourceLabel": "community.mosip.io",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Release Announcement : Inji Certify v1.0.0-alpha.1 is here!",
+          "url": "https://community.mosip.io/t/release-announcement-inji-certify-v1-0-0-alpha-1-is-here/2852",
+          "publishedAt": "2026-08-03",
+          "sourceLabel": "community.mosip.io",
           "sourceKind": "site"
         }
       ]
@@ -175,6 +189,13 @@
     "org:netherlands": {
       "items": [
         {
+          "title": "Bijeenkomst introductie digitale rijbewijs 20 oktober 2026",
+          "url": "https://edi.pleio.nl/news/view/b7786868-8121-40bf-af8c-aae8da14613f/bijeenkomst-introductie-digitale-rijbewijs-20-oktober-2026",
+          "publishedAt": "2026-10-06",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
           "title": "Van Europese kaders naar de Nederlandse praktijk",
           "url": "https://edi.pleio.nl/news/view/e8c1d4ee-a55f-4766-b859-d4d21c3f08c2/van-europese-kaders-naar-de-nederlandse-praktijk",
           "publishedAt": "2026-10-02",
@@ -185,13 +206,6 @@
           "title": "Nederland zoekt Europese samenwerking rond certificering EDI-wallets",
           "url": "https://edi.pleio.nl/news/view/f968d7d1-7716-49ae-aa24-ab61048968b9/nederland-zoekt-europese-samenwerking-rond-certificering-edi-wallets",
           "publishedAt": "2026-10-01",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Betere dienstverlening mogelijk met de ID-wallet",
-          "url": "https://edi.pleio.nl/news/view/54edfdd4-43c4-4baa-879e-32996427ffd8/betere-dienstverlening-mogelijk-met-de-id-wallet",
-          "publishedAt": "2026-09-17",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
