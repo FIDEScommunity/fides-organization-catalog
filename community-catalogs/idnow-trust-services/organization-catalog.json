@@ -27,6 +27,14 @@
               "name": "Qualified cert esig"
             },
             {
+              "code": "Q_PRES_ESEAL",
+              "name": "Qualified pres eseal"
+            },
+            {
+              "code": "Q_PRES_ESIG",
+              "name": "Qualified pres esig"
+            },
+            {
               "code": "Q_REM_MANAGE_Q_SEAL_CD",
               "name": "Qualified rem manage q seal cd"
             },
@@ -37,6 +45,10 @@
             {
               "code": "Q_TIMESTAMP",
               "name": "Qualified timestamp"
+            },
+            {
+              "code": "QE_ARCH",
+              "name": "Qualified qe arch"
             },
             {
               "code": "QEAA",
