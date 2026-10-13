@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hanze-university-of-applied-sciences",
+    "name": "Hanze University of Applied Sciences",
+    "sectors": [
+      "education"
+    ],
+    "description": "University of applied sciences in Groningen, Netherlands. Hanze conducts education and applied research on digital literacy, inclusion and the societal adoption of technology.",
+    "website": "https://www.hanze.nl/en",
+    "logo": "https://www.google.com/s2/favicons?domain=hanze.nl&sz=128",
+    "country": "NL",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

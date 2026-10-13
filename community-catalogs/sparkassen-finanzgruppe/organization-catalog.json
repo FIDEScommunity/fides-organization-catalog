@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sparkassen-finanzgruppe",
+    "name": "Sparkassen-Finanzgruppe",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Germany's decentralized public savings-bank network, bringing together local Sparkassen and their regional and specialist partner institutions under the Sparkasse brand.",
+    "website": "https://www.sparkasse.de/",
+    "logo": "https://www.google.com/s2/favicons?domain=sparkasse.de&sz=128",
+    "country": "DE",
+    "tags": [
+      "Sparkasse"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

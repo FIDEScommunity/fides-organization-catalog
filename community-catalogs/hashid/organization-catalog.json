@@ -1,0 +1,25 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:hashid",
+    "name": "hashID",
+    "legalName": "Desteba Productions S.L.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "European privacy-preserving digital identity and verification platform. Its modules support passport-based identity verification, age verification, attribute presentation, authentication and encrypted personal data storage using standards including OpenID4VP, OpenID4VCI and ISO 18013-5.",
+    "identifiers": {
+      "business_registration_number": "B42702787"
+    },
+    "website": "https://hashid.eu/",
+    "logo": "https://www.google.com/s2/favicons?domain=hashid.eu&sz=128",
+    "country": "ES",
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

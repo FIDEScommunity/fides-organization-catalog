@@ -1,0 +1,18 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:rabobank",
+    "name": "Rabobank",
+    "legalName": "Coöperatieve Rabobank U.A.",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Dutch cooperative bank providing retail, business and wholesale banking services. Rabobank has developed and tested reusable digital identity and data-sharing services based on verifiable credentials and wallets.",
+    "website": "https://www.rabobank.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=rabobank.com&sz=128",
+    "country": "NL",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

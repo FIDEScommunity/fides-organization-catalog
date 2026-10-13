@@ -1,0 +1,25 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dsgv",
+    "name": "DSGV",
+    "legalName": "Deutscher Sparkassen- und Giroverband e.V.",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Umbrella association of the German Sparkassen-Finanzgruppe, representing Germany's savings banks, regional associations and associated financial institutions.",
+    "identifiers": {
+      "business_registration_number": "VR 35468 B",
+      "vat_number": "DE122125325"
+    },
+    "website": "https://www.dsgv.de/",
+    "logo": "https://www.google.com/s2/favicons?domain=dsgv.de&sz=128",
+    "country": "DE",
+    "ecosystemRoleCodes": [
+      "industry_association"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

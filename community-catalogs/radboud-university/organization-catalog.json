@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:radboud-university",
+    "name": "Radboud University",
+    "sectors": [
+      "education"
+    ],
+    "description": "Research university in Nijmegen, Netherlands. Radboud University conducts research into privacy-enhancing digital identity and is closely associated with the open-source Yivi identity wallet.",
+    "website": "https://www.ru.nl/en",
+    "logo": "https://www.google.com/s2/favicons?domain=ru.nl&sz=128",
+    "country": "NL",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

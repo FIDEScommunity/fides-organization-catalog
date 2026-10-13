@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sva",
+    "name": "SVA",
+    "legalName": "SVA System Vertrieb Alexander GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "description": "German IT systems integrator providing infrastructure, cloud, cybersecurity, software-development and digital-process services to businesses and public-sector organizations.",
+    "identifiers": {
+      "business_registration_number": "HRB 10315",
+      "vat_number": "DE185176948"
+    },
+    "website": "https://www.sva.de/en",
+    "logo": "https://www.google.com/s2/favicons?domain=sva.de&sz=128",
+    "country": "DE",
+    "ecosystemRoleCodes": [
+      "system_integrator",
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

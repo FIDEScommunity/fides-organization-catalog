@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:han-university-of-applied-sciences",
+    "name": "HAN University of Applied Sciences",
+    "sectors": [
+      "education"
+    ],
+    "description": "Dutch university of applied sciences based in Arnhem and Nijmegen. HAN researches and teaches digital transformation, user experience and inclusive adoption of digital identity technologies.",
+    "website": "https://www.hanuniversity.com/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=hanuniversity.com&sz=128",
+    "country": "NL",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

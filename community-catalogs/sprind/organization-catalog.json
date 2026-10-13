@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sprind",
+    "name": "SPRIND",
+    "legalName": "SPRIND GmbH",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Germany's Federal Agency for Disruptive Innovation identifies, funds and supports breakthrough innovations. SPRIND leads development of Germany's national EUDI Wallet on behalf of the federal government; its EUDI Wallet Infrastructure business unit was transferred to Common Codes GmbH in 2026.",
+    "identifiers": {
+      "business_registration_number": "HRB 36977",
+      "vat_number": "DE328253854"
+    },
+    "website": "https://www.sprind.org/",
+    "logo": "https://www.google.com/s2/favicons?domain=sprind.org&sz=128",
+    "country": "DE",
+    "tags": [
+      "EUDI Wallet",
+      "d-you"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

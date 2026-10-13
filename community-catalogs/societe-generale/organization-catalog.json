@@ -1,0 +1,18 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:societe-generale",
+    "name": "Société Générale",
+    "legalName": "Société Générale S.A.",
+    "sectors": [
+      "finance"
+    ],
+    "description": "French multinational banking and financial-services group exploring the operational, compliance and customer-journey implications of eIDAS 2.0 and the European Digital Identity Wallet.",
+    "website": "https://www.societegenerale.com/en",
+    "logo": "https://www.google.com/s2/favicons?domain=societegenerale.com&sz=128",
+    "country": "FR",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

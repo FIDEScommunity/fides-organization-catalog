@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:nedap",
+    "name": "Nedap",
+    "legalName": "Nedap N.V.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Dutch technology company developing software and connected systems for healthcare, security, livestock and retail. Its healthcare solutions support secure professional access and digital care workflows.",
+    "website": "https://www.nedap.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=nedap.com&sz=128",
+    "country": "NL",
+    "ecosystemRoleCodes": [
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

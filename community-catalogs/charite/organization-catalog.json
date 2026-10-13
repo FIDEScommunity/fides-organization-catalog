@@ -1,0 +1,17 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:charite",
+    "name": "Charité – Universitätsmedizin Berlin",
+    "sectors": [
+      "healthcare"
+    ],
+    "description": "University hospital in Berlin combining patient care, research and teaching. Charité contributes healthcare data infrastructure and digital health expertise to European initiatives including EHD-X and HEALTH-X dataLOFT.",
+    "website": "https://www.charite.de/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=charite.de&sz=128",
+    "country": "DE",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

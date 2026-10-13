@@ -2380,5 +2380,65 @@
   },
   "org:khaklin-technologies": {
     "firstSeenAt": "2026-10-04T00:00:00.000Z"
+  },
+  "org:common-codes": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:dsgv": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:hashid": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:sparkassen-finanzgruppe": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:sprind": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:charite": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:dresden": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:fortid": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:han-university-of-applied-sciences": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:hanze-university-of-applied-sciences": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:morrison-foerster": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:nedap": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:pinkroccade-local-government": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:rabobank": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:radboud-university": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:sitra": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:societe-generale": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:sva": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:tickets-for-good": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
+  },
+  "org:verifiables": {
+    "firstSeenAt": "2026-10-13T09:54:27Z"
   }
 }

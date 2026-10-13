@@ -1,0 +1,23 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fortid",
+    "name": "FortID",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Croatian developer platform providing privacy-first, EUDI-compliant infrastructure for issuing, verifying and managing verifiable credentials, together with an EUDI-compatible personal wallet.",
+    "website": "https://fortid.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=fortid.com&sz=128",
+    "country": "HR",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "issuer",
+      "idv_provider",
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

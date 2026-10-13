@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:morrison-foerster",
+    "name": "Morrison Foerster",
+    "legalName": "Morrison & Foerster LLP",
+    "sectors": [
+      "digital"
+    ],
+    "description": "International law firm advising technology and regulated-sector clients on privacy, digital identity, financial regulation and compliance, including the implications of eIDAS 2.0 and the EUDI Wallet.",
+    "website": "https://www.mofo.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=mofo.com&sz=128",
+    "country": "US",
+    "ecosystemRoleCodes": [
+      "consultancy"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

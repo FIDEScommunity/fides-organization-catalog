@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:tickets-for-good",
+    "name": "Tickets for Good",
+    "legalName": "The Ticket Bank Ltd",
+    "sectors": [
+      "retail"
+    ],
+    "description": "UK social-impact ticketing platform offering free and discounted access to live events for healthcare workers, teachers, charity workers and communities facing financial barriers.",
+    "identifiers": {
+      "business_registration_number": "12149865"
+    },
+    "website": "https://www.ticketsforgood.com/uk",
+    "logo": "https://www.google.com/s2/favicons?domain=ticketsforgood.com&sz=128",
+    "country": "GB",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}

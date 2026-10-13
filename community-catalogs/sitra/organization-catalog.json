@@ -1,0 +1,18 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:sitra",
+    "name": "Sitra",
+    "legalName": "The Finnish Innovation Fund Sitra",
+    "sectors": [
+      "public_sector"
+    ],
+    "description": "Independent public fund operating under the supervision of the Finnish Parliament. Sitra develops future-oriented solutions and supports fair data economies, digital identity and European wallet adoption.",
+    "website": "https://www.sitra.fi/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=sitra.fi&sz=128",
+    "country": "FI",
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T09:54:27Z"
+}
