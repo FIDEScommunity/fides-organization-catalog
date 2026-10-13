@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:waltid",
+    "name": "walt.id",
+    "legalName": "Walt.ID GmbH",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Austrian digital identity infrastructure company providing open-source and enterprise issuer, verifier and wallet components for standards-based credential and trust ecosystems.",
+    "website": "https://walt.id/",
+    "logo": "https://www.google.com/s2/favicons?domain=walt.id&sz=128",
+    "country": "AT",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "business_wallet_provider",
+      "issuer",
+      "relying_party",
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

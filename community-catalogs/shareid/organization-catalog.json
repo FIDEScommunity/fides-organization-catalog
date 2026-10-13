@@ -1,0 +1,29 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:shareid",
+    "name": "ShareID",
+    "legalName": "ShareID SAS",
+    "sectors": [
+      "digital"
+    ],
+    "description": "French identity orchestration platform combining document verification, biometric liveness, EUDI Wallet attestations and strong authentication for regulated onboarding and authentication journeys.",
+    "identifiers": {
+      "business_registration_number": "884932203",
+      "vat_number": "FR32884932203"
+    },
+    "website": "https://www.shareid.ai/en",
+    "logo": "https://www.google.com/s2/favicons?domain=shareid.ai&sz=128",
+    "country": "FR",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party",
+      "idv_provider",
+      "software_vendor",
+      "eudi_wallet_intermediary"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

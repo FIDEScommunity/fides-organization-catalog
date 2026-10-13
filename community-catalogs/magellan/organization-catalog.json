@@ -1,0 +1,24 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:magellan",
+    "name": "Magellan",
+    "sectors": [
+      "digital"
+    ],
+    "description": "French management consulting and technology group providing cybersecurity, identity, cloud, data and digital-transformation services to private- and public-sector organizations.",
+    "website": "https://magellangroup.eu/",
+    "logo": "https://www.google.com/s2/favicons?domain=magellangroup.eu&sz=128",
+    "country": "FR",
+    "ecosystemRoleCodes": [
+      "relying_party",
+      "idv_provider",
+      "system_integrator",
+      "consultancy",
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

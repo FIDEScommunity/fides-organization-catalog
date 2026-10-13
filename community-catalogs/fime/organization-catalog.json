@@ -1,0 +1,22 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:fime",
+    "name": "Fime",
+    "sectors": [
+      "digital"
+    ],
+    "description": "French testing and certification specialist providing digital identity test suites, interoperability tools and relying-party simulation for EUDI Wallet, mdoc, mDL, ISO 18013-5, ISO 18013-7 and OpenID4VP implementations.",
+    "website": "https://fime.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=fime.com&sz=128",
+    "country": "FR",
+    "ecosystemRoleCodes": [
+      "conformity_assessment_body",
+      "certification_body",
+      "interop_testbed_operator"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

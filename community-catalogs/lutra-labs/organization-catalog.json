@@ -1,0 +1,29 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:lutra-labs",
+    "name": "Lutra Labs",
+    "legalName": "Lutra Labs d.o.o.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Slovenian deep-tech software company developing LutraID, a platform for issuing, verifying and managing digital credentials using OpenID4VC, SD-JWT VC and ISO mdoc.",
+    "identifiers": {
+      "business_registration_number": "9775820000",
+      "vat_number": "SI64070328"
+    },
+    "website": "https://lutralabs.io/en",
+    "logo": "https://www.google.com/s2/favicons?domain=lutralabs.io&sz=128",
+    "country": "SI",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party",
+      "software_vendor",
+      "trust_infrastructure_provider",
+      "interop_testbed_operator"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

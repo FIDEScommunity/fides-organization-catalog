@@ -2443,5 +2443,32 @@
   },
   "org:adpriva": {
     "firstSeenAt": "2026-10-13T21:31:31+00:00"
+  },
+  "org:datakeen": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:docaposte": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:fime": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:in-groupe": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:lutra-labs": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:magellan": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:patronymus": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:shareid": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:waltid": {
+    "firstSeenAt": "2026-10-13T19:52:00Z"
   }
 }

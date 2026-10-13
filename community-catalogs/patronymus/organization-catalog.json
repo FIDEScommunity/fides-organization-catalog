@@ -1,0 +1,23 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:patronymus",
+    "name": "Patronymus",
+    "sectors": [
+      "digital"
+    ],
+    "description": "French digital identity service that enables people and professionals to prove their identity during phone and video calls, helping organizations counter social engineering and impersonation fraud.",
+    "website": "https://patronymus.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=patronymus.com&sz=128",
+    "country": "FR",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party",
+      "idv_provider",
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

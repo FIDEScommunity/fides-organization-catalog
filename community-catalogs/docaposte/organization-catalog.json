@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:docaposte",
+    "name": "Docaposte",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Digital subsidiary of La Poste Group and French digital-trust provider delivering identity, electronic signature, transaction, archiving, sensitive-data and platform services for public institutions and regulated industries.",
+    "website": "https://www.docaposte.com/en/",
+    "logo": "https://www.google.com/s2/favicons?domain=docaposte.com&sz=128",
+    "country": "FR",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party",
+      "idv_provider",
+      "system_integrator",
+      "software_vendor",
+      "eidas_trust_service_provider",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

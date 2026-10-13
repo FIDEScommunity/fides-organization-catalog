@@ -1,0 +1,28 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:datakeen",
+    "name": "Datakeen",
+    "legalName": "Datakeen SAS",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Independent French identity verification and KYC provider specializing in document fraud detection, biometrics, NFC document reading and regulated onboarding for banks, insurers and public administrations.",
+    "identifiers": {
+      "business_registration_number": "825303910",
+      "vat_number": "FR31825303910"
+    },
+    "website": "https://www.datakeen.co/en",
+    "logo": "https://www.google.com/s2/favicons?domain=datakeen.co&sz=128",
+    "country": "FR",
+    "ecosystemRoleCodes": [
+      "relying_party",
+      "idv_provider",
+      "software_vendor",
+      "eudi_wallet_intermediary"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}

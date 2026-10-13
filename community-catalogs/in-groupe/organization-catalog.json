@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:in-groupe",
+    "name": "IN Groupe",
+    "legalName": "Groupe Imprimerie Nationale",
+    "sectors": [
+      "digital"
+    ],
+    "description": "French secure identity and trust-services group delivering physical and digital identity solutions, secure transactions and professional identity services to governments and organizations worldwide.",
+    "website": "https://ingroupe.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=ingroupe.com&sz=128",
+    "country": "FR",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party",
+      "idv_provider",
+      "system_integrator",
+      "software_vendor",
+      "trust_infrastructure_provider",
+      "interop_testbed_operator"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-13T19:52:00Z"
+}
