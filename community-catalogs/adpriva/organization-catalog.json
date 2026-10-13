@@ -1,0 +1,15 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:adpriva",
+    "name": "AdPriva",
+    "sectors": [
+      "digital"
+    ],
+    "description": "AdPriva builds privacy-preserving evidence infrastructure for digital interactions, generating tamper-evident consent and traffic records that third parties can independently verify.",
+    "country": "PT",
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-10-13T21:31:31+00:00"
+}
