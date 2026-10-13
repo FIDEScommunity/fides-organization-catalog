@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.18.5
+Stable tag: 1.18.6
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -27,6 +27,9 @@ Configure the update form page URL under **Settings → FIDES Organization Catal
 
 Renders a server-side carousel of organizations connected to documented use
 cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
+
+= 1.18.6 =
+* Redeploy marker for TS11 credential alias resolution; align FIDES_ORG_CATALOG_VERSION with the plugin header (tiles ≥ 1.13.32).
 
 = 1.18.5 =
 * Sync shared catalog UI for credential attestation-type alias resolution (tiles ≥ 1.13.32).
