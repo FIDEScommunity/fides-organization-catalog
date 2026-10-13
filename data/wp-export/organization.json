@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-10-09T04:34:01+00:00",
+    "generatedAt": "2026-10-13T21:31:31+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -79,6 +79,29 @@
             },
             "publishedAt": "2026-10-02 14:26:27",
             "updatedAt": "2026-10-02 14:26:27"
+        },
+        {
+            "itemId": "org:adpriva",
+            "slug": "adpriva",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:adpriva",
+                    "name": "AdPriva",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "AdPriva builds privacy-preserving evidence infrastructure for digital interactions, generating tamper-evident consent and traffic records that third parties can independently verify.",
+                    "country": "PT",
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-10-13T21:31:31+00:00"
+            },
+            "publishedAt": "2026-10-13 21:31:31",
+            "updatedAt": "2026-10-13 21:31:31"
         },
         {
             "itemId": "org:aqta",
