@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-10-13T21:31:31+00:00",
+    "generatedAt": "2026-10-15T04:58:06+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1553,7 +1553,7 @@
                     ],
                     "legalName": "Solidus Network",
                     "description": "Reusable KYC on open standards: verify once, present a credential anywhere, disclose only what is needed. W3C VC 2.0, SD-JWT VC, OpenID4VCI/VP, BBS+, did:solidus. Open source, running on testnet.",
-                    "logo": "https://solidus.network/logos/solidus_dark.png",
+                    "logo": "https://pbs.twimg.com/profile_images/1685523159133376512/KV-ZOzAJ_400x400.jpg",
                     "country": "TR",
                     "identifiers": {
                         "vat_number": "5730195611"
@@ -1565,10 +1565,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-08-13T19:33:24+00:00"
+                "lastUpdated": "2026-10-15T04:58:06+00:00"
             },
-            "publishedAt": "2026-08-13 19:33:24",
-            "updatedAt": "2026-08-13 19:33:24"
+            "publishedAt": "2026-10-15 04:58:06",
+            "updatedAt": "2026-10-15 04:58:06"
         },
         {
             "itemId": "org:sphereon",
