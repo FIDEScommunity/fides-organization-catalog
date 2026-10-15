@@ -2470,5 +2470,38 @@
   },
   "org:waltid": {
     "firstSeenAt": "2026-10-13T19:52:00Z"
+  },
+  "org:aba-dominican-republic": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:bankid-sweden": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:ecert-chile": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:eideasy": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:freja-eid-group": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:gse": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:msc-trustgate": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:oneid": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:trustasia": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:veriff": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
+  },
+  "org:vida": {
+    "firstSeenAt": "2026-10-15T05:20:00Z"
   }
 }

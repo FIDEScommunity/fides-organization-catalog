@@ -1,0 +1,21 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:aba-dominican-republic",
+    "name": "ABA Dominican Republic",
+    "legalName": "Asociación de Bancos Múltiples de la República Dominicana",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Industry association representing multiple banks operating in the Dominican Republic and supporting cooperation, innovation and responsible development across the country's banking sector.",
+    "website": "https://aba.org.do/",
+    "logo": "https://www.google.com/s2/favicons?domain=aba.org.do&sz=128",
+    "country": "DO",
+    "ecosystemRoleCodes": [
+      "industry_association"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

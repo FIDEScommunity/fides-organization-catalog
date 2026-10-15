@@ -1,0 +1,25 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:bankid-sweden",
+    "name": "BankID Sweden",
+    "legalName": "Finansiell ID-Teknik BID AB",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Swedish electronic identity provider that owns, manages and develops BankID, enabling individuals to authenticate, sign agreements and approve digital transactions.",
+    "identifiers": {
+      "business_registration_number": "556630-4928"
+    },
+    "website": "https://www.bankid.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=bankid.com&sz=128",
+    "country": "SE",
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

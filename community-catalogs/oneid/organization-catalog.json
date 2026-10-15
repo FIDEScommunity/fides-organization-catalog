@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:oneid",
+    "name": "OneID",
+    "legalName": "ONEID LIMITED",
+    "sectors": [
+      "digital"
+    ],
+    "description": "UK digital verification provider offering bank-verified identity, age and document verification, digital-wallet credential checks and identity orchestration.",
+    "identifiers": {
+      "business_registration_number": "11800511"
+    },
+    "website": "https://oneid.uk/",
+    "logo": "https://www.google.com/s2/favicons?domain=oneid.uk&sz=128",
+    "country": "GB",
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "software_vendor",
+      "system_integrator",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

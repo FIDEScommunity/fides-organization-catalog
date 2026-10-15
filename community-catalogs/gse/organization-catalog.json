@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:gse",
+    "name": "GSE",
+    "legalName": "Gestión de Seguridad Electrónica S.A.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Colombian digital certification provider offering electronic signatures, identity verification, digital certificates, timestamping and secure electronic archiving.",
+    "identifiers": {
+      "business_registration_number": "900204272-8"
+    },
+    "website": "https://gse.com.co/",
+    "logo": "https://www.google.com/s2/favicons?domain=gse.com.co&sz=128",
+    "country": "CO",
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

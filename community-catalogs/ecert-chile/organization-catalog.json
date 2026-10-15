@@ -1,0 +1,36 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:ecert-chile",
+    "name": "ecert",
+    "legalName": "Empresa Nacional de Certificación Electrónica SpA",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Chilean accredited electronic certification provider offering digital certificates, electronic signatures, identity verification and corporate digital transaction services.",
+    "identifiers": {
+      "business_registration_number": "96.928.180-5"
+    },
+    "website": "https://www.ecertla.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=ecertla.com&sz=128",
+    "country": "CL",
+    "certifications": [
+      {
+        "code": "iso27001",
+        "evidence": {
+          "kind": "url",
+          "url": "https://www.ecertla.com/nosotros/",
+          "label": "ecert company certifications and accreditations"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

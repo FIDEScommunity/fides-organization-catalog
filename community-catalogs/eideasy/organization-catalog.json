@@ -1,0 +1,39 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eideasy",
+    "name": "eID Easy",
+    "legalName": "EID Easy OÜ",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Estonian identity and trust-service integration provider offering a single API for electronic identification, electronic signatures, seals and EUDI Wallet verification.",
+    "identifiers": {
+      "business_registration_number": "14080014"
+    },
+    "website": "https://www.eideasy.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=eideasy.com&sz=128",
+    "country": "EE",
+    "certifications": [
+      {
+        "code": "iso27001",
+        "evidence": {
+          "kind": "url",
+          "url": "https://www.eideasy.com/provider-integrations",
+          "label": "eID Easy security and compliance information"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "relying_party",
+      "idv_provider",
+      "software_vendor",
+      "system_integrator",
+      "eudi_wallet_intermediary",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

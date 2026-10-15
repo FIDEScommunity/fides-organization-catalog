@@ -1,0 +1,25 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:msc-trustgate",
+    "name": "MSC Trustgate",
+    "legalName": "MSC TRUSTGATE.COM SDN. BHD.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Malaysian licensed certification authority providing PKI infrastructure, digital certificates, identity-based services and digital-signature solutions.",
+    "identifiers": {
+      "business_registration_number": "199901003331 (478231-X)"
+    },
+    "website": "https://www.msctrustgate.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=msctrustgate.com&sz=128",
+    "country": "MY",
+    "ecosystemRoleCodes": [
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

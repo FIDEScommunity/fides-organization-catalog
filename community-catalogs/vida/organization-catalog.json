@@ -1,0 +1,33 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:vida",
+    "name": "VIDA",
+    "legalName": "PT Indonesia Digital Identity",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Indonesian digital identity provider and licensed certification authority offering identity verification, biometric authentication, fraud prevention and legally binding digital signatures.",
+    "website": "https://vida.id/en",
+    "logo": "https://www.google.com/s2/favicons?domain=vida.id&sz=128",
+    "country": "ID",
+    "certifications": [
+      {
+        "code": "iso27001",
+        "evidence": {
+          "kind": "url",
+          "url": "https://vida.id/en/aboutus",
+          "label": "VIDA company and certification information"
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:veriff",
+    "name": "Veriff",
+    "legalName": "Veriff OÜ",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Estonian identity verification and fraud-prevention provider offering document checks, biometric face matching, liveness detection and related verification services through APIs and SDKs.",
+    "identifiers": {
+      "business_registration_number": "12932944",
+      "euid": "EEARIREG.12932944",
+      "lei": "98450082D0D460CD9E92"
+    },
+    "website": "https://www.veriff.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=veriff.com&sz=128",
+    "country": "EE",
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}

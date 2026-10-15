@@ -1,0 +1,23 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:trustasia",
+    "name": "TrustAsia",
+    "legalName": "TrustAsia Technologies, Inc.",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Chinese certification authority and digital trust provider offering PKI, digital certificates, electronic signatures, identity authentication, encryption and certificate lifecycle management.",
+    "website": "https://www.trustasia.com/index-en",
+    "logo": "https://www.google.com/s2/favicons?domain=trustasia.com&sz=128",
+    "country": "CN",
+    "ecosystemRoleCodes": [
+      "idv_provider",
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-15T05:20:00Z"
+}
