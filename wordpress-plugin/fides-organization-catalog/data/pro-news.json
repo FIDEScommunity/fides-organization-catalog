@@ -1,12 +1,19 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-10-12T06:21:18.327Z",
+  "generatedAt": "2026-10-19T06:09:58.353Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
     "org:credenco": {
       "items": [
+        {
+          "title": "Credenco Newsletter: October 2026 edition",
+          "url": "https://www.credenco.com/news/credenco-newsletter-october-2026",
+          "publishedAt": "2026-10-12",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Business Wallets for Wtta authorisation",
           "url": "https://www.credenco.com/news/ecp-symposium-wtta-authorisation",
@@ -34,18 +41,18 @@
           "publishedAt": "2026-09-18",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
-        },
-        {
-          "title": "We Won Two FIDES Community Awards",
-          "url": "https://www.credenco.com/news/fides-community-awards-2026-winners",
-          "publishedAt": "2026-09-16",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
         }
       ]
     },
     "org:mosip": {
       "items": [
+        {
+          "title": "Release Announcement : MOSIP v1.2.1.1!",
+          "url": "https://community.mosip.io/t/release-announcement-mosip-v1-2-1-1/2931",
+          "publishedAt": "2026-10-12",
+          "sourceLabel": "community.mosip.io",
+          "sourceKind": "site"
+        },
         {
           "title": "Reflecting on a Milestone: Technology Built before the Vocabulary Existed",
           "url": "https://mosip.substack.com/p/reflecting-on-a-milestone-technology",
@@ -74,13 +81,6 @@
           "title": "Release Announcement : Inji verify v1.0.0-alpha.1 is here!",
           "url": "https://community.mosip.io/t/release-announcement-inji-verify-v1-0-0-alpha-1-is-here/2853",
           "publishedAt": "2026-08-06",
-          "sourceLabel": "community.mosip.io",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Release Announcement : Inji Certify v1.0.0-alpha.1 is here!",
-          "url": "https://community.mosip.io/t/release-announcement-inji-certify-v1-0-0-alpha-1-is-here/2852",
-          "publishedAt": "2026-08-03",
           "sourceLabel": "community.mosip.io",
           "sourceKind": "site"
         }
@@ -169,25 +169,18 @@
           "publishedAt": "2026-09-01",
           "sourceLabel": "tradetrust.io",
           "sourceKind": "site"
-        },
-        {
-          "title": "Beyond the Bill of Lading: Building Trust in Digital Customs Documentation",
-          "url": "https://www.tradetrust.io/happenings-and-resources/teleport-hashgraph-partnership-042026/",
-          "publishedAt": "2026-08-20",
-          "sourceLabel": "tradetrust.io",
-          "sourceKind": "site"
-        },
-        {
-          "title": "China-Singapore End-to-End Digital Trade Pilot Successfully Implements eNCD Using AEOTradeChain and TradeTrust",
-          "url": "https://www.tradetrust.io/happenings-and-resources/china-singapore-end-to-end-digital-trade-pilot-successfully-implements-encd-using-aeotradechain-and-tradetrust/",
-          "publishedAt": "2026-08-17",
-          "sourceLabel": "tradetrust.io",
-          "sourceKind": "site"
         }
       ]
     },
     "org:netherlands": {
       "items": [
+        {
+          "title": "Op de hoogte blijven van de ontwikkeling van de Gemeenschappelijke Bronontsluiting?",
+          "url": "https://edi.pleio.nl/news/view/1a830165-0b2e-4e2e-b331-47f97e98663e/op-de-hoogte-blijven-van-de-ontwikkeling-van-de-gemeenschappelijke-bronontsluiting",
+          "publishedAt": "2026-10-13",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
         {
           "title": "Bijeenkomst introductie digitale rijbewijs 20 oktober 2026",
           "url": "https://edi.pleio.nl/news/view/b7786868-8121-40bf-af8c-aae8da14613f/bijeenkomst-introductie-digitale-rijbewijs-20-oktober-2026",
@@ -199,13 +192,6 @@
           "title": "Van Europese kaders naar de Nederlandse praktijk",
           "url": "https://edi.pleio.nl/news/view/e8c1d4ee-a55f-4766-b859-d4d21c3f08c2/van-europese-kaders-naar-de-nederlandse-praktijk",
           "publishedAt": "2026-10-02",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Nederland zoekt Europese samenwerking rond certificering EDI-wallets",
-          "url": "https://edi.pleio.nl/news/view/f968d7d1-7716-49ae-aa24-ab61048968b9/nederland-zoekt-europese-samenwerking-rond-certificering-edi-wallets",
-          "publishedAt": "2026-10-01",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
