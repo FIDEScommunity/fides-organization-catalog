@@ -1,0 +1,24 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:blokverse",
+    "name": "Blokverse",
+    "legalName": "BLOKVERS DOO",
+    "sectors": [
+      "digital"
+    ],
+    "description": "North Macedonian consultancy and technology lab. Maenada Synapse issues and verifies verifiable credentials with OID4VCI and OID4VP.",
+    "website": "https://blokverse.com",
+    "logo": "https://www.google.com/s2/favicons?domain=blokverse.com&sz=128",
+    "country": "MK",
+    "ecosystemRoleCodes": [
+      "consultancy",
+      "software_vendor",
+      "issuer",
+      "relying_party"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-10-20T07:00:00Z"
+}
