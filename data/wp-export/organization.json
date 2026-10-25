@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-10-15T04:58:06+00:00",
+    "generatedAt": "2026-10-25T10:08:13+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -690,6 +690,33 @@
             },
             "publishedAt": "2026-07-27 14:38:42",
             "updatedAt": "2026-07-27 14:38:42"
+        },
+        {
+            "itemId": "org:eudi-dev",
+            "slug": "eudi-dev",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:eudi-dev",
+                    "name": "eudi-dev",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Open source testing wallet",
+                    "logo": "https://raw.githubusercontent.com/eudi-dev/eudi-dev/main/docs/assets/logo-mark.png",
+                    "country": "DE",
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider"
+                    ],
+                    "fidesManifestoSupporter": true,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-10-25T10:08:13+00:00"
+            },
+            "publishedAt": "2026-10-25 10:08:13",
+            "updatedAt": "2026-10-25 10:08:13"
         },
         {
             "itemId": "org:fides",
