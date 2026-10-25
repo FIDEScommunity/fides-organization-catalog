@@ -55,8 +55,7 @@
       "eidas_trust_service_provider"
     ],
     "fidesManifestoSupporter": true,
-    "catalogTier": "Community",
-    "website": "https://www.banqup.com"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-08-24T14:26:56+00:00"
 }

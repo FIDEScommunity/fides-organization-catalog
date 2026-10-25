@@ -1,0 +1,19 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:eudi-dev",
+    "name": "eudi-dev",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Open source testing wallet",
+    "logo": "https://raw.githubusercontent.com/eudi-dev/eudi-dev/main/docs/assets/logo-mark.png",
+    "country": "DE",
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-10-25T10:08:13+00:00"
+}
