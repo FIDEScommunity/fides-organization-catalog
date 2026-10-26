@@ -34,6 +34,10 @@
               "name": "Qualified cert esig"
             },
             {
+              "code": "Q_ERDS",
+              "name": "Qualified electronic registered delivery service"
+            },
+            {
               "code": "Q_REM_MANAGE_Q_SEAL_CD",
               "name": "Qualified rem manage q seal cd"
             },
@@ -55,7 +59,8 @@
       "eidas_trust_service_provider"
     ],
     "fidesManifestoSupporter": true,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "website": "https://www.banqup.com"
   },
   "lastUpdated": "2026-08-24T14:26:56+00:00"
 }
