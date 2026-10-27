@@ -1,0 +1,19 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:obserwatorium-biz",
+    "name": "Obserwatorium.biz",
+    "sectors": [
+      "digital"
+    ],
+    "legalName": "Obserwatorium.biz sp. z o.o.",
+    "description": "An independent European consulting company that helps trust service and digital identity providers develop their solutions through support in standardisation, compliance, audits and commercialization.",
+    "country": "PL",
+    "ecosystemRoleCodes": [
+      "consultancy"
+    ],
+    "fidesManifestoSupporter": true,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-10-27T12:59:06+00:00"
+}
