@@ -1,12 +1,26 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-10-19T06:09:58.353Z",
+  "generatedAt": "2026-10-26T06:21:52.081590Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
     "org:credenco": {
       "items": [
+        {
+          "title": "Connecting digital identity and payments across Europe",
+          "url": "https://www.credenco.com/news/scarlet-digital-identity-payments",
+          "publishedAt": "2026-10-22",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Just ask your Business Wallet",
+          "url": "https://www.credenco.com/news/credenco-cli-ai-agent",
+          "publishedAt": "2026-10-20",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Credenco Newsletter: October 2026 edition",
           "url": "https://www.credenco.com/news/credenco-newsletter-october-2026",
@@ -25,20 +39,6 @@
           "title": "Bringing digital wallets into practice",
           "url": "https://www.credenco.com/news/centric-relatiedag-2026",
           "publishedAt": "2026-09-23",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Credenco in Stockholm",
-          "url": "https://www.credenco.com/news/credenco-in-stockholm-we-build-wp4",
-          "publishedAt": "2026-09-22",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Business Wallets in Action: The Recap",
-          "url": "https://www.credenco.com/news/business-wallets-in-action-recap",
-          "publishedAt": "2026-09-18",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
         }
@@ -82,6 +82,17 @@
           "url": "https://community.mosip.io/t/release-announcement-inji-verify-v1-0-0-alpha-1-is-here/2853",
           "publishedAt": "2026-08-06",
           "sourceLabel": "community.mosip.io",
+          "sourceKind": "site"
+        }
+      ]
+    },
+    "org:sphereon": {
+      "items": [
+        {
+          "title": "Trusted Business Transactions",
+          "url": "https://sphereon.com/trusted-business-transactions/",
+          "publishedAt": "2026-09-14",
+          "sourceLabel": "sphereon.com",
           "sourceKind": "site"
         }
       ]
@@ -175,6 +186,13 @@
     "org:netherlands": {
       "items": [
         {
+          "title": "Bijeenkomst Certificering van EDI-wallets: de Nederlandse aanpak - 5 november 2026",
+          "url": "https://edi.pleio.nl/news/view/3d60bd69-12ca-4b56-a32c-913f8b2fd19d/bijeenkomst-certificering-van-edi-wallets-de-nederlandse-aanpak-5-november-2026",
+          "publishedAt": "2026-10-21",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
           "title": "Op de hoogte blijven van de ontwikkeling van de Gemeenschappelijke Bronontsluiting?",
           "url": "https://edi.pleio.nl/news/view/1a830165-0b2e-4e2e-b331-47f97e98663e/op-de-hoogte-blijven-van-de-ontwikkeling-van-de-gemeenschappelijke-bronontsluiting",
           "publishedAt": "2026-10-13",
@@ -185,13 +203,6 @@
           "title": "Bijeenkomst introductie digitale rijbewijs 20 oktober 2026",
           "url": "https://edi.pleio.nl/news/view/b7786868-8121-40bf-af8c-aae8da14613f/bijeenkomst-introductie-digitale-rijbewijs-20-oktober-2026",
           "publishedAt": "2026-10-06",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Van Europese kaders naar de Nederlandse praktijk",
-          "url": "https://edi.pleio.nl/news/view/e8c1d4ee-a55f-4766-b859-d4d21c3f08c2/van-europese-kaders-naar-de-nederlandse-praktijk",
-          "publishedAt": "2026-10-02",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
