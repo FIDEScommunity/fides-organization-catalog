@@ -37,7 +37,8 @@
       }
     ],
     "fidesManifestoSupporter": false,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "website": "https://validatedid.com"
   },
   "lastUpdated": "2026-07-02T09:52:08+00:00"
 }

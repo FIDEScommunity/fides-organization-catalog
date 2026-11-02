@@ -35,7 +35,8 @@
       }
     ],
     "fidesManifestoSupporter": true,
-    "catalogTier": "Community"
+    "catalogTier": "Community",
+    "website": "https://www.digidentity.eu/en/home/"
   },
   "lastUpdated": "2026-07-02T10:12:35+00:00"
 }
