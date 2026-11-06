@@ -1,12 +1,19 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-10-26T06:21:52.081590Z",
+  "generatedAt": "2026-11-02T06:11:37.840851Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
     "org:credenco": {
       "items": [
+        {
+          "title": "Company Passport at the Nederland Digitaal Festival",
+          "url": "https://www.credenco.com/news/company-passport-nederland-digitaal-festival",
+          "publishedAt": "2026-10-29",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Connecting digital identity and payments across Europe",
           "url": "https://www.credenco.com/news/scarlet-digital-identity-payments",
@@ -34,53 +41,43 @@
           "publishedAt": "2026-09-29",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
-        },
-        {
-          "title": "Bringing digital wallets into practice",
-          "url": "https://www.credenco.com/news/centric-relatiedag-2026",
-          "publishedAt": "2026-09-23",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
         }
       ]
     },
     "org:mosip": {
       "items": [
         {
-          "title": "Release Announcement : MOSIP v1.2.1.1!",
-          "url": "https://community.mosip.io/t/release-announcement-mosip-v1-2-1-1/2931",
-          "publishedAt": "2026-10-12",
+          "title": "Release Announcement: eSignet v2.0.0 is here!",
+          "url": "https://community.mosip.io/t/release-announcement-esignet-v2-0-0-is-here/2949",
+          "publishedAt": "2026-10-27",
           "sourceLabel": "community.mosip.io",
           "sourceKind": "site"
         },
         {
-          "title": "Reflecting on a Milestone: Technology Built before the Vocabulary Existed",
-          "url": "https://mosip.substack.com/p/reflecting-on-a-milestone-technology",
-          "publishedAt": "2026-09-16",
-          "sourceLabel": "mosip.substack.com",
+          "title": "Security Advisory: eMudhra CA Certificate Key Compromise – Action Required for MOSIP Deployments As Applicable",
+          "url": "https://community.mosip.io/t/security-advisory-emudhra-ca-certificate-key-compromise-action-required-for-mosip-deployments-as-applicable/2948",
+          "publishedAt": "2026-10-27",
+          "sourceLabel": "community.mosip.io",
           "sourceKind": "site"
         },
         {
-          "title": "MOSIP broadens Inji beyond digital ID into open credentialing platform",
-          "url": "https://www.biometricupdate.com/202609/mosip-broadens-inji-beyond-digital-id-into-open-credentialing-platform",
-          "publishedAt": "2026-09-01",
-          "sourceLabel": "biometricupdate.com",
+          "title": "📢 MOSIP Decode 2026 – Submission Deadline Extended to 2 November 2026!",
+          "url": "https://community.mosip.io/t/mosip-decode-2026-submission-deadline-extended-to-2-november-2026/2947",
+          "publishedAt": "2026-10-27",
+          "sourceLabel": "community.mosip.io",
           "sourceKind": "site"
         },
         {
-          "title": "Inji Wallet v1.0.0-alpha.1",
-          "url": "https://github.com/inji/inji-wallet/releases/tag/v1.0.0-alpha.1",
-          "publishedAt": "2026-08-17",
-          "sourceLabel": "GitHub",
-          "sourceKind": "github_release",
-          "walletIds": [
-            "inji-wallet"
-          ]
+          "title": "Inji Stack Open Product Call – 15th October 2026",
+          "url": "https://community.mosip.io/t/inji-stack-open-product-call-15th-october-2026/2932",
+          "publishedAt": "2026-10-15",
+          "sourceLabel": "community.mosip.io",
+          "sourceKind": "site"
         },
         {
-          "title": "Release Announcement : Inji verify v1.0.0-alpha.1 is here!",
-          "url": "https://community.mosip.io/t/release-announcement-inji-verify-v1-0-0-alpha-1-is-here/2853",
-          "publishedAt": "2026-08-06",
+          "title": "Release Announcement : MOSIP v1.2.1.1!",
+          "url": "https://community.mosip.io/t/release-announcement-mosip-v1-2-1-1/2931",
+          "publishedAt": "2026-10-12",
           "sourceLabel": "community.mosip.io",
           "sourceKind": "site"
         }
@@ -88,6 +85,20 @@
     },
     "org:sphereon": {
       "items": [
+        {
+          "title": "Klaar voor eIDAS-2 in 90 dagen",
+          "url": "https://sphereon.com/nl/klaar-voor-eidas2-in-90-dagen/",
+          "publishedAt": "2026-10-31",
+          "sourceLabel": "sphereon.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Digital Product Passport (DPP) Accelerator",
+          "url": "https://sphereon.com/nl/digital-product-passport-dpp-accelerator/",
+          "publishedAt": "2026-10-31",
+          "sourceLabel": "sphereon.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Trusted Business Transactions",
           "url": "https://sphereon.com/trusted-business-transactions/",
@@ -172,19 +183,15 @@
         }
       ]
     },
-    "org:imda": {
-      "items": [
-        {
-          "title": "Advancing Trade Efficiency with SAP's Business Technology Platform (BTP)",
-          "url": "https://www.tradetrust.io/happenings-and-resources/advancing-trade-efficiency-with-sap-s-business-technology-platform--btp-/",
-          "publishedAt": "2026-09-01",
-          "sourceLabel": "tradetrust.io",
-          "sourceKind": "site"
-        }
-      ]
-    },
     "org:netherlands": {
       "items": [
+        {
+          "title": "Oploop: de quantumdreiging voor het EDI-stelsel en wallets – 25 november 2026",
+          "url": "https://edi.pleio.nl/news/view/8bcc1cf7-a854-405e-8161-e5f18b08befa/oploop-de-quantumdreiging-voor-het-edi-stelsel-en-wallets-25-november-2026",
+          "publishedAt": "2026-10-22",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
         {
           "title": "Bijeenkomst Certificering van EDI-wallets: de Nederlandse aanpak - 5 november 2026",
           "url": "https://edi.pleio.nl/news/view/3d60bd69-12ca-4b56-a32c-913f8b2fd19d/bijeenkomst-certificering-van-edi-wallets-de-nederlandse-aanpak-5-november-2026",
@@ -196,13 +203,6 @@
           "title": "Op de hoogte blijven van de ontwikkeling van de Gemeenschappelijke Bronontsluiting?",
           "url": "https://edi.pleio.nl/news/view/1a830165-0b2e-4e2e-b331-47f97e98663e/op-de-hoogte-blijven-van-de-ontwikkeling-van-de-gemeenschappelijke-bronontsluiting",
           "publishedAt": "2026-10-13",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Bijeenkomst introductie digitale rijbewijs 20 oktober 2026",
-          "url": "https://edi.pleio.nl/news/view/b7786868-8121-40bf-af8c-aae8da14613f/bijeenkomst-introductie-digitale-rijbewijs-20-oktober-2026",
-          "publishedAt": "2026-10-06",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
