@@ -19,8 +19,8 @@
  */
 
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, "..");
@@ -293,7 +293,9 @@ function slugify(s) {
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "")
     .toLowerCase();
-  return ascii.slice(0, 80);
+  // Trim after the length cap. A cut can land on the hyphen between words,
+  // and organization ids must not end with "-".
+  return ascii.slice(0, 80).replace(/-+$/g, "");
 }
 
 function firstWebsiteUrl(electronicAddresses) {
@@ -643,7 +645,15 @@ async function main() {
   console.log(`  Warn (no website): ${skippedNoWebsite}`);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+const isDirectRun =
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(resolve(process.argv[1])).href;
+
+if (isDirectRun) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}
+
+export { slugify };
