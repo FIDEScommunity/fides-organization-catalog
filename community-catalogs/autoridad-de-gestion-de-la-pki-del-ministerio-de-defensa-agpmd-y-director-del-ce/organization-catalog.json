@@ -25,10 +25,6 @@
             {
               "code": "Q_CERT_ESIG",
               "name": "Qualified cert esig"
-            },
-            {
-              "code": "Q_WAC",
-              "name": "Qualified website authentication certificate"
             }
           ]
         }
