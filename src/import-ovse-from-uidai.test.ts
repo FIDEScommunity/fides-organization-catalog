@@ -12,6 +12,7 @@ import {
   removeOvseFromExisting,
   slugify,
 } from '../scripts/lib/ovseFromUidai.mjs';
+import { slugify as qtspSlugify } from '../scripts/import-qtsp-from-efda.mjs';
 
 const SAMPLE = `
 List of Registered Offline Verification Seeking Entity
@@ -164,5 +165,15 @@ describe('buildNewOvseOrganization', () => {
 describe('slugify', () => {
   it('builds folder slugs from normalized names', () => {
     assert.equal(slugify('digital india corporation'), 'digital-india-corporation');
+  });
+
+  it('drops a trailing hyphen left by the 80-character cap', () => {
+    const name = 'Autoridad de Gestion de la PKI I3D del Ministerio de Defensa AGPMDEF y Director del Centro';
+    for (const makeSlug of [slugify, qtspSlugify]) {
+      const slug = makeSlug(name);
+      assert.ok(slug.length <= 80);
+      assert.match(slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+      assert.equal(slug.endsWith('-'), false);
+    }
   });
 });

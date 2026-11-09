@@ -42,7 +42,9 @@ export function slugify(value) {
     .replace(/-+/g, '-')
     .replace(/^-|-$/g, '')
     .toLowerCase();
-  return ascii.slice(0, 80);
+  // Trim after the length cap. A cut can land on the hyphen between words,
+  // and organization ids must not end with "-".
+  return ascii.slice(0, 80).replace(/-+$/g, '');
 }
 
 export function normalizeOrgName(value) {
