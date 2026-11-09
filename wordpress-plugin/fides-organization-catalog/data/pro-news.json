@@ -1,12 +1,26 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-11-02T06:11:37.840851Z",
+  "generatedAt": "2026-11-09T06:20:57.738449Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
     "org:credenco": {
       "items": [
+        {
+          "title": "Credenco Newsletter: November 2026 edition",
+          "url": "https://www.credenco.com/news/credenco-newsletter-november-2026",
+          "publishedAt": "2026-11-05",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "New product updates across the Credenco ecosystem",
+          "url": "https://www.credenco.com/news/product-updates-across-the-credenco-ecosystem",
+          "publishedAt": "2026-11-02",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Company Passport at the Nederland Digitaal Festival",
           "url": "https://www.credenco.com/news/company-passport-nederland-digitaal-festival",
@@ -25,20 +39,6 @@
           "title": "Just ask your Business Wallet",
           "url": "https://www.credenco.com/news/credenco-cli-ai-agent",
           "publishedAt": "2026-10-20",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Credenco Newsletter: October 2026 edition",
-          "url": "https://www.credenco.com/news/credenco-newsletter-october-2026",
-          "publishedAt": "2026-10-12",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Business Wallets for Wtta authorisation",
-          "url": "https://www.credenco.com/news/ecp-symposium-wtta-authorisation",
-          "publishedAt": "2026-09-29",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
         }
@@ -143,6 +143,13 @@
     "org:webuild": {
       "items": [
         {
+          "title": "Simplifying cross-border business: WE BUILD Consortium meets in Bucharest to take stock of its first year and plan the road ahead",
+          "url": "https://www.webuildconsortium.eu/news/simplifying-cross-border-business-we-build-consortium-meets-in-bucharest-to-take-stock-of-its-first-year-and-plan-the-road-ahead",
+          "publishedAt": "2026-11-04",
+          "sourceLabel": "webuildconsortium.eu",
+          "sourceKind": "site"
+        },
+        {
           "title": "WE BUILD at Global Digital Collaboration Conference 2026",
           "url": "https://www.webuildconsortium.eu/news/we-build-at-global-digital-collaboration-conference-2026",
           "publishedAt": "2026-09-18",
@@ -186,23 +193,23 @@
     "org:netherlands": {
       "items": [
         {
+          "title": "Concept Nederlandse Certificeringssysteem en – regeling(en) voor EDI-wallets gepubliceerd",
+          "url": "https://edi.pleio.nl/news/view/13ad02e3-3e4c-4c30-9c37-7c34382a849b/concept-nederlandse-certificeringssysteem-en-regelingen-voor-edi-wallets-gepubliceerd",
+          "publishedAt": "2026-11-06",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Nieuwe versie EDI-stelselarchitectuur beschikbaar",
+          "url": "https://edi.pleio.nl/news/view/258b94cf-e0da-49bd-af07-c24c6f034aba/nieuwe-versie-edi-stelselarchitectuur-beschikbaar",
+          "publishedAt": "2026-11-04",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
           "title": "Oploop: de quantumdreiging voor het EDI-stelsel en wallets – 25 november 2026",
           "url": "https://edi.pleio.nl/news/view/8bcc1cf7-a854-405e-8161-e5f18b08befa/oploop-de-quantumdreiging-voor-het-edi-stelsel-en-wallets-25-november-2026",
           "publishedAt": "2026-10-22",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Bijeenkomst Certificering van EDI-wallets: de Nederlandse aanpak - 5 november 2026",
-          "url": "https://edi.pleio.nl/news/view/3d60bd69-12ca-4b56-a32c-913f8b2fd19d/bijeenkomst-certificering-van-edi-wallets-de-nederlandse-aanpak-5-november-2026",
-          "publishedAt": "2026-10-21",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Op de hoogte blijven van de ontwikkeling van de Gemeenschappelijke Bronontsluiting?",
-          "url": "https://edi.pleio.nl/news/view/1a830165-0b2e-4e2e-b331-47f97e98663e/op-de-hoogte-blijven-van-de-ontwikkeling-van-de-gemeenschappelijke-bronontsluiting",
-          "publishedAt": "2026-10-13",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
