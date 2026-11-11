@@ -7,6 +7,7 @@
       "public_sector"
     ],
     "description": "The National Registration Bureau (NRB) is the government department responsible for Malawi’s national registration and identification system, operating under the Ministry of Homeland Security. It prov",
+    "logo": "https://www.nrb.gov.mw/wp-content/uploads/2025/06/logo-mw-267x300.png.webp",
     "country": "MW",
     "ecosystemRoleCodes": [
       "personal_wallet_provider"
@@ -14,5 +15,5 @@
     "fidesManifestoSupporter": false,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-11-11T14:12:43+00:00"
+  "lastUpdated": "2026-11-11T14:17:53+00:00"
 }
