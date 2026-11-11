@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-10-27T12:59:06+00:00",
+    "generatedAt": "2026-11-11T14:12:43+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1293,6 +1293,32 @@
             },
             "publishedAt": "2026-07-02 09:49:59",
             "updatedAt": "2026-07-02 09:49:59"
+        },
+        {
+            "itemId": "org:national-registration-bureau-malawi",
+            "slug": "national-registration-bureau-malawi",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:national-registration-bureau-malawi",
+                    "name": "National Registration Bureau (Malawi)",
+                    "sectors": [
+                        "public_sector"
+                    ],
+                    "description": "The National Registration Bureau (NRB) is the government department responsible for Malawi’s national registration and identification system, operating under the Ministry of Homeland Security. It prov",
+                    "country": "MW",
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-11-11T14:12:43+00:00"
+            },
+            "publishedAt": "2026-11-11 14:12:43",
+            "updatedAt": "2026-11-11 14:12:43"
         },
         {
             "itemId": "org:nedmod",
