@@ -1,12 +1,26 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-11-09T06:20:57.738449Z",
+  "generatedAt": "2026-11-16T06:13:02.368860Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
     "org:credenco": {
       "items": [
+        {
+          "title": "Who can act on behalf of your business?",
+          "url": "https://www.credenco.com/news/who-acts-on-behalf-of-your-business",
+          "publishedAt": "2026-11-12",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Credenco at the WE BUILD General Assembly in Bucharest",
+          "url": "https://www.credenco.com/news/credenco-at-we-build-general-assembly-bucharest",
+          "publishedAt": "2026-11-10",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Credenco Newsletter: November 2026 edition",
           "url": "https://www.credenco.com/news/credenco-newsletter-november-2026",
@@ -27,25 +41,32 @@
           "publishedAt": "2026-10-29",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
-        },
-        {
-          "title": "Connecting digital identity and payments across Europe",
-          "url": "https://www.credenco.com/news/scarlet-digital-identity-payments",
-          "publishedAt": "2026-10-22",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Just ask your Business Wallet",
-          "url": "https://www.credenco.com/news/credenco-cli-ai-agent",
-          "publishedAt": "2026-10-20",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
         }
       ]
     },
     "org:mosip": {
       "items": [
+        {
+          "title": "📢 Release Announcement: Inji Verify - Version 1.0.0-rc.1 is here!",
+          "url": "https://community.mosip.io/t/release-announcement-inji-verify-version-1-0-0-rc-1-is-here/2974",
+          "publishedAt": "2026-11-14",
+          "sourceLabel": "community.mosip.io",
+          "sourceKind": "site"
+        },
+        {
+          "title": "📢 Release Announcement: Android Registration Client v1.2.0 is here!",
+          "url": "https://community.mosip.io/t/release-announcement-android-registration-client-v1-2-0-is-here/2973",
+          "publishedAt": "2026-11-13",
+          "sourceLabel": "community.mosip.io",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Release Announcement: ID Repository 1.2.3.1 is here!",
+          "url": "https://community.mosip.io/t/release-announcement-id-repository-1-2-3-1-is-here/2972",
+          "publishedAt": "2026-11-13",
+          "sourceLabel": "community.mosip.io",
+          "sourceKind": "site"
+        },
         {
           "title": "Release Announcement: eSignet v2.0.0 is here!",
           "url": "https://community.mosip.io/t/release-announcement-esignet-v2-0-0-is-here/2949",
@@ -57,27 +78,6 @@
           "title": "Security Advisory: eMudhra CA Certificate Key Compromise – Action Required for MOSIP Deployments As Applicable",
           "url": "https://community.mosip.io/t/security-advisory-emudhra-ca-certificate-key-compromise-action-required-for-mosip-deployments-as-applicable/2948",
           "publishedAt": "2026-10-27",
-          "sourceLabel": "community.mosip.io",
-          "sourceKind": "site"
-        },
-        {
-          "title": "📢 MOSIP Decode 2026 – Submission Deadline Extended to 2 November 2026!",
-          "url": "https://community.mosip.io/t/mosip-decode-2026-submission-deadline-extended-to-2-november-2026/2947",
-          "publishedAt": "2026-10-27",
-          "sourceLabel": "community.mosip.io",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Inji Stack Open Product Call – 15th October 2026",
-          "url": "https://community.mosip.io/t/inji-stack-open-product-call-15th-october-2026/2932",
-          "publishedAt": "2026-10-15",
-          "sourceLabel": "community.mosip.io",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Release Announcement : MOSIP v1.2.1.1!",
-          "url": "https://community.mosip.io/t/release-announcement-mosip-v1-2-1-1/2931",
-          "publishedAt": "2026-10-12",
           "sourceLabel": "community.mosip.io",
           "sourceKind": "site"
         }
@@ -155,62 +155,44 @@
           "publishedAt": "2026-09-18",
           "sourceLabel": "webuildconsortium.eu",
           "sourceKind": "site"
-        },
-        {
-          "title": "MEPs back European Business Wallets, to cut red tape and boost competitiveness",
-          "url": "https://www.webuildconsortium.eu/news/meps-back-european-business-wallets-to-cut-red-tape-and-boost-competitiveness",
-          "publishedAt": "2026-09-17",
-          "sourceLabel": "webuildconsortium.eu",
-          "sourceKind": "site"
-        }
-      ]
-    },
-    "org:germany": {
-      "items": [
-        {
-          "title": "d-you: Name and Logo of Germany’s EUDI Wallet Unveiled",
-          "url": "https://eudi-wallet.gov.de/en/news/d-you-name-and-logo-of-germany-s-eudi-wallet-unveiled",
-          "publishedAt": "2026-09-15",
-          "sourceLabel": "eudi-wallet.gov.de",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Community Event EUDI ON 2026 - The EUDI Wallet Summit",
-          "url": "https://eudi-wallet.gov.de/en/news/eudi-on-community-event-2026",
-          "publishedAt": "2026-09-15",
-          "sourceLabel": "eudi-wallet.gov.de",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Everyday Life with Digital Credentials: Simple and Secure",
-          "url": "https://eudi-wallet.gov.de/en/news/digitale-nachweise-einfach-sicher-datensparsam",
-          "publishedAt": "2026-09-15",
-          "sourceLabel": "eudi-wallet.gov.de",
-          "sourceKind": "site"
         }
       ]
     },
     "org:netherlands": {
       "items": [
         {
+          "title": "NL Wallet onder de motorkap: in gesprek met het ontwikkelteam",
+          "url": "https://edi.pleio.nl/news/view/0506f2b2-d756-44f7-9ad6-5b8fbe5d978d/nl-wallet-onder-de-motorkap-in-gesprek-met-het-ontwikkelteam",
+          "publishedAt": "2026-11-13",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site",
+          "walletIds": [
+            "national-eudi-wallet-netherlands"
+          ]
+        },
+        {
+          "title": "Van publieke bron naar wallets: afwegingskader voor bronhouders",
+          "url": "https://edi.pleio.nl/news/view/2c8e3bcb-eb06-406f-86f0-3ffe7ac50d24/van-publieke-bron-naar-wallets-afwegingskader-voor-bronhouders",
+          "publishedAt": "2026-11-12",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
           "title": "Concept Nederlandse Certificeringssysteem en – regeling(en) voor EDI-wallets gepubliceerd",
           "url": "https://edi.pleio.nl/news/view/13ad02e3-3e4c-4c30-9c37-7c34382a849b/concept-nederlandse-certificeringssysteem-en-regelingen-voor-edi-wallets-gepubliceerd",
           "publishedAt": "2026-11-06",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
-        },
+        }
+      ]
+    },
+    "org:bhutan-ndi": {
+      "items": [
         {
-          "title": "Nieuwe versie EDI-stelselarchitectuur beschikbaar",
-          "url": "https://edi.pleio.nl/news/view/258b94cf-e0da-49bd-af07-c24c6f034aba/nieuwe-versie-edi-stelselarchitectuur-beschikbaar",
-          "publishedAt": "2026-11-04",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Oploop: de quantumdreiging voor het EDI-stelsel en wallets – 25 november 2026",
-          "url": "https://edi.pleio.nl/news/view/8bcc1cf7-a854-405e-8161-e5f18b08befa/oploop-de-quantumdreiging-voor-het-edi-stelsel-en-wallets-25-november-2026",
-          "publishedAt": "2026-10-22",
-          "sourceLabel": "edi.pleio.nl",
+          "title": "Bhutan NDI Launches New Accessibility Features to Advance Digital Inclusion",
+          "url": "https://www.bhutanndi.com/resources/news/bhutan-ndi-launches-new-accessibility-features-to-advance-digital-inclusion",
+          "publishedAt": "2026-11-16",
+          "sourceLabel": "bhutanndi.com",
           "sourceKind": "site"
         }
       ]
