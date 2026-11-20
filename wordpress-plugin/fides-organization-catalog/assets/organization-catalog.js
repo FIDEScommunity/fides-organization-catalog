@@ -765,7 +765,6 @@
     certification: [],
     manifestoSupporter: [],
     verifiedProfile: [],
-    officialOnly: false,
     ids: [],
   };
 
@@ -1800,7 +1799,7 @@
   }
 
   function getActiveFilterCount() {
-    return filters.country.length + filters.role.length + filters.sector.length + filters.certification.length + filters.manifestoSupporter.length + filters.verifiedProfile.length + (filters.officialOnly ? 1 : 0) + filters.ids.length;
+    return filters.country.length + filters.role.length + filters.sector.length + filters.certification.length + filters.manifestoSupporter.length + filters.verifiedProfile.length + filters.ids.length;
   }
 
   /** Per-option counts over the full loaded list (same idea as issuer-catalog facets). */
@@ -1810,10 +1809,8 @@
       sector: {},
       certification: {},
       role: Object.fromEntries(ECOSYSTEM_ROLE_OPTIONS.map((opt) => [opt.value, 0])),
-      officialOnly: 0,
     };
     for (const org of organizations) {
-      if (orgCatalogTierIsPro(org)) facets.officialOnly += 1;
       const c = org.country;
       if (c) facets.country[c] = (facets.country[c] || 0) + 1;
       for (const s of orgSectorCodes(org)) {
@@ -1843,7 +1840,6 @@
       if (filters.certification.length && !orgMatchesCertificationFilter(org)) return false;
       if (filters.manifestoSupporter.includes('listed') && org.fidesManifestoSupporter !== true) return false;
       if (filters.verifiedProfile.includes('listed') && !orgShowsBluePagesListBadge(org)) return false;
-      if (tierUiEnabled() && filters.officialOnly && !orgCatalogTierIsPro(org)) return false;
       if (filters.search) {
         const q = filters.search.toLowerCase();
         const inName = (org.name || '').toLowerCase().includes(q);
@@ -2296,7 +2292,6 @@
               }).join('')}
             </div>
           </div>` : '';
-    const showOfficialOnlyFilter = filterOptionVisible(facets.officialOnly || 0, filters.officialOnly ? ['true'] : [], 'true');
     return `
       <aside class="fides-sidebar">
         <div class="fides-sidebar-header">
@@ -2307,15 +2302,6 @@
           </div>
         </div>
         <div class="fides-sidebar-content">
-          ${tierUiEnabled() && showOfficialOnlyFilter ? `
-          <div class="fides-quick-filters">
-            <span class="fides-quick-filters-title">Quick filters</span>
-            <label class="fides-filter-checkbox">
-              <input type="checkbox" data-filter="officialOnly" data-value="true" ${filters.officialOnly ? 'checked' : ''}>
-              <span>Official accounts only<span class="fides-filter-option-count">(${facets.officialOnly || 0})</span></span>
-            </label>
-          </div>
-          ` : ''}
           ${roleFilterGroup}
           ${renderCheckboxGroup('Country', 'country', countryOptions, null, facets)}
           ${renderCheckboxGroup('Sector', 'sector', SECTOR_CODES_ALPHABETIC, SECTOR_LABELS, facets)}
@@ -2929,22 +2915,12 @@
 
     const clearBtn = root.querySelector('#fides-clear');
     if (clearBtn) clearBtn.addEventListener('click', () => {
-      filters = { search: '', country: [], role: [], sector: [], certification: [], manifestoSupporter: [], verifiedProfile: [], officialOnly: false, ids: [] };
+      filters = { search: '', country: [], role: [], sector: [], certification: [], manifestoSupporter: [], verifiedProfile: [], ids: [] };
       const url = new URL(window.location.href);
       url.searchParams.delete('sector');
       url.searchParams.delete('country');
       history.replaceState(null, '', url.toString());
       render();
-    });
-
-    root.querySelectorAll('.fides-quick-filters input[data-filter]').forEach((input) => {
-      input.addEventListener('change', (e) => {
-        const filterType = e.target.dataset.filter;
-        if (filterType === 'officialOnly') {
-          filters.officialOnly = e.target.checked;
-          render();
-        }
-      });
     });
 
     root.querySelectorAll('[data-filter-group]').forEach((input) => {
