@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.18.8
+ * Version: 1.18.9
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.18.8');
+define('FIDES_ORG_CATALOG_VERSION', '1.18.9');
 define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
 define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
 /** Bump this when share rewrite rules change so existing sites flush once. */
@@ -636,8 +636,26 @@ class Fides_Organization_Catalog {
  * @return array<int, string>
  */
 function fides_org_catalog_share_query_vars(array $vars): array {
-    $vars[] = 'org';
+    foreach (array('org', 'cert', 'sector', 'country', 'role', 'catalog_page') as $key) {
+        $vars[] = $key;
+    }
     return $vars;
+}
+
+/**
+ * Keep listing filter parameters when WordPress builds a canonical redirect.
+ *
+ * @param string|false $redirect_url Computed canonical URL, or false.
+ * @return string|false
+ */
+function fides_org_catalog_preserve_filter_query($redirect_url) {
+    foreach (array('cert', 'sector', 'country', 'role', 'catalog_page') as $key) {
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+        if (isset($_GET[$key]) && (string) wp_unslash($_GET[$key]) !== '') {
+            return false;
+        }
+    }
+    return $redirect_url;
 }
 
 function fides_org_catalog_listing_page_id(): int {
@@ -724,6 +742,7 @@ function fides_org_catalog_redirect_query_share_urls(): void {
 add_action('init', 'fides_org_catalog_register_share_rewrites', 6);
 add_action('init', 'fides_org_catalog_maybe_flush_share_rewrites', 20);
 add_filter('query_vars', 'fides_org_catalog_share_query_vars');
+add_filter('redirect_canonical', 'fides_org_catalog_preserve_filter_query', 10, 1);
 add_action('template_redirect', 'fides_org_catalog_redirect_query_share_urls', 1);
 
 Fides_Organization_Catalog::get_instance();

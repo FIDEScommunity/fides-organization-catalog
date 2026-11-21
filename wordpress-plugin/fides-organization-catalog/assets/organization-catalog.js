@@ -2919,6 +2919,7 @@
       const url = new URL(window.location.href);
       url.searchParams.delete('sector');
       url.searchParams.delete('country');
+      url.searchParams.delete('cert');
       history.replaceState(null, '', url.toString());
       render();
     });
@@ -2931,6 +2932,7 @@
         if (!filters[group]) filters[group] = [];
         if (e.target.checked) { if (!filters[group].includes(value)) filters[group].push(value); }
         else { filters[group] = filters[group].filter((v) => v !== value); }
+        if (group === 'certification') syncCertificationFilterUrl();
         render();
       });
     });
@@ -3123,6 +3125,7 @@
     await loadUseCaseIndex();
     applySectorFromUrl();
     applyCountryFromUrl();
+    applyCertificationFromUrl();
     listingPage = listingPageFromLocation();
     try {
       if (organizations.length === 0) {
@@ -3162,6 +3165,41 @@
     if (cc) {
       filters.country = [cc];
     }
+  }
+
+  /** Map ?cert= values onto certification filter codes (parent, or parent:child). */
+  function normalizeCertificationFilterValue(raw) {
+    const value = String(raw || '').trim();
+    if (!value) return '';
+    const idx = value.indexOf(':');
+    const parentRaw = (idx === -1 ? value : value.slice(0, idx)).trim();
+    const child = idx === -1 ? '' : value.slice(idx + 1).trim();
+    const parent = Object.keys(CERTIFICATION_LABELS).find((code) => code.toLowerCase() === parentRaw.toLowerCase());
+    if (!parent) return '';
+    if (!child) return parent;
+    if (!/^[A-Za-z0-9_-]+$/.test(child)) return '';
+    return `${parent}:${child}`;
+  }
+
+  /** Pre-fill the certification filter from ?cert=qtsp (comma-separated). */
+  function applyCertificationFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const values = String(params.get('cert') || '')
+      .split(',')
+      .map(normalizeCertificationFilterValue)
+      .filter(Boolean);
+    const unique = [...new Set(values)];
+    if (!unique.length) return;
+    filters.certification = unique;
+    filterGroupState.certification = true;
+  }
+
+  /** Keep ?cert= aligned with the certification checkboxes. */
+  function syncCertificationFilterUrl() {
+    const url = new URL(window.location.href);
+    if (filters.certification.length) url.searchParams.set('cert', filters.certification.join(','));
+    else url.searchParams.delete('cert');
+    history.replaceState(null, '', url.toString());
   }
 
   function hideStandaloneSsrForJsUsers() {
