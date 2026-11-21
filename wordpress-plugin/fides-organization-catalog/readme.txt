@@ -2,7 +2,7 @@
 Contributors: fidescommunity
 Requires at least: 5.0
 Tested up to: 6.7
-Stable tag: 1.18.7
+Stable tag: 1.18.8
 License: Apache-2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 
@@ -35,6 +35,9 @@ cases. Supports `cards`, `catalog_url`, and `show_profile_cta` attributes.
 * Sync shared catalog UI for credential attestation-type alias resolution (tiles ≥ 1.13.32).
 
 == Changelog ==
+
+= 1.18.8 =
+* Open the catalog with `?cert=qtsp` (or another certification code) so that filter is selected.
 
 = 1.18.7 =
 * Sync shared catalog UI so full listing fields stay visible when open listing fields is on. Community and Official badges are unchanged (tiles ≥ 1.13.33).
