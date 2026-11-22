@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-11-11T14:17:53+00:00",
+    "generatedAt": "2026-11-22T18:16:37+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -17,8 +17,12 @@
                         "digital"
                     ],
                     "description": "An independent research and engineering company inventing, specifying, and shipping the infrastructure that lets humans, services, and AI agents prove who they are, and act under verifiable authority.",
+                    "website": "https://2060.io",
                     "logo": "https://www.google.com/s2/favicons?domain=2060.io&sz=128",
                     "country": "EE",
+                    "contact": {
+                        "email": "f@2060.io"
+                    },
                     "identifiers": {
                         "business_registration_number": "16853041",
                         "vat_number": "EE102810457",
@@ -70,6 +74,7 @@
                         "digital"
                     ],
                     "description": "Consulting and technology firm focused on digital identity solutions and interoperable credential systems.",
+                    "website": "https://www.a4advisory.com/",
                     "logo": "https://www.a4advisory.com/hubfs/A4_logo_sm.png",
                     "country": "NL",
                     "fidesManifestoSupporter": false,
@@ -146,6 +151,7 @@
                         "digital"
                     ],
                     "description": "Simple and secure Indian-made messaging and calling app.",
+                    "website": "https://arattai.in",
                     "logo": "https://www.google.com/s2/favicons?domain=arattai.in&sz=128",
                     "country": "IN",
                     "fidesManifestoSupporter": false,
@@ -170,6 +176,7 @@
                         "digital"
                     ],
                     "description": "Authbound provides seamless EU Digital Identity Wallet integration. Secure your services with compliant, user-friendly identity verification. Ready for 2026.",
+                    "website": "https://authbound.io",
                     "logo": "https://www.google.com/s2/favicons?domain=authbound.io&sz=128",
                     "country": "FI",
                     "fidesManifestoSupporter": false,
@@ -222,6 +229,7 @@
                         "digital"
                     ],
                     "description": "Indian software company behind Credebl, an open-source stack for verifiable credentials and decentralized identity.",
+                    "website": "https://credebl.id",
                     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/ayanworks/ayanworks_logo.png",
                     "country": "IN",
                     "fidesManifestoSupporter": false,
@@ -246,9 +254,24 @@
                         "digital"
                     ],
                     "legalName": "Banqup SA",
-                    "description": "Banqup is a certified Qualified Trust Service Provider (QTSP) delivering legally binding digital identity and trust services across all 27 EU member states.  We enable individuals and organizations to",
+                    "description": "Banqup is a certified Qualified Trust Service Provider (QTSP) delivering legally binding digital identity and trust services across all 27 EU member states.  We enable individuals and organizations to generate handwritten-equivalent electronic signatures (QES), run automated cloud-based document and invoice sealing (QCert for QSeal), and securely exchange credentials via trackable delivery (QeRDS). \n\nAs an active participant in the WeBuild pilot driving European Business Wallet (EUBW) standards, Banqup is also expanding into organizational wallet services and Qualified Electronic Attestations of Attributes (QEAA) to issue verified corporate identity data, such as IBAN credentials and economic operator attestations.",
+                    "website": "https://www.banqup.com",
                     "logo": "https://integr-assets.btx.eu.banqup.com/1.0.2632/img/banqup-logo-triangle.png",
                     "country": "BE",
+                    "tags": [
+                        "wallet",
+                        "qtsp",
+                        "identity"
+                    ],
+                    "offerings": [
+                        "Business wallets",
+                        "Digital signing",
+                        "EUDI Wallet integration",
+                        "Identity verification"
+                    ],
+                    "contact": {
+                        "email": "hans.boone@banqup.com"
+                    },
                     "identifiers": {
                         "business_registration_number": "BE 0649.860.804",
                         "vat_number": "BE 0649.860.804",
@@ -376,7 +399,8 @@
                     "sectors": [
                         "digital"
                     ],
-                    "description": "Caesar Groep is an IT services company supporting organizations in their digital transformation. With over 150 professionals across multiple business units, the group delivers solutions in areas such",
+                    "description": "Caesar Groep is an IT services company supporting organizations in their digital transformation. With over 150 professionals across multiple business units, the group delivers solutions in areas such as cloud, software development, and digital workplace. Caesar Groep consists of several companies, including Cloud Republic, Garansys, Creates, LowQode, everywhereIM, Caesar Overheid, Caesar Experts, and Caesar ViaNova, and is the owner and maintainer of the open-source Yivi wallet app, widely used in the Netherlands.",
+                    "website": "https://www.caesar.nl/",
                     "logo": "https://www.google.com/s2/favicons?domain=caesar.nl&sz=128",
                     "country": "NL",
                     "fidesManifestoSupporter": true,
@@ -522,6 +546,7 @@
                         "digital"
                     ],
                     "description": "Digidentity delivers secure digital identity, eHerkenning, SERMI, PKI solutions and more, for individuals, businesses, and governments across Europe.",
+                    "website": "https://www.digidentity.com",
                     "logo": "https://www.google.com/s2/favicons?domain=digidentity.com&sz=128",
                     "country": "NL",
                     "certifications": [
@@ -829,8 +854,12 @@
                         "digital"
                     ],
                     "description": "Gataca is a cybersecurity company that provides decentralized digital identity technology, also known as self-sovereign identity (SSI).",
+                    "website": "https://gataca.io",
                     "logo": "https://www.google.com/s2/favicons?domain=gataca.io&sz=128",
                     "country": "ES",
+                    "contact": {
+                        "email": "samuel@gataca.io"
+                    },
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
@@ -853,8 +882,12 @@
                         "digital"
                     ],
                     "description": "German company (Blockchain HELIX AG) providing decentralized identity and verifiable credential solutions for regulated industries.",
+                    "website": "https://helixid.io",
                     "logo": "https://helixid.io/wp-content/uploads/2019/06/cropped-id-180x180.png",
                     "country": "DE",
+                    "contact": {
+                        "email": "oliver@blockchain-helix.com"
+                    },
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
@@ -877,8 +910,12 @@
                         "digital"
                     ],
                     "description": "Discover Hovi’s self-sovereign identity platform, designed to effortlessly integrate verifiable credentials for businesses of all sizes.",
+                    "website": "https://www.hovi.id/",
                     "logo": "https://cdn.prod.website-files.com/659dad70ef0ae858f66ae208/6966ba7d3a1f6bb1adf4a924_hovi-logo-white.png",
                     "country": "FI",
+                    "contact": {
+                        "email": "contact@hovi.id"
+                    },
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Community"
                 },
@@ -969,8 +1006,12 @@
                         "digital"
                     ],
                     "description": "EUDI and European Business Wallet software provider offering ready-to-use extensions for payments, signing, and passwordless login for individuals and organisations.",
+                    "website": "https://igrant.io",
                     "logo": "https://www.google.com/s2/favicons?domain=igrant.io&sz=128",
                     "country": "SE",
+                    "contact": {
+                        "email": "support@igrant.io"
+                    },
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
@@ -1022,6 +1063,7 @@
                         "digital"
                     ],
                     "description": "Impierce Technologies is a provider of digital identity trust infrastructure & services, including an EUDI Wallet, Identity Agent, Business Wallet and Ecosystem Orchestration tooling.",
+                    "website": "https://impierce.com",
                     "logo": "https://www.google.com/s2/favicons?domain=impierce.com&sz=128",
                     "country": "NL",
                     "fidesManifestoSupporter": true,
@@ -1046,6 +1088,7 @@
                         "digital"
                     ],
                     "description": "European IT services and digital solutions group supporting public sector and enterprise transformation across multiple countries.",
+                    "website": "https://www.inetum.com/es/es.html",
                     "logo": "https://static-p165453-e1803721.adobeaemcloud.com/489b2b9c0d2194574538d78ff4171adc6159a8742a0bddcf233b039a09bb815e/resources/images/favicon.ico",
                     "country": "ES",
                     "fidesManifestoSupporter": false,
@@ -1069,7 +1112,8 @@
                     "sectors": [
                         "digital"
                     ],
-                    "description": "InnoValor Advies is an independent consultancy that helps organizations realize value from digital innovation through research-based advisory. It works across domains such as data-driven innovation, d",
+                    "description": "InnoValor Advies is an independent consultancy that helps organizations realize value from digital innovation through research-based advisory. It works across domains such as data-driven innovation, digital identity, wallets, standards, and public sector transformation.",
+                    "website": "https://innovalor.nl/",
                     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkkqpNgGvKedahQ3vBQgRlT6Cqhbp1d405Y0AzcwHgg&s",
                     "country": "NL",
                     "fidesManifestoSupporter": true,
@@ -1120,6 +1164,7 @@
                         "digital"
                     ],
                     "description": "Izertis S.A provides digital services and solutions in the trust and credentials ecosystem via izertis.com.",
+                    "website": "https://www.izertis.com/",
                     "logo": "https://www.izertis.com/documents/35913/207169/IMAGEN_OG.webp/6a09f6d5-9741-d367-41e1-fbd048febb54?version=1.0&t=1760599004227&imagePreview=1",
                     "country": "ES",
                     "fidesManifestoSupporter": false,
@@ -1144,8 +1189,12 @@
                         "digital"
                     ],
                     "description": "German cybersecurity company offering consulting, managed security, and identity-related protection for organizations.",
+                    "website": "https://www.k4-security.com/",
                     "logo": "https://www.google.com/s2/favicons?domain=k4-security.com&sz=128",
                     "country": "KR",
+                    "contact": {
+                        "email": "contact@k4-security.com"
+                    },
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
@@ -1168,8 +1217,12 @@
                         "digital"
                     ],
                     "description": "Compliant, scalable EUDI Wallet integration for eIDAS 2. Get started today with Lissi's trusted and proven API Software.",
+                    "website": "https://lissi.id",
                     "logo": "https://www.google.com/s2/favicons?domain=lissi.id&sz=128",
                     "country": "DE",
+                    "contact": {
+                        "email": "info@lissi.id"
+                    },
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
@@ -1192,6 +1245,7 @@
                         "finance"
                     ],
                     "description": "Convergence infrastructure for enterprises and governments: verifiable data sharing, compliance automation, and high-volume secured processing.",
+                    "website": "https://mintblue.com/",
                     "logo": "https://www.google.com/s2/favicons?domain=mintblue.com&sz=128",
                     "country": "NL",
                     "fidesManifestoSupporter": false,
@@ -1266,6 +1320,7 @@
                         "digital"
                     ],
                     "description": "Customer identification and identity verification with the suite Namirial Onboarding",
+                    "website": "https://www.namirial.com",
                     "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
                     "country": "IT",
                     "certifications": [
@@ -1507,6 +1562,7 @@
                         "digital"
                     ],
                     "description": "Procivis One is a modular, open-source technology for digital identities and credentials — compliant with eIDAS 2.0, Swiss E-ID ecosystem , and mDL standards.",
+                    "website": "https://www.procivis.ch",
                     "logo": "https://www.google.com/s2/favicons?domain=procivis.ch&sz=128",
                     "country": "CH",
                     "fidesManifestoSupporter": false,
@@ -1652,6 +1708,30 @@
             "updatedAt": "2026-10-15 04:58:06"
         },
         {
+            "itemId": "org:soliton-id",
+            "slug": "soliton-id",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:soliton-id",
+                    "name": "Soliton ID",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "description": "Soliton ID builds browser-based proof of human presence for identity verification and fraud prevention. Its liveness check uses randomized physics to check the physical environment and help defend against camera-feed injection, deepfakes and replays. The person being verified simply looks at the camera, without gestures or an app download. Fintech and identity teams can integrate the check into onboarding and other sensitive workflows through an API. The public beta includes the first 10,000 checks per month free. Learn more at https://soliton.id/.",
+                    "website": "https://soliton.id/",
+                    "country": "CA",
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-11-22T18:16:37+00:00"
+            },
+            "publishedAt": "2026-11-22 18:16:37",
+            "updatedAt": "2026-11-22 18:16:37"
+        },
+        {
             "itemId": "org:sphereon",
             "slug": "sphereon",
             "filename": "organization-catalog.json",
@@ -1718,6 +1798,7 @@
                         "digital"
                     ],
                     "description": "German company providing decentralized identity and digital twin credentials for automotive, industry, and regulated supply chains.",
+                    "website": "https://www.spherity.com",
                     "logo": "https://www.google.com/s2/favicons?domain=spherity.com&sz=128",
                     "country": "DE",
                     "fidesManifestoSupporter": true,
@@ -2014,6 +2095,7 @@
                         "digital"
                     ],
                     "description": "Ubique Innovation provides digital services and solutions in the trust and credentials ecosystem via ubique.ch.",
+                    "website": "https://ubique.ch",
                     "logo": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/2d/44/132d44a4-424b-3dfc-174e-541248ef421b/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/400x400ia-75.webp",
                     "country": "CH",
                     "fidesManifestoSupporter": false,
@@ -2076,6 +2158,7 @@
                     ],
                     "legalName": "VALIDATED ID, S.L",
                     "description": "Provide trust to your electronic signatures and digital identity. Simple and secure solutions: electronic signatures, digital identity and electronic invoices.",
+                    "website": "https://validatedid.com",
                     "logo": "https://cdn.prod.website-files.com/5ec68f0bd0db4b52be8cf1d5/611cdede040214a673afec55_h_home_en.png",
                     "country": "ES",
                     "certifications": [
@@ -2127,8 +2210,18 @@
                     ],
                     "legalName": "Verana Foundation (in formation)",
                     "description": "Non-profit rebuilding digital trust in the AI era: Verana stewards open standards and decentralized infrastructure for verifiable, privacy-respecting exchange between people, services and AI agents.",
+                    "website": "https://verana.io",
                     "logo": "https://verana.io/logo.svg",
                     "country": "EE",
+                    "tags": [
+                        "FIDES Supporter",
+                        "Trust Networks",
+                        "Ecosystem Governance",
+                        "Verifiable Trust"
+                    ],
+                    "contact": {
+                        "email": "fabrice@verana.io"
+                    },
                     "ecosystemRoleCodes": [
                         "business_wallet_provider",
                         "software_vendor",
@@ -2183,6 +2276,7 @@
                         "digital"
                     ],
                     "description": "Ignite Data Ownership",
+                    "website": "https://yourd.xyz",
                     "logo": "https://www.google.com/s2/favicons?domain=yourd.xyz&sz=128",
                     "country": "KR",
                     "fidesManifestoSupporter": true,
