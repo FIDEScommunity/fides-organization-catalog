@@ -1,0 +1,16 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:soliton-id",
+    "name": "Soliton ID",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Soliton ID builds browser-based proof of human presence for identity verification and fraud prevention. Its liveness check uses randomized physics to check the physical environment and help defend against camera-feed injection, deepfakes and replays. The person being verified simply looks at the camera, without gestures or an app download. Fintech and identity teams can integrate the check into onboarding and other sensitive workflows through an API. The public beta includes the first 10,000 checks per month free. Learn more at https://soliton.id/.",
+    "website": "https://soliton.id/",
+    "country": "CA",
+    "fidesManifestoSupporter": false,
+    "catalogTier": "Community"
+  },
+  "lastUpdated": "2026-11-22T18:16:37+00:00"
+}

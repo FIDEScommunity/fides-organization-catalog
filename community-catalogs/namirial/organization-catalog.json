@@ -7,6 +7,7 @@
       "digital"
     ],
     "description": "Customer identification and identity verification with the suite Namirial Onboarding",
+    "website": "https://www.namirial.com",
     "logo": "https://wallet-demo.namirial.com/static/img/fav-namirial-logo.png",
     "country": "IT",
     "certifications": [
@@ -96,8 +97,7 @@
       }
     ],
     "fidesManifestoSupporter": false,
-    "catalogTier": "Community",
-    "website": "https://www.namirial.com"
+    "catalogTier": "Community"
   },
   "lastUpdated": "2026-07-02T09:49:59+00:00"
 }
