@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-11-22T18:16:37+00:00",
+    "generatedAt": "2026-11-23T13:52:13+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -1606,6 +1606,36 @@
             },
             "publishedAt": "2026-08-13 19:33:31",
             "updatedAt": "2026-08-13 19:33:31"
+        },
+        {
+            "itemId": "org:reniec",
+            "slug": "reniec",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:reniec",
+                    "name": "RENIEC",
+                    "sectors": [
+                        "public_sector"
+                    ],
+                    "legalName": "Registro Nacional de Identificación y Estado Civil",
+                    "description": "The Registro Nacional de Identificación y Estado Civil (RENIEC) is Peru's national authority responsible for civil registration and the identification of citizens. RENIEC manages the country's national identity infrastructure and provides digital identity services, including the issuance of the digital National Identity Document (DNId) and Perú Pass, a personal digital wallet for storing, managing and presenting verifiable credentials.",
+                    "website": "https://www.reniec.gob.pe",
+                    "logo": "https://idperu.reniec.gob.pe/site/assets/logo-reniec-rgb-eBdH3Iv0.png",
+                    "country": "PE",
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider",
+                        "idv_provider"
+                    ],
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-11-23T13:52:12+00:00"
+            },
+            "publishedAt": "2026-11-23 13:52:12",
+            "updatedAt": "2026-11-23 13:52:12"
         },
         {
             "itemId": "org:sapio-gmbh",
