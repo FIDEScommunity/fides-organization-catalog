@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-11-23T13:52:13+00:00",
+    "generatedAt": "2026-11-23T15:32:03+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -770,6 +770,9 @@
                         "euid": "NLNHR.97159174",
                         "did": "did:web:fides.acc.credenco.com:did:da5a3c99-d45c-4ce2-8065-9db36c98868c"
                     },
+                    "ecosystemRoleCodes": [
+                        "consultancy"
+                    ],
                     "media": {
                         "videos": [
                             "https://www.youtube.com/watch?v=3nM_0gPjOTc"
@@ -781,10 +784,10 @@
                     "fidesManifestoSupporter": true,
                     "catalogTier": "Pro"
                 },
-                "lastUpdated": "2026-09-22T18:14:10+00:00"
+                "lastUpdated": "2026-11-23T15:32:03+00:00"
             },
-            "publishedAt": "2026-09-22 18:14:10",
-            "updatedAt": "2026-09-22 18:14:10"
+            "publishedAt": "2026-11-23 15:32:03",
+            "updatedAt": "2026-11-23 15:32:03"
         },
         {
             "itemId": "org:fido-alliance",
