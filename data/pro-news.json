@@ -1,12 +1,26 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-11-16T06:13:02.368860Z",
+  "generatedAt": "2026-11-23T06:09:29.224663Z",
   "windowDays": 90,
   "maxItemsPerOrg": 5,
   "notes": "Weekly listing-news harvest. Official (Pro) listings use the 90-day/5-item policy; explicitly allowlisted curated Community full-listing pilots use first-party sources, a 60-day window, max 3 items, and mandatory PR review. Titles and URLs were opened; full article text is not stored. walletIds is only for wallet-specific news.",
   "organizations": {
     "org:credenco": {
       "items": [
+        {
+          "title": "Credenco at the first Nederland Digitaal Festival",
+          "url": "https://www.credenco.com/news/credenco-at-nederland-digitaal-festival",
+          "publishedAt": "2026-11-18",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Is your company ready for the EUDI Wallet?",
+          "url": "https://www.credenco.com/news/is-your-company-ready-for-the-eudi-wallet",
+          "publishedAt": "2026-11-17",
+          "sourceLabel": "credenco.com",
+          "sourceKind": "site"
+        },
         {
           "title": "Who can act on behalf of your business?",
           "url": "https://www.credenco.com/news/who-acts-on-behalf-of-your-business",
@@ -25,20 +39,6 @@
           "title": "Credenco Newsletter: November 2026 edition",
           "url": "https://www.credenco.com/news/credenco-newsletter-november-2026",
           "publishedAt": "2026-11-05",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "New product updates across the Credenco ecosystem",
-          "url": "https://www.credenco.com/news/product-updates-across-the-credenco-ecosystem",
-          "publishedAt": "2026-11-02",
-          "sourceLabel": "credenco.com",
-          "sourceKind": "site"
-        },
-        {
-          "title": "Company Passport at the Nederland Digitaal Festival",
-          "url": "https://www.credenco.com/news/company-passport-nederland-digitaal-festival",
-          "publishedAt": "2026-10-29",
           "sourceLabel": "credenco.com",
           "sourceKind": "site"
         }
@@ -148,39 +148,29 @@
           "publishedAt": "2026-11-04",
           "sourceLabel": "webuildconsortium.eu",
           "sourceKind": "site"
-        },
-        {
-          "title": "WE BUILD at Global Digital Collaboration Conference 2026",
-          "url": "https://www.webuildconsortium.eu/news/we-build-at-global-digital-collaboration-conference-2026",
-          "publishedAt": "2026-09-18",
-          "sourceLabel": "webuildconsortium.eu",
-          "sourceKind": "site"
         }
       ]
     },
     "org:netherlands": {
       "items": [
         {
-          "title": "NL Wallet onder de motorkap: in gesprek met het ontwikkelteam",
-          "url": "https://edi.pleio.nl/news/view/0506f2b2-d756-44f7-9ad6-5b8fbe5d978d/nl-wallet-onder-de-motorkap-in-gesprek-met-het-ontwikkelteam",
-          "publishedAt": "2026-11-13",
-          "sourceLabel": "edi.pleio.nl",
-          "sourceKind": "site",
-          "walletIds": [
-            "national-eudi-wallet-netherlands"
-          ]
-        },
-        {
-          "title": "Van publieke bron naar wallets: afwegingskader voor bronhouders",
-          "url": "https://edi.pleio.nl/news/view/2c8e3bcb-eb06-406f-86f0-3ffe7ac50d24/van-publieke-bron-naar-wallets-afwegingskader-voor-bronhouders",
-          "publishedAt": "2026-11-12",
+          "title": "Identity matching: toekomstige situatie met EDI-wallets",
+          "url": "https://edi.pleio.nl/news/view/321c7239-d9d6-4187-b8c9-11fd1ae57fec/identity-matching-toekomstige-situatie-met-edi-wallets",
+          "publishedAt": "2026-11-18",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         },
         {
-          "title": "Concept Nederlandse Certificeringssysteem en – regeling(en) voor EDI-wallets gepubliceerd",
-          "url": "https://edi.pleio.nl/news/view/13ad02e3-3e4c-4c30-9c37-7c34382a849b/concept-nederlandse-certificeringssysteem-en-regelingen-voor-edi-wallets-gepubliceerd",
-          "publishedAt": "2026-11-06",
+          "title": "eIDAS en wallets: events in november en december",
+          "url": "https://edi.pleio.nl/news/view/c6f76f19-3497-44aa-a9ea-b3c1e258f527/eidas-en-wallets-events-in-november-en-december",
+          "publishedAt": "2026-11-17",
+          "sourceLabel": "edi.pleio.nl",
+          "sourceKind": "site"
+        },
+        {
+          "title": "Ontwikkelfase Gemeenschappelijke Bronontsluiting gestart",
+          "url": "https://edi.pleio.nl/news/view/ba0bb161-312e-4ab6-891d-11de5e14cbff/ontwikkelfase-gemeenschappelijke-bronontsluiting-gestart",
+          "publishedAt": "2026-11-13",
           "sourceLabel": "edi.pleio.nl",
           "sourceKind": "site"
         }
