@@ -1,0 +1,20 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:dewa",
+    "name": "Dewa",
+    "sectors": [
+      "digital"
+    ],
+    "description": "Danish wallet-verification service. dewa verify confirms identity or age from a digital identity wallet and returns only the attributes the service asked for.",
+    "website": "https://api.playground.france-identite.gouv.fr/dewa/verifier-demo/",
+    "country": "DK",
+    "ecosystemRoleCodes": [
+      "relying_party",
+      "idv_provider"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}

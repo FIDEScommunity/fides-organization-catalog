@@ -1,0 +1,26 @@
+{
+  "$schema": "https://fides.community/schemas/organization-catalog/v1",
+  "organization": {
+    "id": "org:accurey",
+    "name": "Accurey",
+    "legalName": "Accurey Partners SCSp",
+    "sectors": [
+      "finance"
+    ],
+    "description": "Luxembourg firm that runs shareholder registers for private companies and investment vehicles, and issues a wallet attestation of a holder's stake.",
+    "identifiers": {
+      "lei": "894500NK344G4800I394"
+    },
+    "website": "https://verifier.accurey.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=accurey.com&sz=128",
+    "country": "LU",
+    "ecosystemRoleCodes": [
+      "issuer",
+      "relying_party",
+      "software_vendor"
+    ],
+    "catalogTier": "Community",
+    "catalogListingDepth": "full"
+  },
+  "lastUpdated": "2026-11-23T18:00:00Z"
+}
