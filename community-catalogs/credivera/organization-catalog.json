@@ -3,31 +3,14 @@
   "organization": {
     "id": "org:credivera",
     "name": "Credivera",
-    "legalName": "TerraHub Technologies Inc.",
-    "description": "Canadian digital trust and workforce identity platform provider. Credivera operates the Credivera Exchange, a verifiable credentials platform that enables organizations, issuers, employers and individuals to issue, store, share and verify digital credentials using open standards and digital wallets.",
     "sectors": [
       "digital"
     ],
+    "legalName": "TerraHub Technologies Inc.",
+    "description": "Digital credential products for workforce identity and compliance. Credivera operates the Credivera Exchange, a SaaS platform for organizations to issue or request proof of work-related credentials: education, training, certification, background checks, insurance, identity, etc. Credivera's engine, VCI, uses open standards (W3C, ISO, OpenID, IETF) for digital credential issuance, exchange and verification. Credivera's wallets, mobile and web, use open standards for accepting, managing and presenting digital credentials.",
     "website": "https://www.credivera.com/",
     "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/credivera/Credivera_logo.jpeg",
     "country": "CA",
-    "certifications": [
-      {
-        "code": "diacc",
-        "details": {
-          "components": [
-            {
-              "component": "privacy",
-              "evidence": {
-                "kind": "url",
-                "url": "https://diacc.ca/wp-content/uploads/2025/10/Certificate-Credivera-Oliu-2025.pdf",
-                "label": "DIACC PCTF certificate (PDF)"
-              }
-            }
-          ]
-        }
-      }
-    ],
     "tags": [
       "Verifiable Credentials",
       "Digital Identity",
@@ -38,8 +21,54 @@
       "PCTF",
       "DIACC Member"
     ],
+    "offerings": [
+      "Identity verification",
+      "OID4VCI integration",
+      "OID4VP integration",
+      "Digital Wallet",
+      "Verifiable Credentials",
+      "Issuer",
+      "Relying Party",
+      "Workforce Credential Verification"
+    ],
+    "contact": {
+      "email": "info@credivera.com",
+      "bookMeetingUrl": "https://www.credivera.com/meeting/"
+    },
+    "certifications": [
+      {
+        "code": "soc2"
+      },
+      {
+        "code": "diacc",
+        "details": {
+          "components": [
+            {
+              "component": "privacy",
+              "evidence": {
+                "kind": "url",
+                "url": "https://diacc.ca/wp-content/uploads/2025/10/Certificate-Credivera-Oliu-2025.pdf"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "ecosystemRoleCodes": [
+      "personal_wallet_provider",
+      "issuer",
+      "relying_party",
+      "idv_provider",
+      "software_vendor",
+      "trust_infrastructure_provider"
+    ],
+    "media": {
+      "images": [
+        "https://fides.community/app/uploads/2026/11/CrediveraOverview.jpg"
+      ]
+    },
     "fidesManifestoSupporter": false,
     "catalogTier": "Community"
   },
-  "lastUpdated": "2026-07-02T08:46:59.665Z"
+  "lastUpdated": "2026-11-24T21:26:58+00:00"
 }
