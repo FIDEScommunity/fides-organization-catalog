@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-11-23T15:32:03+00:00",
+    "generatedAt": "2026-11-24T21:26:58+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -465,6 +465,88 @@
             },
             "publishedAt": "2026-07-12 10:13:13",
             "updatedAt": "2026-07-12 10:13:13"
+        },
+        {
+            "itemId": "org:credivera",
+            "slug": "credivera",
+            "filename": "organization-catalog.json",
+            "source": "wordpress",
+            "document": {
+                "$schema": "https://fides.community/schemas/organization-catalog/v1",
+                "organization": {
+                    "id": "org:credivera",
+                    "name": "Credivera",
+                    "sectors": [
+                        "digital"
+                    ],
+                    "legalName": "TerraHub Technologies Inc.",
+                    "description": "Digital credential products for workforce identity and compliance. Credivera operates the Credivera Exchange, a SaaS platform for organizations to issue or request proof of work-related credentials: education, training, certification, background checks, insurance, identity, etc. Credivera's engine, VCI, uses open standards (W3C, ISO, OpenID, IETF) for digital credential issuance, exchange and verification. Credivera's wallets, mobile and web, use open standards for accepting, managing and presenting digital credentials.",
+                    "website": "https://www.credivera.com/",
+                    "logo": "https://raw.githubusercontent.com/FIDEScommunity/fides-organization-catalog/main/community-catalogs/credivera/Credivera_logo.jpeg",
+                    "country": "CA",
+                    "tags": [
+                        "Verifiable Credentials",
+                        "Digital Identity",
+                        "Digital Wallet",
+                        "Workforce Identity",
+                        "Trust Infrastructure",
+                        "Compliance",
+                        "PCTF",
+                        "DIACC Member"
+                    ],
+                    "offerings": [
+                        "Identity verification",
+                        "OID4VCI integration",
+                        "OID4VP integration",
+                        "Digital Wallet",
+                        "Verifiable Credentials",
+                        "Issuer",
+                        "Relying Party",
+                        "Workforce Credential Verification"
+                    ],
+                    "contact": {
+                        "email": "info@credivera.com",
+                        "bookMeetingUrl": "https://www.credivera.com/meeting/"
+                    },
+                    "certifications": [
+                        {
+                            "code": "soc2"
+                        },
+                        {
+                            "code": "diacc",
+                            "details": {
+                                "components": [
+                                    {
+                                        "component": "privacy",
+                                        "evidence": {
+                                            "kind": "url",
+                                            "url": "https://diacc.ca/wp-content/uploads/2025/10/Certificate-Credivera-Oliu-2025.pdf"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "ecosystemRoleCodes": [
+                        "personal_wallet_provider",
+                        "issuer",
+                        "relying_party",
+                        "idv_provider",
+                        "software_vendor",
+                        "trust_infrastructure_provider"
+                    ],
+                    "media": {
+                        "images": [
+                            "https://fides.community/app/uploads/2026/11/CrediveraOverview.jpg"
+                        ]
+                    },
+                    "fidesManifestoSupporter": false,
+                    "catalogTier": "Community"
+                },
+                "lastUpdated": "2026-11-24T21:26:58+00:00"
+            },
+            "publishedAt": "2026-11-24 21:26:58",
+            "updatedAt": "2026-11-24 21:26:58"
         },
         {
             "itemId": "org:davinci-conclusion",
