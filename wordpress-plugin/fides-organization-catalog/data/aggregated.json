@@ -35,6 +35,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -81,6 +82,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -111,6 +113,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -182,6 +185,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -211,6 +215,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -243,6 +248,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -279,6 +285,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -318,6 +325,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -348,6 +356,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -392,6 +401,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -417,6 +427,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -444,6 +455,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -473,6 +485,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -525,6 +538,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -560,6 +574,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "accurey-pid-verifier",
@@ -629,6 +644,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -685,6 +701,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -749,6 +766,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -801,6 +819,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -838,6 +857,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -887,6 +907,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -911,6 +932,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -955,6 +977,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -985,6 +1008,7 @@
             "displayName": "Affinidi Portal"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1039,6 +1063,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1083,6 +1108,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1135,6 +1161,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1169,6 +1196,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1200,6 +1228,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "air-new-zealand",
@@ -1245,6 +1274,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1311,6 +1341,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1345,6 +1376,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1399,6 +1431,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1433,6 +1466,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1468,6 +1502,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1494,6 +1529,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1528,6 +1564,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1609,6 +1646,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1685,6 +1723,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1739,6 +1778,7 @@
             "displayName": "Paradym Platform"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "paradym-playground",
@@ -1788,6 +1828,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1827,6 +1868,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1876,6 +1918,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -1910,6 +1953,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1945,6 +1989,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -1977,6 +2022,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2028,6 +2074,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2063,6 +2110,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2135,6 +2183,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2170,6 +2219,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2205,6 +2255,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2278,6 +2329,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2312,6 +2364,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2361,6 +2414,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2385,6 +2439,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2424,6 +2479,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2463,6 +2519,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2540,6 +2597,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2574,6 +2632,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2623,6 +2682,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2671,6 +2731,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2705,6 +2766,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2735,6 +2797,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2787,6 +2850,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -2817,6 +2881,7 @@
             "displayName": "Auth0 Platform"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2852,6 +2917,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2890,6 +2956,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -2924,6 +2991,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "authologic-identity",
@@ -2979,6 +3047,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3015,6 +3084,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3068,6 +3138,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3117,6 +3188,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3151,6 +3223,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3199,6 +3272,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3235,6 +3309,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3285,6 +3360,7 @@
             "displayName": "CREDEBL"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3313,6 +3389,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3356,6 +3433,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3390,6 +3468,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3439,6 +3518,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3474,6 +3554,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3515,6 +3596,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3556,6 +3638,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3598,6 +3681,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3651,6 +3735,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3695,6 +3780,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3720,6 +3806,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3744,6 +3831,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3778,6 +3866,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3827,6 +3916,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3871,6 +3961,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -3901,6 +3992,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3944,6 +4036,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -3983,6 +4076,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4071,6 +4165,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4134,6 +4229,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4175,6 +4271,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4209,6 +4306,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4248,6 +4346,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4285,6 +4384,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4325,6 +4425,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4388,6 +4489,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4414,6 +4516,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "bengaluru-international-airport",
@@ -4447,6 +4550,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4472,6 +4576,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4516,6 +4621,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4560,6 +4666,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4600,6 +4707,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4639,6 +4747,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4671,6 +4780,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4707,6 +4817,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4769,6 +4880,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4813,6 +4925,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4846,6 +4959,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -4880,6 +4994,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "blokverse-maenada-playground",
@@ -4920,6 +5035,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -4944,6 +5060,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5020,6 +5137,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5064,6 +5182,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5144,6 +5263,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5179,6 +5299,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -5210,6 +5331,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "british-airways",
@@ -5251,6 +5373,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -5300,6 +5423,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5336,6 +5460,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -5364,6 +5489,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -5405,6 +5531,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -5462,6 +5589,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5514,6 +5642,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5540,6 +5669,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5563,6 +5693,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5598,6 +5729,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "ca-dmv-mdl-login-opencred",
@@ -5635,6 +5767,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5660,6 +5793,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5694,6 +5828,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -5724,6 +5859,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5748,6 +5884,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5774,6 +5911,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5818,6 +5956,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5862,6 +6001,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5910,6 +6050,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5962,6 +6103,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -5988,6 +6130,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6022,6 +6165,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -6052,6 +6196,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6082,6 +6227,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -6149,6 +6295,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6201,6 +6348,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6244,6 +6392,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6300,6 +6449,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6344,6 +6494,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6375,6 +6526,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -6457,6 +6609,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6488,6 +6641,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -6534,6 +6688,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6586,6 +6741,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6612,6 +6768,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6656,6 +6813,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6690,6 +6848,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -6721,6 +6880,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "leeftijd-aantonen",
@@ -6778,6 +6938,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6808,6 +6969,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "nijmegen-mijn-nijmegen-login",
@@ -6875,6 +7037,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -6902,6 +7065,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -6943,6 +7107,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -6996,6 +7161,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7040,6 +7206,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7076,6 +7243,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -7133,6 +7301,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7177,6 +7346,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7225,6 +7395,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7260,6 +7431,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -7311,6 +7483,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7359,6 +7532,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7411,6 +7585,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7463,6 +7638,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7497,6 +7673,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -7543,6 +7720,12 @@
             "displayName": "Credenco Business Wallet"
           }
         ],
+        "walletConnectors": [
+          {
+            "id": "credenco-business-wallet-connector",
+            "displayName": "Credenco Business Wallet (Issuer & Verifier API)"
+          }
+        ],
         "relyingParties": [
           {
             "id": "credenco-france-playground",
@@ -7578,6 +7761,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7602,6 +7786,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7676,6 +7861,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -7725,6 +7911,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -7765,6 +7952,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -7842,6 +8030,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7876,6 +8065,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -7933,6 +8123,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -7977,6 +8168,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8011,6 +8203,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -8069,6 +8262,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8113,6 +8307,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8139,6 +8334,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8187,6 +8383,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8218,6 +8415,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "datakeen-identity-verification",
@@ -8264,6 +8462,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -8330,6 +8529,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8361,6 +8561,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -8404,6 +8605,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -8433,6 +8635,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8469,6 +8672,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -8513,6 +8717,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -8570,6 +8775,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8595,6 +8801,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8651,6 +8858,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8685,6 +8893,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -8711,6 +8920,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8755,6 +8965,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8803,6 +9014,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8847,6 +9059,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8895,6 +9108,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -8920,6 +9134,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "dewa-verify",
@@ -8966,6 +9181,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9019,6 +9235,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9044,6 +9261,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9080,6 +9298,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9120,6 +9339,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9147,6 +9367,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9195,6 +9416,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9251,6 +9473,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9276,6 +9499,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9343,6 +9567,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9379,6 +9604,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9418,6 +9644,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9475,6 +9702,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9531,6 +9759,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9561,6 +9790,7 @@
             "displayName": "Veres Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9602,6 +9832,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9634,6 +9865,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9670,6 +9902,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9752,6 +9985,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9788,6 +10022,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9849,6 +10084,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9889,6 +10125,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -9935,6 +10172,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -9969,6 +10207,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10022,6 +10261,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10102,6 +10342,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10146,6 +10387,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10172,6 +10414,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "docaposte-demo-portal",
@@ -10250,6 +10493,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10310,6 +10554,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10358,6 +10603,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10400,6 +10646,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10448,6 +10695,7 @@
             "displayName": "Truvera Platform"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10499,6 +10747,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10555,6 +10804,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10607,6 +10857,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10633,6 +10884,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10659,6 +10911,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10700,6 +10953,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10736,6 +10990,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10775,6 +11030,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10815,6 +11071,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -10840,6 +11097,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10904,6 +11162,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10960,6 +11219,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -10994,6 +11254,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11033,6 +11294,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11072,6 +11334,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11117,6 +11380,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11156,6 +11420,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11186,6 +11451,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11230,6 +11496,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11297,6 +11564,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11356,6 +11624,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11388,6 +11657,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "educa-swiyu-demo",
@@ -11435,6 +11705,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "eideasy-roadready-car-rental-demo",
@@ -11519,6 +11790,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11563,6 +11835,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11590,6 +11863,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11646,6 +11920,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11682,6 +11957,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11717,6 +11993,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11757,6 +12034,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -11818,6 +12096,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11890,6 +12169,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -11970,6 +12250,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12014,6 +12295,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "entrust-eudi-verifier",
@@ -12065,6 +12347,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12090,6 +12373,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12114,6 +12398,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12148,6 +12433,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -12205,6 +12491,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12228,6 +12515,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "espuni-age-verification",
@@ -12274,6 +12562,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -12302,6 +12591,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12332,6 +12622,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -12361,6 +12652,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "eudiplo-vineyard-select",
@@ -12443,6 +12735,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12558,6 +12851,16 @@
             "displayName": "EUDI Reference Verifier"
           }
         ],
+        "walletConnectors": [
+          {
+            "id": "eudi-reference-verifier",
+            "displayName": "EUDI Reference Verifier"
+          },
+          {
+            "id": "eudi-reference-issuer",
+            "displayName": "EUDIW Reference Issuer"
+          }
+        ],
         "relyingParties": [
           {
             "id": "eudi-cinema-age-verification",
@@ -12613,6 +12916,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12647,6 +12951,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -12696,6 +13001,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12740,6 +13046,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12774,6 +13081,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -12855,6 +13163,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12879,6 +13188,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "ewc-rpcentric-signer",
@@ -12935,6 +13245,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -12962,6 +13273,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13018,6 +13330,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13062,6 +13375,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13114,6 +13428,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13139,6 +13454,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13193,6 +13509,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13245,6 +13562,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13292,6 +13610,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13422,6 +13741,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "mijnoverheid-sandbox",
@@ -13494,6 +13814,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -13526,6 +13847,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -13569,6 +13891,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -13608,6 +13931,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -13647,6 +13971,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -13707,6 +14032,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13762,6 +14088,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "pension-demo-waltid-verifier",
@@ -13811,6 +14138,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -13847,6 +14175,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -13873,6 +14202,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13925,6 +14255,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -13981,6 +14312,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14006,6 +14338,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14078,6 +14411,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14130,6 +14464,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14166,6 +14501,7 @@
             "displayName": "DIDroom"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14199,6 +14535,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "fortid-verifier",
@@ -14261,6 +14598,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14315,6 +14653,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14342,6 +14681,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14393,6 +14733,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "france-identite-dc-api-verifier",
@@ -14438,6 +14779,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14469,6 +14811,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14513,6 +14856,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14583,6 +14927,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14626,6 +14971,7 @@
             "displayName": "Gataca Studio"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14655,6 +15001,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14682,6 +15029,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14731,6 +15079,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14766,6 +15115,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14831,6 +15181,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14869,6 +15220,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -14927,6 +15279,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -14961,6 +15314,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15001,6 +15355,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "google-digital-credentials-demo",
@@ -15051,6 +15406,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15089,6 +15445,7 @@
             "displayName": "Orgbook"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "bc-digital-trust-showcase",
@@ -15141,6 +15498,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15177,6 +15535,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15213,6 +15572,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15251,6 +15611,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15295,6 +15656,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15356,6 +15718,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15391,6 +15754,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15430,6 +15794,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15459,6 +15824,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15489,6 +15855,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15524,6 +15891,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15550,6 +15918,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15575,6 +15944,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15639,6 +16009,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15665,6 +16036,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15701,6 +16073,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15740,6 +16113,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -15771,6 +16145,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15801,6 +16176,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "hashid-hidcap-verifier",
@@ -15841,6 +16217,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15889,6 +16266,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15913,6 +16291,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -15939,6 +16318,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "hong-kong-international-airport",
@@ -15971,6 +16351,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "hopae-playground-verifier",
@@ -16022,6 +16403,7 @@
             "displayName": "Hovi Business Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "hovi-omaapteekki-demo",
@@ -16088,6 +16470,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16113,6 +16496,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16147,6 +16531,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -16179,6 +16564,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -16231,6 +16617,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -16279,6 +16666,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16322,6 +16710,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16356,6 +16745,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -16382,6 +16772,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16408,6 +16799,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16438,6 +16830,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "eudi-wallet-gateway",
@@ -16485,6 +16878,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16528,6 +16922,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16572,6 +16967,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16606,6 +17002,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -16686,6 +17083,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16712,6 +17110,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16770,6 +17169,12 @@
           {
             "id": "igrant-organization-wallet",
             "displayName": "Organisation Wallet Suite by iGrant.io"
+          }
+        ],
+        "walletConnectors": [
+          {
+            "id": "igrant-organisation-wallet-suite-connector",
+            "displayName": "Organisation Wallet Suite (Issuer & Verifier)"
           }
         ],
         "relyingParties": [
@@ -16863,6 +17268,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -16890,6 +17296,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -16931,6 +17338,7 @@
             "displayName": "UniTrust"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -16978,6 +17386,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17010,6 +17419,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "ingroupe-aptitude-verifier",
@@ -17080,6 +17490,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17140,6 +17551,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17184,6 +17596,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17219,6 +17632,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -17245,6 +17659,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17279,6 +17694,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -17310,6 +17726,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "indigo",
@@ -17352,6 +17769,7 @@
             "displayName": "DALION"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -17398,6 +17816,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17458,6 +17877,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17534,6 +17954,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "infocert-conformance-playground",
@@ -17570,6 +17991,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17634,6 +18056,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17668,6 +18091,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -17729,6 +18153,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17755,6 +18180,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17781,6 +18207,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17825,6 +18252,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17861,6 +18289,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -17914,6 +18343,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17966,6 +18396,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -17990,6 +18421,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18026,6 +18458,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18056,6 +18489,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18115,6 +18549,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18155,6 +18590,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18179,6 +18615,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18226,6 +18663,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18286,6 +18724,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18320,6 +18759,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18358,6 +18798,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18409,6 +18850,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18450,6 +18892,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18498,6 +18941,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18529,6 +18973,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18565,6 +19010,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18626,6 +19072,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18656,6 +19103,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18714,6 +19162,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18749,6 +19198,7 @@
             "displayName": "Identfy Business Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "izertis-novabank-demo",
@@ -18782,6 +19232,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18808,6 +19259,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "japan-airlines",
@@ -18863,6 +19315,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18897,6 +19350,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -18929,6 +19383,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -18967,6 +19422,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "ksid-verifier",
@@ -19008,6 +19464,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19057,6 +19514,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19081,6 +19539,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "polaris-oid4vp",
@@ -19154,6 +19613,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19183,6 +19643,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19242,6 +19703,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19268,6 +19730,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19294,6 +19757,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19342,6 +19806,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19398,6 +19863,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19422,6 +19888,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19447,6 +19914,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19483,6 +19951,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19522,6 +19991,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19561,6 +20031,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19615,6 +20086,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19675,6 +20147,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19709,6 +20182,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19754,6 +20228,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19784,6 +20259,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -19820,6 +20296,12 @@
           {
             "id": "lissi-id-wallet-connector",
             "displayName": "Lissi ID-Wallet Connector"
+          }
+        ],
+        "walletConnectors": [
+          {
+            "id": "lissi-eudi-wallet-connector",
+            "displayName": "Lissi EUDI Wallet Connector"
           }
         ],
         "relyingParties": [
@@ -19888,6 +20370,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19930,6 +20413,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -19992,6 +20476,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20036,6 +20521,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20096,6 +20582,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20128,6 +20615,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20171,6 +20659,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20214,6 +20703,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20238,6 +20728,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20275,6 +20766,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20306,6 +20798,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20342,6 +20835,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "lutraid-verifier",
@@ -20398,6 +20892,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20472,6 +20967,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20511,6 +21007,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20542,6 +21039,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "magellan-verifier",
@@ -20603,6 +21101,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20647,6 +21146,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20699,6 +21199,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20733,6 +21234,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20774,6 +21276,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20820,6 +21323,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -20854,6 +21358,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20893,6 +21398,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20933,6 +21439,7 @@
             "displayName": "MATTR VII"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -20976,6 +21483,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -21017,6 +21525,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -21066,6 +21575,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21101,6 +21611,7 @@
             "displayName": "Meeco SVX Platform"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "meeco-svx-verifier",
@@ -21138,6 +21649,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21170,6 +21682,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21238,6 +21751,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21268,6 +21782,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -21309,6 +21824,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -21357,6 +21873,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21392,6 +21909,7 @@
             "displayName": "Mini-Wallet (Finland)"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -21419,6 +21937,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21472,6 +21991,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21516,6 +22036,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21559,6 +22080,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21587,6 +22109,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "moza-wallet-login-test",
@@ -21638,6 +22161,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21682,6 +22206,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21741,6 +22266,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21793,6 +22319,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21822,6 +22349,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "br-car-vc-pilot",
@@ -21854,6 +22382,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21880,6 +22409,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -21914,6 +22444,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -21953,6 +22484,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -21982,6 +22514,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22032,6 +22565,7 @@
             "displayName": "Inji Verifier"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "inji-web-verifier",
@@ -22076,6 +22610,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22111,6 +22646,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22174,6 +22710,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22213,6 +22750,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22244,6 +22782,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22302,6 +22841,7 @@
             "displayName": "Namirial Wallet Enterprise"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "namirial-eudi-unfold-playground",
@@ -22388,6 +22928,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22419,6 +22960,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22453,6 +22995,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22515,6 +23058,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22544,6 +23088,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22605,6 +23150,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22641,6 +23187,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22670,6 +23217,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22706,6 +23254,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22746,6 +23295,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22778,6 +23328,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22809,6 +23360,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22836,6 +23388,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22862,6 +23415,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22905,6 +23459,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -22935,6 +23490,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -22965,6 +23521,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "neovo-shop-playground",
@@ -23028,6 +23585,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23072,6 +23630,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23128,6 +23687,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23162,6 +23722,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23219,6 +23780,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23267,6 +23829,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23315,6 +23878,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23359,6 +23923,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23393,6 +23958,7 @@
             "displayName": "Orbit Enterprise"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23434,6 +24000,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23484,6 +24051,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23536,6 +24104,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23570,6 +24139,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23610,6 +24180,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23641,6 +24212,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23665,6 +24237,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23690,6 +24263,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23728,6 +24302,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23778,6 +24353,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23807,6 +24383,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23837,6 +24414,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23873,6 +24451,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23907,6 +24486,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -23944,6 +24524,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -23978,6 +24559,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24020,6 +24602,7 @@
             "displayName": "SnapKYC"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24051,6 +24634,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -24081,6 +24665,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "multipaz-verifier",
@@ -24124,6 +24709,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24167,6 +24753,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24202,6 +24789,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24248,6 +24836,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -24280,6 +24869,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "pass2rent-car-rental-verifier",
@@ -24332,6 +24922,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24370,6 +24961,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24413,6 +25005,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24455,6 +25048,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24495,6 +25089,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24530,6 +25125,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "passportreader-digital-identity-verification",
@@ -24573,6 +25169,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "patronymus-caller-identity-verification",
@@ -24623,6 +25220,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24680,6 +25278,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -24714,6 +25313,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24753,6 +25353,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24794,6 +25395,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24833,6 +25435,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24869,6 +25472,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24920,6 +25524,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -24958,6 +25563,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -24997,6 +25603,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25066,6 +25673,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25106,6 +25714,7 @@
             "displayName": "Carteira Digital da Empresa"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25139,6 +25748,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25191,6 +25801,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25235,6 +25846,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25294,6 +25906,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25345,6 +25958,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25389,6 +26003,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25445,6 +26060,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25483,6 +26099,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25521,6 +26138,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25560,6 +26178,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25605,6 +26224,7 @@
             "displayName": "Procivis One"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "procivis-playground",
@@ -25653,6 +26273,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25696,6 +26317,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25741,6 +26363,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25791,6 +26414,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25816,6 +26440,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25850,6 +26475,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -25878,6 +26504,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25904,6 +26531,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25931,6 +26559,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25957,6 +26586,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -25993,6 +26623,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26024,6 +26655,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26058,6 +26690,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26088,6 +26721,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26113,6 +26747,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26145,6 +26780,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26199,6 +26835,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26267,6 +26904,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26303,6 +26941,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26339,6 +26978,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26406,6 +27046,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26442,6 +27083,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26474,6 +27116,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26508,6 +27151,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26543,6 +27187,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26569,6 +27214,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26603,6 +27249,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26658,6 +27305,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26682,6 +27330,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26726,6 +27375,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26760,6 +27410,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26795,6 +27446,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26843,6 +27495,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26872,6 +27525,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26924,6 +27578,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -26958,6 +27613,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -26997,6 +27653,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27032,6 +27689,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "sbb-swiyu-verifier-showcase",
@@ -27073,6 +27731,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27103,6 +27762,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27137,6 +27797,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27186,6 +27847,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27221,6 +27883,7 @@
             "displayName": "Scytales EU Reference Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27270,6 +27933,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27313,6 +27977,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27369,6 +28034,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27403,6 +28069,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27452,6 +28119,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27486,6 +28154,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27525,6 +28194,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27564,6 +28234,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27624,6 +28295,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27673,6 +28345,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27717,6 +28390,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27765,6 +28439,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27813,6 +28488,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -27844,6 +28520,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "shareid-eudi-wallet-verification",
@@ -27893,6 +28570,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27932,6 +28610,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -27973,6 +28652,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28021,6 +28701,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28051,6 +28732,7 @@
             "displayName": "SICPA Digital Trust Suite"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28105,6 +28787,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28139,6 +28822,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28196,6 +28880,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28240,6 +28925,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28284,6 +28970,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28320,6 +29007,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28350,6 +29038,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28409,6 +29098,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28443,6 +29133,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28510,6 +29201,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28537,6 +29229,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28593,6 +29286,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28627,6 +29321,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28663,6 +29358,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28689,6 +29385,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28716,6 +29413,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28780,6 +29478,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28809,6 +29508,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28840,6 +29540,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28874,6 +29575,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -28920,6 +29622,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -28949,6 +29652,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29017,6 +29721,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29078,6 +29783,7 @@
             "displayName": "Sphereon Business Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29123,6 +29829,7 @@
             "displayName": "Spherity's European Business Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29163,6 +29870,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29203,6 +29911,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29236,6 +29945,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29271,6 +29981,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29319,6 +30030,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29363,6 +30075,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29397,6 +30110,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29436,6 +30150,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29493,6 +30208,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29553,6 +30269,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29578,6 +30295,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "mdoc-web-verifier",
@@ -29633,6 +30351,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29667,6 +30386,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29708,6 +30428,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29747,6 +30468,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29832,6 +30554,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "eduwallet-demo-cv",
@@ -29881,6 +30604,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29922,6 +30646,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -29949,6 +30674,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -29999,6 +30725,7 @@
             "displayName": "SWIYU Generic Verifier"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "swiyu-alphaoffice-demo",
@@ -30077,6 +30804,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30125,6 +30853,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30149,6 +30878,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30188,6 +30918,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30237,6 +30968,7 @@
             "displayName": "Wallet4Agent"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30276,6 +31008,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30317,6 +31050,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30347,6 +31081,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30399,6 +31134,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30443,6 +31179,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30469,6 +31206,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30503,6 +31241,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30555,6 +31294,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30589,6 +31329,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30653,6 +31394,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30679,6 +31421,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30723,6 +31466,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30753,6 +31497,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "thales-verification-portal",
@@ -30786,6 +31531,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30842,6 +31588,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30890,6 +31637,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -30928,6 +31676,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -30967,6 +31716,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31002,6 +31752,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31033,6 +31784,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31063,6 +31815,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31088,6 +31841,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31119,6 +31873,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31163,6 +31918,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "toppan-verifier",
@@ -31204,6 +31960,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31235,6 +31992,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31305,6 +32063,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31339,6 +32098,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31369,6 +32129,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31395,6 +32156,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31453,6 +32215,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31478,6 +32241,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31503,6 +32267,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31527,6 +32292,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31554,6 +32320,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31611,6 +32378,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31654,6 +32422,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31678,6 +32447,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31738,6 +32508,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31768,6 +32539,12 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [
+          {
+            "id": "trusttech-id-connector",
+            "displayName": "TrustTech ID Connector"
+          }
+        ],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31834,6 +32611,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31868,6 +32646,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -31897,6 +32676,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31928,6 +32708,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -31953,6 +32734,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "turo-driver-verification",
@@ -31992,6 +32774,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32031,6 +32814,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32061,6 +32845,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32086,6 +32871,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32134,6 +32920,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32178,6 +32965,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32226,6 +33014,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32278,6 +33067,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32326,6 +33116,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32385,6 +33176,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32440,6 +33232,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32465,6 +33258,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "uber-rider-verification",
@@ -32505,6 +33299,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32541,6 +33336,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32625,6 +33421,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32656,6 +33453,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "unchained-swiyu-demo-store",
@@ -32709,6 +33507,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32750,6 +33549,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32788,6 +33588,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32815,6 +33616,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32849,6 +33651,7 @@
             "displayName": "UAegean Stack (Cyclades Fast Ferries)"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32895,6 +33698,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -32930,6 +33734,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -32979,6 +33784,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33013,6 +33819,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33041,6 +33848,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33093,6 +33901,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33120,6 +33929,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33182,6 +33992,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33218,6 +34029,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33254,6 +34066,12 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [
+          {
+            "id": "ver-id-platform",
+            "displayName": "Ver.iD Platform"
+          }
+        ],
         "relyingParties": [
           {
             "id": "verid-playground",
@@ -33436,6 +34254,7 @@
             "displayName": "VS Agent - Verana Business Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "cexa-aurum",
@@ -33533,6 +34352,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33572,6 +34392,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33609,6 +34430,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33642,6 +34464,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "verifiables-verifier",
@@ -33691,6 +34514,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33726,6 +34550,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33762,6 +34587,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33801,6 +34627,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -33850,6 +34677,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33886,6 +34714,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33928,6 +34757,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -33962,6 +34792,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34004,6 +34835,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34064,6 +34896,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34098,6 +34931,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34137,6 +34971,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34167,6 +35002,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34192,6 +35028,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34226,6 +35063,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34255,6 +35093,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34290,6 +35129,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34333,6 +35173,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34372,6 +35213,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34431,6 +35273,7 @@
             "displayName": "walt.id Enterprise Stack"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "waltid-demo-verifier",
@@ -34489,6 +35332,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34615,6 +35459,7 @@
         ],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34643,6 +35488,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34687,6 +35533,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34721,6 +35568,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34750,6 +35598,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34794,6 +35643,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": [
           {
             "id": "worldline-digital-identity-hub",
@@ -34827,6 +35677,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34856,6 +35707,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34894,6 +35746,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34929,6 +35782,7 @@
           }
         ],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -34956,6 +35810,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -34991,6 +35846,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -35032,6 +35888,7 @@
             "displayName": "YourData Business Wallet"
           }
         ],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -35091,6 +35948,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35139,6 +35997,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35191,6 +36050,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35229,6 +36089,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -35278,6 +36139,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35330,6 +36192,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35374,6 +36237,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35398,6 +36262,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35458,6 +36323,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35494,6 +36360,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -35533,6 +36400,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [
@@ -35563,6 +36431,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35615,6 +36484,7 @@
         "credentialTypes": [],
         "personalWallets": [],
         "businessWallets": [],
+        "walletConnectors": [],
         "relyingParties": []
       },
       "ecosystemRoleCodes": [],
@@ -35699,6 +36569,7 @@
     "withIssuers": 38,
     "withCredentialTypes": 17,
     "withWallets": 105,
+    "withWalletConnectors": 6,
     "withRelyingParties": 69,
     "withBluePagesProfile": 0
   }

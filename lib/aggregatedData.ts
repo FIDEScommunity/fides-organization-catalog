@@ -96,6 +96,7 @@ export interface AggregatedOrganization {
     credentialTypes: { id: string; displayName: string }[];
     personalWallets: { id: string; displayName: string }[];
     businessWallets: { id: string; displayName: string }[];
+    walletConnectors: { id: string; displayName: string }[];
     relyingParties: { id: string; displayName: string }[];
   };
   /** Self-declared in community-catalog JSON (form submissions). */

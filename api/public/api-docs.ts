@@ -276,6 +276,7 @@ const spec = {
               credentialTypes: { type: 'array', items: { $ref: '#/components/schemas/EcosystemRef' } },
               personalWallets: { type: 'array', items: { $ref: '#/components/schemas/EcosystemRef' } },
               businessWallets: { type: 'array', items: { $ref: '#/components/schemas/EcosystemRef' } },
+              walletConnectors: { type: 'array', items: { $ref: '#/components/schemas/EcosystemRef' } },
               relyingParties: { type: 'array', items: { $ref: '#/components/schemas/EcosystemRef' } },
             },
           },

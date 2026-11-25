@@ -27,7 +27,11 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run crawl
+      - name: Crawl
+        env:
+          # Opt-in (default off): set repo variable to 1 only once production runs plugin >= 1.19.0.
+          FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE: ${{ vars.FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE }}
+        run: npm run crawl
 
       - name: Check for changes
         id: changes

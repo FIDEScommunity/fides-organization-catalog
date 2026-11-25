@@ -296,6 +296,7 @@
     credentialTypes: 'Credential Types',
     personalWallets: 'Personal Wallets',
     businessWallets: 'Business Wallets',
+    walletConnectors: 'Wallet Connectors',
     relyingParties: 'Relying Parties',
   };
 
@@ -304,6 +305,7 @@
     credentialTypes: icons.fileCheck,
     personalWallets: icons.wallet,
     businessWallets: icons.wallet,
+    walletConnectors: icons.link,
     relyingParties: icons.shield,
   };
 
@@ -933,6 +935,7 @@
   const ECOSYSTEM_ROLE_OPTIONS = [
     { value: 'personal_wallet_provider', label: 'Personal Wallet Provider' },
     { value: 'business_wallet_provider', label: 'Business Wallet Provider' },
+    { value: 'wallet_connector_provider', label: 'Wallet Connector Provider' },
     { value: 'vc_type_authority', label: 'VC Type Authority' },
     { value: 'issuer', label: 'Issuer' },
     { value: 'relying_party', label: 'Relying Party' },
@@ -1773,13 +1776,18 @@
   }
 
   function orgEcosystemRoleCodes(org) {
-    if (Array.isArray(org.ecosystemRoleCodes) && org.ecosystemRoleCodes.length) {
-      return org.ecosystemRoleCodes.map(String);
-    }
     const r = org.ecosystemRoles || {};
+    const connectorCode = 'wallet_connector_provider';
+    if (Array.isArray(org.ecosystemRoleCodes) && org.ecosystemRoleCodes.length) {
+      const codes = org.ecosystemRoleCodes.map(String);
+      // The aggregate may omit the connector role code; derive it from linked connectors.
+      if ((r.walletConnectors || []).length && !codes.includes(connectorCode)) codes.push(connectorCode);
+      return codes;
+    }
     const derived = [];
     if ((r.personalWallets || []).length) derived.push('personal_wallet_provider');
     if ((r.businessWallets || []).length) derived.push('business_wallet_provider');
+    if ((r.walletConnectors || []).length) derived.push(connectorCode);
     if ((r.credentialTypes || []).length) derived.push('vc_type_authority');
     if ((r.issuers || []).length) derived.push('issuer');
     if ((r.relyingParties || []).length) derived.push('relying_party');
@@ -1793,6 +1801,7 @@
       case 'credential': return codes.includes('vc_type_authority');
       case 'wallet':
         return codes.includes('personal_wallet_provider') || codes.includes('business_wallet_provider');
+      case 'connector': return codes.includes('wallet_connector_provider');
       case 'rp': return codes.includes('relying_party');
       default: return codes.includes(role);
     }
@@ -2006,6 +2015,7 @@
       { key: 'credentialTypes', items: r.credentialTypes || [], icon: icons.fileCheck, label: 'Credential Types', catalogUrl: config.credentialCatalogUrl, paramKey: 'credential', ratingType: 'credential' },
       { key: 'personalWallets', items: r.personalWallets || [], icon: icons.wallet, label: 'Personal Wallets', catalogUrl: config.walletCatalogUrl, paramKey: 'wallet', ratingType: 'wallet' },
       { key: 'businessWallets', items: r.businessWallets || [], icon: icons.wallet, label: 'Business Wallets', catalogUrl: config.walletCatalogUrl, paramKey: 'wallet', ratingType: 'wallet' },
+      { key: 'walletConnectors', items: r.walletConnectors || [], icon: icons.link, label: 'Wallet Connectors', catalogUrl: config.connectorCatalogUrl, paramKey: 'connector', ratingType: 'connector' },
       { key: 'relyingParties', items: r.relyingParties || [], icon: icons.shield, label: 'Relying Parties', catalogUrl: config.rpCatalogUrl, paramKey: 'rp', ratingType: 'rp' },
     ];
 

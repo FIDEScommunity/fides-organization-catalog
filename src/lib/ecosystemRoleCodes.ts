@@ -4,6 +4,7 @@ import type { AggregatedOrganization } from '../types/organization.js';
 export const ORGANIZATION_ECOSYSTEM_ROLE_CODES = [
   'personal_wallet_provider',
   'business_wallet_provider',
+  'wallet_connector_provider',
   'vc_type_authority',
   'issuer',
   'relying_party',
@@ -30,6 +31,7 @@ export type OrganizationEcosystemRoleCode = (typeof ORGANIZATION_ECOSYSTEM_ROLE_
 export const ORGANIZATION_ECOSYSTEM_ROLE_LABELS: Record<OrganizationEcosystemRoleCode, string> = {
   personal_wallet_provider: 'Personal Wallet Provider',
   business_wallet_provider: 'Business Wallet Provider',
+  wallet_connector_provider: 'Wallet Connector Provider',
   vc_type_authority: 'VC Type Authority',
   issuer: 'Issuer',
   relying_party: 'Relying Party',
@@ -77,6 +79,7 @@ export function deriveEcosystemRoleCodesFromLinks(
   const out: OrganizationEcosystemRoleCode[] = [];
   if (links.personalWallets?.length) out.push('personal_wallet_provider');
   if (links.businessWallets?.length) out.push('business_wallet_provider');
+  if (links.walletConnectors?.length) out.push('wallet_connector_provider');
   if (links.credentialTypes?.length) out.push('vc_type_authority');
   if (links.issuers?.length) out.push('issuer');
   if (links.relyingParties?.length) out.push('relying_party');
@@ -112,9 +115,29 @@ export function ecosystemRoleFilterMatches(
       return codes.includes('vc_type_authority');
     case 'wallet':
       return codes.includes('personal_wallet_provider') || codes.includes('business_wallet_provider');
+    case 'connector':
+      return codes.includes('wallet_connector_provider');
     case 'rp':
       return codes.includes('relying_party');
     default:
       return isOrganizationEcosystemRoleCode(filterRole) && codes.includes(filterRole);
   }
+}
+
+/**
+ * Opt-in switch for emitting `wallet_connector_provider` in aggregated `ecosystemRoleCodes`.
+ * Default OFF: plugin 1.18.x (production) renders unknown role codes as raw strings.
+ * Enable with FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE=1|true|yes once production runs plugin >= 1.19.0.
+ */
+export function includeWalletConnectorRoleCode(env: NodeJS.ProcessEnv = process.env): boolean {
+  const v = String(env.FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE ?? '').trim().toLowerCase();
+  return v === '1' || v === 'true' || v === 'yes';
+}
+
+/** Removes `wallet_connector_provider` unless the opt-in switch is enabled. */
+export function applyWalletConnectorRoleCodeGate(
+  codes: OrganizationEcosystemRoleCode[],
+  include: boolean = includeWalletConnectorRoleCode(),
+): OrganizationEcosystemRoleCode[] {
+  return include ? codes : codes.filter((code) => code !== 'wallet_connector_provider');
 }

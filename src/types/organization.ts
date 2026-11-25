@@ -201,6 +201,7 @@ export interface AggregatedOrganization {
     credentialTypes: EcosystemRef[];
     personalWallets: EcosystemRef[];
     businessWallets: EcosystemRef[];
+    walletConnectors: EcosystemRef[];
     relyingParties: EcosystemRef[];
   };
 
@@ -227,6 +228,7 @@ export interface AggregatedStats {
   withIssuers: number;
   withCredentialTypes: number;
   withWallets: number;
+  withWalletConnectors: number;
   withRelyingParties: number;
   /** DIDs with a successful Blue Pages validations response (crawler) */
   withBluePagesProfile?: number;

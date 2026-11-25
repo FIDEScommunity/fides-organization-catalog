@@ -144,6 +144,18 @@ npm run check-links # Validate URLs
 npm run check:scaling # Payload growth gate check
 ```
 
+### Wallet connector role code switch
+
+The crawler always writes `ecosystemRoles.walletConnectors` and `stats.withWalletConnectors`.
+The role code `wallet_connector_provider` in `ecosystemRoleCodes` is **opt-in** and **off by default**, because
+plugin 1.18.x renders unknown role codes as raw strings. Enable it only once production runs plugin ≥ 1.19.0:
+
+```bash
+FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE=1 npm run crawl
+```
+
+In GitHub Actions, set the repository variable `FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE` to `1` (Settings → Secrets and variables → Actions → Variables); all crawl workflows pass it through.
+
 ### WordPress submissions sync (maintainers / local)
 
 After an admin **publishes** a submission on utrecht-demo:

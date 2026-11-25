@@ -2,7 +2,7 @@
 /**
  * Plugin Name: FIDES Organization Catalog
  * Description: Displays the FIDES Community Organization Catalog with filters, search, and ecosystem explorer. When the master fides_catalog_ssr_enabled flag (provided by FIDES Community Tools Tiles ≥ 1.6.3) is enabled, the plugin also emits a server-rendered listing fallback, per-deeplink SEO meta tags and an Organization JSON-LD payload so organization detail URLs become indexable by search engines.
- * Version: 1.18.9
+ * Version: 1.19.1
  * Author: FIDES Community
  * License: Apache-2.0
  * Text Domain: fides-organization-catalog
@@ -10,7 +10,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-define('FIDES_ORG_CATALOG_VERSION', '1.18.9');
+define('FIDES_ORG_CATALOG_VERSION', '1.19.1');
 define('FIDES_ORG_CATALOG_PATH', plugin_dir_path(__FILE__));
 define('FIDES_ORG_CATALOG_URL', plugin_dir_url(__FILE__));
 /** Bump this when share rewrite rules change so existing sites flush once. */
@@ -486,6 +486,10 @@ class Fides_Organization_Catalog {
                 'fides_org_catalog_wallet_catalog_url',
                 'https://fides.community/community-tools/personal-wallets/'
             ),
+            'connectorCatalogUrl'       => get_option(
+                'fides_org_catalog_connector_catalog_url',
+                'https://fides.community/ecosystem-explorer/wallet-connectors/'
+            ),
             'rpCatalogUrl'              => get_option(
                 'fides_org_catalog_rp_catalog_url',
                 'https://fides.community/ecosystem-explorer/relying-party-catalog/'
@@ -547,6 +551,10 @@ class Fides_Organization_Catalog {
                 'fides_org_catalog_wallet_catalog_url',
                 'https://fides.community/community-tools/personal-wallets/'
             ),
+            'connector_catalog_url' => get_option(
+                'fides_org_catalog_connector_catalog_url',
+                'https://fides.community/ecosystem-explorer/wallet-connectors/'
+            ),
             'rp_catalog_url' => get_option(
                 'fides_org_catalog_rp_catalog_url',
                 'https://fides.community/ecosystem-explorer/relying-party-catalog/'
@@ -600,6 +608,7 @@ class Fides_Organization_Catalog {
                 'issuerCatalogUrl'        => $atts['issuer_catalog_url'],
                 'credentialCatalogUrl'    => $atts['credential_catalog_url'],
                 'walletCatalogUrl'        => $atts['wallet_catalog_url'],
+                'connectorCatalogUrl'     => $atts['connector_catalog_url'],
                 'rpCatalogUrl'            => $atts['rp_catalog_url'],
                 'useCaseCatalogUrl'       => $atts['use_case_catalog_url'],
                 'bluePagesProfileBaseUrl' => $bp_profile_base,
