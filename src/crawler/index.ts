@@ -18,6 +18,7 @@ import type {
 } from '../types/organization.js';
 import { ORGANIZATION_SECTOR_CODES } from '../types/organization.js';
 import {
+  applyWalletConnectorRoleCodeGate,
   deriveEcosystemRoleCodesFromLinks,
   mergeEcosystemRoleCodes,
   normalizeEcosystemRoleCodes,
@@ -451,7 +452,9 @@ async function crawl(): Promise<void> {
 
     const declaredEcosystemRoleCodes = normalizeEcosystemRoleCodes(org.ecosystemRoleCodes);
     const derivedEcosystemRoleCodes = deriveEcosystemRoleCodesFromLinks(ecosystemRoles);
-    const ecosystemRoleCodes = mergeEcosystemRoleCodes(declaredEcosystemRoleCodes, derivedEcosystemRoleCodes);
+    const ecosystemRoleCodes = applyWalletConnectorRoleCodeGate(
+      mergeEcosystemRoleCodes(declaredEcosystemRoleCodes, derivedEcosystemRoleCodes),
+    );
 
     const totalRoles =
       ecosystemRoleCodes.length +

@@ -4,6 +4,10 @@
 
 The FIDES Organization Catalog exposes a serverless API on Vercel that returns organizations with their ecosystem roles (issuers, credentials, wallets, relying parties).
 
+## Crawler switches
+
+- `FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE` (default off): when `1`/`true`/`yes`, `wallet_connector_provider` is emitted in `ecosystemRoleCodes`. `ecosystemRoles.walletConnectors` is always present.
+
 ## Endpoints
 
 ### `GET /api/public/organization`

@@ -1,6 +1,8 @@
 import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import {
+  applyWalletConnectorRoleCodeGate,
+  includeWalletConnectorRoleCode,
   deriveEcosystemRoleCodesFromLinks,
   ecosystemRoleFilterMatches,
   mergeEcosystemRoleCodes,
@@ -41,5 +43,15 @@ describe('ecosystemRoleCodes', () => {
     assert.equal(ecosystemRoleFilterMatches(codes, 'connector'), true);
     assert.equal(ecosystemRoleFilterMatches(codes, 'consultancy'), false);
     assert.equal(ecosystemRoleFilterMatches(['consultancy'], 'consultancy'), true);
+  });
+
+  it('gates wallet_connector_provider behind FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE (default off)', () => {
+    assert.equal(includeWalletConnectorRoleCode({}), false);
+    assert.equal(includeWalletConnectorRoleCode({ FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE: '0' }), false);
+    assert.equal(includeWalletConnectorRoleCode({ FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE: '1' }), true);
+    assert.equal(includeWalletConnectorRoleCode({ FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE: 'true' }), true);
+    const codes = normalizeEcosystemRoleCodes(['issuer', 'wallet_connector_provider']);
+    assert.deepEqual(applyWalletConnectorRoleCodeGate(codes, false), ['issuer']);
+    assert.deepEqual(applyWalletConnectorRoleCodeGate(codes, true), ['wallet_connector_provider', 'issuer']);
   });
 });

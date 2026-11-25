@@ -7736,7 +7736,6 @@
       "ecosystemRoleCodes": [
         "personal_wallet_provider",
         "business_wallet_provider",
-        "wallet_connector_provider",
         "issuer",
         "relying_party"
       ],
@@ -12880,7 +12879,6 @@
       "ecosystemRoleCodes": [
         "personal_wallet_provider",
         "business_wallet_provider",
-        "wallet_connector_provider",
         "vc_type_authority",
         "issuer",
         "relying_party",
@@ -17245,7 +17243,6 @@
       "ecosystemRoleCodes": [
         "personal_wallet_provider",
         "business_wallet_provider",
-        "wallet_connector_provider",
         "vc_type_authority",
         "issuer",
         "relying_party"
@@ -20337,7 +20334,6 @@
       "ecosystemRoleCodes": [
         "personal_wallet_provider",
         "business_wallet_provider",
-        "wallet_connector_provider",
         "relying_party"
       ],
       "firstSeenAt": "2026-03-27T15:10:30.532Z",
@@ -32553,7 +32549,6 @@
       },
       "ecosystemRoleCodes": [
         "business_wallet_provider",
-        "wallet_connector_provider",
         "issuer",
         "relying_party",
         "idv_provider",
@@ -34085,7 +34080,6 @@
         ]
       },
       "ecosystemRoleCodes": [
-        "wallet_connector_provider",
         "relying_party"
       ],
       "firstSeenAt": "2026-03-31T09:53:54.773Z",

@@ -123,3 +123,21 @@ export function ecosystemRoleFilterMatches(
       return isOrganizationEcosystemRoleCode(filterRole) && codes.includes(filterRole);
   }
 }
+
+/**
+ * Opt-in switch for emitting `wallet_connector_provider` in aggregated `ecosystemRoleCodes`.
+ * Default OFF: plugin 1.18.x (production) renders unknown role codes as raw strings.
+ * Enable with FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE=1|true|yes once production runs plugin >= 1.19.0.
+ */
+export function includeWalletConnectorRoleCode(env: NodeJS.ProcessEnv = process.env): boolean {
+  const v = String(env.FIDES_INCLUDE_WALLET_CONNECTOR_ROLE_CODE ?? '').trim().toLowerCase();
+  return v === '1' || v === 'true' || v === 'yes';
+}
+
+/** Removes `wallet_connector_provider` unless the opt-in switch is enabled. */
+export function applyWalletConnectorRoleCodeGate(
+  codes: OrganizationEcosystemRoleCode[],
+  include: boolean = includeWalletConnectorRoleCode(),
+): OrganizationEcosystemRoleCode[] {
+  return include ? codes : codes.filter((code) => code !== 'wallet_connector_provider');
+}

@@ -1776,14 +1776,18 @@
   }
 
   function orgEcosystemRoleCodes(org) {
-    if (Array.isArray(org.ecosystemRoleCodes) && org.ecosystemRoleCodes.length) {
-      return org.ecosystemRoleCodes.map(String);
-    }
     const r = org.ecosystemRoles || {};
+    const connectorCode = 'wallet_connector_provider';
+    if (Array.isArray(org.ecosystemRoleCodes) && org.ecosystemRoleCodes.length) {
+      const codes = org.ecosystemRoleCodes.map(String);
+      // The aggregate may omit the connector role code; derive it from linked connectors.
+      if ((r.walletConnectors || []).length && !codes.includes(connectorCode)) codes.push(connectorCode);
+      return codes;
+    }
     const derived = [];
     if ((r.personalWallets || []).length) derived.push('personal_wallet_provider');
     if ((r.businessWallets || []).length) derived.push('business_wallet_provider');
-    if ((r.walletConnectors || []).length) derived.push('wallet_connector_provider');
+    if ((r.walletConnectors || []).length) derived.push(connectorCode);
     if ((r.credentialTypes || []).length) derived.push('vc_type_authority');
     if ((r.issuers || []).length) derived.push('issuer');
     if ((r.relyingParties || []).length) derived.push('relying_party');
