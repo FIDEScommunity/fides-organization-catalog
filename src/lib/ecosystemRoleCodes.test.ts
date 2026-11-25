@@ -14,12 +14,14 @@ describe('ecosystemRoleCodes', () => {
       credentialTypes: [],
       personalWallets: [{ id: 'wallet:a', displayName: 'W' }],
       businessWallets: [],
+      walletConnectors: [{ id: 'connector:a', displayName: 'Connector A' }],
       relyingParties: [],
     };
     const declared = normalizeEcosystemRoleCodes(['issuer', 'consultancy']);
     const derived = deriveEcosystemRoleCodesFromLinks(links);
     assert.deepEqual(mergeEcosystemRoleCodes(declared, derived), [
       'personal_wallet_provider',
+      'wallet_connector_provider',
       'issuer',
       'consultancy',
     ]);
@@ -33,9 +35,10 @@ describe('ecosystemRoleCodes', () => {
   });
 
   it('supports legacy filter aliases', () => {
-    const codes = normalizeEcosystemRoleCodes(['personal_wallet_provider', 'issuer']);
+    const codes = normalizeEcosystemRoleCodes(['personal_wallet_provider', 'wallet_connector_provider', 'issuer']);
     assert.equal(ecosystemRoleFilterMatches(codes, 'wallet'), true);
     assert.equal(ecosystemRoleFilterMatches(codes, 'credential'), false);
+    assert.equal(ecosystemRoleFilterMatches(codes, 'connector'), true);
     assert.equal(ecosystemRoleFilterMatches(codes, 'consultancy'), false);
     assert.equal(ecosystemRoleFilterMatches(['consultancy'], 'consultancy'), true);
   });

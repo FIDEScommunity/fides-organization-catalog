@@ -189,6 +189,10 @@ const CROSS_CATALOGS = {
     url: 'https://raw.githubusercontent.com/FIDEScommunity/fides-rp-catalog/main/data/aggregated.json',
     local: path.resolve(ROOT, '..', 'rp-catalog', 'data', 'aggregated.json'),
   },
+  connector: {
+    url: 'https://raw.githubusercontent.com/FIDEScommunity/fides-wallet-connector-catalog/main/data/aggregated.json',
+    local: path.resolve(ROOT, '..', 'wallet-connector-catalog', 'data', 'aggregated.json'),
+  },
 };
 
 const gitDateCache = new Map<string, string | null>();
@@ -262,6 +266,7 @@ interface CrossCatalogData {
     provider: { name: string; did?: string };
   }>;
   rps: Array<{ id: string; name: string; provider: { name: string; did?: string } }>;
+  connectors: Array<{ id: string; name: string; orgId: string }>;
 }
 
 async function loadCrossCatalogs(): Promise<CrossCatalogData> {
@@ -279,12 +284,16 @@ async function loadCrossCatalogs(): Promise<CrossCatalogData> {
   const rpData = await loadJson<{ relyingParties?: CrossCatalogData['rps'] }>(
     CROSS_CATALOGS.rp.url, CROSS_CATALOGS.rp.local, 'rp-catalog',
   );
+  const connectorData = await loadJson<{ connectors?: CrossCatalogData['connectors'] }>(
+    CROSS_CATALOGS.connector.url, CROSS_CATALOGS.connector.local, 'wallet-connector-catalog',
+  );
 
   return {
     wallets: walletData?.wallets || [],
     issuers: issuerData?.issuers || [],
     credentials: credData?.credentials || [],
     rps: rpData?.relyingParties || [],
+    connectors: connectorData?.connectors || [],
   };
 }
 
@@ -336,7 +345,11 @@ function buildEcosystemRoles(
     .filter((r) => matchesOrganization({ ...org, did: orgDid }, { name: r.provider.name, did: r.provider.did, dirName: undefined }))
     .map((r) => ({ id: r.id, displayName: r.name }));
 
-  return { issuers, credentialTypes, personalWallets, businessWallets, relyingParties };
+  const walletConnectors: EcosystemRef[] = cross.connectors
+    .filter((connector) => connector.orgId === org.id)
+    .map((connector) => ({ id: connector.id, displayName: connector.name }));
+
+  return { issuers, credentialTypes, personalWallets, businessWallets, walletConnectors, relyingParties };
 }
 
 function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
@@ -344,6 +357,7 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
   let withIssuers = 0;
   let withCredentialTypes = 0;
   let withWallets = 0;
+  let withWalletConnectors = 0;
   let withRelyingParties = 0;
   let withBluePagesProfile = 0;
 
@@ -352,6 +366,7 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
     if (o.ecosystemRoles.issuers.length > 0) withIssuers++;
     if (o.ecosystemRoles.credentialTypes.length > 0) withCredentialTypes++;
     if (o.ecosystemRoles.personalWallets.length + o.ecosystemRoles.businessWallets.length > 0) withWallets++;
+    if (o.ecosystemRoles.walletConnectors.length > 0) withWalletConnectors++;
     if (o.ecosystemRoles.relyingParties.length > 0) withRelyingParties++;
     if (o.bluePages?.profileAvailable === true) withBluePagesProfile++;
   }
@@ -362,6 +377,7 @@ function calculateStats(orgs: AggregatedOrganization[]): AggregatedStats {
     withIssuers,
     withCredentialTypes,
     withWallets,
+    withWalletConnectors,
     withRelyingParties,
     withBluePagesProfile,
   };
@@ -391,7 +407,7 @@ async function crawl(): Promise<void> {
   const now = new Date().toISOString();
 
   const cross = await loadCrossCatalogs();
-  console.log(`  wallets: ${cross.wallets.length}, issuers: ${cross.issuers.length}, credentials: ${cross.credentials.length}, rps: ${cross.rps.length}\n`);
+  console.log(`  wallets: ${cross.wallets.length}, connectors: ${cross.connectors.length}, issuers: ${cross.issuers.length}, credentials: ${cross.credentials.length}, rps: ${cross.rps.length}\n`);
 
   const sourceDirs = (await fs.readdir(CONFIG.sourceDir).catch(() => [] as string[]))
     .filter((d) => !d.startsWith('.'));
@@ -443,6 +459,7 @@ async function crawl(): Promise<void> {
       ecosystemRoles.credentialTypes.length +
       ecosystemRoles.personalWallets.length +
       ecosystemRoles.businessWallets.length +
+      ecosystemRoles.walletConnectors.length +
       ecosystemRoles.relyingParties.length;
 
     console.log(`  ${org.name} (${org.id}) — ${ecosystemRoleCodes.length} role code(s), ${totalRoles} catalog link(s)`);
@@ -518,6 +535,7 @@ async function crawl(): Promise<void> {
   console.log(`  With issuers: ${output.stats.withIssuers}`);
   console.log(`  With credentials: ${output.stats.withCredentialTypes}`);
   console.log(`  With wallets: ${output.stats.withWallets}`);
+  console.log(`  With wallet connectors: ${output.stats.withWalletConnectors}`);
   console.log(`  With RPs: ${output.stats.withRelyingParties}`);
   console.log(`  Blue Pages profile (API): ${output.stats.withBluePagesProfile ?? 0}`);
 }

@@ -58,6 +58,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
         const ECOSYSTEM_ROLE_CODES = array(
             'personal_wallet_provider',
             'business_wallet_provider',
+            'wallet_connector_provider',
             'vc_type_authority',
             'issuer',
             'relying_party',
@@ -195,6 +196,7 @@ if (! class_exists('Fides_Organization_Catalog_Submission_Adapter')) {
             $labels = array(
                 'personal_wallet_provider'           => 'Personal Wallet Provider',
                 'business_wallet_provider'           => 'Business Wallet Provider',
+                'wallet_connector_provider'          => 'Wallet Connector Provider',
                 'vc_type_authority'                  => 'VC Type Authority',
                 'issuer'                             => 'Issuer',
                 'relying_party'                      => 'Relying Party',
