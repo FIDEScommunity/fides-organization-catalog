@@ -2427,7 +2427,7 @@
    * Do not create window._paq here — a missing tracker means analytics is off.
    */
   function trackMatomoEvent(category, action, name, value) {
-    var isSalesCatalog = category === 'Wallet Catalog' || category === 'Organization Catalog' || category === 'Wallet Connector Catalog';
+    var isSalesCatalog = category === 'Wallet Catalog' || category === 'Organization Catalog';
     var legacySalesActions = ['Modal Open', 'Link Click', 'Click', 'Organisation Click'];
     if (isSalesCatalog && legacySalesActions.indexOf(String(action || '')) !== -1) return;
     if (isSalesCatalog && /\|legacy$/i.test(String(name || ''))) return;
@@ -2642,7 +2642,7 @@
     var entityId = salesTrackSafePart(dataset.entityId || dataset.walletId);
     var linkType = normalizeProviderOutboundLinkType(dataset.linkType);
     var destination = salesTrackDestinationFromHref(href);
-    if (!providerId || (entityType !== 'wallet' && entityType !== 'connector') || !entityId || !linkType || !destination) return;
+    if (!providerId || entityType !== 'wallet' || !entityId || !linkType || !destination) return;
     var name = [
       providerId,
       entityType,
@@ -2650,7 +2650,7 @@
       linkType,
       destination
     ].join('|');
-    trackMatomoEvent(entityType === 'connector' ? 'Wallet Connector Catalog' : 'Wallet Catalog', 'Provider Outbound', name);
+    trackMatomoEvent('Wallet Catalog', 'Provider Outbound', name);
   }
 
   function trackOrganizationLinkClick(link) {
@@ -3154,7 +3154,6 @@
     }
     const url = new URL(window.location.href);
     if (contextType === 'wallet') url.searchParams.set('wallet', item.id);
-    if (contextType === 'connector') url.searchParams.set('connector', item.id);
     if (contextType === 'rp') url.searchParams.set('rp', item.id);
     if (contextType === 'issuer') url.searchParams.set('issuer', item.id);
     if (contextType === 'organization') url.searchParams.set('org', item.id);
@@ -3874,9 +3873,8 @@
     const wallet = groupOptions && groupOptions.wallet;
     const buttons = linkEntries.map(function(entry, index) {
       const isPrimary = !noPrimary && index === 0;
-      const salesAttrFn = (groupOptions && groupOptions.salesAttrFn) || walletSalesTrackAttrString;
       const salesAttrs = wallet && entry.salesLinkType
-        ? salesAttrFn(wallet, entry.salesLinkType, { matomoIgnore: entry.type === 'mailto' })
+        ? walletSalesTrackAttrString(wallet, entry.salesLinkType, { matomoIgnore: entry.type === 'mailto' })
         : '';
       if (entry.type === 'mailto') {
         return '<a href="mailto:' + escapeHtml(entry.href) + '" class="fides-modal-link' +
@@ -4376,357 +4374,6 @@
     }).join('');
   }
 
-  /**
-   * Human-readable labels for connector taxonomy values.
-   * Keep in sync with wallet-connector-catalog docs/CONTRACT.md.
-   */
-  const CONNECTOR_VALUE_LABELS = {
-    issuer: 'Issuer',
-    verifier: 'Verifier',
-    saas: 'SaaS',
-    on_premises: 'On-premises',
-    hybrid: 'Hybrid',
-    software_only: 'Software only',
-    managed_verification: 'Managed verification',
-    managed_issuance: 'Managed issuance',
-    oidc_oauth2: 'OIDC / OAuth 2.0',
-    saml2: 'SAML 2.0',
-    rest_api: 'REST API',
-    webhooks: 'Webhooks',
-    server_sdk: 'Server SDK',
-    hosted_ui_redirect: 'Hosted UI (redirect)',
-    headless_api: 'Headless API',
-    frontend_sdk: 'Frontend SDK',
-    web_component: 'Web component',
-    other: 'Other',
-    rp_intermediary: 'RP intermediary',
-    eaa_provider: 'EAA provider',
-    qeaa_provider: 'QEAA provider',
-    provider_managed: 'Provider-managed',
-    customer_managed: 'Customer-managed',
-    both: 'Provider- or customer-managed',
-    development: 'In Development',
-    beta: 'Beta',
-    production: 'Production',
-    deprecated: 'Deprecated'
-  };
-
-  const CONNECTOR_ROLE_ORDER = ['rp_intermediary', 'eaa_provider', 'qeaa_provider'];
-
-  /** Label for a connector taxonomy value; `group` is optional ('vcFormat' uses the shared credential format labels). */
-  function connectorValueLabel(value, group) {
-    const raw = String(value == null ? '' : value);
-    if (!raw) return '';
-    if (group === 'vcFormat') return credentialFormatDisplayLabel(raw);
-    if (Object.prototype.hasOwnProperty.call(CONNECTOR_VALUE_LABELS, raw)) return CONNECTOR_VALUE_LABELS[raw];
-    if (raw.indexOf('_') === -1) return raw;
-    const spaced = raw.replace(/_/g, ' ');
-    return spaced.charAt(0).toUpperCase() + spaced.slice(1);
-  }
-
-  function connectorProviderId(connector) {
-    return walletSalesProviderId(connector) ||
-      salesTrackSafePart(String((connector && connector.organization && connector.organization.id) || '').replace(/^org:/i, ''));
-  }
-
-  function connectorAnalyticsAttrString(connector) {
-    const providerId = connectorProviderId(connector);
-    const entityId = salesTrackSafePart(connector && connector.id);
-    if (!providerId || !entityId) return '';
-    const providerName = connector.organization && connector.organization.name
-      ? String(connector.organization.name).trim()
-      : '';
-    const entityName = String(connector.name || '').trim();
-    return ' data-provider-id="' + escapeHtml(providerId) + '"' +
-      ' data-provider-name="' + escapeHtml(providerName) + '"' +
-      ' data-entity-type="connector"' +
-      ' data-entity-id="' + escapeHtml(entityId) + '"' +
-      ' data-entity-name="' + escapeHtml(entityName) + '"';
-  }
-
-  function connectorSalesTrackAttrString(connector, linkType) {
-    if (!connector || !linkType) return '';
-    const analyticsAttrs = connectorAnalyticsAttrString(connector);
-    const normalizedLinkType = normalizeProviderOutboundLinkType(linkType);
-    if (!analyticsAttrs || !normalizedLinkType) return '';
-    return ' data-sales-track="wallet-link"' + analyticsAttrs +
-      ' data-link-type="' + escapeHtml(normalizedLinkType) + '"' +
-      ' data-matomo-ignore="1"';
-  }
-
-  function trackConnectorDetailOpen(connector) {
-    if (!connector) return;
-    const providerId = connectorProviderId(connector);
-    const entityId = salesTrackSafePart(connector.id);
-    if (!providerId || !entityId) return;
-    ensureSalesLinkTracking();
-    trackMatomoEvent('Wallet Connector Catalog', 'Detail Open', [providerId, 'connector', entityId].join('|'));
-  }
-
-  function connectorCountryCode(connector) {
-    const org = connector && connector.organization && typeof connector.organization === 'object' ? connector.organization : {};
-    return normalizeIsoCountryCode(org.country || (connector && connector.country));
-  }
-
-  function connectorCountryLabel(connector, options) {
-    const code = connectorCountryCode(connector);
-    if (!code) return '';
-    if (code === 'EU') return 'European Union';
-    const names = options && options.countryNames && typeof options.countryNames === 'object' ? options.countryNames : {};
-    return names[code] ? String(names[code]) : code;
-  }
-
-  function buildConnectorUpdateFormUrl(connectorId, options) {
-    const updateFormUrl = (options && options.updateFormUrl) ? String(options.updateFormUrl).trim() : '';
-    const isLoggedIn = boolFromMixed(
-      options && (options.isLoggedIn != null ? options.isLoggedIn : options.ratingsIsLoggedIn)
-    );
-    if (!isLoggedIn || !updateFormUrl || !connectorId) return '';
-    try {
-      const url = new URL(updateFormUrl, window.location.origin);
-      url.searchParams.set('connector', String(connectorId));
-      return url.toString();
-    } catch (e) {
-      return '';
-    }
-  }
-
-  function buildConnectorEditActionHtml(connector, options) {
-    if (!canEditWallet(connector, options)) return '';
-    const href = buildConnectorUpdateFormUrl(connector && connector.id, options);
-    if (!href) return '';
-    return '<a href="' + escapeHtml(href) + '" class="fides-modal-copy-link fides-modal-edit-link" aria-label="Suggest an update" title="Suggest an update">' + icons.pencil + '</a>';
-  }
-
-  /** Check-box style option with an optional glossary link (same markup as the wallet eIDAS trust services). */
-  function renderConnectorCheckOption(label, active, vocabulary, vocabKey) {
-    const match = vocabulary && vocabKey ? walletVocabEntry(vocabulary, 'connector', vocabKey) : null;
-    const labelHtml = match
-      ? '<button type="button" class="fides-kv-glossary-link fides-wallet-check-vocab-link" data-vocab-key="' +
-        escapeHtml(match.key) + '" aria-label="Definition: ' + escapeHtml(label) + '">' + escapeHtml(label) + '</button>'
-      : '<span class="fides-wallet-check-label">' + escapeHtml(label) + '</span>';
-    return '<span class="fides-wallet-check-option' + (active ? ' is-active' : ' is-inactive') + '">' +
-      '<span class="fides-wallet-check-box" aria-hidden="true">' + (active ? icons.check : '') + '</span>' +
-      labelHtml + '</span>';
-  }
-
-  function connectorValueSet(values) {
-    return new Set(arrayValues(values).map(function(v) { return String(v || '').trim(); }).filter(Boolean));
-  }
-
-  function connectorIsEudi(connector) {
-    return !!(connector && (connector.isEudiWalletConnector === true ||
-      arrayValues(connector.interoperabilityProfiles).indexOf('EUDI Wallet ARF') !== -1));
-  }
-
-  function buildConnectorTechnicalKvHtml(connector, vocabulary) {
-    const functions = connectorValueSet(connector.connectorFunctions);
-    const keyCapabilities = '<div class="fides-kv-section" data-section="capabilities">' +
-      '<div class="fides-kv-section-title">Key capabilities</div>' +
-      '<div class="fides-wallet-key-capabilities fides-wallet-check-group-wrap">' +
-      renderWalletCheckGroup([
-        renderConnectorCheckOption('Issuer', functions.has('issuer'), vocabulary, 'issuer'),
-        renderConnectorCheckOption('Verifier', functions.has('verifier'), vocabulary, 'verifier'),
-        renderConnectorCheckOption('EUDI Wallet Connector', connectorIsEudi(connector), vocabulary, 'EUDI Wallet ARF')
-      ]) + '</div></div>';
-
-    const deploymentChecks = renderWalletDeploymentChecksHtml(connector);
-    const operations = buildTechnicalKvSection('Product & deployment', 'operations', [
-      deploymentChecks ? renderTechnicalKvRow('Deployment', deploymentChecks) : '',
-      renderTechnicalKvRowText('Service model', arrayValues(connector.serviceModels), connectorValueLabel),
-      renderTechnicalKvRow('Status', escapeHtml(walletStatusDisplay(connector))),
-      renderTechnicalKvRow('License', escapeHtml(walletLicenseKvDisplay(connector)))
-    ]);
-
-    const integration = buildTechnicalKvSection('Integration', 'integration', [
-      renderTechnicalKvRowText('Backend integration', arrayValues(connector.backendIntegrations), connectorValueLabel),
-      renderTechnicalKvRowText('Frontend integration', arrayValues(connector.frontendIntegrations), connectorValueLabel)
-    ]);
-
-    const formats = buildTechnicalKvSection('Formats & protocols', 'compatibility', [
-      renderTechnicalKvRowText('VC formats', sortCredentialFormats(arrayValues(connector.vcFormat)), credentialFormatDisplayLabel, vocabulary, 'vcFormat'),
-      renderTechnicalKvRowText('Issuance protocols', arrayValues(connector.issuanceProtocols), null, vocabulary, 'issuanceProtocol'),
-      renderTechnicalKvRowText('Presentation protocols', arrayValues(connector.presentationProtocols), null, vocabulary, 'presentationProtocol'),
-      renderTechnicalKvRowText('Interop profiles', arrayValues(connector.interoperabilityProfiles), null, vocabulary, 'interopProfile'),
-      renderTechnicalKvRowText('Credential status', arrayValues(connector.credentialStatusMethods), null, vocabulary, 'credentialStatus')
-    ]);
-
-    const roles = connectorValueSet(connector.eidasRoles);
-    let eidas = '';
-    if (roles.size || connector.certificateManagement) {
-      const roleOptions = CONNECTOR_ROLE_ORDER.map(function(role) {
-        return renderConnectorCheckOption(connectorValueLabel(role), roles.has(role), null, '');
-      });
-      eidas = '<div class="fides-kv-section" data-section="eidas">' +
-        '<div class="fides-kv-section-title">eIDAS &amp; certificates</div>' +
-        '<div class="fides-wallet-check-group-wrap">' + renderWalletCheckGroup(roleOptions) + '</div>' +
-        (connector.certificateManagement
-          ? '<div class="fides-details-kv fides-details-kv--technical-grid">' +
-            renderTechnicalKvRow('Certificate management', escapeHtml(connectorValueLabel(connector.certificateManagement))) + '</div>'
-          : '') +
-        '</div>';
-    }
-    return [keyCapabilities, operations, integration, formats, eidas].filter(Boolean).join('');
-  }
-
-  function connectorWalletHref(walletId, options) {
-    const base = String((options && options.walletSharePath) || '/wallet/').replace(/\/?$/, '/');
-    return base + encodeURIComponent(walletId) + '/';
-  }
-
-  function connectorWalletRows(wallets, options) {
-    return arrayValues(wallets).filter(function(w) { return w && w.id; }).map(function(w) {
-      return { id: String(w.id), name: String(w.name || w.id), href: connectorWalletHref(w.id, options), organization: w.providerName ? String(w.providerName) : '', ratingType: 'wallet' };
-    });
-  }
-
-  function buildConnectorWalletAccordionsHtml(connector, options) {
-    const reference = connector.walletReference && connector.walletReference.id
-      ? connector.walletReference
-      : (connector.walletRef && connector.walletRef.walletCatalogId ? { id: connector.walletRef.walletCatalogId, name: connector.walletRef.walletCatalogId } : null);
-    const referenceRows = reference ? connectorWalletRows([reference], options) : [];
-    const compatibleRows = connectorWalletRows(connector.compatibleWallets, options);
-    const tableOptions = function(nameLabel, ariaLabel, rows) {
-      return buildModalEntityTableHtml({
-        rows: rows,
-        nameColumnLabel: nameLabel,
-        organizationColumnLabel: 'Provider',
-        alwaysShowOrganizationColumn: true,
-        sameWindowLinks: true,
-        ariaLabel: ariaLabel,
-        options: options || {}
-      });
-    };
-    return [
-      renderModalAccordion(
-        'fides-accordion-connector-wallet',
-        'Business wallet',
-        icons.wallet,
-        referenceRows.length ? tableOptions('Business wallet', 'Business wallet', referenceRows) : '',
-        true
-      ),
-      renderModalAccordion(
-        'fides-accordion-connector-compatible-wallets',
-        'Compatible personal wallets',
-        icons.wallet,
-        compatibleRows.length ? tableOptions('Compatible wallet', 'Compatible personal wallets', compatibleRows) : '',
-        true,
-        compatibleRows.length
-      )
-    ].filter(Boolean).join('');
-  }
-
-  function buildConnectorAccordionsHtml(connector, options) {
-    const vocabulary = options && options.vocabulary;
-    const technicalKv = buildConnectorTechnicalKvHtml(connector, vocabulary);
-    const accordions = buildConnectorWalletAccordionsHtml(connector, options) +
-      renderModalAccordion(
-        'fides-accordion-connector-technical',
-        'Specifications',
-        icons.fileCheck,
-        technicalKv ? '<div class="fides-wallet-technical-specs">' + technicalKv + '</div>' : '',
-        true
-      );
-    if (!accordions) return '';
-    return '<div class="fides-use-case-modal-accordions">' + accordions + '</div>';
-  }
-
-  /**
-   * Links bar (same markup as the RP modal): website, documentation, code and playground buttons.
-   * Provider/organization-catalog link lives in the modal header, like the RP and wallet modals.
-   */
-  function buildConnectorActionBarHtml(connector, options) {
-    if (!connector || !catalogListingHasFullFields(connector, options)) return '';
-    const seen = new Set();
-    const buttons = [];
-    function addButton(href, icon, smallText, strongText, matomoName, ariaLabel, salesLinkType, secondary) {
-      const url = String(href || '').trim();
-      if (!url) return;
-      const key = normalizeWalletLinkKey(url);
-      if (!key || seen.has(key)) return;
-      seen.add(key);
-      buttons.push(renderWalletAppStoreButton(
-        'web',
-        icon,
-        smallText,
-        strongText,
-        url,
-        true,
-        matomoName,
-        ariaLabel,
-        secondary ? 'fides-rp-link-secondary' : '',
-        connectorSalesTrackAttrString(connector, salesLinkType)
-      ));
-    }
-    addButton(connector.website, icons.globeApp, 'Visit the', 'Website', 'Product website', 'Visit website', 'product', false);
-    addButton(connector.documentation, icons.book, 'Read the', 'Documentation', 'Documentation', 'Read documentation', 'documentation', true);
-    addButton(connector.repository, icons.github, 'View the', 'Code', 'Code Repository', 'View the code', 'code_repository', true);
-    const playgrounds = arrayValues(connector.playgroundUrls);
-    playgrounds.forEach(function(url, index) {
-      addButton(
-        url,
-        icons.externalLink,
-        'Try the',
-        playgrounds.length > 1 ? 'Playground ' + (index + 1) : 'Playground',
-        'Playground',
-        'Try the playground',
-        'demo',
-        true
-      );
-    });
-    if (!buttons.length) return '';
-    return '<div class="fides-wallet-capabilities fides-wallet-app-stores fides-rp-action-bar">' +
-      '<span class="fides-wallet-capabilities-label">Links</span>' +
-      '<div class="fides-wallet-capabilities-list fides-modal-app-stores">' + buttons.join('') + '</div></div>';
-  }
-
-  function openConnectorModal(connector, options) {
-    if (!connector) return false;
-    ensureSalesLinkTracking();
-    const theme = (options && options.theme) || 'dark';
-    selectedContext = { type: 'connector', item: connector, options: options || {}, theme: theme };
-    const organization = connector.organization || {};
-    const organizationName = organization.name || connector.orgId || 'Unknown organization';
-    const organizationUrl = getOrganizationCatalogDeepLink(
-      connector.orgId || organization.id || '',
-      (options && options.organizationCatalogUrl) || 'https://fides.community/ecosystem-explorer/organization-catalog/'
-    );
-    const providerHtml = organizationUrl
-      ? '<a href="' + escapeHtml(organizationUrl) + '" class="fides-modal-link-inline" aria-label="View organization in organization catalog" title="Organization catalog" onclick="event.stopPropagation();"><span>' + escapeHtml(organizationName) + '</span></a>'
-      : escapeHtml(organizationName);
-    const countryLabel = connectorCountryLabel(connector, options);
-    const countryHtml = countryLabel ? buildModalProviderCountryGlobeHtml(countryLabel) : '';
-    const shareButtonHtml = buildModalShareButtonHtml(options, 'connector');
-    const editActionHtml = buildConnectorEditActionHtml(connector, options);
-    const listingHeaderBadge = buildCatalogListingHeaderBadgeHtml(connector, options);
-    const heroSectionHtml = buildWalletHeroSectionHtml(connector, options);
-    const modalHtml = '<div class="fides-modal-overlay fides-modal-overlay--rp fides-modal-overlay--wallet fides-modal-overlay--connector" id="fides-modal-overlay" data-theme="' + escapeHtml(theme) + '">' +
-      '<div class="fides-modal" role="dialog" aria-modal="true">' +
-      '<div class="fides-modal-header"><div class="fides-modal-header-content">' +
-      (connector.logo ? '<img src="' + escapeHtml(connector.logo) + '" alt="' + escapeHtml(connector.name || connector.id) + '" class="fides-modal-logo">' : '<div class="fides-modal-logo-placeholder">' + icons.link + '</div>') +
-      '<div class="fides-modal-title-wrap"><div class="fides-modal-title-row"><h2 class="fides-modal-title">' + escapeHtml(connector.name || connector.id) + '</h2>' + listingHeaderBadge + '</div>' +
-      '<p class="fides-modal-provider">' + icons.building + ' ' + providerHtml + countryHtml + '</p></div>' +
-      '</div><div class="fides-modal-header-actions">' + editActionHtml + shareButtonHtml + '<button class="fides-modal-close" id="fides-modal-close" aria-label="Close modal">' + icons.xLarge + '</button></div></div>' +
-      '<div class="fides-modal-body">' +
-      '<div id="fides-modal-rating-slot"></div>' +
-      heroSectionHtml +
-      buildConnectorActionBarHtml(connector, options) +
-      buildConnectorAccordionsHtml(connector, options) +
-      buildModalLastUpdatedHtml(connector, ['updatedAt', 'fetchedAt']) +
-      '</div></div></div>';
-    const overlay = mountModal(modalHtml);
-    if (!overlay) {
-      selectedContext = null;
-      return false;
-    }
-    trackConnectorDetailOpen(connector);
-    if (options && typeof options.onOpen === 'function') options.onOpen(connector);
-    initModalAccordions();
-    initWalletTechnicalGlossaryLinks(options || {});
-    attachModalRating(overlay, 'connector', connector.id, options || {}, connector);
-    return true;
-  }
-
   function openIssuerModal(issuer, options) {
     if (!issuer) return;
     const theme = (options && options.theme) || 'dark';
@@ -5076,7 +4723,7 @@
   function catalogCollectionSize(data) {
     if (!data || typeof data !== 'object') return 0;
     var keys = [
-      'wallets', 'connectors', 'relyingParties', 'issuers', 'organizations',
+      'wallets', 'relyingParties', 'issuers', 'organizations',
       'credentials', 'useCases', 'profiles', 'terms'
     ];
     var max = 0;
@@ -5398,8 +5045,6 @@
 
   window.FidesCatalogUI = {
     openWalletModal,
-    openConnectorModal,
-    connectorValueLabel,
     openRpModal,
     openIssuerModal,
     openOrganizationModal,
