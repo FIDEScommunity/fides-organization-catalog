@@ -1,7 +1,7 @@
 {
     "schemaVersion": "1.0.0",
     "catalogType": "organization",
-    "generatedAt": "2026-11-24T21:26:58+00:00",
+    "generatedAt": "2026-11-26T11:35:35+00:00",
     "entries": [
         {
             "itemId": "org:2060",
@@ -179,13 +179,17 @@
                     "website": "https://authbound.io",
                     "logo": "https://www.google.com/s2/favicons?domain=authbound.io&sz=128",
                     "country": "FI",
+                    "contact": {
+                        "email": "info@authbound.io",
+                        "bookMeetingUrl": "https://authbound.io/contact"
+                    },
                     "fidesManifestoSupporter": false,
                     "catalogTier": "Community"
                 },
-                "lastUpdated": "2026-07-11T07:34:04+00:00"
+                "lastUpdated": "2026-11-26T11:35:35+00:00"
             },
-            "publishedAt": "2026-07-11 07:34:04",
-            "updatedAt": "2026-07-11 07:34:04"
+            "publishedAt": "2026-11-26 11:35:35",
+            "updatedAt": "2026-11-26 11:35:35"
         },
         {
             "itemId": "org:authologic",
